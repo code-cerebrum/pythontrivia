@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <script src="res/jquery-3.6.2.min.js"></script>
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(res/font/Raleway-Black.ttf);
+        }
+
+        @font-face {
+            font-family: Rubik;
+            src: url(res/font/Rubik-Bold.ttf);
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            font-family: Rubik;
+            user-select: none;
+            color: #6f6f6f;
+            background-color: white;
+            transition: all 0.3s ease-in;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+            animation: title .3s linear;
+        } @keyframes title {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Python Quiz</div>
+    <script>
+        if (localStorage.darkMode == null)
+        {
+            localStorage.darkMode = "F";
+            localStorage.levelDict = '{"bas":1, "flo":1, "fun":1, "fil":1, "oop":1, "adv":1, "wee":1}';
+        }
+        if (localStorage.new == null) {
+            localStorage.wrongDict = '{"bas":[], "flo":[], "fun":[], "fil":[], "oop":[], "adv":[], "wee":[]}';
+            localStorage.new = 1;
+        }
+
+        localStorage.inter =1;
+        // levelDict = localStorage.levelDict;
+        // wrongDict = localStorage.wrongDict;
+
+        // parsedDict = JSON.parse(levelDict);
+        // parsedWrongDict = JSON.parse(wrongDict);
+        // dictLength = Object.keys(parsedDict).length;
+        // console.log(dictLength)
+
+        // if (dictLength == 6) {
+        //     parsedDict['wee'] = 1;
+        //     parsedWrongDict['wee'] = [];
+
+        //     levelDict = JSON.stringify(parsedDict);
+        //     wrongDict = JSON.stringify(parsedWrongDict);
+
+        //     localStorage.levelDict = levelDict;
+        //     localStorage.wrongDict = wrongDict;
+        // }
+        
+        setInterval(() => { location.replace("menu.html"); }, 1900);
+        setInterval(() => { $(".title").fadeOut(); }, 1500);
+    </script>
+</body>
+
+</html>

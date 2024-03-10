@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <script src="res/jquery-3.6.2.min.js"></script>
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(res/font/Raleway-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Rubik;
+            src: url(res/font/Rubik-Bold.ttf);
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            font-family: Rubik;
+            user-select: none;
+            color: black;
+            background-color: white;
+            transition: all 0.4s ease-in;
+        }
+
+        .top {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            transform: scale(2);
+            opacity: 0;
+            transition: all .3s ease-in;
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-img {
+            width: 40px;
+            height: 40px;
+            padding-left: 20px;
+            filter: invert(1);
+        }
+        .back-img:active {
+            opacity: .7;
+            transform: scale(.9);
+        }
+
+        .lev-bg {
+            padding-left: 10px;
+            font-size: large;
+        }
+
+        .mid {
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            transform: scale(2);
+            opacity: 0;
+            transition: all .3s ease-in;
+        }
+
+        .type {
+            width: 100vw;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .type-txt {
+            text-align: center;
+            font-size: large;
+            text-transform: capitalize;
+        }
+
+        .code-bg {
+            position: relative;
+            width: 85vw;
+            height: 25vh;
+            overflow: auto;
+            max-width: 600px;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            transition: all .4s ease;
+        }
+
+        .dark-mode {
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            transform: translateX(-200%);
+            width: 30px;
+            height: 30px;
+        }
+
+        .dark-mode:active {
+            opacity: .3;
+        }
+
+        .ques-bg {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: larger;
+            font-family: Raleway;
+        }
+
+        .small-txt {
+            font-size: 11px;
+        }
+
+        .option-bg {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .btn {
+            width: 90vw;
+            margin: 5px;
+            max-width: 600px;
+            height: fit-content;
+            padding: 15px 0;
+            background: linear-gradient(45deg, #fbae77, #e37832);
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px rgba(0 0 0, .5);
+            text-align: center;
+            color: white;
+            font-size: larger;
+        }
+        .com-next {
+            margin: 20px 0;
+        }
+
+        .nav-btn {
+            width: 40vw;
+        }
+
+        .btn:active {
+            opacity: .7 !important;
+        }
+
+        .btm {
+            height: 10vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            transform-origin: center;
+            transform: scale(2);
+            opacity: 0;
+            transition: all .3s ease-in;
+        }
+
+        .win-bg {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .7);
+            display: none;
+            align-items: end;
+        }
+
+        .win-ct-bg {
+            width: 100vw;
+            background-color: green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            animation: win-ct .3s ease-in 1;
+        }
+
+        @keyframes win-ct {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        .crct-txt {
+            width: 100%;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: xx-large;
+        }
+        .report-bg {
+            position: fixed;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            color: #d72828;
+        } .report-bg:active {
+            opacity: .3;
+        }
+        .error-img {
+            margin-left: 4px;
+            width: 20px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="res/prism/prism.css">
+</head>
+
+<body>
+    <script>
+        if (localStorage.is_weekly == 1) {
+            //opened weekly challenge
+            $("body").css({backgroundColor:'#d3f26a', color:'#272a2c'})
+        }
+    </script>
+    <div class="top">
+        <img src="res/image/back.svg" alt="back" class="back-img">
+        <div class="lev-bg"><span id="level"></span>/<span id="totalLevel"></span></div>
+        <div class="report-bg">
+            report
+            <img src="res/image/error.png" class="error-img">
+        </div>
+    </div>
+    <div class="mid">
+        <div class="type">
+            <div class="type-txt"></div>
+            <img src="res/image/dark.svg" alt="dark mode" class="dark-mode">
+        </div>
+        <div class="code-bg">
+
+            <pre>
+                <code class="language-python line-numbers">
+                </code>
+            </pre>
+        </div>
+        <div class="ques-bg"></div>
+        <div class="option-bg">
+            <div class="btn" id="ans"></div>
+            <div class="btn noans" id="noans1"></div>
+            <div class="btn noans" id="noans2"></div>
+            <div class="btn noans" id="noans3"></div>
+        </div>
+    </div>
+    <div class="btm">
+        <div class="btn nav-btn" id="prev">Prev</div>
+        <div class="btn nav-btn" id="next" style="opacity: 0.3;">Next</div>
+    </div>
+    <div class="win-bg">
+        <div class="win-ct-bg">
+            <div class="crct-txt">Correct!</div>
+            <div class="btn com-next">NEXT</div>
+        </div>
+    </div>
+    <style>
+        .no-more-con {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .no-more-txt {
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+    <div class="no-more-con">
+        <div class="no-more-txt">Congrats!!<br/>No More Mistakes</div>
+    </div>
+    <script src="res/prism/prism.js"></script>
+    <audio src="res/audio/correct.mp3" id="correct-aud"></audio>
+    <audio src="res/audio/wrong.mp3" id="wrong-aud"></audio>
+    <audio src="res/audio/button.mp3" id="button-aud"></audio>
+    <script>
+        setTimeout(() => { $(".top").css({ transform: 'scale(1)', opacity: '1' }); }, 100);
+        setTimeout(() => { $(".mid").css({ transform: 'scale(1)', opacity: '1' }); }, 200);
+        setTimeout(() => { $(".btm").css({ transform: 'scale(1)', opacity: '1' }); }, 300);
+
+        function Outro() {
+            setTimeout(() => { $(".top").css({ transform: 'scale(2)', opacity: '0' }); }, 100);
+            setTimeout(() => { $(".mid").css({ transform: 'scale(2)', opacity: '0' }); }, 200);
+            setTimeout(() => { $(".btm").css({ transform: 'scale(2)', opacity: '0' }); }, 300);
+        }
+
+        openedType = localStorage.openedType;
+        ImproveMode = parseInt(localStorage.ImproveMode);
+
+        function ScriptName(_type) {
+            if (_type == "bas") return "basics";
+            if (_type == "flo") return "flow";
+            if (_type == "fun") return "function";
+            if (_type == "fil") return "file";
+            if (_type == "oop") return "oops";
+            if (_type == "adv") return "advanced";
+            if (_type == "wee") return "weekly";
+        }
+        function AppendtName(_type) {
+            if (_type == "bas") return "Basics";
+            if (_type == "flo") return "Flow Control";
+            if (_type == "fun") return "Function";
+            if (_type == "fil") return "File";
+            if (_type == "oop") return "Object And Class";
+            if (_type == "adv") return "Advanced";
+            if (_type == "wee") return "Weekly Challenge";
+        }
+        $("body").prepend(`<script src="res/var/${ScriptName(openedType)}.js" id="_script">`);
+        darkMode = localStorage.darkMode;
+        function ChangeColor() {
+            if (darkMode == 'T')
+                $(".code-bg").css({ backgroundColor: 'black' });
+            else
+                $(".code-bg").css({ backgroundColor: '#f3f3f3' });
+        }
+        ChangeColor();
+        $(".dark-mode").click(function () {
+            if (darkMode == 'T') { //darkMode is True
+                darkMode = 'F';
+                $(".code-bg").css({ backgroundColor: '#f3f3f3' });
+            } else {//darkMode is False
+                darkMode = 'T';
+                $(".code-bg").css({ backgroundColor: 'black' });
+            }
+            localStorage.darkMode = darkMode;
+        });
+
+        function FillRed() {
+            $(".code-bg, .btn").css({border:'solid 3px red'})
+        }
+
+        wrongDict = JSON.parse(localStorage.wrongDict);
+        console.log('wrongDict',wrongDict)
+        levelDict = JSON.parse(localStorage.levelDict);
+        level = levelDict[openedType];
+
+        if (ImproveMode == 1) {
+            //its in the improve mode
+            FillRed();
+            openedLevel = wrongDict[openedType][0];
+            totalLevel = wrongDict[openedType].length;
+            indexLevel = 0;
+        } else {
+            openedLevel = levelDict[openedType];
+            totalLevel = localStorage.getItem(openedType+'Total');
+        }
+        txtTotal = localStorage.getItem(openedType+'Total'); //just to append on screen
+
+        console.log('openedLevel', openedLevel);
+        console.log('totalLevel', totalLevel);
+
+        // v1 = {"bas":[],"flo":[],"fun":[],"fil":[],"oop":[],"adv":[],"wee":[]}
+        
+        
+
+        //Capitalising first letter
+        $(".type-txt").text(AppendtName(openedType));
+        function Append() {
+            if (wrongDict[openedType].length <= 0 && ImproveMode == 1) {
+                //no mistaked question
+                $(".no-more-con").css({display:'flex'});
+                return
+            }
+
+            $("code").text(window["q" + openedLevel]);
+            Prism.highlightAll();
+            $(".ques-bg").html(window["des" + openedLevel]);
+            tmp_var = window["q" + openedLevel].replace("\n", '');
+            if (tmp_var == "\n" || tmp_var == "") {
+                $(".code-bg").css({opacity:'0'});
+            }
+            else
+                $(".code-bg").css({opacity:'1'});
+                
+            $("#ans").text(window["ans" + openedLevel]);
+            $("#noans1").text(window["noans1" + openedLevel]);
+            $("#noans2").text(window["noans2" + openedLevel]);
+            $("#noans3").text(window["noans3" + openedLevel]);
+            $("#level").text(openedLevel);
+            $("#totalLevel").text(txtTotal);
+
+            $(function () {
+                var parent = $(".option-bg");
+                var divs = parent.children();
+                while (divs.length) {
+                    parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+                }
+            });
+
+            $("#ans, .noans").css({ background: 'linear-gradient(45deg, #fbae77, #e37832)', color: 'white' });
+        }
+        Append();
+
+        inter = parseInt(localStorage.inter);
+        firstTimeAns = true;
+        $("#ans").click(function () {
+            if (firstTimeAns && ImproveMode == 1) {
+                indexToDelete = wrongDict[openedType].indexOf(openedLevel);
+                wrongDict[openedType].splice(indexToDelete, 1);
+                localStorage.wrongDict = JSON.stringify(wrongDict)
+                if (indexLevel != 0) {
+                    indexLevel--;
+                }
+                openedLevel = wrongDict[openedType][indexLevel];
+            }
+
+            firstTimeAns = true;
+            inter++;
+            CheckInter();
+            document.getElementById('correct-aud').play();
+            console.log("Correct!")
+            $("#ans").css({ background: 'green'});
+            setTimeout(() => {
+                $(".win-ct-bg").css({ transform: 'translateY(0)' });
+                $(".win-bg").css({ display: 'flex' });
+            }, 200);
+            if (ImproveMode == 0) {
+                if (openedLevel < totalLevel) {
+                    if (openedLevel == level) {
+                        //unlocked new level
+                        level++; openedLevel++;
+                        levelDict[openedType] = level;
+                        localStorage.setItem("levelDict", JSON.stringify(levelDict));
+                    } else {
+                        //just progress to next level which is already completed
+                        openedLevel++;
+                    }
+                } else {
+                    //All level completed
+
+                }
+            }
+            
+        });
+
+
+        $(".noans").click(function () {
+            if (firstTimeAns) {
+                firstTimeAns = false;
+
+                // Check if the number already exists in the "bas" array
+                if (wrongDict[openedType].indexOf(openedLevel) === -1) {
+                    // If not, push the number to the "bas" array
+                    wrongDict[openedType].push(openedLevel);
+                    wrongDict[openedType].sort((a, b) => a - b);
+                    console.log(`Number added to ${openedType} array:`, openedLevel);
+                } else {
+                    console.log(`Number already exists in ${openedType} array:`, openedLevel);
+                }
+
+                console.log(wrongDict);
+                localStorage.setItem('wrongDict', JSON.stringify(wrongDict));
+            }
+            inter++;
+            CheckInter();
+            document.getElementById('wrong-aud').play();
+            $(this).css({ background: 'red'});
+        });
+
+        $(".com-next").click(function () {
+            document.getElementById('button-aud').play();
+            setTimeout(() => {
+                $(".win-ct-bg").css({ transform: 'translateY(100%)' });
+                $(".win-bg").fadeOut();
+                Append();
+            }, 200);
+        });
+
+        $("#next").click(function () {
+            firstTimeAns = true;
+            console.log('wrongDict[openedType][-1]',wrongDict[openedType][wrongDict[openedType].length - 1])
+            if (ImproveMode == 1) {
+                wrongDict = JSON.parse(localStorage.wrongDict);
+                if (openedLevel != wrongDict[openedType][wrongDict[openedType].length - 1]) {
+                    indexLevel++;
+                    openedLevel = wrongDict[openedType][indexLevel];
+                    Append();
+                    console.log("openedLevel is", openedLevel);
+                    $("#prev").css({ opacity: '1' });
+                    if (openedLevel == wrongDict[openedType][wrongDict[openedType].length - 1])
+                        $("#next").css({ opacity: '.3' });
+                }
+                
+            } else {
+                if (openedLevel < level && openedLevel < totalLevel) {
+                    openedLevel++;
+                    Append();
+                    console.log("openedLevel is", openedLevel);
+                    $("#prev").css({ opacity: '1' });
+                    if (openedLevel == level)
+                        $("#next").css({ opacity: '.3' });
+                }
+            }
+            
+        });
+        if (openedLevel == 1)
+            $("#prev").css({ opacity: '.3' });
+
+        $("#prev").click(function () {
+            firstTimeAns = true;
+            console.log('openedLevel',openedLevel);
+            console.log('wrongDict[openedType][0]',wrongDict[openedType][0]);
+            if (ImproveMode == 1) {
+                wrongDict = JSON.parse(localStorage.wrongDict);
+                if (openedLevel > wrongDict[openedType][0]) {
+                    indexLevel--;
+                    openedLevel = wrongDict[openedType][indexLevel];
+                    Append();
+                    console.log("openedLevel is", openedLevel);
+                    $("#next").css({ opacity: '1' });
+                    if (openedLevel == wrongDict[openedType][0])
+                        $("#prev").css({ opacity: '.3' });
+                }
+            } else {
+                if (openedLevel > 1) {
+                    openedLevel--;
+                    Append();
+                    console.log("openedLevel is", openedLevel);
+                    $("#next").css({ opacity: '1' });
+                    if (openedLevel == 1)
+                        $("#prev").css({ opacity: '.3' });
+                }
+            }
+            
+        });
+
+        $(".back-img").click(function () {
+            Outro();
+            setTimeout(() => {
+                window.history.back();
+            }, 500);
+        });
+
+        $(".report-bg").click(function() {
+            window.parent.location = `
+mailto:logiclore.developer@gmail.com?subject=Error%20reporting&
+body=%20opnLvl-${openedLevel}%20opnTyp-${openedType}%0D%0A
+(Please%20dont%20edit%20above%20line)%0D%0A
+(Write%20something%20below%20to%20clarify%20the%20error%20(optional))
+`;
+        });
+
+        function CheckInter() {
+            if (inter > 5) {
+                inter =1;
+                localStorage.inter=1;
+                parent.location='https://inter';
+            }
+        }
+    </script>
+</body>
+
+</html>

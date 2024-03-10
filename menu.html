@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="res/jquery-3.6.2.min.js"></script>
+    <title>Menu</title>
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url(res/font/Raleway-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Rubik;
+            src: url(res/font/Rubik-Bold.ttf);
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            font-family: Rubik;
+            user-select: none;
+            color: #6f6f6f;
+            background-color: white;
+            transition: all 0.4s ease-in;
+        }
+
+        .intro-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            transform: scale(0);
+            background-color: white;
+            transform-origin: center;
+            transition: scale .3s ease-in;
+            animation: intro .3s ease-in-out 1;
+        }
+
+        @keyframes intro {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        .top {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            padding: 0 5vw;
+            color: rgb(34, 34, 34);
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+        }
+
+        .reset {
+            height: fit-content;
+            padding: 10px 20px;
+            margin-right: 5vw;
+            color: white;
+            background-color: #c01414;
+            border-radius: 10px;
+        }
+
+        .reset:active {
+            opacity: .5;
+        }
+
+        .btm {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .ct {
+            width: 70vw;
+            padding: 15px 25px;
+            margin: 20px 0;
+            max-width: 600px;
+            height: fit-content;
+            background: linear-gradient(90deg, #fbae77, #e37832);
+            border-radius: 10px;
+            color: white;
+            font-family: Raleway;
+            transition: all .3s ease-in;
+            box-shadow: 1px 1px 3px rgba(24, 33, 46, 0.104);
+        }
+        .weekly-ct {
+            background-color: #d3f26a;
+            /* color: #272a2c; */
+        }
+
+        .ct-ti {
+            padding: 5px 0;
+            font-size: xx-large;
+            font-family: Rubik;
+        }
+
+        .ct-des {
+            padding: 5px 0;
+            font-size: large;
+        }
+
+        .ct-level-bg {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+            padding-bottom: 15px;
+        }
+
+        .wrong-bg {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .wrong-img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .wrong-txt {
+            font-size: large;
+        }
+
+        .ct-level {
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="title">Python Quiz</div>
+        <div class="reset">Reset</div>
+    </div>
+    <div class="btm">
+        <div class="ct weekly-ct" onclick="localStorage.is_weekly = 1;">
+            <div class="ct-ti">Weekly Challenge</div>
+            <div class="ct-des">New challenges will be added weekly</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="weekly-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="weekly-level"></span> / <span id="weekly-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('wee')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('wee')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Basic</div>
+            <div class="ct-des">variables, datatypes, type conversion</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="basics-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="basics-level"></span> / <span id="basics-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('bas')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('bas')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Flow Control</div>
+            <div class="ct-des">if...else, for loop, while loop, break & continue, pass</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="flow-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="flow-level"></span> / <span id="flow-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('flo')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('flo')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Functions</div>
+            <div class="ct-des">argument, recursion, anonymous function, global and local</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="function-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="function-level"></span> / <span id="function-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('fun')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('fun')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Files</div>
+            <div class="ct-des">file operation, directory, exception, exception handling, user-defined exception</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="file-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="file-level"></span> / <span id="file-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('fil')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('fil')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Object & Class</div>
+            <div class="ct-des">OOP, class, inheritance, multiple inheritance, operator overloading</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="oops-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="oops-level"></span> / <span id="oops-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('oop')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('oop')">PLAY</div>
+            </div>
+        </div>
+        <div class="ct">
+            <div class="ct-ti">Advanced</div>
+            <div class="ct-des">iterator, generator, closure, decorators, property, RegEx</div>
+            <div class="ct-level-bg">
+                <div class="wrong-bg">
+                    <img src="res/image/wrong.svg" class="wrong-img">
+                    <span class="wrong-txt" id="advanced-wrong"></span>
+                </div>
+                <div class="ct-level"><span id="advanced-level"></span> / <span id="advanced-total"></span></div>
+            </div>
+            <div class="btn-bg">
+                <div class="btn2 red" onclick="ImproveClick('adv')">Improve</div>
+                <div class="btn2 play" onclick="CtClick('adv')">PLAY</div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .reset-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, .6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .reset-con {
+            width: 85vw;
+            max-width: 600px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .reset-txt {
+            width: 100%;
+            font-size: larger;
+            text-align: center;
+            padding: 15px 0;
+            color: #3f87f2;
+        }
+
+        .btn {
+            width: 80vw;
+            margin: 10px 0;
+            max-width: 600px;
+            height: fit-content;
+            padding: 15px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: inset 1px 1px 4px rgb(24 33 46);
+            text-align: center;
+            color: white;
+            font-size: larger;
+        }
+
+        .btn:active {
+            opacity: .7 !important;
+        }
+
+        .btn-bg {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn2 {
+            width: 40%;
+            padding: 15px 0;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+        } .red {
+            background-color: red;
+            color: white;
+        } .btn2:active {
+            opacity: .4;
+        }
+    </style>
+    <div class="reset-bg">
+        <div class="reset-con">
+            <div class="reset-txt">This will erase the data and the quiz will start over</div>
+            <div class="btn" id="reset-ok" style="background-color: #c01414;">Reset</div>
+            <div class="btn" id="reset-cancel" style="background-color: green;">Cancel</div>
+
+        </div>
+    </div>
+    <div class="intro-bg"></div>
+    <script src="res/var/basics.js"></script>
+    <script src="res/var/flow.js"></script>
+    <script src="res/var/function.js"></script>
+    <script src="res/var/file.js"></script>
+    <script src="res/var/oops.js"></script>
+    <script src="res/var/advanced.js"></script>
+    <script src="res/var/weekly.js"></script>
+    <script>
+        localStorage.basTotal = basTotal;
+        localStorage.floTotal = floTotal;
+        localStorage.funTotal = funTotal;
+        localStorage.filTotal = filTotal;
+        localStorage.oopTotal = oopTotal;
+        localStorage.advTotal = advTotal;
+        localStorage.weeTotal = weeTotal;
+        levelDict = JSON.parse(localStorage.levelDict);
+        wrongDict = JSON.parse(localStorage.wrongDict);
+
+        if (localStorage.is_weekly == 1) {
+            console.log('bluuuuuuuuuuuuu')
+            $(".intro-bg").css({backgroundColor:'#d3f26a'});
+        } else {
+            $(".intro-bg").css({backgroundColor:'#fff'});
+        }
+
+        localStorage.is_weekly = 0;
+
+        $("#basics-level").text(levelDict['bas']);
+        $("#basics-total").text(basTotal);
+        $("#basics-wrong").text(wrongDict['bas'].length);
+
+        $("#flow-level").text(levelDict['flo']);
+        $("#flow-total").text(floTotal);
+        $("#flow-wrong").text(wrongDict['flo'].length);
+
+        $("#function-level").text(levelDict['fun']);
+        $("#function-total").text(funTotal);
+        $("#function-wrong").text(wrongDict['fun'].length);
+
+        $("#file-level").text(levelDict['fil']);
+        $("#file-total").text(filTotal);
+        $("#file-wrong").text(wrongDict['fil'].length);
+
+        $("#oops-level").text(levelDict['oop']);
+        $("#oops-total").text(oopTotal);
+        $("#oops-wrong").text(wrongDict['oop'].length);
+
+        $("#advanced-level").text(levelDict['adv']);
+        $("#advanced-total").text(advTotal);
+        $("#advanced-wrong").text(wrongDict['adv'].length);
+
+        $("#weekly-level").text(levelDict['wee']);
+        $("#weekly-total").text(weeTotal);
+        $("#weekly-wrong").text(wrongDict['wee'].length);
+
+        $(".play").click(function () {
+            setTimeout(() => {
+                $(".ct").css({transform: 'scale(0)'});
+                $("body").css({background:'#fff'});
+                $(".top").fadeOut();
+                setTimeout(() => {
+                    $(this).css({
+                        position: 'fixed'
+                    });
+                    $(".ct-ti, .ct-des, .ct-level").css({ visibility: 'hidden' });
+                }, 200);
+            }, 600);
+        });
+
+        function CtClick(_type) {
+            localStorage.openedType = _type;
+            setInterval(() => {
+                parent.location = "content.html";
+            }, 900);
+        }
+        localStorage.ImproveMode = 0;
+        function ImproveClick(_type) {
+            localStorage.openedType = _type;
+            localStorage.ImproveMode = 1;
+            setInterval(() => {
+                parent.location = "content.html";
+            }, 900);
+        }
+
+        $(".reset").click(function () {
+            $(".reset-bg").css({ display: 'flex' });
+        });
+
+        $("#reset-cancel").click(function () {
+            $(".reset-bg").fadeOut();
+        });
+        $("#reset-ok").click(function () {
+            localStorage.clear();
+            setTimeout(() => { $(".intro-bg").css({ transform: 'scale(1)' }); }, 100);
+            setTimeout(() => { location.replace("intro.html"); }, 450);
+        });
+    </script>
+</body>
+
+</html>
