@@ -8,13 +8,8 @@
     <script src="res/jquery-3.6.2.min.js"></script>
     <style>
         @font-face {
-            font-family: Raleway;
-            src: url(res/font/Raleway-Medium.ttf);
-        }
-
-        @font-face {
-            font-family: Rubik;
-            src: url(res/font/Rubik-Bold.ttf);
+            font-family: Montserrat;
+            src: url(res/font/MontserratMedium.ttf);
         }
 
         body,
@@ -23,7 +18,7 @@
             height: 100vh;
             overflow: hidden;
             margin: 0;
-            font-family: Rubik;
+            font-family: Montserrat;
             user-select: none;
             color: black;
             background-color: white;
@@ -112,7 +107,6 @@
             display: flex;
             flex-wrap: wrap;
             font-size: larger;
-            font-family: Raleway;
         }
 
         .small-txt {
@@ -132,7 +126,7 @@
             max-width: 600px;
             height: fit-content;
             padding: 15px 0;
-            background: linear-gradient(45deg, #fbae77, #e37832);
+            background: linear-gradient(90deg, #cb77fb, #ae32e3);
             border-radius: 10px;
             box-shadow: 1px 1px 4px rgba(0 0 0, .5);
             text-align: center;
@@ -175,7 +169,7 @@
 
         .win-ct-bg {
             width: 100vw;
-            background-color: green;
+            background-color: #4bd74b;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -400,7 +394,7 @@
                 }
             });
 
-            $("#ans, .noans").css({ background: 'linear-gradient(45deg, #fbae77, #e37832)', color: 'white' });
+            $("#ans, .noans").css({ background: 'linear-gradient(90deg, #cb77fb, #ae32e3)', color: 'white' });
         }
         Append();
 
@@ -546,7 +540,7 @@
 
         $(".report-bg").click(function() {
             window.parent.location = `
-mailto:logiclore.developer@gmail.com?subject=Error%20reporting&
+mailto:codecerebrum@gmail.com?subject=Error%20reporting&
 body=%20opnLvl-${openedLevel}%20opnTyp-${openedType}%0D%0A
 (Please%20dont%20edit%20above%20line)%0D%0A
 (Write%20something%20below%20to%20clarify%20the%20error%20(optional))
