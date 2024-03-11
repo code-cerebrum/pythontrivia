@@ -17,63 +17,43 @@
         html {
             width: 100vw;
             height: 100vh;
-            overflow: hidden;
             margin: 0;
+            overflow: hidden;
+            color: #6f6f6f;
             font-family: Montserrat;
             user-select: none;
-            color: #6f6f6f;
-            background-color: white;
-            transition: all 0.3s ease-in;
             display: flex;
             justify-content: center;
+            transition: all 0.3s ease-in;
             align-items: center;
+            background-color: white;
         }
 
         .title {
             width: 100%;
-            text-align: center;
-            color: white;
             font-size: xx-large;
+            text-align: center;
             animation: title .3s linear;
+            color: white;
         } @keyframes title {
             0% {opacity: 0;}
             100% {opacity: 1;}
         }
     </style>
 </head>
-
 <body>
-    <div class="title">Python Quiz</div>
+    <div class="title">Python Trivia</div>
     <script>
         if (localStorage.darkMode == null)
         {
             localStorage.darkMode = "F";
             localStorage.levelDict = '{"bas":1, "flo":1, "fun":1, "fil":1, "oop":1, "adv":1, "wee":1}';
-        }
-        if (localStorage.new == null) {
+
             localStorage.wrongDict = '{"bas":[], "flo":[], "fun":[], "fil":[], "oop":[], "adv":[], "wee":[]}';
             localStorage.new = 1;
         }
 
         localStorage.inter =1;
-        // levelDict = localStorage.levelDict;
-        // wrongDict = localStorage.wrongDict;
-
-        // parsedDict = JSON.parse(levelDict);
-        // parsedWrongDict = JSON.parse(wrongDict);
-        // dictLength = Object.keys(parsedDict).length;
-        // console.log(dictLength)
-
-        // if (dictLength == 6) {
-        //     parsedDict['wee'] = 1;
-        //     parsedWrongDict['wee'] = [];
-
-        //     levelDict = JSON.stringify(parsedDict);
-        //     wrongDict = JSON.stringify(parsedWrongDict);
-
-        //     localStorage.levelDict = levelDict;
-        //     localStorage.wrongDict = wrongDict;
-        // }
         
         setInterval(() => { location.replace("menu.html"); }, 1900);
         setInterval(() => { $(".title").fadeOut(); }, 1500);
