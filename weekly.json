@@ -1,0 +1,82 @@
+[
+  {
+    "q": "",
+    "c": "\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\n# Example usage\nnumber = 5\nresult = factorial(number)\nprint(f\"The factorial of {number} is: {result}\")\n",
+    "o": [
+      "The factorial of 5 is: 120",
+      "The factorial of 5 is: 100",
+      "The factorial of 5 is: 110",
+      "The factorial of 5 is: 140"
+    ]
+  },
+  {
+    "q": "",
+    "c": "\ndef is_palindrome(s):\n    s = s.lower().replace(\" \", \"\").replace(\",\", \"\").replace(\".\", \"\")\n    return s == s[::-1]\n\n# Example usage\ninput_string = \"A man, a plan, a canal, Panama\"\nif is_palindrome(input_string):\n    print(\"The input string is a palindrome.\")\nelse:\n    print(\"The input string is not a palindrome.\")\n",
+    "o": [
+      "The input string is a palindrome.",
+      "The input string is not a palindrome.",
+      "TypeError",
+      "SyntaxError"
+    ]
+  },
+  {
+    "q": "",
+    "c": "\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        \n        # Check if the target is present at the middle\n        if arr[mid] == target:\n            return mid\n        \n        # If the target is greater, ignore the left half\n        elif arr[mid] < target:\n            left = mid + 1\n        \n        # If the target is smaller, ignore the right half\n        else:\n            right = mid - 1\n    \n    # Target was not found in the list\n    return -1\n\n# Example usage\nsorted_list = [2, 4, 7, 10, 14, 18, 23, 27]\ntarget = 14\nresult = binary_search(sorted_list, target)\n\nif result != -1:\n    print(f\"Element {target} is present at index {result}.\")\nelse:\n    print(f\"Element {target} is not present in the list.\")\n",
+    "o": [
+      "Element 14 is present at index 4.",
+      "Element 10 is present at index 1.",
+      "Element 14 is not present in the list.",
+      "Element 10 is not present in the list."
+    ]
+  },
+  {
+    "q": "",
+    "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquared_numbers = map(lambda x: x ** 2, numbers)\neven_numbers = filter(lambda x: x % 2 == 0, squared_numbers)\nresult = sum(even_numbers)\nprint(result)\n",
+    "o": [
+      "20",
+      "14",
+      "30",
+      "6"
+    ]
+  },
+  {
+    "q": "",
+    "c": "\ndef recursive_factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * recursive_factorial(n - 1)\n\ndef find_special_number(n):\n    return sum(int(digit) for digit in str(recursive_factorial(n)))\n\nresult = find_special_number(5)\nprint(result)\n",
+    "o": [
+      "3",
+      "120",
+      "45",
+      "100"
+    ]
+  },
+  {
+    "q": "",
+    "c": "\ndef func(a, b=[]):\n    b.append(a)\n    return b\n\nprint(func(1))\nprint(func(2))\n",
+    "o": [
+      "[1] [1, 2]",
+      "[1, 2]",
+      "[1, 1, 2]",
+      "[1] [2]"
+    ]
+  },
+  {
+    "q": "\n<div class=\"small-txt\">\n    Requirements:<br/>\n    <ul>\n        <li>Find the maximum subarray sum.</li>\n        <li>Parameters:</li>\n        <ul>\n            <li>arr (list): List of integers.</li>\n        </ul>\n        <li>Returns:</li>\n        <ul>\n            <li>int: Maximum subarray sum.</li>\n        </ul>\n    </ul>\n</div>\n",
+    "c": "\nA. def max_subarray_sum(arr):\n       max_sum = float('-inf')\n       current_sum = 0\n       for num in arr:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nB. def max_subarray_sum(arr):\n       max_sum = arr[0]\n       current_sum = arr[0]\n       for num in arr[1:]:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nC. def max_subarray_sum(arr):\n       max_sum = 0\n       current_sum = 0\n       for num in arr:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nD. def max_subarray_sum(arr):\n       max_sum = float('-inf')\n       current_sum = arr[0]\n       for num in arr[1:]:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n",
+    "o": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ]
+  },
+  {
+    "q": "\n<div class=\"small-txt\">\n    Requirements:<br/>\n    <ul>\n        <li>Check if the given string is a palindrome.</li>\n        <li>Parameters:</li>\n        <ul>\n            <li>s (str): Input string.</li>\n        </ul>\n        <li>Returns:</li>\n        <ul>\n            <li>bool: True if the string is a palindrome, False otherwise.s</li>\n        </ul>\n    </ul>\n</div>\n",
+    "c": "\nA. def is_palindrome(s):\n       cleaned_str = ''.join(char.lower() for char in s if char.isalnum())\n       return cleaned_str == cleaned_str[::-1]\n\nB. def is_palindrome(s):\n       return s == s[::-1]\n\nC. def is_palindrome(s):\n       cleaned_str = ''.join(char for char in s if char.isalpha())\n       return cleaned_str.lower() == cleaned_str[::-1].lower()\n\nD. def is_palindrome(s):\n       return ''.join(s.split()).lower() == ''.join(s.split())[::-1].lower()\n",
+    "o": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ]
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "q": "Which of the following is the correct way to open a file in Python?\n",
+    "c": "",
+    "o": [
+      "open(\"file.txt\", \"r\")",
+      "open(\"file.txt\")",
+      "open(\"file.txt\", \"w\")",
+      "open(\"file.txt\", \"a\")"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to close an open file in Python?\n",
+    "c": "",
+    "o": [
+      "close()",
+      "stop()",
+      "end()",
+      "finish()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes in file operations is used to read and write simultaneously in Python?\n",
+    "c": "",
+    "o": [
+      "\"r+\"",
+      "\"r\"",
+      "\"w\"",
+      "\"a\""
+    ]
+  },
+  {
+    "q": "\nWhich of the following methods in file operations is used to read the entire file in Python?\n",
+    "c": "",
+    "o": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "readfile()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following methods in file operations is used to read a single line in Python?\n",
+    "c": "",
+    "o": [
+      "readline()",
+      "read()",
+      "readlines()",
+      "readfile()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following methods in file operations is used to write a string to a file in Python?\n",
+    "c": "",
+    "o": [
+      "write()",
+      "writelines()",
+      "writefile()",
+      "writeln()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following methods in file operations is used to write multiple strings to a file in Python?\n",
+    "c": "",
+    "o": [
+      "writelines()",
+      "write()",
+      "writefile()",
+      "writeln()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to check if a file exists in Python?\n",
+    "c": "",
+    "o": [
+      "isfile()",
+      "exists()",
+      "check()",
+      "file()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes in file operations is used to append content to an existing file in Python?\n",
+    "c": "",
+    "o": [
+      "\"a+\"",
+      "\"r\"",
+      "\"w\"",
+      "\"a\""
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to write to a file in Python?\n",
+    "c": "",
+    "o": [
+      "file.write(\"Hello\")",
+      "file.read(\"Hello\")",
+      "file.append(\"Hello\")",
+      "file.add(\"Hello\")"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to read a file in Python?\n",
+    "c": "",
+    "o": [
+      "file.read()",
+      "file.write()",
+      "file.append()",
+      "file.add()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to read a CSV file in Python?\n",
+    "c": "",
+    "o": [
+      "open(\"file.csv\", \"r\")",
+      "open(\"file.txt\", \"r\")",
+      "open(\"file.csv\", \"w\")",
+      "open(\"file.txt\", \"w\")"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to write to a CSV file in Python?\n",
+    "c": "",
+    "o": [
+      "writerows()",
+      "writerow()",
+      "write()",
+      "writelines()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to read a JSON file in Python?\n",
+    "c": "",
+    "o": [
+      "open(\"file.json\", \"r\")",
+      "open(\"file.txt\", \"r\")",
+      "open(\"file.json\", \"w\")",
+      "open(\"file.txt\", \"w\")"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to read a binary file in Python?\n",
+    "c": "",
+    "o": [
+      "open(\"file.bin\", \"r\")",
+      "open(\"file.txt\", \"r\")",
+      "open(\"file.bin\", \"w\")",
+      "open(\"file.txt\", \"w\")"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to write to a binary file in Python?\n",
+    "c": "",
+    "o": [
+      "writebytes()",
+      "write()",
+      "writelines()",
+      "writefile()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to rename a file in Python?\n",
+    "c": "",
+    "o": [
+      "rename()",
+      "rename_file()",
+      "move()",
+      "move_file()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to delete a file in Python?\n",
+    "c": "",
+    "o": [
+      "remove()",
+      "delete()",
+      "destroy()",
+      "erase()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to create a directory in Python?\n",
+    "c": "",
+    "o": [
+      "mkdir()",
+      "create_dir()",
+      "make_dir()",
+      "new_dir()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to delete a directory in Python?\n",
+    "c": "",
+    "o": [
+      "rmdir()",
+      "delete_dir()",
+      "remove_dir()",
+      "erase_dir()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the current working directory in Python?\n",
+    "c": "",
+    "o": [
+      "cwd()",
+      "get_dir()",
+      "current_dir()",
+      "working_dir()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to change the current working directory in Python?\n",
+    "c": "",
+    "o": [
+      "chdir()",
+      "set_dir()",
+      "change_dir()",
+      "switch_dir()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the list of files and directories in a directory in Python?\n",
+    "c": "",
+    "o": [
+      "listdir()",
+      "readdir()",
+      "scandir()",
+      "dirlist()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to check if a directory exists in Python?\n",
+    "c": "",
+    "o": [
+      "isdir()",
+      "exists()",
+      "check()",
+      "directory()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the size of a file in Python?\n",
+    "c": "",
+    "o": [
+      "stat().st_size",
+      "size()",
+      "get_size()",
+      "get_file_size()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the modification time of a file in Python?\n",
+    "c": "",
+    "o": [
+      "stat().st_mtime",
+      "mtime()",
+      "get_mtime()",
+      "get_modification_time()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the creation time of a file in Python?\n",
+    "c": "",
+    "o": [
+      "stat().st_ctime",
+      "ctime()",
+      "get_ctime()",
+      "get_creation_time()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to get the permissions of a file in Python?\n",
+    "c": "",
+    "o": [
+      "stat().st_mode",
+      "perm()",
+      "get_perm()",
+      "get_permissions()"
+    ]
+  },
+  {
+    "q": "\nWhat is the method used to check if a file is readable in Python?\n",
+    "c": "",
+    "o": [
+      "readable()",
+      "is_readable()",
+      "can_read()",
+      "stat().st_mode"
+    ]
+  },
+  {
+    "q": "\nException Handling:\n\nWhat is an exception in Python?\n",
+    "c": "",
+    "o": [
+      "A runtime error",
+      "A syntax error",
+      "A logical error",
+      "A type error"
+    ]
+  },
+  {
+    "q": "\nWhat is the purpose of exception handling in Python?\n",
+    "c": "",
+    "o": [
+      "To handle errors that occur during program execution",
+      "To ignore errors in the program",
+      "To prevent errors from occurring",
+      "To make the program run faster"
+    ]
+  },
+  {
+    "q": "\nWhich of the following keywords is used to raise an exception in Python?\n",
+    "c": "",
+    "o": [
+      "raise",
+      "break",
+      "continue",
+      "return"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct syntax for handling an exception in Python?\n",
+    "c": "",
+    "o": [
+      "try: except:",
+      "try: except",
+      "try: catch",
+      "try: finally"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct syntax for handling multiple exceptions in Python?\n",
+    "c": "",
+    "o": [
+      "try: except (Exception1, Exception2):",
+      "try: except:",
+      "try: catch (Exception1, Exception2):",
+      "try: finally (Exception1, Exception2):"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to raise a custom exception in Python?\n",
+    "c": "",
+    "o": [
+      "raise CustomException(\"Custom exception\")",
+      "raise Exception(\"Custom exception\")",
+      "throw Exception(\"Custom exception\")",
+      "throw CustomException(\"Custom exception\")"
+    ]
+  },
+  {
+    "q": "\nWhat is the purpose of the else clause in a try-except block in Python?\n",
+    "c": "",
+    "o": [
+      "To execute code when the try block completes without an exception",
+      "To execute code after the try block",
+      "To execute code when an exception occurs",
+      "To execute code when the except block is executed"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a custom exception in Python?\n",
+    "c": "",
+    "o": [
+      "class CustomException(Exception):",
+      "class CustomException(BaseException):",
+      "class CustomException(Error):",
+      "class CustomException(RuntimeError):"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to handle an exception in Python without specifying the exception type?\n",
+    "c": "",
+    "o": [
+      "try: except:",
+      "try: except Exception:",
+      "try: except BaseException:",
+      "try: except RuntimeError:"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes is used to open a file for reading in Python?\n",
+    "c": "",
+    "o": [
+      "r",
+      "w",
+      "a",
+      "x"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes is used to open a file for writing in Python?\n",
+    "c": "",
+    "o": [
+      "w",
+      "r",
+      "a",
+      "x"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes is used to open a file for appending in Python?\n",
+    "c": "",
+    "o": [
+      "a",
+      "w",
+      "r",
+      "x"
+    ]
+  },
+  {
+    "q": "\nWhich of the following modes is used to open a file for writing and reading in Python?\n",
+    "c": "",
+    "o": [
+      "r+",
+      "w+",
+      "a+",
+      "x+"
+    ]
+  },
+  {
+    "q": "\nWhat is the purpose of the close() method in Python file operations?\n",
+    "c": "",
+    "o": [
+      "To close the file",
+      "To delete the file",
+      "To write to the file",
+      "To save changes made to the file"
+    ]
+  },
+  {
+    "q": "\nPython Directories:\n\nWhich of the following modules is used to work with directories in Python?\n",
+    "c": "",
+    "o": [
+      "os",
+      "sys",
+      "re",
+      "math"
+    ]
+  },
+  {
+    "q": "\nWhich of the following functions is used to create a directory in Python?\n",
+    "c": "",
+    "o": [
+      "os.mkdir()",
+      "os.rmdir()",
+      "os.remove()",
+      "os.path()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following functions is used to remove a directory in Python?\n",
+    "c": "",
+    "o": [
+      "os.rmdir()",
+      "os.mkdir()",
+      "os.remove()",
+      "os.path()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following functions is used to check if a directory exists in Python?\n",
+    "c": "",
+    "o": [
+      "os.path.exists()",
+      "os.rmdir()",
+      "os.mkdir()",
+      "os.listdir()"
+    ]
+  },
+  {
+    "q": "\nException Handling:\n\nWhat is an exception in Python?\n",
+    "c": "",
+    "o": [
+      "An error that occurs during program execution",
+      "A syntax error",
+      "A logical error",
+      "A warning message"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct syntax for raising an exception in Python?\n",
+    "c": "",
+    "o": [
+      "raise Exception(\"Error message\")",
+      "throw Exception(\"Error message\")",
+      "raise \"Error message\"",
+      "throw \"Error message\""
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct syntax for handling an exception in Python?\n",
+    "c": "",
+    "o": [
+      "try: except:",
+      "try:",
+      "try: while",
+      "try: catch"
+    ]
+  },
+  {
+    "q": "\nWhich keyword is used to define a new exception class in Python?\n",
+    "c": "",
+    "o": [
+      "class",
+      "try",
+      "except",
+      "raise"
+    ]
+  },
+  {
+    "q": "\nWhich method is called when a new instance of an exception class is created?\n",
+    "c": "",
+    "o": [
+      "init()",
+      "str()",
+      "repr()",
+      "exception()"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is an example of a user-defined exception class in Python?\n",
+    "c": "",
+    "o": [
+      "MyException",
+      "KeyError",
+      "ValueError",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the syntax for raising a user-defined exception in Python?\n",
+    "c": "",
+    "o": [
+      "raise MyException(\"Error message\")",
+      "return Exception(\"Error message\")",
+      "throw Exception(\"Error message\")",
+      "throw MyException(\"Error message\")"
+    ]
+  }
+]

@@ -1,0 +1,1422 @@
+[
+    {
+        "q": "Which of the following is a valid variable name in Python?",
+        "c": "",
+        "o": [
+            "var_1",
+            "$var",
+            "1var",
+            "var-1"
+        ]
+    },
+    {
+        "q": "Which of the following data types is not supported in Python?",
+        "c": "",
+        "o": [
+            "Doubles",
+            "Integers",
+            "Floats",
+            "Characters"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(type(10))\n",
+        "o": [
+            "int",
+            "float",
+            "str",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is a mutable data type in Python?",
+        "c": "",
+        "o": [
+            "List",
+            "Tuple",
+            "String",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(3 + 5.0)\n",
+        "o": [
+            "8.0",
+            "8",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is a sequence data type in Python?",
+        "c": "\n\n",
+        "o": [
+            "List",
+            "Integer",
+            "Boolean",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(\"Python\" * 3)\n",
+        "o": [
+            "PythonPythonPython",
+            "Python",
+            "Pyytthhoonn",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following data types is immutable in Python?",
+        "c": "\n\n",
+        "o": [
+            "Tuple",
+            "List",
+            "Dictionary",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(type(\"hello\"))\n",
+        "o": [
+            "str",
+            "int",
+            "float",
+            "None"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(\"Python\"[2])\n",
+        "o": [
+            "t",
+            "P",
+            "y",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a string to an integer in Python?",
+        "c": "\n\n",
+        "o": [
+            "int('10')",
+            "'10'.to_int()",
+            "'10' + 0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(float(10))\n",
+        "o": [
+            "10.0",
+            "10",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a float to an integer in Python?",
+        "c": "\n\n",
+        "o": [
+            "int(10.5)",
+            "10.5.to_int()",
+            "'10.5'.to_int()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(str(10))\n",
+        "o": [
+            "10",
+            "1010",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(bool(0))\n",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(bool(\"\"))\n",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(bool(\"Hello\"))\n",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5\ny = 5\nprint(x is y)\n",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = [1, 2, 3]\nprint(x is y)\n",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x\nprint(x is y)\n",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5\ny = \"5\"\nprint(x + y)\n",
+        "o": [
+            "TypeError",
+            "10",
+            "55",
+            "5\"5\""
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)\n",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[1, 2, 4]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x.copy()\ny.append(4)\nprint(x)\n",
+        "o": [
+            "[1, 2, 3]",
+            "[1, 2, 3, 4]",
+            "[1, 2, 3], [4]",
+            "[1, 2, 3], 4"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x\ny += [4]\nprint(x)\n",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[1, 2, 4]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to remove an item from a list in Python?",
+        "c": "\n",
+        "o": [
+            "list.pop(2)",
+            "list.remove(2)",
+            "list.delete(2)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the length of a list in Python?",
+        "c": "\n",
+        "o": [
+            "len(list)",
+            "list.length()",
+            "list.len()",
+            "length(list)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = list(x)\ny.append(4)\nprint(x)\n",
+        "o": [
+            "(1, 2, 3)",
+            "(1, 2, 3, 4)",
+            "[1, 2, 3]",
+            "[1, 2, 3, 4]"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = {\"a\": 1, \"b\": 2}\ny = x\ny[\"c\"] = 3\nprint(x)\n",
+        "o": [
+            "{\"a\": 1, \"b\": 2, \"c\": 3}",
+            "{\"a\": 1, \"b\": 2}",
+            "{\"c\": 3}",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the keys of a dictionary in Python?",
+        "c": "",
+        "o": [
+            "dict.keys()",
+            "dict.get_keys()",
+            "dict.key()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = {\"a\": 1, \"b\": 2}\ny = x.copy()\ny[\"c\"] = 3\nprint(x)",
+        "o": [
+            "{\"a\": 1, \"b\": 2}",
+            "{\"a\": 1, \"b\": 2, \"c\": 3}",
+            "{\"c\": 3}",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = {\"a\": 1, \"b\": 2}\ny = x\ny.update({\"c\": 3})\nprint(x)",
+        "o": [
+            "{\"a\": 1, \"b\": 2, \"c\": 3}",
+            "{\"a\": 1, \"b\": 2}",
+            "{\"c\": 3}",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the values of a dictionary in Python?",
+        "c": "",
+        "o": [
+            "dict.values()",
+            "dict.get_values()",
+            "dict.value()",
+            "d"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = {1, 2, 3}\nx.add(4)\nprint(x)",
+        "o": [
+            "{1, 2, 3, 4}",
+            "{1, 2, 3}",
+            "[1, 2, 3, 4]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to remove an item from a set in Python?",
+        "c": "",
+        "o": [
+            "set.discard(2)",
+            "set.remove(2)",
+            "set.pop(2)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = {1, 2, 3}\ny = x\ny.add(4)\nprint(x)",
+        "o": [
+            "{1, 2, 3, 4}",
+            "{1, 2, 3}",
+            "[1, 2, 3, 4]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the length of a set in Python?",
+        "c": "",
+        "o": [
+            "len(set)",
+            "set.length()",
+            "set.len()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"Hello, World!\"\nprint(x[7:12])",
+        "o": [
+            "World",
+            "Worl",
+            "World!",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the length of a string in Python?",
+        "c": "",
+        "o": [
+            "len(string)",
+            "string.length()",
+            "string.len()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"Hello, World!\"\nprint(x.upper())",
+        "o": [
+            "HELLO, WORLD!",
+            "Hello, World!",
+            "hello, world!",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"Hello, World!\"\nprint(x.split(\",\"))",
+        "o": [
+            "[\"Hello\", \" World!\"]",
+            "[\"Hello,\", \" World!\"]",
+            "[\"Hello\", \"World!\"]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"Hello, World!\"\nprint(x.replace(\"l\", \"L\"))",
+        "o": [
+            "HeLLo, WorLd!",
+            "Hello, World!",
+            "HeLlo, WorLd!",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to check if a substring is in a string in Python?",
+        "c": "",
+        "o": [
+            "substring in string",
+            "string.contains(substring)",
+            "string.index(substring)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\nx.append(4)\nprint(x)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[4, 3, 2, 1]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to remove an item from a list in Python?",
+        "c": "",
+        "o": [
+            "list.pop(2)",
+            "list.remove(2)",
+            "list.discard(2)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x; y.append(4)\nprint(x)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[4, 3, 2, 1]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the length of a list in Python?",
+        "c": "",
+        "o": [
+            "len(list)",
+            "list.length()",
+            "list.len()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3, 4]\nprint(x[1:3])",
+        "o": [
+            "[2, 3]",
+            "[1, 2, 3]",
+            "[1, 2]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to add two lists together in Python?",
+        "c": "",
+        "o": [
+            "list1 + list2",
+            "list1.add(list2)",
+            "list1.extend(list2)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = [4, 5, 6]\nprint(x + y)",
+        "o": [
+            "[1, 2, 3, 4, 5, 6]",
+            "[4, 5, 6, 1, 2, 3]",
+            "[[1, 2, 3], [4, 5, 6]]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to reverse a list in Python?",
+        "c": "",
+        "o": [
+            "list.reverse()",
+            "reversed(list)",
+            "list.sort(reverse=True)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = [1, 2, 3]\ny = x[::-1]\nprint(y)",
+        "o": [
+            "[3, 2, 1]",
+            "[1, 2, 3]",
+            "[3]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to remove all items from a list in Python?",
+        "c": "",
+        "o": [
+            "list.clear()",
+            "list.remove_all()",
+            "list.delete_all()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\nprint(type(x))",
+        "o": [
+            "tuple",
+            "list",
+            "dictionary",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid way to create an empty tuple in Python?",
+        "c": "",
+        "o": [
+            "(2)",
+            "None of the options",
+            "tuple()",
+            "(2,)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x[1:]\nprint(y)",
+        "o": [
+            "(2, 3)",
+            "(1, 2)",
+            "(1, 2, 3)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to add two tuples together in Python?",
+        "c": "",
+        "o": [
+            "tuple1 + tuple2",
+            "tuple1.add(tuple2)",
+            "tuple1.extend(tuple2)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x[::-1]\nprint(y)",
+        "o": [
+            "(3, 2, 1)",
+            "(1, 2, 3)",
+            "(3)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to check if an element is in a tuple in Python?",
+        "c": "",
+        "o": [
+            "element in tuple",
+            "tuple.contains(element)",
+            "tuple.index(element)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = list(x); y.append(4)\nprint(y)",
+        "o": [
+            "[1, 2, 3, 4]",
+            "[1, 2, 3]",
+            "[4, 3, 2, 1]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a tuple to a list in Python?",
+        "c": "",
+        "o": [
+            "list(tuple)",
+            "tuple.list()",
+            "tuple.tolist()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\nprint(len(x))",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to get the index of an element in a tuple in Python?",
+        "c": "",
+        "o": [
+            "tuple.index(element)",
+            "tuple.find(element)",
+            "tuple.position(element)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = (4, 5, 6)\nz = x + y\nprint(z)",
+        "o": [
+            "(1, 2, 3, 4, 5, 6)",
+            "(1, 2, 3)",
+            "(4, 5, 6)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to check the number of occurrences of an element in a tuple in Python?",
+        "c": "",
+        "o": [
+            "tuple.count(element)",
+            "element.count(tuple)",
+            "tuple.occurrences(element)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x * 2\nprint(y)",
+        "o": [
+            "(1, 2, 3, 1, 2, 3)",
+            "(2, 4, 6)",
+            "(1, 2, 3, 4, 5, 6)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to unpack a tuple in Python?",
+        "c": "",
+        "o": [
+            "All of the options",
+            "(a, = tuple",
+            "a, b = tuple",
+            "(a, b,) = tuple"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x[1]\nprint(y)",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a list to a tuple in Python?",
+        "c": "",
+        "o": [
+            "tuple(list)",
+            "list.tuple()",
+            "list.totuple()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x[-1]\nprint(y)",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to create a tuple with only one element in Python?",
+        "c": "",
+        "o": [
+            "(1,)",
+            "(1)",
+            "[1]",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = (1, 2, 3)\ny = x[1:2]\nprint(y)",
+        "o": [
+            "(2,)",
+            "(1,)",
+            "(2, 3)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to reverse a tuple in Python?",
+        "c": "",
+        "o": [
+            "tuple[::-1]",
+            "tuple.reverse()",
+            "tuple.reversed()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a built-in data type in Python?",
+        "c": "",
+        "o": [
+            "long",
+            "int",
+            "float",
+            "boolean"
+        ]
+    },
+    {
+        "q": "What is the data type of the result of a division operation in Python 3?",
+        "c": "",
+        "o": [
+            "float",
+            "int",
+            "long",
+            "complex"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a float to an integer in Python?",
+        "c": "",
+        "o": [
+            "int(float())",
+            "float.int()",
+            "int(float)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert an integer to a float in Python?",
+        "c": "",
+        "o": [
+            "float(int())",
+            "int.float()",
+            "float(int)",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 5\nprint(x/y)",
+        "o": [
+            "2.0",
+            "2",
+            "0.5",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10; y = 3\nprint(x//y)",
+        "o": [
+            "3",
+            "3.0",
+            "3.3333",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to check if a variable is of a certain type in Python?",
+        "c": "",
+        "o": [
+            "isinstance(var, type)",
+            "type(var) == type",
+            "var.type() == type",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 3\nprint(x%y)",
+        "o": [
+            "1",
+            "3",
+            "0.3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a string to an integer in Python?",
+        "c": "",
+        "o": [
+            "int(string)",
+            "string.int()",
+            "int(string())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert an integer to a string in Python?",
+        "c": "",
+        "o": [
+            "str(integer)",
+            "integer.str()",
+            "str(integer())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a string to a float in Python?",
+        "c": "",
+        "o": [
+            "float(string)",
+            "string.float()",
+            "float(string())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = False\nprint(type(x+y))",
+        "o": [
+            "int",
+            "bool",
+            "float",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = False\nprint(x+y)",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid way to create a boolean variable in Python?",
+        "c": "",
+        "o": [
+            "x = 0",
+            "x = True",
+            "x = False",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"10\"\ny = 3\nprint(int(x)*y)",
+        "o": [
+            "30",
+            "101010",
+            "103",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"10\"\ny = 3\nprint(x*y)",
+        "o": [
+            "\"101010\"",
+            "10",
+            "30",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"10.5\"\ny = 3\nprint(float(x)*y)",
+        "o": [
+            "31.5",
+            "10.5",
+            "30.5",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"10.5\"\ny = 3\nprint(int(x)*y)",
+        "o": [
+            "ValueError",
+            "10.5",
+            "30.5",
+            "101010"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a boolean variable to an integer in Python?",
+        "c": "",
+        "o": [
+            "int(boolean)",
+            "boolean.int()",
+            "int(boolean())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert an integer to a boolean variable in Python?",
+        "c": "",
+        "o": [
+            "bool(integer)",
+            "integer.bool()",
+            "bool(integer())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a float to a boolean variable in Python?",
+        "c": "",
+        "o": [
+            "bool(float)",
+            "float.bool()",
+            "bool(float())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"True\"\ny = False\nprint(x+y)",
+        "o": [
+            "TypeError",
+            "TrueFalse",
+            "1",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a string to a boolean variable in Python?",
+        "c": "",
+        "o": [
+            "bool(string)",
+            "string.bool()",
+            "bool(string())",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"0\"\ny = False\nprint(int(x) == y)",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"True\"\ny = True\nprint(bool(x) == y)",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = \"0\"\ny = False\nprint(bool(x) == y)",
+        "o": [
+            "False",
+            "True",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 3\nprint(x//y)",
+        "o": [
+            "3",
+            "3.33333333333",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 3\nprint(x/y)",
+        "o": [
+            "3.33333333333",
+            "3.0",
+            "3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 3\nprint(x%y)",
+        "o": [
+            "1",
+            "3.33333333333",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = 3\nprint(x**y)",
+        "o": [
+            "1000",
+            "30",
+            "10000",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a float to an integer in Python?",
+        "c": "",
+        "o": [
+            "int(float)",
+            "float.int",
+            "float.int()",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(x//y)",
+        "o": [
+            "3.0",
+            "3.5",
+            "3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(int(x/y))",
+        "o": [
+            "3",
+            "3.5",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(x%y)",
+        "o": [
+            "1.5",
+            "1",
+            "0.5",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(round(x/y))",
+        "o": [
+            "4",
+            "3.5",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(x//float(y))",
+        "o": [
+            "3.0",
+            "3.5",
+            "3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(x/float(y))",
+        "o": [
+            "3.5",
+            "3.0",
+            "3",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(int(x/float(y)))",
+        "o": [
+            "3",
+            "3.5",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(round(x/float(y)))",
+        "o": [
+            "4",
+            "3.5",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10.5\ny = 3\nprint(int(round(x/float(y))))",
+        "o": [
+            "4",
+            "3.5",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to convert a string to a float in Python?",
+        "c": "",
+        "o": [
+            "float(\"3.14\")",
+            "str_to_float(\"3.14\")",
+            "int(\"3.14\")",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"123\"\nb = int(a)\nprint(b)",
+        "o": [
+            "123",
+            "\"123\"",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = float(a)\nprint(b)",
+        "o": [
+            "3.14",
+            "\"3.14\"",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"Hello\"\nb = int(a)\nprint(b)",
+        "o": [
+            "ValueError",
+            "\"Hello\"",
+            "0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = int(a)\nprint(b)",
+        "o": [
+            "ValueError",
+            "3",
+            "\"3\"",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3\nb = str(a)\nprint(b)",
+        "o": [
+            "\"3\"",
+            "3",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3.14\nb = str(a)\nprint(b)",
+        "o": [
+            "\"3.14\"",
+            "3.14",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3\nb = float(a)\nprint(b)",
+        "o": [
+            "3.0",
+            "3",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3\"\nb = float(a)\nprint(b)",
+        "o": [
+            "3.0",
+            "3",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = int(float(a))\nprint(b)",
+        "o": [
+            "3",
+            "3.0",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = float(int(a))\nprint(b)",
+        "o": [
+            "ValueError",
+            "3",
+            "3.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = True\nb = int(a)\nprint(b)",
+        "o": [
+            "1",
+            "True",
+            "False",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 1\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "1",
+            "False",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 0\nb = bool(a)\nprint(b)",
+        "o": [
+            "False",
+            "0",
+            "True",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "3",
+            "False",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"False\"\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"\"\nb = bool(a)\nprint(b)",
+        "o": [
+            "False",
+            "True",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"0\"\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "0",
+            "False",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = None\nb = bool(a)\nprint(b)",
+        "o": [
+            "False",
+            "None",
+            "True",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 0.0\nb = bool(a)\nprint(b)",
+        "o": [
+            "False",
+            "0",
+            "0.0",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 0.000000000000001\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "0.000000000000001",
+            "False",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = complex(2,3)\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 5\nb = float(a)\nprint(b)",
+        "o": [
+            "5.0",
+            "\"5.0\"",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = float(a)\nprint(b)",
+        "o": [
+            "3.14",
+            "\"3.14\"",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"abc\"\nb = float(a)\nprint(b)",
+        "o": [
+            "ValueError",
+            "TypeError",
+            "None",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3\"\nb = int(a)\nprint(b)",
+        "o": [
+            "3",
+            "\"3\"",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3.14\"\nb = int(a)\nprint(b)",
+        "o": [
+            "ValueError",
+            "3.14",
+            "\"3.14\"",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3.14;\nb = int(a)\nprint(b)",
+        "o": [
+            "3",
+            "3.0",
+            "TypeError",
+            "None of the options"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 3.99\nb = int(a)\nprint(b)",
+        "o": [
+            "3",
+            "4",
+            "3.0",
+            "4.0"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = \"3\"\nb = bool(a)\nprint(b)",
+        "o": [
+            "True",
+            "3",
+            "False",
+            "None of the options"
+        ]
+    }
+]
