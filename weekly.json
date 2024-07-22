@@ -60,7 +60,7 @@
     ]
   },
   {
-    "q": "\n<div class=\"small-txt\">\n    Requirements:<br/>\n    <ul>\n        <li>Find the maximum subarray sum.</li>\n        <li>Parameters:</li>\n        <ul>\n            <li>arr (list): List of integers.</li>\n        </ul>\n        <li>Returns:</li>\n        <ul>\n            <li>int: Maximum subarray sum.</li>\n        </ul>\n    </ul>\n</div>\n",
+    "q": "",
     "c": "\nA. def max_subarray_sum(arr):\n       max_sum = float('-inf')\n       current_sum = 0\n       for num in arr:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nB. def max_subarray_sum(arr):\n       max_sum = arr[0]\n       current_sum = arr[0]\n       for num in arr[1:]:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nC. def max_subarray_sum(arr):\n       max_sum = 0\n       current_sum = 0\n       for num in arr:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n\nD. def max_subarray_sum(arr):\n       max_sum = float('-inf')\n       current_sum = arr[0]\n       for num in arr[1:]:\n           current_sum = max(num, current_sum + num)\n           max_sum = max(max_sum, current_sum)\n       return max_sum\n",
     "o": [
       "Option A",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "q": "\n<div class=\"small-txt\">\n    Requirements:<br/>\n    <ul>\n        <li>Check if the given string is a palindrome.</li>\n        <li>Parameters:</li>\n        <ul>\n            <li>s (str): Input string.</li>\n        </ul>\n        <li>Returns:</li>\n        <ul>\n            <li>bool: True if the string is a palindrome, False otherwise.s</li>\n        </ul>\n    </ul>\n</div>\n",
+    "q": "",
     "c": "\nA. def is_palindrome(s):\n       cleaned_str = ''.join(char.lower() for char in s if char.isalnum())\n       return cleaned_str == cleaned_str[::-1]\n\nB. def is_palindrome(s):\n       return s == s[::-1]\n\nC. def is_palindrome(s):\n       cleaned_str = ''.join(char for char in s if char.isalpha())\n       return cleaned_str.lower() == cleaned_str[::-1].lower()\n\nD. def is_palindrome(s):\n       return ''.join(s.split()).lower() == ''.join(s.split())[::-1].lower()\n",
     "o": [
       "Option A",
