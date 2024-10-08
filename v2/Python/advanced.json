@@ -1,0 +1,1402 @@
+[
+    {
+        "q": "Which keyword is used to define a generator function in Python?\n",
+        "c": "",
+        "o": [
+            "yield",
+            "return",
+            "yield from",
+            "generator"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is an iterator in Python?\n",
+        "c": "",
+        "o": [
+            "all of the above",
+            "list",
+            "tuple",
+            "dictionary"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is not a built-in function for creating iterators in Python?\n",
+        "c": "",
+        "o": [
+            "list()",
+            "iter()",
+            "zip()",
+            "enumerate()"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is not a built-in function for iterating over an iterable in Python?\n",
+        "c": "",
+        "o": [
+            "yield",
+            "for loop",
+            "next()",
+            "map()"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef count():\n    i = 1\n    while i <= 5:\n        yield i\n        i += 1\n\nfor num in count():\n    print(num)",
+        "o": [
+            "1 2 3 4 5",
+            "[1, 2, 3, 4, 5]",
+            "(1, 2, 3, 4, 5)",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer_func(x):\n    def inner_func(y):\n        return x + y\n    return inner_func\n\nadd_five = outer_func(5)\nprint(add_five(3))",
+        "o": [
+            "8",
+            "5",
+            "3",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\n// Which of the following is a valid way to define a decorator in Python?\n// ",
+        "c": "",
+        "o": [
+            "def my_decorator(func): return lambda: func()",
+            "def my_decorator(func): return func",
+            "def my_decorator(func): return func()",
+            "def my_decorator(func): func()"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is the correct syntax for defining a property in Python?\n",
+        "c": "",
+        "o": [
+            "@property.setter",
+            "@property",
+            "@property()",
+            "@property.setter()"
+        ]
+    },
+    {
+        "q": "\nWhat is a regular expression in Python?\n",
+        "c": "",
+        "o": [
+            "A pattern that describes a set of strings.",
+            "A function that returns a set of strings.",
+            "A way to encode data in a string.",
+            "A way to decode data in a string."
+        ]
+    },
+    {
+        "q": "\nWhich module in Python is used for working with regular expressions?\n",
+        "c": "",
+        "o": [
+            "re",
+            "regex",
+            "reg",
+            "regular"
+        ]
+    },
+    {
+        "q": "\nWhat is the syntax for creating a regular expression object in Python?\n",
+        "c": "",
+        "o": [
+            "re.compile(pattern)",
+            "regex.compile(pattern)",
+            "reg.compile(pattern)",
+            "regular.compile(pattern)"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is a valid regular expression pattern in Python?\n",
+        "c": "",
+        "o": [
+            "All of the above",
+            "^[a-z]+$",
+            "[a-z]+",
+            "[A-Z][a-z]*"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'There are 123 apples and 456 bananas.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['123', '456']",
+            "['There', 'are', 'apples', 'and', 'bananas']",
+            "['a', 'p', 'p', 'l', 'e', 's', 'a', 'n', 'd', 'b', 'a', 'n', 'a', 'n', 'a', 's']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+) (\\w+)'\ntext = 'John Smith, 25 years old.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('John', 'Smith'), ('25', 'years')]",
+            "[('John', 'Smith', '25', 'years')]",
+            "['John Smith', '25 years']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)'\ntext = 'John Smith, John Johnson.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['John', 'Smith', 'John', 'Johnson']",
+            "['John']",
+            "['Smith', 'Johnson']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is a closure in Python?\n",
+        "c": "",
+        "o": [
+            "A function that has access to a variable from a surrounding function's scope.",
+            "A function that takes another function as an argument.",
+            "A function that returns another function.",
+            "A function that has access to a variable from a global scope."
+        ]
+    },
+    {
+        "q": "\nWhat is a decorator in Python?\n",
+        "c": "",
+        "o": [
+            "All of the above",
+            "A function that takes another function as an argument.",
+            "A function that returns another function.",
+            "A way to add functionality to an existing function without modifying its code."
+        ]
+    },
+    {
+        "q": "\nWhat is the syntax for applying a decorator to a function in Python?\n",
+        "c": "",
+        "o": [
+            "@decorator",
+            "@decorator(function)",
+            "decorator(function)",
+            "decorator"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef uppercase(func):\n    def wrapper(*args, **kwargs):\n        result = func(*args, **kwargs)\n        return result.upper()\n    return wrapper\n\n@uppercase\ndef say_hello(name):\n    return f'Hello, {name}!'\n\nprint(say_hello('John'))",
+        "o": [
+            "'HELLO, JOHN!'",
+            "'Hello, John!'",
+            "'Hello, JOHN!'",
+            "'HELLO, John!'"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef memoize(func):\n    memo = {}\n    def wrapper(*args):\n        if args in memo:\n            return memo[args]\n        result = func(*args)\n        memo[args] = result\n        return result\n    return wrapper\n\n@memoize\ndef fibonacci(n):\n    if n == 0 or n == 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\nprint(fibonacci(10))",
+        "o": [
+            "55",
+            "45",
+            "65",
+            "75"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef make_counter():\n    count = 0\n    def counter():\n        nonlocal count\n        count += 1\n        return count\n    return counter\n\nc1 = make_counter()\nc2 = make_counter()\n\nprint(c1())\nprint(c1())\nprint(c2())\nprint(c2())",
+        "o": [
+            "1, 2, 1, 2",
+            "1 2, 2, 3",
+            "1, 1, 1, 1",
+            "1, 1, 2, 2"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef make_adder(n):\n    def adder(x):\n        return n + x\n    return adder\n\nadd5 = make_adder(5)\nadd10 = make_adder(10)\n\nprint(add5(3))\nprint(add10(3))",
+        "o": [
+            "8, 13",
+            "3, 3",
+            "5, 10",
+            "15, 20"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nclass MyClass:\n    def __init__(self):\n        self._x = 0\n\n    @property\n    def x(self):\n        return self._x\n\n    @x.setter\n    def x(self, value):\n        if value < 0:\n            self._x = 0\n        elif value > 100:\n            self._x = 100\n        else:\n            self._x = value\n\nobj = MyClass()\nobj.x = 50\nprint(obj.x)\nobj.x = -10\nprint(obj.x)",
+        "o": [
+            "50, 0",
+            "50, 100",
+            "0, 0",
+            "0, 100"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport itertools\n\ndata = [1, 2, 3]\ncombinations = itertools.combinations(data, 2)\n\nfor combo in combinations:\n    print(combo)",
+        "o": [
+            "(1, 2), (1, 3), (2, 3)",
+            "(1, 2, 3)",
+            "(1,), (2,), (3,)",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport itertools\n\ndata = [1, 2, 3]\npermutations = itertools.permutations(data, 2)\n\nfor perm in permutations:\n    print(perm)",
+        "o": [
+            "(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)",
+            "(1, 2, 3)",
+            "(1,), (2,), (3,)",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nfor num in countdown(5):\n    print(num)",
+        "o": [
+            "5, 4, 3, 2, 1",
+            "1, 2, 3, 4, 5",
+            "1, 3, 5",
+            "5, 3, 1"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef add(a, b):\n    return a + b\n\ndata = [(1, 2), (3, 4), (5, 6)]\n\nresult = list(map(add, *data))\nprint(result)",
+        "o": [
+            "TypeError",
+            "[9, 12]",
+            "[(1, 3, 5), (2, 4, 6)]",
+            "[4, 7, 11]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = \"There are 10 types of people: those who understand binary and those who don't.\"\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['10']",
+            "['10', '2']",
+            "['1', '0', '2']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d+$'\ntext1 = '123'\ntext2 = '12a3'\n\nresult1 = re.match(pattern, text1)\nresult2 = re.match(pattern, text2)\n\nprint(result1)\nprint(result2)",
+        "o": [
+            "<re.Match object; span=(0, 3), match='123'>, None",
+            "<re.Match object>, None",
+            "<re.Match object at 0x...>, None",
+            "<re.Match object at 0x...>, <re.Match object at 0x...>"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d+$'\ntext1 = '123'\ntext2 = '12a3'\n\nresult1 = re.search(pattern, text1)\nresult2 = re.search(pattern, text2)\n\nprint(result1)\nprint(result2)",
+        "o": [
+            "<re.Match object; span=(0, 3), match='123'>, None",
+            "<re.Match object at 0x...>, <re.Match object at 0x...>",
+            "<re.Match object>, <re.Match object>",
+            "None, <re.Match object; span=(0, 3), match='123'>"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = \"There are 10 types of people: those who understand binary and those who don't.\"\n\nresult = re.sub(pattern, '42', text)\nprint(result)",
+        "o": [
+            "'There are 42 types of people: those who understand binary and those who don't.'",
+            "'There are 10 types of people: those who understand binary and those who don't.'",
+            "'There are 42 types of people: those who understand binary and 42 who don't.'",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)-good'\ntext = 'good-good-good-good-bad'\n\nresult = re.sub(pattern, r'hello', text)\nprint(result)",
+        "o": [
+            "'hello-hello-bad'",
+            "'hello-bad'",
+            "'good-hello-good-bad'",
+            "'hello-hello-hello-hello-bad'"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_decorator(func):\n    def wrapper():\n        print('Before function is called.')\n        func()\n        print('After function is called.')\n    return wrapper\n\n@my_decorator\ndef my_function():\n    print('Function is called.')\n\nmy_function()",
+        "o": [
+            "Before function is called. Function is called. After function is called.",
+            "Function is called. Before function is called. After function is called.",
+            "Before function is called. After function is called. Function is called.",
+            "Function is called."
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_decorator(func):\n    def wrapper():\n        print('Before function is called.')\n        func()\n        print('After function is called.')\n    return wrapper\n\n@my_decorator\ndef my_function():\n    print('Function is called.')\n\nprint(my_function.__name__)",
+        "o": [
+            "wrapper",
+            "my_function",
+            "Before function is called. Function is called. After function is called.",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "What is the output of the following code?",
+        "c": "\ndef my_decorator(func):\n    def wrapper():\n        print('Before function is called.')\n        func()\n        print('After function is called.')\n    return wrapper\n\n@my_decorator\ndef my_function():\n    print('Function is called.')\n\nprint(my_function.__name__)",
+        "o": [
+            "wrapper",
+            "my_function",
+            "Before function is called. Function is called. After function is called.",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_decorator(func):\n    def wrapper(*args, **kwargs):\n        print('Before function is called.')\n        result = func(*args, **kwargs)\n        print('After function is called.')\n        return result\n    return wrapper\n\n@my_decorator\ndef my_function(a, b):\n    return a + b\n\nprint(my_function(2, 3))",
+        "o": [
+            "Before function is called. After function is called. 5",
+            "5. Before function is called. After function is called.",
+            "Before function is called. 5. After function is called.",
+            "5"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nclass MyClass:\n    def __init__(self):\n        self.__x = None\n\n    @property\n    def x(self):\n        return self.__x\n\n    @x.setter\n    def x(self, value):\n        self.__x = value\n\nobj = MyClass()\nobj.x = 42\nprint(obj.x)",
+        "o": [
+            "42",
+            "None",
+            "AttributeError",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_generator():\n    yield 1\n    yield 2\n    yield 3\n\nfor i in my_generator():\n    print(i, end=' ')",
+        "o": [
+            "1 2 3",
+            "[1, 2, 3]",
+            "(1, 2, 3)",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_iterator():\n    yield 1\n    yield 2\n    yield 3\n\nit = my_iterator()\nprint(next(it))\nprint(next(it))\nprint(next(it))",
+        "o": [
+            "1 2 3",
+            "[1, 2, 3]",
+            "(1, 2, 3)",
+            "StopIteration"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_closure(x):\n    def inner(y):\n        return x + y\n    return inner\n\nadd_10 = my_closure(10)\nprint(add_10(5))",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef my_closure(x):\n    def inner(y):\n        return x + y\n    return inner\n\nadd_10 = my_closure(10)\nadd_20 = my_closure(20)\n\nprint(add_10(5))\nprint(add_20(5))",
+        "o": [
+            "15, 25",
+            "10, 20",
+            "5, 10",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'abc123def456ghi789'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['123', '456', '789']",
+            "[]",
+            "['abc', 'def', 'ghi']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\w+'\ntext = 'hello world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hello']",
+            "['world']",
+            "[]",
+            "['hello', 'world']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hell', 'worl', 'toda']",
+            "['how', 'you']",
+            "[]",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.sub(pattern, '****', text)\nprint(result)",
+        "o": [
+            "'****o ****d how are you ****y'",
+            "'hello world how are you today'",
+            "'hello **** how are you ****'",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d{3}-\\d{2}-\\d{4}'\ntext = 'My SSN is 123-45-6789.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['123-45-6789']",
+            "['My SSN is 123-45-6789.']",
+            "[]",
+            "['123456789']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{5}$'\ntext = '12345'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['12345']",
+            "[]",
+            "['12345",
+            "['"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<first>\\w+) (?P<last>\\w+)'\ntext = 'John Doe'\n\nresult = re.search(pattern, text)\nprint(result.group('first'))",
+        "o": [
+            "John",
+            "Doe",
+            "John Doe",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<first>\\w+) (?P<last>\\w+)'\ntext = 'John Doe'\n\nresult = re.search(pattern, text)\nprint(result.group('last'))",
+        "o": [
+            "Doe",
+            "John",
+            "John Doe",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<first>\\w+) (?P<last>\\w+)'\ntext = 'John Doe'\n\nresult = re.search(pattern, text)\nprint(result.group(1))",
+        "o": [
+            "John",
+            "Doe",
+            "John Doe",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+) (hello)'\ntext = 'hello hello world world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('hello', 'hello')]",
+            "[('hello', ''), ('world', '')]",
+            "[('hello', 'world')]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+.)'\ntext = 'hello world world hello'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hello ', 'world ', 'world ', 'hello']",
+            "[('hello', 'world')]",
+            "[]",
+            "[('hello', 'hello'), ('world', 'world')]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^(\\d{3})-(\\d{2})-(\\d{4})$'\ntext = '123-45-6789'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('123', '45', '6789')]",
+            "['123-45-6789']",
+            "[]",
+            "['123456789']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\d{3})-(\\d{2})-(\\d{4})'\ntext = 'My SSN is 123-45-6789.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('123', '45', '6789')]",
+            "['123-45-6789']",
+            "[]",
+            "['123456789']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.finditer(pattern, text)\n\nfor match in result:\n    print(match.group(), match.start())",
+        "o": [
+            "hell 0, worl 6, toda 24",
+            "how 6, you 14",
+            "[]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.finditer(pattern, text)\n\nfor match in result:\n    print(match.group(), match.end())",
+        "o": [
+            "hell 4 worl 10 toda 28",
+            "how 9, you 17",
+            "[]",
+            "hello 5, world 11, today 25"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.finditer(pattern, text)\n\nfor match in result:\n    print(match.group(), match.span())",
+        "o": [
+            "hell (0, 4) worl (6, 10) toda (24, 28)",
+            "how (6, 9), you (14, 17)",
+            "[]",
+            "hello (0, 5), world (6, 11), today (20, 25)"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'hello world how are you today'\n\nresult = re.split(pattern, text)\nprint(result)",
+        "o": [
+            "['', 'o ', 'd how are you ', 'y']",
+            "['', ' ', ' ', ' are ', ' ', '']",
+            "[]",
+            "['hello world how', 'you', 'today']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'Today is the 30th of March, 2023.'\n\nresult = re.sub(pattern, '', text)\nprint(result)",
+        "o": [
+            "Today is the th of March, .",
+            "Today is the of March, .",
+            "Today is the 30th of March, .",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'Today is the 30th of March, 2023.'\n\nresult = re.sub(pattern, '31', text)\nprint(result)",
+        "o": [
+            "Today is the 31th of March, 31.",
+            "Today is the 31th of March, 2023.",
+            "Today is the 31th of March, .",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hello', 'world']",
+            "[('hello',), ('world',)]",
+            "[('hello', 'world')]",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.sub(pattern, r'Hi!', text)\nprint(result)",
+        "o": [
+            "Hi! Hi!",
+            "Hi! Hi",
+            "hello Hi!",
+            "Hi! World"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.sub(pattern, r'!', text)\nprint(result)",
+        "o": [
+            "! !",
+            "hello! world!",
+            "hello world!",
+            "hello!world!"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.sub(pattern, r'☺!☺', text)\nprint(result)",
+        "o": [
+            "Hi!Hello Hi!Hello",
+            "Hello!Hi!Hello!world",
+            "hello!world!hello world!world",
+            "hello!hello world!world"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)\\s(\\w+)'\ntext = 'hello world'\n\nresult = re.sub(pattern, r'world hello', text)\nprint(result)",
+        "o": [
+            "world hello",
+            "worldhello",
+            "hello world",
+            "world hello hello world"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'cat'\ntext = 'The cat is a domestic animal, but wild cats also exist.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['cat', 'cat']",
+            "['The cat is a']",
+            "['cat', 'cats']",
+            "['cat']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'cat(s)'\ntext = 'The cat is a domestic animal, but wild cats also exist.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['s']",
+            "['cat', 's', 'cats']",
+            "['s', 's']",
+            "['cat', 'cats']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w)(\\w)'\ntext = 'hello world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('h', 'e'), ('l', 'l'), ('w', 'o'), ('r', 'l')]",
+            "[('h', 'e'), ('w', 'o')]",
+            "[('h', 'e'), ('l', 'l'), ('w', 'o')]",
+            "[('h', 'e'), ('l', 'o')]"
+        ]
+    },
+    {
+        "q": "What is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w)(\\w)\\w'\ntext = 'hello world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('h', 'e'), ('w', 'o')]",
+            "[('he', 'l'), ('wo', 'r')]",
+            "[('h', 'e'), ('w', 'o')]",
+            "[('h', 'e'), ('l', 'o')]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+\\s+world'\ntext = 'hello hello world world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hello world']",
+            "['hello world']",
+            "['hello', 'world']",
+            "['hello hello', 'world world']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\d{3})-(\\d{3})-(\\d{4})'\ntext = 'My phone number is 123-456-7890.'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('123', '456', '7890')]",
+            "[('123-', '456-', '7890')]",
+            "['123-456-7890']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d'\ntext = 'My phone number is 123-456-7890.'\n\nresult = re.search(pattern, text)\nprint(result.group())",
+        "o": [
+            "'1'",
+            "'123'",
+            "'1234567890'",
+            "1234567"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{3}'\ntext = 'hello world how are you today'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hel', 'wor', 'how', 'are', 'you', 'tod']",
+            "['how', 'are', 'you']",
+            "['how', 'are']",
+            "['how', 'you']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['hello', 'world']",
+            "[('hello',), ('world',)]",
+            "[('h', 'e', 'l', 'l', 'o'), ('w', 'o', 'r', 'l', 'd')]",
+            "[('hello',)]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)(\\W+)'\ntext = 'hello! hello world! world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('hello', '! '), ('hello', ' '), ('world', '! ')]",
+            "[('hello', '! '), ('world', '!'), ('world', '')]",
+            "[('hello', '!'), ('world', '!'), ('world', '')]",
+            "[('hello', '! '), ('world', '! ')]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'cat(s)'\ntext = 'The cat is a domestic animal, but wild cats also exist.'\n\nresult = re.sub(pattern, 'dogs', text)\nprint(result)",
+        "o": [
+            "The dog is a domestic animal, but wild dogs also exist.",
+            "The dog is a domestic animal, but wild dogs also existes.",
+            "The dog is a domestic animal, but wild dogs also existss.",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)(\\W+)(\\w+)'\ntext = 'hello! world'\n\nresult = re.search(pattern, text)\nprint(result.groups())",
+        "o": [
+            "('hello', '! ', 'world')",
+            "('hello', 'world')",
+            "('hello', '! ', '')",
+            "('hello', '! ', 'hello')"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)(\\W+)(\\w+)'\ntext = 'hello! world'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[('hello', '! ', 'world')]",
+            "[('hello', '!', 'world')]",
+            "[('hello', '! '), ('world', '')]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)(\\W+)(\\w+)'\ntext = 'hello! world'\n\nresult = re.split(pattern, text)\nprint(result)",
+        "o": [
+            "['', 'hello', '! ', 'world', '']",
+            "['hello', '! ', 'world', '']",
+            "['hello', '! ', 'world']",
+            "['hello', '!', 'world', '']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+)'\ntext = 'hello world'\n\nresult = re.sub(pattern, lambda x: x.group()[::-1], text)\nprint(result)",
+        "o": [
+            "olleh dlrow",
+            "hello world",
+            "olohe dlrow",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.subn(pattern, lambda x: x.group()[::-1], text)\nprint(result)",
+        "o": [
+            "('olleh dlrow', 2)",
+            "('olleh world', 1)",
+            "('hello world', 2)",
+            "('hello world', 1)"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.subn(pattern, lambda x: x.group()[::-1], text, count=1)\nprint(result)",
+        "o": [
+            "('olleh dlrow', 1)",
+            "('olleh world', 1)",
+            "('hello world', 2)",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<first>\\w+)\\s(?P<last>\\w+)'\ntext = 'John Smith'\n\nresult = re.search(pattern, text)\nprint(result.groupdict())",
+        "o": [
+            "{'first': 'John', 'last': 'Smith'}",
+            "{'John': 'first', 'Smith': 'last'}",
+            "{'first': 'Smith', 'last': 'John'}",
+            "{'John': 'Smith'}"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<first>\\w+)\\s(?P<last>\\w+)'\ntext = 'John Smith'\n\nresult = re.sub(pattern, '\\g<last>, \\g<first>', text)\nprint(result)",
+        "o": [
+            "Smith, John",
+            "John, Smith",
+            "Smith,John",
+            "Smith"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w+),\\s(\\w+)'\ntext = 'Smith, John'\n\nresult = re.sub(pattern, '\\g<2> \\g<1>', text)\nprint(result)",
+        "o": [
+            "John Smith",
+            "Smith, John",
+            "Smith John",
+            "John"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.findall(pattern, text, flags=re.IGNORECASE)\nprint(result)",
+        "o": [
+            "['hello', 'world']",
+            "['Hello', 'World']",
+            "['hello', 'world', 'Hello', 'World']",
+            "['hello', 'world', 'Hello']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{4}$'\ntext = '2022'\n\nresult = re.match(pattern, text)\nprint(result)",
+        "o": [
+            "<re.Match object; span=(0, 4), match='2022'>",
+            "<re.Match object; span=(0, 3), match='202'>",
+            "<re.Match object; span=(0, 5), match=' 2022'>",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{4}$'\ntext = '2022 2023'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "[]",
+            "['2022', '2023']",
+            "['2022']",
+            "['2023']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{4}$'\ntext = '2022'\n\nresult = re.findall(pattern, text)\nprint(result)",
+        "o": [
+            "['2022']",
+            "<re.Match object; span=(0, 4), match='2022'>",
+            "[]",
+            "ValueError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w+'\ntext = 'hello world'\n\nresult = re.finditer(pattern, text)\n\nfor match in result:\n    print(match.group())",
+        "o": [
+            "hello world",
+            "hello",
+            "hello, world",
+            "hello and world"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{2}\\s\\w{3}\\s\\d{4}$'\ntext = '30 Oct 2022'\n\nresult = re.search(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match found: 30 Oct 2022",
+            "Match found: 30-Oct-2022",
+            "Match found: 30_Oct_2022",
+            "Match not found"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{2}\\s\\w{3}\\s\\d{4}$'\ntext = '30-10-2022'\n\nresult = re.search(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match not found",
+            "Match found: 30 Oct 2022",
+            "Match found: 30-10-2022",
+            "Match found: 30102022"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{2}\\s\\w{3}\\s\\d{4}$'\ntext = '30 October 2022'\n\nresult = re.search(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match not found",
+            "Match found: 30 Oct 2022",
+            "Match found: 30_Oct_2022",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'hello123world456'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "[123, 456]",
+            "[1, 2, 3, 4, 5, 6]",
+            "['hello', 'world']",
+            "['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'[a-z]+'\ntext = 'Hello World!'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['ello', 'orld']",
+            "['Hello', 'World']",
+            "['H', 'W']",
+            "['Hello', 'World', '']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = '123abc456def789'\n\nresult = re.split(pattern, text)\n\nprint(result)",
+        "o": [
+            "['', 'abc', 'def', '']",
+            "['123', '456', '789']",
+            "['1', '2', '3', 'abc', '4', '5', '6', 'def', '7', '8', '9']",
+            "['123abc456def789']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\w+@\\w+\\.\\w{2,3}$'\ntext = 'hello.world.gmail.com'\n\nresult = re.match(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match not found",
+            "Match found: hello.world.gmail.com",
+            "Match found: hello.world",
+            "Match found: None"
+        ]
+    },
+    {
+        "q": "What is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{4}'\ntext = 'Python is a powerful programming language.'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['Pyth', 'powe', 'rful', 'prog', 'ramm', 'lang', 'uage']",
+            "['Python', 'is', 'powerful', 'programming', 'language']",
+            "['is', 'a']",
+            "['is', 'a', 'language']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{3,}'\ntext = 'Python is a powerful programming language.'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['Python', 'powerful', 'programming', 'language']",
+            "['is', 'the']",
+            "['is', 'pow', 'pro', 'lan']",
+            "['is', 'a']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{3}-\\d{2}-\\d{4}$'\ntext = '123-45-6789'\n\nresult = re.match(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match found: 123-45-6789",
+            "Match found: 123456789",
+            "Match not found",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{3}-\\d{2}-\\d{4}$'\ntext = '123-456-7890'\n\nresult = re.match(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match not found",
+            "Match found: 123-456-7890",
+            "Match found: 1234567890",
+            "Match found: None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{3}-\\d{2}-\\d{4}$'\ntext = '123-45-6789 is my SSN'\n\nresult = re.search(pattern, text)\n\nif result:\n    print('Match found:', result.group())\nelse:\n    print('Match not found')",
+        "o": [
+            "Match not found",
+            "Match found: 123456789",
+            "Match found: 123-45-6789",
+            "Match found: is my SSN"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'^\\d{3}-\\d{2}-\\d{4}$'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "[]",
+            "['234567890', '1234567890']",
+            "['234-56-7890', '123-456-7890']",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['234', '56', '7890', '123', '456', '7890']",
+            "['234-56-7890', '123-456-7890']",
+            "['SSN', 'and', 'phone', 'number', 'is']",
+            "['234', '56', '7890', '123']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.split(pattern, text)\n\nprint(result)",
+        "o": [
+            "['My SSN is ', '-', '-', ' and my phone number is ', '-', '-', '']",
+            "['My SSN is', '234', '56', '7890', 'and', 'my', 'phone', 'number', 'is', '123', '456', '7890']",
+            "['My SSN is 234-56-7890 and my phone number is 123-456-7890']",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.sub(pattern, 'X', text)\n\nprint(result)",
+        "o": [
+            "'My SSN is X-X-X and my phone number is X-X-X'",
+            "'My SSN is XXX-XX-XXXX and my phone number is XXX-XXX-XXXX'",
+            "'My SSN is 234-56-7890 and my phone number is 123-456-7890'",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.sub(pattern, 'X', text, 2)\n\nprint(result)",
+        "o": [
+            "'My SSN is X-X-7890 and my phone number is 123-456-7890'",
+            "'My SSN is XXX-XX-7890 and my phone number is 123-456-7890'",
+            "'My SSN is XXX-XX-XXXX and my phone number is 123-456-7890'",
+            "'My SSN is and my phone number is '"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\w{5}'\ntext = 'The quick brown fox jumps over the lazy dog'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['quick', 'brown', 'jumps']",
+            "['quick', 'brown']",
+            "['quick', 'brown', 'jumps', 'lazy']",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(\\w)'\ntext = 'bookkeeper'\n\nresult = re.findall(pattern, text)\n\nprint(result)",
+        "o": [
+            "['b', 'o', 'o', 'k', 'k', 'e', 'e', 'p', 'e', 'r']",
+            "['bb', 'kk']",
+            "['book', 'keeper']",
+            "['oo', 'ee']"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?<=\\d)(?=(\\d\\d\\d))'\ntext = '1000000 10000000 100000000'\n\nresult = re.sub(pattern, ',', text)\n\nprint(result)",
+        "o": [
+            "'1,0,0,0,000 1,0,0,0,0,000 1,0,0,0,0,0,000'",
+            "'1,000000 10,000000 100,000000'",
+            "'1000000, 10000000, 100000000'",
+            "1,000,000 10,000,000 100,000,000"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<year>\\d{4})-(?P<month>\\d{2})-(?P<day>\\d{2})'\ntext = 'Today is 2022-04-01'\n\nresult = re.search(pattern, text)\n\nprint(result.group('year'))",
+        "o": [
+            "'2022'",
+            "'04'",
+            "'01'",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.search(pattern, text)\n\nprint(result.span())",
+        "o": [
+            "(10, 13)",
+            "(11, 13)",
+            "(23, 25)",
+            "(12, 15)"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'\\d+'\ntext = 'My SSN is 234-56-7890 and my phone number is 123-456-7890'\n\nresult = re.search(pattern, text)\n\nprint(result.group())",
+        "o": [
+            "'234'",
+            "'56'",
+            "'7890'",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\npattern = r'(?P<year>\\d{4})-(?P<month>\\d{2})-(?P<day>\\d{2})'\ntext = 'Today is 2022-04-01'\n\nresult = re.search(pattern, text)\n\nprint(result.groupdict())",
+        "o": [
+            "{'year': '2022', 'month': '04', 'day': '01'}",
+            "{'Today': '2022', 'is': '04', '01': None}",
+            "{'2022': '04', '01': None}",
+            "{'year': '', 'month': '', 'day': ''}"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nclass MyClass:\n    def __init__(self, x):\n        self.__x = x\n\n    @property\n    def x(self):\n        return self.__x\n\n    @x.setter\n    def x(self, value):\n        if value < 0:\n            raise ValueError('Value cannot be negative')\n        self.__x = value\n\nobj = MyClass(5)\nobj.x = -10\nprint(obj.x)",
+        "o": [
+            "ValueError: Value cannot be negative",
+            "5",
+            "10",
+            "-5"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def __str__(self):\n        return 'Name: {}, Age: {}'.format(self.name, self.age)\n\nclass Student(Person):\n    def __init__(self, name, age, grade):\n        super().__init__(name, age)\n        self.grade = grade\n\n    def __str__(self):\n        return 'Name: {}, Age: {}, Grade: {}'.format(self.name, self.age, self.grade)\n\ns = Student('John', 18, 'A')\nprint(s)",
+        "o": [
+            "'Name: John, Age: 18, Grade: A'",
+            "'Name: John, Age: 18'",
+            "'Name: John, Grade: A'",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nclass A:\n    def __init__(self, x):\n        self.x = x\n\nclass B(A):\n    def __init__(self, x, y):\n        super().__init__(x)\n        self.y = y\n\na = A(5)\nb = B(10, 20)\n\nprint(a.x)\nprint(b.x)\nprint(b.y)",
+        "o": [
+            "5, 10, 20",
+            "5, 20, 10",
+            "10, 20, 5",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef func(a, b=10, c=20):\n    print(a, b, c)\n\nfunc(1)\nfunc(1, 2)\nfunc(1, c=30)",
+        "o": [
+            "1, 10, 20; 1, 2, 20; 1, 10, 30",
+            "1, 10, 20; 1, 2, 20; 1, 30, 20",
+            "1, 2, 30; 1, 2, 20; 1, 30, 20",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef func(a, b, *args):\n    print(a, b, args)\n\nfunc(1, 2, 3, 4, 5)",
+        "o": [
+            "1, 2, (3, 4, 5)",
+            "1, 2, [3, 4, 5]",
+            "1, 2, {3, 4, 5}",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef func(a, b, *args, **kwargs):\n    print(a, b, args, kwargs)\n\nfunc(1, 2, 3, 4, 5, x=6, y=7, z=8)",
+        "o": [
+            "1, 2, (3, 4, 5), {'x': 6, 'y': 7, 'z': 8}",
+            "1, 2, [3, 4, 5], {'x': 6, 'y': 7, 'z': 8}",
+            "1, 2, {3, 4, 5}, {'x': 6, 'y': 7, 'z': 8}",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer():\n    x = 1\n    def inner():\n        x = 2\n        print(x)\n    inner()\n    print(x)\n\nouter()",
+        "o": [
+            "2, 1",
+            "1, 2",
+            "2, 2",
+            "1, 1"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer():\n    x = 1\n    def inner():\n        nonlocal x\n        x = 2\n        print(x)\n    inner()\n    print(x)\n\nouter()",
+        "o": [
+            "2, 2",
+            "1, 2",
+            "2, 1",
+            "1, 1"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer():\n    x = 1\n    def inner():\n        nonlocal x\n        x += 1\n        print(x)\n    inner()\n    print(x)\n\nouter()",
+        "o": [
+            "2, 2",
+            "1, 2",
+            "2, 1",
+            "1, 1"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer():\n    x = 1\n    def inner():\n        global x\n        x = 2\n        print(x)\n    inner()\n    print(x)\n\nouter()\nprint(x)",
+        "o": [
+            "2, 1, 2",
+            "1, 2, 2",
+            "2, 2, 2",
+            "SyntaxError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef add(x, y):\n    return x + y\n\nresult = add(2, 3)\nprint(result)",
+        "o": [
+            "5",
+            "add",
+            "(2, 3)",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef func():\n    print('Hello, world!')\n\nresult = func()\nprint(result)",
+        "o": [
+            "'Hello, world!', None",
+            "'Hello, world!', func",
+            "None, 'Hello, world!'",
+            "None, None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef outer():\n    def inner():\n        print('Hello, world!')\n    return inner\n\nresult = outer()\nresult()",
+        "o": [
+            "'Hello, world!'",
+            "outer",
+            "inner",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquares = map(lambda x: x ** 2, numbers)\nprint(squares)",
+        "o": [
+            "<map object at 0x7f97b15c3e50>",
+            "[1, 4, 9, 16, 25]",
+            "[2, 4, 6, 8, 10]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquares = map(lambda x: x ** 2, numbers)\nprint(list(squares))",
+        "o": [
+            "[1, 4, 9, 16, 25]",
+            "<map object at 0x7f97b15c3e50>",
+            "[2, 4, 6, 8, 10]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquares = [x ** 2 for x in numbers]\nprint(squares)",
+        "o": [
+            "[1, 4, 9, 16, 25]",
+            "<map object at 0x7f97b15c3e50>",
+            "[2, 4, 6, 8, 10]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquares = (x ** 2 for x in numbers)\nprint(squares)",
+        "o": [
+            "<generator object <genexpr> at 0x7f97b15c3e50>",
+            "[1, 4, 9, 16, 25]",
+            "[2, 4, 6, 8, 10]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nnumbers = [1, 2, 3, 4, 5]\nsquares = (x ** 2 for x in numbers)\nprint(list(squares))",
+        "o": [
+            "[1, 4, 9, 16, 25]",
+            "<generator object <genexpr> at 0x7f97b15c3e50>",
+            "[2, 4, 6, 8, 10]",
+            "None"
+        ]
+    },
+    {
+        "q": "\nWhat is the purpose of the yield keyword in Python?\n",
+        "c": "",
+        "o": [
+            "It generates a sequence of values to be returned by a function.",
+            "It returns a value from a function.",
+            "It defines a new variable.",
+            "It creates a new instance of a class."
+        ]
+    },
+    {
+        "q": "\nWhich of the following is not a built-in Python decorator?\n",
+        "c": "",
+        "o": [
+            "@final",
+            "@staticmethod",
+            "@property",
+            "@abstractmethod"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\ntext = \"The quick brown fox jumps over the lazy dog\"\npattern = r\"\\w{5}\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+        "o": [
+            "[\"quick\", \"brown\", \"jumps\"]",
+            "[\"quick\", \"brown\", \"fox\", \"jumps\", \"over\", \"lazy\"]",
+            "[\"quick\", \"brown\", \"fox\", \"jumps\", \"over\", \"lazy\", \"dog\"]",
+            "[\"quick\", \"brown\", \"jumps\", \"lazy\"]"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\nimport re\n\ntext = \"The quick brown fox jumps over the lazy dog\"\npattern = r\"\\w{4}\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+        "o": [
+            "[\"quic\", \"brow\", \"jump\", \"over\", \"lazy\"]",
+            "[\"quick\", \"brown\", \"jumps\", \"over\", \"lazy\"]",
+            "[\"quick\", \"brown\", \"fox\", \"jumps\", \"over\", \"lazy\", \"dog\"]",
+            "[\"quick\", \"brown\", \"jumps\", \"lazy\"]"
+        ]
+    },
+    {
+        "q": "\nWhich of the following is not a built-in Python generator function?\n",
+        "c": "",
+        "o": [
+            "map",
+            "range",
+            "enumerate",
+            "zip"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\nf = fibonacci()\nfor i in range(10):\n    print(next(f), end=\", \")",
+        "o": [
+            "0, 1, 1, 2, 3, 5, 8, 13, 21, 34",
+            "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+            "1, 1, 2, 3, 5, 8, 13, 21, 34, 55",
+            "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(3, 5)\nprint(result)",
+        "o": [
+            "8",
+            "3 + 5",
+            "\"8\"",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "\nWhat is the output of the following code?",
+        "c": "\ndef multiply_by(factor):\n    def multiply(number):\n        return number * factor\n    return multiply\n\ndouble = multiply_by(2)\ntriple = multiply_by(3)\nprint(double(5), triple(5))",
+        "o": [
+            "10, 15",
+            "15, 10",
+            "25, 15",
+            "10, 25"
+        ]
+    }
+]

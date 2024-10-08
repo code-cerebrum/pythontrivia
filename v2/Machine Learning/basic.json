@@ -1,0 +1,22 @@
+[
+    {
+        "q": "ML Django1?",
+        "c": "",
+        "o": [
+            "ML Ans",
+            "ML option1",
+            "ML option2",
+            "ML option3"
+        ]
+    },
+    {
+        "q": "ML Django2?",
+        "c": "",
+        "o": [
+            "ML ans2",
+            "ML IOption1 2",
+            "ML option2 2",
+            "ML option3 2"
+        ]
+    }
+]

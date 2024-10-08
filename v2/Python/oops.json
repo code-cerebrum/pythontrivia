@@ -1,0 +1,722 @@
+[
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\nobj.display()",
+    "o": [
+      "10 20",
+      "10",
+      "20",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self):\n        self.b = 2\n\n    def display(self):\n        print(self.b)\n\nobj = B()\nobj.display()",
+    "o": [
+      "2",
+      "1",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.a)",
+    "o": [
+      "10",
+      "20",
+      "Error",
+      "30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.b)",
+    "o": [
+      "20",
+      "10",
+      "Error",
+      "30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __add__(self, other):\n        return self.a + other.a\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1 + obj2)",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "40"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        if(self.a<other.a):\n            return True\n        else:\n            return False\n\nobj1 = A(10)\nobj2 = A(20)\nif(obj1<obj2):\n    print(\"obj1 is less than obj2\")\nelse:\n    print(\"obj1 is greater than or equal to obj2\")",
+    "o": [
+      "obj1 is less than obj2",
+      "obj1 is greater than or equal to obj2",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\nobj.display()",
+    "o": [
+      "10 20",
+      "10",
+      "20",
+      "1020"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj1 = A(10)\nobj2 = B(20, 30)\nobj1.display()\nobj2.display()",
+    "o": [
+      "AttributeError",
+      "10, 20",
+      "20, 30",
+      "10, 30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nobj = A(10)\nprint(obj)",
+    "o": [
+      "10",
+      "A object",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1, obj2)",
+    "o": [
+      "10 20",
+      "A object, A object",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1 + obj2)",
+    "o": [
+      "30",
+      "A object",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\n    def __lt__(self, other):\n        if(self.a<other.a):\n            return True\n        else:\n            return False\n\nobj1 = A(10)\nobj2 = A(20)\nif(obj1<obj2):\n    print(\"obj1 is less than obj2\")\nelse:\n    print(\"obj1 is greater than or equal to obj2\")",
+    "o": [
+      "obj1 is less than obj2",
+      "obj1 is greater than or equal to obj2",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B:\n    def __init__(self, b):\n        self.b = b\n\n    def __str__(self):\n        return str(self.b)\n\n    def __add__(self, other):\n        return self.b + other.b\n\nobj1 = A(10)\nobj2 = B(20)\nprint(obj1 + obj2)",
+    "o": [
+      "TypeError",
+      "30",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __str__(self):\n        return A.__str__(self) + ' ' + str(self.b)\n\nobj = B(10, 20)\nprint(obj)",
+    "o": [
+      "10 20",
+      "B object",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __str__(self):\n        return A.__str__(self) + ' ' + str(self.b)\n\nclass C(B):\n    def __init__(self, a, b, c):\n        B.__init__(self, a, b)\n        self.c = c\n\n    def __str__(self):\n        return B.__str__(self) + ' ' + str(self.c)\n\nobj = C(10, 20, 30)\nprint(obj)",
+    "o": [
+      "10 20 30",
+      "C object",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj1 = A(10)\nobj2 = B(20, 30)\nobj1.display()\nobj2.display()",
+    "o": [
+      "10, 20 30",
+      "20, 30",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\ndef show(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(20, 30)\nshow(obj1)\nshow(obj2)",
+    "o": [
+      "10, 20 30",
+      "20, 30",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        return self.a < other.a\n\nclass B:\n    def __init__(self, b):\n        self.b = b\n\n    def __lt__(self, other):\n        return self.b < other.b\n\nobj1 = A(10)\nobj2 = A(20)\nobj3 = B(10)\nobj4 = B(20)\n\nprint(obj1 < obj2)\nprint(obj3 < obj4)",
+    "o": [
+      "True True",
+      "True False",
+      "False True",
+      "False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        return self.a < other.a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __lt__(self, other):\n        return self.b < other.b\n\nobj1 = A(10)\nobj2 = A(20)\nobj3 = B(10, 30)\nobj4 = B(20, 20)\n\nprint(obj1 < obj2)\nprint(obj3 < obj4)",
+    "o": [
+      "True False",
+      "True True",
+      "False True",
+      "False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.a, obj.b)",
+    "o": [
+      "10 20",
+      "10",
+      "20",
+      "1020"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj = C(10, 20, 30)\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "10 20 30",
+      "[10, 20, 30]",
+      "102030",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj = C(10, 20, 30)\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
+    "o": [
+      "True True True",
+      "True False True",
+      "False False True",
+      "False False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def __str__(self):\n        return str(self.a) + \" \" + str(self.b) + \" \" + str(self.c)\n\nobj = C(10, 20, 30)\nprint(obj)",
+    "o": [
+      "\"10 20 30\"",
+      "102030",
+      "[10, 20, 30]",
+      "{10, 20, 30}"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def __repr__(self):\n        return str(self.a) + \" \" + str(self.b) + \" \" + str(self.c)\n\nobj = C(5, 7, 9)\nprint(obj)",
+    "o": [
+      "5 7 9",
+      "[5, 7, 9]",
+      "{5, 7, 9}",
+      "\"579\""
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(isinstance(obj1, A))\nprint(isinstance(obj1, B))\nprint(isinstance(obj1, C))\n\nprint(isinstance(obj2, A))\nprint(isinstance(obj2, B))\nprint(isinstance(obj2, C))\n\nprint(isinstance(obj3, A))\nprint(isinstance(obj3, B))\nprint(isinstance(obj3, C))",
+    "o": [
+      "True False False True True False True True True",
+      "True True False True True True False False True",
+      "True False False True True True False False True",
+      "True False False True True True True True True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfun(obj1)\nfun(obj2)\nfun(obj3)",
+    "o": [
+      "A B C",
+      "A A A",
+      "B B C",
+      "A B B"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfor obj in [obj1, obj2, obj3]:\n    fun(obj)",
+    "o": [
+      "A B C",
+      "A A A",
+      "B B C",
+      "A B B"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
+    "o": [
+      "True True True",
+      "True True False",
+      "True False True",
+      "False False True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfor obj in [obj1, obj2, obj3]:\n    fun(obj)",
+    "o": [
+      "A B C",
+      "A A A",
+      "B B C",
+      "A B B"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
+    "o": [
+      "True True True",
+      "True True False",
+      "True False True",
+      "False False True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nobj1.display()\nobj2.display()\nobj3.display()",
+    "o": [
+      "A B C",
+      "A A A",
+      "B B C",
+      "A B B"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(isinstance(obj1, C))\nprint(isinstance(obj2, A))\nprint(isinstance(obj3, B))",
+    "o": [
+      "False True True",
+      "True False True",
+      "False False False",
+      "False True False"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = B(10, 20)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
+    "o": [
+      "True True False",
+      "False True False",
+      "False True True",
+      "True False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
+    "o": [
+      "True True True",
+      "True True False",
+      "True False True",
+      "False False True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(obj1.a, obj2.a, obj2.b, obj3.a, obj3.b, obj3.c)",
+    "o": [
+      "10 10 20 10 20 30",
+      "AttributeError: 'B' object has no attribute 'c'",
+      "10 None 20 10",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj = C(10, 20, 30)\n\nobj.display()",
+    "o": [
+      "10 20 30",
+      "None None None",
+      "AttributeError: 'C' object has no attribute 'display'",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj = C(10, 20, 30)\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "10 20 30",
+      "None None None",
+      "AttributeError: 'C' object has no attribute 'display'",
+      "TypeError: display() takes 0 positional arguments but 1 was given"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(obj1.a, obj2.a, obj2.b, obj3.a, obj3.b, obj3.c)",
+    "o": [
+      "10 10 20 10 20 30",
+      "10 None 20 10 None 30",
+      "10 None 20 10 20 30",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nobj1.display()\nobj2.display()\nobj3.display()",
+    "o": [
+      "10, 10, 20, 10, 20, 30",
+      "10, 20, 30, 10, 20, 30, 10, 20, 30",
+      "10, None, None, 10, 20, None, 10, 20, 30",
+      "10, None, None, 10, 20, 30, 10, 20, 30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        B.__init__(self, a, b)\n        C.__init__(self, a, c)\n        self.d = d\n\n    def display(self):\n        print(self.a, self.b, self.c, self.d)\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
+    "o": [
+      "TypeError: C.__init__() missing 1 required positional argument: 'c'",
+      "10 20 30 40",
+      "TypeError: init() takes 3 positional arguments but 4 were given",
+      "AttributeError: 'D' object has no attribute 'display'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        B.__init__(self, a, b)\n        C.__init__(self, a, c)\n        self.d = d\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
+    "o": [
+      "TypeError: C.__init__() missing 1 required positional argument: 'c'",
+      "10 20",
+      "AttributeError: 'D' object has no attribute 'display'",
+      "10 20 30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.a = 2\n\nobj = B()\nobj.display()",
+    "o": [
+      "2",
+      "1",
+      "None",
+      "TypeError: display() takes 0 positional arguments but 1 was given"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\n    def display(self):\n        print(self.b)\n\nobj = B()\nobj.display()",
+    "o": [
+      "2",
+      "1",
+      "None",
+      "AttributeError: 'B' object has no attribute 'a'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        super().__init__(a, b)\n        self.d = d\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c, self.d)\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
+    "o": [
+      "TypeError: C.__init__() missing 1 required positional argument: 'c'",
+      "10 20",
+      "AttributeError: 'D' object has no attribute 'display'",
+      "10 20 30"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nobj1 = A()\nobj2 = B()\n\nprint(isinstance(obj1, A))\nprint(isinstance(obj2, B))\nprint(isinstance(obj2, A))",
+    "o": [
+      "True True True",
+      "True True False",
+      "False True True",
+      "False True False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nobj = B()\n\nprint(obj.a)",
+    "o": [
+      "1",
+      "2",
+      "AttributeError: 'B' object has no attribute 'a'",
+      "TypeError: init() missing 1 required positional argument: 'self'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nobj = B()\n\nprint(obj.b)",
+    "o": [
+      "2",
+      "1",
+      "AttributeError: 'B' object has no attribute 'b'",
+      "TypeError: init() missing 1 required positional argument: 'self'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\n\nobj.display()",
+    "o": [
+      "10 20",
+      "AttributeError: 'B' object has no attribute 'display'",
+      "TypeError: init() missing 1 required positional argument: 'b'",
+      "TypeError: init() takes 2 positional arguments but 3 were given"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\n\nprint(isinstance(obj, A))",
+    "o": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nclass C(A):\n    pass\n\nclass D(B, C):\n    pass\n\nprint(issubclass(D, A))",
+    "o": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "1 2 3",
+      "3 2 1",
+      "AttributeError: 'C' object has no attribute 'a'",
+      "AttributeError: 'C' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass Complex:\n    def __init__(self, real, imag):\n        self.real = real\n        self.imag = imag\n\n    def __add__(self, other):\n        return Complex(self.real + other.real, self.imag + other.imag)\n\n    def __str__(self):\n        return \"{}+{}i\".format(self.real, self.imag)\n\nc1 = Complex(1, 2)\nc2 = Complex(2, 3)\n\nprint(c1 + c2)",
+    "o": [
+      "3+5i",
+      "3+6i",
+      "2+5i",
+      "2+6i"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "\nclass Complex:\n    def __init__(self, real, imag):\n        self.real = real\n        self.imag = imag\n\n    def __eq__(self, other):\n        return self.real == other.real and self.imag == other.imag\n\nc1 = Complex(1, 2)\nc2 = Complex(1, 2)\n\nprint(c1 == c2)",
+    "o": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass Complex:\n    def __init__(self, real, imag):\n        self.real = real\n        self.imag = imag\n\n    def __eq__(self, other):\n        return self.real == other.real and self.imag == other.imag\n\nc1 = Complex(1, 2)\nc2 = Complex(2, 3)\n\nprint(c1 == c2)",
+    "o": [
+      "False",
+      "True",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "AttributeError: 'C' object has no attribute 'a'",
+      "1 2 3",
+      "AttributeError: 'B' object has no attribute 'a'",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "AttributeError: 'C' object has no attribute 'a'",
+      "1 2 3",
+      "AttributeError: 'B' object has no attribute 'a'",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "1 2 3",
+      "AttributeError: 'C' object has no attribute 'a'",
+      "AttributeError: 'B' object has no attribute 'a'",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B, A):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "1 2 3",
+      "AttributeError: 'C' object has no attribute 'a'",
+      "AttributeError: 'A' object has no attribute 'b'",
+      "AttributeError: 'B' object has no attribute 'c'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B:\n    def __init__(self):\n        self.b = 2\n\nclass C(A, B):\n    def __init__(self):\n        super().__init__()\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
+    "o": [
+      "AttributeError: 'C' object has no attribute 'b'",
+      "1 2 3",
+      "AttributeError: 'B' object has no attribute 'a'",
+      "AttributeError: 'A' object has no attribute 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
+    "o": [
+      "TypeError: unsupported operand type(s) for +: 'A' and 'A'",
+      "3",
+      "TypeError: unsupported operand type(s) for +: 'int' and 'A'",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return A(self.a + other.a)\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
+    "o": [
+      "3",
+      "TypeError: unsupported operand type(s) for +: 'A' and 'A'",
+      "TypeError: unsupported operand type(s) for +: 'int' and 'A'",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
+    "o": [
+      "3",
+      "TypeError: unsupported operand type(s) for +: 'A' and 'A'",
+      "TypeError: unsupported operand type(s) for +: 'int' and 'A'",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a1 + a2 + a3)",
+    "o": [
+      "6",
+      "TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'",
+      "TypeError: unsupported operand type(s) for +: 'A' and 'A'",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __eq__(self, other):\n        if isinstance(other, A):\n            return self.a == other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 == a2)\nprint(a1 == 1)",
+    "o": [
+      "False False",
+      "False True",
+      "True False",
+      "True True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __gt__(self, other):\n        if isinstance(other, A):\n            return self.a > other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 > a2)\nprint(a2 > a1)",
+    "o": [
+      "False True",
+      "True False",
+      "False False",
+      "True True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __lt__(self, other):\n        if isinstance(other, A):\n            return self.a < other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 < a2)\nprint(a2 < a1)",
+    "o": [
+      "True False",
+      "False True",
+      "False False",
+      "True True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\na = A(1)\nb = B(2, 3)\n\nprint(isinstance(a, A))\nprint(isinstance(b, A))\nprint(isinstance(a, B))\nprint(isinstance(b, B))",
+    "o": [
+      "True True False True",
+      "True True True False",
+      "True True False False",
+      "True True True True"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\na = A(1)\nb = B(2, 3)\n\nprint(issubclass(B, A))\nprint(issubclass(A, B))",
+    "o": [
+      "True False",
+      "False True",
+      "True True",
+      "False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nprint(hasattr(b, 'a'))\nprint(hasattr(b, 'b'))",
+    "o": [
+      "True True",
+      "True False",
+      "False True",
+      "False False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nprint(getattr(b, 'a'))\nprint(getattr(b, 'b'))\nprint(getattr(b, 'c', 3))",
+    "o": [
+      "1 2 3",
+      "1 2 None",
+      "AttributeError: 'B' object has no attribute 'c'",
+      "TypeError: getattr expected at least 2 arguments, got 1"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nsetattr(b, 'a', 3)\nsetattr(b, 'c', 4)\n\nprint(b.a, b.b, b.c)",
+    "o": [
+      "3 2 4",
+      "3 None 4",
+      "1 2 4",
+      "AttributeError: 'B' object has no attribute 'c'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code?",
+    "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __call__(self, b):\n        return self.a + b\n\na = A(1)\n\nprint(a(2))",
+    "o": [
+      "3",
+      "2",
+      "TypeError: 'A' object is not callable",
+      "AttributeError: 'A' object has no attribute 'call'"
+    ]
+  }
+]

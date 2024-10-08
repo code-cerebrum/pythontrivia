@@ -1,0 +1,22 @@
+[
+  {
+      "q": "weekly Django1?",
+      "c": "",
+      "o": [
+          "weekly Ans",
+          "weekly option1",
+          "weekly option2",
+          "weekly option3"
+      ]
+  },
+  {
+      "q": "weekly Django2?",
+      "c": "",
+      "o": [
+          "weekly ans2",
+          "weekly IOption1 2",
+          "weekly option2 2",
+          "weekly option3 2"
+      ]
+  }
+]

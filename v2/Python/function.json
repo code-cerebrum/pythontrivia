@@ -1,0 +1,1212 @@
+[
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "\ndef add_numbers(a, b):\n    return a + b\n\nprint(add_numbers(5, 10))",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "50"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid function call in Python?\n",
+    "c": "",
+    "o": [
+      "my_function()",
+      "my_function",
+      "my-function(x)",
+      "my-function(x, y)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef say_hello(name):\n    print(f\"Hello, {name}!\")\n\nsay_hello(\"Alice\")",
+    "o": [
+      "Hello, Alice!",
+      "Hello, world!",
+      "world",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid Python function definition?\n",
+    "c": "",
+    "o": [
+      "def add_numbers(a, b): return a + b",
+      "def add_numbers(a, b) { return a + b }",
+      "def add_numbers(a, b) -> a + b",
+      "def add_numbers(a, b); return a + b"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef multiply_numbers(a=2, b=3):\n    return a * b\n\nprint(multiply_numbers())",
+    "o": [
+      "6",
+      "5",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a function that takes an arbitrary number of arguments in Python?\n",
+    "c": "",
+    "o": [
+      "def my_function(*args):",
+      "def my_function(args):",
+      "def my_function(**kwargs):",
+      "def my_function(*args, **kwargs):"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef add_numbers(a, b):\n    return a + b\n\nprint(add_numbers(b=5, a=10))",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "50"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a function that takes a variable number of keyword arguments in Python?\n",
+    "c": "",
+    "o": [
+      "def my_function(**kwargs):",
+      "def my_function(*args):",
+      "def my_function(args):",
+      "def my_function(*args, **kwargs):"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))",
+    "o": [
+      "120",
+      "5",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef sum_of_squares(a, b):\n    return a**2 + b**2\n\nprint(sum_of_squares(3, 4))",
+    "o": [
+      "25",
+      "7",
+      "9",
+      "12"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid Python lambda function that returns the sum of two numbers?\n",
+    "c": "",
+    "o": [
+      "lambda x, y: x + y",
+      "lambda x, y: return x + y",
+      "lambda x + y",
+      "lambda x, y: sum(x, y)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef print_twice(s):\n    print(s)\n    print(s)\n\nprint_twice(\"Hello\")",
+    "o": [
+      "Hello Hello",
+      "Hello",
+      "\"HelloHello\"",
+      "\"(Hello),(Hello)"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is a valid way to define a recursive function in Python?\n// ",
+    "c": "",
+    "o": [
+      "def my_function(n):",
+      "def my_function(n, recursion=True):",
+      "def my_function(n): recursion=True",
+      "def my_function(n, recursion=False):"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef print_even_numbers(n):\n    if n % 2 == 0:\n        print(n)\n    if n > 0:\n        print_even_numbers(n-1)\n\nprint_even_numbers(6)",
+    "o": [
+      "6 4 2 0",
+      "0 2 4 6",
+      "2 4 6",
+      "6 4 2"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to pass a function as an argument to another function in Python?\n",
+    "c": "",
+    "o": [
+      "my_function(another_function)",
+      "my_function.add(another_function)",
+      "my_function[another_function]",
+      "my_function.call(another_function)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef add_numbers(a, b):\n    result = a + b\n    print(f\"The result is {result}\")\n\nadd_numbers(3, 4)",
+    "o": [
+      "The result is 7",
+      "The result is 3",
+      "The result is 4",
+      "The result is 12"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef multiply_by_two(x):\n    return x * 2\n\nmy_list = [1, 2, 3, 4]\nresult = map(multiply_by_two, my_list)\nprint(list(result))",
+    "o": [
+      "[2, 4, 6, 8]",
+      "[1, 2, 3, 4]",
+      "[1, 4, 9, 16]",
+      "[(1, 2), (3, 4)]"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a global variable in Python?\n",
+    "c": "",
+    "o": [
+      "global my_var",
+      "my_var = 42",
+      "def my_var(): return 42",
+      "my_var == 42"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a local variable inside a function in Python?\n",
+    "c": "",
+    "o": [
+      "my_var = 42",
+      "local my_var = 42",
+      "my_var == 42",
+      "global my_var = 42"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef power_of_two(n):\n    if n == 0:\n        return 1\n    else:\n        return 2 * power_of_two(n-1)\n\nprint(power_of_two(4))",
+    "o": [
+      "16",
+      "2",
+      "4",
+      "8"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a lambda function that takes three arguments?\n",
+    "c": "",
+    "o": [
+      "lambda x, y, z: x + y + z",
+      "lambda (x, y, z): x + y + z",
+      "lambda x y z: x + y + z",
+      "lambda x y, z: x + y + z"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    x = 5\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "5 10",
+      "5 5",
+      "10 10",
+      "10 5"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a function with a default argument in Python?\n",
+    "c": "",
+    "o": [
+      "def my_function(n=2):",
+      "def my_function(n): default=2",
+      "def my_function(n): n=2",
+      "def my_function(default=2, n):"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef print_odd_numbers(n):\n    if n % 2 != 0:\n        print(n)\n    if n > 0:\n        print_odd_numbers(n-1)\n\nprint_odd_numbers(7)",
+    "o": [
+      "7 5 3 1",
+      "0 2 4 6 7",
+      "1 3 5 7",
+      "7 5 3 1 0"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is a valid way to define an anonymous function that returns the square of a number?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: x*x",
+      "lambda x: x^2",
+      "def(x): return x*x",
+      "def(x): x^2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    global x\n    x = 10\n\nmy_function()\nprint(x)",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef factorial(n):\n    if n == 1:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(4))",
+    "o": [
+      "24",
+      "4",
+      "12",
+      "120"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define a lambda function that takes no arguments and returns the string \"Hello, world!\"?\n",
+    "c": "",
+    "o": [
+      "lambda: \"Hello, world!\"",
+      "lambda(): \"Hello, world!\"",
+      "lambda x: \"Hello, world!\"",
+      "lambda x(): \"Hello, world!\""
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = x + 1\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "UnboundLocalError",
+      "6 6",
+      "6 5",
+      "5 6"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef countdown(n):\n    if n == 0:\n        print(\"Blastoff!\")\n    else:\n        print(n)\n        countdown(n-1)\n\ncountdown(3)",
+    "o": [
+      "3 2 1 Blastoff!",
+      "0 1 2 Blastoff!",
+      "1 2 3 Blastoff!",
+      "3 2 1 0 Blastoff!"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    global x\n    x = x + 1\n\nprint(x)\nmy_function()\nprint(x)",
+    "o": [
+      "5 6",
+      "5 5",
+      "6 6",
+      "6 5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    return x + 1\n\nmy_list = [1, 2, 3]\nnew_list = map(my_function, my_list)\nprint(list(new_list))",
+    "o": [
+      "[2, 3, 4]",
+      "[1, 2, 3]",
+      "2 3 4",
+      "1 2 3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x=5):\n    return x + 1\n\nprint(my_function())\nprint(my_function(10))",
+    "o": [
+      "6 11",
+      "6 10",
+      "5 11",
+      "5 10"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = 10\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "10 5",
+      "5 10",
+      "10 10",
+      "5 5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    else:\n        return x * my_function(x-1)\n\nprint(my_function(4))",
+    "o": [
+      "24",
+      "4",
+      "12",
+      "120"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = 10\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "10 5",
+      "10 10",
+      "5 10",
+      "5 5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x, y):\n    return x + y\n\nmy_dict = {'x': 1, 'y': 2}\nprint(my_function(**my_dict))",
+    "o": [
+      "3",
+      "{'x': 1, 'y': 2}",
+      "1 2",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    global x\n    x = 10\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "10 10",
+      "5 10",
+      "10 5",
+      "5 5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x, y=5):\n    return x + y\n\nprint(my_function(2))\nprint(my_function(2, 2))",
+    "o": [
+      "7 4",
+      "7 5",
+      "2 7",
+      "2 4"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function():\n    x = 10\n\nprint(x)",
+    "o": [
+      "NameError: name 'x' is not defined",
+      "10",
+      "None",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define an anonymous function that takes two arguments and returns the larger of the two arguments?\n",
+    "c": "",
+    "o": [
+      "lambda x, y: x if x > y else y",
+      "lambda x, y: x > y ? x : y",
+      "lambda x, y: max(x, y)",
+      "lambda x, y: min(x, y)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = 10\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "10 5",
+      "10 10",
+      "5 10",
+      "5 5"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is a valid way to define an anonymous function that takes a single argument and returns True if the argument is positive and False otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x: x > 0",
+      "lambda x: x < 0",
+      "lambda x: x >= 0",
+      "lambda x: x == 0"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x, y):\n    return x * y\n\nmy_dict = {'x': 2, 'y': 3}\nprint(my_function(**my_dict))",
+    "o": [
+      "6",
+      "{'x': 2, 'y': 3}",
+      "2 3",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = 10\n\nprint(my_function())",
+    "o": [
+      "None",
+      "10",
+      "5",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, c):\n    return a + b + c\n\nprint(my_function(1, 2, 3))\nprint(my_function(a=1, b=2, c=3))\nprint(my_function(c=3, b=2, a=1))",
+    "o": [
+      "6 6 6",
+      "6 6",
+      "6 TypeError",
+      "6 6 TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    global x\n    x = 5\n\nmy_function()\nprint(x)",
+    "o": [
+      "5",
+      "10",
+      "None",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(*args):\n    return sum(args)\n\nprint(my_function(1, 2, 3))\nprint(my_function(4, 5, 6, 7))",
+    "o": [
+      "6 22",
+      "123 4567",
+      "6 22 123 4567",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, c=0, d=0):\n    return a + b + c + d\n\nprint(my_function(1, 2))\nprint(my_function(1, 2, 3))\nprint(my_function(1, 2, 3, 4))",
+    "o": [
+      "3 6 10",
+      "3 6 7",
+      "1 2 3",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, c):\n    print(a, b, c)\n\nmy_list = [1, 2, 3]\nmy_function(*my_list)",
+    "o": [
+      "1 2 3",
+      "1 2 None",
+      "1 [2, 3] None",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, *args):\n    print(a, b, args)\n\nmy_function(1, 2, 3, 4, 5)",
+    "o": [
+      "1 2 (3, 4, 5)",
+      "1 2 [3, 4, 5]",
+      "1 2 3 4 5",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a=0, b=0, c=0):\n    return a + b + c\n\nprint(my_function(b=2, a=1, c=3))",
+    "o": [
+      "6",
+      "3",
+      "1 2 3",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function():\n    x = 10\n\nmy_function()\nprint(x)",
+    "o": [
+      "NameError: name 'x' is not defined",
+      "10",
+      "None",
+      "undefined"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    global x\n    x = 20\n\nmy_function()\nprint(x)",
+    "o": [
+      "20",
+      "10",
+      "None",
+      "NameError: name 'x' is not defined"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(1, c=5)",
+    "o": [
+      "1 2 5",
+      "1 2 3",
+      "1 5 3",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function(x):\n    x += 5\n    return x\n\nmy_function(x)\nprint(x)",
+    "o": [
+      "10",
+      "15",
+      "None",
+      "NameError: name 'x' is not defined"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    x = 20\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "20 10",
+      "10 20",
+      "20 20",
+      "10 10"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is greater than 10 and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: x > 10",
+      "lambda x: if x > 10: True else: False",
+      "lambda x: x > 10 ? True : False",
+      "lambda x: x > 10 and True or False"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(1, c=5, b=4)",
+    "o": [
+      "1 4 5",
+      "1 2 3",
+      "1 3 5",
+      "TypeError: my_function() got multiple values for argument 'b'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    global x\n    x += 5\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "15 15",
+      "10 15",
+      "15 10",
+      "10 10"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function(x):\n    x += 5\n    print(x)\n\nmy_function(x)\nprint(x)",
+    "o": [
+      "15 10",
+      "10 15",
+      "15 15",
+      "10 10"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, c):\n    print(a, b, c)\n\nmy_dict = {'b': 2, 'c': 3, 'a': 1}\nmy_function(**my_dict)",
+    "o": [
+      "1 2 3",
+      "1 3 2",
+      "2 3 1",
+      "TypeError: my_function() got an unexpected keyword argument 'a'"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns its square if x is positive and 0 otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: x**2 if x > 0 else 0",
+      "lambda x: x^2 if x > 0 else 0",
+      "lambda x: x*x if x > 0 else 0",
+      "lambda x: x*x if x > 0, 0"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    x[0] = 5\n\nmy_list = [1, 2, 3]\nmy_function(my_list)\nprint(my_list)",
+    "o": [
+      "[5, 2, 3]",
+      "[1, 2, 3]",
+      "[1, 5, 3]",
+      "[1, 2, 5]"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is divisible by 3 and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: x % 3 == 0",
+      "lambda x: if x % 3 == 0: True else: False",
+      "lambda x: x % 3 == 0 and True or False",
+      "lambda x: x % 3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b, c=3):\n    print(a, b, c)\n\nmy_function(1, c=5, 2)",
+    "o": [
+      "SyntaxError: positional argument follows keyword argument",
+      "1 2 5",
+      "1 2 3",
+      "1 5 2"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns the larger of the two?\n// ",
+    "c": "",
+    "o": [
+      "lambda x, y: x if x > y else y",
+      "lambda x, y: max(x, y)",
+      "lambda x, y: x > y ? x : y",
+      "lambda x, y: y if x > y else x"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(1, c=4)",
+    "o": [
+      "1 2 4",
+      "1 4 3",
+      "1 2 3",
+      "SyntaxError: positional argument follows keyword argument"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b):\n    return a + b, a - b\n\nresult = my_function(3, 2)\nprint(result[0])",
+    "o": [
+      "5",
+      "3",
+      "2",
+      "(3, 2)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = 3\n\nmy_function()\nprint(x)",
+    "o": [
+      "5",
+      "3",
+      "0",
+      "NameError: name 'x' is not defined"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is a string and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: isinstance(x, str)",
+      "lambda x: type(x) == 'str'",
+      "lambda x: x is str",
+      "lambda x: x.__class__ == str"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    global x\n    x = 3\n\nmy_function()\nprint(x)",
+    "o": [
+      "3",
+      "5",
+      "0",
+      "NameError: name 'x' is not defined"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(1, 4)",
+    "o": [
+      "1 4 3",
+      "1 2 4",
+      "1 2 3",
+      "SyntaxError: positional argument follows keyword argument"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b):\n    return a + b, a - b\n\nresult1, result2 = my_function(3, 2)\nprint(result1, result2)",
+    "o": [
+      "5 1",
+      "3 2",
+      "(3, 2)",
+      "TypeError: cannot unpack non-iterable int object"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns True if x is divisible by y and False otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x, y: x%y == 0",
+      "lambda x, y: x//y == 0",
+      "lambda x, y: x/y == 0",
+      "lambda x, y: x%y == 1"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    x = x + 3\n\nmy_function()\nprint(x)",
+    "o": [
+      "UnboundLocalError",
+      "3",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is an even number and False otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x: x%2 == 0",
+      "lambda x: x%2 == 1",
+      "lambda x: x//2 == 0",
+      "lambda x: x//2 == 1"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "\nx = 5\n\ndef my_function():\n    global x\n    x = x + 3\n\nmy_function()\nprint(x)",
+    "o": [
+      "8",
+      "3",
+      "5",
+      "NameError: name 'x' is not defined"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(1, c=4)",
+    "o": [
+      "1 2 4",
+      "1 4 2",
+      "1 2 3",
+      "TypeError: my_function() got multiple values for argument 'c'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b):\n    return a + b, a - b\n\nresult = my_function(3, 2)\nprint(result[1])",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "TypeError: 'int' object is not subscriptable"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b=2, c=3):\n    print(a, b, c)\n\nmy_function(b=4, a=1)",
+    "o": [
+      "1 4 3",
+      "1 2 4",
+      "1 2 3",
+      "TypeError: my_function() got multiple values for argument 'a'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a=1, b=2, c=3):\n    print(a, b, c)\n\nmy_function(c=4)",
+    "o": [
+      "1 2 4",
+      "1 2 3",
+      "1 3 4",
+      "4 2 3"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes a single argument, x, and returns the absolute value of x?\n",
+    "c": "",
+    "o": [
+      "lambda x: abs(x)",
+      "lambda x: x ** 2",
+      "lambda x: -x",
+      "lambda x: x"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(a, b):\n    a = b\n\nx = 1\ny = 2\nmy_function(x, y)\nprint(x)",
+    "o": [
+      "1",
+      "2",
+      "None",
+      "SyntaxError"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns the square root of x?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: math.sqrt(x)",
+      "lambda x: x ** 2",
+      "lambda x: -x",
+      "lambda x: x"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x <= 1:\n        return 1\n    else:\n        return x * my_function(x - 1)\n\nprint(my_function(5))",
+    "o": [
+      "120",
+      "1",
+      "5",
+      "15"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes a single argument, x, and returns the square of x if x is greater than 0, and the absolute value of x otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x: x ** 2 if x > 0 else abs(x)",
+      "lambda x: x ** 2 if x < 0 else abs(x)",
+      "lambda x: abs(x) if x > 0 else x ** 2",
+      "lambda x: abs(x) if x < 0 else x ** 2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 1\n\ndef my_function():\n    x = 2\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "2 1",
+      "1 2",
+      "2 2",
+      "1 1"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x, y):\n    x = y\n    y = x\n\na = 1\nb = 2\nmy_function(a, b)\nprint(a, b)",
+    "o": [
+      "1 2",
+      "2 1",
+      "1 1",
+      "2 2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    x += 1\n    return x\n\na = 1\nb = my_function(a)\nprint(a, b)",
+    "o": [
+      "1 2",
+      "2 1",
+      "1 1",
+      "2 2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 1\n\ndef my_function():\n    global x\n    x = 2\n    print(x)\n\nmy_function()\nprint(x)",
+    "o": [
+      "2 2",
+      "1 2",
+      "2 1",
+      "1 1"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes a single argument, x, and returns the length of x if x is a string, and None otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x: len(x) if isinstance(x, str) else None",
+      "lambda x: len(x) if type(x) == None",
+      "lambda x: x if x.__class__ == str else None",
+      "lambda x: len(x) if x.__name__ == 'str' else None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x, y):\n    if y == 0:\n        return 1\n    else:\n        return x * my_function(x, y - 1)\n\nprint(my_function(2, 3))",
+    "o": [
+      "8",
+      "6",
+      "9",
+      "10"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is a list or a tuple, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: isinstance(x, (list, tuple))",
+      "lambda x: type(x) in (list, tuple)",
+      "lambda x: x.__class__ in (list, tuple)",
+      "lambda x: x.__class__.__name__ in ('list', 'tuple')"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x <= 0:\n        return 1\n    else:\n        return x * my_function(x - 2)\n\nprint(my_function(5))",
+    "o": [
+      "15",
+      "120",
+      "21",
+      "25"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is a dictionary, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: isinstance(x, dict)",
+      "lambda x: type(x) == dict",
+      "lambda x: x.__class__ == dict",
+      "lambda x: x.__class__.__name__ == 'dict'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 1\n    else:\n        return x * my_function(x // 2)\n\nprint(my_function(10))",
+    "o": [
+      "100",
+      "1",
+      "10",
+      "320"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x < 0:\n        return 0\n    else:\n        return x + my_function(x - 1)\n\nprint(my_function(5))",
+    "o": [
+      "15",
+      "10",
+      "20",
+      "25"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns True if x is a string that contains y, and False otherwise? \n// ",
+    "c": "",
+    "o": [
+      "lambda x, y: y in x",
+      "lambda x, y: x in y",
+      "lambda x, y: y.startswith(x)",
+      "lambda x, y: y.endswith(x)"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\nx = 10\n\ndef my_function():\n    global x\n    x = 20\n\nmy_function()\nprint(x)",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "NameError: x is not defined"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is a boolean value, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: isinstance(x, bool)",
+      "lambda x: type(x) == bool",
+      "lambda x: x.__class__ == bool",
+      "lambda x: x.__class__.__name__ == 'bool'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x <= 1:\n        return 1\n    else:\n        return x * my_function(x - 2)\n\nprint(my_function(4))",
+    "o": [
+      "8",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns True if x is equal to y, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x, y: x == y",
+      "lambda x, y: x != y",
+      "lambda x, y: x is y",
+      "lambda x, y: x is not y"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x < 1:\n        return 1\n    else:\n        return x * my_function(x // 2)\n\nprint(my_function(8))",
+    "o": [
+      "64",
+      "1",
+      "8",
+      "16"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 0\n    else:\n        return x + my_function(x - 1)\n\nprint(my_function(5))",
+    "o": [
+      "15",
+      "10",
+      "20",
+      "25"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    else:\n        return x + my_function(x // 2)\n\nprint(my_function(6))",
+    "o": [
+      "10",
+      "1",
+      "6",
+      "9"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is a list, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x: isinstance(x, list)",
+      "lambda x: type(x) == list",
+      "lambda x: x.__class__ == list",
+      "lambda x: x.__class__.__name__ == 'list'"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    else:\n        return x * my_function(x - 1)\n\nprint(my_function(4))",
+    "o": [
+      "24",
+      "1",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns True if x is less than or equal to y, and False otherwise?  \n// ",
+    "c": "",
+    "o": [
+      "lambda x, y: x <= y",
+      "lambda x, y: x < y",
+      "lambda x, y: x >= y",
+      "lambda x, y: x > y"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x <= 1:\n        return 1\n    else:\n        return my_function(x - 1) + my_function(x - 2)\n\nprint(my_function(6))",
+    "o": [
+      "13",
+      "5",
+      "10",
+      "8"
+    ]
+  },
+  {
+    "q": "\n// Which of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns True if x is greater than or equal to y, and False otherwise?\n// ",
+    "c": "",
+    "o": [
+      "lambda x, y: x >= y",
+      "lambda x, y: x <= y",
+      "lambda x, y: x > y",
+      "lambda x, y: x < y"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    elif x == 2:\n        return 2\n    else:\n        return my_function(x - 1) + my_function(x - 2)\n\nprint(my_function(5))",
+    "o": [
+      "8",
+      "3",
+      "5",
+      "13"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 0\n    else:\n        return my_function(x - 1) + x\n\nprint(my_function(4))",
+    "o": [
+      "10",
+      "4",
+      "12",
+      "16"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 1\n    else:\n        return 2 * my_function(x - 1)\n\nprint(my_function(4))",
+    "o": [
+      "16",
+      "4",
+      "12",
+      "8"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 0\n    else:\n        return my_function(x // 2) + 1\n\nprint(my_function(10))",
+    "o": [
+      "4",
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 1\n    else:\n        return x * my_function(x - 1)\n\nprint(my_function(4))",
+    "o": [
+      "24",
+      "4",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 0:\n        return 1\n    else:\n        return my_function(x // 2) + my_function(x // 2)\n\nprint(my_function(10))",
+    "o": [
+      "16",
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes two arguments, x and y, and returns the larger of the two?\n",
+    "c": "",
+    "o": [
+      "lambda x, y: x if x > y else y",
+      "lambda x, y: x if x < y else y",
+      "lambda x, y: x > y",
+      "lambda x, y: x < y"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    else:\n        return x + my_function(x - 1)\n\nprint(my_function(5))",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "\nWhich of the following is the correct way to define a lambda function that takes a single argument, x, and returns True if x is even, and False otherwise?\n",
+    "c": "",
+    "o": [
+      "lambda x: x % 2 == 0",
+      "lambda x: x % 2 == 1",
+      "lambda x: x % 2",
+      "lambda x: x // 2 == 0"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?\n",
+    "c": "\ndef my_function(x):\n    if x == 1:\n        return 1\n    else:\n        return x * my_function(x - 1)\n\nprint(my_function(5))",
+    "o": [
+      "120",
+      "5",
+      "10",
+      "20"
+    ]
+  }
+]

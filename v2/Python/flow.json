@@ -1,0 +1,1052 @@
+[
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "\nx = 10\nif x > 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is less than or equal to 5\")",
+    "o": [
+      "x is greater than 5",
+      "x is less than or equal to 5",
+      "x is equal to 5",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 10\nif x < 5:\n    print(\"x is less than 5\")\nelif x < 10:\n    print(\"x is less than 10\")\nelse:\n    print(\"x is greater than or equal to 10\")",
+    "o": [
+      "x is greater than or equal to 10",
+      "x is less than 5",
+      "x is less than 10",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1",
+    "o": [
+      "0 1 2 3 4",
+      "1 2 3 4 5",
+      "0 1 2 3",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        continue\n    print(x)",
+    "o": [
+      "1 2 4 5",
+      "1 2 3 4 5",
+      "2 3 4 5",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        break\n    print(x)",
+    "o": [
+      "1 2",
+      "1 2 3 4 5",
+      "1 2 3",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 6):\n    print(x)",
+    "o": [
+      "1 2 3 4 5",
+      "0 1 2 3 4",
+      "2 3 4 5 6",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 10, 2):\n    print(x)",
+    "o": [
+      "1 3 5 7 9",
+      "0 2 4 6 8",
+      "2 4 6 8 10",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(10, 0, -1):\n    print(x)",
+    "o": [
+      "10 9 8 7 6 5 4 3 2 1",
+      "0 1 2 3 4 5 6 7 8 9",
+      "9 8 7 6 5 4 3 2 1",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(5):\n    for y in range(3):\n        print(x, y)",
+    "o": [
+      "0 0 0 1 0 2 1 0 1 1 1 2 2 0 2 1 2 2 3 0 3 1 3 2 4 0 4 1 4 2",
+      "0 0 1 0 2 0 0 1 1 1 2 1 0 2 1 2 2 2 0 3 1 3 2 4 0 4 1 4 2",
+      "0 0 1 0 2 0 0 1 1 1 2 1 0 2 0 2 1 2 1 3 2 3 2 4 0 4 1 4 2",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(5):\n    if x == 2:\n        break\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "0 1",
+      "0 1 2",
+      "Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(5):\n    if x == 2:\n        continue\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "0 1 3 4",
+      "0 1 2 3 4",
+      "0 1 3 4 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(5):\n    if x == 2:\n        pass\n    print(x)",
+    "o": [
+      "0 1 2 3 4",
+      "0 1 3 4",
+      "0 1 3 4 2",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        break\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4",
+      "4 2",
+      "4 3",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        continue\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4 2 1 0 Loop completed",
+      "4 2 1 0",
+      "4 3 2 1 0",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        pass\n    print(x)",
+    "o": [
+      "4 3 2 1 0",
+      "4 2 1 0",
+      "4",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    if x == 3:\n        continue\n    print(x)\n    x -= 1\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "5 4",
+      "5 4 3 1 Loop completed",
+      "5 4 3 Loop completed",
+      "5 4 2 1 Loop completed"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        break\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4",
+      "4 2 1 0",
+      "4 3",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        pass\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4 3 2 1 0 Loop completed",
+      "4 2 1 0 Loop completed",
+      "4 2 1 0 3 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    if x == 3:\n        continue\n    print(x)\n    x -= 1\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "5 4",
+      "5 4 3 1 Loop completed",
+      "5 4 3 Loop completed",
+      "5 4 2 1 Loop completed"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        continue\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 4 5 Loop completed",
+      "1 2 4 5 3 Loop completed",
+      "1 2 3 4 5 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        break\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2",
+      "1 2 Loop completed",
+      "1 2 3 4 5 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        pass\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 3 4 5 Loop completed",
+      "1 2 4 5 Loop completed",
+      "1 2 3 4 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    print(i)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 4 5 Loop completed",
+      "1 2 4 5",
+      "1 2 3 4 5 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        break\n    print(i)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2",
+      "1 2 Loop completed",
+      "1 2 3 4 5 Loop completed",
+      "Loop completed"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        pass\n    print(i)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 3 4 5 Loop completed",
+      "1 2 4 5 Loop completed",
+      "1 2 3 4 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "0 1 0 2 1 0 1 2 2 0 2 1 Loop completed",
+      "0 1 0 2 1 0 1 2 2 0 2 1",
+      "1 0 1 2 2 0 2 1",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            break\n        print(i, j)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 0 2 0 2 1 Loop completed",
+      "0 1 0 2 1 0 1 2",
+      "1 0 1 2 2 0 2 1",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            pass\n        print(i, j)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "0 0 0 1 0 2 1 0 1 1 1 2 2 0 2 1 2 2 Loop completed",
+      "0 0 0 1 0 2 1 0 1 1 1 2 2 0 2 1 2 2",
+      "0 1 0 2 1 0 1 2 2 0 2 1",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "0 1 0 2 1 0 1 2 2 0 2 1 Loop completed",
+      "0 1 0 2 1 0 1 2 2 0 2 1",
+      "1 0 1 2 2 0 2 1",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        continue\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4 2 1 0 Loop completed",
+      "5 4 2 1 0 Loop completed",
+      "5 4 2 1 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 3:\n        break\n    print(x)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "4",
+      "4 3",
+      "4 2 1 0 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        pass\n    print(i)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 3 4 5 Loop completed",
+      "1 2 4 5 Loop completed",
+      "1 2 3 4 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    print(i)\nelse:\n    print(\"Loop completed\")",
+    "o": [
+      "1 2 4 5 Loop completed",
+      "1 2 4 5",
+      "1 2 3 4 5 Loop completed",
+      "Loop completed"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        break\n    print(i)",
+    "o": [
+      "1 2",
+      "1 2 3",
+      "1 2 4 5",
+      "1 2 3 4 5"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    print(i)",
+    "o": [
+      "1 2 4 5",
+      "1 2 3 4 5",
+      "1 2 4 5 Loop completed",
+      "3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    for j in range(i):\n        if j == 2:\n            break\n        print(j)",
+    "o": [
+      "0 0 1 0 1 0 1 0 1",
+      "0 1 0 1 0",
+      "0 1 0 1 2 0 1 2 0 1 2",
+      "0 1 0 1 2 0 1 0 1 2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    for j in range(i):\n        if j == 2:\n            continue\n        print(j)",
+    "o": [
+      "0 0 1 0 1 0 1 3 0 1 3 4",
+      "0 1 0 1 0",
+      "0 1 0 1 2 0 1 2 0 1 2",
+      "0 1 0 1 0 1 0 1 0 1"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        pass\n    else:\n        print(i)",
+    "o": [
+      "1 2 4 5",
+      "1 2 3 4 5",
+      "1 2 4 5 Loop completed",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    else:\n        print(i)",
+    "o": [
+      "1 2 4 5",
+      "1 2 3 4 5 Loop completed",
+      "1 2 4 5 Loop completed",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 3\ny = 2\nif x > y:\n    print(\"x is greater than y\")\nelse:\n    print(\"x is less than or equal to y\")",
+    "o": [
+      "x is greater than y",
+      "x is less than or equal to y",
+      "None of the options",
+      "Error"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nif x % 2 == 0:\n    print(\"x is even\")\nelse:\n    print(\"x is odd\")",
+    "o": [
+      "x is odd",
+      "x is even",
+      "Error",
+      "ArithmeticError"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nif x > 0:\n    if x < 10:\n        print(\"x is a single digit positive number\")\n    else:\n        print(\"x is a double digit or more positive number\")\nelse:\n    print(\"x is not a positive number\")",
+    "o": [
+      "x is a single digit positive number",
+      "x is a double digit or more positive number",
+      "x is not a positive number",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 10\ny = 5\nif x > y:\n    if x < 15:\n        print(\"x is greater than y and less than 15\")\n    else:\n        print(\"x is greater than y and greater than or equal to 15\")\nelse:\n    print(\"x is less than or equal to y\")",
+    "o": [
+      "x is greater than y and less than 15",
+      "x is greater than y and greater than or equal to 15",
+      "x is less than or equal to y",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nif x > 10:\n    print(\"x is greater than 10\")\nelif x > 7:\n    print(\"x is greater than 7\")\nelif x > 3:\n    print(\"x is greater than 3\")\nelse:\n    print(\"x is less than or equal to 3\")",
+    "o": [
+      "x is greater than 3",
+      "x is greater than 10",
+      "x is greater than 7",
+      "x is less than or equal to 3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 3\nif x > 10:\n    print(\"x is greater than 10\")\nelif x > 7:\n    print(\"x is greater than 7\")\nelif x > 3:\n    print(\"x is greater than 3\")\nelse:\n    print(\"x is less than or equal to 3\")",
+    "o": [
+      "x is less than or equal to 3",
+      "x is greater than 10",
+      "x is greater than 7",
+      "x is greater than 3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 7\nif x > 10:\n    print(\"x is greater than 10\")\nelif x > 7:\n    print(\"x is greater than 7\")\nelif x > 3:\n    print(\"x is greater than 3\")\nelse:\n    print(\"x is less than or equal to 3\")",
+    "o": [
+      "x is greater than 3",
+      "x is greater than 10",
+      "x is greater than 7",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 10\nwhile x > 0:\n    print(x)\n    x -= 1",
+    "o": [
+      "10 9 8 7 6 5 4 3 2 1",
+      "1 2 3 4 5 6 7 8 9 10",
+      "10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 10:\n    x += 1\n    if x % 2 == 0:\n        continue\n    print(x)",
+    "o": [
+      "1 3 5 7 9",
+      "2 4 6 8 10",
+      "1 2 3 4 5 6 7 8 9 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 10:\n    x += 1\n    if x == 5:\n        break\n    print(x)",
+    "o": [
+      "1 2 3 4",
+      "1 2 3 4 5",
+      "5 4 3 2 1",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x == 5:\n        break\n    print(x)",
+    "o": [
+      "1 2 3 4",
+      "1 2 3 4 5",
+      "5 4 3 2 1",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x % 2 == 0:\n        continue\n    print(x)",
+    "o": [
+      "1 3 5 7 9",
+      "2 4 6 8 10",
+      "1 2 3 4 5 6 7 8 9 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x % 2 == 0:\n        pass\n    else:\n        print(x)",
+    "o": [
+      "1 3 5 7 9",
+      "2 4 6 8 10",
+      "1 2 3 4 5 6 7 8 9 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 2:\n        continue\n    print(x)",
+    "o": [
+      "4 3 1 0",
+      "4 3 2 1 0",
+      "3 1 0",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x == 5:\n        continue\n    elif x == 8:\n        break\n    print(x)",
+    "o": [
+      "1 2 3 4 6 7",
+      "1 2 3 4 6 7 8",
+      "1 2 3 4 6 7 8 9 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "\nx = 5\nwhile x > 0:\n    x -= 1\n    if x == 2:\n        break\n    print(x)",
+    "o": [
+      "4 3",
+      "4 3 2",
+      "3 2 1 0",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x % 2 == 0:\n        pass\n    else:\n        print(x)\n    if x == 5:\n        break",
+    "o": [
+      "1 3 5",
+      "1 3 5 7 9",
+      "2 4 6 8 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x % 2 == 0:\n        continue\n    print(x)\n    if x == 5:\n        break",
+    "o": [
+      "1 3 5",
+      "1 3 5 7 9",
+      "2 4 6 8 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor x in range(1, 11):\n    if x % 2 == 0:\n        continue\n    print(x)\n    if x == 5:\n        pass",
+    "o": [
+      "1 3 5 7 9",
+      "1 3 5 7 9 5",
+      "2 4 6 8 10",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)",
+    "o": [
+      "0 1 0 2 1 0 1 2 2 0 2 1",
+      "0 1 0 2 1 0 2 1 2 0 2 1",
+      "0 1 0 2 1 0 2 1 2 0 1 2",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(i):\n        print(i * j, end=' ')\n    print()",
+    "o": [
+      "0 0 2 0 3 6",
+      "1 2 3 2 4 6 3 6 9",
+      "0 0 0 1 2 3 2 4 6",
+      "0 1 2 0 2 4 0 3 6"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            break\n        print(i * j, end=' ')\n    print()",
+    "o": [
+      "2 3 6",
+      "1 2 1 3",
+      "2 4",
+      "1 2"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(i, 3):\n        print(j, end='')\n    print()",
+    "o": [
+      "012 12 2",
+      "012 123 23",
+      "210 210 210",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    if x == 3:\n        break\n    print(x, end='')\n    x += 1\nelse:\n    print('done')",
+    "o": [
+      "012",
+      "0123",
+      "0124done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        continue\n    print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "1245done",
+      "1245",
+      "12345done",
+      "12345"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    print(x, end='')\n    x += 1\n    if x == 3:\n        continue\n    print('after')\nelse:\n    print('done')",
+    "o": [
+      "0after 1after 23after 4after done",
+      "0after 1after 2after 3after 4after done",
+      "0after 1after 23after done",
+      "done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        pass\n    print(x, end='')\nelse:\n    print('done')",
+    "o": [
+      "12345done",
+      "1245done",
+      "1234done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            break\n        print(i * j, end=' ')\n    else:\n        print('inner loop finished')\n    print()",
+    "o": [
+      "2 3 6",
+      "2 3 inner loop finished",
+      "1 2 1 3",
+      "2 3"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            break\n        print(i * j, end=' ')\nelse:\n    print('outer loop finished')",
+    "o": [
+      "2 3 6 outer loop finished",
+      "2 outer loop finished",
+      "inner loop finished outer loop finished",
+      "2 3 outer loop finished"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i % 2 == 0:\n        pass\n    else:\n        print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "135done",
+      "135",
+      "15done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i % 2 == 0:\n        continue\n    else:\n        print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "135done",
+      "135",
+      "135 done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            continue\n        print(i * j, end=' ')\nelse:\n    print('outer loop finished')",
+    "o": [
+      "2 3 2 6 3 6 outer loop finished",
+      "2 3 2 3 6 outer loop finished",
+      "2 3 2 3 6 1 3 2 6",
+      "2 3 2 3 6 1 3 2 6 outer loop finished"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i % 2 == 0:\n        continue\n    print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "135done",
+      "135",
+      "1345done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        break\n    print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "12",
+      "12done",
+      "1234",
+      "1234done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        pass\n    print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "12345done",
+      "1245done",
+      "1234done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        continue\n    print(x, end='')\nelse:\n    print('done')",
+    "o": [
+      "1245done",
+      "1245",
+      "12345done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    print(x, end='')\n    x += 1\n    if x == 3:\n        break\n    print('after')\nelse:\n    print('done')",
+    "o": [
+      "0after1after2",
+      "0after1afterdone",
+      "0after1after2afterdone",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    x += 1\n    if x == 3:\n        continue\n    print(x, end='')\nelse:\n    print('done')",
+    "o": [
+      "1245done",
+      "1245",
+      "12345done",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nx = 0\nwhile x < 5:\n    print(x, end='')\n    x += 1\n    if x == 3:\n        continue\n    print('after')\nelse:\n    print('done')",
+    "o": [
+      "0after1after23after4afterdone",
+      "0after1afterdone",
+      "0after1after2",
+      "0after1after2after4afterdone"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i % 2 == 0:\n        continue\n        print(i, end='')\nelse:\n    print('done')",
+    "o": [
+      "done",
+      "135done",
+      "135",
+      "None of the options"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 6):\n    if i == 3:\n        break\n        print(i, end='')\n    else:\n    print('done')",
+    "o": [
+      "done done",
+      "12",
+      "1234",
+      "1234done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            continue\n        print(i * j, end=' ')\n        if i + j == 4:\n            break\nelse:\n    print('outer loop finished')",
+    "o": [
+      "2 3 2 6 3 outer loop finished",
+      "2 3 2 3 6 1 3 2 6 outer loop finished",
+      "2 3 2 3 6 outer loop finished",
+      "2 3 2 3 outer loop finished"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    if i == 2:\n        pass\n    else:\n        print(i, end=' ')\nelse:\n    print('done')",
+    "o": [
+      "1 3 done",
+      "1 3",
+      "done",
+      "1 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    if i == 2:\n        continue\n    else:\n        print(i, end=' ')\nelse:\n    print('done')",
+    "o": [
+      "1 3 done",
+      "1 3",
+      "done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    if i == 2:\n        break\n    else:\n        print(i, end=' ')\nelse:\n    print('done')",
+    "o": [
+      "1",
+      "1 done",
+      "1 2",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    if i == 2:\n        continue\n    else:\n        print(i, end=' ')\n        break\nelse:\n    print('done')",
+    "o": [
+      "1",
+      "1 done",
+      "1 3 done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    if i == 1:\n        i += 1\n        continue\n    print(i, end=' ')\n    i += 1\nelse:\n    print('done')",
+    "o": [
+      "0 2 done",
+      "0 1 2 done",
+      "1 2 done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    if i == 1:\n        i += 1\n        break\n    print(i, end=' ')\n    i += 1\nelse:\n    print('done')",
+    "o": [
+      "0",
+      "0 1",
+      "0 1 done",
+      "0 0"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(1, 4):\n        if i == j:\n            continue\n        if i * j == 6:\n            break\n        print(i * j, end=' ')\n    else:\n        print('inner loop finished')\n        break\n    print('outer loop finished')\nelse:\n    print('done')",
+    "o": [
+      "2 3 inner loop finished",
+      "2 inner loop finished done",
+      "2 inner loop finished inner loop finished done",
+      "2 inner loop finished outer loop finished done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    print(i)\nelse:\n    print('done')",
+    "o": [
+      "0 1 2 done",
+      "0 1 2",
+      "done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 4):\n    for j in range(i):\n        print(i, end=' ')\nelse:\n    print('done')",
+    "o": [
+      "1 2 2 3 3 3 done",
+      "1 2 2 3 3 3",
+      "done",
+      "1 2 3 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(1, 5):\n    if i == 3:\n        pass\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "1 2 4 done",
+      "1 2 4",
+      "done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    i += 1\n    if i == 2:\n        continue\n    print(i)\nelse:\n    print('done')",
+    "o": [
+      "1 3 done",
+      "1 3",
+      "done",
+      "1 2 3 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    i += 1\n    if i == 2:\n        break\n    print(i)\nelse:\n    print('done')",
+    "o": [
+      "1",
+      "1 2",
+      "done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(2, 5):\n    if i == 3:\n        continue\n    print(i)\nelse:\n    print('done')",
+    "o": [
+      "2 4 done",
+      "2 4",
+      "2 done",
+      "2 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            print('Hello')\n            break\n        print(i, j)\n    else:\n        continue\n    break\nelse:\n    print('done')",
+    "o": [
+      "Hello",
+      "Hello 1 0 done",
+      "Hello 0 1",
+      "0 1 2 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)\n    else:\n        continue\n    break\nelse:\n    print('done')",
+    "o": [
+      "0 1 0 2 1 0 1 2 2 0 2 1 done",
+      "0 1 0 2 1 0 1 2 2 0 2 1",
+      "done",
+      "0 1 2 3 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 2:\n    i += 1\n    for j in range(3):\n        if i == j:\n            continue\n        print(i, j)\n    else:\n        continue\n    break\nelse:\n    print('done')",
+    "o": [
+      "1 0 1 2 2 0 2 1 done",
+      "0 1 0 2 1 0 1 2 2 0 2 1 done",
+      "done",
+      "0 1 2 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    if i == 1:\n        pass\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "0 2 done",
+      "0 1 2 done",
+      "0 2",
+      "done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    if i == 1:\n        break\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "0",
+      "0 1 2 done",
+      "0 done",
+      "done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\nfor i in range(3):\n    if i == 1:\n        continue\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "0 2 done",
+      "0 1 2 done",
+      "0 2",
+      "done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    i += 1\n    if i == 2:\n        pass\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "1 3 done",
+      "1 2 3 done",
+      "1 3",
+      "1 1 1 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    i += 1\n    if i == 2:\n        break\n    else:\n        print(i)\nelse:\n    print('done')",
+    "o": [
+      "1",
+      "1 2 done",
+      "1 done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1\n    if i == 1:\n        continue\n    else:\n        print('foo')\nelse:\n    print('done')",
+    "o": [
+      "0 1 foo 2 foo done",
+      "0 foo 1 foo 2 foo done",
+      "0 1 foo 1 foo 2 done",
+      "0 foo 1 done"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    print(i)\n    i += 1\nelse:\n    print('done')",
+    "o": [
+      "0 1 2 done",
+      "0 1 2",
+      "done",
+      "None"
+    ]
+  },
+  {
+    "q": "\nWhat is the output of the following code snippet?",
+    "c": "\ni = 0\nwhile i < 3:\n    if i == 1:\n        i += 1\n        continue\n    else:\n        print(i)\n    i += 1\nelse:\n    print('done')",
+    "o": [
+      "0 2 done",
+      "0 1 2 done",
+      "0 2",
+      "None"
+    ]
+  }
+]
