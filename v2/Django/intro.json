@@ -1,0 +1,892 @@
+[
+    {
+        "q": "What is Django?",
+        "c": "",
+        "o": [
+            "A high-level Python web framework",
+            "A JavaScript library",
+            "A Python GUI framework",
+            "A Python data science tool"
+        ]
+    },
+    {
+        "q": "Which architectural pattern does Django follow?",
+        "c": "",
+        "o": [
+            "Model-View-Template (MVT)",
+            "Model-View-Controller (MVC)",
+            "Model-Template-Controller (MTC)",
+            "View-Model-Template (VMT)"
+        ]
+    },
+    {
+        "q": "Which of the following commands is used to create a new Django project?",
+        "c": "",
+        "o": [
+            "django-admin startproject",
+            "django-admin createproject",
+            "django-admin newproject",
+            "django-admin initialize"
+        ]
+    },
+    {
+        "q": "In Django, which file is used to configure the settings of a project?",
+        "c": "",
+        "o": [
+            "settings.py",
+            "urls.py",
+            "manage.py",
+            "views.py"
+        ]
+    },
+    {
+        "q": "Which command is used to run the Django development server?",
+        "c": "",
+        "o": [
+            "python manage.py runserver",
+            "django-admin runserver",
+            "python manage.py startserver",
+            "django runserver"
+        ]
+    },
+    {
+        "q": "What is the default port used by Django’s development server?",
+        "c": "",
+        "o": [
+            "8000",
+            "8080",
+            "8888",
+            "9000"
+        ]
+    },
+    {
+        "q": "In which year was Django initially released?",
+        "c": "",
+        "o": [
+            "2005",
+            "2003",
+            "2008",
+            "2010"
+        ]
+    },
+    {
+        "q": "Who are the creators of Django?",
+        "c": "",
+        "o": [
+            "Adrian Holovaty and Simon Willison",
+            "Guido van Rossum and Tim Berners-Lee",
+            "James Gosling and Brendan Eich",
+            "Linus Torvalds and Richard Stallman"
+        ]
+    },
+    {
+        "q": "Django was initially developed for which type of websites?",
+        "c": "",
+        "o": [
+            "Newspaper websites",
+            "E-commerce websites",
+            "Social media platforms",
+            "Educational platforms"
+        ]
+    },
+    {
+        "q": "Which of the following is a key feature of Django?",
+        "c": "",
+        "o": [
+            "DRY (Don’t Repeat Yourself) principle",
+            "Automatic caching",
+            "Frontend rendering",
+            "Automated database backups"
+        ]
+    },
+    {
+        "q": "Which of the following languages is required to work with Django?",
+        "c": "",
+        "o": [
+            "Python",
+            "JavaScript",
+            "Ruby",
+            "Java"
+        ]
+    },
+    {
+        "q": "Django is best known for which type of applications?",
+        "c": "",
+        "o": [
+            "Web applications",
+            "Mobile applications",
+            "Desktop applications",
+            "Database management systems"
+        ]
+    },
+    {
+        "q": "Which file in a Django project defines the URL patterns?",
+        "c": "",
+        "o": [
+            "urls.py",
+            "views.py",
+            "settings.py",
+            "models.py"
+        ]
+    },
+    {
+        "q": "Which command is used to create a new app in a Django project?",
+        "c": "",
+        "o": [
+            "python manage.py startapp",
+            "python manage.py createapp",
+            "django-admin startapp",
+            "django-admin newapp"
+        ]
+    },
+    {
+        "q": "What is the default database used by Django?",
+        "c": "",
+        "o": [
+            "SQLite",
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB"
+        ]
+    },
+    {
+        "q": "Which of the following template languages is supported by Django?",
+        "c": "",
+        "o": [
+            "Django Template Language (DTL)",
+            "Jinja2",
+            "Mako",
+            "Chameleon"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid Django app configuration file?",
+        "c": "",
+        "o": [
+            "apps.py",
+            "config.py",
+            "application.py",
+            "setup.py"
+        ]
+    },
+    {
+        "q": "Django follows which type of URL dispatcher?",
+        "c": "",
+        "o": [
+            "Regex-based URL dispatcher",
+            "Pattern-matching URL dispatcher",
+            "Path-matching URL dispatcher",
+            "Wildcard URL dispatcher"
+        ]
+    },
+    {
+        "q": "Which setting in Django is used to define the database configuration?",
+        "c": "",
+        "o": [
+            "DATABASES",
+            "DB_SETTINGS",
+            "DB_CONFIG",
+            "DATABASE_SETTINGS"
+        ]
+    },
+    {
+        "q": "In Django, which method is used to return an HTTP response?",
+        "c": "",
+        "o": [
+            "HttpResponse",
+            "JsonResponse",
+            "TemplateResponse",
+            "HttpRedirect"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid HTTP response status code?",
+        "c": "",
+        "o": [
+            "200",
+            "301",
+            "404",
+            "500"
+        ]
+    },
+    {
+        "q": "Django’s ORM is primarily used for?",
+        "c": "",
+        "o": [
+            "Interacting with the database",
+            "Handling user authentication",
+            "Serving static files",
+            "Processing templates"
+        ]
+    },
+    {
+        "q": "Which Django command is used to create database migrations?",
+        "c": "",
+        "o": [
+            "python manage.py makemigrations",
+            "python manage.py migrate",
+            "python manage.py create_migrations",
+            "django-admin makemigrations"
+        ]
+    },
+    {
+        "q": "Which Django command is used to apply migrations?",
+        "c": "",
+        "o": [
+            "python manage.py migrate",
+            "python manage.py makemigrations",
+            "python manage.py syncdb",
+            "django-admin migrate"
+        ]
+    },
+    {
+        "q": "Which setting is used to define the list of allowed hosts in Django?",
+        "c": "",
+        "o": [
+            "ALLOWED_HOSTS",
+            "HOSTS",
+            "ALLOWED_DOMAINS",
+            "TRUSTED_HOSTS"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Django 'manage.py' file?",
+        "c": "",
+        "o": [
+            "Utility script for managing the project",
+            "Configuration file for the project",
+            "Database configuration file",
+            "Template configuration file"
+        ]
+    },
+    {
+        "q": "Which of the following commands is used to create a superuser in Django?",
+        "c": "",
+        "o": [
+            "python manage.py createsuperuser",
+            "python manage.py createadmin",
+            "django-admin createsuperuser",
+            "python manage.py adminuser"
+        ]
+    },
+    {
+        "q": "What is the default Django project structure file where you define the project's URL patterns?",
+        "c": "",
+        "o": [
+            "urls.py",
+            "views.py",
+            "admin.py",
+            "settings.py"
+        ]
+    },
+    {
+        "q": "What is the recommended method to install Django?",
+        "c": "",
+        "o": [
+            "Using pip (pip install django)",
+            "Using conda",
+            "Downloading the source code",
+            "Using easy_install"
+        ]
+    },
+    {
+        "q": "Which command is used to check for any system checks or warnings in Django?",
+        "c": "",
+        "o": [
+            "python manage.py check",
+            "python manage.py systemcheck",
+            "python manage.py test",
+            "python manage.py validate"
+        ]
+    },
+    {
+        "q": "Which file is used to manage Django static files?",
+        "c": "",
+        "o": [
+            "static",
+            "media",
+            "assets",
+            "templates"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct way to define a URL pattern in Django?",
+        "c": "",
+        "o": [
+            "path('home/', views.home)",
+            "url('home/', views.home)",
+            "link('home/', views.home)",
+            "route('home/', views.home)"
+        ]
+    },
+    {
+        "q": "What is the purpose of Django’s middleware?",
+        "c": "",
+        "o": [
+            "Process requests and responses globally",
+            "Define database relationships",
+            "Render HTML templates",
+            "Serve static files"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a default Django app?",
+        "c": "",
+        "o": [
+            "django.auth.forms",
+            "django.contrib.sessions",
+            "django.contrib.admin",
+            "django.contrib.messages"
+        ]
+    },
+    {
+        "q": "Which of the following is a Django form field?",
+        "c": "",
+        "o": [
+            "CharField",
+            "EmailForm",
+            "PasswordInput",
+            "DropDownList"
+        ]
+    },
+    {
+        "q": "Which method is used to save data to the database in Django models?",
+        "c": "",
+        "o": [
+            "save()",
+            "create()",
+            "commit()",
+            "insert()"
+        ]
+    },
+    {
+        "q": "Which command is used to start an interactive shell in Django?",
+        "c": "",
+        "o": [
+            "python manage.py shell",
+            "django-admin shell",
+            "python manage.py startshell",
+            "django-admin startshell"
+        ]
+    },
+    {
+        "q": "Which file is used to manage Django URLs?",
+        "c": "",
+        "o": [
+            "urls.py",
+            "views.py",
+            "admin.py",
+            "models.py"
+        ]
+    },
+    {
+        "q": "Which setting is used to define static file storage in Django?",
+        "c": "",
+        "o": [
+            "STATICFILES_DIRS",
+            "MEDIA_URL",
+            "FILE_STORAGE",
+            "STATIC_STORAGE"
+        ]
+    },
+    {
+        "q": "Which database is fully supported by Django's ORM?",
+        "c": "",
+        "o": [
+            "PostgreSQL",
+            "MongoDB",
+            "Cassandra",
+            "Couchbase"
+        ]
+    },
+    {
+        "q": "Which of the following statements is true about Django ORM?",
+        "c": "",
+        "o": [
+            "It maps models to database tables",
+            "It only works with MySQL",
+            "It can’t perform SQL joins",
+            "It does not support migrations"
+        ]
+    },
+    {
+        "q": "What is a Django app?",
+        "c": "",
+        "o": [
+            "A web application component",
+            "A standalone project",
+            "A middleware component",
+            "A database schema"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid Django model field type?",
+        "c": "",
+        "o": [
+            "CharField",
+            "TextForm",
+            "WidgetField",
+            "HTMLField"
+        ]
+    },
+    {
+        "q": "How can you set a default value for a Django model field?",
+        "c": "",
+        "o": [
+            "Using the 'default' parameter",
+            "Using 'initial_value' parameter",
+            "Using 'set_default' method",
+            "Using 'default_value' parameter"
+        ]
+    },
+    {
+        "q": "Which of the following commands applies changes made in models to the database?",
+        "c": "",
+        "o": [
+            "python manage.py migrate",
+            "python manage.py makemigrations",
+            "python manage.py syncdb",
+            "python manage.py flush"
+        ]
+    },
+    {
+        "q": "Which method is used to define admin settings for a Django model?",
+        "c": "",
+        "o": [
+            "admin.ModelAdmin",
+            "admin.AdminPanel",
+            "admin.ModelSettings",
+            "admin.SuperAdmin"
+        ]
+    },
+    {
+        "q": "Which method is used to retrieve data from a Django model?",
+        "c": "",
+        "o": [
+            "queryset.filter()",
+            "model.query()",
+            "queryset.query()",
+            "model.find()"
+        ]
+    },
+    {
+        "q": "Which method is used to delete a model object in Django?",
+        "c": "",
+        "o": [
+            "delete()",
+            "remove()",
+            "destroy()",
+            "clear()"
+        ]
+    },
+    {
+        "q": "How do you define a foreign key relationship in Django?",
+        "c": "",
+        "o": [
+            "models.ForeignKey()",
+            "models.RelationKey()",
+            "models.ForeignRelation()",
+            "models.ManyToOneKey()"
+        ]
+    },
+    {
+        "q": "In Django, which template tag is used to display a variable’s value?",
+        "c": "",
+        "o": [
+            "{{ variable }}",
+            "{% variable %}",
+            "{{ variable %}",
+            "{# variable #}"
+        ]
+    },
+    {
+        "q": "Which of the following is used to pass context data from a view to a template in Django?",
+        "c": "",
+        "o": [
+            "A dictionary",
+            "A list",
+            "A tuple",
+            "A string"
+        ]
+    },
+    {
+        "q": "Which method is used to redirect to another URL in Django views?",
+        "c": "",
+        "o": [
+            "redirect()",
+            "goto()",
+            "relocate()",
+            "transfer()"
+        ]
+    },
+    {
+        "q": "What is the use of the 'context_processors' option in Django?",
+        "c": "",
+        "o": [
+            "Inject data into templates globally",
+            "Handle session management",
+            "Process HTTP requests",
+            "Validate forms"
+        ]
+    },
+    {
+        "q": "Which command is used to clear all the database data in Django?",
+        "c": "",
+        "o": [
+            "python manage.py flush",
+            "python manage.py clear",
+            "python manage.py reset",
+            "python manage.py clean"
+        ]
+    },
+    {
+        "q": "How can you render an HTML file in Django views?",
+        "c": "",
+        "o": [
+            "render(request, 'template_name.html')",
+            "return 'template_name.html'",
+            "send_file('template_name.html')",
+            "http.Response('template_name.html')"
+        ]
+    },
+    {
+        "q": "Which of the following is true about Django URLs?",
+        "c": "",
+        "o": [
+            "They are mapped to views",
+            "They are mapped to models",
+            "They are mapped to templates",
+            "They are mapped to forms"
+        ]
+    },
+    {
+        "q": "Which of the following template filters is used to convert text to uppercase in Django?",
+        "c": "",
+        "o": [
+            "upper",
+            "uppercase",
+            "capitalize",
+            "upcase"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct way to define a model in Django?",
+        "c": "",
+        "o": [
+            "class MyModel(models.Model):",
+            "class MyModel(django.Model):",
+            "class MyModel(model):",
+            "class MyModel(data.Model):"
+        ]
+    },
+    {
+        "q": "Which of the following is used to perform pagination in Django?",
+        "c": "",
+        "o": [
+            "Paginator",
+            "PageHandler",
+            "PageManager",
+            "PageController"
+        ]
+    },
+    {
+        "q": "Which template tag is used to include a template within another template?",
+        "c": "",
+        "o": [
+            "{% include 'template_name.html' %}",
+            "{% insert 'template_name.html' %}",
+            "{% extend 'template_name.html' %}",
+            "{% import 'template_name.html' %}"
+        ]
+    },
+    {
+        "q": "How do you define a many-to-many relationship in Django models?",
+        "c": "",
+        "o": [
+            "models.ManyToManyField()",
+            "models.ManyRelationField()",
+            "models.ManyToManyKey()",
+            "models.RelationField()"
+        ]
+    },
+    {
+        "q": "Which method in Django is used to validate form data?",
+        "c": "",
+        "o": [
+            "is_valid()",
+            "validate()",
+            "check()",
+            "is_correct()"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct way to define a template block in Django?",
+        "c": "",
+        "o": [
+            "{% block block_name %}...{% endblock %}",
+            "{% start block_name %}...{% end %}",
+            "{% section block_name %}...{% endsection %}",
+            "{% div block_name %}...{% enddiv %}"
+        ]
+    },
+    {
+        "q": "In Django templates, what is the output of the filter '|length'?",
+        "c": "",
+        "o": [
+            "The number of elements",
+            "The string length in uppercase",
+            "The number of variables",
+            "The number of objects in the database"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct syntax to include static files in a Django template?",
+        "c": "",
+        "o": [
+            "{% load static %}",
+            "{% static load %}",
+            "{% include static %}",
+            "{% use static %}"
+        ]
+    },
+    {
+        "q": "Which of the following commands is used to check for problems in Django models?",
+        "c": "",
+        "o": [
+            "python manage.py check",
+            "python manage.py inspectdb",
+            "python manage.py troubleshoot",
+            "python manage.py validate"
+        ]
+    },
+    {
+        "q": "Which HTTP method is used to send data to a server in Django forms?",
+        "c": "",
+        "o": [
+            "POST",
+            "GET",
+            "PUT",
+            "PATCH"
+        ]
+    },
+    {
+        "q": "Which of the following Django settings file option determines if debugging information is shown?",
+        "c": "",
+        "o": [
+            "DEBUG",
+            "SHOW_ERRORS",
+            "LOGGING",
+            "DEBUG_MODE"
+        ]
+    },
+    {
+        "q": "What is the default behavior of Django views when handling GET requests?",
+        "c": "",
+        "o": [
+            "Render a template",
+            "Return a 404 error",
+            "Serve static files",
+            "Redirect to another page"
+        ]
+    },
+    {
+        "q": "Which command is used to apply the latest migrations to the database?",
+        "c": "",
+        "o": [
+            "python manage.py migrate",
+            "python manage.py makemigrations",
+            "python manage.py syncdb",
+            "python manage.py migrate --sync"
+        ]
+    },
+    {
+        "q": "In Django, where do you specify the settings for the project?",
+        "c": "",
+        "o": [
+            "settings.py",
+            "views.py",
+            "models.py",
+            "admin.py"
+        ]
+    },
+    {
+        "q": "What is the purpose of Django's `HttpResponse` object?",
+        "c": "",
+        "o": [
+            "Return a response to a request",
+            "Query the database",
+            "Render a template",
+            "Manage URLs"
+        ]
+    },
+    {
+        "q": "Which of the following is a built-in Django signal?",
+        "c": "",
+        "o": [
+            "pre_save",
+            "pre_update",
+            "on_insert",
+            "post_delete"
+        ]
+    },
+    {
+        "q": "Which of the following commands is used to create a new Django project?",
+        "c": "",
+        "o": [
+            "django-admin startproject projectname",
+            "django-admin createproject projectname",
+            "django-admin start app projectname",
+            "django-admin create app projectname"
+        ]
+    },
+    {
+        "q": "In Django, what does the 'MEDIA_URL' setting define?",
+        "c": "",
+        "o": [
+            "The base URL for user-uploaded files",
+            "The URL for static files",
+            "The path to the templates folder",
+            "The base URL for API endpoints"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid template inheritance structure in Django?",
+        "c": "",
+        "o": [
+            "{% extends 'base.html' %}",
+            "{% include 'base.html' %}",
+            "{% load 'base.html' %}",
+            "{% import 'base.html' %}"
+        ]
+    },
+    {
+        "q": "Which of the following options is true about Django static files?",
+        "c": "",
+        "o": [
+            "They are served separately from media files",
+            "They are served automatically with media files",
+            "They are embedded in the HTML file",
+            "They are used only for admin panel"
+        ]
+    },
+    {
+        "q": "In Django, which of the following decorators is used to restrict access to a view to authenticated users?",
+        "c": "",
+        "o": [
+            "@login_required",
+            "@restrict_user",
+            "@auth_user",
+            "@authenticated_only"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'get_object_or_404()' function in Django?",
+        "c": "",
+        "o": [
+            "Fetch an object or raise a 404 error if not found",
+            "Redirect to a 404 error page if user is unauthorized",
+            "Serve static files or raise an error",
+            "Retrieve multiple objects and return a 404 if none"
+        ]
+    },
+    {
+        "q": "Which of the following is used to generate forms from models in Django?",
+        "c": "",
+        "o": [
+            "ModelForm",
+            "FormModel",
+            "FormGenerator",
+            "ModelGenerate"
+        ]
+    },
+    {
+        "q": "Which Django command is used to run a development server?",
+        "c": "",
+        "o": [
+            "python manage.py runserver",
+            "django-admin runserver",
+            "python manage.py serverstart",
+            "django-admin startserver"
+        ]
+    },
+    {
+        "q": "Which method is used to render templates in Django views?",
+        "c": "",
+        "o": [
+            "render()",
+            "send_template()",
+            "display_template()",
+            "return_template()"
+        ]
+    },
+    {
+        "q": "What is the role of `urlpatterns` in Django?",
+        "c": "",
+        "o": [
+            "Map URLs to views",
+            "Store project settings",
+            "Render HTML templates",
+            "Configure static files"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid way to define a path in Django's URLconf?",
+        "c": "",
+        "o": [
+            "path('home/', views.home)",
+            "url('home/', views.home)",
+            "route('home/', views.home)",
+            "link('home/', views.home)"
+        ]
+    },
+    {
+        "q": "Which of the following template tags is used to display errors in Django forms?",
+        "c": "",
+        "o": [
+            "{{ form.errors }}",
+            "{{ form.validations }}",
+            "{{ form.data.errors }}",
+            "{{ form.errors.show }}"
+        ]
+    },
+    {
+        "q": "Which of the following commands is used to create a new Django app?",
+        "c": "",
+        "o": [
+            "python manage.py startapp appname",
+            "python manage.py createapp appname",
+            "django-admin startapp appname",
+            "django-admin createapp appname"
+        ]
+    },
+    {
+        "q": "Which method is used to display flash messages in Django?",
+        "c": "",
+        "o": [
+            "messages.add_message()",
+            "flash.add_message()",
+            "session.add_message()",
+            "alert.add_message()"
+        ]
+    },
+    {
+        "q": "In Django, how do you connect a form to a model?",
+        "c": "",
+        "o": [
+            "Using a ModelForm",
+            "Using a FormSet",
+            "Using a template form",
+            "Using a formfield"
+        ]
+    },
+    {
+        "q": "What is the purpose of Django's settings.py file?",
+        "c": "",
+        "o": [
+            "Store configuration for the project",
+            "Map URLs to views",
+            "Store template files",
+            "Handle user authentication"
+        ]
+    }
+]
