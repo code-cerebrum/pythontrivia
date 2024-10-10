@@ -1,22 +1,22 @@
 [
   {
-      "q": "weekly Django1?",
-      "c": "",
+      "q": "What does the following Django queryset return?",
+      "c": "from django.db.models import Q\nUser.objects.filter(Q(is_active=True) & Q(email__endswith=\"@example.com\"))",
       "o": [
-          "weekly Ans",
-          "weekly option1",
-          "weekly option2",
-          "weekly option3"
+          "All active users with emails ending in \"@example.com\"",
+          "All users, whether active or not, with emails ending in \"@example.com\"",
+          "All inactive users with emails ending in \"@example.com\"",
+          "All active users, regardless of their email domain"
       ]
   },
   {
-      "q": "weekly Django2?",
-      "c": "",
+      "q": "What is the output of this Django model manager?",
+      "c": "class PublishedManager(models.Manager):\n    def get_queryset(self):\n        return super().get_queryset().filter(status='published')\n\nclass Post(models.Model):\n    title = models.CharField(max_length=255)\n    status = models.CharField(max_length=10)\n    objects = PublishedManager()",
       "o": [
-          "weekly ans2",
-          "weekly IOption1 2",
-          "weekly option2 2",
-          "weekly option3 2"
+          "Filters all posts with status \"published\"",
+          "Filters all posts, regardless of status",
+          "Returns all posts, including unpublished posts",
+          "Applies no filtering on the posts"
       ]
   }
 ]

@@ -1,0 +1,672 @@
+[
+    {
+        "q": "What is the main purpose of Django forms?",
+        "c": null,
+        "o": [
+            "Handle input validation",
+            "Render HTML pages",
+            "Manage database connections",
+            "Route URLs"
+        ]
+    },
+    {
+        "q": "Which class is used to create a Django form?",
+        "c": null,
+        "o": [
+            "forms.Form",
+            "django.models",
+            "render.Form",
+            "form_handler"
+        ]
+    },
+    {
+        "q": "How do you specify a text input field in a Django form?",
+        "c": null,
+        "o": [
+            "forms.CharField()",
+            "forms.TextInput()",
+            "forms.Textarea()",
+            "forms.InputField()"
+        ]
+    },
+    {
+        "q": "Which method is used to validate form data in Django?",
+        "c": null,
+        "o": [
+            "is_valid()",
+            "validate()",
+            "check_data()",
+            "is_correct()"
+        ]
+    },
+    {
+        "q": "How can you add a placeholder to a form field in Django?",
+        "c": null,
+        "o": [
+            "widget=forms.TextInput(attrs={'placeholder':'value'})",
+            "form_field=forms.CharField(placeholder='value')",
+            "field=forms.Input(attrs={'placeholder':'value'})",
+            "field.add_placeholder('value')"
+        ]
+    },
+    {
+        "q": "What is the default method for submitting a Django form?",
+        "c": null,
+        "o": [
+            "POST",
+            "GET",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "How do you bind data to a Django form for validation?",
+        "c": null,
+        "o": [
+            "form = MyForm(request.POST)",
+            "form.bind(request)",
+            "form.submit(request)",
+            "form.validate(request.POST)"
+        ]
+    },
+    {
+        "q": "Which form widget is used for password input?",
+        "c": null,
+        "o": [
+            "PasswordInput",
+            "CharField",
+            "TextInput",
+            "InputField"
+        ]
+    },
+    {
+        "q": "Which widget is used for creating dropdowns in Django forms?",
+        "c": null,
+        "o": [
+            "forms.Select()",
+            "forms.DropDown()",
+            "forms.ChoiceField()",
+            "forms.MultipleChoice()"
+        ]
+    },
+    {
+        "q": "How do you specify a file upload field in Django forms?",
+        "c": null,
+        "o": [
+            "forms.FileField()",
+            "forms.UploadField()",
+            "forms.CharField(widget=FileWidget())",
+            "forms.InputFile()"
+        ]
+    },
+    {
+        "q": "Which form field is used for Boolean input in Django?",
+        "c": null,
+        "o": [
+            "forms.BooleanField()",
+            "forms.CharField()",
+            "forms.InputField()",
+            "forms.CheckboxField()"
+        ]
+    },
+    {
+        "q": "How do you render a Django form in a template?",
+        "c": null,
+        "o": [
+            "{{ form }}",
+            "{{ form.render }}",
+            "{{ render(form) }}",
+            "{{ form.display() }}"
+        ]
+    },
+    {
+        "q": "Which argument is passed to make a Django form field mandatory?",
+        "c": null,
+        "o": [
+            "required=True",
+            "mandatory=True",
+            "validate=True",
+            "required_field=True"
+        ]
+    },
+    {
+        "q": "What is the method to save a Django form to the database?",
+        "c": null,
+        "o": [
+            "form.save()",
+            "form.commit()",
+            "form.submit()",
+            "form.store()"
+        ]
+    },
+    {
+        "q": "How do you customize form validation logic?",
+        "c": null,
+        "o": [
+            "clean_<field_name>()",
+            "validate_<field_name>()",
+            "check_<field_name>()",
+            "is_valid_<field_name>()"
+        ]
+    },
+    {
+        "q": "What is the output of form.errors in Django?",
+        "c": null,
+        "o": [
+            "A dictionary of error messages",
+            "A list of error codes",
+            "A boolean value",
+            "None if no errors"
+        ]
+    },
+    {
+        "q": "Which method is used to initialize a form with instance data?",
+        "c": null,
+        "o": [
+            "form = MyForm(instance=obj)",
+            "form.load(instance=obj)",
+            "form.init(obj)",
+            "form.populate(obj)"
+        ]
+    },
+    {
+        "q": "Which widget is used for multiple selection in a form?",
+        "c": null,
+        "o": [
+            "forms.SelectMultiple()",
+            "forms.ChoiceField()",
+            "forms.MultiField()",
+            "forms.Select()"
+        ]
+    },
+    {
+        "q": "Which field type is best for handling large text inputs?",
+        "c": null,
+        "o": [
+            "forms.Textarea()",
+            "forms.CharField()",
+            "forms.LargeTextField()",
+            "forms.InputField()"
+        ]
+    },
+    {
+        "q": "What does the 'label' argument in a Django form field define?",
+        "c": null,
+        "o": [
+            "The display name for the field",
+            "The placeholder value",
+            "The validation rule",
+            "The field's CSS class"
+        ]
+    },
+    {
+        "q": "How can you prevent a Django form from being tampered with?",
+        "c": null,
+        "o": [
+            "Use CSRF tokens",
+            "Enable form validation",
+            "Use encrypted forms",
+            "Disable form submission"
+        ]
+    },
+    {
+        "q": "What type of field is used to validate email input?",
+        "c": null,
+        "o": [
+            "forms.EmailField()",
+            "forms.TextInput()",
+            "forms.CharField()",
+            "forms.InputField()"
+        ]
+    },
+    {
+        "q": "Which method is used to manually trigger form validation in Django?",
+        "c": null,
+        "o": [
+            "form.full_clean()",
+            "form.validate()",
+            "form.check_validity()",
+            "form.run_validators()"
+        ]
+    },
+    {
+        "q": "How do you display form field errors in a Django template?",
+        "c": null,
+        "o": [
+            "{{ form.field.errors }}",
+            "{{ form.error }}",
+            "{{ form.field.error_list }}",
+            "{{ form.errors.field }}"
+        ]
+    },
+    {
+        "q": "Which form widget is used for selecting a date?",
+        "c": null,
+        "o": [
+            "forms.DateInput()",
+            "forms.CharField()",
+            "forms.TimeInput()",
+            "forms.SelectDateWidget()"
+        ]
+    },
+    {
+        "q": "Which field is used to handle form submission of a number?",
+        "c": null,
+        "o": [
+            "forms.IntegerField()",
+            "forms.CharField()",
+            "forms.FloatField()",
+            "forms.NumberInput()"
+        ]
+    },
+    {
+        "q": "Which decorator is required for views that handle form submissions?",
+        "c": null,
+        "o": [
+            "@csrf_protect",
+            "@validate_form",
+            "@protect_view",
+            "@form_submission_required"
+        ]
+    },
+    {
+        "q": "What is the primary function of formsets in Django?",
+        "c": null,
+        "o": [
+            "Manage multiple forms on one page",
+            "Validate a single form",
+            "Manage complex validation",
+            "Optimize form rendering"
+        ]
+    },
+    {
+        "q": "How do you define a hidden field in a Django form?",
+        "c": null,
+        "o": [
+            "forms.HiddenInput()",
+            "forms.CharField(hidden=True)",
+            "forms.TextInput(hidden=True)",
+            "forms.HiddenField()"
+        ]
+    },
+    {
+        "q": "Which form method is used to handle file uploads in Django?",
+        "c": null,
+        "o": [
+            "enctype='multipart/form-data'",
+            "method='POST'",
+            "action='/upload/'",
+            "form.upload()"
+        ]
+    },
+    {
+        "q": "What field would you use to handle a choice selection?",
+        "c": null,
+        "o": [
+            "forms.ChoiceField()",
+            "forms.SelectField()",
+            "forms.Dropdown()",
+            "forms.MultipleChoiceField()"
+        ]
+    },
+    {
+        "q": "How can you set an initial value for a form field?",
+        "c": null,
+        "o": [
+            "initial='value'",
+            "default='value'",
+            "start_value='value'",
+            "value='default'"
+        ]
+    },
+    {
+        "q": "Which Django form widget is used for handling time inputs?",
+        "c": null,
+        "o": [
+            "forms.TimeInput()",
+            "forms.DateField()",
+            "forms.TimeField()",
+            "forms.SelectTimeWidget()"
+        ]
+    },
+    {
+        "q": "Which method is used to clear form data?",
+        "c": null,
+        "o": [
+            "form.cleaned_data",
+            "form.reset()",
+            "form.flush()",
+            "form.clear()"
+        ]
+    },
+    {
+        "q": "How do you apply custom validation to a formset?",
+        "c": null,
+        "o": [
+            "clean() method on formset",
+            "validate_all() method",
+            "check_formset()",
+            "formset.is_valid()"
+        ]
+    },
+    {
+        "q": "Which option controls how many forms are displayed in a formset?",
+        "c": null,
+        "o": [
+            "extra",
+            "form_count",
+            "limit",
+            "max_forms"
+        ]
+    },
+    {
+        "q": "How can you restrict the number of form submissions?",
+        "c": null,
+        "o": [
+            "max_num",
+            "max_entries",
+            "max_validations",
+            "max_attempts"
+        ]
+    },
+    {
+        "q": "Which method is used to create dynamic form fields in Django?",
+        "c": null,
+        "o": [
+            "add_field()",
+            "create_field()",
+            "append_field()",
+            "insert_field()"
+        ]
+    },
+    {
+        "q": "Which method is used to initialize a form with initial data?",
+        "c": null,
+        "o": [
+            "form = MyForm(initial={'field': 'value'})",
+            "form.load(initial={'field': 'value'})",
+            "form.start(initial={'field': 'value'})",
+            "form.fill({'field': 'value'})"
+        ]
+    },
+    {
+        "q": "Which form widget is used for password confirmation fields?",
+        "c": null,
+        "o": [
+            "forms.PasswordInput()",
+            "forms.CharField()",
+            "forms.TextInput()",
+            "forms.SecretField()"
+        ]
+    },
+    {
+        "q": "How do you make a field read-only in Django?",
+        "c": null,
+        "o": [
+            "widget=forms.TextInput(attrs={'readonly': 'readonly'})",
+            "readonly=True",
+            "disable_input=True",
+            "form.readonly=True"
+        ]
+    },
+    {
+        "q": "Which method is used to access cleaned form data?",
+        "c": null,
+        "o": [
+            "form.cleaned_data",
+            "form.validated_data",
+            "form.cleaned()",
+            "form.input_data"
+        ]
+    },
+    {
+        "q": "Which form field is best for handling decimal input?",
+        "c": null,
+        "o": [
+            "forms.DecimalField()",
+            "forms.FloatField()",
+            "forms.NumberField()",
+            "forms.IntegerField()"
+        ]
+    },
+    {
+        "q": "Which form widget is used for multiple checkbox inputs?",
+        "c": null,
+        "o": [
+            "forms.CheckboxSelectMultiple()",
+            "forms.CheckboxField()",
+            "forms.MultiCheckbox()",
+            "forms.SelectCheckbox()"
+        ]
+    },
+    {
+        "q": "How can you dynamically add a CSS class to a form field in Django?",
+        "c": null,
+        "o": [
+            "widget=forms.TextInput(attrs={'class':'my-class'})",
+            "widget=forms.CharField(class='my-class')",
+            "css_class='my-class'",
+            "field.add_class('my-class')"
+        ]
+    },
+    {
+        "q": "What is the purpose of form.as_p() in Django?",
+        "c": null,
+        "o": [
+            "Render form fields wrapped in <p> tags",
+            "Render form fields in a paragraph layout",
+            "Render form fields in table format",
+            "Render form as plain HTML"
+        ]
+    },
+    {
+        "q": "How do you limit the number of characters in a form field?",
+        "c": null,
+        "o": [
+            "max_length",
+            "min_length",
+            "char_limit",
+            "limit_length"
+        ]
+    },
+    {
+        "q": "How can you display error messages for individual form fields?",
+        "c": null,
+        "o": [
+            "{{ form.field.errors }}",
+            "{{ form.errors }}",
+            "{{ field.error_list }}",
+            "{{ field.error }}"
+        ]
+    },
+    {
+        "q": "Which form widget is used for radio button input?",
+        "c": null,
+        "o": [
+            "forms.RadioSelect()",
+            "forms.RadioField()",
+            "forms.Select()",
+            "forms.CheckboxSelect()"
+        ]
+    },
+    {
+        "q": "How can you access the value of a form field in a Django template?",
+        "c": null,
+        "o": [
+            "{{ form.field.value }}",
+            "{{ form.field.data }}",
+            "{{ field.value }}",
+            "{{ form.value.field }}"
+        ]
+    },
+    {
+        "q": "Which field type is used for date input in Django?",
+        "c": null,
+        "o": [
+            "forms.DateField()",
+            "forms.CharField()",
+            "forms.InputField()",
+            "forms.TimeField()"
+        ]
+    },
+    {
+        "q": "What is the output of form.non_field_errors()?",
+        "c": null,
+        "o": [
+            "List of errors not associated with a specific field",
+            "List of form validation errors",
+            "Errors associated with all fields",
+            "Boolean result of form validation"
+        ]
+    },
+    {
+        "q": "Which argument specifies if a Django form field is optional?",
+        "c": null,
+        "o": [
+            "required=False",
+            "optional=True",
+            "validate=False",
+            "mandatory=False"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'clean()' method in Django forms?",
+        "c": null,
+        "o": [
+            "To validate and clean data",
+            "To render form fields",
+            "To store form data",
+            "To reset form fields"
+        ]
+    },
+    {
+        "q": "How do you define a custom widget for a Django form field?",
+        "c": null,
+        "o": [
+            "widget=CustomWidget()",
+            "widget=custom_input()",
+            "widget=forms.Widget(CustomWidget)",
+            "custom_widget=True"
+        ]
+    },
+    {
+        "q": "Which widget is best for capturing time input?",
+        "c": null,
+        "o": [
+            "forms.TimeInput()",
+            "forms.TimeField()",
+            "forms.DateInput()",
+            "forms.DateTimeField()"
+        ]
+    },
+    {
+        "q": "How do you add help text to a Django form field?",
+        "c": null,
+        "o": [
+            "help_text='Some help text'",
+            "help='Some help text'",
+            "tooltip='Some help text'",
+            "description='Some help text'"
+        ]
+    },
+    {
+        "q": "Which field handles a URL input in Django forms?",
+        "c": null,
+        "o": [
+            "forms.URLField()",
+            "forms.CharField()",
+            "forms.TextInput()",
+            "forms.LinkField()"
+        ]
+    },
+    {
+        "q": "Which attribute defines a form as multipart for file uploads?",
+        "c": null,
+        "o": [
+            "enctype='multipart/form-data'",
+            "form_upload=True",
+            "form_type='file_upload'",
+            "formdata='upload'"
+        ]
+    },
+    {
+        "q": "Which field handles image uploads in Django forms?",
+        "c": null,
+        "o": [
+            "forms.ImageField()",
+            "forms.FileField()",
+            "forms.PictureField()",
+            "forms.UploadImage()"
+        ]
+    },
+    {
+        "q": "What does the 'auto_id' option do in a Django form?",
+        "c": null,
+        "o": [
+            "Automatically generates ID attributes for fields",
+            "Automatically assigns field names",
+            "Auto-generates form validation",
+            "Auto-validates form fields"
+        ]
+    },
+    {
+        "q": "Which attribute allows multiple file uploads in a Django form?",
+        "c": null,
+        "o": [
+            "multiple=True",
+            "allow_multiple=True",
+            "multiple_upload=True",
+            "upload_all=True"
+        ]
+    },
+    {
+        "q": "Which method is used to check if the form was submitted using POST?",
+        "c": null,
+        "o": [
+            "if request.method == 'POST'",
+            "if request.type == 'POST'",
+            "if form.method == 'POST'",
+            "if form.submit == 'POST'"
+        ]
+    },
+    {
+        "q": "Which field is best suited for entering IP addresses?",
+        "c": null,
+        "o": [
+            "forms.GenericIPAddressField()",
+            "forms.IPField()",
+            "forms.IPInput()",
+            "forms.URLField()"
+        ]
+    },
+    {
+        "q": "How do you exclude certain fields from a Django model form?",
+        "c": null,
+        "o": [
+            "exclude=['field1', 'field2']",
+            "omit=['field1', 'field2']",
+            "hidden_fields=['field1', 'field2']",
+            "ignore=['field1', 'field2']"
+        ]
+    },
+    {
+        "q": "Which option limits formset instances in Django?",
+        "c": null,
+        "o": [
+            "max_num",
+            "limit_instances",
+            "restrict_count",
+            "max_forms"
+        ]
+    },
+    {
+        "q": "Which attribute sets a form field as disabled?",
+        "c": null,
+        "o": [
+            "disabled=True",
+            "readonly=True",
+            "disable_input=True",
+            "input_disable=True"
+        ]
+    }
+]

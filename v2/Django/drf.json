@@ -1,0 +1,592 @@
+[
+    {
+        "q": "What does DRF stand for in Django?",
+        "c": null,
+        "o": [
+            "Django REST Framework",
+            "Django React Framework",
+            "Django Request Framework",
+            "Django Runtime Framework"
+        ]
+    },
+    {
+        "q": "Which class is used to define an API view in DRF?",
+        "c": null,
+        "o": [
+            "APIView",
+            "ModelViewSet",
+            "GenericView",
+            "View"
+        ]
+    },
+    {
+        "q": "What is the main purpose of a serializer in DRF?",
+        "c": null,
+        "o": [
+            "Convert complex data to native data",
+            "Perform authentication",
+            "Handle database queries",
+            "Render HTML pages"
+        ]
+    },
+    {
+        "q": "Which method is used to save data in a DRF serializer?",
+        "c": null,
+        "o": [
+            "save()",
+            "create()",
+            "validate()",
+            "update()"
+        ]
+    },
+    {
+        "q": "What is the purpose of a ViewSet in DRF?",
+        "c": null,
+        "o": [
+            "To group related views",
+            "To handle database operations",
+            "To validate data",
+            "To manage URL routing"
+        ]
+    },
+    {
+        "q": "Which class is used for pagination in DRF?",
+        "c": null,
+        "o": [
+            "PageNumberPagination",
+            "LimitOffsetPagination",
+            "APIViewPagination",
+            "CursorPagination"
+        ]
+    },
+    {
+        "q": "How do you define a field as read-only in DRF serializer?",
+        "c": null,
+        "o": [
+            "read_only=True",
+            "readonly=True",
+            "editable=False",
+            "write_only=True"
+        ]
+    },
+    {
+        "q": "What does 'HyperlinkedModelSerializer' do?",
+        "c": null,
+        "o": [
+            "Creates hyperlinks for object relations",
+            "Creates a hypermedia API",
+            "Converts data to JSON",
+            "Generates a REST endpoint"
+        ]
+    },
+    {
+        "q": "Which of the following is a built-in authentication class in DRF?",
+        "c": null,
+        "o": [
+            "TokenAuthentication",
+            "OAuthAuthentication",
+            "CookieAuthentication",
+            "JWTAuthentication"
+        ]
+    },
+    {
+        "q": "What is the purpose of a router in DRF?",
+        "c": null,
+        "o": [
+            "Automatically handles URL routing",
+            "Serializes data",
+            "Authenticates users",
+            "Handles HTTP requests"
+        ]
+    },
+    {
+        "q": "Which HTTP method is typically used for creating a resource?",
+        "c": null,
+        "o": [
+            "POST",
+            "GET",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid DRF permission class?",
+        "c": null,
+        "o": [
+            "IsNotAuthenticated",
+            "IsAuthenticated",
+            "IsAdminUser",
+            "AllowAny"
+        ]
+    },
+    {
+        "q": "Which DRF feature is used to throttle API requests?",
+        "c": null,
+        "o": [
+            "Throttling",
+            "Permissions",
+            "Authentication",
+            "Pagination"
+        ]
+    },
+    {
+        "q": "Which decorator is used to turn a Django function-based view into a DRF API view?",
+        "c": null,
+        "o": [
+            "@api_view",
+            "@rest_view",
+            "@serialize_view",
+            "@api_function"
+        ]
+    },
+    {
+        "q": "Which HTTP status code indicates a successful resource creation?",
+        "c": null,
+        "o": [
+            "201",
+            "200",
+            "400",
+            "404"
+        ]
+    },
+    {
+        "q": "What is the main use of `ModelViewSet` in DRF?",
+        "c": null,
+        "o": [
+            "CRUD operations",
+            "Database migration",
+            "Authentication",
+            "Logging"
+        ]
+    },
+    {
+        "q": "Which of the following is not a DRF view class?",
+        "c": null,
+        "o": [
+            "TemplateView",
+            "GenericAPIView",
+            "APIView",
+            "ModelViewSet"
+        ]
+    },
+    {
+        "q": "What does the @action decorator do in a DRF ViewSet?",
+        "c": null,
+        "o": [
+            "Adds custom actions",
+            "Restricts actions to admins",
+            "Serializes data",
+            "Validates requests"
+        ]
+    },
+    {
+        "q": "Which serializer method is used to update an existing object?",
+        "c": null,
+        "o": [
+            "update()",
+            "save()",
+            "validate()",
+            "clean()"
+        ]
+    },
+    {
+        "q": "Which renderer class is used to return JSON responses by default in DRF?",
+        "c": null,
+        "o": [
+            "JSONRenderer",
+            "HTMLRenderer",
+            "BrowsableAPIRenderer",
+            "TemplateRenderer"
+        ]
+    },
+    {
+        "q": "What is the default format for DRF API responses?",
+        "c": null,
+        "o": [
+            "JSON",
+            "XML",
+            "HTML",
+            "Plain text"
+        ]
+    },
+    {
+        "q": "Which field is automatically created by `HyperlinkedModelSerializer`?",
+        "c": null,
+        "o": [
+            "url",
+            "link",
+            "hyperlink",
+            "endpoint"
+        ]
+    },
+    {
+        "q": "Which method is used to filter querysets in DRF views?",
+        "c": null,
+        "o": [
+            "get_queryset()",
+            "filter()",
+            "queryset()",
+            "set_queryset()"
+        ]
+    },
+    {
+        "q": "Which class is used for token-based authentication in DRF?",
+        "c": null,
+        "o": [
+            "TokenAuthentication",
+            "SessionAuthentication",
+            "BasicAuthentication",
+            "OAuth2Authentication"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid status code for a successful DRF request?",
+        "c": null,
+        "o": [
+            "400",
+            "200",
+            "201",
+            "204"
+        ]
+    },
+    {
+        "q": "What is the default throttling rate for anonymous users in DRF?",
+        "c": null,
+        "o": [
+            "Throttle at 60 per minute",
+            "Throttle at 100 per minute",
+            "Throttle at 10 per minute",
+            "Throttle at 20 per minute"
+        ]
+    },
+    {
+        "q": "Which HTTP method is used to fully update a resource?",
+        "c": null,
+        "o": [
+            "PUT",
+            "POST",
+            "PATCH",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "Which DRF feature enables detailed, HTML-formatted API documentation?",
+        "c": null,
+        "o": [
+            "Browsable API",
+            "Swagger API",
+            "AutoDocs",
+            "Hypermedia API"
+        ]
+    },
+    {
+        "q": "Which DRF class provides support for rendering HTML responses?",
+        "c": null,
+        "o": [
+            "TemplateHTMLRenderer",
+            "HTMLRenderer",
+            "JSONRenderer",
+            "XMLRenderer"
+        ]
+    },
+    {
+        "q": "Which HTTP method is used to partially update a resource?",
+        "c": null,
+        "o": [
+            "PATCH",
+            "PUT",
+            "POST",
+            "GET"
+        ]
+    },
+    {
+        "q": "Which renderer is responsible for rendering the DRF's web-browsable API?",
+        "c": null,
+        "o": [
+            "BrowsableAPIRenderer",
+            "JSONRenderer",
+            "HTMLRenderer",
+            "TemplateRenderer"
+        ]
+    },
+    {
+        "q": "What method is used to validate custom fields in DRF serializers?",
+        "c": null,
+        "o": [
+            "validate_<field_name>()",
+            "clean_<field_name>()",
+            "check_<field_name>()",
+            "verify_<field_name>()"
+        ]
+    },
+    {
+        "q": "Which mixin provides 'create' functionality in a DRF view?",
+        "c": null,
+        "o": [
+            "CreateModelMixin",
+            "UpdateModelMixin",
+            "RetrieveModelMixin",
+            "ListModelMixin"
+        ]
+    },
+    {
+        "q": "Which class allows you to paginate a large dataset in DRF?",
+        "c": null,
+        "o": [
+            "Pagination",
+            "Throttling",
+            "FilterSet",
+            "Router"
+        ]
+    },
+    {
+        "q": "Which setting controls the default pagination class in DRF?",
+        "c": null,
+        "o": [
+            "DEFAULT_PAGINATION_CLASS",
+            "PAGINATION_CLASS",
+            "DEFAULT_PAGE_SIZE",
+            "PAGINATION_SIZE"
+        ]
+    },
+    {
+        "q": "Which authentication method is used by default in DRF?",
+        "c": null,
+        "o": [
+            "SessionAuthentication",
+            "TokenAuthentication",
+            "BasicAuthentication",
+            "JWTAuthentication"
+        ]
+    },
+    {
+        "q": "Which DRF permission allows unrestricted access to any API view?",
+        "c": null,
+        "o": [
+            "AllowAny",
+            "IsAuthenticated",
+            "IsAdminUser",
+            "DenyAll"
+        ]
+    },
+    {
+        "q": "What does the @api_view decorator convert a function-based view into?",
+        "c": null,
+        "o": [
+            "APIView",
+            "TemplateView",
+            "GenericAPIView",
+            "ModelViewSet"
+        ]
+    },
+    {
+        "q": "What is the purpose of using queryset attribute in a DRF ViewSet?",
+        "c": null,
+        "o": [
+            "Specifies which objects the view will operate on",
+            "Specifies the default page size",
+            "Validates the incoming data",
+            "Handles URL routing"
+        ]
+    },
+    {
+        "q": "Which of the following is used to register URL routes for ViewSets in DRF?",
+        "c": null,
+        "o": [
+            "Router",
+            "URLs.py",
+            "ViewRouter",
+            "RouteManager"
+        ]
+    },
+    {
+        "q": "Which method is automatically called when a serializer is initialized?",
+        "c": null,
+        "o": [
+            "__init__()",
+            "create()",
+            "save()",
+            "validate()"
+        ]
+    },
+    {
+        "q": "Which field type is used to handle password validation and hashing in DRF?",
+        "c": null,
+        "o": [
+            "CharField",
+            "PasswordField",
+            "HashField",
+            "MaskedField"
+        ]
+    },
+    {
+        "q": "Which of the following is used to handle nested serializers in DRF?",
+        "c": null,
+        "o": [
+            "PrimaryKeyRelatedField",
+            "NestedSerializerField",
+            "ManyToManyField",
+            "OneToOneRelatedField"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'lookup_field' attribute in DRF ViewSet?",
+        "c": null,
+        "o": [
+            "Specifies which field to use for URL lookups",
+            "Specifies pagination limits",
+            "Filters the queryset",
+            "Handles POST request data"
+        ]
+    },
+    {
+        "q": "Which DRF view is used to retrieve and display a list of objects?",
+        "c": null,
+        "o": [
+            "ListAPIView",
+            "RetrieveAPIView",
+            "CreateAPIView",
+            "GenericAPIView"
+        ]
+    },
+    {
+        "q": "Which of the following is used to limit API requests per user in DRF?",
+        "c": null,
+        "o": [
+            "Throttle",
+            "RateLimiter",
+            "Permission",
+            "Filter"
+        ]
+    },
+    {
+        "q": "Which method is used to generate a token in TokenAuthentication?",
+        "c": null,
+        "o": [
+            "obtain_auth_token",
+            "get_auth_token",
+            "generate_token",
+            "create_token"
+        ]
+    },
+    {
+        "q": "What does the Meta class define in a DRF serializer?",
+        "c": null,
+        "o": [
+            "Model and fields",
+            "Database relations",
+            "Authentication classes",
+            "Serializer methods"
+        ]
+    },
+    {
+        "q": "Which renderer class is used to output API responses in XML format?",
+        "c": null,
+        "o": [
+            "XMLRenderer",
+            "JSONRenderer",
+            "HTMLRenderer",
+            "PlainTextRenderer"
+        ]
+    },
+    {
+        "q": "Which authentication method uses signed tokens in DRF?",
+        "c": null,
+        "o": [
+            "JWTAuthentication",
+            "TokenAuthentication",
+            "SessionAuthentication",
+            "OAuthAuthentication"
+        ]
+    },
+    {
+        "q": "Which class is used to handle permission checking in DRF?",
+        "c": null,
+        "o": [
+            "Permission",
+            "Authentication",
+            "Authorization",
+            "FilterSet"
+        ]
+    },
+    {
+        "q": "Which method is used to get a single object in a DRF ViewSet?",
+        "c": null,
+        "o": [
+            "get_object()",
+            "retrieve()",
+            "get_single()",
+            "fetch_object()"
+        ]
+    },
+    {
+        "q": "Which decorator is used to limit access to specific HTTP methods in DRF?",
+        "c": null,
+        "o": [
+            "@action",
+            "@method_decorator",
+            "@api_method",
+            "@restrict_methods"
+        ]
+    },
+    {
+        "q": "Which DRF pagination class returns the next and previous page links?",
+        "c": null,
+        "o": [
+            "PageNumberPagination",
+            "CursorPagination",
+            "LimitOffsetPagination",
+            "ListPagination"
+        ]
+    },
+    {
+        "q": "Which renderer is responsible for rendering form data in DRF?",
+        "c": null,
+        "o": [
+            "FormRenderer",
+            "HTMLRenderer",
+            "JSONRenderer",
+            "TemplateRenderer"
+        ]
+    },
+    {
+        "q": "Which class is used to automatically generate API documentation in DRF?",
+        "c": null,
+        "o": [
+            "SchemaGenerator",
+            "APIView",
+            "ModelViewSet",
+            "ActionViewSet"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a mixin provided by DRF?",
+        "c": null,
+        "o": [
+            "RetrieveObjectMixin",
+            "CreateModelMixin",
+            "UpdateModelMixin",
+            "ListModelMixin"
+        ]
+    },
+    {
+        "q": "Which class is used to define custom filters in DRF?",
+        "c": null,
+        "o": [
+            "DjangoFilterBackend",
+            "FilterSet",
+            "CustomFilter",
+            "FilterManager"
+        ]
+    },
+    {
+        "q": "Which method is used to handle data validation in DRF serializers?",
+        "c": null,
+        "o": [
+            "validate()",
+            "clean()",
+            "save()",
+            "get_data()"
+        ]
+    }
+]

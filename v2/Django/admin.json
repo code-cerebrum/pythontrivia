@@ -1,0 +1,1572 @@
+[
+    {
+        "q": "What is Django Admin used for?",
+        "c": null,
+        "o": [
+            "Manage database records",
+            "Create web templates",
+            "Design APIs",
+            "Run tests"
+        ]
+    },
+    {
+        "q": "How do you enable the Django Admin interface?",
+        "c": null,
+        "o": [
+            "Set `DEBUG = True`",
+            "Add 'django.contrib.admin' to `INSTALLED_APPS`",
+            "Run `migrate` command",
+            "Create a superuser"
+        ]
+    },
+    {
+        "q": "What command is used to create a superuser?",
+        "c": null,
+        "o": [
+            "python manage.py createsuperuser",
+            "python manage.py createsuper",
+            "python manage.py makemigrations",
+            "python manage.py migrate"
+        ]
+    },
+    {
+        "q": "Which file is used to register models with the Django Admin?",
+        "c": null,
+        "o": [
+            "admin.py",
+            "models.py",
+            "views.py",
+            "urls.py"
+        ]
+    },
+    {
+        "q": "How can you customize the Django Admin interface?",
+        "c": null,
+        "o": [
+            "Using `Admin` classes",
+            "Editing HTML files",
+            "Changing CSS styles",
+            "Modifying settings.py"
+        ]
+    },
+    {
+        "q": "Which decorator is used to limit access to the Admin interface?",
+        "c": null,
+        "o": [
+            "@staff_member_required",
+            "@login_required",
+            "@permission_required",
+            "@admin_only"
+        ]
+    },
+    {
+        "q": "What attribute is used to specify the list display in Admin?",
+        "c": null,
+        "o": [
+            "list_display",
+            "display_list",
+            "show_list",
+            "admin_display"
+        ]
+    },
+    {
+        "q": "How do you change the admin site header?",
+        "c": null,
+        "o": [
+            "Set `site_header` in AdminSite",
+            "Edit templates",
+            "Change settings.py",
+            "Override admin view"
+        ]
+    },
+    {
+        "q": "Which option allows filtering in the Admin list view?",
+        "c": null,
+        "o": [
+            "list_filter",
+            "filter_list",
+            "admin_filter",
+            "filter_view"
+        ]
+    },
+    {
+        "q": "How can you add a custom action to the Admin interface?",
+        "c": null,
+        "o": [
+            "Define in `actions` list",
+            "Override methods",
+            "Use middleware",
+            "Edit admin.py"
+        ]
+    },
+    {
+        "q": "What method is used to define the queryset for a model in Admin?",
+        "c": null,
+        "o": [
+            "get_queryset()",
+            "queryset()",
+            "get_objects()",
+            "admin_queryset()"
+        ]
+    },
+    {
+        "q": "Which property controls the search functionality in Admin?",
+        "c": null,
+        "o": [
+            "search_fields",
+            "search_list",
+            "filter_fields",
+            "admin_search"
+        ]
+    },
+    {
+        "q": "What does the `fieldsets` attribute do?",
+        "c": null,
+        "o": [
+            "Organizes fields into sections",
+            "Defines field types",
+            "Sets validation rules",
+            "Adds CSS styles"
+        ]
+    },
+    {
+        "q": "How can you hide a model from the Admin interface?",
+        "c": null,
+        "o": [
+            "Use `admin.site.unregister(Model)`",
+            "Remove from `INSTALLED_APPS`",
+            "Set `visible = False`",
+            "Edit admin.py"
+        ]
+    },
+    {
+        "q": "What is the default URL for the Django Admin interface?",
+        "c": null,
+        "o": [
+            "/admin/",
+            "/dashboard/",
+            "/control/",
+            "/manage/"
+        ]
+    },
+    {
+        "q": "Which setting must be True to use the Admin interface?",
+        "c": null,
+        "o": [
+            "DEBUG",
+            "ALLOWED_HOSTS",
+            "USE_TZ",
+            "INSTALLED_APPS"
+        ]
+    },
+    {
+        "q": "What does the `readonly_fields` attribute do?",
+        "c": null,
+        "o": [
+            "Makes fields non-editable",
+            "Hides fields in Admin",
+            "Adds validation",
+            "Changes field types"
+        ]
+    },
+    {
+        "q": "How do you add JavaScript files to the Admin interface?",
+        "c": null,
+        "o": [
+            "Using `media` class",
+            "Including in templates",
+            "Adding to settings.py",
+            "Linking in URLs"
+        ]
+    },
+    {
+        "q": "What is `ModelAdmin` in Django?",
+        "c": null,
+        "o": [
+            "Admin interface class for models",
+            "Model serializer",
+            "Database manager",
+            "URL router"
+        ]
+    },
+    {
+        "q": "How can you specify the ordering of objects in Admin?",
+        "c": null,
+        "o": [
+            "ordering",
+            "order_by",
+            "list_order",
+            "sort_fields"
+        ]
+    },
+    {
+        "q": "What is the purpose of `get_form` method in Admin?",
+        "c": null,
+        "o": [
+            "Customize form rendering",
+            "Handle validation",
+            "Set initial data",
+            "Change field attributes"
+        ]
+    },
+    {
+        "q": "Which attribute sets a custom form for a model in Admin?",
+        "c": null,
+        "o": [
+            "form",
+            "custom_form",
+            "model_form",
+            "admin_form"
+        ]
+    },
+    {
+        "q": "What is `prepopulated_fields` used for?",
+        "c": null,
+        "o": [
+            "Auto-fill fields based on another",
+            "Set field visibility",
+            "Add validations",
+            "Customize field types"
+        ]
+    },
+    {
+        "q": "How do you add a custom view to the Django Admin?",
+        "c": null,
+        "o": [
+            "Use `admin.site.register_view()`",
+            "Create a new URL",
+            "Edit admin.py",
+            "Override templates"
+        ]
+    },
+    {
+        "q": "Which method allows modifying the form validation in Admin?",
+        "c": null,
+        "o": [
+            "clean()",
+            "validate()",
+            "check()",
+            "process()"
+        ]
+    },
+    {
+        "q": "What does `list_editable` do in Admin?",
+        "c": null,
+        "o": [
+            "Makes fields editable in list view",
+            "Defines fields for filtering",
+            "Sets fields to display",
+            "Controls search functionality"
+        ]
+    },
+    {
+        "q": "What is the purpose of `save_model` method in Admin?",
+        "c": null,
+        "o": [
+            "Customize save behavior",
+            "Validate data",
+            "Define queryset",
+            "Modify fields"
+        ]
+    },
+    {
+        "q": "Which attribute allows grouping fields in Admin?",
+        "c": null,
+        "o": [
+            "fieldsets",
+            "groups",
+            "sections",
+            "fieldset"
+        ]
+    },
+    {
+        "q": "What do you need to do to use a custom model in Django Admin?",
+        "c": null,
+        "o": [
+            "Register it with Admin",
+            "Create a view",
+            "Edit settings.py",
+            "Run migrations"
+        ]
+    },
+    {
+        "q": "How do you specify the displayed fields in Admin?",
+        "c": null,
+        "o": [
+            "list_display",
+            "display_fields",
+            "show_fields",
+            "fields"
+        ]
+    },
+    {
+        "q": "Which method is called when an object is deleted from Admin?",
+        "c": null,
+        "o": [
+            "delete_model()",
+            "remove_model()",
+            "delete_object()",
+            "destroy_model()"
+        ]
+    },
+    {
+        "q": "How can you change the Admin site's title?",
+        "c": null,
+        "o": [
+            "Set `site_title` in AdminSite",
+            "Edit templates",
+            "Modify settings.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "Which property enables sorting by multiple fields?",
+        "c": null,
+        "o": [
+            "ordering",
+            "list_order",
+            "multi_order",
+            "sort_fields"
+        ]
+    },
+    {
+        "q": "What does `get_queryset` return?",
+        "c": null,
+        "o": [
+            "Queryset of objects",
+            "Form instance",
+            "Admin settings",
+            "Action list"
+        ]
+    },
+    {
+        "q": "How do you add CSS styles to Admin?",
+        "c": null,
+        "o": [
+            "Using `media` class",
+            "Editing HTML files",
+            "Modifying settings.py",
+            "Linking stylesheets"
+        ]
+    },
+    {
+        "q": "What does `search_fields` attribute specify?",
+        "c": null,
+        "o": [
+            "Fields for search",
+            "Fields to display",
+            "Fields for filtering",
+            "Fields for ordering"
+        ]
+    },
+    {
+        "q": "How can you disable the Admin interface for a model?",
+        "c": null,
+        "o": [
+            "Unregister the model",
+            "Set `disabled = True`",
+            "Remove from `INSTALLED_APPS`",
+            "Edit admin.py"
+        ]
+    },
+    {
+        "q": "What is `change_view` in Admin?",
+        "c": null,
+        "o": [
+            "Edit existing objects",
+            "Create new objects",
+            "List all objects",
+            "Delete objects"
+        ]
+    },
+    {
+        "q": "Which method is used to display extra context in Admin?",
+        "c": null,
+        "o": [
+            "get_context_data()",
+            "extra_context()",
+            "add_context()",
+            "set_context()"
+        ]
+    },
+    {
+        "q": "What does the `exclude` attribute do?",
+        "c": null,
+        "o": [
+            "Hides specified fields",
+            "Displays all fields",
+            "Defines required fields",
+            "Sets default values"
+        ]
+    },
+    {
+        "q": "How can you add a filter sidebar in Admin?",
+        "c": null,
+        "o": [
+            "Use `list_filter` attribute",
+            "Define filters in settings.py",
+            "Modify templates",
+            "Add a custom view"
+        ]
+    },
+    {
+        "q": "Which command initializes the database for the Admin?",
+        "c": null,
+        "o": [
+            "python manage.py migrate",
+            "python manage.py makemigrations",
+            "python manage.py initdb",
+            "python manage.py startapp"
+        ]
+    },
+    {
+        "q": "What does the `get_fieldsets` method do?",
+        "c": null,
+        "o": [
+            "Customize fieldsets in Admin",
+            "Set validation rules",
+            "Define field properties",
+            "Handle permissions"
+        ]
+    },
+    {
+        "q": "How do you customize the model form in Admin?",
+        "c": null,
+        "o": [
+            "Override `get_form()`",
+            "Use `form` attribute",
+            "Edit `admin.py`",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "Which class is used for defining custom admin views?",
+        "c": null,
+        "o": [
+            "AdminSite",
+            "ModelAdmin",
+            "CustomAdmin",
+            "AdminView"
+        ]
+    },
+    {
+        "q": "How can you limit the number of records displayed in Admin?",
+        "c": null,
+        "o": [
+            "Use pagination",
+            "Set `max_display`",
+            "Modify queryset",
+            "Limit in settings.py"
+        ]
+    },
+    {
+        "q": "What does the `get_readonly_fields` method do?",
+        "c": null,
+        "o": [
+            "Sets fields to read-only",
+            "Defines field types",
+            "Modifies field attributes",
+            "Controls field display"
+        ]
+    },
+    {
+        "q": "How do you add inline models to the Admin?",
+        "c": null,
+        "o": [
+            "Use InlineModelAdmin",
+            "Edit models.py",
+            "Define in admin.py",
+            "Add custom views"
+        ]
+    },
+    {
+        "q": "What is the default admin URL configuration?",
+        "c": null,
+        "o": [
+            "admin.site.urls",
+            "urlpatterns = []",
+            "admin.urls",
+            "urls.py"
+        ]
+    },
+    {
+        "q": "Which setting must be configured for file uploads in Admin?",
+        "c": null,
+        "o": [
+            "MEDIA_URL",
+            "FILE_UPLOAD_HANDLERS",
+            "STATIC_URL",
+            "UPLOAD_URL"
+        ]
+    },
+    {
+        "q": "How do you change the permissions for a model in Admin?",
+        "c": null,
+        "o": [
+            "Use `has_change_permission`",
+            "Modify settings.py",
+            "Edit admin.py",
+            "Unregister model"
+        ]
+    },
+    {
+        "q": "What does `get_list_display` return?",
+        "c": null,
+        "o": [
+            "List of displayed fields",
+            "Filtered queryset",
+            "Admin settings",
+            "List of actions"
+        ]
+    },
+    {
+        "q": "How do you define custom URLs in Django Admin?",
+        "c": null,
+        "o": [
+            "Use `admin.site.urls`",
+            "Override `get_urls()`",
+            "Modify urls.py",
+            "Edit settings.py"
+        ]
+    },
+    {
+        "q": "What method is used to handle form submission in Admin?",
+        "c": null,
+        "o": [
+            "save_model()",
+            "process_form()",
+            "submit_form()",
+            "handle_post()"
+        ]
+    },
+    {
+        "q": "Which option controls how many items to display in list view?",
+        "c": null,
+        "o": [
+            "list_per_page",
+            "items_per_page",
+            "display_limit",
+            "max_items"
+        ]
+    },
+    {
+        "q": "What does `get_actions` return?",
+        "c": null,
+        "o": [
+            "List of available actions",
+            "Filtered queryset",
+            "Admin settings",
+            "List of fields"
+        ]
+    },
+    {
+        "q": "How can you customize the admin change form template?",
+        "c": null,
+        "o": [
+            "Override `change_form.html`",
+            "Modify `admin.py`",
+            "Edit settings.py",
+            "Use a custom view"
+        ]
+    },
+    {
+        "q": "What attribute defines the model's ordering in Admin?",
+        "c": null,
+        "o": [
+            "ordering",
+            "sort_fields",
+            "list_order",
+            "admin_order"
+        ]
+    },
+    {
+        "q": "What is the purpose of `get_object` in Admin?",
+        "c": null,
+        "o": [
+            "Retrieve an object by ID",
+            "Create a new object",
+            "Delete an object",
+            "Edit an object"
+        ]
+    },
+    {
+        "q": "How can you add a custom template to the Admin interface?",
+        "c": null,
+        "o": [
+            "Override templates directory",
+            "Edit settings.py",
+            "Add to models.py",
+            "Modify admin.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.index_title` used for?",
+        "c": null,
+        "o": [
+            "Set index page title",
+            "Define site header",
+            "Customize footer",
+            "Change login title"
+        ]
+    },
+    {
+        "q": "Which method handles bulk delete actions in Admin?",
+        "c": null,
+        "o": [
+            "delete_selected()",
+            "bulk_delete()",
+            "remove_selected()",
+            "delete_items()"
+        ]
+    },
+    {
+        "q": "How can you define permissions for specific actions in Admin?",
+        "c": null,
+        "o": [
+            "Use `has_permission` methods",
+            "Modify settings.py",
+            "Edit admin.py",
+            "Remove user permissions"
+        ]
+    },
+    {
+        "q": "What attribute is used to specify a custom view in the Admin?",
+        "c": null,
+        "o": [
+            "admin.site.register_view()",
+            "custom_view()",
+            "admin_view()",
+            "register_custom_view()"
+        ]
+    },
+    {
+        "q": "How do you enable autocomplete fields in Admin?",
+        "c": null,
+        "o": [
+            "Use `autocomplete_fields`",
+            "Edit form.py",
+            "Modify settings.py",
+            "Add filters"
+        ]
+    },
+    {
+        "q": "What is `InlineModelAdmin` used for?",
+        "c": null,
+        "o": [
+            "Define inline models in Admin",
+            "Create model serializers",
+            "Handle form submissions",
+            "Manage views"
+        ]
+    },
+    {
+        "q": "Which property allows you to set a custom ordering for fields?",
+        "c": null,
+        "o": [
+            "ordering",
+            "list_order",
+            "custom_order",
+            "sort_fields"
+        ]
+    },
+    {
+        "q": "How do you enable field validation in Admin?",
+        "c": null,
+        "o": [
+            "Override `clean()` method",
+            "Use `validators` attribute",
+            "Modify forms.py",
+            "Edit settings.py"
+        ]
+    },
+    {
+        "q": "What does `get_urls` allow you to do?",
+        "c": null,
+        "o": [
+            "Define custom URLs in Admin",
+            "Modify admin settings",
+            "Handle permissions",
+            "List available actions"
+        ]
+    },
+    {
+        "q": "How can you hide a field from the Admin interface?",
+        "c": null,
+        "o": [
+            "Add to `exclude` attribute",
+            "Set `hidden = True`",
+            "Remove from model",
+            "Modify admin.py"
+        ]
+    },
+    {
+        "q": "Which method is used to check user permissions in Admin?",
+        "c": null,
+        "o": [
+            "has_change_permission()",
+            "check_permissions()",
+            "validate_user()",
+            "user_has_access()"
+        ]
+    },
+    {
+        "q": "What is `list_display_links` used for?",
+        "c": null,
+        "o": [
+            "Define clickable fields",
+            "Set display order",
+            "Control visibility",
+            "Filter displayed fields"
+        ]
+    },
+    {
+        "q": "How do you add a new model to the Admin site?",
+        "c": null,
+        "o": [
+            "Use `admin.site.register()`",
+            "Define in models.py",
+            "Edit settings.py",
+            "Create custom view"
+        ]
+    },
+    {
+        "q": "What does the `list_select_related` attribute do?",
+        "c": null,
+        "o": [
+            "Optimizes related object retrieval",
+            "Defines display order",
+            "Sets field visibility",
+            "Filters displayed fields"
+        ]
+    },
+    {
+        "q": "How do you create a custom action in Admin?",
+        "c": null,
+        "o": [
+            "Define in `admin.py`",
+            "Use `create_action()`",
+            "Edit settings.py",
+            "Modify models.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.site_header` used for?",
+        "c": null,
+        "o": [
+            "Set Admin site header",
+            "Define footer text",
+            "Customize index title",
+            "Change login page"
+        ]
+    },
+    {
+        "q": "How can you override default templates in Admin?",
+        "c": null,
+        "o": [
+            "Create custom templates directory",
+            "Edit admin.py",
+            "Modify settings.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What does the `search_fields` attribute do?",
+        "c": null,
+        "o": [
+            "Defines searchable fields",
+            "Sets display order",
+            "Filters displayed fields",
+            "Controls field visibility"
+        ]
+    },
+    {
+        "q": "How do you enable file uploads in Admin?",
+        "c": null,
+        "o": [
+            "Define `FileField` in models",
+            "Set `upload=True`",
+            "Use `forms.FileField`",
+            "Modify settings.py"
+        ]
+    },
+    {
+        "q": "What method is used to save a model instance in Admin?",
+        "c": null,
+        "o": [
+            "save_model()",
+            "commit()",
+            "store()",
+            "create_instance()"
+        ]
+    },
+    {
+        "q": "What does `get_queryset` return?",
+        "c": null,
+        "o": [
+            "Filtered queryset",
+            "List of fields",
+            "Admin settings",
+            "Actions list"
+        ]
+    },
+    {
+        "q": "How do you set a custom error message in Admin?",
+        "c": null,
+        "o": [
+            "Use `messages.error()`",
+            "Define in settings.py",
+            "Edit admin.py",
+            "Override forms.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.site_title` used for?",
+        "c": null,
+        "o": [
+            "Set Admin site title",
+            "Define footer text",
+            "Customize index title",
+            "Change login title"
+        ]
+    },
+    {
+        "q": "Which method is used to validate form data in Admin?",
+        "c": null,
+        "o": [
+            "clean()",
+            "validate()",
+            "check_data()",
+            "validate_form()"
+        ]
+    },
+    {
+        "q": "How can you set a custom action in Admin?",
+        "c": null,
+        "o": [
+            "Use `@admin.action` decorator",
+            "Define in settings.py",
+            "Edit admin.py",
+            "Modify models.py"
+        ]
+    },
+    {
+        "q": "What is `ModelAdmin` in Django?",
+        "c": null,
+        "o": [
+            "Admin options for models",
+            "Custom view class",
+            "Form handling class",
+            "Database model class"
+        ]
+    },
+    {
+        "q": "How do you enable batch actions in Admin?",
+        "c": null,
+        "o": [
+            "Add actions to `admin.py`",
+            "Set `allow_batch=True`",
+            "Modify models.py",
+            "Edit settings.py"
+        ]
+    },
+    {
+        "q": "What attribute controls the display of related fields in Admin?",
+        "c": null,
+        "o": [
+            "list_display",
+            "related_fields",
+            "field_list",
+            "display_fields"
+        ]
+    },
+    {
+        "q": "How do you set custom CSS for Admin?",
+        "c": null,
+        "o": [
+            "Override `base_site.html`",
+            "Edit settings.py",
+            "Add CSS in admin.py",
+            "Create static directory"
+        ]
+    },
+    {
+        "q": "Which setting is required for Django Admin?",
+        "c": null,
+        "o": [
+            "INSTALLED_APPS",
+            "DATABASES",
+            "MIDDLEWARE",
+            "TEMPLATES"
+        ]
+    },
+    {
+        "q": "What is `get_list_display_links` used for?",
+        "c": null,
+        "o": [
+            "Define fields for links",
+            "Set display order",
+            "Control visibility",
+            "Filter displayed fields"
+        ]
+    },
+    {
+        "q": "How do you enable search functionality in Admin?",
+        "c": null,
+        "o": [
+            "Use `search_fields`",
+            "Edit admin.py",
+            "Modify settings.py",
+            "Define filters"
+        ]
+    },
+    {
+        "q": "What does `admin.site.logout` do?",
+        "c": null,
+        "o": [
+            "Logs out the current user",
+            "Redirects to login",
+            "Displays user profile",
+            "Closes the session"
+        ]
+    },
+    {
+        "q": "How can you limit access to Admin for certain users?",
+        "c": null,
+        "o": [
+            "Use `has_permission`",
+            "Modify settings.py",
+            "Unregister models",
+            "Change user roles"
+        ]
+    },
+    {
+        "q": "What does the `get_formset` method do?",
+        "c": null,
+        "o": [
+            "Customizes formsets in Admin",
+            "Handles form submissions",
+            "Defines fieldsets",
+            "Manages permissions"
+        ]
+    },
+    {
+        "q": "Which attribute is used to specify list view columns?",
+        "c": null,
+        "o": [
+            "list_display",
+            "column_fields",
+            "view_columns",
+            "display_fields"
+        ]
+    },
+    {
+        "q": "How do you change the Admin site title?",
+        "c": null,
+        "o": [
+            "Use `admin.site.site_title`",
+            "Edit settings.py",
+            "Modify urls.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What is `ModelAdmin` class used for?",
+        "c": null,
+        "o": [
+            "Custom admin options for models",
+            "Define user roles",
+            "Handle database queries",
+            "Manage views"
+        ]
+    },
+    {
+        "q": "How can you control the visibility of fields in Admin?",
+        "c": null,
+        "o": [
+            "Use `list_display`",
+            "Edit models.py",
+            "Modify settings.py",
+            "Set `hidden=True`"
+        ]
+    },
+    {
+        "q": "What is the purpose of `admin.site.urls`?",
+        "c": null,
+        "o": [
+            "Configure Admin URL routing",
+            "Set default user permissions",
+            "Define app settings",
+            "Manage templates"
+        ]
+    },
+    {
+        "q": "How do you enable filtering in Admin?",
+        "c": null,
+        "o": [
+            "Use `list_filter`",
+            "Edit settings.py",
+            "Modify models.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "What does `get_list_filter` do?",
+        "c": null,
+        "o": [
+            "Defines filter options",
+            "Sets display order",
+            "Filters queryset",
+            "Controls field visibility"
+        ]
+    },
+    {
+        "q": "How do you set a custom error page in Admin?",
+        "c": null,
+        "o": [
+            "Override templates",
+            "Edit settings.py",
+            "Use custom view",
+            "Modify urls.py"
+        ]
+    },
+    {
+        "q": "What does `get_actions` return?",
+        "c": null,
+        "o": [
+            "List of defined actions",
+            "Admin settings",
+            "Available filters",
+            "Field display settings"
+        ]
+    },
+    {
+        "q": "How can you change the Admin site header?",
+        "c": null,
+        "o": [
+            "Use `admin.site.site_header`",
+            "Edit settings.py",
+            "Modify urls.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What is the purpose of `get_prepopulated_fields`?",
+        "c": null,
+        "o": [
+            "Auto-fills fields based on others",
+            "Sets default values",
+            "Validates field data",
+            "Defines field types"
+        ]
+    },
+    {
+        "q": "How do you define the Admin site footer?",
+        "c": null,
+        "o": [
+            "Use `admin.site.site_footer`",
+            "Edit settings.py",
+            "Modify urls.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What does `admin.site.index_template` do?",
+        "c": null,
+        "o": [
+            "Sets custom index page template",
+            "Defines admin footer",
+            "Controls login template",
+            "Modifies user permissions"
+        ]
+    },
+    {
+        "q": "How can you enable batch editing in Admin?",
+        "c": null,
+        "o": [
+            "Use `@admin.action` decorator",
+            "Set `batch_edit=True`",
+            "Modify models.py",
+            "Edit admin.py"
+        ]
+    },
+    {
+        "q": "What is `get_changeform_initial_data` used for?",
+        "c": null,
+        "o": [
+            "Sets initial data for change form",
+            "Defines validation rules",
+            "Handles permissions",
+            "Customizes fieldsets"
+        ]
+    },
+    {
+        "q": "How do you specify a custom view in the Admin?",
+        "c": null,
+        "o": [
+            "Use `admin.site.register_view`",
+            "Edit settings.py",
+            "Modify models.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "What does `get_ordering` do?",
+        "c": null,
+        "o": [
+            "Defines ordering for list view",
+            "Sets default values",
+            "Filters queryset",
+            "Manages permissions"
+        ]
+    },
+    {
+        "q": "How do you set a custom login template for Admin?",
+        "c": null,
+        "o": [
+            "Override `login.html`",
+            "Edit settings.py",
+            "Modify urls.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.disable_action` used for?",
+        "c": null,
+        "o": [
+            "Disables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How can you customize the admin change list template?",
+        "c": null,
+        "o": [
+            "Override `change_list.html`",
+            "Modify settings.py",
+            "Edit admin.py",
+            "Add custom views"
+        ]
+    },
+    {
+        "q": "What does `admin.site.get_urls` do?",
+        "c": null,
+        "o": [
+            "Retrieves admin URLs",
+            "Defines custom views",
+            "Handles permissions",
+            "Lists available actions"
+        ]
+    },
+    {
+        "q": "How do you set custom permissions for a model in Admin?",
+        "c": null,
+        "o": [
+            "Use `has_view_permission`",
+            "Modify settings.py",
+            "Edit admin.py",
+            "Unregister model"
+        ]
+    },
+    {
+        "q": "What does the `get_formsets` method do?",
+        "c": null,
+        "o": [
+            "Customizes formsets in Admin",
+            "Handles form submissions",
+            "Defines fieldsets",
+            "Manages permissions"
+        ]
+    },
+    {
+        "q": "How do you enable drag-and-drop reordering in Admin?",
+        "c": null,
+        "o": [
+            "Use a custom widget",
+            "Edit settings.py",
+            "Modify models.py",
+            "Set `reorder=True`"
+        ]
+    },
+    {
+        "q": "What is `get_queryset` used for?",
+        "c": null,
+        "o": [
+            "Retrieves queryset for admin views",
+            "Sets field defaults",
+            "Handles permissions",
+            "Lists available actions"
+        ]
+    },
+    {
+        "q": "How do you set a custom template for the Admin login page?",
+        "c": null,
+        "o": [
+            "Override `login.html`",
+            "Edit settings.py",
+            "Modify urls.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.login_template` used for?",
+        "c": null,
+        "o": [
+            "Sets custom login template",
+            "Defines footer text",
+            "Customizes index title",
+            "Changes site header"
+        ]
+    },
+    {
+        "q": "How do you enable custom permissions in Admin?",
+        "c": null,
+        "o": [
+            "Use `has_permission` methods",
+            "Edit settings.py",
+            "Modify models.py",
+            "Change user roles"
+        ]
+    },
+    {
+        "q": "What does `get_object` method do?",
+        "c": null,
+        "o": [
+            "Retrieves a single object",
+            "Creates a new object",
+            "Deletes an object",
+            "Edits an object"
+        ]
+    },
+    {
+        "q": "How do you add a help text to a field in Admin?",
+        "c": null,
+        "o": [
+            "Use `help_text` attribute",
+            "Edit admin.py",
+            "Modify models.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What is the default action for Django Admin?",
+        "c": null,
+        "o": [
+            "List view",
+            "Create view",
+            "Edit view",
+            "Delete view"
+        ]
+    },
+    {
+        "q": "How do you enable rich text editing in Admin?",
+        "c": null,
+        "o": [
+            "Use a rich text editor package",
+            "Edit models.py",
+            "Modify admin.py",
+            "Set `rich_text=True`"
+        ]
+    },
+    {
+        "q": "What is the purpose of `admin.site.register()`?",
+        "c": null,
+        "o": [
+            "Registers models for Admin",
+            "Defines admin permissions",
+            "Sets model attributes",
+            "Handles database migrations"
+        ]
+    },
+    {
+        "q": "How do you define the layout of the change form in Admin?",
+        "c": null,
+        "o": [
+            "Use `fieldsets` attribute",
+            "Edit models.py",
+            "Modify admin.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What does `admin.site.site_header` do?",
+        "c": null,
+        "o": [
+            "Sets the Admin site header",
+            "Defines footer text",
+            "Customizes index title",
+            "Changes login title"
+        ]
+    },
+    {
+        "q": "How do you define custom actions in Admin?",
+        "c": null,
+        "o": [
+            "Use `@admin.action` decorator",
+            "Edit models.py",
+            "Modify settings.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.enable_action` used for?",
+        "c": null,
+        "o": [
+            "Enables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you customize the admin change password form?",
+        "c": null,
+        "o": [
+            "Override `change_password.html`",
+            "Modify settings.py",
+            "Edit admin.py",
+            "Add custom views"
+        ]
+    },
+    {
+        "q": "What does `get_search_results` do?",
+        "c": null,
+        "o": [
+            "Modifies search results in Admin",
+            "Retrieves queryset",
+            "Sets field defaults",
+            "Handles permissions"
+        ]
+    },
+    {
+        "q": "How can you add a custom message to the Admin interface?",
+        "c": null,
+        "o": [
+            "Use `messages.add_message()`",
+            "Edit settings.py",
+            "Modify models.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.enable_action` used for?",
+        "c": null,
+        "o": [
+            "Enables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you define custom fields in Admin?",
+        "c": null,
+        "o": [
+            "Use `fieldsets` attribute",
+            "Edit models.py",
+            "Modify admin.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What does `get_ordering` return?",
+        "c": null,
+        "o": [
+            "Defines ordering for list view",
+            "Sets default values",
+            "Filters queryset",
+            "Manages permissions"
+        ]
+    },
+    {
+        "q": "How do you enable inline models in Admin?",
+        "c": null,
+        "o": [
+            "Use `InlineModelAdmin`",
+            "Edit admin.py",
+            "Modify models.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.enable_action` used for?",
+        "c": null,
+        "o": [
+            "Enables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you enable inline models in Admin?",
+        "c": null,
+        "o": [
+            "Use `InlineModelAdmin`",
+            "Edit admin.py",
+            "Modify models.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What is `admin.site.enable_action` used for?",
+        "c": null,
+        "o": [
+            "Enables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you enable inline models in Admin?",
+        "c": null,
+        "o": [
+            "Use `InlineModelAdmin`",
+            "Edit admin.py",
+            "Modify models.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What is the purpose of `admin.site.unregister()`?",
+        "c": null,
+        "o": [
+            "Unregisters models from Admin",
+            "Defines admin permissions",
+            "Sets model attributes",
+            "Handles database migrations"
+        ]
+    },
+    {
+        "q": "How do you customize the model representation in Admin?",
+        "c": null,
+        "o": [
+            "Override `__str__()` method",
+            "Edit models.py",
+            "Modify admin.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What does `get_actions` return?",
+        "c": null,
+        "o": [
+            "List of defined actions",
+            "Admin settings",
+            "Available filters",
+            "Field display settings"
+        ]
+    },
+    {
+        "q": "How do you enable custom permissions for users in Admin?",
+        "c": null,
+        "o": [
+            "Use `User.has_perm()`",
+            "Edit settings.py",
+            "Modify models.py",
+            "Change user roles"
+        ]
+    },
+    {
+        "q": "What does `get_list_display_links` do?",
+        "c": null,
+        "o": [
+            "Defines fields for clickable links",
+            "Sets display order",
+            "Controls visibility",
+            "Filters displayed fields"
+        ]
+    },
+    {
+        "q": "How do you define custom templates for Admin?",
+        "c": null,
+        "o": [
+            "Override template files",
+            "Edit settings.py",
+            "Modify admin.py",
+            "Add custom views"
+        ]
+    },
+    {
+        "q": "What is `admin.site.disable_action` used for?",
+        "c": null,
+        "o": [
+            "Disables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you customize the Admin index page?",
+        "c": null,
+        "o": [
+            "Override `index.html`",
+            "Edit settings.py",
+            "Modify admin.py",
+            "Change models.py"
+        ]
+    },
+    {
+        "q": "What does `get_search_results` do?",
+        "c": null,
+        "o": [
+            "Modifies search results in Admin",
+            "Retrieves queryset",
+            "Sets field defaults",
+            "Handles permissions"
+        ]
+    },
+    {
+        "q": "How do you enable custom actions in Admin?",
+        "c": null,
+        "o": [
+            "Use `@admin.action` decorator",
+            "Edit models.py",
+            "Modify settings.py",
+            "Change admin.py"
+        ]
+    },
+    {
+        "q": "What does `get_formsets` method do?",
+        "c": null,
+        "o": [
+            "Customizes formsets in Admin",
+            "Handles form submissions",
+            "Defines fieldsets",
+            "Manages permissions"
+        ]
+    },
+    {
+        "q": "What is `admin.site.enable_action` used for?",
+        "c": null,
+        "o": [
+            "Enables specified admin actions",
+            "Controls user permissions",
+            "Sets default actions",
+            "Defines action order"
+        ]
+    },
+    {
+        "q": "How do you define the layout of the Admin change form?",
+        "c": null,
+        "o": [
+            "Use `fieldsets` attribute",
+            "Edit models.py",
+            "Modify admin.py",
+            "Change settings.py"
+        ]
+    },
+    {
+        "q": "What is `get_queryset` used for?",
+        "c": null,
+        "o": [
+            "Retrieves queryset for admin views",
+            "Sets field defaults",
+            "Handles permissions",
+            "Lists available actions"
+        ]
+    }
+]

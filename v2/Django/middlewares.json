@@ -1,0 +1,642 @@
+[
+    {
+        "q": "What is the primary purpose of Django middleware?",
+        "c": null,
+        "o": [
+            "Process requests and responses",
+            "Manage database connections",
+            "Handle URL routing",
+            "Render templates"
+        ]
+    },
+    {
+        "q": "Which method in middleware processes an incoming request?",
+        "c": null,
+        "o": [
+            "process_request",
+            "process_response",
+            "handle_request",
+            "init_request"
+        ]
+    },
+    {
+        "q": "Which of the following middleware is used for managing user sessions in Django?",
+        "c": null,
+        "o": [
+            "SessionMiddleware",
+            "AuthMiddleware",
+            "CSRFProtectionMiddleware",
+            "CacheMiddleware"
+        ]
+    },
+    {
+        "q": "In which order does Django execute middleware during a request?",
+        "c": null,
+        "o": [
+            "Top to bottom in MIDDLEWARE setting",
+            "Bottom to top in MIDDLEWARE setting",
+            "Random order",
+            "Depends on the view"
+        ]
+    },
+    {
+        "q": "Which middleware is responsible for protection against Cross-Site Request Forgery (CSRF)?",
+        "c": null,
+        "o": [
+            "CsrfViewMiddleware",
+            "SecurityMiddleware",
+            "XFrameOptionsMiddleware",
+            "SessionMiddleware"
+        ]
+    },
+    {
+        "q": "How do you define custom middleware in Django?",
+        "c": null,
+        "o": [
+            "Create a class and implement specific methods",
+            "Define a function",
+            "Create a view",
+            "Modify settings.py"
+        ]
+    },
+    {
+        "q": "Which middleware is responsible for adding HTTP headers like Content Security Policy (CSP)?",
+        "c": null,
+        "o": [
+            "SecurityMiddleware",
+            "CsrfViewMiddleware",
+            "CommonMiddleware",
+            "SessionMiddleware"
+        ]
+    },
+    {
+        "q": "Where do you add middleware classes in Django settings?",
+        "c": null,
+        "o": [
+            "MIDDLEWARE setting",
+            "INSTALLED_APPS",
+            "MIDDLEWARE_CLASSES",
+            "TEMPLATES"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a method you can implement in Django middleware?",
+        "c": null,
+        "o": [
+            "process_template_response",
+            "process_exception",
+            "process_view",
+            "process_url"
+        ]
+    },
+    {
+        "q": "How can middleware modify a response object?",
+        "c": null,
+        "o": [
+            "Using process_response method",
+            "Using process_request method",
+            "Modifying the view directly",
+            "Altering the request object"
+        ]
+    },
+    {
+        "q": "Which of the following methods in Django middleware is called when a response is returned?",
+        "c": null,
+        "o": [
+            "process_response",
+            "process_view",
+            "process_request",
+            "process_template_response"
+        ]
+    },
+    {
+        "q": "Middleware that transforms an HttpResponse into a TemplateResponse uses which method?",
+        "c": null,
+        "o": [
+            "process_template_response",
+            "process_response",
+            "process_view",
+            "process_request"
+        ]
+    },
+    {
+        "q": "In what order does Django process middleware during a response?",
+        "c": null,
+        "o": [
+            "Bottom to top in MIDDLEWARE setting",
+            "Top to bottom in MIDDLEWARE setting",
+            "Random order",
+            "Depends on response type"
+        ]
+    },
+    {
+        "q": "What is the correct way to stop further processing of middleware in Django?",
+        "c": null,
+        "o": [
+            "Return a response object early",
+            "Raise an exception",
+            "Return None from process_request",
+            "Call the view directly"
+        ]
+    },
+    {
+        "q": "Which middleware handles whether users are allowed to use the admin panel?",
+        "c": null,
+        "o": [
+            "AuthenticationMiddleware",
+            "SessionMiddleware",
+            "CacheMiddleware",
+            "CommonMiddleware"
+        ]
+    },
+    {
+        "q": "Django middleware follows which design pattern?",
+        "c": null,
+        "o": [
+            "Chain of Responsibility",
+            "Factory Pattern",
+            "Observer Pattern",
+            "Decorator Pattern"
+        ]
+    },
+    {
+        "q": "Which of the following middleware is responsible for controlling cache headers in responses?",
+        "c": null,
+        "o": [
+            "CacheMiddleware",
+            "GZipMiddleware",
+            "SessionMiddleware",
+            "SecurityMiddleware"
+        ]
+    },
+    {
+        "q": "What does GZipMiddleware in Django do?",
+        "c": null,
+        "o": [
+            "Compresses responses for faster transmission",
+            "Encrypts responses",
+            "Logs request information",
+            "Adds security headers"
+        ]
+    },
+    {
+        "q": "Which of the following is true about middleware in Django?",
+        "c": null,
+        "o": [
+            "Middleware can modify both requests and responses",
+            "Middleware only processes requests",
+            "Middleware only processes responses",
+            "Middleware cannot modify responses"
+        ]
+    },
+    {
+        "q": "Which middleware method processes exceptions raised by views?",
+        "c": null,
+        "o": [
+            "process_exception",
+            "process_response",
+            "process_request",
+            "process_view"
+        ]
+    },
+    {
+        "q": "If multiple middlewares implement process_exception, how does Django handle the order?",
+        "c": null,
+        "o": [
+            "Reverse order of MIDDLEWARE setting",
+            "Order of MIDDLEWARE setting",
+            "Random order",
+            "Alphabetical order"
+        ]
+    },
+    {
+        "q": "Which middleware automatically manages user sessions?",
+        "c": null,
+        "o": [
+            "SessionMiddleware",
+            "CacheMiddleware",
+            "SecurityMiddleware",
+            "GZipMiddleware"
+        ]
+    },
+    {
+        "q": "Middleware that adds security headers to each response is called?",
+        "c": null,
+        "o": [
+            "SecurityMiddleware",
+            "SessionMiddleware",
+            "CacheMiddleware",
+            "CommonMiddleware"
+        ]
+    },
+    {
+        "q": "Which middleware is used to automatically redirect HTTP requests to HTTPS?",
+        "c": null,
+        "o": [
+            "SecurityMiddleware",
+            "AuthMiddleware",
+            "SessionMiddleware",
+            "CacheMiddleware"
+        ]
+    },
+    {
+        "q": "How can you disable specific middleware for certain views in Django?",
+        "c": null,
+        "o": [
+            "Use decorator to bypass middleware",
+            "Set middleware to None in settings.py",
+            "Remove middleware from MIDDLEWARE setting",
+            "Use a different settings file"
+        ]
+    },
+    {
+        "q": "What does the process_view method in middleware do?",
+        "c": null,
+        "o": [
+            "Processes view before it is called",
+            "Processes response before it is returned",
+            "Handles request data",
+            "Renders the template"
+        ]
+    },
+    {
+        "q": "Which of the following middleware can prevent clickjacking attacks?",
+        "c": null,
+        "o": [
+            "XFrameOptionsMiddleware",
+            "SecurityMiddleware",
+            "CsrfViewMiddleware",
+            "CacheMiddleware"
+        ]
+    },
+    {
+        "q": "What type of object must middleware return in the process_request method?",
+        "c": null,
+        "o": [
+            "HttpResponse or None",
+            "TemplateResponse",
+            "HttpRequest",
+            "Exception"
+        ]
+    },
+    {
+        "q": "How can you add custom middleware in Django?",
+        "c": null,
+        "o": [
+            "Add middleware class to MIDDLEWARE setting",
+            "Add middleware class to views.py",
+            "Define middleware in models.py",
+            "Register middleware in urls.py"
+        ]
+    },
+    {
+        "q": "Which middleware ensures that cross-site requests are protected?",
+        "c": null,
+        "o": [
+            "CsrfViewMiddleware",
+            "CacheMiddleware",
+            "SessionMiddleware",
+            "GZipMiddleware"
+        ]
+    },
+    {
+        "q": "What happens if process_exception returns a response?",
+        "c": null,
+        "o": [
+            "The response is returned to the browser",
+            "The view is executed",
+            "Django ignores the response",
+            "The exception is logged but ignored"
+        ]
+    },
+    {
+        "q": "Middleware is executed in which stage of the Django request/response cycle?",
+        "c": null,
+        "o": [
+            "Both before and after the view is executed",
+            "Only before the view is executed",
+            "Only after the view is executed",
+            "Only during the response stage"
+        ]
+    },
+    {
+        "q": "Which middleware is primarily used to manage content delivery optimizations in Django?",
+        "c": null,
+        "o": [
+            "GZipMiddleware",
+            "CsrfViewMiddleware",
+            "SessionMiddleware",
+            "SecurityMiddleware"
+        ]
+    },
+    {
+        "q": "Which attribute is essential when writing custom middleware in Django?",
+        "c": null,
+        "o": [
+            "__call__",
+            "__init__",
+            "__enter__",
+            "__exit__"
+        ]
+    },
+    {
+        "q": "Which middleware is used to handle HTTP headers for cache control?",
+        "c": null,
+        "o": [
+            "CacheMiddleware",
+            "CommonMiddleware",
+            "GZipMiddleware",
+            "CsrfViewMiddleware"
+        ]
+    },
+    {
+        "q": "In which file do you typically list middleware in a Django project?",
+        "c": null,
+        "o": [
+            "settings.py",
+            "urls.py",
+            "views.py",
+            "models.py"
+        ]
+    },
+    {
+        "q": "Which middleware processes the 'If-Modified-Since' header?",
+        "c": null,
+        "o": [
+            "CommonMiddleware",
+            "CacheMiddleware",
+            "SessionMiddleware",
+            "GZipMiddleware"
+        ]
+    },
+    {
+        "q": "What type of value should MIDDLEWARE setting in Django contain?",
+        "c": null,
+        "o": [
+            "A list of strings",
+            "A dictionary of functions",
+            "A tuple of integers",
+            "A list of views"
+        ]
+    },
+    {
+        "q": "If middleware modifies request headers, in which method should this happen?",
+        "c": null,
+        "o": [
+            "process_request",
+            "process_view",
+            "process_response",
+            "process_template_response"
+        ]
+    },
+    {
+        "q": "Which middleware is used to manage URL rewriting in Django?",
+        "c": null,
+        "o": [
+            "CommonMiddleware",
+            "CacheMiddleware",
+            "SessionMiddleware",
+            "SecurityMiddleware"
+        ]
+    },
+    {
+        "q": "When would you use process_view in a Django middleware?",
+        "c": null,
+        "o": [
+            "Before the view function is called",
+            "After the response is generated",
+            "During template rendering",
+            "After the exception is handled"
+        ]
+    },
+    {
+        "q": "What happens if process_request returns an HttpResponse?",
+        "c": null,
+        "o": [
+            "The view is not called",
+            "The view is executed",
+            "The view is skipped but a response is generated",
+            "The exception is raised"
+        ]
+    },
+    {
+        "q": "Which of these is a method that every Django middleware must implement?",
+        "c": null,
+        "o": [
+            "__call__",
+            "process_request",
+            "process_response",
+            "process_view"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of the 'process_template_response' method?",
+        "c": null,
+        "o": [
+            "Modify a TemplateResponse before rendering",
+            "Process request data before a view",
+            "Handle exceptions raised in a view",
+            "Modify a HttpResponse object"
+        ]
+    },
+    {
+        "q": "Which middleware ensures the proper use of security-related headers like X-Content-Type-Options?",
+        "c": null,
+        "o": [
+            "SecurityMiddleware",
+            "CacheMiddleware",
+            "SessionMiddleware",
+            "CsrfViewMiddleware"
+        ]
+    },
+    {
+        "q": "What is the function of 'XFrameOptionsMiddleware' in Django?",
+        "c": null,
+        "o": [
+            "Prevents embedding of pages in an iframe",
+            "Adds cache headers",
+            "Manages session state",
+            "Redirects HTTP to HTTPS"
+        ]
+    },
+    {
+        "q": "In which middleware is the 'Content-Security-Policy' header typically set?",
+        "c": null,
+        "o": [
+            "SecurityMiddleware",
+            "CacheMiddleware",
+            "GZipMiddleware",
+            "CsrfViewMiddleware"
+        ]
+    },
+    {
+        "q": "Which middleware is responsible for stripping leading and trailing slashes from URLs?",
+        "c": null,
+        "o": [
+            "CommonMiddleware",
+            "SessionMiddleware",
+            "CacheMiddleware",
+            "CsrfViewMiddleware"
+        ]
+    },
+    {
+        "q": "How can you disable a specific built-in middleware in Django?",
+        "c": null,
+        "o": [
+            "Remove it from the MIDDLEWARE setting",
+            "Override its method in views",
+            "Use custom decorators in views",
+            "Comment it out in settings.py"
+        ]
+    },
+    {
+        "q": "Middleware can be used to modify which of the following?",
+        "c": null,
+        "o": [
+            "Both request and response",
+            "Request only",
+            "Response only",
+            "Session data only"
+        ]
+    },
+    {
+        "q": "If process_response modifies a response, what happens next?",
+        "c": null,
+        "o": [
+            "The modified response is returned",
+            "The original response is ignored",
+            "The view is re-executed",
+            "The request is modified"
+        ]
+    },
+    {
+        "q": "How does middleware handle exceptions raised during view execution?",
+        "c": null,
+        "o": [
+            "Through process_exception",
+            "By modifying the request",
+            "By re-executing the view",
+            "Through process_request"
+        ]
+    },
+    {
+        "q": "Which method in middleware is responsible for altering request path or headers before it reaches the view?",
+        "c": null,
+        "o": [
+            "process_request",
+            "process_response",
+            "process_view",
+            "process_template_response"
+        ]
+    },
+    {
+        "q": "Which of the following middleware is responsible for managing content caching in Django?",
+        "c": null,
+        "o": [
+            "CacheMiddleware",
+            "CommonMiddleware",
+            "SecurityMiddleware",
+            "SessionMiddleware"
+        ]
+    },
+    {
+        "q": "To handle the conversion of a view’s output into an HttpResponse, which middleware method is used?",
+        "c": null,
+        "o": [
+            "process_template_response",
+            "process_request",
+            "process_view",
+            "process_exception"
+        ]
+    },
+    {
+        "q": "If you need to log request information before passing it to the view, which middleware method should you use?",
+        "c": null,
+        "o": [
+            "process_request",
+            "process_response",
+            "process_view",
+            "process_template_response"
+        ]
+    },
+    {
+        "q": "How can you handle CSRF token validation using middleware?",
+        "c": null,
+        "o": [
+            "Use CsrfViewMiddleware",
+            "Use CacheMiddleware",
+            "Use SecurityMiddleware",
+            "Use SessionMiddleware"
+        ]
+    },
+    {
+        "q": "What happens if no middleware processes an exception raised by a view?",
+        "c": null,
+        "o": [
+            "The exception is propagated to the WSGI server",
+            "The view is executed again",
+            "A default error message is returned",
+            "Django ignores the exception"
+        ]
+    },
+    {
+        "q": "Which middleware ensures that requests to Django’s admin panel are made by authenticated users?",
+        "c": null,
+        "o": [
+            "AuthenticationMiddleware",
+            "SecurityMiddleware",
+            "CommonMiddleware",
+            "SessionMiddleware"
+        ]
+    },
+    {
+        "q": "What happens when multiple middlewares modify the same request object?",
+        "c": null,
+        "o": [
+            "They modify the request in the order of MIDDLEWARE setting",
+            "They cancel each other out",
+            "The first middleware takes precedence",
+            "The last middleware overrides changes"
+        ]
+    },
+    {
+        "q": "Which middleware is responsible for handling gzip compression of responses?",
+        "c": null,
+        "o": [
+            "GZipMiddleware",
+            "CacheMiddleware",
+            "SecurityMiddleware",
+            "CsrfViewMiddleware"
+        ]
+    },
+    {
+        "q": "Which middleware is typically used to manage sessions stored in cookies?",
+        "c": null,
+        "o": [
+            "SessionMiddleware",
+            "CacheMiddleware",
+            "SecurityMiddleware",
+            "CommonMiddleware"
+        ]
+    },
+    {
+        "q": "How do you disable CSRF protection for a particular view in Django?",
+        "c": null,
+        "o": [
+            "Use @csrf_exempt decorator",
+            "Remove CsrfViewMiddleware",
+            "Modify the request object",
+            "Use process_view method"
+        ]
+    },
+    {
+        "q": "What happens if a middleware returns an HttpResponse object from process_request?",
+        "c": null,
+        "o": [
+            "The request is short-circuited and no further middleware is called",
+            "The next middleware in the chain is called",
+            "The view is executed but no response is returned",
+            "The response is modified by the next middleware"
+        ]
+    }
+]

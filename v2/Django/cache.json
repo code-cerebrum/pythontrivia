@@ -1,0 +1,712 @@
+[
+    {
+        "q": "Which caching framework does Django primarily support?",
+        "c": null,
+        "o": [
+            "Memcached",
+            "Redis",
+            "DynamoDB",
+            "MongoDB"
+        ]
+    },
+    {
+        "q": "Which Django setting is used to configure caching?",
+        "c": null,
+        "o": [
+            "CACHES",
+            "CACHE_BACKEND",
+            "CACHE_ENGINE",
+            "CACHE_TIMEOUT"
+        ]
+    },
+    {
+        "q": "What is the default cache backend in Django?",
+        "c": null,
+        "o": [
+            "LocMemCache",
+            "FileBasedCache",
+            "Memcached",
+            "Redis"
+        ]
+    },
+    {
+        "q": "Which caching backend would you use for local memory caching?",
+        "c": null,
+        "o": [
+            "LocMemCache",
+            "FileBasedCache",
+            "RedisCache",
+            "Memcached"
+        ]
+    },
+    {
+        "q": "What key argument is used to set a cache timeout?",
+        "c": null,
+        "o": [
+            "timeout",
+            "expires",
+            "expire_in",
+            "ttl"
+        ]
+    },
+    {
+        "q": "What is the default timeout value for Django caching?",
+        "c": null,
+        "o": [
+            "300",
+            "600",
+            "0",
+            "None"
+        ]
+    },
+    {
+        "q": "Which method would you use to store a value in the cache?",
+        "c": null,
+        "o": [
+            "cache.set()",
+            "cache.save()",
+            "cache.put()",
+            "cache.write()"
+        ]
+    },
+    {
+        "q": "Which method is used to retrieve an item from cache?",
+        "c": null,
+        "o": [
+            "cache.get()",
+            "cache.fetch()",
+            "cache.retrieve()",
+            "cache.lookup()"
+        ]
+    },
+    {
+        "q": "How do you delete a specific item from cache in Django?",
+        "c": null,
+        "o": [
+            "cache.delete()",
+            "cache.remove()",
+            "cache.flush()",
+            "cache.clear()"
+        ]
+    },
+    {
+        "q": "Which Django decorator is used to cache the output of a view?",
+        "c": null,
+        "o": [
+            "cache_page",
+            "cache_output",
+            "cache_response",
+            "cache_result"
+        ]
+    },
+    {
+        "q": "What does the cache_page decorator do?",
+        "c": null,
+        "o": [
+            "Caches the output of a view",
+            "Caches a model",
+            "Caches all views in a project",
+            "Caches a template"
+        ]
+    },
+    {
+        "q": "How do you set cache for a specific database query?",
+        "c": null,
+        "o": [
+            "Using cache.set()",
+            "Using cache_page()",
+            "Using cache_db()",
+            "Using cache_query()"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'timeout' parameter in caching?",
+        "c": null,
+        "o": [
+            "To set cache expiration time",
+            "To clear cache after timeout",
+            "To set cache size limit",
+            "To disable cache"
+        ]
+    },
+    {
+        "q": "Which backend would you use for file-based caching?",
+        "c": null,
+        "o": [
+            "FileBasedCache",
+            "LocMemCache",
+            "Memcached",
+            "Redis"
+        ]
+    },
+    {
+        "q": "Which cache backend would be most suitable for distributed systems?",
+        "c": null,
+        "o": [
+            "Memcached",
+            "LocMemCache",
+            "FileBasedCache",
+            "DummyCache"
+        ]
+    },
+    {
+        "q": "What does the cache.clear() method do?",
+        "c": null,
+        "o": [
+            "Clears all cache entries",
+            "Clears cache for a specific key",
+            "Flushes the session cache",
+            "Removes expired cache"
+        ]
+    },
+    {
+        "q": "Which setting would you adjust to configure cache invalidation?",
+        "c": null,
+        "o": [
+            "CACHE_TTL",
+            "CACHE_SIZE",
+            "CACHE_VERSION",
+            "CACHE_DB"
+        ]
+    },
+    {
+        "q": "What is a cache key in Django?",
+        "c": null,
+        "o": [
+            "A unique identifier for a cached item",
+            "A security token",
+            "A random hash",
+            "A cache version indicator"
+        ]
+    },
+    {
+        "q": "What does 'None' as the timeout value indicate?",
+        "c": null,
+        "o": [
+            "No expiration for cache",
+            "Immediate cache expiration",
+            "Temporary caching",
+            "Error in cache"
+        ]
+    },
+    {
+        "q": "Which backend provides a no-op cache that does nothing?",
+        "c": null,
+        "o": [
+            "DummyCache",
+            "FileBasedCache",
+            "LocMemCache",
+            "RedisCache"
+        ]
+    },
+    {
+        "q": "Which method would you use to increment a cache value?",
+        "c": null,
+        "o": [
+            "cache.incr()",
+            "cache.add()",
+            "cache.increment()",
+            "cache.inc()"
+        ]
+    },
+    {
+        "q": "Which method checks if a cache key exists?",
+        "c": null,
+        "o": [
+            "cache.has_key()",
+            "cache.exists()",
+            "cache.check()",
+            "cache.key_exists()"
+        ]
+    },
+    {
+        "q": "Which caching backend is known for being in-memory and fast?",
+        "c": null,
+        "o": [
+            "Redis",
+            "FileBasedCache",
+            "LocMemCache",
+            "DummyCache"
+        ]
+    },
+    {
+        "q": "How do you set the cache version in Django?",
+        "c": null,
+        "o": [
+            "CACHE_VERSION",
+            "CACHE_TTL",
+            "CACHE_TIME",
+            "CACHE_ID"
+        ]
+    },
+    {
+        "q": "What would you use to cache querysets in Django?",
+        "c": null,
+        "o": [
+            "cache.set()",
+            "cache.fetch()",
+            "cache_page()",
+            "cache_queryset()"
+        ]
+    },
+    {
+        "q": "What happens if you set the cache timeout to 0?",
+        "c": null,
+        "o": [
+            "The cache expires immediately",
+            "The cache never expires",
+            "The cache is refreshed",
+            "The cache is disabled"
+        ]
+    },
+    {
+        "q": "Which cache backend is suitable for production environments?",
+        "c": null,
+        "o": [
+            "Memcached",
+            "LocMemCache",
+            "DummyCache",
+            "FileBasedCache"
+        ]
+    },
+    {
+        "q": "Which method returns multiple cache values for multiple keys?",
+        "c": null,
+        "o": [
+            "cache.get_many()",
+            "cache.fetch_all()",
+            "cache.get_multiple()",
+            "cache.multi_get()"
+        ]
+    },
+    {
+        "q": "Which of the following is true for the LocMemCache backend?",
+        "c": null,
+        "o": [
+            "It only works per process",
+            "It supports multiple processes",
+            "It requires Redis",
+            "It works over a network"
+        ]
+    },
+    {
+        "q": "Which Django cache backend would be the fastest for a single server setup?",
+        "c": null,
+        "o": [
+            "LocMemCache",
+            "Redis",
+            "Memcached",
+            "FileBasedCache"
+        ]
+    },
+    {
+        "q": "How do you add a new cache entry only if the key doesn’t exist?",
+        "c": null,
+        "o": [
+            "cache.add()",
+            "cache.set()",
+            "cache.put()",
+            "cache.insert()"
+        ]
+    },
+    {
+        "q": "Which method is used to decrement a cache value?",
+        "c": null,
+        "o": [
+            "cache.decr()",
+            "cache.dec()",
+            "cache.decrement()",
+            "cache.reduce()"
+        ]
+    },
+    {
+        "q": "Which cache backend stores data on disk?",
+        "c": null,
+        "o": [
+            "FileBasedCache",
+            "LocMemCache",
+            "Redis",
+            "DummyCache"
+        ]
+    },
+    {
+        "q": "How do you define multiple caches in Django?",
+        "c": null,
+        "o": [
+            "Define multiple keys in CACHES",
+            "Use cache_alias",
+            "Use CACHE_SETS",
+            "Set CACHE_BACKENDS"
+        ]
+    },
+    {
+        "q": "Which setting is used to configure cache timeout globally?",
+        "c": null,
+        "o": [
+            "CACHE_DEFAULT_TIMEOUT",
+            "CACHE_TIMEOUT",
+            "CACHE_TTL",
+            "CACHE_GLOBAL_TIMEOUT"
+        ]
+    },
+    {
+        "q": "Which method would you use to store multiple cache values at once?",
+        "c": null,
+        "o": [
+            "cache.set_many()",
+            "cache.set_bulk()",
+            "cache.set_multiple()",
+            "cache.add_many()"
+        ]
+    },
+    {
+        "q": "Which of the following is a key advantage of Memcached?",
+        "c": null,
+        "o": [
+            "Low latency",
+            "Persistent storage",
+            "Native Django support",
+            "File-based operations"
+        ]
+    },
+    {
+        "q": "What happens if a cache key does not exist in cache.get()?",
+        "c": null,
+        "o": [
+            "Returns None",
+            "Raises an exception",
+            "Returns empty string",
+            "Returns False"
+        ]
+    },
+    {
+        "q": "What is the purpose of cache.get_or_set()?",
+        "c": null,
+        "o": [
+            "Retrieves cache or sets a new value if key doesn’t exist",
+            "Only retrieves cache",
+            "Updates cache values",
+            "Deletes cache entry"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid Django cache backend?",
+        "c": null,
+        "o": [
+            "SQLiteCache",
+            "RedisCache",
+            "FileBasedCache",
+            "Memcached"
+        ]
+    },
+    {
+        "q": "What does the cache.add() method return if the key already exists?",
+        "c": null,
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Raises an error"
+        ]
+    },
+    {
+        "q": "Which of these is a proper way to flush all cache in Django?",
+        "c": null,
+        "o": [
+            "cache.clear()",
+            "cache.flush_all()",
+            "cache.remove_all()",
+            "cache.clean()"
+        ]
+    },
+    {
+        "q": "Which setting enables persistent caching in Redis?",
+        "c": null,
+        "o": [
+            "CACHE_PERSISTENCE",
+            "CACHE_BACKEND",
+            "CACHE_TTL",
+            "CACHE_VERSION"
+        ]
+    },
+    {
+        "q": "In Django caching, what does 'versioning' refer to?",
+        "c": null,
+        "o": [
+            "Creating different cache versions to prevent conflicts",
+            "Cache expiration times",
+            "Cache partitioning",
+            "Storing cache in files"
+        ]
+    },
+    {
+        "q": "Which method is used to conditionally delete a cache item?",
+        "c": null,
+        "o": [
+            "cache.delete_pattern()",
+            "cache.remove_if()",
+            "cache.conditional_delete()",
+            "cache.flush_if()"
+        ]
+    },
+    {
+        "q": "Which Django middleware can be used to cache entire pages?",
+        "c": null,
+        "o": [
+            "UpdateCacheMiddleware",
+            "PageCacheMiddleware",
+            "CacheResponseMiddleware",
+            "OutputCacheMiddleware"
+        ]
+    },
+    {
+        "q": "What does Django’s cache_key_prefix do?",
+        "c": null,
+        "o": [
+            "Adds a prefix to cache keys to avoid clashes",
+            "Changes cache timeout",
+            "Modifies cache backend",
+            "Limits cache size"
+        ]
+    },
+    {
+        "q": "Which of the following would bypass caching entirely?",
+        "c": null,
+        "o": [
+            "cache.get('key', default=None)",
+            "cache.get_many()",
+            "cache.set_many()",
+            "cache.delete()"
+        ]
+    },
+    {
+        "q": "Which of the following would invalidate a specific cache key?",
+        "c": null,
+        "o": [
+            "cache.delete('key')",
+            "cache.set('key', None)",
+            "cache.invalidate()",
+            "cache.remove('key')"
+        ]
+    },
+    {
+        "q": "What would the cache.get() method return if the key is missing and no default is provided?",
+        "c": null,
+        "o": [
+            "None",
+            "False",
+            "0",
+            "Empty string"
+        ]
+    },
+    {
+        "q": "Which function can be used to cache specific templates?",
+        "c": null,
+        "o": [
+            "cache_template_fragment()",
+            "cache_page()",
+            "cache_set()",
+            "cache_section()"
+        ]
+    },
+    {
+        "q": "In Django, how do you increment a cache value by a certain amount?",
+        "c": null,
+        "o": [
+            "cache.incr('key', amount)",
+            "cache.set('key', value)",
+            "cache.add('key', amount)",
+            "cache.update('key', value)"
+        ]
+    },
+    {
+        "q": "Which parameter is required to store cache in Redis?",
+        "c": null,
+        "o": [
+            "HOST",
+            "CACHE_SIZE",
+            "VERSION",
+            "TIMEOUT"
+        ]
+    },
+    {
+        "q": "What would you use to cache a database-intensive function?",
+        "c": null,
+        "o": [
+            "cache.memoize()",
+            "cache_page()",
+            "cache_method()",
+            "cache_func()"
+        ]
+    },
+    {
+        "q": "Which Django middleware should be placed at the top to update the cache?",
+        "c": null,
+        "o": [
+            "UpdateCacheMiddleware",
+            "FetchFromCacheMiddleware",
+            "TemplateCacheMiddleware",
+            "PageCacheMiddleware"
+        ]
+    },
+    {
+        "q": "Which Django middleware is responsible for retrieving a cached response?",
+        "c": null,
+        "o": [
+            "FetchFromCacheMiddleware",
+            "UpdateCacheMiddleware",
+            "GetCacheMiddleware",
+            "PageCacheMiddleware"
+        ]
+    },
+    {
+        "q": "What’s the best caching strategy for static content in Django?",
+        "c": null,
+        "o": [
+            "Page caching",
+            "Database caching",
+            "Template fragment caching",
+            "Function caching"
+        ]
+    },
+    {
+        "q": "How do you specify a default cache backend?",
+        "c": null,
+        "o": [
+            "'default' in CACHES setting",
+            "'global' in CACHES setting",
+            "Set CACHE_DEFAULT",
+            "Use CACHE_VERSION"
+        ]
+    },
+    {
+        "q": "What does cache.touch() do?",
+        "c": null,
+        "o": [
+            "Refreshes the expiration time of a cache key",
+            "Deletes expired cache",
+            "Sets a new cache value",
+            "Renames a cache key"
+        ]
+    },
+    {
+        "q": "What’s a common use case for cache.clear()?",
+        "c": null,
+        "o": [
+            "To clear all cache during a deployment",
+            "To reset a single cache key",
+            "To flush expired cache only",
+            "To handle cache conflicts"
+        ]
+    },
+    {
+        "q": "Which cache backend supports both memory and disk persistence?",
+        "c": null,
+        "o": [
+            "Redis",
+            "Memcached",
+            "LocMemCache",
+            "DummyCache"
+        ]
+    },
+    {
+        "q": "Which command in Django shell can you use to inspect cache configuration?",
+        "c": null,
+        "o": [
+            "settings.CACHES",
+            "cache.inspect()",
+            "cache.get_backend()",
+            "cache.info()"
+        ]
+    },
+    {
+        "q": "What happens when cache.set() is called with an existing key?",
+        "c": null,
+        "o": [
+            "It overwrites the existing value",
+            "It raises an exception",
+            "It ignores the new value",
+            "It appends to the existing value"
+        ]
+    },
+    {
+        "q": "Which cache method ensures that the value is cached only if it doesn’t already exist?",
+        "c": null,
+        "o": [
+            "cache.add()",
+            "cache.set()",
+            "cache.put()",
+            "cache.insert()"
+        ]
+    },
+    {
+        "q": "How do you check for the existence of a key without retrieving the value?",
+        "c": null,
+        "o": [
+            "cache.has_key()",
+            "cache.exists()",
+            "cache.check()",
+            "cache.contains()"
+        ]
+    },
+    {
+        "q": "Which of the following is an example of cache invalidation?",
+        "c": null,
+        "o": [
+            "Deleting an expired cache entry",
+            "Updating a cache entry",
+            "Storing data in cache",
+            "Retrieving data from cache"
+        ]
+    },
+    {
+        "q": "Which cache backend is preferred for large-scale distributed systems?",
+        "c": null,
+        "o": [
+            "Memcached",
+            "LocMemCache",
+            "FileBasedCache",
+            "DummyCache"
+        ]
+    },
+    {
+        "q": "What does the 'location' setting in CACHES specify?",
+        "c": null,
+        "o": [
+            "The storage location for cache",
+            "The expiration time of cache",
+            "The key format",
+            "The cache priority"
+        ]
+    },
+    {
+        "q": "Which setting would you modify to control the maximum number of items stored in cache?",
+        "c": null,
+        "o": [
+            "CACHE_MAX_ENTRIES",
+            "CACHE_SIZE",
+            "CACHE_LIMIT",
+            "CACHE_BACKEND"
+        ]
+    },
+    {
+        "q": "Which Django management command clears the entire cache?",
+        "c": null,
+        "o": [
+            "clearcache",
+            "flushcache",
+            "resetcache",
+            "emptycache"
+        ]
+    },
+    {
+        "q": "Which of the following is true about LocMemCache?",
+        "c": null,
+        "o": [
+            "It is process-local and non-persistent",
+            "It is shared across multiple servers",
+            "It uses disk for storage",
+            "It requires Redis"
+        ]
+    }
+]
