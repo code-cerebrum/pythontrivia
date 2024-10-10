@@ -1,0 +1,1082 @@
+[
+    {
+        "q": "Which class is used to define a Django model?",
+        "c": null,
+        "o": [
+            "models.Model",
+            "BaseModel",
+            "DjangoModel",
+            "CoreModel"
+        ]
+    },
+    {
+        "q": "Which field type is used for auto-incrementing primary keys in Django?",
+        "c": null,
+        "o": [
+            "AutoField",
+            "PrimaryKeyField",
+            "IntegerField",
+            "IDField"
+        ]
+    },
+    {
+        "q": "Which method is called automatically when an object is saved?",
+        "c": null,
+        "o": [
+            "save()",
+            "create()",
+            "update()",
+            "commit()"
+        ]
+    },
+    {
+        "q": "Which field type is used to store large text data?",
+        "c": null,
+        "o": [
+            "TextField",
+            "CharField",
+            "SlugField",
+            "StringField"
+        ]
+    },
+    {
+        "q": "What argument do you pass to define a field as the primary key?",
+        "c": null,
+        "o": [
+            "primary_key=True",
+            "unique=True",
+            "index=True",
+            "key=True"
+        ]
+    },
+    {
+        "q": "Which method is used to return a string representation of an object?",
+        "c": null,
+        "o": [
+            "__str__",
+            "__repr__",
+            "__unicode__",
+            "__name__"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a boolean value?",
+        "c": null,
+        "o": [
+            "BooleanField",
+            "IntegerField",
+            "NullBooleanField",
+            "BitField"
+        ]
+    },
+    {
+        "q": "Which field allows storing date and time in Django?",
+        "c": null,
+        "o": [
+            "DateTimeField",
+            "TimeField",
+            "DateField",
+            "TimestampField"
+        ]
+    },
+    {
+        "q": "How can you enforce unique values in a Django model field?",
+        "c": null,
+        "o": [
+            "unique=True",
+            "primary_key=True",
+            "index=True",
+            "unique_key=True"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store an email address?",
+        "c": null,
+        "o": [
+            "EmailField",
+            "CharField",
+            "URLField",
+            "TextField"
+        ]
+    },
+    {
+        "q": "What is the default value of 'null' in Django model fields?",
+        "c": null,
+        "o": [
+            "False",
+            "True",
+            "None",
+            "Null"
+        ]
+    },
+    {
+        "q": "Which argument defines a maximum length for CharField?",
+        "c": null,
+        "o": [
+            "max_length",
+            "length",
+            "size",
+            "char_size"
+        ]
+    },
+    {
+        "q": "Which method is used to get all objects of a model?",
+        "c": null,
+        "o": [
+            "all()",
+            "get()",
+            "filter()",
+            "select()"
+        ]
+    },
+    {
+        "q": "How do you define a one-to-many relationship in Django?",
+        "c": null,
+        "o": [
+            "ForeignKey",
+            "OneToOneField",
+            "ManyToManyField",
+            "RelationField"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a URL?",
+        "c": null,
+        "o": [
+            "URLField",
+            "CharField",
+            "SlugField",
+            "TextField"
+        ]
+    },
+    {
+        "q": "Which method is used to filter objects based on conditions?",
+        "c": null,
+        "o": [
+            "filter()",
+            "get()",
+            "exclude()",
+            "select()"
+        ]
+    },
+    {
+        "q": "What does the 'db_index' argument do in a model field?",
+        "c": null,
+        "o": [
+            "Creates a database index",
+            "Enforces uniqueness",
+            "Adds a primary key",
+            "Sets default value"
+        ]
+    },
+    {
+        "q": "Which field type allows you to store file uploads in Django?",
+        "c": null,
+        "o": [
+            "FileField",
+            "ImageField",
+            "BinaryField",
+            "UploadField"
+        ]
+    },
+    {
+        "q": "How do you define a many-to-many relationship in Django?",
+        "c": null,
+        "o": [
+            "ManyToManyField",
+            "ForeignKey",
+            "OneToOneField",
+            "RelationField"
+        ]
+    },
+    {
+        "q": "Which method would you use to get exactly one object?",
+        "c": null,
+        "o": [
+            "get()",
+            "filter()",
+            "first()",
+            "all()"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a large binary file?",
+        "c": null,
+        "o": [
+            "BinaryField",
+            "FileField",
+            "TextField",
+            "ImageField"
+        ]
+    },
+    {
+        "q": "What does the 'blank=True' argument allow?",
+        "c": null,
+        "o": [
+            "Field can be empty",
+            "Field is required",
+            "Field is a primary key",
+            "Field is indexed"
+        ]
+    },
+    {
+        "q": "Which method deletes an object in Django?",
+        "c": null,
+        "o": [
+            "delete()",
+            "remove()",
+            "drop()",
+            "clear()"
+        ]
+    },
+    {
+        "q": "Which field type stores unique strings in URL-friendly format?",
+        "c": null,
+        "o": [
+            "SlugField",
+            "CharField",
+            "URLField",
+            "TextField"
+        ]
+    },
+    {
+        "q": "Which method is used to exclude certain objects from a queryset?",
+        "c": null,
+        "o": [
+            "exclude()",
+            "filter()",
+            "get()",
+            "all()"
+        ]
+    },
+    {
+        "q": "What method is used to create a new model instance?",
+        "c": null,
+        "o": [
+            "create()",
+            "save()",
+            "add()",
+            "new()"
+        ]
+    },
+    {
+        "q": "Which argument makes a model field optional?",
+        "c": null,
+        "o": [
+            "null=True",
+            "blank=True",
+            "required=False",
+            "default=None"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store positive integers?",
+        "c": null,
+        "o": [
+            "PositiveIntegerField",
+            "IntegerField",
+            "SmallIntegerField",
+            "BigIntegerField"
+        ]
+    },
+    {
+        "q": "How do you define a one-to-one relationship in Django?",
+        "c": null,
+        "o": [
+            "OneToOneField",
+            "ForeignKey",
+            "ManyToManyField",
+            "UniqueField"
+        ]
+    },
+    {
+        "q": "Which field type stores true/false values?",
+        "c": null,
+        "o": [
+            "BooleanField",
+            "NullBooleanField",
+            "BitField",
+            "TrueFalseField"
+        ]
+    },
+    {
+        "q": "Which Meta option is used to define the database table name?",
+        "c": null,
+        "o": [
+            "db_table",
+            "table_name",
+            "db_name",
+            "table"
+        ]
+    },
+    {
+        "q": "Which method would you use to update an existing object?",
+        "c": null,
+        "o": [
+            "save()",
+            "update()",
+            "modify()",
+            "edit()"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a decimal value?",
+        "c": null,
+        "o": [
+            "DecimalField",
+            "FloatField",
+            "IntegerField",
+            "NumberField"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey specifies the related model?",
+        "c": null,
+        "o": [
+            "to",
+            "related_model",
+            "model",
+            "target"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store small integers?",
+        "c": null,
+        "o": [
+            "SmallIntegerField",
+            "IntegerField",
+            "PositiveSmallIntegerField",
+            "TinyIntegerField"
+        ]
+    },
+    {
+        "q": "How do you define choices for a field in Django?",
+        "c": null,
+        "o": [
+            "choices",
+            "options",
+            "values",
+            "enum"
+        ]
+    },
+    {
+        "q": "Which method is used to bulk create objects in Django?",
+        "c": null,
+        "o": [
+            "bulk_create()",
+            "save_bulk()",
+            "batch_create()",
+            "create_many()"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey enforces cascading deletes?",
+        "c": null,
+        "o": [
+            "on_delete",
+            "cascade",
+            "delete_cascade",
+            "on_remove"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store time-only values?",
+        "c": null,
+        "o": [
+            "TimeField",
+            "DateTimeField",
+            "DurationField",
+            "HourField"
+        ]
+    },
+    {
+        "q": "Which Meta option is used to order querysets by default?",
+        "c": null,
+        "o": [
+            "ordering",
+            "default_order",
+            "sort_by",
+            "order"
+        ]
+    },
+    {
+        "q": "Which field type is best suited to store file paths?",
+        "c": null,
+        "o": [
+            "FilePathField",
+            "CharField",
+            "TextField",
+            "URLField"
+        ]
+    },
+    {
+        "q": "Which argument in ManyToManyField defines the intermediary table?",
+        "c": null,
+        "o": [
+            "through",
+            "intermediate",
+            "relation_table",
+            "join_table"
+        ]
+    },
+    {
+        "q": "What happens when you define null=True in a model field?",
+        "c": null,
+        "o": [
+            "Allows NULL in database",
+            "Field is optional",
+            "Field has default value",
+            "Prevents empty value"
+        ]
+    },
+    {
+        "q": "Which field type stores durations or time intervals?",
+        "c": null,
+        "o": [
+            "DurationField",
+            "TimeField",
+            "IntervalField",
+            "DateTimeField"
+        ]
+    },
+    {
+        "q": "Which Meta option prevents the creation of database tables?",
+        "c": null,
+        "o": [
+            "abstract",
+            "managed",
+            "db_table",
+            "proxy"
+        ]
+    },
+    {
+        "q": "Which method is used to check if a queryset contains any results?",
+        "c": null,
+        "o": [
+            "exists()",
+            "has_results()",
+            "contains()",
+            "count()"
+        ]
+    },
+    {
+        "q": "Which Meta option defines proxy models?",
+        "c": null,
+        "o": [
+            "proxy",
+            "managed",
+            "db_table",
+            "abstract"
+        ]
+    },
+    {
+        "q": "Which method retrieves the first object from a queryset?",
+        "c": null,
+        "o": [
+            "first()",
+            "get()",
+            "top()",
+            "one()"
+        ]
+    },
+    {
+        "q": "Which field type is suitable for storing floating-point numbers?",
+        "c": null,
+        "o": [
+            "FloatField",
+            "DecimalField",
+            "RealField",
+            "NumberField"
+        ]
+    },
+    {
+        "q": "What happens when you define blank=True for a model field?",
+        "c": null,
+        "o": [
+            "Field can be empty in forms",
+            "Field allows NULL in the database",
+            "Field is not required",
+            "Field is set to default"
+        ]
+    },
+    {
+        "q": "Which argument would you use to limit the number of digits in a DecimalField?",
+        "c": null,
+        "o": [
+            "max_digits",
+            "decimal_places",
+            "total_digits",
+            "length"
+        ]
+    },
+    {
+        "q": "Which Meta option defines unique constraints across multiple fields?",
+        "c": null,
+        "o": [
+            "unique_together",
+            "unique",
+            "constraints",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Which field type is used to store images in Django?",
+        "c": null,
+        "o": [
+            "ImageField",
+            "FileField",
+            "BinaryField",
+            "PictureField"
+        ]
+    },
+    {
+        "q": "Which method is used to exclude None values from a queryset?",
+        "c": null,
+        "o": [
+            "exclude()",
+            "filter()",
+            "omit()",
+            "ignore()"
+        ]
+    },
+    {
+        "q": "Which argument allows a field to have a default value?",
+        "c": null,
+        "o": [
+            "default",
+            "initial",
+            "start_value",
+            "set_value"
+        ]
+    },
+    {
+        "q": "Which argument ensures that a field value is unique across the database?",
+        "c": null,
+        "o": [
+            "unique",
+            "primary_key",
+            "index",
+            "constraint"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store currency values?",
+        "c": null,
+        "o": [
+            "DecimalField",
+            "FloatField",
+            "IntegerField",
+            "CurrencyField"
+        ]
+    },
+    {
+        "q": "What is the default behavior when a ForeignKey's related object is deleted?",
+        "c": null,
+        "o": [
+            "CASCADE",
+            "SET_NULL",
+            "DO_NOTHING",
+            "PROTECT"
+        ]
+    },
+    {
+        "q": "Which Meta option can prevent the creation of duplicates across multiple fields?",
+        "c": null,
+        "o": [
+            "unique_together",
+            "constraints",
+            "ordering",
+            "indexes"
+        ]
+    },
+    {
+        "q": "Which field type would you use for storing comma-separated values?",
+        "c": null,
+        "o": [
+            "CommaSeparatedIntegerField",
+            "CharField",
+            "TextField",
+            "CSVField"
+        ]
+    },
+    {
+        "q": "What does the 'managed' option in Meta control?",
+        "c": null,
+        "o": [
+            "Automatic table creation",
+            "Default model manager",
+            "Proxy model behavior",
+            "Unique constraint checks"
+        ]
+    },
+    {
+        "q": "Which method retrieves the last object from a queryset?",
+        "c": null,
+        "o": [
+            "last()",
+            "get()",
+            "bottom()",
+            "tail()"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a unique slug?",
+        "c": null,
+        "o": [
+            "SlugField",
+            "CharField",
+            "TextField",
+            "StringField"
+        ]
+    },
+    {
+        "q": "What happens when 'editable=False' is set on a field?",
+        "c": null,
+        "o": [
+            "Field is not modifiable in forms",
+            "Field cannot be null",
+            "Field is hidden",
+            "Field is always required"
+        ]
+    },
+    {
+        "q": "Which Meta option defines a model as abstract?",
+        "c": null,
+        "o": [
+            "abstract",
+            "proxy",
+            "managed",
+            "base_class"
+        ]
+    },
+    {
+        "q": "Which method is used to retrieve or create an object?",
+        "c": null,
+        "o": [
+            "get_or_create()",
+            "find_or_create()",
+            "retrieve()",
+            "get_or_make()"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey sets the behavior on update?",
+        "c": null,
+        "o": [
+            "on_update",
+            "on_edit",
+            "on_change",
+            "update_action"
+        ]
+    },
+    {
+        "q": "Which method would you use to prefetch related objects in a queryset?",
+        "c": null,
+        "o": [
+            "prefetch_related()",
+            "select_related()",
+            "fetch_related()",
+            "eager_load()"
+        ]
+    },
+    {
+        "q": "Which field type automatically updates with the current timestamp on each save?",
+        "c": null,
+        "o": [
+            "DateTimeField(auto_now=True)",
+            "DateField(auto_update=True)",
+            "TimeField(auto_now=True)",
+            "TimestampField(auto_save=True)"
+        ]
+    },
+    {
+        "q": "What does 'auto_now_add' do in DateTimeField?",
+        "c": null,
+        "o": [
+            "Sets the field to the current time when created",
+            "Automatically updates the field on save",
+            "Resets the field on each update",
+            "Sets the field to NULL after save"
+        ]
+    },
+    {
+        "q": "Which method is used to delete an object in Django?",
+        "c": null,
+        "o": [
+            "delete()",
+            "remove()",
+            "destroy()",
+            "erase()"
+        ]
+    },
+    {
+        "q": "Which field is used to store JSON-encoded data?",
+        "c": null,
+        "o": [
+            "JSONField",
+            "TextField",
+            "CharField",
+            "DictField"
+        ]
+    },
+    {
+        "q": "What does 'primary_key=True' do when defined in a model field?",
+        "c": null,
+        "o": [
+            "Sets the field as the primary key",
+            "Marks the field as unique",
+            "Creates an auto-incremented key",
+            "Allows NULL values"
+        ]
+    },
+    {
+        "q": "Which method is used to return a dictionary of field names and their values?",
+        "c": null,
+        "o": [
+            "values()",
+            "to_dict()",
+            "get_fields()",
+            "retrieve()"
+        ]
+    },
+    {
+        "q": "Which argument is used to provide verbose names for model fields?",
+        "c": null,
+        "o": [
+            "verbose_name",
+            "description",
+            "name_label",
+            "field_name"
+        ]
+    },
+    {
+        "q": "What does 'blank=True' allow in Django forms?",
+        "c": null,
+        "o": [
+            "Field can be empty",
+            "Field value must be NULL",
+            "Field must have a default",
+            "Field is read-only"
+        ]
+    },
+    {
+        "q": "Which method is used to count the number of records in a queryset?",
+        "c": null,
+        "o": [
+            "count()",
+            "total()",
+            "sum()",
+            "size()"
+        ]
+    },
+    {
+        "q": "Which field would you use to store URL links in Django?",
+        "c": null,
+        "o": [
+            "URLField",
+            "TextField",
+            "LinkField",
+            "CharField"
+        ]
+    },
+    {
+        "q": "Which Meta option is used to define index constraints on fields?",
+        "c": null,
+        "o": [
+            "indexes",
+            "unique_together",
+            "constraints",
+            "ordering"
+        ]
+    },
+    {
+        "q": "Which field type is automatically incremented in Django?",
+        "c": null,
+        "o": [
+            "AutoField",
+            "IntegerField",
+            "PositiveIntegerField",
+            "PrimaryKeyField"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey is used to control behavior when the referenced object is deleted?",
+        "c": null,
+        "o": [
+            "on_delete",
+            "cascade_delete",
+            "restrict",
+            "delete_behaviour"
+        ]
+    },
+    {
+        "q": "Which argument is used to specify the maximum length of a CharField?",
+        "c": null,
+        "o": [
+            "max_length",
+            "max_size",
+            "length_limit",
+            "size_limit"
+        ]
+    },
+    {
+        "q": "What does 'unique=True' enforce in a Django model field?",
+        "c": null,
+        "o": [
+            "Ensures field values are unique",
+            "Sets field as primary key",
+            "Prevents NULL values",
+            "Makes field read-only"
+        ]
+    },
+    {
+        "q": "Which field type is used to store binary data in Django?",
+        "c": null,
+        "o": [
+            "BinaryField",
+            "CharField",
+            "FileField",
+            "TextField"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey prevents deletion of the referenced object?",
+        "c": null,
+        "o": [
+            "PROTECT",
+            "CASCADE",
+            "SET_NULL",
+            "SET_DEFAULT"
+        ]
+    },
+    {
+        "q": "Which field type is used for storing dates in Django?",
+        "c": null,
+        "o": [
+            "DateField",
+            "DateTimeField",
+            "TimeField",
+            "DayField"
+        ]
+    },
+    {
+        "q": "Which method is used to retrieve a single object that matches a query?",
+        "c": null,
+        "o": [
+            "get()",
+            "first()",
+            "retrieve()",
+            "find()"
+        ]
+    },
+    {
+        "q": "What does 'auto_created=True' in a ForeignKey imply?",
+        "c": null,
+        "o": [
+            "Field was created automatically",
+            "Field is generated at runtime",
+            "Field has a default value",
+            "Field is editable"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a boolean value?",
+        "c": null,
+        "o": [
+            "BooleanField",
+            "CharField",
+            "IntegerField",
+            "ChoiceField"
+        ]
+    },
+    {
+        "q": "Which method is used to get all related objects for a ForeignKey?",
+        "c": null,
+        "o": [
+            "select_related()",
+            "get_related()",
+            "prefetch_related()",
+            "get_all_related()"
+        ]
+    },
+    {
+        "q": "Which argument in ForeignKey sets the behavior on deleting related objects?",
+        "c": null,
+        "o": [
+            "on_delete",
+            "cascade",
+            "related_delete",
+            "on_remove"
+        ]
+    },
+    {
+        "q": "Which method would you use to refresh an object's data from the database?",
+        "c": null,
+        "o": [
+            "refresh_from_db()",
+            "reload()",
+            "fetch_latest()",
+            "refresh_object()"
+        ]
+    },
+    {
+        "q": "Which field type would you use for a list of options to choose from?",
+        "c": null,
+        "o": [
+            "ChoiceField",
+            "SelectField",
+            "MultipleChoiceField",
+            "OptionField"
+        ]
+    },
+    {
+        "q": "Which argument specifies the number of decimal places in a DecimalField?",
+        "c": null,
+        "o": [
+            "decimal_places",
+            "max_digits",
+            "precision",
+            "scale"
+        ]
+    },
+    {
+        "q": "Which Meta option is used to define database constraints?",
+        "c": null,
+        "o": [
+            "constraints",
+            "unique_together",
+            "indexes",
+            "ordering"
+        ]
+    },
+    {
+        "q": "Which method allows you to modify only certain fields of a model instance?",
+        "c": null,
+        "o": [
+            "save(update_fields=...)",
+            "update_fields()",
+            "partial_save()",
+            "save_partial()"
+        ]
+    },
+    {
+        "q": "What does 'editable=False' do to a field?",
+        "c": null,
+        "o": [
+            "Field is excluded from forms",
+            "Field is set as read-only",
+            "Field can be NULL",
+            "Field cannot be displayed"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store IP addresses?",
+        "c": null,
+        "o": [
+            "GenericIPAddressField",
+            "CharField",
+            "IPField",
+            "TextField"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store emails in Django?",
+        "c": null,
+        "o": [
+            "EmailField",
+            "CharField",
+            "TextField",
+            "StringField"
+        ]
+    },
+    {
+        "q": "Which method is used to retrieve distinct values in a queryset?",
+        "c": null,
+        "o": [
+            "distinct()",
+            "unique()",
+            "exclude_duplicates()",
+            "fetch_unique()"
+        ]
+    },
+    {
+        "q": "Which argument specifies if a field value is nullable in the database?",
+        "c": null,
+        "o": [
+            "null",
+            "blank",
+            "nullable",
+            "default_null"
+        ]
+    },
+    {
+        "q": "Which field type would you use to store a time duration?",
+        "c": null,
+        "o": [
+            "DurationField",
+            "TimeField",
+            "IntervalField",
+            "DateTimeField"
+        ]
+    },
+    {
+        "q": "Which argument is used to define a default manager for a Django model?",
+        "c": null,
+        "o": [
+            "objects",
+            "default_manager",
+            "model_manager",
+            "manager_class"
+        ]
+    },
+    {
+        "q": "Which method is used to get objects based on filters?",
+        "c": null,
+        "o": [
+            "filter()",
+            "get()",
+            "find()",
+            "select()"
+        ]
+    },
+    {
+        "q": "Which argument in ManyToManyField is used to limit the number of objects?",
+        "c": null,
+        "o": [
+            "limit_choices_to",
+            "max_items",
+            "choices_limit",
+            "constraint_limit"
+        ]
+    },
+    {
+        "q": "Which field type is best for storing long pieces of text?",
+        "c": null,
+        "o": [
+            "TextField",
+            "CharField",
+            "StringField",
+            "BlobField"
+        ]
+    },
+    {
+        "q": "Which Django command is used to create database migrations?",
+        "c": null,
+        "o": [
+            "makemigrations",
+            "migrate",
+            "create_migration",
+            "syncdb"
+        ]
+    },
+    {
+        "q": "Which method is used to bulk create multiple objects in Django?",
+        "c": null,
+        "o": [
+            "bulk_create()",
+            "batch_create()",
+            "create_many()",
+            "insert_many()"
+        ]
+    }
+]

@@ -1,0 +1,1232 @@
+[
+    {
+        "q": "What is the main purpose of Django URLs?",
+        "c": null,
+        "o": [
+            "Mapping URL patterns to views",
+            "Handling request data",
+            "Rendering templates",
+            "Connecting to the database"
+        ]
+    },
+    {
+        "q": "Which function is used to define URL patterns in Django?",
+        "c": null,
+        "o": [
+            "path()",
+            "url()",
+            "route()",
+            "match()"
+        ]
+    },
+    {
+        "q": "Which argument is used in path() to capture dynamic values?",
+        "c": null,
+        "o": [
+            "<slug>",
+            "<int>",
+            "<str>",
+            "<path>"
+        ]
+    },
+    {
+        "q": "Which module do you import to define URLs in Django?",
+        "c": null,
+        "o": [
+            "django.urls",
+            "django.conf",
+            "django.views",
+            "django.http"
+        ]
+    },
+    {
+        "q": "What is the default view function argument in a URL pattern?",
+        "c": null,
+        "o": [
+            "request",
+            "self",
+            "response",
+            "context"
+        ]
+    },
+    {
+        "q": "Which function is used to reverse URL resolution?",
+        "c": null,
+        "o": [
+            "reverse()",
+            "path()",
+            "include()",
+            "resolve()"
+        ]
+    },
+    {
+        "q": "What does the 'name' parameter in path() function represent?",
+        "c": null,
+        "o": [
+            "Named URL for easy reference",
+            "View function name",
+            "HTTP method",
+            "Request handler"
+        ]
+    },
+    {
+        "q": "How can you include other URL configurations?",
+        "c": null,
+        "o": [
+            "include()",
+            "url()",
+            "link()",
+            "add_urls()"
+        ]
+    },
+    {
+        "q": "Which file typically contains URL patterns in Django?",
+        "c": null,
+        "o": [
+            "urls.py",
+            "views.py",
+            "settings.py",
+            "models.py"
+        ]
+    },
+    {
+        "q": "What is used to handle wildcard URL patterns?",
+        "c": null,
+        "o": [
+            "<slug>",
+            "<int>",
+            "<str>",
+            "<float>"
+        ]
+    },
+    {
+        "q": "What does path('', views.home) represent?",
+        "c": null,
+        "o": [
+            "Root URL mapping",
+            "Catch-all URL",
+            "Wildcard URL",
+            "Dynamic URL"
+        ]
+    },
+    {
+        "q": "What is the correct way to map a URL to a view?",
+        "c": null,
+        "o": [
+            "path('about/', views.about)",
+            "url('about/', views.about)",
+            "route('about/', views.about)",
+            "link('about/', views.about)"
+        ]
+    },
+    {
+        "q": "How can you restrict URL patterns to specific HTTP methods?",
+        "c": null,
+        "o": [
+            "use @require_http_methods decorator",
+            "limit with url()",
+            "add a method argument to path()",
+            "define it in settings.py"
+        ]
+    },
+    {
+        "q": "Which method in Django resolves a URL to a view?",
+        "c": null,
+        "o": [
+            "resolve()",
+            "reverse()",
+            "path()",
+            "match()"
+        ]
+    },
+    {
+        "q": "What does 'urlpatterns' in urls.py contain?",
+        "c": null,
+        "o": [
+            "List of URL patterns",
+            "List of view functions",
+            "Middleware classes",
+            "Model classes"
+        ]
+    },
+    {
+        "q": "Which special pattern matches any URL in Django?",
+        "c": null,
+        "o": [
+            "<path>",
+            "<any>",
+            "<wildcard>",
+            "<*args>"
+        ]
+    },
+    {
+        "q": "What is the purpose of include() in URLs?",
+        "c": null,
+        "o": [
+            "To include other URL configurations",
+            "To link views",
+            "To route to static files",
+            "To handle errors"
+        ]
+    },
+    {
+        "q": "How do you create a URL for a view called 'index'?",
+        "c": null,
+        "o": [
+            "path('', views.index)",
+            "url('', views.index)",
+            "route('', views.index)",
+            "index('', views.index)"
+        ]
+    },
+    {
+        "q": "What is the purpose of <int:id> in path?",
+        "c": null,
+        "o": [
+            "Capture integer URL parameters",
+            "Capture string URL parameters",
+            "Capture wildcard paths",
+            "Restrict methods to POST"
+        ]
+    },
+    {
+        "q": "Which argument is passed to the view function by default?",
+        "c": null,
+        "o": [
+            "request",
+            "self",
+            "context",
+            "args"
+        ]
+    },
+    {
+        "q": "How do you define a URL for a class-based view?",
+        "c": null,
+        "o": [
+            "use as_view() method",
+            "use handle() method",
+            "use class() function",
+            "use render() function"
+        ]
+    },
+    {
+        "q": "What does 're_path()' function allow?",
+        "c": null,
+        "o": [
+            "Regular expressions for URL patterns",
+            "Wildcard matching",
+            "Handling POST methods",
+            "Resolving views"
+        ]
+    },
+    {
+        "q": "How do you include app-specific URLs?",
+        "c": null,
+        "o": [
+            "path('app/', include('app.urls'))",
+            "url('app/', views.urls())",
+            "path('app/', views.include())",
+            "path('app/', views.route())"
+        ]
+    },
+    {
+        "q": "What does reverse_lazy() function do?",
+        "c": null,
+        "o": [
+            "Delay URL resolution until needed",
+            "Resolve URL immediately",
+            "Map HTTP methods",
+            "Redirect to a URL"
+        ]
+    },
+    {
+        "q": "How do you generate URLs dynamically from a name?",
+        "c": null,
+        "o": [
+            "use reverse() function",
+            "use render() function",
+            "use route() function",
+            "use path() function"
+        ]
+    },
+    {
+        "q": "Which pattern captures any remaining URL segments?",
+        "c": null,
+        "o": [
+            "<path:remaining>",
+            "<slug:remaining>",
+            "<wildcard>",
+            "<str:remaining>"
+        ]
+    },
+    {
+        "q": "What is the correct structure for namespaced URLs?",
+        "c": null,
+        "o": [
+            "app_name = 'app_name'",
+            "namespace = 'app'",
+            "path_name = 'app'",
+            "reverse_name = 'app'"
+        ]
+    },
+    {
+        "q": "Which decorator restricts URLs to specific HTTP methods?",
+        "c": null,
+        "o": [
+            "@require_http_methods",
+            "@http_method_required",
+            "@http_restrict",
+            "@view_only_methods"
+        ]
+    },
+    {
+        "q": "What is the correct pattern to define a URL for static files?",
+        "c": null,
+        "o": [
+            "path('static/', include('static.urls'))",
+            "path('static/', views.static)",
+            "path('static/', include('files.urls'))",
+            "path('static/', views.files)"
+        ]
+    },
+    {
+        "q": "Which import is required for class-based views in urls.py?",
+        "c": null,
+        "o": [
+            "from views import MyView",
+            "import views",
+            "from urls import views",
+            "from models import views"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a valid path converter?",
+        "c": null,
+        "o": [
+            "<bool>",
+            "<slug>",
+            "<int>",
+            "<path>"
+        ]
+    },
+    {
+        "q": "How do you redirect a URL to another URL in Django?",
+        "c": null,
+        "o": [
+            "redirect()",
+            "path()",
+            "include()",
+            "reverse()"
+        ]
+    },
+    {
+        "q": "Which method ensures trailing slashes are handled in URLs?",
+        "c": null,
+        "o": [
+            "APPEND_SLASH",
+            "IGNORE_TRAILING_SLASH",
+            "REMOVE_SLASH",
+            "ALLOW_NO_SLASH"
+        ]
+    },
+    {
+        "q": "What does the 're_path' function allow that 'path' doesn't?",
+        "c": null,
+        "o": [
+            "Regular expressions in URLs",
+            "String matching",
+            "Integer matching",
+            "Custom converters"
+        ]
+    },
+    {
+        "q": "What is the typical location for Django’s main URL configuration file?",
+        "c": null,
+        "o": [
+            "project/urls.py",
+            "project/views.py",
+            "app/urls.py",
+            "settings.py"
+        ]
+    },
+    {
+        "q": "Which URL converter is used to match hexadecimal values?",
+        "c": null,
+        "o": [
+            "<uuid>",
+            "<slug>",
+            "<int>",
+            "<path>"
+        ]
+    },
+    {
+        "q": "How do you create an optional URL parameter in Django?",
+        "c": null,
+        "o": [
+            "Use default=None in view function",
+            "Use '?' in the URL pattern",
+            "Use optional=True in path()",
+            "Use None in the path pattern"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid URL for class-based views?",
+        "c": null,
+        "o": [
+            "path('home/', HomeView.as_view())",
+            "path('home/', HomeView.view())",
+            "path('home/', HomeView.get())",
+            "path('home/', HomeView())"
+        ]
+    },
+    {
+        "q": "What is the default method that Django views respond to?",
+        "c": null,
+        "o": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "In Django, how do you set up a custom 404 error page?",
+        "c": null,
+        "o": [
+            "Define handler404",
+            "Set in views.py",
+            "Override path()",
+            "Use @error decorator"
+        ]
+    },
+    {
+        "q": "What is the purpose of the namespace argument in include()?",
+        "c": null,
+        "o": [
+            "Avoid name collisions between apps",
+            "Define app URLs",
+            "Link to static files",
+            "Route templates"
+        ]
+    },
+    {
+        "q": "How do you pass keyword arguments to a view from a URL pattern?",
+        "c": null,
+        "o": [
+            "path('<str:username>', views.profile)",
+            "url('<username>', views.profile)",
+            "route('<username>', views.profile)",
+            "link('<username>', views.profile)"
+        ]
+    },
+    {
+        "q": "What does Django use to process URL parameters?",
+        "c": null,
+        "o": [
+            "Path converters",
+            "Static routes",
+            "Middleware",
+            "Query strings"
+        ]
+    },
+    {
+        "q": "What happens when two URL patterns match a request in Django?",
+        "c": null,
+        "o": [
+            "The first match is used",
+            "The second match is used",
+            "An error occurs",
+            "Both are evaluated"
+        ]
+    },
+    {
+        "q": "How do you define a URL that accepts multiple parameters?",
+        "c": null,
+        "o": [
+            "path('<str:username>/<int:id>/', views.details)",
+            "path('<username><id>', views.details)",
+            "path('username/id', views.details)",
+            "url('username/id', views.details)"
+        ]
+    },
+    {
+        "q": "Which of the following is a method to resolve URL patterns?",
+        "c": null,
+        "o": [
+            "resolve()",
+            "reverse_lazy()",
+            "as_view()",
+            "match()"
+        ]
+    },
+    {
+        "q": "How do you handle internationalized URLs in Django?",
+        "c": null,
+        "o": [
+            "use i18n_patterns",
+            "use include() with translations",
+            "use reverse() with locales",
+            "use path() with language codes"
+        ]
+    },
+    {
+        "q": "How can you assign default arguments to a view in a URL pattern?",
+        "c": null,
+        "o": [
+            "use kwargs in path()",
+            "use path('<arg:default>')",
+            "use defaults in views",
+            "use a decorator"
+        ]
+    },
+    {
+        "q": "What does Django use to differentiate between URL patterns and static paths?",
+        "c": null,
+        "o": [
+            "Regular expressions",
+            "Prefix in path",
+            "Trailing slash",
+            "File extension"
+        ]
+    },
+    {
+        "q": "What happens if no URL pattern matches a request?",
+        "c": null,
+        "o": [
+            "404 error is returned",
+            "Redirect to root URL",
+            "Default view is called",
+            "500 error is returned"
+        ]
+    },
+    {
+        "q": "Which of the following can be used to define dynamic URLs?",
+        "c": null,
+        "o": [
+            "<slug>",
+            "<get>",
+            "<post>",
+            "<dynamic>"
+        ]
+    },
+    {
+        "q": "What is the correct way to specify a URL for POST requests only?",
+        "c": null,
+        "o": [
+            "use @require_POST decorator",
+            "define method='POST' in path()",
+            "use reverse_lazy()",
+            "use include() with post_only=True"
+        ]
+    },
+    {
+        "q": "What does the method 'reverse()' return?",
+        "c": null,
+        "o": [
+            "A URL string",
+            "A view function",
+            "A path converter",
+            "A view object"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'urlpatterns' in urls.py?",
+        "c": null,
+        "o": [
+            "List of URL mappings",
+            "List of views",
+            "List of static files",
+            "List of models"
+        ]
+    },
+    {
+        "q": "Which file is used to map URL patterns to views in Django?",
+        "c": null,
+        "o": [
+            "urls.py",
+            "views.py",
+            "models.py",
+            "settings.py"
+        ]
+    },
+    {
+        "q": "How do you define a view for handling 403 Forbidden errors?",
+        "c": null,
+        "o": [
+            "handler403 = 'app.views.forbidden'",
+            "path('403/', views.forbidden)",
+            "url('403/', views.forbidden)",
+            "handler403('app.views.forbidden')"
+        ]
+    },
+    {
+        "q": "What does a Django view function always take as its first argument?",
+        "c": null,
+        "o": [
+            "request",
+            "response",
+            "self",
+            "context"
+        ]
+    },
+    {
+        "q": "What is the purpose of Django views?",
+        "c": null,
+        "o": [
+            "Handle HTTP requests",
+            "Define URL patterns",
+            "Render models",
+            "Link to static files"
+        ]
+    },
+    {
+        "q": "How do you define a basic Django view?",
+        "c": null,
+        "o": [
+            "Define a function with 'request' argument",
+            "Define a class with 'View' inheritance",
+            "Define a model with 'view' method",
+            "Define a template with views"
+        ]
+    },
+    {
+        "q": "Which method is used to render HTML templates in views?",
+        "c": null,
+        "o": [
+            "render()",
+            "response()",
+            "redirect()",
+            "url()"
+        ]
+    },
+    {
+        "q": "What does 'HttpResponse' return in Django views?",
+        "c": null,
+        "o": [
+            "A response with content",
+            "A redirect to another URL",
+            "A 404 error",
+            "A static file"
+        ]
+    },
+    {
+        "q": "How do you return JSON data in a Django view?",
+        "c": null,
+        "o": [
+            "use JsonResponse()",
+            "use HttpResponse()",
+            "use render()",
+            "use include()"
+        ]
+    },
+    {
+        "q": "What is the function of 'redirect()' in Django views?",
+        "c": null,
+        "o": [
+            "Redirects to another URL",
+            "Returns JSON data",
+            "Renders HTML template",
+            "Handles static files"
+        ]
+    },
+    {
+        "q": "What does 'render_to_response()' return?",
+        "c": null,
+        "o": [
+            "An HttpResponse with template content",
+            "A JSON response",
+            "A file response",
+            "An error response"
+        ]
+    },
+    {
+        "q": "How do you handle form submissions in Django views?",
+        "c": null,
+        "o": [
+            "Use POST method",
+            "Use GET method",
+            "Use PUT method",
+            "Use PATCH method"
+        ]
+    },
+    {
+        "q": "What is a class-based view (CBV) in Django?",
+        "c": null,
+        "o": [
+            "A view based on Python class",
+            "A view based on function",
+            "A view based on template",
+            "A view based on URL"
+        ]
+    },
+    {
+        "q": "How do you pass context data to a template in Django views?",
+        "c": null,
+        "o": [
+            "Use 'context' dictionary in render()",
+            "Use 'data' argument in HttpResponse()",
+            "Use 'values' method in redirect()",
+            "Use 'params' in JsonResponse()"
+        ]
+    },
+    {
+        "q": "What is the difference between a function-based view and a class-based view?",
+        "c": null,
+        "o": [
+            "FBVs are functions, CBVs are classes",
+            "CBVs are faster than FBVs",
+            "FBVs cannot return templates",
+            "CBVs cannot handle forms"
+        ]
+    },
+    {
+        "q": "Which class is used to create a generic class-based view?",
+        "c": null,
+        "o": [
+            "View",
+            "TemplateView",
+            "ListView",
+            "DetailView"
+        ]
+    },
+    {
+        "q": "Which class-based view is used to render a template directly?",
+        "c": null,
+        "o": [
+            "TemplateView",
+            "ListView",
+            "DetailView",
+            "RedirectView"
+        ]
+    },
+    {
+        "q": "Which method must be defined in a class-based view?",
+        "c": null,
+        "o": [
+            "as_view()",
+            "render()",
+            "redirect()",
+            "send()"
+        ]
+    },
+    {
+        "q": "What does 'ListView' do in Django views?",
+        "c": null,
+        "o": [
+            "Display a list of objects",
+            "Render an HTML template",
+            "Redirect to another URL",
+            "Return a JSON response"
+        ]
+    },
+    {
+        "q": "Which method is used to add custom logic in class-based views?",
+        "c": null,
+        "o": [
+            "dispatch()",
+            "process()",
+            "handle()",
+            "send()"
+        ]
+    },
+    {
+        "q": "How do you handle GET and POST requests in a class-based view?",
+        "c": null,
+        "o": [
+            "Define get() and post() methods",
+            "Define send() and receive() methods",
+            "Use HttpRequest.GET and HttpRequest.POST",
+            "Use request.method == 'GET'"
+        ]
+    },
+    {
+        "q": "What does the 'get_object()' method do in Django views?",
+        "c": null,
+        "o": [
+            "Fetch a single object",
+            "Fetch a list of objects",
+            "Return an HTML template",
+            "Handle form submissions"
+        ]
+    },
+    {
+        "q": "Which response class is used to return a downloadable file in Django?",
+        "c": null,
+        "o": [
+            "FileResponse",
+            "HttpResponse",
+            "JsonResponse",
+            "TemplateResponse"
+        ]
+    },
+    {
+        "q": "What does 'HttpResponseRedirect' do in Django views?",
+        "c": null,
+        "o": [
+            "Redirect to another URL",
+            "Return a template response",
+            "Return a file response",
+            "Handle form submissions"
+        ]
+    },
+    {
+        "q": "How do you extend the functionality of an existing Django view?",
+        "c": null,
+        "o": [
+            "Use mixins",
+            "Use middlewares",
+            "Use render()",
+            "Use as_view()"
+        ]
+    },
+    {
+        "q": "What is 'context_object_name' used for in class-based views?",
+        "c": null,
+        "o": [
+            "Set the name of the context variable",
+            "Set the name of the template",
+            "Set the name of the URL pattern",
+            "Set the name of the model"
+        ]
+    },
+    {
+        "q": "Which method is used to handle form submissions in class-based views?",
+        "c": null,
+        "o": [
+            "post()",
+            "get()",
+            "process()",
+            "handle()"
+        ]
+    },
+    {
+        "q": "Which class is used for rendering detailed views of objects?",
+        "c": null,
+        "o": [
+            "DetailView",
+            "TemplateView",
+            "ListView",
+            "View"
+        ]
+    },
+    {
+        "q": "What does 'get_queryset()' do in class-based views?",
+        "c": null,
+        "o": [
+            "Retrieve a list of objects",
+            "Return a template",
+            "Return a JSON response",
+            "Handle static files"
+        ]
+    },
+    {
+        "q": "Which Django view is used to render a template with context data?",
+        "c": null,
+        "o": [
+            "render()",
+            "redirect()",
+            "include()",
+            "resolve()"
+        ]
+    },
+    {
+        "q": "What is the function of 'dispatch()' in class-based views?",
+        "c": null,
+        "o": [
+            "Handle requests and responses",
+            "Render a template",
+            "Process form data",
+            "Redirect to another URL"
+        ]
+    },
+    {
+        "q": "Which method is called when an error occurs in Django views?",
+        "c": null,
+        "o": [
+            "handle_exception()",
+            "process_error()",
+            "get_error()",
+            "dispatch_error()"
+        ]
+    },
+    {
+        "q": "What does 'as_view()' method do in class-based views?",
+        "c": null,
+        "o": [
+            "Convert class to a view",
+            "Return a JSON response",
+            "Render an HTML template",
+            "Redirect to another view"
+        ]
+    },
+    {
+        "q": "Which class is used for redirection in class-based views?",
+        "c": null,
+        "o": [
+            "RedirectView",
+            "DetailView",
+            "TemplateView",
+            "View"
+        ]
+    },
+    {
+        "q": "What does 'get_context_data()' return in class-based views?",
+        "c": null,
+        "o": [
+            "A dictionary of context data",
+            "A list of objects",
+            "An HttpResponse",
+            "A rendered template"
+        ]
+    },
+    {
+        "q": "Which method is used to filter a queryset in class-based views?",
+        "c": null,
+        "o": [
+            "get_queryset()",
+            "post()",
+            "filter()",
+            "dispatch()"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'context' in Django views?",
+        "c": null,
+        "o": [
+            "Pass data to the template",
+            "Filter queryset data",
+            "Return a file",
+            "Redirect to another URL"
+        ]
+    },
+    {
+        "q": "What does 'render_to_string()' do in Django views?",
+        "c": null,
+        "o": [
+            "Renders a template to a string",
+            "Renders a template to a response",
+            "Redirects to a URL",
+            "Returns a JSON response"
+        ]
+    },
+    {
+        "q": "Which of the following is required in urlpatterns?",
+        "c": null,
+        "o": [
+            "path() or re_path()",
+            "view()",
+            "model()",
+            "form()"
+        ]
+    },
+    {
+        "q": "How do you match a URL with a numeric value using path converters?",
+        "c": null,
+        "o": [
+            "<int>",
+            "<float>",
+            "<num>",
+            "<number>"
+        ]
+    },
+    {
+        "q": "What happens if you forget to include a trailing slash in a URL pattern?",
+        "c": null,
+        "o": [
+            "Django may redirect with a slash",
+            "Django throws an error",
+            "URL won't match any pattern",
+            "View will not be called"
+        ]
+    },
+    {
+        "q": "Which of the following URL pattern is correct for matching slugs?",
+        "c": null,
+        "o": [
+            "path('<slug:slug>/', views.view_name)",
+            "path('<str:slug>', views.view_name)",
+            "path('<slug>', views.view_name)",
+            "path('<str:slug/>', views.view_name)"
+        ]
+    },
+    {
+        "q": "Which of the following path converters can be used to match a unique identifier?",
+        "c": null,
+        "o": [
+            "<uuid>",
+            "<int>",
+            "<slug>",
+            "<path>"
+        ]
+    },
+    {
+        "q": "What function is used to reverse-resolve a URL pattern name to a URL?",
+        "c": null,
+        "o": [
+            "reverse()",
+            "resolve()",
+            "redirect()",
+            "render()"
+        ]
+    },
+    {
+        "q": "What does re_path() support that path() does not?",
+        "c": null,
+        "o": [
+            "Regular expressions",
+            "Query parameters",
+            "Reverse URLs",
+            "File extensions"
+        ]
+    },
+    {
+        "q": "How do you define a route that includes a sub-application’s URL configuration?",
+        "c": null,
+        "o": [
+            "include()",
+            "path()",
+            "url()",
+            "route()"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'kwargs' in path()?",
+        "c": null,
+        "o": [
+            "Pass additional arguments to views",
+            "Match URL parameters",
+            "Define path converters",
+            "Specify HTTP methods"
+        ]
+    },
+    {
+        "q": "Which of the following is used to create namespaces for URLs?",
+        "c": null,
+        "o": [
+            "include() with namespace",
+            "path() with group",
+            "resolve() with scope",
+            "url() with label"
+        ]
+    },
+    {
+        "q": "What does 'handler500' specify in Django?",
+        "c": null,
+        "o": [
+            "Custom error page for server errors",
+            "Custom page for 404 errors",
+            "Redirect to home page",
+            "Form submission error handling"
+        ]
+    },
+    {
+        "q": "How do you handle URL arguments passed to views in Django?",
+        "c": null,
+        "o": [
+            "Arguments are passed as function parameters",
+            "Arguments are added to the request object",
+            "Arguments are returned in the response",
+            "Arguments are stored in session"
+        ]
+    },
+    {
+        "q": "What does the 'path converter' in URLs allow in Django?",
+        "c": null,
+        "o": [
+            "Capture and validate URL segments",
+            "Pass query parameters",
+            "Render HTML files",
+            "Handle static files"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a standard HTTP method supported by Django views?",
+        "c": null,
+        "o": [
+            "PATCH",
+            "GET",
+            "DELETE",
+            "TRACE"
+        ]
+    },
+    {
+        "q": "In Django, how is an empty URL path defined?",
+        "c": null,
+        "o": [
+            "path('', views.home)",
+            "path('empty/', views.home)",
+            "path(None, views.home)",
+            "path('/', views.home)"
+        ]
+    },
+    {
+        "q": "Which of the following is TRUE about URL resolution in Django?",
+        "c": null,
+        "o": [
+            "The first match is used",
+            "The last match is used",
+            "All matches are evaluated",
+            "None of the patterns are evaluated"
+        ]
+    },
+    {
+        "q": "What is 'handler400' used for in Django URLs?",
+        "c": null,
+        "o": [
+            "Custom error page for bad requests",
+            "Custom error page for not found errors",
+            "Custom error page for server errors",
+            "Custom error page for permission errors"
+        ]
+    },
+    {
+        "q": "Which argument is required in path() for Django URLs?",
+        "c": null,
+        "o": [
+            "view function",
+            "query parameters",
+            "template",
+            "converter"
+        ]
+    },
+    {
+        "q": "How do you pass multiple arguments to a Django view from a URL?",
+        "c": null,
+        "o": [
+            "Separate with '/' in the URL",
+            "Pass as query parameters",
+            "Use *args in the view function",
+            "Use **kwargs in the URL pattern"
+        ]
+    },
+    {
+        "q": "How do you specify the root URL for an application?",
+        "c": null,
+        "o": [
+            "path('', views.home)",
+            "path('/', views.home)",
+            "path('root/', views.home)",
+            "path('main', views.home)"
+        ]
+    },
+    {
+        "q": "What is the default URL name for Django’s admin interface?",
+        "c": null,
+        "o": [
+            "'admin/'",
+            "'admin_panel/'",
+            "'admin_interface/'",
+            "'django_admin/'"
+        ]
+    },
+    {
+        "q": "Which of the following can be passed in the 'include()' function?",
+        "c": null,
+        "o": [
+            "Another URL configuration",
+            "A list of views",
+            "A set of models",
+            "A template file"
+        ]
+    },
+    {
+        "q": "Which of these is a method for returning HTTP responses in Django views?",
+        "c": null,
+        "o": [
+            "HttpResponse()",
+            "render_html()",
+            "return()",
+            "send_response()"
+        ]
+    },
+    {
+        "q": "Which view should be used to return a list of database records?",
+        "c": null,
+        "o": [
+            "ListView",
+            "DetailView",
+            "FormView",
+            "TemplateView"
+        ]
+    },
+    {
+        "q": "What does Django's 'TemplateView' class do?",
+        "c": null,
+        "o": [
+            "Renders a template without a context",
+            "Handles form submissions",
+            "Returns JSON response",
+            "Redirects to another URL"
+        ]
+    },
+    {
+        "q": "What does the 'get_context_data()' method provide in class-based views?",
+        "c": null,
+        "o": [
+            "Context data for rendering the template",
+            "Template name for the view",
+            "Redirect URL",
+            "File to be returned"
+        ]
+    },
+    {
+        "q": "How do you override a method in class-based views to handle form submissions?",
+        "c": null,
+        "o": [
+            "Override the 'post()' method",
+            "Override the 'get()' method",
+            "Override the 'render()' method",
+            "Override the 'dispatch()' method"
+        ]
+    },
+    {
+        "q": "Which method is used to handle file downloads in Django views?",
+        "c": null,
+        "o": [
+            "FileResponse()",
+            "HttpResponse()",
+            "render()",
+            "sendfile()"
+        ]
+    },
+    {
+        "q": "Which method is used to combine GET and POST logic in class-based views?",
+        "c": null,
+        "o": [
+            "dispatch()",
+            "get_post()",
+            "process()",
+            "send()"
+        ]
+    },
+    {
+        "q": "What does 'Http404' represent in Django views?",
+        "c": null,
+        "o": [
+            "An exception for page not found",
+            "An error for form submission",
+            "A redirect to home page",
+            "A response for file not found"
+        ]
+    },
+    {
+        "q": "How do you display a success message after processing a form in Django?",
+        "c": null,
+        "o": [
+            "Use messages.success()",
+            "Use return success()",
+            "Use response.success()",
+            "Use send.success()"
+        ]
+    },
+    {
+        "q": "What does 'context' contain in Django views?",
+        "c": null,
+        "o": [
+            "Data passed to the template",
+            "List of all database records",
+            "URL configurations",
+            "Static file paths"
+        ]
+    }
+]

@@ -1,0 +1,1112 @@
+[
+    {
+        "q": "What is the default file extension for Django templates?",
+        "c": null,
+        "o": [
+            ".html",
+            ".css",
+            ".txt",
+            ".py"
+        ]
+    },
+    {
+        "q": "Which of the following tag is used to include another template inside a template?",
+        "c": null,
+        "o": [
+            "{% include %}",
+            "{% load %}",
+            "{% insert %}",
+            "{% render %}"
+        ]
+    },
+    {
+        "q": "Which of the following is the correct way to access a variable passed to a template?",
+        "c": null,
+        "o": [
+            "{{ variable }}",
+            "{% variable %}",
+            "{& variable &}",
+            "{{ variable }}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to convert text to uppercase in Django templates?",
+        "c": null,
+        "o": [
+            "upper",
+            "capitalize",
+            "lower",
+            "title"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'csrf_token' tag in Django templates?",
+        "c": null,
+        "o": [
+            "To prevent CSRF attacks",
+            "To prevent SQL injections",
+            "To validate forms",
+            "To authenticate users"
+        ]
+    },
+    {
+        "q": "Which tag is used to create a for loop in Django templates?",
+        "c": null,
+        "o": [
+            "{% for %}",
+            "{% loop %}",
+            "{% iterate %}",
+            "{% repeat %}"
+        ]
+    },
+    {
+        "q": "Which of the following filters is used to truncate a string to a specific number of characters?",
+        "c": null,
+        "o": [
+            "truncatechars",
+            "cut",
+            "slice",
+            "shorten"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'extends' tag in Django templates?",
+        "c": null,
+        "o": [
+            "To inherit from another template",
+            "To include another template",
+            "To import static files",
+            "To define blocks"
+        ]
+    },
+    {
+        "q": "Which Django template tag is used to render static files?",
+        "c": null,
+        "o": [
+            "{% static %}",
+            "{% media %}",
+            "{% asset %}",
+            "{% file %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to define a block in Django templates?",
+        "c": null,
+        "o": [
+            "{% block %}",
+            "{% section %}",
+            "{% define %}",
+            "{% region %}"
+        ]
+    },
+    {
+        "q": "What is the correct syntax to close a block in Django templates?",
+        "c": null,
+        "o": [
+            "{% endblock %}",
+            "{% closeblock %}",
+            "{% stopblock %}",
+            "{% finishblock %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to comment out code in Django templates?",
+        "c": null,
+        "o": [
+            "{# Comment #}",
+            "{% Comment %}",
+            "{! Comment !}",
+            "{{ Comment }}"
+        ]
+    },
+    {
+        "q": "Which filter is used to convert text to lowercase?",
+        "c": null,
+        "o": [
+            "lower",
+            "upper",
+            "title",
+            "capitalize"
+        ]
+    },
+    {
+        "q": "Which tag allows template inheritance in Django?",
+        "c": null,
+        "o": [
+            "{% extends %}",
+            "{% inherit %}",
+            "{% base %}",
+            "{% template %}"
+        ]
+    },
+    {
+        "q": "What is the correct way to use a conditional statement in Django templates?",
+        "c": null,
+        "o": [
+            "{% if %}",
+            "{% case %}",
+            "{% condition %}",
+            "{% check %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to load custom template filters or tags in Django?",
+        "c": null,
+        "o": [
+            "{% load %}",
+            "{% include %}",
+            "{% import %}",
+            "{% render %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to remove a specific substring from a string?",
+        "c": null,
+        "o": [
+            "cut",
+            "slice",
+            "truncatechars",
+            "remove"
+        ]
+    },
+    {
+        "q": "What does the 'with' tag do in Django templates?",
+        "c": null,
+        "o": [
+            "Assigns values to variables",
+            "Loads static files",
+            "Includes another template",
+            "Inherits from a base template"
+        ]
+    },
+    {
+        "q": "How do you perform string concatenation in Django templates?",
+        "c": null,
+        "o": [
+            "add",
+            "concat",
+            "join",
+            "append"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid template variable in Django?",
+        "c": null,
+        "o": [
+            "{{ username }}",
+            "{% username %}",
+            "{# username #}",
+            "[[ username ]]"
+        ]
+    },
+    {
+        "q": "How do you render a form with CSRF protection in a Django template?",
+        "c": null,
+        "o": [
+            "{% csrf_token %}",
+            "{% form_token %}",
+            "{% validate_form %}",
+            "{% auth_token %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to stop a for loop in Django templates?",
+        "c": null,
+        "o": [
+            "{% endfor %}",
+            "{% stopfor %}",
+            "{% exitfor %}",
+            "{% breakfor %}"
+        ]
+    },
+    {
+        "q": "Which filter allows safe rendering of HTML code in Django templates?",
+        "c": null,
+        "o": [
+            "safe",
+            "escape",
+            "raw",
+            "html"
+        ]
+    },
+    {
+        "q": "Which template tag is used to cycle through values in Django templates?",
+        "c": null,
+        "o": [
+            "{% cycle %}",
+            "{% loop %}",
+            "{% iterate %}",
+            "{% forcycle %}"
+        ]
+    },
+    {
+        "q": "Which filter returns the length of a list in Django templates?",
+        "c": null,
+        "o": [
+            "length",
+            "count",
+            "size",
+            "num"
+        ]
+    },
+    {
+        "q": "Which filter returns a default value if a variable is undefined?",
+        "c": null,
+        "o": [
+            "default",
+            "fallback",
+            "replace",
+            "backup"
+        ]
+    },
+    {
+        "q": "Which template tag is used to render URL configurations in Django?",
+        "c": null,
+        "o": [
+            "{% url %}",
+            "{% path %}",
+            "{% route %}",
+            "{% link %}"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'autoescape' tag in Django templates?",
+        "c": null,
+        "o": [
+            "Prevents XSS attacks",
+            "Renders static files",
+            "Escapes template variables",
+            "Renders dynamic URLs"
+        ]
+    },
+    {
+        "q": "Which filter truncates words to a specific number in Django templates?",
+        "c": null,
+        "o": [
+            "truncatewords",
+            "cutwords",
+            "limitwords",
+            "shortenwords"
+        ]
+    },
+    {
+        "q": "Which tag is used to include media files in Django templates?",
+        "c": null,
+        "o": [
+            "{% static %}",
+            "{% media %}",
+            "{% asset %}",
+            "{% file %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to handle template inheritance in Django?",
+        "c": null,
+        "o": [
+            "{% extends %}",
+            "{% include %}",
+            "{% block %}",
+            "{% inherit %}"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates removes leading and trailing whitespace from a string?",
+        "c": null,
+        "o": [
+            "trim",
+            "strip",
+            "cut",
+            "chop"
+        ]
+    },
+    {
+        "q": "How do you specify that a variable should not be autoescaped in a Django template?",
+        "c": null,
+        "o": [
+            "{{ variable|safe }}",
+            "{{ variable|escape }}",
+            "{{ variable|raw }}",
+            "{{ variable|html }}"
+        ]
+    },
+    {
+        "q": "Which filter allows reversing the contents of a list or string in Django templates?",
+        "c": null,
+        "o": [
+            "reverse",
+            "flip",
+            "invert",
+            "back"
+        ]
+    },
+    {
+        "q": "Which tag is used to output a variable without any additional filters in Django templates?",
+        "c": null,
+        "o": [
+            "{{ variable }}",
+            "{% variable %}",
+            "{& variable &}",
+            "{* variable *}"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates is used to format dates?",
+        "c": null,
+        "o": [
+            "date",
+            "formatdate",
+            "time",
+            "calendar"
+        ]
+    },
+    {
+        "q": "Which tag is used to dynamically load a URL in Django templates?",
+        "c": null,
+        "o": [
+            "{% url %}",
+            "{% href %}",
+            "{% load %}",
+            "{% static %}"
+        ]
+    },
+    {
+        "q": "What is the correct syntax for passing context data to a Django template?",
+        "c": null,
+        "o": [
+            "render(request, 'template.html', context)",
+            "render_template('template.html', context)",
+            "request.render('template.html', context)",
+            "template.render('template.html', context)"
+        ]
+    },
+    {
+        "q": "Which filter is used to slice a string or list in Django templates?",
+        "c": null,
+        "o": [
+            "slice",
+            "cut",
+            "split",
+            "chunk"
+        ]
+    },
+    {
+        "q": "Which template tag outputs debug information in Django templates?",
+        "c": null,
+        "o": [
+            "{% debug %}",
+            "{% info %}",
+            "{% log %}",
+            "{% print %}"
+        ]
+    },
+    {
+        "q": "Which filter escapes characters like < and > in Django templates?",
+        "c": null,
+        "o": [
+            "escape",
+            "safe",
+            "raw",
+            "html"
+        ]
+    },
+    {
+        "q": "Which template tag is used to set variables inside Django templates?",
+        "c": null,
+        "o": [
+            "{% with %}",
+            "{% set %}",
+            "{% define %}",
+            "{% assign %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to remove duplicate items from a list in Django templates?",
+        "c": null,
+        "o": [
+            "distinct",
+            "unique",
+            "filter",
+            "deduplicate"
+        ]
+    },
+    {
+        "q": "Which tag is used to break a for loop in Django templates?",
+        "c": null,
+        "o": [
+            "{% break %}",
+            "{% exit %}",
+            "{% stop %}",
+            "{% endfor %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to check if a string contains a specific substring?",
+        "c": null,
+        "o": [
+            "contains",
+            "in",
+            "has",
+            "includes"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'firstof' tag in Django templates?",
+        "c": null,
+        "o": [
+            "Displays the first non-empty variable",
+            "Returns the first item in a list",
+            "Renders the first block of content",
+            "Gets the first object from the database"
+        ]
+    },
+    {
+        "q": "Which filter is used to join a list with a separator in Django templates?",
+        "c": null,
+        "o": [
+            "join",
+            "concat",
+            "add",
+            "merge"
+        ]
+    },
+    {
+        "q": "Which template tag is used for creating conditional statements?",
+        "c": null,
+        "o": [
+            "{% if %}",
+            "{% case %}",
+            "{% check %}",
+            "{% condition %}"
+        ]
+    },
+    {
+        "q": "What is the correct syntax to use an 'else' condition in Django templates?",
+        "c": null,
+        "o": [
+            "{% else %}",
+            "{% otherwise %}",
+            "{% default %}",
+            "{% ifelse %}"
+        ]
+    },
+    {
+        "q": "Which filter rounds a number to a specified decimal place?",
+        "c": null,
+        "o": [
+            "floatformat",
+            "round",
+            "precision",
+            "decimal"
+        ]
+    },
+    {
+        "q": "How do you loop through a dictionary's keys in Django templates?",
+        "c": null,
+        "o": [
+            "{% for key in dict.keys %}",
+            "{% for dict.key in dict %}",
+            "{% for key in dict %}",
+            "{% for key:value in dict %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to evaluate an empty list or variable in Django templates?",
+        "c": null,
+        "o": [
+            "{% empty %}",
+            "{% none %}",
+            "{% blank %}",
+            "{% null %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to pluralize a word based on a count in Django templates?",
+        "c": null,
+        "o": [
+            "pluralize",
+            "count",
+            "plural",
+            "suffix"
+        ]
+    },
+    {
+        "q": "Which tag is used to specify a fallback value for undefined variables in Django templates?",
+        "c": null,
+        "o": [
+            "{% default %}",
+            "{% fallback %}",
+            "{% ifnone %}",
+            "{% value %}"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'widthratio' tag in Django templates?",
+        "c": null,
+        "o": [
+            "Calculates a ratio for width-based layouts",
+            "Sets the width of an element",
+            "Specifies width in percentage",
+            "Displays aspect ratio of an image"
+        ]
+    },
+    {
+        "q": "Which filter is used to get the last item from a list in Django templates?",
+        "c": null,
+        "o": [
+            "last",
+            "final",
+            "end",
+            "tail"
+        ]
+    },
+    {
+        "q": "Which filter is used to make the first letter of a string uppercase in Django templates?",
+        "c": null,
+        "o": [
+            "capfirst",
+            "title",
+            "capitalize",
+            "upper"
+        ]
+    },
+    {
+        "q": "Which tag is used to render a block of content if a variable is None?",
+        "c": null,
+        "o": [
+            "{% ifnone %}",
+            "{% ifnull %}",
+            "{% ifempty %}",
+            "{% fallback %}"
+        ]
+    },
+    {
+        "q": "Which filter is used to randomize the order of items in a list?",
+        "c": null,
+        "o": [
+            "random",
+            "shuffle",
+            "mix",
+            "swap"
+        ]
+    },
+    {
+        "q": "Which filter can be used to check if a list contains a specific value?",
+        "c": null,
+        "o": [
+            "contains",
+            "in",
+            "has",
+            "exists"
+        ]
+    },
+    {
+        "q": "Which tag is used to evaluate whether a string starts with a specific substring?",
+        "c": null,
+        "o": [
+            "startswith",
+            "beginswith",
+            "prefix",
+            "hasstart"
+        ]
+    },
+    {
+        "q": "Which tag is used to loop over a list with an index counter?",
+        "c": null,
+        "o": [
+            "{% forloop.counter %}",
+            "{% forloop.index %}",
+            "{% for counter in loop %}",
+            "{% forloop.position %}"
+        ]
+    },
+    {
+        "q": "Which template filter is used to split a string into a list?",
+        "c": null,
+        "o": [
+            "split",
+            "slice",
+            "partition",
+            "divide"
+        ]
+    },
+    {
+        "q": "Which tag allows you to define a reusable block in a template?",
+        "c": null,
+        "o": [
+            "{% block %}",
+            "{% define %}",
+            "{% region %}",
+            "{% include %}"
+        ]
+    },
+    {
+        "q": "Which filter is used to add slashes to quotes in a string in Django templates?",
+        "c": null,
+        "o": [
+            "addslashes",
+            "slashify",
+            "escape",
+            "quoteescape"
+        ]
+    },
+    {
+        "q": "Which tag is used to include another template and pass additional context in Django?",
+        "c": null,
+        "o": [
+            "{% include 'template.html' with context %}",
+            "{% import 'template.html' with context %}",
+            "{% render 'template.html' %}",
+            "{% extends 'template.html' %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to remove HTML tags from a string in Django templates?",
+        "c": null,
+        "o": [
+            "striptags",
+            "clearhtml",
+            "removehtml",
+            "cleanhtml"
+        ]
+    },
+    {
+        "q": "Which tag is used to format time-related variables in Django templates?",
+        "c": null,
+        "o": [
+            "{% now %}",
+            "{% time %}",
+            "{% clock %}",
+            "{% datetime %}"
+        ]
+    },
+    {
+        "q": "Which filter can be used to convert a list into a comma-separated string?",
+        "c": null,
+        "o": [
+            "join",
+            "concat",
+            "implode",
+            "merge"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates formats numbers as currency?",
+        "c": null,
+        "o": [
+            "floatformat",
+            "currency",
+            "money",
+            "price"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates allows you to convert a string into a URL-friendly format?",
+        "c": null,
+        "o": [
+            "slugify",
+            "urlencode",
+            "parseurl",
+            "urlformat"
+        ]
+    },
+    {
+        "q": "Which tag is used to define a block that can be overridden by child templates?",
+        "c": null,
+        "o": [
+            "{% block %}",
+            "{% define %}",
+            "{% override %}",
+            "{% section %}"
+        ]
+    },
+    {
+        "q": "Which filter is used to reverse a string or a list?",
+        "c": null,
+        "o": [
+            "reverse",
+            "flip",
+            "backward",
+            "invert"
+        ]
+    },
+    {
+        "q": "Which template tag is used to include template fragments?",
+        "c": null,
+        "o": [
+            "{% include %}",
+            "{% part %}",
+            "{% fragment %}",
+            "{% blockinclude %}"
+        ]
+    },
+    {
+        "q": "What is the correct syntax for defining an inheritance block in Django templates?",
+        "c": null,
+        "o": [
+            "{% block block_name %}...{% endblock %}",
+            "{% define block_name %}...{% enddefine %}",
+            "{% section block_name %}...{% endsection %}",
+            "{% set block_name %}...{% endset %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to output the current date and time in a Django template?",
+        "c": null,
+        "o": [
+            "{% now %}",
+            "{% time %}",
+            "{% datetime %}",
+            "{% current %}"
+        ]
+    },
+    {
+        "q": "Which template tag is used to comment out code in Django templates?",
+        "c": null,
+        "o": [
+            "{# #}",
+            "{% comment %}",
+            "{/* */}",
+            "{% note %}"
+        ]
+    },
+    {
+        "q": "Which filter would you use to display a date in a human-readable format in Django templates?",
+        "c": null,
+        "o": [
+            "date",
+            "strftime",
+            "formatdate",
+            "humandate"
+        ]
+    },
+    {
+        "q": "Which template tag checks if a variable is divisible by a number?",
+        "c": null,
+        "o": [
+            "{% if divisibleby %}",
+            "{% if mod %}",
+            "{% if divisible %}",
+            "{% if modulus %}"
+        ]
+    },
+    {
+        "q": "What does the 'length' filter return in Django templates?",
+        "c": null,
+        "o": [
+            "The number of items in a list",
+            "The length of a string",
+            "The number of characters",
+            "The size of a file"
+        ]
+    },
+    {
+        "q": "How do you reference the parent template in Django when using template inheritance?",
+        "c": null,
+        "o": [
+            "super",
+            "parent",
+            "extends",
+            "inherit"
+        ]
+    },
+    {
+        "q": "Which tag allows dynamic URL generation in Django templates?",
+        "c": null,
+        "o": [
+            "{% url %}",
+            "{% href %}",
+            "{% link %}",
+            "{% route %}"
+        ]
+    },
+    {
+        "q": "What does the 'forloop.counter0' provide in Django templates?",
+        "c": null,
+        "o": [
+            "Zero-based index of the loop",
+            "The total loop count",
+            "Current iteration number",
+            "Position of the last item"
+        ]
+    },
+    {
+        "q": "Which filter allows truncating text to a certain number of characters?",
+        "c": null,
+        "o": [
+            "truncatechars",
+            "truncatewords",
+            "shorten",
+            "cutoff"
+        ]
+    },
+    {
+        "q": "Which template filter converts a value into a boolean in Django?",
+        "c": null,
+        "o": [
+            "yesno",
+            "bool",
+            "to_bool",
+            "asboolean"
+        ]
+    },
+    {
+        "q": "How do you handle missing variables in Django templates without raising an error?",
+        "c": null,
+        "o": [
+            "use {% default %}",
+            "set debug=False",
+            "use try-catch block",
+            "use {% fallback %}"
+        ]
+    },
+    {
+        "q": "Which tag is used to render safe HTML in a Django template?",
+        "c": null,
+        "o": [
+            "safe",
+            "html_safe",
+            "raw_html",
+            "allow_html"
+        ]
+    },
+    {
+        "q": "Which filter converts a string to lowercase in Django templates?",
+        "c": null,
+        "o": [
+            "lower",
+            "downcase",
+            "small",
+            "lowercase"
+        ]
+    },
+    {
+        "q": "Which filter converts a string to uppercase in Django templates?",
+        "c": null,
+        "o": [
+            "upper",
+            "capitalize",
+            "bigcase",
+            "uppercase"
+        ]
+    },
+    {
+        "q": "Which template tag allows you to execute arbitrary Python code in Django templates?",
+        "c": null,
+        "o": [
+            "{% with %}",
+            "{% execute %}",
+            "{% python %}",
+            "{% eval %}"
+        ]
+    },
+    {
+        "q": "Which tag outputs raw content without auto-escaping?",
+        "c": null,
+        "o": [
+            "{% autoescape off %}",
+            "{% raw %}",
+            "{% safe %}",
+            "{% nosafe %}"
+        ]
+    },
+    {
+        "q": "How do you access the request context within a template?",
+        "c": null,
+        "o": [
+            "{{ request }}",
+            "{{ context.request }}",
+            "{{ user }}",
+            "{{ session.request }}"
+        ]
+    },
+    {
+        "q": "Which filter limits the number of words in a string?",
+        "c": null,
+        "o": [
+            "truncatewords",
+            "cutwords",
+            "slice",
+            "wordlimit"
+        ]
+    },
+    {
+        "q": "Which tag evaluates boolean expressions in Django templates?",
+        "c": null,
+        "o": [
+            "{% if %}",
+            "{% bool %}",
+            "{% check %}",
+            "{% test %}"
+        ]
+    },
+    {
+        "q": "What does 'escapejs' filter do in Django templates?",
+        "c": null,
+        "o": [
+            "Escapes text for use in JavaScript",
+            "Strips HTML tags",
+            "Removes unsafe characters",
+            "Escapes Python code"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates is used to format phone numbers?",
+        "c": null,
+        "o": [
+            "phone2numeric",
+            "phonenumber",
+            "teleformat",
+            "formatphone"
+        ]
+    },
+    {
+        "q": "Which tag is used to cache a specific part of a template?",
+        "c": null,
+        "o": [
+            "{% cache %}",
+            "{% store %}",
+            "{% save %}",
+            "{% hold %}"
+        ]
+    },
+    {
+        "q": "Which tag loads static files in Django templates?",
+        "c": null,
+        "o": [
+            "{% load static %}",
+            "{% staticfile %}",
+            "{% import static %}",
+            "{% getstatic %}"
+        ]
+    },
+    {
+        "q": "Which filter removes leading and trailing spaces in a string?",
+        "c": null,
+        "o": [
+            "trim",
+            "strip",
+            "whitespace",
+            "clean"
+        ]
+    },
+    {
+        "q": "How do you include a template inside another template in Django?",
+        "c": null,
+        "o": [
+            "{% include 'template.html' %}",
+            "{% import 'template.html' %}",
+            "{% extends 'template.html' %}",
+            "{% embed 'template.html' %}"
+        ]
+    },
+    {
+        "q": "Which filter in Django templates is used to escape HTML characters?",
+        "c": null,
+        "o": [
+            "escape",
+            "striphtml",
+            "sanitize",
+            "html_escape"
+        ]
+    },
+    {
+        "q": "Which template tag is used to check if a variable is empty?",
+        "c": null,
+        "o": [
+            "{% if not var %}",
+            "{% ifempty var %}",
+            "{% isempty var %}",
+            "{% checkempty var %}"
+        ]
+    },
+    {
+        "q": "Which filter converts a string into a title-cased string?",
+        "c": null,
+        "o": [
+            "title",
+            "capitalize",
+            "header",
+            "tcase"
+        ]
+    },
+    {
+        "q": "How do you specify that a block of code should not be auto-escaped in Django?",
+        "c": null,
+        "o": [
+            "{% autoescape off %}",
+            "{% noescape %}",
+            "{% raw %}",
+            "{% htmlsafe %}"
+        ]
+    },
+    {
+        "q": "Which filter is used to convert a date to a time string?",
+        "c": null,
+        "o": [
+            "time",
+            "timestring",
+            "totime",
+            "format_time"
+        ]
+    },
+    {
+        "q": "Which filter is used to capitalize the first letter of each word in a string?",
+        "c": null,
+        "o": [
+            "title",
+            "capfirst",
+            "capitalize",
+            "sentencecase"
+        ]
+    },
+    {
+        "q": "What does the 'linebreaksbr' filter do in Django templates?",
+        "c": null,
+        "o": [
+            "Converts newlines into <br> tags",
+            "Adds a break after each sentence",
+            "Converts paragraphs to <p> tags",
+            "Inserts line breaks every 100 characters"
+        ]
+    },
+    {
+        "q": "Which tag in Django templates allows for repeating content a specific number of times?",
+        "c": null,
+        "o": [
+            "{% for i in range %}",
+            "{% repeat %}",
+            "{% for i %}",
+            "{% loop %}"
+        ]
+    },
+    {
+        "q": "Which template filter replaces all occurrences of a substring in a string?",
+        "c": null,
+        "o": [
+            "replace",
+            "substitute",
+            "switch",
+            "sub"
+        ]
+    },
+    {
+        "q": "Which tag would you use to import custom template tags in Django?",
+        "c": null,
+        "o": [
+            "{% load %}",
+            "{% import %}",
+            "{% include %}",
+            "{% require %}"
+        ]
+    },
+    {
+        "q": "What is the role of the 'spaceless' tag in Django templates?",
+        "c": null,
+        "o": [
+            "Removes extra whitespace between tags",
+            "Condenses spaces in text",
+            "Removes leading and trailing spaces",
+            "Disables indentation"
+        ]
+    }
+]
