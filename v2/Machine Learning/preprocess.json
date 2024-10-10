@@ -1,0 +1,482 @@
+[
+    {
+        "q": "What is the first step in data preprocessing?",
+        "c": null,
+        "o": [
+            "Data Cleaning",
+            "Feature Scaling",
+            "Data Encoding",
+            "Data Splitting"
+        ]
+    },
+    {
+        "q": "Which technique is used to handle missing values?",
+        "c": null,
+        "o": [
+            "Imputation",
+            "Normalization",
+            "One-Hot Encoding",
+            "Feature Extraction"
+        ]
+    },
+    {
+        "q": "What is the goal of normalization in data preprocessing?",
+        "c": null,
+        "o": [
+            "Scaling features to a standard range",
+            "Converting categorical data",
+            "Handling missing values",
+            "Reducing dimensionality"
+        ]
+    },
+    {
+        "q": "Which method is used to normalize data?",
+        "c": null,
+        "o": [
+            "Min-Max Scaling",
+            "Label Encoding",
+            "One-Hot Encoding",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What does feature scaling aim to do?",
+        "c": null,
+        "o": [
+            "Standardize the range of independent variables",
+            "Replace missing values",
+            "Handle outliers",
+            "Remove correlated features"
+        ]
+    },
+    {
+        "q": "Which of the following is a common method for data standardization?",
+        "c": null,
+        "o": [
+            "Z-score Normalization",
+            "Imputation",
+            "One-Hot Encoding",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is One-Hot Encoding used for?",
+        "c": null,
+        "o": [
+            "Converting categorical data into binary variables",
+            "Scaling continuous data",
+            "Handling missing values",
+            "Reducing dimensionality"
+        ]
+    },
+    {
+        "q": "Which technique is used to reduce dimensionality?",
+        "c": null,
+        "o": [
+            "Principal Component Analysis (PCA)",
+            "Normalization",
+            "Imputation",
+            "One-Hot Encoding"
+        ]
+    },
+    {
+        "q": "Why is feature scaling important for algorithms like SVM?",
+        "c": null,
+        "o": [
+            "SVM is sensitive to the scale of input data",
+            "SVM can handle missing data",
+            "SVM does not work with categorical data",
+            "SVM requires reduced dimensions"
+        ]
+    },
+    {
+        "q": "Which technique removes irrelevant features?",
+        "c": null,
+        "o": [
+            "Feature Selection",
+            "Normalization",
+            "Feature Scaling",
+            "Encoding"
+        ]
+    },
+    {
+        "q": "Which of the following is a feature selection technique?",
+        "c": null,
+        "o": [
+            "Variance Threshold",
+            "Imputation",
+            "One-Hot Encoding",
+            "Z-score Normalization"
+        ]
+    },
+    {
+        "q": "Which technique is used to detect and handle outliers?",
+        "c": null,
+        "o": [
+            "Z-score",
+            "PCA",
+            "One-Hot Encoding",
+            "Min-Max Scaling"
+        ]
+    },
+    {
+        "q": "What does missing value imputation aim to do?",
+        "c": null,
+        "o": [
+            "Fill in missing data",
+            "Remove irrelevant data",
+            "Normalize data",
+            "Reduce dimensionality"
+        ]
+    },
+    {
+        "q": "Which method can be used to fill missing numerical data?",
+        "c": null,
+        "o": [
+            "Mean Imputation",
+            "One-Hot Encoding",
+            "Min-Max Scaling",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which of the following is a categorical data encoding technique?",
+        "c": null,
+        "o": [
+            "Label Encoding",
+            "Z-score Normalization",
+            "Min-Max Scaling",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is the purpose of data splitting?",
+        "c": null,
+        "o": [
+            "Dividing data into training and test sets",
+            "Removing outliers",
+            "Filling missing data",
+            "Reducing dimensions"
+        ]
+    },
+    {
+        "q": "What is the commonly used ratio for training and test sets?",
+        "c": null,
+        "o": [
+            "80-20",
+            "70-30",
+            "50-50",
+            "90-10"
+        ]
+    },
+    {
+        "q": "Which process reduces the number of features while retaining important information?",
+        "c": null,
+        "o": [
+            "Dimensionality Reduction",
+            "Feature Scaling",
+            "Data Cleaning",
+            "Data Splitting"
+        ]
+    },
+    {
+        "q": "Which of the following is used to deal with multicollinearity in features?",
+        "c": null,
+        "o": [
+            "Removing correlated features",
+            "One-Hot Encoding",
+            "Imputation",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "Which technique combines multiple features into one?",
+        "c": null,
+        "o": [
+            "Feature Engineering",
+            "One-Hot Encoding",
+            "Z-score Normalization",
+            "Min-Max Scaling"
+        ]
+    },
+    {
+        "q": "Which type of encoding is used for ordinal data?",
+        "c": null,
+        "o": [
+            "Label Encoding",
+            "One-Hot Encoding",
+            "Min-Max Scaling",
+            "Mean Imputation"
+        ]
+    },
+    {
+        "q": "What is the purpose of outlier detection in data preprocessing?",
+        "c": null,
+        "o": [
+            "Identifying and handling abnormal data points",
+            "Normalizing the dataset",
+            "Converting categorical data",
+            "Handling missing values"
+        ]
+    },
+    {
+        "q": "Which technique is used to handle an imbalanced dataset?",
+        "c": null,
+        "o": [
+            "Resampling",
+            "Dimensionality Reduction",
+            "Z-score Normalization",
+            "One-Hot Encoding"
+        ]
+    },
+    {
+        "q": "Which method is used to fill missing categorical data?",
+        "c": null,
+        "o": [
+            "Mode Imputation",
+            "Z-score Normalization",
+            "Min-Max Scaling",
+            "Mean Imputation"
+        ]
+    },
+    {
+        "q": "What is the purpose of feature extraction?",
+        "c": null,
+        "o": [
+            "Creating new features from existing data",
+            "Filling missing values",
+            "Reducing dataset size",
+            "Detecting outliers"
+        ]
+    },
+    {
+        "q": "Which of the following is a dimensionality reduction technique?",
+        "c": null,
+        "o": [
+            "PCA",
+            "Min-Max Scaling",
+            "Mean Imputation",
+            "Label Encoding"
+        ]
+    },
+    {
+        "q": "Which data scaling technique adjusts the data between 0 and 1?",
+        "c": null,
+        "o": [
+            "Min-Max Scaling",
+            "Z-score Normalization",
+            "Label Encoding",
+            "One-Hot Encoding"
+        ]
+    },
+    {
+        "q": "What is a key step to prevent overfitting in machine learning models?",
+        "c": null,
+        "o": [
+            "Data Splitting",
+            "Outlier Detection",
+            "Imputation",
+            "Dimensionality Reduction"
+        ]
+    },
+    {
+        "q": "Which method is typically used to reduce noise in data?",
+        "c": null,
+        "o": [
+            "Smoothing",
+            "Min-Max Scaling",
+            "Label Encoding",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Why is data normalization important?",
+        "c": null,
+        "o": [
+            "To ensure all features contribute equally to the model",
+            "To reduce dimensionality",
+            "To fill missing values",
+            "To handle categorical data"
+        ]
+    },
+    {
+        "q": "What type of scaling centers the data around zero with a unit standard deviation?",
+        "c": null,
+        "o": [
+            "Z-score Normalization",
+            "Min-Max Scaling",
+            "Label Encoding",
+            "One-Hot Encoding"
+        ]
+    },
+    {
+        "q": "Which of the following methods is used for data cleaning?",
+        "c": null,
+        "o": [
+            "Removing duplicates",
+            "One-Hot Encoding",
+            "Dimensionality Reduction",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which method is often used to reduce feature redundancy?",
+        "c": null,
+        "o": [
+            "Removing correlated features",
+            "Imputation",
+            "One-Hot Encoding",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "Which preprocessing step converts text data into numerical form?",
+        "c": null,
+        "o": [
+            "Text Vectorization",
+            "Z-score Normalization",
+            "Dimensionality Reduction",
+            "Feature Selection"
+        ]
+    },
+    {
+        "q": "Which method is suitable for scaling data with outliers?",
+        "c": null,
+        "o": [
+            "Robust Scaler",
+            "Min-Max Scaling",
+            "Label Encoding",
+            "Mean Imputation"
+        ]
+    },
+    {
+        "q": "What is the goal of Principal Component Analysis (PCA)?",
+        "c": null,
+        "o": [
+            "Reducing the number of features",
+            "Imputing missing data",
+            "Handling outliers",
+            "Converting categorical data"
+        ]
+    },
+    {
+        "q": "Which process ensures that each feature has equal importance in the model?",
+        "c": null,
+        "o": [
+            "Feature Scaling",
+            "Imputation",
+            "Feature Selection",
+            "One-Hot Encoding"
+        ]
+    },
+    {
+        "q": "What is the purpose of data augmentation in preprocessing?",
+        "c": null,
+        "o": [
+            "To increase the size of the dataset artificially",
+            "To scale the data",
+            "To reduce dimensionality",
+            "To remove duplicates"
+        ]
+    },
+    {
+        "q": "Which of the following is a technique to handle skewed data?",
+        "c": null,
+        "o": [
+            "Log Transformation",
+            "Min-Max Scaling",
+            "One-Hot Encoding",
+            "Mean Imputation"
+        ]
+    },
+    {
+        "q": "Which encoding method creates more columns in the dataset?",
+        "c": null,
+        "o": [
+            "One-Hot Encoding",
+            "Label Encoding",
+            "Min-Max Scaling",
+            "Z-score Normalization"
+        ]
+    },
+    {
+        "q": "Which method should you use if you need to retain the ordinal relationship in data?",
+        "c": null,
+        "o": [
+            "Label Encoding",
+            "One-Hot Encoding",
+            "Imputation",
+            "Min-Max Scaling"
+        ]
+    },
+    {
+        "q": "What is the main purpose of resampling in data preprocessing?",
+        "c": null,
+        "o": [
+            "To handle imbalanced datasets",
+            "To fill missing data",
+            "To normalize the dataset",
+            "To detect outliers"
+        ]
+    },
+    {
+        "q": "Which type of preprocessing helps reduce the risk of overfitting?",
+        "c": null,
+        "o": [
+            "Data Augmentation",
+            "One-Hot Encoding",
+            "Feature Scaling",
+            "Imputation"
+        ]
+    },
+    {
+        "q": "What does SMOTE stand for in data preprocessing?",
+        "c": null,
+        "o": [
+            "Synthetic Minority Over-sampling Technique",
+            "Standard Minority Optimization Technique",
+            "Structured Model for Overfitting",
+            "Scaled Minority Optimization Technique"
+        ]
+    },
+    {
+        "q": "Which technique helps in visualizing high-dimensional data?",
+        "c": null,
+        "o": [
+            "t-SNE",
+            "One-Hot Encoding",
+            "Label Encoding",
+            "Min-Max Scaling"
+        ]
+    },
+    {
+        "q": "What is one of the first steps in dealing with an imbalanced dataset?",
+        "c": null,
+        "o": [
+            "Resampling",
+            "Imputation",
+            "One-Hot Encoding",
+            "Dimensionality Reduction"
+        ]
+    },
+    {
+        "q": "What is the goal of undersampling?",
+        "c": null,
+        "o": [
+            "To reduce the size of the majority class",
+            "To increase the size of the minority class",
+            "To impute missing data",
+            "To normalize data"
+        ]
+    },
+    {
+        "q": "Which method can be used to normalize data with outliers?",
+        "c": null,
+        "o": [
+            "Robust Scaler",
+            "Min-Max Scaling",
+            "One-Hot Encoding",
+            "PCA"
+        ]
+    }
+]

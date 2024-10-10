@@ -1,0 +1,722 @@
+[
+    {
+        "q": "What is the main goal of clustering?",
+        "c": null,
+        "o": [
+            "Group similar items together",
+            "Predict future outcomes",
+            "Classify data",
+            "Reduce features"
+        ]
+    },
+    {
+        "q": "Which algorithm is most commonly used for clustering?",
+        "c": null,
+        "o": [
+            "k-means",
+            "Linear Regression",
+            "Decision Tree",
+            "Random Forest"
+        ]
+    },
+    {
+        "q": "What is an example of an unsupervised learning algorithm?",
+        "c": null,
+        "o": [
+            "k-means",
+            "Logistic Regression",
+            "SVM",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "Which method can reduce the number of features in a dataset?",
+        "c": null,
+        "o": [
+            "PCA",
+            "k-means",
+            "DBSCAN",
+            "k-NN"
+        ]
+    },
+    {
+        "q": "What does PCA stand for?",
+        "c": null,
+        "o": [
+            "Principal Component Analysis",
+            "Primary Clustering Algorithm",
+            "Predictive Cluster Analysis",
+            "Probability Clustering Algorithm"
+        ]
+    },
+    {
+        "q": "What does k in k-means represent?",
+        "c": null,
+        "o": [
+            "Number of clusters",
+            "Number of features",
+            "Number of data points",
+            "Number of dimensions"
+        ]
+    },
+    {
+        "q": "Which algorithm uses 'centroids' to define clusters?",
+        "c": null,
+        "o": [
+            "k-means",
+            "DBSCAN",
+            "PCA",
+            "Hierarchical"
+        ]
+    },
+    {
+        "q": "In PCA, what are principal components?",
+        "c": null,
+        "o": [
+            "New features created from original data",
+            "Clusters of data points",
+            "Outliers detected",
+            "Errors in the model"
+        ]
+    },
+    {
+        "q": "Which of the following is a density-based clustering algorithm?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "KNN"
+        ]
+    },
+    {
+        "q": "Which method reduces the dimensions of data?",
+        "c": null,
+        "o": [
+            "PCA",
+            "k-means",
+            "DBSCAN",
+            "Hierarchical"
+        ]
+    },
+    {
+        "q": "What does DBSCAN stand for?",
+        "c": null,
+        "o": [
+            "Density-Based Spatial Clustering of Applications with Noise",
+            "Data-Based Statistical Clustering Algorithm",
+            "Dimension-Based Spatial Clustering Analysis",
+            "Distance-Based Statistical Clustering Network"
+        ]
+    },
+    {
+        "q": "Which clustering algorithm can detect outliers?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "Hierarchical clustering"
+        ]
+    },
+    {
+        "q": "What is the main feature of DBSCAN?",
+        "c": null,
+        "o": [
+            "It can find clusters of different shapes",
+            "It always forms spherical clusters",
+            "It does not need labeled data",
+            "It uses centroids for clustering"
+        ]
+    },
+    {
+        "q": "In k-means, how is each data point assigned to a cluster?",
+        "c": null,
+        "o": [
+            "Based on the closest centroid",
+            "Randomly",
+            "Based on density",
+            "Using principal components"
+        ]
+    },
+    {
+        "q": "What is the main use of PCA in unsupervised learning?",
+        "c": null,
+        "o": [
+            "Reducing the number of features",
+            "Classifying data",
+            "Predicting labels",
+            "Grouping similar items"
+        ]
+    },
+    {
+        "q": "Which method does not require the number of clusters to be predefined?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "Linear Regression"
+        ]
+    },
+    {
+        "q": "What does the elbow method help determine in k-means?",
+        "c": null,
+        "o": [
+            "The optimal number of clusters",
+            "The distance between centroids",
+            "The type of clusters",
+            "The dimension of data"
+        ]
+    },
+    {
+        "q": "Which of these is NOT an unsupervised learning algorithm?",
+        "c": null,
+        "o": [
+            "Decision Tree",
+            "k-means",
+            "DBSCAN",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is a dendrogram used for?",
+        "c": null,
+        "o": [
+            "Visualizing hierarchical clustering",
+            "Visualizing k-means results",
+            "Reducing data dimensions",
+            "Detecting outliers"
+        ]
+    },
+    {
+        "q": "In DBSCAN, what are 'core points'?",
+        "c": null,
+        "o": [
+            "Points that have enough neighboring points",
+            "Points far from the cluster",
+            "Points at the edge of a cluster",
+            "Centroids of the cluster"
+        ]
+    },
+    {
+        "q": "Which clustering algorithm builds clusters by merging or splitting?",
+        "c": null,
+        "o": [
+            "Hierarchical",
+            "k-means",
+            "DBSCAN",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is a limitation of k-means clustering?",
+        "c": null,
+        "o": [
+            "It requires the number of clusters in advance",
+            "It cannot detect noise",
+            "It is too slow for large data",
+            "It only works for 2D data"
+        ]
+    },
+    {
+        "q": "Which clustering algorithm is best for detecting noise or outliers?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "Hierarchical clustering"
+        ]
+    },
+    {
+        "q": "What is a common distance metric used in k-means?",
+        "c": null,
+        "o": [
+            "Euclidean distance",
+            "Cosine similarity",
+            "Jaccard distance",
+            "Manhattan distance"
+        ]
+    },
+    {
+        "q": "What is the main purpose of unsupervised learning?",
+        "c": null,
+        "o": [
+            "Find patterns or groups in data",
+            "Predict future values",
+            "Classify labeled data",
+            "Perform regression analysis"
+        ]
+    },
+    {
+        "q": "In PCA, what is reduced?",
+        "c": null,
+        "o": [
+            "Number of features",
+            "Number of samples",
+            "Number of clusters",
+            "Number of labels"
+        ]
+    },
+    {
+        "q": "Which of these is a benefit of using PCA?",
+        "c": null,
+        "o": [
+            "Dimensionality reduction",
+            "Improved clustering",
+            "Reduced noise",
+            "Faster predictions"
+        ]
+    },
+    {
+        "q": "What is a common drawback of PCA?",
+        "c": null,
+        "o": [
+            "It can lose interpretability",
+            "It cannot handle large datasets",
+            "It requires labeled data",
+            "It forms clusters"
+        ]
+    },
+    {
+        "q": "Which method can handle non-linear data structures in clustering?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "Hierarchical",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What does clustering aim to find?",
+        "c": null,
+        "o": [
+            "Groups of similar data points",
+            "The correct labels",
+            "Outliers in the data",
+            "The number of features"
+        ]
+    },
+    {
+        "q": "Which algorithm works well with clusters of different shapes and sizes?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "Linear Regression"
+        ]
+    },
+    {
+        "q": "In k-means, what is the stopping criteria for clustering?",
+        "c": null,
+        "o": [
+            "Centroids do not change",
+            "Clusters overlap",
+            "Too many clusters form",
+            "Clusters are circular"
+        ]
+    },
+    {
+        "q": "Which type of learning does clustering fall under?",
+        "c": null,
+        "o": [
+            "Unsupervised",
+            "Supervised",
+            "Semi-supervised",
+            "Reinforcement"
+        ]
+    },
+    {
+        "q": "Which clustering algorithm uses centroids to form clusters?",
+        "c": null,
+        "o": [
+            "k-means",
+            "DBSCAN",
+            "Agglomerative",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which of the following is true about hierarchical clustering?",
+        "c": null,
+        "o": [
+            "It does not require the number of clusters in advance",
+            "It requires the number of clusters in advance",
+            "It cannot be visualized",
+            "It only works for small datasets"
+        ]
+    },
+    {
+        "q": "What is the primary drawback of k-means clustering?",
+        "c": null,
+        "o": [
+            "Requires specifying k in advance",
+            "Cannot handle large datasets",
+            "Always results in spherical clusters",
+            "Sensitive to noise"
+        ]
+    },
+    {
+        "q": "Which type of clustering produces a dendrogram?",
+        "c": null,
+        "o": [
+            "Hierarchical",
+            "k-means",
+            "DBSCAN",
+            "Gaussian Mixture"
+        ]
+    },
+    {
+        "q": "What is the minimum number of clusters that can be formed in agglomerative clustering?",
+        "c": null,
+        "o": [
+            "1",
+            "2",
+            "k",
+            "Depends on the dataset"
+        ]
+    },
+    {
+        "q": "In DBSCAN, what are points within a certain distance of a core point called?",
+        "c": null,
+        "o": [
+            "Border points",
+            "Noise points",
+            "Centroids",
+            "Outliers"
+        ]
+    },
+    {
+        "q": "Which algorithm is effective in detecting clusters of varying shapes and sizes?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "Agglomerative",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which unsupervised learning method reduces data dimensions while preserving variance?",
+        "c": null,
+        "o": [
+            "PCA",
+            "k-means",
+            "DBSCAN",
+            "Agglomerative clustering"
+        ]
+    },
+    {
+        "q": "Which of the following can handle non-spherical clusters?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "Agglomerative",
+            "KNN"
+        ]
+    },
+    {
+        "q": "Which metric is commonly used to measure similarity in clustering?",
+        "c": null,
+        "o": [
+            "Euclidean distance",
+            "Cosine similarity",
+            "Hamming distance",
+            "Manhattan distance"
+        ]
+    },
+    {
+        "q": "Which clustering technique does not require the number of clusters to be predefined?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "PCA",
+            "KNN"
+        ]
+    },
+    {
+        "q": "What is the role of eigenvectors in PCA?",
+        "c": null,
+        "o": [
+            "Define principal components",
+            "Define clusters",
+            "Reduce noise",
+            "Create centroids"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a feature of PCA?",
+        "c": null,
+        "o": [
+            "Cluster creation",
+            "Dimensionality reduction",
+            "Variance preservation",
+            "Feature extraction"
+        ]
+    },
+    {
+        "q": "Which clustering algorithm is most sensitive to outliers?",
+        "c": null,
+        "o": [
+            "k-means",
+            "DBSCAN",
+            "Agglomerative",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which term describes the sum of squared distances between data points and centroids?",
+        "c": null,
+        "o": [
+            "Within-cluster sum of squares",
+            "Between-cluster sum of squares",
+            "Euclidean distance",
+            "Silhouette score"
+        ]
+    },
+    {
+        "q": "In DBSCAN, what is the minimum number of points required to form a dense region?",
+        "c": null,
+        "o": [
+            "MinPts",
+            "Epsilon",
+            "Core distance",
+            "Cluster radius"
+        ]
+    },
+    {
+        "q": "Which unsupervised learning method is primarily used for market basket analysis?",
+        "c": null,
+        "o": [
+            "Apriori",
+            "PCA",
+            "DBSCAN",
+            "k-means"
+        ]
+    },
+    {
+        "q": "What does the epsilon parameter in DBSCAN represent?",
+        "c": null,
+        "o": [
+            "Maximum distance for neighborhood",
+            "Number of clusters",
+            "Minimum points for a core",
+            "Radius of clusters"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a type of clustering algorithm?",
+        "c": null,
+        "o": [
+            "Linear Regression",
+            "Hierarchical",
+            "DBSCAN",
+            "k-means"
+        ]
+    },
+    {
+        "q": "Which algorithm divides data into a predefined number of clusters?",
+        "c": null,
+        "o": [
+            "k-means",
+            "DBSCAN",
+            "Hierarchical",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which algorithm is suitable for large datasets?",
+        "c": null,
+        "o": [
+            "k-means",
+            "Agglomerative",
+            "DBSCAN",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which method uses the 'elbow method' to find the optimal number of clusters?",
+        "c": null,
+        "o": [
+            "k-means",
+            "PCA",
+            "DBSCAN",
+            "Agglomerative clustering"
+        ]
+    },
+    {
+        "q": "In PCA, which component explains the most variance in the data?",
+        "c": null,
+        "o": [
+            "First principal component",
+            "Second principal component",
+            "Noise component",
+            "Cluster centroid"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms cannot handle overlapping clusters?",
+        "c": null,
+        "o": [
+            "k-means",
+            "DBSCAN",
+            "Hierarchical",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What does 'density-based' clustering mean?",
+        "c": null,
+        "o": [
+            "Clusters are formed based on regions of high data point density",
+            "Clusters are formed based on distance",
+            "Clusters are formed based on feature similarity",
+            "Clusters are formed using centroids"
+        ]
+    },
+    {
+        "q": "Which algorithm is used for anomaly detection in high-dimensional data?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "Agglomerative",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms does not require distance measures?",
+        "c": null,
+        "o": [
+            "Apriori",
+            "k-means",
+            "Hierarchical clustering",
+            "DBSCAN"
+        ]
+    },
+    {
+        "q": "What kind of data representation is reduced by PCA?",
+        "c": null,
+        "o": [
+            "Dimensional",
+            "Clustered",
+            "Classified",
+            "Labeled"
+        ]
+    },
+    {
+        "q": "What does 'agglomerative' refer to in hierarchical clustering?",
+        "c": null,
+        "o": [
+            "Bottom-up merging of clusters",
+            "Top-down splitting of clusters",
+            "Density-based separation",
+            "Centroid-based partitioning"
+        ]
+    },
+    {
+        "q": "What type of algorithm is k-means clustering?",
+        "c": null,
+        "o": [
+            "Partitioning",
+            "Density-based",
+            "Hierarchical",
+            "Association"
+        ]
+    },
+    {
+        "q": "Which of the following is a hierarchical clustering algorithm?",
+        "c": null,
+        "o": [
+            "Agglomerative",
+            "k-means",
+            "DBSCAN",
+            "Apriori"
+        ]
+    },
+    {
+        "q": "Which algorithm identifies clusters based on density?",
+        "c": null,
+        "o": [
+            "DBSCAN",
+            "k-means",
+            "Hierarchical",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is the main goal of Principal Component Analysis (PCA)?",
+        "c": null,
+        "o": [
+            "Dimensionality reduction",
+            "Clustering",
+            "Regression",
+            "Classification"
+        ]
+    },
+    {
+        "q": "In k-means, the value of k refers to the number of:",
+        "c": null,
+        "o": [
+            "Clusters",
+            "Features",
+            "Samples",
+            "Centroids"
+        ]
+    },
+    {
+        "q": "Which of the following is true about DBSCAN?",
+        "c": null,
+        "o": [
+            "It can detect noise points",
+            "It always requires specifying k",
+            "It does not handle outliers",
+            "It only works with small datasets"
+        ]
+    },
+    {
+        "q": "Which method reduces the number of features while preserving the data's variance?",
+        "c": null,
+        "o": [
+            "PCA",
+            "k-means",
+            "DBSCAN",
+            "Hierarchical clustering"
+        ]
+    },
+    {
+        "q": "What is the term for points that do not belong to any cluster in DBSCAN?",
+        "c": null,
+        "o": [
+            "Noise",
+            "Centroids",
+            "Outliers",
+            "Core points"
+        ]
+    },
+    {
+        "q": "In hierarchical clustering, what is the process of merging clusters called?",
+        "c": null,
+        "o": [
+            "Agglomeration",
+            "Segmentation",
+            "Splitting",
+            "Association"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT an unsupervised learning algorithm?",
+        "c": null,
+        "o": [
+            "Decision Tree",
+            "k-means",
+            "DBSCAN",
+            "PCA"
+        ]
+    }
+]

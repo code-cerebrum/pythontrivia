@@ -1,22 +1,532 @@
 [
     {
-        "q": "ML Django1?",
-        "c": "",
+        "q": "What is Machine Learning?",
+        "c": null,
         "o": [
-            "ML Ans",
-            "ML option1",
-            "ML option2",
-            "ML option3"
+            "A method to let computers learn from data",
+            "A way to manually program computers",
+            "A tool for data entry",
+            "A type of hardware"
         ]
     },
     {
-        "q": "ML Django2?",
-        "c": "",
+        "q": "Which of the following is a type of supervised learning?",
+        "c": null,
         "o": [
-            "ML ans2",
-            "ML IOption1 2",
-            "ML option2 2",
-            "ML option3 2"
+            "Classification",
+            "Clustering",
+            "Dimensionality Reduction",
+            "Reinforcement Learning"
+        ]
+    },
+    {
+        "q": "Which of these is an unsupervised learning algorithm?",
+        "c": null,
+        "o": [
+            "K-Means",
+            "Decision Trees",
+            "Logistic Regression",
+            "Random Forest"
+        ]
+    },
+    {
+        "q": "What is overfitting in machine learning?",
+        "c": null,
+        "o": [
+            "Model fits training data too well",
+            "Model does not learn enough from data",
+            "Model performs better on test data",
+            "Model has low bias and high variance"
+        ]
+    },
+    {
+        "q": "Which of the following is an example of a regression algorithm?",
+        "c": null,
+        "o": [
+            "Linear Regression",
+            "K-Means",
+            "Logistic Regression",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "Which of the following is not a type of machine learning?",
+        "c": null,
+        "o": [
+            "Symbolic AI",
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Reinforcement Learning"
+        ]
+    },
+    {
+        "q": "Which one is a key component of machine learning?",
+        "c": null,
+        "o": [
+            "Data",
+            "Algorithm",
+            "Formula",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "Which algorithm is used for classification problems?",
+        "c": null,
+        "o": [
+            "Logistic Regression",
+            "Linear Regression",
+            "K-Means",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What is the main goal of unsupervised learning?",
+        "c": null,
+        "o": [
+            "Find hidden patterns in data",
+            "Predict future outcomes",
+            "Maximize reward",
+            "Minimize cost"
+        ]
+    },
+    {
+        "q": "Which term refers to splitting data into training and test sets?",
+        "c": null,
+        "o": [
+            "Cross-validation",
+            "Bootstrapping",
+            "Bagging",
+            "Feature scaling"
+        ]
+    },
+    {
+        "q": "Which machine learning task involves predicting a continuous value?",
+        "c": null,
+        "o": [
+            "Regression",
+            "Classification",
+            "Clustering",
+            "Dimensionality Reduction"
+        ]
+    },
+    {
+        "q": "Which of the following methods is used to reduce overfitting?",
+        "c": null,
+        "o": [
+            "Regularization",
+            "Maximization",
+            "Gradient Descent",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "Which term describes the process of improving a model's performance on unseen data?",
+        "c": null,
+        "o": [
+            "Generalization",
+            "Specialization",
+            "Optimization",
+            "Pruning"
+        ]
+    },
+    {
+        "q": "Which of the following is a supervised learning task?",
+        "c": null,
+        "o": [
+            "Spam detection",
+            "Market segmentation",
+            "Customer clustering",
+            "Principal Component Analysis"
+        ]
+    },
+    {
+        "q": "Which of the following is a common measure of model accuracy?",
+        "c": null,
+        "o": [
+            "Confusion matrix",
+            "Gradient descent",
+            "Activation function",
+            "Backpropagation"
+        ]
+    },
+    {
+        "q": "Which term refers to adjusting model parameters based on error?",
+        "c": null,
+        "o": [
+            "Gradient descent",
+            "Clustering",
+            "Feature engineering",
+            "Cross-validation"
+        ]
+    },
+    {
+        "q": "Which type of learning is used in recommendation systems?",
+        "c": null,
+        "o": [
+            "Collaborative filtering",
+            "Support Vector Machines",
+            "K-Nearest Neighbors",
+            "Boosting"
+        ]
+    },
+    {
+        "q": "Which of these describes a deep learning algorithm?",
+        "c": null,
+        "o": [
+            "Neural Networks",
+            "Decision Trees",
+            "K-Means",
+            "Logistic Regression"
+        ]
+    },
+    {
+        "q": "Which is not a type of data used in machine learning?",
+        "c": null,
+        "o": [
+            "Textbooks",
+            "Images",
+            "Numbers",
+            "Text"
+        ]
+    },
+    {
+        "q": "What is the purpose of feature scaling?",
+        "c": null,
+        "o": [
+            "Standardize input data",
+            "Increase data size",
+            "Reduce data dimensionality",
+            "Improve accuracy"
+        ]
+    },
+    {
+        "q": "Which type of data is required for supervised learning?",
+        "c": null,
+        "o": [
+            "Labeled data",
+            "Unlabeled data",
+            "Semi-labeled data",
+            "Random data"
+        ]
+    },
+    {
+        "q": "Which of these is a measure of model performance for classification?",
+        "c": null,
+        "o": [
+            "Accuracy",
+            "R-squared",
+            "Mean Squared Error",
+            "Root Mean Squared Error"
+        ]
+    },
+    {
+        "q": "Which algorithm is commonly used for clustering?",
+        "c": null,
+        "o": [
+            "K-Means",
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Trees"
+        ]
+    },
+    {
+        "q": "Which technique is used to prevent overfitting?",
+        "c": null,
+        "o": [
+            "Dropout",
+            "Learning rate decay",
+            "Gradient descent",
+            "Data augmentation"
+        ]
+    },
+    {
+        "q": "Which term describes the ability of a model to adapt to new, unseen data?",
+        "c": null,
+        "o": [
+            "Generalization",
+            "Overfitting",
+            "Underfitting",
+            "Bias"
+        ]
+    },
+    {
+        "q": "Which of the following is used to evaluate regression models?",
+        "c": null,
+        "o": [
+            "Mean Squared Error",
+            "Confusion Matrix",
+            "Precision",
+            "Recall"
+        ]
+    },
+    {
+        "q": "Which one is an example of a reinforcement learning application?",
+        "c": null,
+        "o": [
+            "Game playing AI",
+            "Spam filtering",
+            "Image recognition",
+            "Sentiment analysis"
+        ]
+    },
+    {
+        "q": "What is the primary goal of supervised learning?",
+        "c": null,
+        "o": [
+            "Predict an output given an input",
+            "Find hidden patterns in data",
+            "Reduce dimensionality of data",
+            "Cluster similar data points"
+        ]
+    },
+    {
+        "q": "What type of problem is solved using classification?",
+        "c": null,
+        "o": [
+            "Predicting categorical outcomes",
+            "Predicting continuous values",
+            "Grouping data into clusters",
+            "Reducing data dimensions"
+        ]
+    },
+    {
+        "q": "Which of the following is not a machine learning technique?",
+        "c": null,
+        "o": [
+            "Encryption",
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Reinforcement Learning"
+        ]
+    },
+    {
+        "q": "Which of these refers to the process of training a machine learning model on labeled data?",
+        "c": null,
+        "o": [
+            "Supervised learning",
+            "Unsupervised learning",
+            "Reinforcement learning",
+            "Dimensionality reduction"
+        ]
+    },
+    {
+        "q": "Which of the following is an example of a linear model?",
+        "c": null,
+        "o": [
+            "Linear regression",
+            "K-Means",
+            "SVM",
+            "Decision Tree"
+        ]
+    },
+    {
+        "q": "Which machine learning algorithm is best suited for binary classification tasks?",
+        "c": null,
+        "o": [
+            "Logistic Regression",
+            "Linear Regression",
+            "K-Means",
+            "Random Forest"
+        ]
+    },
+    {
+        "q": "Which term describes data points that differ significantly from others?",
+        "c": null,
+        "o": [
+            "Outliers",
+            "Inliers",
+            "Clusters",
+            "Centroids"
+        ]
+    },
+    {
+        "q": "Which of the following is a disadvantage of decision trees?",
+        "c": null,
+        "o": [
+            "Prone to overfitting",
+            "Difficult to interpret",
+            "Slow training speed",
+            "Cannot handle categorical data"
+        ]
+    },
+    {
+        "q": "What is the purpose of a confusion matrix?",
+        "c": null,
+        "o": [
+            "Evaluate classification performance",
+            "Optimize regression models",
+            "Detect overfitting",
+            "Reduce data dimensionality"
+        ]
+    },
+    {
+        "q": "Which of these is a non-parametric algorithm?",
+        "c": null,
+        "o": [
+            "K-Nearest Neighbors",
+            "Linear Regression",
+            "Logistic Regression",
+            "SVM"
+        ]
+    },
+    {
+        "q": "Which concept refers to the trade-off between model complexity and performance?",
+        "c": null,
+        "o": [
+            "Bias-Variance tradeoff",
+            "Overfitting-Underfitting balance",
+            "Learning rate optimization",
+            "Precision-Recall tradeoff"
+        ]
+    },
+    {
+        "q": "Which of the following tasks is best suited for unsupervised learning?",
+        "c": null,
+        "o": [
+            "Customer segmentation",
+            "Predicting house prices",
+            "Fraud detection",
+            "Spam filtering"
+        ]
+    },
+    {
+        "q": "Which one is used to optimize machine learning algorithms?",
+        "c": null,
+        "o": [
+            "Gradient Descent",
+            "Cross-validation",
+            "Clustering",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "Which term is associated with adjusting model parameters to minimize error?",
+        "c": null,
+        "o": [
+            "Training",
+            "Testing",
+            "Clustering",
+            "Scaling"
+        ]
+    },
+    {
+        "q": "What is the goal of dimensionality reduction?",
+        "c": null,
+        "o": [
+            "Reduce the number of features",
+            "Increase model complexity",
+            "Cluster data points",
+            "Improve overfitting"
+        ]
+    },
+    {
+        "q": "Which algorithm is used for non-linear classification problems?",
+        "c": null,
+        "o": [
+            "Support Vector Machines (SVM)",
+            "K-Means",
+            "Linear Regression",
+            "Logistic Regression"
+        ]
+    },
+    {
+        "q": "Which technique can be used to improve model accuracy?",
+        "c": null,
+        "o": [
+            "Feature engineering",
+            "Removing data points",
+            "Overfitting",
+            "Reducing training data"
+        ]
+    },
+    {
+        "q": "Which technique is commonly used for regularization in machine learning?",
+        "c": null,
+        "o": [
+            "L2 Regularization",
+            "Dropout",
+            "Data augmentation",
+            "Gradient descent"
+        ]
+    },
+    {
+        "q": "Which of the following helps handle missing data in a dataset?",
+        "c": null,
+        "o": [
+            "Imputation",
+            "Clustering",
+            "Normalization",
+            "Regularization"
+        ]
+    },
+    {
+        "q": "Which evaluation metric is most suitable for an imbalanced dataset?",
+        "c": null,
+        "o": [
+            "F1 score",
+            "Accuracy",
+            "Mean Squared Error",
+            "Precision"
+        ]
+    },
+    {
+        "q": "Which method is used for hyperparameter tuning?",
+        "c": null,
+        "o": [
+            "Grid Search",
+            "Cross-Validation",
+            "Gradient Descent",
+            "Backpropagation"
+        ]
+    },
+    {
+        "q": "Which of these is an example of ensemble learning?",
+        "c": null,
+        "o": [
+            "Random Forest",
+            "K-Nearest Neighbors",
+            "Linear Regression",
+            "SVM"
+        ]
+    },
+    {
+        "q": "Which machine learning model is based on decision trees?",
+        "c": null,
+        "o": [
+            "Random Forest",
+            "Linear Regression",
+            "Logistic Regression",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "What is the output of a clustering algorithm?",
+        "c": null,
+        "o": [
+            "Groups of similar data points",
+            "A predicted class label",
+            "A continuous value",
+            "A confusion matrix"
+        ]
+    },
+    {
+        "q": "Which technique is used to handle multicollinearity in a dataset?",
+        "c": null,
+        "o": [
+            "Principal Component Analysis (PCA)",
+            "K-Means",
+            "Cross-validation",
+            "Feature scaling"
+        ]
+    },
+    {
+        "q": "Which method is commonly used to split data into training and test sets?",
+        "c": null,
+        "o": [
+            "Cross-validation",
+            "Grid search",
+            "Bootstrap",
+            "Regularization"
         ]
     }
 ]

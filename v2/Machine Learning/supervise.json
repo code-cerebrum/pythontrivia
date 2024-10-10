@@ -1,0 +1,462 @@
+[
+    {
+        "q": "What is the primary goal of supervised learning?",
+        "c": null,
+        "o": [
+            "Predict outcomes based on input data",
+            "Cluster data into groups",
+            "Reduce the dimensionality of data",
+            "Generate new data points"
+        ]
+    },
+    {
+        "q": "Which of the following is an example of a supervised learning algorithm?",
+        "c": null,
+        "o": [
+            "Linear Regression",
+            "K-Means Clustering",
+            "PCA",
+            "Autoencoders"
+        ]
+    },
+    {
+        "q": "Which algorithm is suitable for a binary classification problem?",
+        "c": null,
+        "o": [
+            "Logistic Regression",
+            "K-Means",
+            "DBSCAN",
+            "KNN"
+        ]
+    },
+    {
+        "q": "What is the loss function used in linear regression?",
+        "c": null,
+        "o": [
+            "Mean Squared Error",
+            "Cross Entropy",
+            "Hinge Loss",
+            "Gini Index"
+        ]
+    },
+    {
+        "q": "Which of the following is a supervised learning algorithm for classification?",
+        "c": null,
+        "o": [
+            "Decision Trees",
+            "PCA",
+            "t-SNE",
+            "Random Search"
+        ]
+    },
+    {
+        "q": "Which algorithm is best suited for predicting continuous values?",
+        "c": null,
+        "o": [
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Trees (Classification)",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "What is the output of a classification problem?",
+        "c": null,
+        "o": [
+            "Discrete labels",
+            "Continuous values",
+            "Clusters",
+            "Principal components"
+        ]
+    },
+    {
+        "q": "Which algorithm is used for both regression and classification?",
+        "c": null,
+        "o": [
+            "Decision Trees",
+            "K-Means",
+            "PCA",
+            "Random Forest"
+        ]
+    },
+    {
+        "q": "Which one of these is a characteristic of supervised learning?",
+        "c": null,
+        "o": [
+            "Labeled data",
+            "Unlabeled data",
+            "Data clustering",
+            "Dimensionality reduction"
+        ]
+    },
+    {
+        "q": "In Logistic Regression, what is the range of the output probability?",
+        "c": null,
+        "o": [
+            "0 to 1",
+            "-1 to 1",
+            "Any real number",
+            "0 to infinity"
+        ]
+    },
+    {
+        "q": "Which metric is commonly used to evaluate classification models?",
+        "c": null,
+        "o": [
+            "Accuracy",
+            "Sum of Squared Errors",
+            "Variance",
+            "Adjusted R-Squared"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms uses 'gini index' as a measure of split?",
+        "c": null,
+        "o": [
+            "Decision Tree",
+            "Logistic Regression",
+            "KNN",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which of the following is true about K-Nearest Neighbors (KNN)?",
+        "c": null,
+        "o": [
+            "It is a non-parametric algorithm",
+            "It requires model training",
+            "It performs dimensionality reduction",
+            "It uses backpropagation"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms is prone to overfitting?",
+        "c": null,
+        "o": [
+            "Decision Trees",
+            "Linear Regression",
+            "Logistic Regression",
+            "SVM"
+        ]
+    },
+    {
+        "q": "In support vector machines (SVM), the hyperplane is chosen to:",
+        "c": null,
+        "o": [
+            "Maximize the margin between classes",
+            "Minimize the number of misclassified points",
+            "Minimize the margin between classes",
+            "Maximize the distance to the origin"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms works well with imbalanced datasets?",
+        "c": null,
+        "o": [
+            "Random Forest",
+            "K-Means",
+            "DBSCAN",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which of the following can be used to prevent overfitting in decision trees?",
+        "c": null,
+        "o": [
+            "Pruning",
+            "Increasing tree depth",
+            "Using more features",
+            "None of the above"
+        ]
+    },
+    {
+        "q": "In Random Forests, what does each tree base its decision on?",
+        "c": null,
+        "o": [
+            "Random subset of features and data",
+            "All available features",
+            "A single feature",
+            "Fixed subset of data"
+        ]
+    },
+    {
+        "q": "Which of the following algorithms cannot be used for regression?",
+        "c": null,
+        "o": [
+            "K-Means",
+            "Linear Regression",
+            "Decision Trees",
+            "Support Vector Machines (SVM)"
+        ]
+    },
+    {
+        "q": "Which of the following is true for ensemble methods like Random Forest?",
+        "c": null,
+        "o": [
+            "They combine multiple models to improve performance",
+            "They use only one model for training",
+            "They focus on increasing bias",
+            "They reduce bias at the cost of higher variance"
+        ]
+    },
+    {
+        "q": "Which algorithm uses a kernel trick to handle non-linearly separable data?",
+        "c": null,
+        "o": [
+            "Support Vector Machine (SVM)",
+            "K-Nearest Neighbors (KNN)",
+            "Linear Regression",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "What is the purpose of regularization in linear models?",
+        "c": null,
+        "o": [
+            "Prevent overfitting",
+            "Improve model complexity",
+            "Increase variance",
+            "Reduce bias"
+        ]
+    },
+    {
+        "q": "Which algorithm is based on Bayes’ theorem?",
+        "c": null,
+        "o": [
+            "Naive Bayes",
+            "Random Forest",
+            "SVM",
+            "K-Means"
+        ]
+    },
+    {
+        "q": "Which of the following regularization techniques penalizes the sum of absolute coefficients?",
+        "c": null,
+        "o": [
+            "Lasso Regression",
+            "Ridge Regression",
+            "Elastic Net",
+            "Dropout"
+        ]
+    },
+    {
+        "q": "In Ridge regression, which term is added to the loss function?",
+        "c": null,
+        "o": [
+            "L2 norm of coefficients",
+            "L1 norm of coefficients",
+            "Gini impurity",
+            "Cross entropy"
+        ]
+    },
+    {
+        "q": "What is the output of a regression algorithm?",
+        "c": null,
+        "o": [
+            "Continuous values",
+            "Discrete labels",
+            "Clusters",
+            "Principal components"
+        ]
+    },
+    {
+        "q": "Which of the following is a supervised learning task?",
+        "c": null,
+        "o": [
+            "Regression",
+            "Clustering",
+            "Dimensionality Reduction",
+            "Association Rule Learning"
+        ]
+    },
+    {
+        "q": "Which algorithm is commonly used for predicting binary outcomes?",
+        "c": null,
+        "o": [
+            "Logistic Regression",
+            "Linear Regression",
+            "K-Means",
+            "PCA"
+        ]
+    },
+    {
+        "q": "Which algorithm works by constructing multiple decision trees during training?",
+        "c": null,
+        "o": [
+            "Random Forest",
+            "SVM",
+            "Linear Regression",
+            "KNN"
+        ]
+    },
+    {
+        "q": "Which of the following models is most likely to be used for text classification?",
+        "c": null,
+        "o": [
+            "Naive Bayes",
+            "Random Forest",
+            "PCA",
+            "K-Means"
+        ]
+    },
+    {
+        "q": "In K-Nearest Neighbors (KNN), what determines the class label?",
+        "c": null,
+        "o": [
+            "The majority vote of the nearest neighbors",
+            "The distance to the nearest cluster center",
+            "The average of the predicted values",
+            "The output of the decision function"
+        ]
+    },
+    {
+        "q": "What does the hyperparameter 'k' in KNN represent?",
+        "c": null,
+        "o": [
+            "Number of neighbors considered",
+            "Number of clusters",
+            "Number of trees in the forest",
+            "Regularization strength"
+        ]
+    },
+    {
+        "q": "Which of the following is a linear model?",
+        "c": null,
+        "o": [
+            "Linear Regression",
+            "KNN",
+            "Random Forest",
+            "DBSCAN"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a classification algorithm?",
+        "c": null,
+        "o": [
+            "K-Means",
+            "SVM",
+            "Decision Trees",
+            "Logistic Regression"
+        ]
+    },
+    {
+        "q": "In SVM, what is a support vector?",
+        "c": null,
+        "o": [
+            "A data point closest to the hyperplane",
+            "The center of the data distribution",
+            "A point farthest from the margin",
+            "The weight of the model"
+        ]
+    },
+    {
+        "q": "Which of the following measures is used in logistic regression to make predictions?",
+        "c": null,
+        "o": [
+            "Sigmoid function",
+            "Sum of squares",
+            "Euclidean distance",
+            "Gini index"
+        ]
+    },
+    {
+        "q": "Which evaluation metric is more appropriate for imbalanced datasets?",
+        "c": null,
+        "o": [
+            "F1 Score",
+            "Accuracy",
+            "MSE",
+            "R-Squared"
+        ]
+    },
+    {
+        "q": "Which of the following is a key assumption of linear regression?",
+        "c": null,
+        "o": [
+            "The relationship between input and output is linear",
+            "Data points are clustered",
+            "All features are categorical",
+            "There is multicollinearity"
+        ]
+    },
+    {
+        "q": "What is the main drawback of KNN when applied to large datasets?",
+        "c": null,
+        "o": [
+            "Computational inefficiency",
+            "Overfitting",
+            "Low accuracy",
+            "Lack of flexibility"
+        ]
+    },
+    {
+        "q": "What is a hyperplane in SVM?",
+        "c": null,
+        "o": [
+            "A decision boundary that separates classes",
+            "A cluster center",
+            "The output of a decision tree",
+            "A point of minimum loss"
+        ]
+    },
+    {
+        "q": "Which of the following methods can be used to handle categorical variables in supervised learning?",
+        "c": null,
+        "o": [
+            "One-Hot Encoding",
+            "Normalization",
+            "Gradient Boosting",
+            "Dimensionality Reduction"
+        ]
+    },
+    {
+        "q": "What is the goal of cross-validation?",
+        "c": null,
+        "o": [
+            "To assess model performance",
+            "To increase model complexity",
+            "To reduce variance",
+            "To improve accuracy on the training data"
+        ]
+    },
+    {
+        "q": "Which supervised learning algorithm uses conditional probabilities?",
+        "c": null,
+        "o": [
+            "Naive Bayes",
+            "Linear Regression",
+            "KNN",
+            "Random Forest"
+        ]
+    },
+    {
+        "q": "Which model tends to overfit more: Random Forest or Decision Tree?",
+        "c": null,
+        "o": [
+            "Decision Tree",
+            "Random Forest",
+            "Both equally",
+            "None"
+        ]
+    },
+    {
+        "q": "In decision trees, what is the purpose of 'pruning'?",
+        "c": null,
+        "o": [
+            "To reduce overfitting",
+            "To increase tree depth",
+            "To handle missing data",
+            "To improve training time"
+        ]
+    },
+    {
+        "q": "Which of the following can be used for multi-class classification?",
+        "c": null,
+        "o": [
+            "Softmax Regression",
+            "Linear Regression",
+            "K-Means",
+            "DBSCAN"
+        ]
+    }
+]
