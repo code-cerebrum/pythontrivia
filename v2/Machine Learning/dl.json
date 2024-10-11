@@ -1,0 +1,622 @@
+[
+    {
+        "q": "What is a neural network primarily used for?",
+        "c": null,
+        "o": [
+            "Pattern recognition",
+            "Data compression",
+            "Database management",
+            "Web scraping"
+        ]
+    },
+    {
+        "q": "What is the function of an activation function in neural networks?",
+        "c": null,
+        "o": [
+            "Introduce non-linearity",
+            "Increase training speed",
+            "Reduce memory usage",
+            "Improve model accuracy"
+        ]
+    },
+    {
+        "q": "Which of the following is a popular deep learning framework?",
+        "c": null,
+        "o": [
+            "TensorFlow",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ]
+    },
+    {
+        "q": "What does CNN stand for in deep learning?",
+        "c": null,
+        "o": [
+            "Convolutional Neural Network",
+            "Cascading Neural Network",
+            "Complex Neural Network",
+            "Comprehensive Neural Network"
+        ]
+    },
+    {
+        "q": "Which layer in a CNN is responsible for detecting edges and textures?",
+        "c": null,
+        "o": [
+            "Convolutional layer",
+            "Pooling layer",
+            "Fully connected layer",
+            "Recurrent layer"
+        ]
+    },
+    {
+        "q": "What is backpropagation?",
+        "c": null,
+        "o": [
+            "Algorithm for training neural networks",
+            "Data normalization technique",
+            "Activation function",
+            "Loss function"
+        ]
+    },
+    {
+        "q": "What is the purpose of a pooling layer in CNNs?",
+        "c": null,
+        "o": [
+            "Reduce dimensionality",
+            "Increase computational power",
+            "Train faster",
+            "Enhance resolution"
+        ]
+    },
+    {
+        "q": "Which activation function is commonly used in hidden layers of deep networks?",
+        "c": null,
+        "o": [
+            "ReLU",
+            "Softmax",
+            "Sigmoid",
+            "Tanh"
+        ]
+    },
+    {
+        "q": "Which deep learning model is typically used for sequence data?",
+        "c": null,
+        "o": [
+            "RNN",
+            "CNN",
+            "SVM",
+            "GAN"
+        ]
+    },
+    {
+        "q": "What is overfitting in deep learning?",
+        "c": null,
+        "o": [
+            "Model learns noise instead of pattern",
+            "Model is undertrained",
+            "Too few layers in the network",
+            "Excessive data preprocessing"
+        ]
+    },
+    {
+        "q": "Which technique is used to prevent overfitting?",
+        "c": null,
+        "o": [
+            "Dropout",
+            "Batch normalization",
+            "Gradient descent",
+            "Momentum"
+        ]
+    },
+    {
+        "q": "What is a common loss function for classification tasks?",
+        "c": null,
+        "o": [
+            "Cross-entropy",
+            "Mean squared error",
+            "Log-cosh",
+            "Huber loss"
+        ]
+    },
+    {
+        "q": "What type of problem is solved by an autoencoder?",
+        "c": null,
+        "o": [
+            "Dimensionality reduction",
+            "Classification",
+            "Regression",
+            "Clustering"
+        ]
+    },
+    {
+        "q": "Which of the following is a generative model?",
+        "c": null,
+        "o": [
+            "GAN",
+            "CNN",
+            "RNN",
+            "KNN"
+        ]
+    },
+    {
+        "q": "What does LSTM stand for?",
+        "c": null,
+        "o": [
+            "Long Short-Term Memory",
+            "Linear Sequential Training Model",
+            "Layered Softmax Transfer Machine",
+            "Large Scalable Tensor Model"
+        ]
+    },
+    {
+        "q": "Which neural network is best suited for time series data?",
+        "c": null,
+        "o": [
+            "RNN",
+            "CNN",
+            "ANN",
+            "SVM"
+        ]
+    },
+    {
+        "q": "In GANs, what does the generator do?",
+        "c": null,
+        "o": [
+            "Generates fake data",
+            "Discriminates between real and fake data",
+            "Reduces dimensionality",
+            "Predicts future data points"
+        ]
+    },
+    {
+        "q": "What is a common optimization algorithm used in deep learning?",
+        "c": null,
+        "o": [
+            "Adam",
+            "Gradient Boosting",
+            "SVM",
+            "KNN"
+        ]
+    },
+    {
+        "q": "Which deep learning architecture uses layers to mimic the human brain?",
+        "c": null,
+        "o": [
+            "Neural networks",
+            "Random forest",
+            "K-nearest neighbors",
+            "Linear regression"
+        ]
+    },
+    {
+        "q": "Which regularization technique adds a penalty proportional to the square of the weights?",
+        "c": null,
+        "o": [
+            "L2 regularization",
+            "L1 regularization",
+            "Dropout",
+            "Batch normalization"
+        ]
+    },
+    {
+        "q": "Which of the following is an unsupervised deep learning technique?",
+        "c": null,
+        "o": [
+            "Autoencoders",
+            "Convolutional networks",
+            "RNN",
+            "Deep Q-learning"
+        ]
+    },
+    {
+        "q": "Which type of neural network is designed for spatial data processing?",
+        "c": null,
+        "o": [
+            "CNN",
+            "RNN",
+            "ANN",
+            "LSTM"
+        ]
+    },
+    {
+        "q": "What is vanishing gradient problem in deep networks?",
+        "c": null,
+        "o": [
+            "Gradients become too small for effective training",
+            "Gradients increase exponentially",
+            "Loss function becomes undefined",
+            "Weights become fixed"
+        ]
+    },
+    {
+        "q": "Which optimization algorithm adjusts learning rates for each parameter?",
+        "c": null,
+        "o": [
+            "Adam",
+            "SGD",
+            "Momentum",
+            "RMSprop"
+        ]
+    },
+    {
+        "q": "What is transfer learning in deep learning?",
+        "c": null,
+        "o": [
+            "Using a pre-trained model for a new task",
+            "Transferring data between layers",
+            "Learning multiple tasks simultaneously",
+            "Fine-tuning hyperparameters"
+        ]
+    },
+    {
+        "q": "Which activation function helps mitigate vanishing gradients?",
+        "c": null,
+        "o": [
+            "ReLU",
+            "Sigmoid",
+            "Tanh",
+            "Softmax"
+        ]
+    },
+    {
+        "q": "What is the purpose of batch normalization?",
+        "c": null,
+        "o": [
+            "Stabilize learning process",
+            "Prevent overfitting",
+            "Reduce model size",
+            "Increase batch size"
+        ]
+    },
+    {
+        "q": "Which loss function is used for regression tasks?",
+        "c": null,
+        "o": [
+            "Mean squared error",
+            "Cross-entropy",
+            "Hinge loss",
+            "Kullback-Leibler divergence"
+        ]
+    },
+    {
+        "q": "Which part of a neural network adjusts the weights to minimize the loss?",
+        "c": null,
+        "o": [
+            "Backpropagation",
+            "Forward pass",
+            "Activation function",
+            "Pooling layer"
+        ]
+    },
+    {
+        "q": "What does the softmax function do?",
+        "c": null,
+        "o": [
+            "Converts logits to probabilities",
+            "Normalizes inputs to range [-1,1]",
+            "Introduces non-linearity",
+            "Detects edges in images"
+        ]
+    },
+    {
+        "q": "Which type of network is effective in processing sequential data?",
+        "c": null,
+        "o": [
+            "RNN",
+            "CNN",
+            "MLP",
+            "Autoencoder"
+        ]
+    },
+    {
+        "q": "What is the main characteristic of a deep neural network?",
+        "c": null,
+        "o": [
+            "Multiple hidden layers",
+            "No hidden layers",
+            "Single hidden layer",
+            "Only one output layer"
+        ]
+    },
+    {
+        "q": "Which of the following is an application of deep learning?",
+        "c": null,
+        "o": [
+            "Image recognition",
+            "Database indexing",
+            "Packet routing",
+            "Memory management"
+        ]
+    },
+    {
+        "q": "Which layer helps reduce the spatial size of an image in a CNN?",
+        "c": null,
+        "o": [
+            "Pooling layer",
+            "Fully connected layer",
+            "Convolutional layer",
+            "Normalization layer"
+        ]
+    },
+    {
+        "q": "What is the role of a loss function in neural networks?",
+        "c": null,
+        "o": [
+            "Quantify error in predictions",
+            "Update weights",
+            "Control learning rate",
+            "Initialize network"
+        ]
+    },
+    {
+        "q": "Which gradient descent variant uses the entire dataset to compute gradients?",
+        "c": null,
+        "o": [
+            "Batch Gradient Descent",
+            "Stochastic Gradient Descent",
+            "Mini-Batch Gradient Descent",
+            "Momentum-based Gradient Descent"
+        ]
+    },
+    {
+        "q": "Which of the following is a vanishing gradient problem solution?",
+        "c": null,
+        "o": [
+            "Using ReLU activation",
+            "Increasing batch size",
+            "Using a sigmoid function",
+            "Decreasing learning rate"
+        ]
+    },
+    {
+        "q": "Which deep learning model is suitable for text generation tasks?",
+        "c": null,
+        "o": [
+            "RNN",
+            "CNN",
+            "DQN",
+            "SVM"
+        ]
+    },
+    {
+        "q": "Which type of learning involves an agent learning from environment rewards?",
+        "c": null,
+        "o": [
+            "Reinforcement Learning",
+            "Supervised Learning",
+            "Unsupervised Learning",
+            "Transfer Learning"
+        ]
+    },
+    {
+        "q": "Which optimizer includes momentum and adaptive learning rates?",
+        "c": null,
+        "o": [
+            "Adam",
+            "RMSprop",
+            "SGD",
+            "Nadam"
+        ]
+    },
+    {
+        "q": "What is the primary goal of unsupervised learning?",
+        "c": null,
+        "o": [
+            "Find patterns in data",
+            "Predict labels",
+            "Classify data",
+            "Minimize loss function"
+        ]
+    },
+    {
+        "q": "What does the term 'epoch' refer to in deep learning?",
+        "c": null,
+        "o": [
+            "One complete pass through the training dataset",
+            "A single training step",
+            "A set of neurons",
+            "A specific optimizer"
+        ]
+    },
+    {
+        "q": "Which of the following problems is addressed by using dropout?",
+        "c": null,
+        "o": [
+            "Overfitting",
+            "Underfitting",
+            "Vanishing gradients",
+            "Exploding gradients"
+        ]
+    },
+    {
+        "q": "Which deep learning architecture is used for machine translation tasks?",
+        "c": null,
+        "o": [
+            "Seq2Seq",
+            "CNN",
+            "VGG",
+            "Autoencoder"
+        ]
+    },
+    {
+        "q": "Which deep learning method is used to detect anomalies in data?",
+        "c": null,
+        "o": [
+            "Autoencoder",
+            "GAN",
+            "RNN",
+            "LSTM"
+        ]
+    },
+    {
+        "q": "Which neural network technique improves training speed by adjusting inputs?",
+        "c": null,
+        "o": [
+            "Batch normalization",
+            "Dropout",
+            "Max pooling",
+            "Backpropagation"
+        ]
+    },
+    {
+        "q": "What type of data is typically fed into a convolutional neural network?",
+        "c": null,
+        "o": [
+            "Image data",
+            "Text data",
+            "Time-series data",
+            "Graph data"
+        ]
+    },
+    {
+        "q": "What is a vanishing gradient problem caused by?",
+        "c": null,
+        "o": [
+            "Small gradients in deep networks",
+            "Too large gradients",
+            "Insufficient data",
+            "Overfitting"
+        ]
+    },
+    {
+        "q": "What is the purpose of a recurrent neural network (RNN)?",
+        "c": null,
+        "o": [
+            "Process sequential data",
+            "Reduce image size",
+            "Classify static images",
+            "Cluster data points"
+        ]
+    },
+    {
+        "q": "In reinforcement learning, what does an agent receive after each action?",
+        "c": null,
+        "o": [
+            "Reward",
+            "Label",
+            "Gradient",
+            "Error signal"
+        ]
+    },
+    {
+        "q": "What is a distinguishing feature of LSTM networks?",
+        "c": null,
+        "o": [
+            "Memory cells",
+            "Convolutional layers",
+            "Activation functions",
+            "Pooling layers"
+        ]
+    },
+    {
+        "q": "Which technique helps models generalize better to unseen data?",
+        "c": null,
+        "o": [
+            "Regularization",
+            "Gradient clipping",
+            "Batch normalization",
+            "Hyperparameter tuning"
+        ]
+    },
+    {
+        "q": "Which deep learning model is typically used for image classification?",
+        "c": null,
+        "o": [
+            "CNN",
+            "RNN",
+            "LSTM",
+            "Autoencoder"
+        ]
+    },
+    {
+        "q": "What does GAN stand for?",
+        "c": null,
+        "o": [
+            "Generative Adversarial Network",
+            "Generalized Adaptive Network",
+            "Graph Attention Network",
+            "Gaussian Autoencoder Network"
+        ]
+    },
+    {
+        "q": "What role does the discriminator play in a GAN?",
+        "c": null,
+        "o": [
+            "Classifies real vs. generated data",
+            "Generates synthetic data",
+            "Preprocesses input data",
+            "Classifies multi-label data"
+        ]
+    },
+    {
+        "q": "What is one of the main benefits of transfer learning?",
+        "c": null,
+        "o": [
+            "Reduces training time",
+            "Increases model complexity",
+            "Increases overfitting",
+            "Requires more data"
+        ]
+    },
+    {
+        "q": "Which algorithm helps find the minimum of a function in deep learning?",
+        "c": null,
+        "o": [
+            "Gradient descent",
+            "AdaBoost",
+            "K-means",
+            "PCA"
+        ]
+    },
+    {
+        "q": "What does the term 'deep' in deep learning refer to?",
+        "c": null,
+        "o": [
+            "Multiple layers in the network",
+            "Complexity of data",
+            "Size of the dataset",
+            "Amount of training time"
+        ]
+    },
+    {
+        "q": "Which neural network model is good at handling long-term dependencies?",
+        "c": null,
+        "o": [
+            "LSTM",
+            "CNN",
+            "DQN",
+            "VGG"
+        ]
+    },
+    {
+        "q": "What is the main difference between RNN and LSTM?",
+        "c": null,
+        "o": [
+            "LSTM can remember long-term dependencies",
+            "RNN is faster than LSTM",
+            "RNN uses memory cells",
+            "LSTM does not require training"
+        ]
+    },
+    {
+        "q": "What is the purpose of the ReLU activation function?",
+        "c": null,
+        "o": [
+            "Introduce non-linearity",
+            "Reduce dimensions",
+            "Prevent overfitting",
+            "Classify data"
+        ]
+    },
+    {
+        "q": "What is backpropagation mainly used for in deep learning?",
+        "c": null,
+        "o": [
+            "Update weights",
+            "Preprocess data",
+            "Regularize model",
+            "Reduce loss"
+        ]
+    }
+]

@@ -1,0 +1,682 @@
+[
+    {
+        "q": "What is the full form of NLP in Machine Learning?",
+        "c": null, 
+        "o": [
+            "Natural Language Processing",
+            "Natural Logic Programming",
+            "Neural Language Programming",
+            "Natural Latent Parsing"
+        ]
+    },
+    {
+        "q": "Which NLP technique is used to extract the root form of words?",
+        "c": null, 
+        "o": [
+            "Lemmatization",
+            "Stemming",
+            "Tokenization",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "What is the purpose of tokenization in NLP?",
+        "c": null, 
+        "o": [
+            "Splitting text into smaller units",
+            "Classifying text into categories",
+            "Reducing words to their root forms",
+            "Counting the number of words"
+        ]
+    },
+    {
+        "q": "Which of the following is a common approach for sentiment analysis?",
+        "c": null, 
+        "o": [
+            "Lexicon-based",
+            "Dependency parsing",
+            "Named entity recognition",
+            "Bag of words"
+        ]
+    },
+    {
+        "q": "Which algorithm is commonly used for topic modeling in NLP?",
+        "c": null, 
+        "o": [
+            "LDA",
+            "Naive Bayes",
+            "SVM",
+            "KNN"
+        ]
+    },
+    {
+        "q": "What does 'TF' stand for in TF-IDF?",
+        "c": null, 
+        "o": [
+            "Term Frequency",
+            "Total Frequency",
+            "Text Format",
+            "Term Formula"
+        ]
+    },
+    {
+        "q": "Which NLP task involves assigning syntactic categories like noun or verb to words?",
+        "c": null, 
+        "o": [
+            "POS Tagging",
+            "Dependency Parsing",
+            "Lemmatization",
+            "Tokenization"
+        ]
+    },
+    {
+        "q": "In NLP, which method converts words into vector representations?",
+        "c": null, 
+        "o": [
+            "Word Embedding",
+            "Tokenization",
+            "Named Entity Recognition",
+            "Stemming"
+        ]
+    },
+    {
+        "q": "What is the role of stop words in NLP?",
+        "c": null, 
+        "o": [
+            "Words that are removed from text",
+            "Words that are analyzed for sentiment",
+            "Words that determine syntax",
+            "Words that indicate polarity"
+        ]
+    },
+    {
+        "q": "Which model is commonly used in NLP for machine translation?",
+        "c": null, 
+        "o": [
+            "Seq2Seq",
+            "BERT",
+            "RNN",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "What is the process of breaking down text into words or smaller units in NLP?",
+        "c": null, 
+        "o": [
+            "Tokenization",
+            "Lemmatization",
+            "Stemming",
+            "Parsing"
+        ]
+    },
+    {
+        "q": "Which technique is used to reduce words to their root form in NLP?",
+        "c": null, 
+        "o": [
+            "Stemming",
+            "Tokenization",
+            "POS Tagging",
+            "Parsing"
+        ]
+    },
+    {
+        "q": "Which is an unsupervised machine learning method for extracting topics from a collection of documents?",
+        "c": null, 
+        "o": [
+            "LDA",
+            "Naive Bayes",
+            "BERT",
+            "SVM"
+        ]
+    },
+    {
+        "q": "What is the common use of Named Entity Recognition (NER) in NLP?",
+        "c": null, 
+        "o": [
+            "Identify entities such as people, organizations, and locations",
+            "Assign part of speech to words",
+            "Classify the sentiment of a sentence",
+            "Remove stop words from a document"
+        ]
+    },
+    {
+        "q": "Which approach is commonly used for sentiment analysis?",
+        "c": null, 
+        "o": [
+            "Lexicon-based",
+            "LDA",
+            "NER",
+            "Stemming"
+        ]
+    },
+    {
+        "q": "Which technique assigns syntactic roles such as noun, verb, or adjective to words?",
+        "c": null, 
+        "o": [
+            "POS Tagging",
+            "Tokenization",
+            "Stemming",
+            "NER"
+        ]
+    },
+    {
+        "q": "What does the 'IDF' in TF-IDF stand for?",
+        "c": null, 
+        "o": [
+            "Inverse Document Frequency",
+            "Information Document Frequency",
+            "Inverse Data Function",
+            "Indexed Document Factor"
+        ]
+    },
+    {
+        "q": "Which model is commonly used for generating word embeddings in NLP?",
+        "c": null, 
+        "o": [
+            "Word2Vec",
+            "Seq2Seq",
+            "SVM",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "Which algorithm is widely used for machine translation?",
+        "c": null, 
+        "o": [
+            "Seq2Seq",
+            "Naive Bayes",
+            "Word2Vec",
+            "TF-IDF"
+        ]
+    },
+    {
+        "q": "Which pre-trained model is often used for transfer learning in NLP tasks?",
+        "c": null, 
+        "o": [
+            "BERT",
+            "LDA",
+            "SVM",
+            "Naive Bayes"
+        ]
+    },
+    {
+        "q": "What is the process of converting text into numerical features for NLP?",
+        "c": null, 
+        "o": [
+            "Text Vectorization",
+            "Parsing",
+            "Stemming",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which of the following are considered stop words in NLP?",
+        "c": null, 
+        "o": [
+            "Words like 'the', 'is', 'and'",
+            "Words like 'important', 'quick'",
+            "Words like 'person', 'place'",
+            "Words like 'programming', 'technology'"
+        ]
+    },
+    {
+        "q": "Which NLP task involves identifying the grammatical structure of a sentence?",
+        "c": null, 
+        "o": [
+            "Parsing",
+            "Tokenization",
+            "POS Tagging",
+            "Stemming"
+        ]
+    },
+    {
+        "q": "Which model architecture is widely used for text generation?",
+        "c": null, 
+        "o": [
+            "Transformer",
+            "Naive Bayes",
+            "SVM",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "In word embeddings, which model is trained to predict a word based on its context?",
+        "c": null, 
+        "o": [
+            "Skip-gram",
+            "CBOW",
+            "BERT",
+            "TF-IDF"
+        ]
+    },
+    {
+        "q": "Which of the following methods is used to group similar documents?",
+        "c": null, 
+        "o": [
+            "Clustering",
+            "Sentiment Analysis",
+            "Tokenization",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "What is the task of classifying text into predefined categories?",
+        "c": null, 
+        "o": [
+            "Text Classification",
+            "Named Entity Recognition",
+            "Dependency Parsing",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which metric measures how often a term appears in a document?",
+        "c": null, 
+        "o": [
+            "Term Frequency",
+            "IDF",
+            "Sentiment Score",
+            "Word Count"
+        ]
+    },
+    {
+        "q": "What is the process of automatically identifying the language of a given text?",
+        "c": null, 
+        "o": [
+            "Language Detection",
+            "Stemming",
+            "Lemmatization",
+            "Parsing"
+        ]
+    },
+    {
+        "q": "Which technique in NLP is used for identifying relationships between words in a sentence?",
+        "c": null, 
+        "o": [
+            "Dependency Parsing",
+            "Word Embedding",
+            "POS Tagging",
+            "Tokenization"
+        ]
+    },
+    {
+        "q": "Which NLP task is commonly used to determine whether a text is positive, negative, or neutral?",
+        "c": null, 
+        "o": [
+            "Sentiment Analysis",
+            "Topic Modeling",
+            "POS Tagging",
+            "Dependency Parsing"
+        ]
+    },
+    {
+        "q": "Which word embedding technique uses the context of surrounding words to predict a target word?",
+        "c": null, 
+        "o": [
+            "CBOW",
+            "TF-IDF",
+            "BERT",
+            "LDA"
+        ]
+    },
+    {
+        "q": "Which method identifies named entities like 'Person', 'Location', or 'Organization' in text?",
+        "c": null, 
+        "o": [
+            "NER",
+            "POS Tagging",
+            "Parsing",
+            "Text Classification"
+        ]
+    },
+    {
+        "q": "What does 'TF' stand for in TF-IDF?",
+        "c": null, 
+        "o": [
+            "Term Frequency",
+            "Total Frequency",
+            "Token Frequency",
+            "Text Factor"
+        ]
+    },
+    {
+        "q": "Which of the following is a sequence-to-sequence model used in NLP?",
+        "c": null, 
+        "o": [
+            "Seq2Seq",
+            "Word2Vec",
+            "Naive Bayes",
+            "SVM"
+        ]
+    },
+    {
+        "q": "Which model is known for its effectiveness in language understanding tasks?",
+        "c": null, 
+        "o": [
+            "BERT",
+            "Naive Bayes",
+            "LDA",
+            "CBOW"
+        ]
+    },
+    {
+        "q": "Which task involves converting speech into text?",
+        "c": null, 
+        "o": [
+            "Speech Recognition",
+            "Text Classification",
+            "Named Entity Recognition",
+            "Dependency Parsing"
+        ]
+    },
+    {
+        "q": "Which method is used for summarizing text?",
+        "c": null, 
+        "o": [
+            "Text Summarization",
+            "Sentiment Analysis",
+            "Tokenization",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which technique is used to measure the similarity between two texts?",
+        "c": null, 
+        "o": [
+            "Cosine Similarity",
+            "Lemmatization",
+            "Tokenization",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which type of neural network is commonly used in NLP tasks?",
+        "c": null, 
+        "o": [
+            "RNN",
+            "CNN",
+            "SVM",
+            "KNN"
+        ]
+    },
+    {
+        "q": "What does the term 'corpus' refer to in NLP?",
+        "c": null, 
+        "o": [
+            "A large collection of texts",
+            "A type of model",
+            "A programming language",
+            "A specific algorithm"
+        ]
+    },
+    {
+        "q": "What is 'Word2Vec' primarily used for?",
+        "c": null, 
+        "o": [
+            "Creating word embeddings",
+            "Text classification",
+            "Sentiment analysis",
+            "Named entity recognition"
+        ]
+    },
+    {
+        "q": "What technique is used to assess the quality of a machine translation system?",
+        "c": null, 
+        "o": [
+            "BLEU score",
+            "TF-IDF",
+            "LDA",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which model is designed to understand the context of a word in a sentence?",
+        "c": null, 
+        "o": [
+            "BERT",
+            "Naive Bayes",
+            "LDA",
+            "Word2Vec"
+        ]
+    },
+    {
+        "q": "What is a common use case for chatbots in NLP?",
+        "c": null, 
+        "o": [
+            "Conversational agents",
+            "Text summarization",
+            "Data cleaning",
+            "Speech recognition"
+        ]
+    },
+    {
+        "q": "Which of the following represents a type of language model?",
+        "c": null, 
+        "o": [
+            "n-gram model",
+            "K-means clustering",
+            "Linear regression",
+            "Support vector machine"
+        ]
+    },
+    {
+        "q": "What does the term 'embedding' refer to in NLP?",
+        "c": null, 
+        "o": [
+            "Mapping words to vectors",
+            "Creating n-grams",
+            "Identifying parts of speech",
+            "Performing sentiment analysis"
+        ]
+    },
+    {
+        "q": "What does 'SOTA' stand for in the context of NLP?",
+        "c": null, 
+        "o": [
+            "State of the Art",
+            "Standard Output and Text Analysis",
+            "Syntactic Operations and Textual Analysis",
+            "Structured Output and Tokenization Algorithm"
+        ]
+    },
+    {
+        "q": "What is the main goal of summarization in NLP?",
+        "c": null, 
+        "o": [
+            "Reduce the text while preserving meaning",
+            "Classify the text into categories",
+            "Extract named entities",
+            "Identify the sentiment of the text"
+        ]
+    },
+    {
+        "q": "Which algorithm is effective for document classification?",
+        "c": null, 
+        "o": [
+            "Naive Bayes",
+            "Word2Vec",
+            "LDA",
+            "TF-IDF"
+        ]
+    },
+    {
+        "q": "What does 'contextual embedding' mean in NLP?",
+        "c": null, 
+        "o": [
+            "Embeddings that change based on context",
+            "Static word representations",
+            "Fixed-length representations",
+            "Document classification"
+        ]
+    },
+    {
+        "q": "Which preprocessing step helps to normalize text data?",
+        "c": null, 
+        "o": [
+            "Lowercasing",
+            "Tokenization",
+            "Stemming",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "Which of the following can be considered a structured representation of text?",
+        "c": null, 
+        "o": [
+            "Parse Tree",
+            "Corpus",
+            "Bag of Words",
+            "Tokenization"
+        ]
+    },
+    {
+        "q": "What is a key application of topic modeling?",
+        "c": null, 
+        "o": [
+            "Discovering hidden topics in text data",
+            "Identifying named entities",
+            "Performing sentiment analysis",
+            "Classifying documents"
+        ]
+    },
+    {
+        "q": "What is a primary characteristic of RNNs in NLP?",
+        "c": null, 
+        "o": [
+            "Handling sequential data",
+            "Performing classification",
+            "Generating random text",
+            "Tokenizing sentences"
+        ]
+    },
+    {
+        "q": "Which of the following is a common dataset for training NLP models?",
+        "c": null, 
+        "o": [
+            "Wikipedia",
+            "ImageNet",
+            "CIFAR-10",
+            "MNIST"
+        ]
+    },
+    {
+        "q": "What does 'language modeling' involve?",
+        "c": null, 
+        "o": [
+            "Predicting the next word in a sequence",
+            "Classifying text",
+            "Identifying named entities",
+            "Summarizing documents"
+        ]
+    },
+    {
+        "q": "Which task involves generating a response based on a given prompt?",
+        "c": null, 
+        "o": [
+            "Text Generation",
+            "Named Entity Recognition",
+            "Tokenization",
+            "POS Tagging"
+        ]
+    },
+    {
+        "q": "What is the main benefit of using pre-trained models in NLP?",
+        "c": null, 
+        "o": [
+            "Reduced training time and improved performance",
+            "Higher computational cost",
+            "Less data required",
+            "Increased model complexity"
+        ]
+    },
+    {
+        "q": "What does 'semantic analysis' focus on?",
+        "c": null, 
+        "o": [
+            "Understanding meaning in text",
+            "Identifying grammatical structure",
+            "Counting word frequencies",
+            "Tokenizing sentences"
+        ]
+    },
+    {
+        "q": "Which model is particularly good at handling long-range dependencies in text?",
+        "c": null, 
+        "o": [
+            "Transformer",
+            "Naive Bayes",
+            "KNN",
+            "LDA"
+        ]
+    },
+    {
+        "q": "Which of the following is a popular Python library for NLP tasks?",
+        "c": null, 
+        "o": [
+            "NLTK",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+        ]
+    },
+    {
+        "q": "What is the purpose of using a lemmatizer?",
+        "c": null, 
+        "o": [
+            "Reducing words to their base form",
+            "Removing stop words",
+            "Classifying text",
+            "Tokenizing sentences"
+        ]
+    },
+    {
+        "q": "Which technique is often used to identify sentiment in social media posts?",
+        "c": null, 
+        "o": [
+            "Sentiment Analysis",
+            "Topic Modeling",
+            "NER",
+            "Summarization"
+        ]
+    },
+    {
+        "q": "What does 'NLP pipeline' refer to?",
+        "c": null, 
+        "o": [
+            "A series of processing steps in NLP",
+            "A database of words",
+            "A visualization tool",
+            "A model for text generation"
+        ]
+    },
+    {
+        "q": "Which feature is commonly used in text classification tasks?",
+        "c": null, 
+        "o": [
+            "Bag of Words",
+            "Image Pixels",
+            "Audio Samples",
+            "Graph Edges"
+        ]
+    },
+    {
+        "q": "What is 'semantic similarity' in NLP?",
+        "c": null, 
+        "o": [
+            "Measure of how similar two texts are in meaning",
+            "Comparison of word lengths",
+            "Count of common words",
+            "Number of sentences in a text"
+        ]
+    },
+    {
+        "q": "What is the primary role of a chatbot in NLP?",
+        "c": null, 
+        "o": [
+            "Engage in conversation with users",
+            "Generate text summaries",
+            "Identify grammatical errors",
+            "Classify user emotions"
+        ]
+    }
+]

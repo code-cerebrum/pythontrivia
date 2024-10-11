@@ -1,0 +1,1152 @@
+[
+    {
+        "q": "What is model deployment?",
+        "c": null,
+        "o": [
+            "Making the model available for use",
+            "Training the model",
+            "Evaluating model performance",
+            "Collecting data"
+        ]
+    },
+    {
+        "q": "Which platform is commonly used for deploying ML models?",
+        "c": null,
+        "o": [
+            "AWS",
+            "WordPress",
+            "Photoshop",
+            "Excel"
+        ]
+    },
+    {
+        "q": "What is an API in the context of model deployment?",
+        "c": null,
+        "o": [
+            "Application Programming Interface",
+            "Advanced Programming Interface",
+            "Automated Process Interface",
+            "Analog Protocol Interface"
+        ]
+    },
+    {
+        "q": "What does REST stand for?",
+        "c": null,
+        "o": [
+            "Representational State Transfer",
+            "Real-Time State Transfer",
+            "Remote System Transfer",
+            "Rapid State Transfer"
+        ]
+    },
+    {
+        "q": "Which format is commonly used for saving machine learning models?",
+        "c": null,
+        "o": [
+            "Pickle",
+            "CSV",
+            "JSON",
+            "XML"
+        ]
+    },
+    {
+        "q": "What is Docker used for in deployment?",
+        "c": null,
+        "o": [
+            "Containerization",
+            "Data storage",
+            "Data processing",
+            "Model training"
+        ]
+    },
+    {
+        "q": "What is CI/CD?",
+        "c": null,
+        "o": [
+            "Continuous Integration/Continuous Deployment",
+            "Constant Integration/Constant Deployment",
+            "Continuous Improvement/Continuous Development",
+            "Cyclic Integration/Cyclic Deployment"
+        ]
+    },
+    {
+        "q": "What is A/B testing?",
+        "c": null,
+        "o": [
+            "Comparing two versions",
+            "Training multiple models",
+            "Data preprocessing",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "Which cloud service can host ML models?",
+        "c": null,
+        "o": [
+            "Google Cloud",
+            "Google Docs",
+            "Google Sheets",
+            "Google Maps"
+        ]
+    },
+    {
+        "q": "What is Flask used for?",
+        "c": null,
+        "o": [
+            "Web framework for APIs",
+            "Data visualization",
+            "Model training",
+            "Database management"
+        ]
+    },
+    {
+        "q": "What does 'scalability' refer to?",
+        "c": null,
+        "o": [
+            "Ability to handle growth",
+            "Speed of model training",
+            "Size of the model",
+            "Accuracy of predictions"
+        ]
+    },
+    {
+        "q": "What is a deployment pipeline?",
+        "c": null,
+        "o": [
+            "Automated workflow for deployment",
+            "Data collection process",
+            "Model evaluation technique",
+            "Training method"
+        ]
+    },
+    {
+        "q": "What is Kubernetes used for?",
+        "c": null,
+        "o": [
+            "Orchestration of containers",
+            "Model training",
+            "Data storage",
+            "Data preprocessing"
+        ]
+    },
+    {
+        "q": "What is the purpose of load balancing?",
+        "c": null,
+        "o": [
+            "Distributing traffic",
+            "Data validation",
+            "Model evaluation",
+            "Error handling"
+        ]
+    },
+    {
+        "q": "What is a microservice architecture?",
+        "c": null,
+        "o": [
+            "Breaking applications into smaller services",
+            "Using a monolithic design",
+            "Deploying single models",
+            "Data analysis"
+        ]
+    },
+    {
+        "q": "What does 'monitoring' refer to in deployment?",
+        "c": null,
+        "o": [
+            "Tracking model performance",
+            "Training accuracy",
+            "Data collection methods",
+            "Feature engineering"
+        ]
+    },
+    {
+        "q": "Which of the following is a deployment strategy?",
+        "c": null,
+        "o": [
+            "Blue/Green deployment",
+            "Data mining",
+            "Feature extraction",
+            "Model training"
+        ]
+    },
+    {
+        "q": "What is versioning in ML models?",
+        "c": null,
+        "o": [
+            "Tracking changes to models",
+            "Data version control",
+            "Model accuracy tracking",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is rollback in deployment?",
+        "c": null,
+        "o": [
+            "Reverting to a previous model",
+            "Training a new model",
+            "Data preprocessing",
+            "Feature engineering"
+        ]
+    },
+    {
+        "q": "What is container orchestration?",
+        "c": null,
+        "o": [
+            "Managing multiple containers",
+            "Training containers",
+            "Creating data containers",
+            "Model evaluation"
+        ]
+    },
+    {
+        "q": "Which framework is commonly used for serving models?",
+        "c": null,
+        "o": [
+            "TensorFlow Serving",
+            "Matplotlib",
+            "NumPy",
+            "Pandas"
+        ]
+    },
+    {
+        "q": "What is model inferencing?",
+        "c": null,
+        "o": [
+            "Making predictions",
+            "Training the model",
+            "Evaluating the model",
+            "Data cleaning"
+        ]
+    },
+    {
+        "q": "What is edge deployment?",
+        "c": null,
+        "o": [
+            "Deploying models on local devices",
+            "Using cloud servers",
+            "Training in data centers",
+            "Centralized deployment"
+        ]
+    },
+    {
+        "q": "What is the role of a load tester?",
+        "c": null,
+        "o": [
+            "Testing system performance",
+            "Training models",
+            "Data collection",
+            "Feature extraction"
+        ]
+    },
+    {
+        "q": "What is a model registry?",
+        "c": null,
+        "o": [
+            "Central storage for models",
+            "Data storage",
+            "Training data management",
+            "Model evaluation tool"
+        ]
+    },
+    {
+        "q": "What does latency refer to?",
+        "c": null,
+        "o": [
+            "Delay in response time",
+            "Data processing speed",
+            "Training duration",
+            "Model accuracy"
+        ]
+    },
+    {
+        "q": "Which format is often used for model configuration?",
+        "c": null,
+        "o": [
+            "YAML",
+            "HTML",
+            "XML",
+            "CSV"
+        ]
+    },
+    {
+        "q": "What is a prediction endpoint?",
+        "c": null,
+        "o": [
+            "URL for making predictions",
+            "Data storage location",
+            "Training server address",
+            "Monitoring dashboard"
+        ]
+    },
+    {
+        "q": "What is a CI/CD tool?",
+        "c": null,
+        "o": [
+            "Automates deployment processes",
+            "Data analysis software",
+            "Model training library",
+            "Visualization tool"
+        ]
+    },
+    {
+        "q": "What is shadow deployment?",
+        "c": null,
+        "o": [
+            "Testing new models alongside old ones",
+            "Deploying multiple models",
+            "Training models in the cloud",
+            "Using local servers"
+        ]
+    },
+    {
+        "q": "What is an inference server?",
+        "c": null,
+        "o": [
+            "Server for running models",
+            "Data storage server",
+            "Training server",
+            "Database server"
+        ]
+    },
+    {
+        "q": "What does the term 'drift' refer to?",
+        "c": null,
+        "o": [
+            "Change in model performance",
+            "Training speed",
+            "Data storage size",
+            "Feature importance"
+        ]
+    },
+    {
+        "q": "What is a model serving layer?",
+        "c": null,
+        "o": [
+            "Component for serving predictions",
+            "Training component",
+            "Data preprocessing layer",
+            "Data storage layer"
+        ]
+    },
+    {
+        "q": "What is the primary benefit of using a model API?",
+        "c": null,
+        "o": [
+            "Easier access for predictions",
+            "Faster training times",
+            "Data collection",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is version control for models?",
+        "c": null,
+        "o": [
+            "Managing changes over time",
+            "Data versioning",
+            "Model evaluation tracking",
+            "Feature tracking"
+        ]
+    },
+    {
+        "q": "What is the purpose of a load balancer?",
+        "c": null,
+        "o": [
+            "Distributing traffic",
+            "Model training",
+            "Data storage",
+            "Error handling"
+        ]
+    },
+    {
+        "q": "What is a service mesh?",
+        "c": null,
+        "o": [
+            "Infrastructure for managing microservices",
+            "Data storage system",
+            "Training framework",
+            "Model evaluation tool"
+        ]
+    },
+    {
+        "q": "What is continuous deployment?",
+        "c": null,
+        "o": [
+            "Automatically releasing changes to production",
+            "Manual model training",
+            "Data cleaning",
+            "Feature engineering"
+        ]
+    },
+    {
+        "q": "What is a model's lifecycle?",
+        "c": null,
+        "o": [
+            "Stages from training to deployment",
+            "Data collection phases",
+            "Model evaluation steps",
+            "Feature selection processes"
+        ]
+    },
+    {
+        "q": "What is an online learning model?",
+        "c": null,
+        "o": [
+            "Learns incrementally from data",
+            "Trains on static datasets",
+            "Does not adapt over time",
+            "Requires batch processing"
+        ]
+    },
+    {
+        "q": "What is a rollback strategy?",
+        "c": null,
+        "o": [
+            "Reverting to a stable version",
+            "Data analysis strategy",
+            "Model training strategy",
+            "Feature engineering strategy"
+        ]
+    },
+    {
+        "q": "What is a canary deployment?",
+        "c": null,
+        "o": [
+            "Testing new features on a small scale",
+            "Full-scale deployment",
+            "Batch processing of data",
+            "Feature extraction process"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of a deployment dashboard?",
+        "c": null,
+        "o": [
+            "Monitoring deployments",
+            "Data storage",
+            "Model training",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is a hardware accelerator?",
+        "c": null,
+        "o": [
+            "Improves model inference speed",
+            "Data storage device",
+            "Model training tool",
+            "Data collection tool"
+        ]
+    },
+    {
+        "q": "What does containerization achieve?",
+        "c": null,
+        "o": [
+            "Isolation of applications",
+            "Data storage management",
+            "Model evaluation",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is a service discovery mechanism?",
+        "c": null,
+        "o": [
+            "Locates services in a network",
+            "Data storage solution",
+            "Model training strategy",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a model endpoint?",
+        "c": null,
+        "o": [
+            "Address for predictions",
+            "Data storage location",
+            "Training server address",
+            "Monitoring location"
+        ]
+    },
+    {
+        "q": "What is the significance of model performance metrics?",
+        "c": null,
+        "o": [
+            "Evaluating effectiveness",
+            "Data collection methods",
+            "Model training techniques",
+            "Feature extraction methods"
+        ]
+    },
+    {
+        "q": "What does auto-scaling do?",
+        "c": null,
+        "o": [
+            "Adjusts resources based on demand",
+            "Trains models automatically",
+            "Data cleaning",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is a serverless architecture?",
+        "c": null,
+        "o": [
+            "No server management needed",
+            "Data management is manual",
+            "Requires physical servers",
+            "Data processing is slower"
+        ]
+    },
+    {
+        "q": "What is the primary function of a data pipeline?",
+        "c": null,
+        "o": [
+            "Automates data flow",
+            "Model evaluation",
+            "Data visualization",
+            "Feature engineering"
+        ]
+    },
+    {
+        "q": "What is a feature flag?",
+        "c": null,
+        "o": [
+            "Controls feature availability",
+            "Data storage indicator",
+            "Model accuracy tracker",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a model signature?",
+        "c": null,
+        "o": [
+            "Defines input/output schema",
+            "Trains models",
+            "Stores data",
+            "Visualizes results"
+        ]
+    },
+    {
+        "q": "What does load testing assess?",
+        "c": null,
+        "o": [
+            "System performance under load",
+            "Data collection speed",
+            "Model training duration",
+            "Feature extraction accuracy"
+        ]
+    },
+    {
+        "q": "What is a reverse proxy?",
+        "c": null,
+        "o": [
+            "Forwards requests to servers",
+            "Data storage solution",
+            "Model training framework",
+            "Feature engineering tool"
+        ]
+    },
+    {
+        "q": "What is a model deployment environment?",
+        "c": null,
+        "o": [
+            "Where models are hosted",
+            "Data storage space",
+            "Training location",
+            "Feature extraction space"
+        ]
+    },
+    {
+        "q": "What is the role of an API gateway?",
+        "c": null,
+        "o": [
+            "Manages API requests",
+            "Data storage",
+            "Model training",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is serverless computing?",
+        "c": null,
+        "o": [
+            "Run code without server management",
+            "Requires physical servers",
+            "Data storage management",
+            "Model training management"
+        ]
+    },
+    {
+        "q": "What does anomaly detection do?",
+        "c": null,
+        "o": [
+            "Identifies unusual patterns",
+            "Trains models",
+            "Data storage analysis",
+            "Feature selection"
+        ]
+    },
+    {
+        "q": "What is a data warehouse?",
+        "c": null,
+        "o": [
+            "Central repository for data",
+            "Training server",
+            "Model evaluation tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a cloud-native application?",
+        "c": null,
+        "o": [
+            "Designed for cloud environments",
+            "Requires physical servers",
+            "Data processing is manual",
+            "Model training is centralized"
+        ]
+    },
+    {
+        "q": "What is model scaling?",
+        "c": null,
+        "o": [
+            "Increasing model capacity",
+            "Data cleaning process",
+            "Model training duration",
+            "Feature extraction process"
+        ]
+    },
+    {
+        "q": "What is a network policy?",
+        "c": null,
+        "o": [
+            "Defines network rules for services",
+            "Data storage rules",
+            "Model training policies",
+            "Feature engineering rules"
+        ]
+    },
+    {
+        "q": "What is multi-tenancy?",
+        "c": null,
+        "o": [
+            "Single instance serving multiple users",
+            "Data collection method",
+            "Model evaluation technique",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a virtual machine?",
+        "c": null,
+        "o": [
+            "Emulates a physical computer",
+            "Data storage device",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is an orchestrator?",
+        "c": null,
+        "o": [
+            "Manages containerized applications",
+            "Data collection tool",
+            "Model training tool",
+            "Feature selection tool"
+        ]
+    },
+    {
+        "q": "What is a public cloud?",
+        "c": null,
+        "o": [
+            "Available to anyone",
+            "Requires a subscription",
+            "For private use only",
+            "Data storage only"
+        ]
+    },
+    {
+        "q": "What is an on-premises deployment?",
+        "c": null,
+        "o": [
+            "Hosted in local data centers",
+            "Cloud-hosted",
+            "Requires internet connection",
+            "Managed by third parties"
+        ]
+    },
+    {
+        "q": "What is a data lake?",
+        "c": null,
+        "o": [
+            "Storage for raw data",
+            "Trains models",
+            "Data preprocessing tool",
+            "Model evaluation tool"
+        ]
+    },
+    {
+        "q": "What does high availability mean?",
+        "c": null,
+        "o": [
+            "System is operational most of the time",
+            "Data storage size",
+            "Model training duration",
+            "Feature extraction speed"
+        ]
+    },
+    {
+        "q": "What is an HTTP request?",
+        "c": null,
+        "o": [
+            "Message sent to a server",
+            "Data storage query",
+            "Model training message",
+            "Feature extraction request"
+        ]
+    },
+    {
+        "q": "What is a front-end application?",
+        "c": null,
+        "o": [
+            "User interface for interaction",
+            "Data storage application",
+            "Model training interface",
+            "Feature selection interface"
+        ]
+    },
+    {
+        "q": "What is a back-end application?",
+        "c": null,
+        "o": [
+            "Server-side processing",
+            "User interface application",
+            "Data storage application",
+            "Feature extraction interface"
+        ]
+    },
+    {
+        "q": "What is data encryption?",
+        "c": null,
+        "o": [
+            "Protects data confidentiality",
+            "Data storage process",
+            "Model training step",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What is data governance?",
+        "c": null,
+        "o": [
+            "Management of data availability and integrity",
+            "Data storage method",
+            "Model training technique",
+            "Feature extraction process"
+        ]
+    },
+    {
+        "q": "What is a data access layer?",
+        "c": null,
+        "o": [
+            "Manages database access",
+            "Data storage interface",
+            "Model training layer",
+            "Feature selection layer"
+        ]
+    },
+    {
+        "q": "What is a CI/CD pipeline?",
+        "c": null,
+        "o": [
+            "Automates software delivery",
+            "Data storage solution",
+            "Model training process",
+            "Feature extraction process"
+        ]
+    },
+    {
+        "q": "What is version control?",
+        "c": null,
+        "o": [
+            "Tracks changes in code",
+            "Data storage process",
+            "Model training steps",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a monitoring system?",
+        "c": null,
+        "o": [
+            "Tracks application performance",
+            "Data storage method",
+            "Model training process",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What does data redundancy mean?",
+        "c": null,
+        "o": [
+            "Duplicate data storage",
+            "Data processing speed",
+            "Model training method",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What is model auditing?",
+        "c": null,
+        "o": [
+            "Reviewing model performance",
+            "Data storage process",
+            "Model training technique",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a microservices architecture?",
+        "c": null,
+        "o": [
+            "Application structure using small services",
+            "Data storage method",
+            "Model training process",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What is edge computing?",
+        "c": null,
+        "o": [
+            "Processing data closer to the source",
+            "Data storage method",
+            "Model training method",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a data integration tool?",
+        "c": null,
+        "o": [
+            "Combines data from different sources",
+            "Data storage tool",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is load balancing?",
+        "c": null,
+        "o": [
+            "Distributes traffic across servers",
+            "Data storage technique",
+            "Model training strategy",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What is data privacy?",
+        "c": null,
+        "o": [
+            "Protection of personal information",
+            "Data storage process",
+            "Model training technique",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is an API?",
+        "c": null,
+        "o": [
+            "Interface for software interaction",
+            "Data storage method",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is data migration?",
+        "c": null,
+        "o": [
+            "Moving data between storage locations",
+            "Data cleaning process",
+            "Model training process",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a stateful service?",
+        "c": null,
+        "o": [
+            "Retains user session data",
+            "Does not store any data",
+            "Requires constant network access",
+            "Data storage service"
+        ]
+    },
+    {
+        "q": "What is an asynchronous process?",
+        "c": null,
+        "o": [
+            "Does not require immediate response",
+            "Requires immediate feedback",
+            "Processes data synchronously",
+            "Data storage process"
+        ]
+    },
+    {
+        "q": "What is a distributed system?",
+        "c": null,
+        "o": [
+            "Multiple interconnected components",
+            "Single centralized component",
+            "Data storage system",
+            "Model training system"
+        ]
+    },
+    {
+        "q": "What is a real-time application?",
+        "c": null,
+        "o": [
+            "Processes data instantly",
+            "Data storage method",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a batch processing system?",
+        "c": null,
+        "o": [
+            "Processes data in groups",
+            "Real-time data processing",
+            "Data storage method",
+            "Model training method"
+        ]
+    },
+    {
+        "q": "What is a monitoring dashboard?",
+        "c": null,
+        "o": [
+            "Displays performance metrics",
+            "Data storage interface",
+            "Model training visualization",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a data catalog?",
+        "c": null,
+        "o": [
+            "Organizes data assets",
+            "Data storage method",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is an SLA?",
+        "c": null,
+        "o": [
+            "Service Level Agreement",
+            "Data storage location",
+            "Model training metric",
+            "Feature extraction metric"
+        ]
+    },
+    {
+        "q": "What is a service mesh?",
+        "c": null,
+        "o": [
+            "Manages microservices communication",
+            "Data storage solution",
+            "Model training interface",
+            "Feature extraction interface"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes cluster?",
+        "c": null,
+        "o": [
+            "Group of containerized applications",
+            "Data storage cluster",
+            "Model training environment",
+            "Feature extraction cluster"
+        ]
+    },
+    {
+        "q": "What is a data synchronization process?",
+        "c": null,
+        "o": [
+            "Aligns data across systems",
+            "Data storage technique",
+            "Model training technique",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is data lineage?",
+        "c": null,
+        "o": [
+            "Traceability of data origin",
+            "Data storage method",
+            "Model training method",
+            "Feature extraction method"
+        ]
+    },
+    {
+        "q": "What is a load testing tool?",
+        "c": null,
+        "o": [
+            "Simulates user traffic",
+            "Data storage tool",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a predictive maintenance system?",
+        "c": null,
+        "o": [
+            "Prevents equipment failure",
+            "Data storage solution",
+            "Model training environment",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a network load balancer?",
+        "c": null,
+        "o": [
+            "Distributes network traffic",
+            "Data storage device",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a compliance audit?",
+        "c": null,
+        "o": [
+            "Verifies adherence to regulations",
+            "Data storage review",
+            "Model training compliance",
+            "Feature extraction review"
+        ]
+    },
+    {
+        "q": "What is an event-driven architecture?",
+        "c": null,
+        "o": [
+            "Responds to events or triggers",
+            "Data storage system",
+            "Model training technique",
+            "Feature selection process"
+        ]
+    },
+    {
+        "q": "What is a data processing pipeline?",
+        "c": null,
+        "o": [
+            "Sequence of data operations",
+            "Data storage system",
+            "Model training pipeline",
+            "Feature extraction pipeline"
+        ]
+    },
+    {
+        "q": "What is a data governance framework?",
+        "c": null,
+        "o": [
+            "Policies for data management",
+            "Data storage method",
+            "Model training guideline",
+            "Feature extraction guideline"
+        ]
+    },
+    {
+        "q": "What is an orchestration tool?",
+        "c": null,
+        "o": [
+            "Coordinates multiple processes",
+            "Data storage tool",
+            "Model training tool",
+            "Feature extraction tool"
+        ]
+    },
+    {
+        "q": "What is a machine learning model registry?",
+        "c": null,
+        "o": [
+            "Tracks versions of models",
+            "Data storage location",
+            "Model evaluation tool",
+            "Feature selection tool"
+        ]
+    },
+    {
+        "q": "What is a data quality assessment?",
+        "c": null,
+        "o": [
+            "Evaluates data accuracy",
+            "Data storage method",
+            "Model training quality",
+            "Feature extraction quality"
+        ]
+    },
+    {
+        "q": "What is an incident response plan?",
+        "c": null,
+        "o": [
+            "Guides response to incidents",
+            "Data storage method",
+            "Model training process",
+            "Feature extraction plan"
+        ]
+    },
+    {
+        "q": "What is an API endpoint?",
+        "c": null,
+        "o": [
+            "Specific URL for API calls",
+            "Data storage point",
+            "Model training endpoint",
+            "Feature extraction endpoint"
+        ]
+    },
+    {
+        "q": "What is a security patch?",
+        "c": null,
+        "o": [
+            "Fixes vulnerabilities",
+            "Data storage patch",
+            "Model training fix",
+            "Feature extraction fix"
+        ]
+    },
+    {
+        "q": "What is an application load balancer?",
+        "c": null,
+        "o": [
+            "Balances incoming application traffic",
+            "Data storage balancer",
+            "Model training balancer",
+            "Feature extraction balancer"
+        ]
+    },
+    {
+        "q": "What is a version control system?",
+        "c": null,
+        "o": [
+            "Tracks changes in files",
+            "Data storage method",
+            "Model training system",
+            "Feature selection system"
+        ]
+    }
+]

@@ -1,0 +1,642 @@
+[
+    {
+        "q": "What is the purpose of model validation?",
+        "c": null,
+        "o": [
+            "Evaluate model performance",
+            "Train the model",
+            "Improve dataset",
+            "Generate new features"
+        ]
+    },
+    {
+        "q": "Which metric is commonly used for classification problems?",
+        "c": null,
+        "o": [
+            "Accuracy",
+            "Mean Squared Error",
+            "R-squared",
+            "Precision"
+        ]
+    },
+    {
+        "q": "What is overfitting?",
+        "c": null,
+        "o": [
+            "Model performs well on training but poorly on test data",
+            "Model performs equally well on both training and test data",
+            "Model fails to learn the training data",
+            "Model learns from validation data"
+        ]
+    },
+    {
+        "q": "Which of the following is used to split the dataset for model evaluation?",
+        "c": null,
+        "o": [
+            "Train-test split",
+            "Normalization",
+            "Random Forest",
+            "Standardization"
+        ]
+    },
+    {
+        "q": "What is cross-validation?",
+        "c": null,
+        "o": [
+            "Technique to assess how a model generalizes to new data",
+            "Method for feature scaling",
+            "An algorithm for clustering",
+            "A tool for data augmentation"
+        ]
+    },
+    {
+        "q": "Which cross-validation method uses all data for training and testing?",
+        "c": null,
+        "o": [
+            "Leave-One-Out",
+            "K-Fold",
+            "Stratified Split",
+            "Shuffle Split"
+        ]
+    },
+    {
+        "q": "What is K-fold cross-validation?",
+        "c": null,
+        "o": [
+            "Divides the data into K subsets for training and validation",
+            "A method for tuning hyperparameters",
+            "A method for feature selection",
+            "Algorithm for boosting"
+        ]
+    },
+    {
+        "q": "What does a confusion matrix display?",
+        "c": null,
+        "o": [
+            "True positives, false positives, true negatives, and false negatives",
+            "Precision and recall",
+            "Error rates",
+            "Learning rates"
+        ]
+    },
+    {
+        "q": "What is precision?",
+        "c": null,
+        "o": [
+            "True positives / (True positives + False positives)",
+            "True positives / (True positives + False negatives)",
+            "True negatives / (True negatives + False negatives)",
+            "False negatives / (True negatives + False positives)"
+        ]
+    },
+    {
+        "q": "Which metric measures the balance between precision and recall?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Accuracy",
+            "ROC-AUC",
+            "Specificity"
+        ]
+    },
+    {
+        "q": "What is recall?",
+        "c": null,
+        "o": [
+            "True positives / (True positives + False negatives)",
+            "True positives / (True positives + False positives)",
+            "False negatives / (False negatives + True positives)",
+            "True negatives / (True negatives + False negatives)"
+        ]
+    },
+    {
+        "q": "What does ROC stand for?",
+        "c": null,
+        "o": [
+            "Receiver Operating Characteristic",
+            "Random Overlap Curve",
+            "Regression Output Classifier",
+            "Residual Operating Class"
+        ]
+    },
+    {
+        "q": "What does the ROC curve plot?",
+        "c": null,
+        "o": [
+            "True positive rate vs. false positive rate",
+            "Precision vs. recall",
+            "Accuracy vs. error",
+            "Learning rate vs. epochs"
+        ]
+    },
+    {
+        "q": "What is AUC?",
+        "c": null,
+        "o": [
+            "Area under the ROC curve",
+            "Accuracy under the classifier",
+            "Area under confidence interval",
+            "Algorithm utility coefficient"
+        ]
+    },
+    {
+        "q": "Which metric should be used when class distribution is imbalanced?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Accuracy",
+            "Mean Squared Error",
+            "R-squared"
+        ]
+    },
+    {
+        "q": "Which metric penalizes false positives and false negatives equally?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Precision",
+            "Specificity",
+            "Mean Absolute Error"
+        ]
+    },
+    {
+        "q": "What is the goal of hyperparameter tuning?",
+        "c": null,
+        "o": [
+            "Optimize model performance",
+            "Train the model faster",
+            "Increase dataset size",
+            "Reduce overfitting"
+        ]
+    },
+    {
+        "q": "Which method is commonly used for hyperparameter tuning?",
+        "c": null,
+        "o": [
+            "Grid Search",
+            "Gradient Descent",
+            "Bagging",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "What is the difference between validation and test data?",
+        "c": null,
+        "o": [
+            "Validation is used to tune the model, test data is used for final evaluation",
+            "Validation is larger than test data",
+            "Validation is for overfitting detection, test data is for training",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Which technique can prevent overfitting?",
+        "c": null,
+        "o": [
+            "Regularization",
+            "Increasing model complexity",
+            "Early stopping",
+            "Cross-validation"
+        ]
+    },
+    {
+        "q": "Which regularization method adds the absolute value of weights as a penalty term?",
+        "c": null,
+        "o": [
+            "L1 regularization",
+            "L2 regularization",
+            "Dropout",
+            "Bagging"
+        ]
+    },
+    {
+        "q": "What is the purpose of the validation set?",
+        "c": null,
+        "o": [
+            "To tune hyperparameters",
+            "To train the model",
+            "To test the model",
+            "To reduce overfitting"
+        ]
+    },
+    {
+        "q": "What does early stopping do?",
+        "c": null,
+        "o": [
+            "Stops training when validation error increases",
+            "Stops training after all data is seen",
+            "Continues training until model converges",
+            "Stops model testing early"
+        ]
+    },
+    {
+        "q": "Which metric is most important for a medical diagnostic system?",
+        "c": null,
+        "o": [
+            "Recall",
+            "Accuracy",
+            "Precision",
+            "F1-score"
+        ]
+    },
+    {
+        "q": "Which type of error occurs when a model predicts a positive class incorrectly?",
+        "c": null,
+        "o": [
+            "False Positive",
+            "False Negative",
+            "True Positive",
+            "True Negative"
+        ]
+    },
+    {
+        "q": "What is model generalization?",
+        "c": null,
+        "o": [
+            "Model’s ability to perform well on unseen data",
+            "Model’s ability to memorize training data",
+            "Model’s ability to predict validation data",
+            "Model’s ability to adjust hyperparameters"
+        ]
+    },
+    {
+        "q": "Which metric measures error for regression problems?",
+        "c": null,
+        "o": [
+            "Mean Squared Error",
+            "F1-score",
+            "Accuracy",
+            "Precision"
+        ]
+    },
+    {
+        "q": "What is the purpose of a test set?",
+        "c": null,
+        "o": [
+            "Evaluate the final model performance",
+            "Tune model parameters",
+            "Train the model",
+            "Normalize data"
+        ]
+    },
+    {
+        "q": "Which of the following is a method to validate regression models?",
+        "c": null,
+        "o": [
+            "R-squared",
+            "Accuracy",
+            "F1-score",
+            "Confusion Matrix"
+        ]
+    },
+    {
+        "q": "What is bias in model evaluation?",
+        "c": null,
+        "o": [
+            "Difference between predicted and actual values",
+            "Model’s error on the training data",
+            "Error due to noise in data",
+            "Model’s complexity"
+        ]
+    },
+    {
+        "q": "Which technique is used to evaluate how well a model will perform on unseen data?",
+        "c": null,
+        "o": [
+            "Cross-validation",
+            "Clustering",
+            "Feature scaling",
+            "Random sampling"
+        ]
+    },
+    {
+        "q": "What is model validation in machine learning?",
+        "c": null,
+        "o": [
+            "Checking model performance on unseen data",
+            "Increasing model complexity",
+            "Removing outliers from data",
+            "Reducing dimensionality"
+        ]
+    },
+    {
+        "q": "What is the purpose of a confusion matrix?",
+        "c": null,
+        "o": [
+            "To visualize the performance of a classification model",
+            "To calculate regression errors",
+            "To balance class weights",
+            "To standardize the dataset"
+        ]
+    },
+    {
+        "q": "What does sensitivity measure in a model?",
+        "c": null,
+        "o": [
+            "True positive rate",
+            "True negative rate",
+            "False positive rate",
+            "False negative rate"
+        ]
+    },
+    {
+        "q": "What does specificity measure in a model?",
+        "c": null,
+        "o": [
+            "True negative rate",
+            "True positive rate",
+            "False negative rate",
+            "Accuracy"
+        ]
+    },
+    {
+        "q": "What does k represent in k-fold cross-validation?",
+        "c": null,
+        "o": [
+            "Number of subsets data is split into",
+            "Number of iterations",
+            "Number of epochs",
+            "Number of features used"
+        ]
+    },
+    {
+        "q": "In model evaluation, what is bias?",
+        "c": null,
+        "o": [
+            "Error introduced by approximating a real-world problem with a simpler model",
+            "Error caused by a model's inability to capture the data's complexity",
+            "Error caused by random fluctuations in the training data",
+            "Error due to the use of a noisy dataset"
+        ]
+    },
+    {
+        "q": "What is variance in the context of model evaluation?",
+        "c": null,
+        "o": [
+            "Error due to model’s sensitivity to small changes in the training data",
+            "Model's generalization ability",
+            "Difference between predicted and actual values",
+            "Measure of model’s complexity"
+        ]
+    },
+    {
+        "q": "What type of model evaluation involves splitting data into training, validation, and test sets?",
+        "c": null,
+        "o": [
+            "Hold-out validation",
+            "K-fold cross-validation",
+            "Bootstrap validation",
+            "Leave-one-out cross-validation"
+        ]
+    },
+    {
+        "q": "Which method is most commonly used for model evaluation on imbalanced datasets?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Accuracy",
+            "Mean Absolute Error",
+            "R-squared"
+        ]
+    },
+    {
+        "q": "What is the main drawback of the hold-out method?",
+        "c": null,
+        "o": [
+            "Less efficient use of the dataset",
+            "Leads to overfitting",
+            "Works poorly with large datasets",
+            "Increases computational complexity"
+        ]
+    },
+    {
+        "q": "Which performance metric considers both false positives and false negatives?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Accuracy",
+            "Specificity",
+            "Recall"
+        ]
+    },
+    {
+        "q": "Which validation technique uses subsets of data to avoid overfitting?",
+        "c": null,
+        "o": [
+            "Cross-validation",
+            "Bootstrapping",
+            "Feature scaling",
+            "Normalization"
+        ]
+    },
+    {
+        "q": "Which model evaluation technique randomly resamples data with replacement?",
+        "c": null,
+        "o": [
+            "Bootstrapping",
+            "K-fold cross-validation",
+            "Hold-out validation",
+            "Leave-one-out validation"
+        ]
+    },
+    {
+        "q": "What is the objective of cross-validation?",
+        "c": null,
+        "o": [
+            "To estimate how well the model will perform on unseen data",
+            "To reduce the size of the dataset",
+            "To improve the speed of model training",
+            "To minimize data preprocessing"
+        ]
+    },
+    {
+        "q": "Which of the following is true about precision?",
+        "c": null,
+        "o": [
+            "It is the ratio of true positives to all predicted positives",
+            "It is the ratio of true negatives to all actual negatives",
+            "It is the ratio of true positives to all actual positives",
+            "It is the ratio of false positives to true negatives"
+        ]
+    },
+    {
+        "q": "What is the role of a validation set in model training?",
+        "c": null,
+        "o": [
+            "To tune model hyperparameters",
+            "To train the model",
+            "To generate synthetic data",
+            "To reduce model variance"
+        ]
+    },
+    {
+        "q": "Which metric is most useful when classes in a dataset are imbalanced?",
+        "c": null,
+        "o": [
+            "ROC-AUC",
+            "Accuracy",
+            "Mean Absolute Error",
+            "Adjusted R-squared"
+        ]
+    },
+    {
+        "q": "What is the risk of using only training accuracy for model evaluation?",
+        "c": null,
+        "o": [
+            "Overfitting",
+            "Underfitting",
+            "Bias",
+            "Variance"
+        ]
+    },
+    {
+        "q": "What is the purpose of a learning curve?",
+        "c": null,
+        "o": [
+            "To show how model performance improves with more data",
+            "To show model loss after each epoch",
+            "To demonstrate how a model makes predictions",
+            "To compare different models"
+        ]
+    },
+    {
+        "q": "Which is true about the recall metric?",
+        "c": null,
+        "o": [
+            "It measures how many of the actual positives were predicted correctly",
+            "It measures how many of the predicted positives were correct",
+            "It evaluates model variance",
+            "It is used for regression tasks"
+        ]
+    },
+    {
+        "q": "What is stratified cross-validation?",
+        "c": null,
+        "o": [
+            "It maintains the class distribution across folds",
+            "It randomly shuffles data across folds",
+            "It increases model variance",
+            "It decreases the number of training folds"
+        ]
+    },
+    {
+        "q": "What is the difference between accuracy and F1-score?",
+        "c": null,
+        "o": [
+            "F1-score considers both precision and recall, accuracy does not",
+            "Accuracy measures error, F1-score measures true negatives",
+            "F1-score is for regression models, accuracy is for classification",
+            "F1-score is used when datasets are balanced"
+        ]
+    },
+    {
+        "q": "What does a low bias and high variance model indicate?",
+        "c": null,
+        "o": [
+            "Overfitting",
+            "Underfitting",
+            "Correct generalization",
+            "Model stability"
+        ]
+    },
+    {
+        "q": "What does the term 'regularization' mean in model training?",
+        "c": null,
+        "o": [
+            "Adding a penalty term to reduce model complexity",
+            "Increasing the model complexity",
+            "Introducing more features",
+            "Reducing the training time"
+        ]
+    },
+    {
+        "q": "Which of the following is a performance metric used in regression?",
+        "c": null,
+        "o": [
+            "Mean Squared Error",
+            "Precision",
+            "Accuracy",
+            "F1-score"
+        ]
+    },
+    {
+        "q": "Which evaluation metric can handle a trade-off between precision and recall?",
+        "c": null,
+        "o": [
+            "F1-score",
+            "Accuracy",
+            "ROC-AUC",
+            "Mean Absolute Error"
+        ]
+    },
+    {
+        "q": "What does the term 'model underfitting' mean?",
+        "c": null,
+        "o": [
+            "Model fails to capture the underlying pattern in the data",
+            "Model performs well on training but poorly on test data",
+            "Model performs equally well on training and test data",
+            "Model has too many parameters"
+        ]
+    },
+    {
+        "q": "What is the objective of using L2 regularization?",
+        "c": null,
+        "o": [
+            "To reduce overfitting by shrinking large model coefficients",
+            "To improve model speed by pruning features",
+            "To enhance recall over precision",
+            "To increase the dataset size"
+        ]
+    },
+    {
+        "q": "Which performance metric is best for a regression model?",
+        "c": null,
+        "o": [
+            "Mean Absolute Error",
+            "Precision",
+            "Recall",
+            "F1-score"
+        ]
+    },
+    {
+        "q": "What happens when a model is too complex?",
+        "c": null,
+        "o": [
+            "It may overfit the training data",
+            "It may underfit the training data",
+            "It will generalize better on test data",
+            "It will reduce bias"
+        ]
+    },
+    {
+        "q": "What is grid search used for?",
+        "c": null,
+        "o": [
+            "Hyperparameter tuning",
+            "Feature selection",
+            "Model evaluation",
+            "Cross-validation"
+        ]
+    },
+    {
+        "q": "What does the term 'model generalization' mean?",
+        "c": null,
+        "o": [
+            "Model's ability to perform well on unseen data",
+            "Model’s performance on training data",
+            "Model’s performance on validation data",
+            "Model’s ability to overfit"
+        ]
+    },
+    {
+        "q": "What does 'leave-one-out cross-validation' involve?",
+        "c": null,
+        "o": [
+            "Using one sample as a test set and the rest as the training set",
+            "Using a random subset as a test set",
+            "Splitting data into a large test set and small training set",
+            "Resampling data multiple times with replacement"
+        ]
+    }
+]
