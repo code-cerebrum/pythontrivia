@@ -1,22 +1,12 @@
 [
   {
-      "q": "ML 2?",
-      "c": "",
-      "o": [
-          "ML Ans",
-          "ML option1",
-          "ML option2",
-          "ML option3"
-      ]
-  },
-  {
-      "q": "ML Django2?",
-      "c": "",
-      "o": [
-          "ML ans2",
-          "ML IOption1 2",
-          "option2 2",
-          "option3 2"
-      ]
-  }
+    "q": "What will the following code snippet output for gradient computation using PyTorch?",
+    "c": "import torch\n\nx = torch.tensor(3.0, requires_grad=True)\ny = x ** 2 + 2 * x + 1\ny.backward()\nprint(x.grad)",
+    "o": [
+      "7.0",
+      "8.0",
+      "10.0",
+      "5.0"
+    ]
+}
 ]
