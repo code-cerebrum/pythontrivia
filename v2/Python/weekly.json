@@ -78,5 +78,65 @@
       "Option C",
       "Option D"
     ]
-  }
+  },
+  {
+    "q": "What will be the output of the following code that involves a closure and a default argument?",
+    "c": "\ndef create_multiplier(factor, values=[]):\n    def multiplier(x):\n        values.append(x * factor)\n        return values\n    return multiplier\n\nmult_by_2 = create_multiplier(2)\nprint(mult_by_2(3))\nprint(mult_by_2(4))\n",
+    "o": [
+    "[6] [6, 8]",
+    "[6] [8]",
+    "[6, 8]",
+    "[3, 4]"
+    ]
+    },
+    {
+    "q": "Requirements: Implement a function to find the longest palindromic substring. Parameters: s (str): Input string. Returns: str: Longest palindromic substring.",
+    "c": "\nA. def longest_palindrome(s):\n       if not s:\n           return ''\n       start, max_length = 0, 1\n       for i in range(1, len(s)):\n           # Check odd length palindromes\n           left, right = i - 1, i + 1\n           while left >= 0 and right < len(s) and s[left] == s[right]:\n               if right - left + 1 > max_length:\n                   start, max_length = left, right - left + 1\n               left -= 1\n               right += 1\n       return s[start:start + max_length]\n\nB. def longest_palindrome(s):\n       if not s:\n           return ''\n       longest = s[0]\n       for i in range(len(s)):\n           for j in range(i + 1, len(s)):\n               substring = s[i:j + 1]\n               if substring == substring[::-1] and len(substring) > len(longest):\n                   longest = substring\n       return longest\n\nC. def longest_palindrome(s):\n       if not s:\n           return ''\n       return max([s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j] == s[i:j][::-1]], key=len, default=s[0])\n\nD. def longest_palindrome(s):\n       if not s:\n           return ''\n       longest = ''\n       for i in range(len(s)):\n           left, right = i, i\n           while left >= 0 and right < len(s) and s[left] == s[right]:\n               left -= 1\n               right += 1\n           if right - left - 1 > len(longest):\n               longest = s[left + 1:right]\n       return longest\n",
+    "o": [
+    "Option D",
+    "Option A",
+    "Option B",
+    "Option C"
+    ]
+    },
+    {
+    "q": "What will be the output of this code involving a generator and list comprehension?",
+    "c": "\ndef gen_squares(n):\n    for i in range(n):\n        yield i * i\n\nsquares = [x for x in gen_squares(4)]\ng = gen_squares(4)\nresult = [next(g) for _ in range(2)] + squares\nprint(result)\n",
+    "o": [
+    "[0, 1, 0, 1, 4, 9]",
+    "[0, 1, 4, 9]",
+    "[0, 1, 0, 1, 4, 9, 16]",
+    "[0, 1]"
+    ]
+    },
+    {
+      "q": "What will be the output of this code involving decorators and function attributes?",
+      "c": "\ndef track_calls(func):\n    def wrapper(*args, **kwargs):\n        wrapper.calls += 1\n        return func(*args, **kwargs)\n    wrapper.calls = 0\n    return wrapper\n\n@track_calls\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n\nprint(fibonacci(4))\nprint(fibonacci.calls)\n",
+      "o": [
+      "3 9",
+      "3 5",
+      "3 15",
+      "3 4"
+      ]
+      },
+      {
+      "q": "Requirements: Implement a function to merge k sorted lists into one sorted list. Parameters: lists (list of lists): List of sorted integer lists. Returns: list: Single sorted list.",
+      "c": "\nA. from heapq import heappush, heappop\ndef merge_k_lists(lists):\n       if not lists:\n           return []\n       heap = []\n       for i, lst in enumerate(lists):\n           if lst:\n               heappush(heap, (lst[0], i, 0))\n       result = []\n       while heap:\n           val, list_idx, element_idx = heappop(heap)\n           result.append(val)\n           if element_idx + 1 < len(lists[list_idx]):\n               next_element = lists[list_idx][element_idx + 1]\n               heappush(heap, (next_element, list_idx, element_idx + 1))\n       return result\n\nB. def merge_k_lists(lists):\n       if not lists:\n           return []\n       result = []\n       for lst in lists:\n           result.extend(lst)\n       return sorted(result)\n\nC. def merge_k_lists(lists):\n       if not lists:\n           return []\n       result = lists[0]\n       for i in range(1, len(lists)):\n           temp = []\n           j, k = 0, 0\n           while j < len(result) and k < len(lists[i]):\n               if result[j] <= lists[i][k]:\n                   temp.append(result[j])\n                   j += 1\n               else:\n                   temp.append(lists[i][k])\n                   k += 1\n           temp.extend(result[j:])\n           temp.extend(lists[i][k:])\n           result = temp\n       return result\n\nD. def merge_k_lists(lists):\n       from itertools import chain\n       return sorted(chain(*lists)) if lists else []\n",
+      "o": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+      ]
+      },
+        {
+        "q": "What will be the output of this code involving metaclasses and class creation?",
+        "c": "\nclass UpperMeta(type):\n    def new(cls, name, bases, dct):\n        upper_dct = {k.upper(): v for k, v in dct.items()}\n        return super().new(cls, name, bases, upper_dct)\n\nclass MyClass(metaclass=UpperMeta):\n    x = 1\n    def say_hello(self):\n        return 'Hello'\n\nobj = MyClass()\nprint(obj.X)\nprint(obj.SAY_HELLO())\n",
+        "o": [
+        "1 Hello",
+        "AttributeError",
+        "1 SAY_HELLO",
+        "None Hello"
+        ]
+        }
 ]
