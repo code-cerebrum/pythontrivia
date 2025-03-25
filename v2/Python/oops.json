@@ -10,7 +10,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self):\n        self.b = 2\n\n    def display(self):\n        print(self.b)\n\nobj = B()\nobj.display()",
     "o": [
       "2",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.a)",
     "o": [
       "10",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.b)",
     "o": [
       "20",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __add__(self, other):\n        return self.a + other.a\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1 + obj2)",
     "o": [
       "30",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        if(self.a<other.a):\n            return True\n        else:\n            return False\n\nobj1 = A(10)\nobj2 = A(20)\nif(obj1<obj2):\n    print(\"obj1 is less than obj2\")\nelse:\n    print(\"obj1 is greater than or equal to obj2\")",
     "o": [
       "obj1 is less than obj2",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\nobj.display()",
     "o": [
       "10 20",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj1 = A(10)\nobj2 = B(20, 30)\nobj1.display()\nobj2.display()",
     "o": [
       "AttributeError",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nobj = A(10)\nprint(obj)",
     "o": [
       "10",
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1, obj2)",
     "o": [
       "10 20",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1 + obj2)",
     "o": [
       "30",
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\n    def __lt__(self, other):\n        if(self.a<other.a):\n            return True\n        else:\n            return False\n\nobj1 = A(10)\nobj2 = A(20)\nif(obj1<obj2):\n    print(\"obj1 is less than obj2\")\nelse:\n    print(\"obj1 is greater than or equal to obj2\")",
     "o": [
       "obj1 is less than obj2",
@@ -120,7 +120,1507 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code snippet?",
+    "c": "class Animal:\n    def speak(self):\n        return \"Some sound\"\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Bark\"\n\nd = Dog()\nprint(d.speak())",
+    "o": [
+      "Bark",
+      "Some sound",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python classes is true?",
+    "c": null,
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class is a built-in data type in Python",
+      "Classes in Python cannot have methods",
+      "A class cannot inherit from another class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"A\"\n\nclass B(A):\n    def show(self):\n        return \"B\"\n\nb = B()\nprint(b.show())",
+    "o": [
+      "B",
+      "A",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class in Python?",
+    "c": null,
+    "o": [
+      "class MyClass:\n    pass",
+      "def MyClass:\n    pass",
+      "class MyClass[]:\n    pass",
+      "class MyClass {}"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent constructor\")\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        print(\"Child constructor\")\n\nc = Child()",
+    "o": [
+      "Parent constructor\nChild constructor",
+      "Child constructor",
+      "Parent constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance in Python is correct?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes",
+      "Multiple inheritance is not allowed in Python",
+      "Python only supports single inheritance",
+      "Multiple inheritance requires special syntax using '&' operator"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"A\"\n\nclass B:\n    def show(self):\n        return \"B\"\n\nclass C(A, B):\n    pass\n\nc = C()\nprint(c.show())",
+    "o": [
+      "A",
+      "B",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is operator overloading in Python?",
+    "c": null,
+    "o": [
+      "Redefining the behavior of operators for user-defined types",
+      "Overloading an operator with multiple functions",
+      "Using multiple operators in a single expression",
+      "Using operators only within a class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Vector:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __add__(self, other):\n        return Vector(self.x + other.x, self.y + other.y)\n\nv1 = Vector(1, 2)\nv2 = Vector(3, 4)\nv3 = v1 + v2\nprint(v3.x, v3.y)",
+    "o": [
+      "4 6",
+      "1 2",
+      "3 4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to define the behavior of the '+' operator for a class?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__plus__",
+      "__sum__",
+      "__combine__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Base:\n    def __init__(self):\n        self.value = 10\n\nclass Derived(Base):\n    def __init__(self):\n        super().__init__()\n        self.value += 5\n\nd = Derived()\nprint(d.value)",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about constructors in Python is true?",
+    "c": null,
+    "o": [
+      "A constructor is a special method used to initialize an object",
+      "A constructor must always return a value",
+      "A constructor cannot take arguments",
+      "Python does not support constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"Class A\"\n\nclass B(A):\n    def display(self):\n        return \"Class B\"\n\nb = B()\nprint(b.show())",
+    "o": [
+      "Class A",
+      "Class B",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates method overriding?",
+    "c": null,
+    "o": [
+      "A subclass redefining a method of its parent class",
+      "Using multiple methods with the same name in a class",
+      "Using the same method name in two unrelated classes",
+      "A class defining multiple methods with different parameters"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        return \"A\"\n\nclass B(A):\n    def method(self):\n        return \"B\"\n\nclass C(B):\n    pass\n\nc = C()\nprint(c.method())",
+    "o": [
+      "B",
+      "A",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is called when an object is deleted using `del`?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__delete__",
+      "__destroy__",
+      "__remove__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent Constructor\")\n\nclass Child(Parent):\n    pass\n\nc = Child()",
+    "o": [
+      "Parent Constructor",
+      "Child Constructor",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance is true?",
+    "c": null,
+    "o": [
+      "A child class can inherit from more than one parent class",
+      "Python does not allow multiple inheritance",
+      "A class can only inherit from one parent class",
+      "Multiple inheritance can be achieved using the `implements` keyword"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        return \"A\"\n\nclass B(A):\n    def method(self):\n        return \"B\"\n\nclass C(A, B):\n    pass\n\nc = C()\nprint(c.method())",
+    "o": [
+      "Error",
+      "A",
+      "B",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines operator overloading?",
+    "c": null,
+    "o": [
+      "Using special methods to define custom behavior for operators",
+      "Using multiple operators in a single expression",
+      "Using an operator outside a class",
+      "Defining an operator inside a function"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __add__(self, other):\n        return \"Addition Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 + obj2)",
+    "o": [
+      "Addition Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used for overloading the multiplication operator (*) in Python?",
+    "c": null,
+    "o": [
+      "__mul__",
+      "__mult__",
+      "__times__",
+      "__multiply__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __str__(self):\n        return \"Object of class A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Object of class A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about inheritance is correct?",
+    "c": null,
+    "o": [
+      "A subclass inherits attributes and methods from its parent class",
+      "A class can inherit from multiple subclasses",
+      "A subclass cannot override a parent method",
+      "Inheritance is not supported in Python"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def show(self):\n        return \"Parent\"\n\nclass Child(Parent):\n    def show(self):\n        return \"Child\"\n\nobj = Child()\nprint(obj.show())",
+    "o": [
+      "Child",
+      "Parent",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to initialize an instance of a class?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__start__",
+      "__create__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    pass\n\nclass B(A):\n    pass\n\nprint(issubclass(B, A))",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python's multiple inheritance?",
+    "c": null,
+    "o": [
+      "Python resolves method resolution order (MRO) using the C3 linearization algorithm",
+      "Python does not support multiple inheritance",
+      "A class can inherit from only one parent class",
+      "Multiple inheritance can only be achieved using interfaces"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        return \"A\"\n\nclass B:\n    def method(self):\n        return \"B\"\n\nclass C(A, B):\n    pass\n\nc = C()\nprint(c.method())",
+    "o": [
+      "A",
+      "B",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes method overloading in Python?",
+    "c": null,
+    "o": [
+      "Python does not support method overloading in the traditional sense",
+      "Method overloading is achieved using function name overloading",
+      "Python supports method overloading using the `overload` keyword",
+      "Methods with the same name but different return types are overloaded"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the less than (`<`) operator in Python?",
+    "c": null,
+    "o": [
+      "__lt__",
+      "__less__",
+      "__compare__",
+      "__lthan__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __repr__(self):\n        return \"Instance of class A\"\n\nobj = A()\nprint(repr(obj))",
+    "o": [
+      "Instance of class A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the `super()` function?",
+    "c": null,
+    "o": [
+      "It allows a subclass to call a method from its parent class",
+      "It defines a new superclass for a class",
+      "It prevents method overriding in a subclass",
+      "It is used to delete a superclass"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent Constructor\")\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        print(\"Child Constructor\")\n\nc = Child()",
+    "o": [
+      "Parent Constructor\nChild Constructor",
+      "Child Constructor",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is called when an object is created?",
+    "c": null,
+    "o": [
+      "__new__",
+      "__create__",
+      "__init__",
+      "__call__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        return \"Method in A\"\n\nclass B(A):\n    def method(self):\n        return super().method() + \" and Method in B\"\n\nb = B()\nprint(b.method())",
+    "o": [
+      "Method in A and Method in B",
+      "Method in B",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python's `isinstance()` function?",
+    "c": null,
+    "o": [
+      "It checks if an object is an instance of a given class or subclass",
+      "It checks if a class is a subclass of another",
+      "It checks if an object is callable",
+      "It is used to compare two class instances"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class X:\n    pass\n\nclass Y:\n    pass\n\nclass Z(X, Y):\n    pass\n\nprint(issubclass(Z, (X, Y)))",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in Python?",
+    "c": null,
+    "o": [
+      "Using a single interface to represent different types",
+      "Using multiple classes for the same method",
+      "Overloading operators with multiple arguments",
+      "Having different methods with the same name in a single class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __call__(self, y):\n        return self.x + y\n\nobj = A(10)\nprint(obj(5))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the string representation of an object?",
+    "c": null,
+    "o": [
+      "__str__",
+      "__repr__",
+      "__print__",
+      "__format__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __getitem__(self, index):\n        return index * 2\n\nobj = A()\nprint(obj[3])",
+    "o": [
+      "6",
+      "3",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about method overriding?",
+    "c": null,
+    "o": [
+      "A subclass provides a new implementation of a method inherited from its parent class",
+      "A subclass prevents a parent method from being called",
+      "A parent class method cannot be overridden",
+      "A subclass must use `super()` to call a parent method"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"Class A\"\n\nclass B(A):\n    def show(self):\n        return \"Class B\"\n\nclass C(A):\n    def show(self):\n        return \"Class C\"\n\nclass D(B, C):\n    pass\n\nd = D()\nprint(d.show())",
+    "o": [
+      "Class B",
+      "Class C",
+      "Class A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the `len()` function?",
+    "c": null,
+    "o": [
+      "__len__",
+      "__size__",
+      "__count__",
+      "__length__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(5)\nobj2 = A(5)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a key characteristic of an abstract class?",
+    "c": null,
+    "o": [
+      "It cannot be instantiated and must be subclassed",
+      "It has no methods",
+      "It can only contain static methods",
+      "It cannot be inherited"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "from abc import ABC, abstractmethod\n\nclass A(ABC):\n    @abstractmethod\n    def show(self):\n        pass\n\nclass B(A):\n    def show(self):\n        return \"Implemented in B\"\n\nb = B()\nprint(b.show())",
+    "o": [
+      "Implemented in B",
+      "Error",
+      "None",
+      "Implemented in A"
+    ]
+  },
+  {
+    "q": "Which of the following is true about multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes",
+      "A class can only inherit from one parent class",
+      "Multiple inheritance is not supported in Python",
+      "A subclass cannot override multiple parent methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __add__(self, other):\n        return A(self.x + other.x)\n\na = A(10)\nb = A(20)\nc = a + b\nprint(c.x)",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about class methods?",
+    "c": null,
+    "o": [
+      "They take `cls` as the first parameter instead of `self`",
+      "They are defined using `@staticmethod`",
+      "They can only be called on an instance",
+      "They cannot modify class variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def greet(self):\n        return \"Hello from Parent\"\n\nclass Child(Parent):\n    def greet(self):\n        return super().greet() + \" and Child\"\n\nc = Child()\nprint(c.greet())",
+    "o": [
+      "Hello from Parent and Child",
+      "Hello from Parent",
+      "Hello from Child",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about `super()` is correct?",
+    "c": null,
+    "o": [
+      "It allows access to the parent class methods",
+      "It prevents method overriding",
+      "It is used to call static methods",
+      "It only works in single inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __mul__(self, other):\n        return A(self.x * other.x)\n\na = A(4)\nb = A(3)\nc = a * b\nprint(c.x)",
+    "o": [
+      "12",
+      "7",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation in Python?",
+    "c": null,
+    "o": [
+      "Restricting access to certain attributes and methods",
+      "Allowing all attributes to be public",
+      "Forcing all variables to be private",
+      "Preventing inheritance of a class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self):\n        self.__private = 10\n\na = A()\nprint(a.__private)",
+    "o": [
+      "Error",
+      "10",
+      "None",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of polymorphism in Python?",
+    "c": null,
+    "o": [
+      "Using the same method name in different classes",
+      "Defining multiple classes in a module",
+      "Using only one class in a program",
+      "Restricting access to instance variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"Class A\"\n\nclass B(A):\n    def show(self):\n        return \"Class B\"\n\ndef display(obj):\n    return obj.show()\n\na = A()\nb = B()\nprint(display(a))\nprint(display(b))",
+    "o": [
+      "Class A\nClass B",
+      "Class B\nClass A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT an advantage of OOP in Python?",
+    "c": null,
+    "o": [
+      "It makes code execution slower",
+      "It improves code reusability",
+      "It helps with modular programming",
+      "It allows for better data abstraction"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, value):\n        self.value = value\n\n    def __eq__(self, other):\n        return self.value == other.value\n\na = A(5)\nb = A(5)\nc = A(10)\nprint(a == b)\nprint(a == c)",
+    "o": [
+      "True\nFalse",
+      "False\nTrue",
+      "True\nTrue",
+      "False\nFalse"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class with multiple inheritance?",
+    "c": null,
+    "o": [
+      "class C(A, B): pass",
+      "class C(A & B): pass",
+      "class C(A - B): pass",
+      "class C(A * B): pass"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        return \"A\"\n\nclass B(A):\n    def show(self):\n        return \"B\"\n\nclass C(A):\n    def show(self):\n        return \"C\"\n\nclass D(B, C):\n    pass\n\nd = D()\nprint(d.show())",
+    "o": [
+      "B",
+      "C",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about method resolution order (MRO) in Python?",
+    "c": null,
+    "o": [
+      "Python follows the C3 linearization algorithm",
+      "Python searches for methods only in the immediate parent class",
+      "Python does not support method resolution order",
+      "Python always resolves methods in alphabetical order of class names"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Base:\n    def __init__(self):\n        print(\"Base Init\")\n\nclass Derived(Base):\n    def __init__(self):\n        super().__init__()\n        print(\"Derived Init\")\n\nobj = Derived()",
+    "o": [
+      "Base Init\nDerived Init",
+      "Derived Init\nBase Init",
+      "Base Init",
+      "Derived Init"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of operator overloading?",
+    "c": null,
+    "o": [
+      "Defining __add__() in a class to customize '+' operation",
+      "Defining multiple constructors in a class",
+      "Using functions with default arguments",
+      "Declaring attributes using private access specifiers"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __str__(self):\n        return \"Object of A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Object of A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes an abstract class in Python?",
+    "c": null,
+    "o": [
+      "A class that cannot be instantiated directly",
+      "A class that does not have any methods",
+      "A class that is always inherited",
+      "A class that can only contain static methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "from abc import ABC, abstractmethod\n\nclass AbstractClass(ABC):\n    @abstractmethod\n    def show(self):\n        pass\n\nclass ConcreteClass(AbstractClass):\n    def show(self):\n        return \"Implemented show method\"\n\nobj = ConcreteClass()\nprint(obj.show())",
+    "o": [
+      "Implemented show method",
+      "Error",
+      "None",
+      "Abstract method cannot be called"
+    ]
+  },
+  {
+    "q": "Which of the following best describes multiple inheritance?",
+    "c": null,
+    "o": [
+      "A class inheriting from more than one base class",
+      "A class containing multiple methods",
+      "A class calling multiple methods",
+      "A class that has more than one constructor"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    def __mul__(self, other):\n        return self.x * other.x\n\nobj1 = A(3)\nobj2 = A(4)\nprint(obj1 * obj2)",
+    "o": [
+      "12",
+      "7",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a private attribute in a Python class?",
+    "c": null,
+    "o": [
+      "self.__attribute = value",
+      "self._attribute = value",
+      "self.attribute = value",
+      "private self.attribute = value"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def display(self):\n        return \"Parent\"\n\nclass Child(Parent):\n    def display(self):\n        return super().display() + \" -> Child\"\n\nobj = Child()\nprint(obj.display())",
+    "o": [
+      "Parent -> Child",
+      "Child",
+      "Parent",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about class methods is correct?",
+    "c": null,
+    "o": [
+      "They are defined using @classmethod and take cls as their first parameter",
+      "They are called without using the class name",
+      "They must be implemented in every class",
+      "They are defined using @staticmethod and take self as their first parameter"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Test:\n    def __init__(self):\n        self.__value = 10\n\nobj = Test()\nprint(obj.__value)",
+    "o": [
+      "Error",
+      "10",
+      "None",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a static method?",
+    "c": null,
+    "o": [
+      "@staticmethod\ndef method_name():\n    pass",
+      "@classmethod\ndef method_name(cls):\n    pass",
+      "def method_name(self):\n    pass",
+      "static def method_name():\n    pass"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    def __gt__(self, other):\n        return self.x > other.x\n\nobj1 = A(10)\nobj2 = A(5)\nprint(obj1 > obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python's multiple inheritance?",
+    "c": null,
+    "o": [
+      "It follows the C3 linearization algorithm to determine method resolution order",
+      "Python does not support multiple inheritance",
+      "A class can inherit from at most two base classes",
+      "Method resolution order always follows the order of class definition"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Base:\n    def show(self):\n        return \"Base\"\n\nclass Derived1(Base):\n    def show(self):\n        return \"Derived1\"\n\nclass Derived2(Base):\n    def show(self):\n        return \"Derived2\"\n\nclass Final(Derived1, Derived2):\n    pass\n\nobj = Final()\nprint(obj.show())",
+    "o": [
+      "Derived1",
+      "Derived2",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator overloading is correct?",
+    "c": null,
+    "o": [
+      "Operator overloading allows custom behavior for built-in operators when used with user-defined classes",
+      "Operator overloading changes Python’s built-in operators globally",
+      "Only arithmetic operators can be overloaded",
+      "Operator overloading is enabled by default for all classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(5)\nobj2 = A(5)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to access a parent class method in Python?",
+    "c": null,
+    "o": [
+      "super().method_name()",
+      "Parent.method_name()",
+      "self.method_name()",
+      "base.method_name()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        self.value = 10\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.value += 5\n\nobj = Child()\nprint(obj.value)",
+    "o": [
+      "15",
+      "10",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about abstract classes is correct?",
+    "c": null,
+    "o": [
+      "An abstract class cannot be instantiated directly",
+      "An abstract class must have at least one implemented method",
+      "All methods of an abstract class must be abstract",
+      "Abstract classes do not support inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "from abc import ABC, abstractmethod\n\nclass AbstractClass(ABC):\n    @abstractmethod\n    def method(self):\n        pass\n\nclass ConcreteClass(AbstractClass):\n    def method(self):\n        return \"Implemented method\"\n\nobj = ConcreteClass()\nprint(obj.method())",
+    "o": [
+      "Implemented method",
+      "Error",
+      "None",
+      "Abstract method called"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class-level variable in Python?",
+    "c": null,
+    "o": [
+      "class A:\n    class_variable = 10",
+      "class A:\n    def __init__(self):\n        self.class_variable = 10",
+      "class A:\n    def class_variable(self):\n        return 10",
+      "class A:\n    static class_variable = 10"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        return \"Method from A\"\n\nclass B(A):\n    def method(self):\n        return \"Method from B\"\n\nclass C(A):\n    def method(self):\n        return \"Method from C\"\n\nclass D(B, C):\n    pass\n\nobj = D()\nprint(obj.method())",
+    "o": [
+      "Method from B",
+      "Method from C",
+      "Method from A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to initialize an object in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__del__",
+      "__call__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    def __repr__(self):\n        return f\"A({self.x})\"\n\nobj = A(5)\nprint(obj)",
+    "o": [
+      "A(5)",
+      "5",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about method overriding is correct?",
+    "c": null,
+    "o": [
+      "Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its parent class",
+      "Method overriding allows a subclass to define new methods that do not exist in the parent class",
+      "Method overriding requires the parent method to be explicitly deleted first",
+      "Method overriding applies only to static methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __add__(self, other):\n        return \"Addition Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 + obj2)",
+    "o": [
+      "Addition Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes",
+      "Python does not support multiple inheritance",
+      "A child class can only inherit from a single parent class",
+      "Multiple inheritance is allowed only for built-in classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        print(\"Class A\")\n\nclass B(A):\n    def show(self):\n        print(\"Class B\")\n        super().show()\n\nobj = B()\nobj.show()",
+    "o": [
+      "Class B\nClass A",
+      "Class A\nClass B",
+      "Class B",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the behavior of the '==' operator?",
+    "c": null,
+    "o": [
+      "__eq__",
+      "__add__",
+      "__lt__",
+      "__cmp__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __mul__(self, other):\n        return \"Multiplication Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 * obj2)",
+    "o": [
+      "Multiplication Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the role of the '__str__' method?",
+    "c": null,
+    "o": [
+      "Used to return a string representation of an object",
+      "Used to initialize an object",
+      "Used to compare two objects",
+      "Used to delete an object"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent Constructor\")\n\nclass Child(Parent):\n    def __init__(self):\n        print(\"Child Constructor\")\n        super().__init__()\n\nobj = Child()",
+    "o": [
+      "Child Constructor\nParent Constructor",
+      "Parent Constructor\nChild Constructor",
+      "Child Constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about class methods in Python?",
+    "c": null,
+    "o": [
+      "Class methods take the class as their first parameter",
+      "Class methods can only be used to modify instance attributes",
+      "Class methods cannot access class attributes",
+      "Class methods must be defined outside the class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __call__(self):\n        return \"Object Called\"\n\nobj = A()\nprint(obj())",
+    "o": [
+      "Object Called",
+      "Error",
+      "None",
+      "Method Not Found"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the '__del__' method?",
+    "c": null,
+    "o": [
+      "Called when an object is about to be destroyed",
+      "Used to initialize an object",
+      "Used to define string representation of an object",
+      "Used to overload the subtraction operator"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(5)\nobj2 = A(5)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of an abstract class in Python?",
+    "c": null,
+    "o": [
+      "It cannot be instantiated",
+      "It must have only concrete methods",
+      "It cannot have instance variables",
+      "It does not support inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    pass\n\nobj = B()\nobj.display()",
+    "o": [
+      "A",
+      "Error",
+      "B",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to create an instance of a class without calling its constructor?",
+    "c": null,
+    "o": [
+      "__new__",
+      "__init__",
+      "__call__",
+      "__del__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Base:\n    def show(self):\n        print(\"Base class\")\n\nclass Derived(Base):\n    def show(self):\n        print(\"Derived class\")\n\nobj = Derived()\nobj.show()",
+    "o": [
+      "Derived class",
+      "Base class",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about instance methods in Python?",
+    "c": null,
+    "o": [
+      "They operate on instance attributes and take 'self' as the first parameter",
+      "They can only modify class attributes",
+      "They cannot access instance attributes",
+      "They are defined using the @staticmethod decorator"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __repr__(self):\n        return \"Instance of A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Instance of A",
+      "Error",
+      "None",
+      "Object"
+    ]
+  },
+  {
+    "q": "Which method is called automatically when an object is created?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__del__",
+      "__call__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A constructor\")\n\nclass B(A):\n    def __init__(self):\n        print(\"B constructor\")\n        super().__init__()\n\nobj = B()",
+    "o": [
+      "B constructor\nA constructor",
+      "A constructor\nB constructor",
+      "B constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of operator overloading?",
+    "c": null,
+    "o": [
+      "Defining __add__ to change behavior of '+'",
+      "Using += to update a variable",
+      "Using if-else conditions",
+      "Using the in keyword for membership testing"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def show(self):\n        print(\"Parent class\")\n\nclass Child(Parent):\n    def show(self):\n        print(\"Child class\")\n\nobj = Child()\nobj.show()",
+    "o": [
+      "Child class",
+      "Parent class",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance in Python is correct?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes",
+      "Python does not support multiple inheritance",
+      "A child class can inherit only from a single parent class",
+      "Multiple inheritance leads to automatic method resolution without issues"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        print(\"A method\")\n\nclass B(A):\n    def method(self):\n        print(\"B method\")\n        super().method()\n\nobj = B()\nobj.method()",
+    "o": [
+      "B method\nA method",
+      "A method\nB method",
+      "B method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the multiplication operator (*) in Python?",
+    "c": null,
+    "o": [
+      "__mul__",
+      "__add__",
+      "__sub__",
+      "__div__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, value):\n        self.value = value\n    \n    def __add__(self, other):\n        return A(self.value + other.value)\n\nobj1 = A(10)\nobj2 = A(20)\nresult = obj1 + obj2\nprint(result.value)",
+    "o": [
+      "30",
+      "1020",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the `super()` function is true?",
+    "c": null,
+    "o": [
+      "It allows access to the parent class methods",
+      "It can only be used in the constructor",
+      "It replaces the need for inheritance",
+      "It must be explicitly called with the parent class name"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Base:\n    def __init__(self):\n        print(\"Base constructor\")\n\nclass Derived1(Base):\n    def __init__(self):\n        print(\"Derived1 constructor\")\n        super().__init__()\n\nclass Derived2(Derived1):\n    def __init__(self):\n        print(\"Derived2 constructor\")\n        super().__init__()\n\nobj = Derived2()",
+    "o": [
+      "Derived2 constructor\nDerived1 constructor\nBase constructor",
+      "Base constructor\nDerived1 constructor\nDerived2 constructor",
+      "Derived2 constructor\nBase constructor",
+      "Derived1 constructor\nDerived2 constructor"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of method overriding?",
+    "c": null,
+    "o": [
+      "Defining the same method in a child class as in the parent class",
+      "Using the same method name but different parameter counts in the same class",
+      "Using a method inside another method",
+      "Calling a method from another method using `self`"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __str__(self):\n        return \"Instance of A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Instance of A",
+      "Error",
+      "None",
+      "Object"
+    ]
+  },
+  {
+    "q": "Which special method is used to implement the 'len()' function for a class?",
+    "c": null,
+    "o": [
+      "__len__",
+      "__size__",
+      "__count__",
+      "__str__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def display(self):\n        print(\"A class method\")\n\nclass B(A):\n    pass\n\nobj = B()\nobj.display()",
+    "o": [
+      "A class method",
+      "B class method",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python classes is correct?",
+    "c": null,
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class is an instance of an object",
+      "A class cannot contain methods",
+      "A class must always have a constructor"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(10)\nobj2 = A(10)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance is FALSE?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes without any issues",
+      "Python supports multiple inheritance",
+      "Method resolution order (MRO) determines the order of method lookup",
+      "The super() function can be used to access methods from parent classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        print(\"A class\")\n\nclass B:\n    def show(self):\n        print(\"B class\")\n\nclass C(A, B):\n    pass\n\nobj = C()\nobj.show()",
+    "o": [
+      "A class",
+      "B class",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the 'greater than' (>) operator in Python?",
+    "c": null,
+    "o": [
+      "__gt__",
+      "__lt__",
+      "__eq__",
+      "__ge__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent constructor\")\n\nclass Child(Parent):\n    def __init__(self):\n        print(\"Child constructor\")\n        super().__init__()\n\nobj = Child()",
+    "o": [
+      "Child constructor\nParent constructor",
+      "Parent constructor\nChild constructor",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an abstract class in Python?",
+    "c": null,
+    "o": [
+      "Using the 'ABC' module and defining at least one abstract method",
+      "Defining a class without methods",
+      "A class with only static methods",
+      "A class that cannot have child classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "from abc import ABC, abstractmethod\n\nclass A(ABC):\n    @abstractmethod\n    def display(self):\n        pass\n\nclass B(A):\n    def display(self):\n        print(\"B class implementation\")\n\nobj = B()\nobj.display()",
+    "o": [
+      "B class implementation",
+      "Error",
+      "None",
+      "Abstract class cannot be instantiated"
+    ]
+  },
+  {
+    "q": "Which special method is used to delete an object in Python?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__remove__",
+      "__delete__",
+      "__destroy__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A constructor\")\n\nclass B(A):\n    def __init__(self):\n        print(\"B constructor\")\n        super().__init__()\n\nclass C(B):\n    def __init__(self):\n        print(\"C constructor\")\n        super().__init__()\n\nobj = C()",
+    "o": [
+      "C constructor\nB constructor\nA constructor",
+      "A constructor\nB constructor\nC constructor",
+      "B constructor\nA constructor\nC constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python operator overloading is correct?",
+    "c": null,
+    "o": [
+      "Operator overloading allows operators to have user-defined meanings for custom classes",
+      "Python does not support operator overloading",
+      "Operators can only be overloaded for numeric types",
+      "Overloading operators requires modifying the Python interpreter"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __str__(self):\n        return \"Instance of A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Instance of A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to overload the 'addition' (+) operator in Python?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__sum__",
+      "__plus__",
+      "__append__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def method(self):\n        print(\"A method\")\n\nclass B(A):\n    def method(self):\n        print(\"B method\")\n        super().method()\n\nobj = B()\nobj.method()",
+    "o": [
+      "B method\nA method",
+      "A method\nB method",
+      "B method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one base class",
+      "Multiple inheritance is not allowed in Python",
+      "Only one method from the first inherited class is accessible",
+      "Python does not resolve conflicts in multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A constructor\")\n\nclass B:\n    def __init__(self):\n        print(\"B constructor\")\n\nclass C(A, B):\n    pass\n\nobj = C()",
+    "o": [
+      "A constructor",
+      "B constructor",
+      "A constructor\nB constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to override the 'less than' (<) operator in Python?",
+    "c": null,
+    "o": [
+      "__lt__",
+      "__gt__",
+      "__le__",
+      "__ge__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __repr__(self):\n        return \"Object of A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Object of A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about method resolution order (MRO) in Python is correct?",
+    "c": null,
+    "o": [
+      "MRO determines the order in which base classes are searched when executing a method",
+      "MRO does not apply in multiple inheritance",
+      "Python does not follow a specific method resolution order",
+      "MRO is defined only for single inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def show(self):\n        print(\"A class method\")\n\nclass B(A):\n    def show(self):\n        print(\"B class method\")\n\nclass C(A):\n    def show(self):\n        print(\"C class method\")\n\nclass D(B, C):\n    pass\n\nobj = D()\nobj.show()",
+    "o": [
+      "B class method",
+      "C class method",
+      "A class method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the string representation of an object for debugging purposes?",
+    "c": null,
+    "o": [
+      "__repr__",
+      "__str__",
+      "__debug__",
+      "__print__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to inherit from a class in Python?",
+    "c": null,
+    "o": [
+      "class B(A):",
+      "class B -> A:",
+      "class B inherit A:",
+      "class B extends A:"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    def __init__(self):\n        self.value = 10\n\n    def __call__(self, x):\n        return self.value + x\n\nobj = A()\nprint(obj(5))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to initialize an object in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__start__",
+      "__object__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class A:\n    class_variable = 100\n\nobj1 = A()\nobj2 = A()\nobj1.class_variable = 200\nprint(obj2.class_variable)",
+    "o": [
+      "100",
+      "200",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes method overriding?",
+    "c": null,
+    "o": [
+      "Redefining a method in the derived class that is already defined in the base class",
+      "Defining multiple methods with the same name in the same class",
+      "Using the same method name but with different parameters",
+      "A method that is used to overload operators"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __getitem__(self, index):\n        return index * 2\n\nobj = A()\nprint(obj[5])",
+    "o": [
+      "10",
+      "5",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to create an abstract method in Python?",
+    "c": null,
+    "o": [
+      "Using @abstractmethod decorator from abc module",
+      "Using the keyword 'abstract' before the method name",
+      "Defining a method with empty parentheses",
+      "Prefixing the method name with double underscore (__)"
+    ]
+  },  
+  {
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B:\n    def __init__(self, b):\n        self.b = b\n\n    def __str__(self):\n        return str(self.b)\n\n    def __add__(self, other):\n        return self.b + other.b\n\nobj1 = A(10)\nobj2 = B(20)\nprint(obj1 + obj2)",
     "o": [
       "TypeError",
@@ -130,7 +1630,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __str__(self):\n        return A.__str__(self) + ' ' + str(self.b)\n\nobj = B(10, 20)\nprint(obj)",
     "o": [
       "10 20",
@@ -140,7 +1640,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __str__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __str__(self):\n        return A.__str__(self) + ' ' + str(self.b)\n\nclass C(B):\n    def __init__(self, a, b, c):\n        B.__init__(self, a, b)\n        self.c = c\n\n    def __str__(self):\n        return B.__str__(self) + ' ' + str(self.c)\n\nobj = C(10, 20, 30)\nprint(obj)",
     "o": [
       "10 20 30",
@@ -150,7 +1650,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj1 = A(10)\nobj2 = B(20, 30)\nobj1.display()\nobj2.display()",
     "o": [
       "10, 20 30",
@@ -160,7 +1660,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\ndef show(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(20, 30)\nshow(obj1)\nshow(obj2)",
     "o": [
       "10, 20 30",
@@ -170,7 +1670,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        return self.a < other.a\n\nclass B:\n    def __init__(self, b):\n        self.b = b\n\n    def __lt__(self, other):\n        return self.b < other.b\n\nobj1 = A(10)\nobj2 = A(20)\nobj3 = B(10)\nobj4 = B(20)\n\nprint(obj1 < obj2)\nprint(obj3 < obj4)",
     "o": [
       "True True",
@@ -180,7 +1680,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __lt__(self, other):\n        return self.a < other.a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def __lt__(self, other):\n        return self.b < other.b\n\nobj1 = A(10)\nobj2 = A(20)\nobj3 = B(10, 30)\nobj4 = B(20, 20)\n\nprint(obj1 < obj2)\nprint(obj3 < obj4)",
     "o": [
       "True False",
@@ -190,7 +1690,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nobj = B(10, 20)\nprint(obj.a, obj.b)",
     "o": [
       "10 20",
@@ -200,7 +1700,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj = C(10, 20, 30)\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "10 20 30",
@@ -210,7 +1710,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj = C(10, 20, 30)\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
     "o": [
       "True True True",
@@ -220,7 +1720,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def __str__(self):\n        return str(self.a) + \" \" + str(self.b) + \" \" + str(self.c)\n\nobj = C(10, 20, 30)\nprint(obj)",
     "o": [
       "\"10 20 30\"",
@@ -240,7 +1740,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(isinstance(obj1, A))\nprint(isinstance(obj1, B))\nprint(isinstance(obj1, C))\n\nprint(isinstance(obj2, A))\nprint(isinstance(obj2, B))\nprint(isinstance(obj2, C))\n\nprint(isinstance(obj3, A))\nprint(isinstance(obj3, B))\nprint(isinstance(obj3, C))",
     "o": [
       "True False False True True False True True True",
@@ -250,7 +1750,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfun(obj1)\nfun(obj2)\nfun(obj3)",
     "o": [
       "A B C",
@@ -260,7 +1760,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfor obj in [obj1, obj2, obj3]:\n    fun(obj)",
     "o": [
       "A B C",
@@ -270,7 +1770,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
     "o": [
       "True True True",
@@ -280,7 +1780,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\ndef fun(obj):\n    obj.display()\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nfor obj in [obj1, obj2, obj3]:\n    fun(obj)",
     "o": [
       "A B C",
@@ -290,7 +1790,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
     "o": [
       "True True True",
@@ -300,7 +1800,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nobj1.display()\nobj2.display()\nobj3.display()",
     "o": [
       "A B C",
@@ -310,7 +1810,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(isinstance(obj1, C))\nprint(isinstance(obj2, A))\nprint(isinstance(obj3, B))",
     "o": [
       "False True True",
@@ -330,7 +1830,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj = C(10, 20, 30)\n\nprint(isinstance(obj, A))\nprint(isinstance(obj, B))\nprint(isinstance(obj, C))",
     "o": [
       "True True True",
@@ -340,7 +1840,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(\"A\")\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(\"B\")\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(\"C\")\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nprint(obj1.a, obj2.a, obj2.b, obj3.a, obj3.b, obj3.c)",
     "o": [
       "10 10 20 10 20 30",
@@ -350,7 +1850,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj = C(10, 20, 30)\n\nobj.display()",
     "o": [
       "10 20 30",
@@ -360,7 +1860,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj = C(10, 20, 30)\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "10 20 30",
@@ -380,7 +1880,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(B):\n    def __init__(self, a, b, c):\n        super().__init__(a, b)\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c)\n\nobj1 = A(10)\nobj2 = B(10, 20)\nobj3 = C(10, 20, 30)\n\nobj1.display()\nobj2.display()\nobj3.display()",
     "o": [
       "10, 10, 20, 10, 20, 30",
@@ -390,7 +1890,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        B.__init__(self, a, b)\n        C.__init__(self, a, c)\n        self.d = d\n\n    def display(self):\n        print(self.a, self.b, self.c, self.d)\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
     "o": [
       "TypeError: C.__init__() missing 1 required positional argument: 'c'",
@@ -400,7 +1900,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        B.__init__(self, a, b)\n        C.__init__(self, a, c)\n        self.d = d\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
     "o": [
       "TypeError: C.__init__() missing 1 required positional argument: 'c'",
@@ -410,7 +1910,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.a = 2\n\nobj = B()\nobj.display()",
     "o": [
       "2",
@@ -430,7 +1930,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def display(self):\n        print(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nclass C(A):\n    def __init__(self, a, c):\n        super().__init__(a)\n        self.c = c\n\nclass D(B, C):\n    def __init__(self, a, b, c, d):\n        super().__init__(a, b)\n        self.d = d\n        self.c = c\n\n    def display(self):\n        print(self.a, self.b, self.c, self.d)\n\nobj = D(10, 20, 30, 40)\n\nobj.display()",
     "o": [
       "TypeError: C.__init__() missing 1 required positional argument: 'c'",
@@ -440,7 +1940,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nobj1 = A()\nobj2 = B()\n\nprint(isinstance(obj1, A))\nprint(isinstance(obj2, B))\nprint(isinstance(obj2, A))",
     "o": [
       "True True True",
@@ -450,7 +1950,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nobj = B()\n\nprint(obj.a)",
     "o": [
       "1",
@@ -460,7 +1960,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nobj = B()\n\nprint(obj.b)",
     "o": [
       "2",
@@ -470,7 +1970,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\n\nobj.display()",
     "o": [
       "10 20",
@@ -480,7 +1980,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\nclass B(A):\n    def __init__(self, a, b):\n        A.__init__(self, a)\n        self.b = b\n\n    def display(self):\n        print(self.a, self.b)\n\nobj = B(10, 20)\n\nprint(isinstance(obj, A))",
     "o": [
       "True",
@@ -490,7 +1990,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    pass\n\nclass B(A):\n    pass\n\nclass C(A):\n    pass\n\nclass D(B, C):\n    pass\n\nprint(issubclass(D, A))",
     "o": [
       "True",
@@ -500,7 +2000,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "1 2 3",
@@ -510,7 +2010,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass Complex:\n    def __init__(self, real, imag):\n        self.real = real\n        self.imag = imag\n\n    def __add__(self, other):\n        return Complex(self.real + other.real, self.imag + other.imag)\n\n    def __str__(self):\n        return \"{}+{}i\".format(self.real, self.imag)\n\nc1 = Complex(1, 2)\nc2 = Complex(2, 3)\n\nprint(c1 + c2)",
     "o": [
       "3+5i",
@@ -530,7 +2030,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass Complex:\n    def __init__(self, real, imag):\n        self.real = real\n        self.imag = imag\n\n    def __eq__(self, other):\n        return self.real == other.real and self.imag == other.imag\n\nc1 = Complex(1, 2)\nc2 = Complex(2, 3)\n\nprint(c1 == c2)",
     "o": [
       "False",
@@ -540,7 +2040,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "AttributeError: 'C' object has no attribute 'a'",
@@ -550,7 +2050,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "AttributeError: 'C' object has no attribute 'a'",
@@ -560,7 +2060,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "1 2 3",
@@ -570,7 +2070,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.b = 2\n\nclass C(B, A):\n    def __init__(self):\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "1 2 3",
@@ -580,7 +2080,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self):\n        self.a = 1\n\nclass B:\n    def __init__(self):\n        self.b = 2\n\nclass C(A, B):\n    def __init__(self):\n        super().__init__()\n        super().__init__()\n        self.c = 3\n\nobj = C()\n\nprint(obj.a, obj.b, obj.c)",
     "o": [
       "AttributeError: 'C' object has no attribute 'b'",
@@ -590,7 +2090,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
     "o": [
       "TypeError: unsupported operand type(s) for +: 'A' and 'A'",
@@ -600,7 +2100,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return A(self.a + other.a)\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
     "o": [
       "3",
@@ -610,7 +2110,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a3)",
     "o": [
       "3",
@@ -620,7 +2120,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __add__(self, other):\n        return self.a + other.a\n\na1 = A(1)\na2 = A(2)\na3 = a1 + a2\n\nprint(a1 + a2 + a3)",
     "o": [
       "6",
@@ -630,7 +2130,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __eq__(self, other):\n        if isinstance(other, A):\n            return self.a == other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 == a2)\nprint(a1 == 1)",
     "o": [
       "False False",
@@ -640,7 +2140,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __gt__(self, other):\n        if isinstance(other, A):\n            return self.a > other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 > a2)\nprint(a2 > a1)",
     "o": [
       "False True",
@@ -650,7 +2150,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __lt__(self, other):\n        if isinstance(other, A):\n            return self.a < other.a\n        return False\n\na1 = A(1)\na2 = A(2)\n\nprint(a1 < a2)\nprint(a2 < a1)",
     "o": [
       "True False",
@@ -660,7 +2160,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\na = A(1)\nb = B(2, 3)\n\nprint(isinstance(a, A))\nprint(isinstance(b, A))\nprint(isinstance(a, B))\nprint(isinstance(b, B))",
     "o": [
       "True True False True",
@@ -670,7 +2170,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\na = A(1)\nb = B(2, 3)\n\nprint(issubclass(B, A))\nprint(issubclass(A, B))",
     "o": [
       "True False",
@@ -680,7 +2180,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nprint(hasattr(b, 'a'))\nprint(hasattr(b, 'b'))",
     "o": [
       "True True",
@@ -690,7 +2190,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nprint(getattr(b, 'a'))\nprint(getattr(b, 'b'))\nprint(getattr(b, 'c', 3))",
     "o": [
       "1 2 3",
@@ -700,7 +2200,7 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\nclass B(A):\n    def __init__(self, a, b):\n        super().__init__(a)\n        self.b = b\n\nb = B(1, 2)\n\nsetattr(b, 'a', 3)\nsetattr(b, 'c', 4)\n\nprint(b.a, b.b, b.c)",
     "o": [
       "3 2 4",
@@ -710,13 +2210,2393 @@
     ]
   },
   {
-    "q": "\nWhat is the output of the following code?",
+    "q": "What is the output of the following code?",
     "c": "\nclass A:\n    def __init__(self, a):\n        self.a = a\n\n    def __repr__(self):\n        return str(self.a)\n\n    def __call__(self, b):\n        return self.a + b\n\na = A(1)\n\nprint(a(2))",
     "o": [
       "3",
       "2",
       "TypeError: 'A' object is not callable",
       "AttributeError: 'A' object has no attribute 'call'"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __add__(self, other):\n        return self.x + other.x\n\nobj1 = A(10)\nobj2 = A(20)\nprint(obj1 + obj2)",
+    "o": [
+      "30",
+      "1020",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes multiple inheritance?",
+    "c": null,
+    "o": [
+      "A class inheriting from more than one class",
+      "A class inheriting multiple methods from the same class",
+      "A class that cannot be inherited further",
+      "A function calling multiple inherited classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        return \"A method\"\n\nclass B(A):\n    def display(self):\n        return \"B method\"\n\nclass C(A):\n    def display(self):\n        return \"C method\"\n\nclass D(B, C):\n    pass\n\nobj = D()\nprint(obj.display())",
+    "o": [
+      "B method",
+      "C method",
+      "A method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the behavior of the 'len()' function when applied to an object?",
+    "c": null,
+    "o": [
+      "__len__",
+      "__size__",
+      "__count__",
+      "__measure__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        self.data = [1, 2, 3, 4]\n\n    def __getitem__(self, index):\n        return self.data[index]\n\nobj = A()\nprint(obj[2])",
+    "o": [
+      "3",
+      "2",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about class methods in Python?",
+    "c": null,
+    "o": [
+      "They are defined using @classmethod and take cls as the first argument",
+      "They are the same as static methods",
+      "They are defined using @staticmethod and take self as the first argument",
+      "They cannot access class variables"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"String Representation\"\n\nobj = A()\nprint(str(obj))",
+    "o": [
+      "String Representation",
+      "Error",
+      "Object Address",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of operator overloading?",
+    "c": null,
+    "o": [
+      "Defining __add__() in a class to change the behavior of '+' operator",
+      "Using the '+' operator with integers",
+      "Using the '*' operator for multiplication",
+      "Defining multiple functions with the same name"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __mul__(self, other):\n        return self.x * other.x\n\nobj1 = A(3)\nobj2 = A(4)\nprint(obj1 * obj2)",
+    "o": [
+      "12",
+      "34",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to delete an object in Python?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__delete__",
+      "__destroy__",
+      "__remove__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        return \"Class A\"\n\nclass B(A):\n    def show(self):\n        return \"Class B\"\n\nclass C(A):\n    def show(self):\n        return \"Class C\"\n\nclass D(B, C):\n    pass\n\nobj = D()\nprint(obj.show())",
+    "o": [
+      "Class B",
+      "Class C",
+      "Class A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python classes is true?",
+    "c": null,
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class is an instance of an object",
+      "A class is used only for inheritance",
+      "A class cannot have methods"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(5)\nobj2 = A(5)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to create a new instance of a class?",
+    "c": null,
+    "o": [
+      "__new__",
+      "__create__",
+      "__init__",
+      "__build__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A constructor\")\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        print(\"B constructor\")\n\nobj = B()",
+    "o": [
+      "A constructor\nB constructor",
+      "B constructor\nA constructor",
+      "A constructor",
+      "B constructor"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the term 'encapsulation' in OOP?",
+    "c": null,
+    "o": [
+      "Restricting direct access to some of an object's components",
+      "Combining two classes into one",
+      "Defining multiple methods with the same name",
+      "Allowing a class to inherit multiple parent classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, value):\n        self.__value = value\n\n    def get_value(self):\n        return self.__value\n\nobj = A(10)\nprint(obj.get_value())",
+    "o": [
+      "10",
+      "Error",
+      "None",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a static method in Python?",
+    "c": null,
+    "o": [
+      "Using @staticmethod decorator",
+      "Using @class_method decorator",
+      "Using @static decorator",
+      "Using @classmethod decorator"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def __init__(self):\n        self.value = 5\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.value += 5\n\nobj = Child()\nprint(obj.value)",
+    "o": [
+      "10",
+      "5",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in Python?",
+    "c": null,
+    "o": [
+      "The ability of different classes to be treated as instances of the same class through a shared interface",
+      "The ability of a class to inherit from multiple parent classes",
+      "The ability to restrict access to certain attributes of a class",
+      "The ability to delete an object instance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        return \"Class A\"\n\nclass B(A):\n    def display(self):\n        return \"Class B\"\n\nclass C(B):\n    pass\n\nobj = C()\nprint(obj.display())",
+    "o": [
+      "Class B",
+      "Class A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to define behavior for the `+` operator in Python?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__plus__",
+      "__sum__",
+      "__concat__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        self.__private_var = 10\n\nobj = A()\nprint(obj.__private_var)",
+    "o": [
+      "Error",
+      "10",
+      "None",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is true about multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one class",
+      "A class can inherit from only one class",
+      "Python does not support multiple inheritance",
+      "A class must implement all methods from inherited classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    \n    def __mul__(self, other):\n        return self.x * other.x\n\nobj1 = A(4)\nobj2 = A(5)\nprint(obj1 * obj2)",
+    "o": [
+      "20",
+      "9",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements is correct about method overriding?",
+    "c": null,
+    "o": [
+      "A subclass provides a specific implementation of a method that is already defined in its superclass",
+      "A method is defined twice in the same class",
+      "A function is called before the constructor",
+      "A function is defined with different parameters in the same class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"This is class A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "This is class A",
+      "Error",
+      "None",
+      "A"
+    ]
+  },
+  {
+    "q": "Which special method is called when an object is deleted?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__delete__",
+      "__remove__",
+      "__destroy__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A initialized\")\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        print(\"B initialized\")\n\nclass C(B):\n    def __init__(self):\n        super().__init__()\n        print(\"C initialized\")\n\nobj = C()",
+    "o": [
+      "A initialized\nB initialized\nC initialized",
+      "C initialized\nB initialized\nA initialized",
+      "Error",
+      "Only C initialized"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an abstract class in Python?",
+    "c": null,
+    "o": [
+      "Using the ABC module and @abstractmethod decorator",
+      "Using @abstract decorator",
+      "Using @abstractclass decorator",
+      "Using @staticmethod decorator"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"A class method\")\n\nclass B(A):\n    def show(self):\n        print(\"B class method\")\n        super().show()\n\nobj = B()\nobj.show()",
+    "o": [
+      "B class method\nA class method",
+      "A class method\nB class method",
+      "B class method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python class methods?",
+    "c": null,
+    "o": [
+      "They are defined using @classmethod and take cls as the first parameter",
+      "They are defined using @staticmethod and do not take cls as the first parameter",
+      "They always require an instance of the class",
+      "They cannot be inherited"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def __init__(self):\n        self.value = 100\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.value += 50\n\nobj = Child()\nprint(obj.value)",
+    "o": [
+      "150",
+      "100",
+      "50",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to achieve multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class inheriting from multiple base classes",
+      "Using the `super()` function alone",
+      "Using a single base class",
+      "Python does not support multiple inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class X:\n    def __init__(self, num):\n        self.num = num\n    \n    def __eq__(self, other):\n        return self.num == other.num\n\nx1 = X(10)\nx2 = X(10)\nprint(x1 == x2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in Python?",
+    "c": null,
+    "o": [
+      "The ability of different objects to respond to the same method name",
+      "The ability to define multiple classes in a single file",
+      "A method that cannot be overridden",
+      "A function that has multiple return types"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Base:\n    def greet(self):\n        return \"Hello from Base\"\n\nclass Derived(Base):\n    pass\n\nobj = Derived()\nprint(obj.greet())",
+    "o": [
+      "Hello from Base",
+      "Hello from Derived",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an interface in Python?",
+    "c": null,
+    "o": [
+      "Using ABC module and defining abstract methods",
+      "Using the `interface` keyword",
+      "Using multiple inheritance without method implementations",
+      "Python does not support interfaces"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __call__(self, x):\n        return x * 2\n\nobj = A()\nprint(obj(5))",
+    "o": [
+      "10",
+      "5",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to define a string representation of an object?",
+    "c": null,
+    "o": [
+      "__str__",
+      "__repr__",
+      "__format__",
+      "__print__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        print(\"Class A\")\n\nclass B(A):\n    pass\n\nobj = B()\nobj.display()",
+    "o": [
+      "Class A",
+      "Error",
+      "None",
+      "Class B"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the __init__ method in Python?",
+    "c": null,
+    "o": [
+      "It is automatically called when an object is created",
+      "It must be explicitly called to initialize an object",
+      "It cannot accept arguments",
+      "It is used to delete objects"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __add__(self, other):\n        return \"Addition Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 + obj2)",
+    "o": [
+      "Addition Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance is correct?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one class",
+      "A class can only inherit from a single parent class",
+      "Multiple inheritance is not supported in Python",
+      "Multiple inheritance causes syntax errors in Python"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def show(self):\n        print(\"Parent method\")\n\nclass Child(Parent):\n    def show(self):\n        print(\"Child method\")\n\nobj = Child()\nobj.show()",
+    "o": [
+      "Child method",
+      "Parent method",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used for overloading the '==' operator?",
+    "c": null,
+    "o": [
+      "__eq__",
+      "__lt__",
+      "__add__",
+      "__cmp__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    \n    def __mul__(self, other):\n        return self.x * other.x\n\nobj1 = A(5)\nobj2 = A(3)\nprint(obj1 * obj2)",
+    "o": [
+      "15",
+      "53",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a destructor in Python?",
+    "c": null,
+    "o": [
+      "Using the __del__ method",
+      "Using the __destroy__ method",
+      "Using the __terminate__ method",
+      "Python does not support destructors"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __repr__(self):\n        return \"Object of Class A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "Object of Class A",
+      "Error",
+      "None",
+      "Memory Address"
+    ]
+  },
+  {
+    "q": "Which of the following best describes method overriding in Python?",
+    "c": null,
+    "o": [
+      "A child class providing a different implementation of a parent class method",
+      "A method calling itself recursively",
+      "Using different method names for the same functionality",
+      "A function that takes multiple arguments"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        print(\"Method in A\")\n\nclass B(A):\n    def method(self):\n        print(\"Method in B\")\n        super().method()\n\nobj = B()\nobj.method()",
+    "o": [
+      "Method in B\nMethod in A",
+      "Method in B",
+      "Method in A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "class C(A, B): pass",
+      "class C(A B): pass",
+      "class C(A -> B): pass",
+      "class C(A: B): pass"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A's constructor\")\n\nclass B(A):\n    def __init__(self):\n        print(\"B's constructor\")\n        super().__init__()\n\nobj = B()",
+    "o": [
+      "B's constructor\nA's constructor",
+      "A's constructor\nB's constructor",
+      "B's constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used for overloading the '>' operator?",
+    "c": null,
+    "o": [
+      "__gt__",
+      "__lt__",
+      "__ge__",
+      "__cmp__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"A object\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "A object",
+      "Error",
+      "None",
+      "Memory Address"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about abstract classes in Python?",
+    "c": null,
+    "o": [
+      "They cannot be instantiated",
+      "They must contain only abstract methods",
+      "They do not support inheritance",
+      "They do not allow method overriding"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "from abc import ABC, abstractmethod\n\nclass A(ABC):\n    @abstractmethod\n    def method(self):\n        pass\n\nclass B(A):\n    def method(self):\n        print(\"Implemented in B\")\n\nobj = B()\nobj.method()",
+    "o": [
+      "Implemented in B",
+      "Error",
+      "None",
+      "Abstract Method"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of operator overloading?",
+    "c": null,
+    "o": [
+      "Defining __add__ method in a class",
+      "Using the '+' operator for addition",
+      "Calling a method multiple times",
+      "Using the same function name for different purposes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    class_var = 10\n\nobj1 = A()\nobj2 = A()\nobj1.class_var = 20\nprint(obj2.class_var)",
+    "o": [
+      "10",
+      "20",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about class variables in Python?",
+    "c": null,
+    "o": [
+      "They are shared among all instances of a class",
+      "They can only be accessed using the class name",
+      "They must be defined in the constructor",
+      "They are unique to each object"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(5)\nobj2 = A(5)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in Python?",
+    "c": null,
+    "o": [
+      "A function or method having different behaviors based on the object",
+      "A class inheriting from multiple parent classes",
+      "A function calling itself",
+      "The ability to define multiple methods with the same name in a class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"A\")\n\nclass B(A):\n    def show(self):\n        print(\"B\")\n\nclass C(B):\n    pass\n\nobj = C()\nobj.show()",
+    "o": [
+      "B",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is called when an object is deleted using `del`?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__delete__",
+      "__destroy__",
+      "__finalize__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        self.var = 10\n\n    def __getattr__(self, name):\n        return \"Attribute not found\"\n\nobj = A()\nprint(obj.var)\nprint(obj.unknown)",
+    "o": [
+      "10\nAttribute not found",
+      "10\nError",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about method overriding?",
+    "c": null,
+    "o": [
+      "A subclass provides a specific implementation of a method defined in its superclass",
+      "A method is defined multiple times in the same class",
+      "A method has the same name but different parameters",
+      "A method is automatically called when an object is created"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A's constructor\")\n\nclass B(A):\n    def __init__(self):\n        print(\"B's constructor\")\n        super().__init__()\n\nclass C(B):\n    def __init__(self):\n        print(\"C's constructor\")\n        super().__init__()\n\nobj = C()",
+    "o": [
+      "C's constructor\nB's constructor\nA's constructor",
+      "A's constructor\nB's constructor\nC's constructor",
+      "C's constructor\nA's constructor\nB's constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to implement the '+' operator for a custom class?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__sum__",
+      "__plus__",
+      "__combine__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __new__(cls):\n        print(\"Creating instance\")\n        return super().__new__(cls)\n    \n    def __init__(self):\n        print(\"Initializing instance\")\n\nobj = A()",
+    "o": [
+      "Creating instance\nInitializing instance",
+      "Initializing instance\nCreating instance",
+      "Error",
+      "Creating instance"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the `super()` function in Python?",
+    "c": null,
+    "o": [
+      "It allows a subclass to access methods from its parent class",
+      "It creates an instance of the superclass",
+      "It is used to override a parent class method",
+      "It is used to define abstract methods"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        print(\"Class A\")\n\nclass B(A):\n    def display(self):\n        print(\"Class B\")\n\nclass C(A):\n    def display(self):\n        print(\"Class C\")\n\nclass D(B, C):\n    pass\n\nobj = D()\nobj.display()",
+    "o": [
+      "Class B",
+      "Class C",
+      "Class A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance in Python is true?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one class in Python",
+      "Multiple inheritance is not supported in Python",
+      "A subclass must override all methods from its parent classes",
+      "A class cannot access methods from more than one superclass"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent Constructor\")\n\nclass Child(Parent):\n    def __init__(self):\n        print(\"Child Constructor\")\n        super().__init__()\n\nobj = Child()",
+    "o": [
+      "Child Constructor\nParent Constructor",
+      "Parent Constructor\nChild Constructor",
+      "Error",
+      "Child Constructor"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a special method in Python?",
+    "c": null,
+    "o": [
+      "__sum__",
+      "__init__",
+      "__str__",
+      "__len__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"This is class A\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "This is class A",
+      "A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation in Python?",
+    "c": null,
+    "o": [
+      "Restricting direct access to some of an object's attributes",
+      "A method that is automatically called when an object is created",
+      "Defining multiple methods with the same name",
+      "A function calling itself"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __private_method(self):\n        print(\"Private Method\")\n\nobj = A()\nobj.__private_method()",
+    "o": [
+      "Error",
+      "Private Method",
+      "None",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following operators can be overloaded in Python?",
+    "c": null,
+    "o": [
+      "+",
+      ".",
+      "->",
+      "::"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes abstraction in Python?",
+    "c": null,
+    "o": [
+      "Hiding implementation details and exposing only necessary functionalities",
+      "Defining multiple methods with the same name",
+      "A subclass providing its own implementation of a superclass method",
+      "A function calling itself"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"A\")\n\nclass B(A):\n    def show(self):\n        print(\"B\")\n\nclass C(A):\n    def show(self):\n        print(\"C\")\n\nclass D(B, C):\n    pass\n\nobj = D()\nobj.show()",
+    "o": [
+      "B",
+      "C",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is automatically called when an object is created in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__str__",
+      "__del__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Test:\n    def __new__(cls):\n        print(\"Creating Instance\")\n        return super().__new__(cls)\n    def __init__(self):\n        print(\"Initializing Instance\")\n\nobj = Test()",
+    "o": [
+      "Creating Instance\nInitializing Instance",
+      "Initializing Instance\nCreating Instance",
+      "Creating Instance",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class in Python?",
+    "c": null,
+    "o": [
+      "class MyClass: pass",
+      "def MyClass: pass",
+      "MyClass = class()",
+      "class = MyClass()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __add__(self, other):\n        return \"Addition Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 + obj2)",
+    "o": [
+      "Addition Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python classes is true?",
+    "c": null,
+    "o": [
+      "A class can have multiple constructors using default arguments",
+      "A class can only inherit from one other class",
+      "Classes in Python cannot have private attributes",
+      "Python does not support method overloading"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def func(self):\n        print(\"Parent Function\")\n\nclass Child(Parent):\n    def func(self):\n        print(\"Child Function\")\n        super().func()\n\nobj = Child()\nobj.func()",
+    "o": [
+      "Child Function\nParent Function",
+      "Parent Function\nChild Function",
+      "Child Function",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of polymorphism in Python?",
+    "c": null,
+    "o": [
+      "A method behaving differently based on the object calling it",
+      "A class inheriting from another class",
+      "Defining multiple classes in a module",
+      "Using different variable names for the same object"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __mul__(self, other):\n        return \"Multiplication Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 * obj2)",
+    "o": [
+      "Multiplication Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes method overriding?",
+    "c": null,
+    "o": [
+      "A subclass providing its own implementation of a superclass method",
+      "Defining multiple methods with the same name in the same class",
+      "A function calling itself",
+      "A method that is automatically called when an object is deleted"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"A\")\n\nclass B(A):\n    def show(self):\n        print(\"B\")\n\nclass C(A):\n    def show(self):\n        print(\"C\")\n\nclass D(B, C):\n    pass\n\nobj = D()\nobj.show()",
+    "o": [
+      "B",
+      "C",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is automatically called when an object is created in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__str__",
+      "__del__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Test:\n    def __new__(cls):\n        print(\"Creating Instance\")\n        return super().__new__(cls)\n    def __init__(self):\n        print(\"Initializing Instance\")\n\nobj = Test()",
+    "o": [
+      "Creating Instance\nInitializing Instance",
+      "Initializing Instance\nCreating Instance",
+      "Creating Instance",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class in Python?",
+    "c": null,
+    "o": [
+      "class MyClass: pass",
+      "def MyClass: pass",
+      "MyClass = class()",
+      "class = MyClass()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __add__(self, other):\n        return \"Addition Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 + obj2)",
+    "o": [
+      "Addition Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python classes is true?",
+    "c": null,
+    "o": [
+      "A class can have multiple constructors using default arguments",
+      "A class can only inherit from one other class",
+      "Classes in Python cannot have private attributes",
+      "Python does not support method overloading"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def func(self):\n        print(\"Parent Function\")\n\nclass Child(Parent):\n    def func(self):\n        print(\"Child Function\")\n        super().func()\n\nobj = Child()\nobj.func()",
+    "o": [
+      "Child Function\nParent Function",
+      "Parent Function\nChild Function",
+      "Child Function",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of polymorphism in Python?",
+    "c": null,
+    "o": [
+      "A method behaving differently based on the object calling it",
+      "A class inheriting from another class",
+      "Defining multiple classes in a module",
+      "Using different variable names for the same object"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __mul__(self, other):\n        return \"Multiplication Overloaded\"\n\nobj1 = A()\nobj2 = A()\nprint(obj1 * obj2)",
+    "o": [
+      "Multiplication Overloaded",
+      "Error",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes method overriding?",
+    "c": null,
+    "o": [
+      "A subclass providing its own implementation of a superclass method",
+      "Defining multiple methods with the same name in the same class",
+      "A function calling itself",
+      "A method that is automatically called when an object is deleted"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        return \"A\"\n\nclass B(A):\n    def display(self):\n        return \"B\"\n\nclass C(A):\n    def display(self):\n        return \"C\"\n\nclass D(B, C):\n    pass\n\nobj = D()\nprint(obj.display())",
+    "o": [
+      "B",
+      "C",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class inheriting from more than one class",
+      "A class inheriting from a single superclass",
+      "A class that cannot be inherited",
+      "Using multiple objects of the same class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following operators cannot be overloaded in Python?",
+    "c": null,
+    "o": [
+      "`.` (dot operator)",
+      "`+` (addition operator)",
+      "`==` (equality operator)",
+      "`*` (multiplication operator)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Base:\n    def show(self):\n        print(\"Base class\")\n\nclass Derived(Base):\n    pass\n\nobj = Derived()\nobj.show()",
+    "o": [
+      "Base class",
+      "Error",
+      "Derived class",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the `super()` function is true?",
+    "c": null,
+    "o": [
+      "It allows calling a method from the parent class",
+      "It can only be used in multiple inheritance",
+      "It can only be used in the constructor",
+      "It is used to delete an object"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"String Representation\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "String Representation",
+      "Error",
+      "None",
+      "Object address"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation in Python?",
+    "c": null,
+    "o": [
+      "Restricting access to certain attributes of an object",
+      "Defining multiple classes in the same file",
+      "Using functions inside a class",
+      "Calling a method from another class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __call__(self):\n        print(\"Object called\")\n\nobj = A()\nobj()",
+    "o": [
+      "Object called",
+      "Error",
+      "None",
+      "Function called"
+    ]
+  },
+  {
+    "q": "Which of the following statements about method resolution order (MRO) in Python is true?",
+    "c": null,
+    "o": [
+      "It determines the order in which methods are inherited in multiple inheritance",
+      "It is not applicable in single inheritance",
+      "It only works for private methods",
+      "It does not apply to operator overloading"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        print(\"A method\")\n\nclass B(A):\n    def method(self):\n        print(\"B method\")\n        super().method()\n\nobj = B()\nobj.method()",
+    "o": [
+      "B method\nA method",
+      "A method\nB method",
+      "B method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python class methods is correct?",
+    "c": null,
+    "o": [
+      "Class methods are defined using `@classmethod` and take `cls` as the first parameter",
+      "Class methods are only available in single inheritance",
+      "Class methods are defined using `@staticmethod`",
+      "Class methods cannot access class attributes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    \n    def __add__(self, other):\n        return A(self.x + other.x)\n\nobj1 = A(5)\nobj2 = A(10)\nresult = obj1 + obj2\nprint(result.x)",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of Python OOP?",
+    "c": null,
+    "o": [
+      "Memory management is done manually",
+      "Supports multiple inheritance",
+      "Encapsulation is implemented using access modifiers",
+      "Operator overloading is supported"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def show(self):\n        print(\"Parent class\")\n\nclass Child(Parent):\n    def show(self):\n        print(\"Child class\")\n\nobj = Child()\nobj.show()",
+    "o": [
+      "Child class",
+      "Parent class",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in Python?",
+    "c": null,
+    "o": [
+      "A method behaving differently based on the object",
+      "A method that cannot be overridden",
+      "A class having multiple constructors",
+      "A function that cannot be inherited"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A initialized\")\n        super().__init__()\n\nclass B:\n    def __init__(self):\n        print(\"B initialized\")\n\nclass C(A, B):\n    def __init__(self):\n        super().__init__()\n\nobj = C()",
+    "o": [
+      "A initialized\nB initialized",
+      "B initialized\nA initialized",
+      "Error",
+      "A initialized"
+    ]
+  },
+  {
+    "q": "Which of the following statements about private variables in Python is true?",
+    "c": null,
+    "o": [
+      "They are declared using a double underscore `__` prefix",
+      "They cannot be accessed even within the same class",
+      "They can be directly accessed from outside the class",
+      "Python does not support private variables"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, val):\n        self.__val = val\n\nobj = A(10)\nprint(obj.__val)",
+    "o": [
+      "Error",
+      "10",
+      "None",
+      "Object address"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `@staticmethod` in Python?",
+    "c": null,
+    "o": [
+      "It can be called on both the class and the instance",
+      "It can only access instance attributes",
+      "It takes `self` as the first argument",
+      "It can only be used inside constructors"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def display(self):\n        print(\"Class A\")\n\nclass B(A):\n    pass\n\nobj = B()\nobj.display()",
+    "o": [
+      "Class A",
+      "Class B",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class inheriting from more than one parent class",
+      "A class with multiple methods",
+      "A class having multiple constructors",
+      "A class having multiple objects"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A initialized\")\nclass B(A):\n    def __init__(self):\n        print(\"B initialized\")\n        A.__init__(self)\n\nobj = B()",
+    "o": [
+      "B initialized\nA initialized",
+      "A initialized\nB initialized",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about method overriding is correct?",
+    "c": null,
+    "o": [
+      "A subclass provides a specific implementation of a method defined in its parent class",
+      "A parent class method calls a subclass method",
+      "Overriding is only possible with static methods",
+      "Python does not support method overriding"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n    def __mul__(self, other):\n        return A(self.x * other.x)\n\nobj1 = A(3)\nobj2 = A(4)\nresult = obj1 * obj2\nprint(result.x)",
+    "o": [
+      "12",
+      "7",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of encapsulation in Python?",
+    "c": null,
+    "o": [
+      "Using private variables to restrict direct access",
+      "Defining multiple classes in a module",
+      "Using functions inside a class",
+      "Defining class-level attributes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        self.__x = 5\nobj = A()\nprint(obj.__x)",
+    "o": [
+      "Error",
+      "5",
+      "None",
+      "Object address"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of the `super()` function?",
+    "c": null,
+    "o": [
+      "It allows a subclass to call a method from its parent class",
+      "It defines a new class in Python",
+      "It initializes the instance variables",
+      "It prevents multiple inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"A show\")\nclass B(A):\n    def show(self):\n        print(\"B show\")\n        super().show()\n\nobj = B()\nobj.show()",
+    "o": [
+      "B show\nA show",
+      "A show\nB show",
+      "B show",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator overloading is correct?",
+    "c": null,
+    "o": [
+      "Operator overloading allows defining custom behavior for operators in user-defined classes",
+      "Operator overloading is only available for built-in types",
+      "Operator overloading is only supported in Python 3",
+      "Python does not support operator overloading"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, val):\n        self.val = val\n    def __add__(self, other):\n        return A(self.val + other.val)\n\nobj1 = A(10)\nobj2 = A(20)\nresult = obj1 + obj2\nprint(result.val)",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement best describes abstraction in Python?",
+    "c": null,
+    "o": [
+      "Hiding implementation details and exposing only the necessary functionalities",
+      "Restricting access to class attributes",
+      "Using multiple classes to achieve functionality",
+      "A subclass inheriting from multiple parent classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    @abstractmethod\n    def make_sound(self):\n        pass\n\nclass Dog(Animal):\n    def make_sound(self):\n        return \"Bark\"\n\nd = Dog()\nprint(d.make_sound())",
+    "o": [
+      "Bark",
+      "Error",
+      "None",
+      "Abstract class cannot be instantiated"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of object-oriented programming?",
+    "c": null,
+    "o": [
+      "Functions cannot exist outside a class",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A initialized\")\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        print(\"B initialized\")\n\nobj = B()",
+    "o": [
+      "A initialized\nB initialized",
+      "B initialized\nA initialized",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about class attributes is correct?",
+    "c": null,
+    "o": [
+      "Class attributes are shared by all instances of the class",
+      "Class attributes can only be modified inside the constructor",
+      "Each instance of a class has its own copy of class attributes",
+      "Class attributes must be defined inside the constructor"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        return \"A method\"\nclass B(A):\n    def method(self):\n        return \"B method\"\nclass C(B):\n    pass\n\nobj = C()\nprint(obj.method())",
+    "o": [
+      "B method",
+      "A method",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines polymorphism in Python?",
+    "c": null,
+    "o": [
+      "The ability of different classes to define methods with the same name",
+      "The ability of a function to call multiple methods",
+      "A class having multiple constructors",
+      "A class with multiple parent classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes method overloading in Python?",
+    "c": null,
+    "o": [
+      "Python does not support traditional method overloading but allows default arguments to achieve similar behavior",
+      "Python allows defining multiple methods with the same name but different parameters",
+      "Method overloading is only available in Python 3",
+      "Method overloading is required for operator overloading"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def show(self):\n        print(\"Parent method\")\n\nclass Child(Parent):\n    def show(self):\n        print(\"Child method\")\n\nobj = Child()\nobj.show()",
+    "o": [
+      "Child method",
+      "Parent method",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about multiple inheritance in Python?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one class",
+      "Python does not support multiple inheritance",
+      "Only abstract classes can use multiple inheritance",
+      "Multiple inheritance is only possible using metaclasses"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A init\")\nclass B:\n    def __init__(self):\n        print(\"B init\")\nclass C(A, B):\n    pass\n\nobj = C()",
+    "o": [
+      "A init",
+      "B init",
+      "A init\nB init",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is called automatically when an object is created?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__call__",
+      "__str__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __mul__(self, other):\n        return 10 * other\n\nobj = A()\nprint(obj * 5)",
+    "o": [
+      "50",
+      "Error",
+      "5",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best defines encapsulation?",
+    "c": null,
+    "o": [
+      "Restricting direct access to class attributes and methods",
+      "Hiding implementation details using abstract methods",
+      "Using a single function name to perform different tasks",
+      "Deriving new classes from existing classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"A object\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "A object",
+      "Error",
+      "None",
+      "A"
+    ]
+  },
+  {
+    "q": "Which of the following statements about inheritance is FALSE?",
+    "c": null,
+    "o": [
+      "A subclass can inherit multiple classes in Python",
+      "Private attributes of a parent class cannot be directly accessed in a subclass",
+      "A subclass inherits all methods of a parent class, including private methods",
+      "The super() function is used to call a parent class's method"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Base:\n    def __init__(self):\n        self.__private = 10\n\nobj = Base()\nprint(obj.__private)",
+    "o": [
+      "Error",
+      "10",
+      "None",
+      "Private"
+    ]
+  },
+  {
+    "q": "Which of the following operators cannot be overloaded in Python?",
+    "c": null,
+    "o": [
+      "All of the above can be overloaded",
+      "==",
+      "+",
+      "[] (indexing)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        print(\"A method\")\n\nclass B(A):\n    def method(self):\n        super().method()\n        print(\"B method\")\n\nobj = B()\nobj.method()",
+    "o": [
+      "A method\nB method",
+      "B method\nA method",
+      "Error",
+      "B method"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of Object-Oriented Programming (OOP)?",
+    "c": null,
+    "o": [
+      "Structured programming",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    pass\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator overloading is TRUE?",
+    "c": null,
+    "o": [
+      "Operator overloading allows defining how operators work with user-defined objects",
+      "Operator overloading is not supported in Python",
+      "Operators in Python cannot be customized",
+      "Operator overloading is only possible with built-in data types"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent init\")\n\nclass Child(Parent):\n    def __init__(self):\n        print(\"Child init\")\n\nobj = Child()",
+    "o": [
+      "Child init",
+      "Parent init\nChild init",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of multiple inheritance?",
+    "c": null,
+    "o": [
+      "class C(A, B): pass",
+      "class B(A): pass",
+      "class A: pass",
+      "class C(A -> B): pass"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __eq__(self, other):\n        return True\n\nobj1 = A()\nobj2 = A()\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to define the string representation of an object?",
+    "c": null,
+    "o": [
+      "__str__",
+      "__repr__",
+      "__init__",
+      "__call__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __repr__(self):\n        return \"A object\"\n\nobj = A()\nprint(repr(obj))",
+    "o": [
+      "A object",
+      "Error",
+      "None",
+      "A"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about method overriding?",
+    "c": null,
+    "o": [
+      "A subclass provides a new implementation of a method inherited from a parent class",
+      "Method overriding is not allowed in Python",
+      "Overriding a method requires the parent method to be deleted",
+      "Only private methods can be overridden"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"Class A\")\n\nclass B(A):\n    def show(self):\n        print(\"Class B\")\n\nobj = B()\nobj.show()",
+    "o": [
+      "Class B",
+      "Class A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about inheritance is FALSE?",
+    "c": null,
+    "o": [
+      "A subclass can inherit multiple classes in Python using multiple inheritance",
+      "Private attributes of a parent class cannot be accessed directly by a child class",
+      "A subclass can override methods from a parent class",
+      "Python does not support inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A init\")\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        print(\"B init\")\n\nobj = B()",
+    "o": [
+      "A init\nB init",
+      "B init\nA init",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the behavior of the '+' operator for user-defined objects?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__sum__",
+      "__plus__",
+      "__concat__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __len__(self):\n        return 5\n\nobj = A()\nprint(len(obj))",
+    "o": [
+      "5",
+      "Error",
+      "None",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about multiple inheritance is TRUE?",
+    "c": null,
+    "o": [
+      "A class can inherit from multiple parent classes",
+      "Python does not support multiple inheritance",
+      "Multiple inheritance is only allowed for built-in classes",
+      "A class cannot inherit from more than one class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __mul__(self, other):\n        return \"Multiplication Overloaded\"\n\nobj = A()\nprint(obj * 3)",
+    "o": [
+      "Multiplication Overloaded",
+      "Error",
+      "3",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about encapsulation is TRUE?",
+    "c": null,
+    "o": [
+      "Encapsulation restricts direct access to object attributes",
+      "Encapsulation allows unrestricted modification of all attributes",
+      "Encapsulation is not supported in Python",
+      "Encapsulation prevents creating class objects"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __call__(self):\n        return \"Object called\"\n\nobj = A()\nprint(obj())",
+    "o": [
+      "Object called",
+      "Error",
+      "None",
+      "Class A"
+    ]
+  },
+  {
+    "q": "Which method is used to delete an object in Python?",
+    "c": null,
+    "o": [
+      "__del__",
+      "__delete__",
+      "__destroy__",
+      "__remove__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        print(\"A method\")\n\nclass B(A):\n    def method(self):\n        print(\"B method\")\n        super().method()\n\nobj = B()\nobj.method()",
+    "o": [
+      "B method\nA method",
+      "A method\nB method",
+      "B method",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python classes?",
+    "c": null,
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class can have multiple instances",
+      "Classes cannot have methods",
+      "A class can contain both data and methods"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __eq__(self, other):\n        return self.x == other.x\n\nobj1 = A(10)\nobj2 = A(10)\nprint(obj1 == obj2)",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to initialize an object's attributes in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__start__",
+      "__create__",
+      "__new__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __str__(self):\n        return \"String Representation\"\n\nobj = A()\nprint(obj)",
+    "o": [
+      "String Representation",
+      "Error",
+      "None",
+      "A object"
+    ]
+  },
+  {
+    "q": "Which special method is used to define the behavior of the '==' operator?",
+    "c": null,
+    "o": [
+      "__eq__",
+      "__compare__",
+      "__equal__",
+      "__cmp__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Parent:\n    def __init__(self):\n        print(\"Parent init\")\n\nclass Child(Parent):\n    pass\n\nobj = Child()",
+    "o": [
+      "Parent init",
+      "Error",
+      "Child init",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about method overriding?",
+    "c": null,
+    "o": [
+      "A subclass provides a specific implementation of a method already defined in its parent class",
+      "Overriding is not possible in Python",
+      "Method overriding means defining multiple methods with the same name in a single class",
+      "Overridden methods cannot call the parent class method"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __repr__(self):\n        return \"Object Representation\"\n\nobj = A()\nprint(repr(obj))",
+    "o": [
+      "Object Representation",
+      "Error",
+      "None",
+      "A object"
+    ]
+  },
+  {
+    "q": "Which method is called when an object is created?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__create__",
+      "__call__",
+      "__construct__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def show(self):\n        print(\"Class A\")\n\nclass B(A):\n    def show(self):\n        print(\"Class B\")\n\nobj = B()\nobj.show()",
+    "o": [
+      "Class B",
+      "Class A",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes multiple inheritance?",
+    "c": null,
+    "o": [
+      "A class deriving from more than one parent class",
+      "A class containing multiple methods",
+      "A class having multiple instances",
+      "A class that cannot be inherited"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self):\n        print(\"A init\")\n\nclass B:\n    def __init__(self):\n        print(\"B init\")\n\nclass C(A, B):\n    pass\n\nobj = C()",
+    "o": [
+      "A init",
+      "B init",
+      "A init\nB init",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the '+' operator?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__plus__",
+      "__sum__",
+      "__concat__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __init__(self, x):\n        self.x = x\n\n    def __mul__(self, other):\n        return self.x * other.x\n\nobj1 = A(3)\nobj2 = A(4)\nprint(obj1 * obj2)",
+    "o": [
+      "12",
+      "7",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to define string representation of an object?",
+    "c": null,
+    "o": [
+      "__str__",
+      "__print__",
+      "__display__",
+      "__show__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def __del__(self):\n        print(\"Object deleted\")\n\nobj = A()\ndel obj",
+    "o": [
+      "Object deleted",
+      "Error",
+      "None",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of object-oriented programming?",
+    "c": null,
+    "o": [
+      "Memory management",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class A:\n    def method(self):\n        print(\"Method in A\")\n\nclass B(A):\n    pass\n\nobj = B()\nobj.method()",
+    "o": [
+      "Method in A",
+      "Method in B",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation?",
+    "c": null,
+    "o": [
+      "Restricting direct access to some data in a class",
+      "A function inside a class",
+      "A class containing only one method",
+      "Inheritance of properties from a parent class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating a basic class in Python?",
+    "c": "class Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def bark(self):\n        return f'{self.name} says Woof!'\n\ndog = Dog('Buddy')\nprint(dog.bark())",
+    "o": [
+      "Buddy says Woof!",
+      "Woof!",
+      "Buddy",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a class in Python?",
+    "c": null,
+    "o": [
+      "class MyClass:",
+      "class MyClass()",
+      "class: MyClass",
+      "MyClass class:"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating inheritance in Python?",
+    "c": "class Animal:\n    def speak(self):\n        return 'I can speak!'\n\nclass Cat(Animal):\n    def meow(self):\n        return 'Meow!'\n\ncat = Cat()\nprint(cat.speak())",
+    "o": [
+      "I can speak!",
+      "Meow!",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "In Python, what is multiple inheritance?",
+    "c": null,
+    "o": [
+      "A class can inherit from more than one parent class",
+      "A class can only inherit from one parent class",
+      "A class cannot inherit from any parent class",
+      "A class can inherit only methods but not attributes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading in Python?",
+    "c": "class Point:\n    def __init__(self, x):\n        self.x = x\n\n    def __add__(self, other):\n        return Point(self.x + other.x)\n\np1 = Point(5)\np2 = Point(10)\np3 = p1 + p2\nprint(p3.x)",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to overload the '+' operator in Python?",
+    "c": null,
+    "o": [
+      "__add__",
+      "__plus__",
+      "__sum__",
+      "__increment__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating multiple inheritance?",
+    "c": "class A:\n    def info(self):\n        return 'Class A'\n\nclass B:\n    def info(self):\n        return 'Class B'\n\nclass C(A, B):\n    pass\n\nc = C()\nprint(c.info())",
+    "o": [
+      "Class A",
+      "Class B",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the main purpose of Object-Oriented Programming (OOP) in Python?",
+    "c": null,
+    "o": [
+      "To organize code into reusable objects and classes",
+      "To write code without any structure",
+      "To avoid using functions",
+      "To limit code reusability"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet using class attributes?",
+    "c": "class Car:\n    wheels = 4\n\n    def __init__(self, model):\n        self.model = model\n\ncar1 = Car('Toyota')\nprint(car1.wheels)",
+    "o": [
+      "4",
+      "Toyota",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit a class in Python?",
+    "c": null,
+    "o": [
+      "class (parent class name)",
+      "extends",
+      "inherit",
+      "super"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading for multiplication?",
+    "c": "class Number:\n    def __init__(self, value):\n        self.value = value\n\n    def __mul__(self, other):\n        return Number(self.value * other.value)\n\nn1 = Number(3)\nn2 = Number(4)\nresult = n1 * n2\nprint(result.value)",
+    "o": [
+      "12",
+      "7",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "In Python OOP, what is the purpose of the __init__ method?",
+    "c": null,
+    "o": [
+      "To initialize the object’s attributes when it is created",
+      "To destroy an object",
+      "To define a static method",
+      "To overload operators"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet with multiple inheritance and method overriding?",
+    "c": "class Parent1:\n    def greet(self):\n        return 'Hello from Parent1'\n\nclass Parent2:\n    def greet(self):\n        return 'Hello from Parent2'\n\nclass Child(Parent1, Parent2):\n    def greet(self):\n        return 'Hello from Child'\n\nchild = Child()\nprint(child.greet())",
+    "o": [
+      "Hello from Child",
+      "Hello from Parent1",
+      "Hello from Parent2",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is true about inheritance in Python?",
+    "c": null,
+    "o": [
+      "A child class can inherit attributes and methods from a parent class",
+      "A parent class inherits from a child class",
+      "Inheritance prevents code reusability",
+      "A class cannot inherit from another class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating class instantiation?",
+    "c": "class Student:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nstudent = Student('John', 20)\nprint(f'{student.name} is {student.age} years old')",
+    "o": [
+      "John is 20 years old",
+      "John is 0 years old",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does operator overloading allow in Python OOP?",
+    "c": null,
+    "o": [
+      "Redefining how operators work with user-defined objects",
+      "Preventing the use of operators with classes",
+      "Overriding built-in functions only",
+      "Limiting operator usage to numeric types"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet using inheritance and super()?",
+    "c": "class Parent:\n    def __init__(self):\n        self.message = 'Parent class'\n\nclass Child(Parent):\n    def __init__(self):\n        super().__init__()\n        self.message += ' and Child class'\n\nchild = Child()\nprint(child.message)",
+    "o": [
+      "Parent class and Child class",
+      "Parent class",
+      "Child class",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a key feature of OOP in Python?",
+    "c": null,
+    "o": [
+      "Encapsulation",
+      "Global variables only",
+      "No support for classes",
+      "Single inheritance only"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading for comparison?",
+    "c": "class Value:\n    def __init__(self, x):\n        self.x = x\n\n    def __lt__(self, other):\n        return self.x < other.x\n\nv1 = Value(5)\nv2 = Value(10)\nprint(v1 < v2)",
+    "o": [
+      "True",
+      "False",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "In Python, what is the role of 'self' in a class?",
+    "c": null,
+    "o": [
+      "It refers to the instance of the class itself",
+      "It refers to the parent class",
+      "It is a reserved keyword for static methods",
+      "It is used to define global variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet with multiple inheritance and method resolution order?",
+    "c": "class A:\n    def show(self):\n        return 'A'\n\nclass B:\n    def show(self):\n        return 'B'\n\nclass C(B, A):\n    pass\n\nc = C()\nprint(c.show())",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which special method is used to overload the string representation of an object in Python?",
+    "c": null,
+    "o": [
+      "__str__",
+      "__string__",
+      "__repr__",
+      "__text__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating encapsulation?",
+    "c": "class Person:\n    def __init__(self, name):\n        self.__name = name\n\n    def get_name(self):\n        return self.__name\n\np = Person('Alice')\nprint(p.get_name())",
+    "o": [
+      "Alice",
+      "None",
+      "Error",
+      "__name"
+    ]
+  },
+  {
+    "q": "What is the benefit of using inheritance in OOP?",
+    "c": null,
+    "o": [
+      "It promotes code reuse and reduces redundancy",
+      "It prevents the use of classes",
+      "It limits the functionality of a program",
+      "It eliminates the need for objects"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating class methods?",
+    "c": "class MyClass:\n    class_variable = 'I am class'\n\n    @classmethod\n    def get_class_var(cls):\n        return cls.class_variable\n\nobj = MyClass()\nprint(obj.get_class_var())",
+    "o": [
+      "I am class",
+      "None",
+      "obj",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes polymorphism in Python OOP?",
+    "c": null,
+    "o": [
+      "The ability of different classes to be treated as instances of the same class through a common interface",
+      "The inability to use multiple classes",
+      "A restriction on inheritance",
+      "A method to prevent operator overloading"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet using inheritance with method overriding?",
+    "c": "class Vehicle:\n    def move(self):\n        return 'Moving'\n\nclass Bike(Vehicle):\n    def move(self):\n        return 'Pedaling'\n\nbike = Bike()\nprint(bike.move())",
+    "o": [
+      "Pedaling",
+      "Moving",
+      "None",
+      "Bike"
+    ]
+  },
+  {
+    "q": "In Python, what does the '__repr__' method do when overloaded?",
+    "c": null,
+    "o": [
+      "It provides a detailed string representation of an object for debugging",
+      "It defines how an object is added",
+      "It initializes an object",
+      "It prevents string output"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating multiple inheritance with attributes?",
+    "c": "class X:\n    def __init__(self):\n        self.value = 1\n\nclass Y:\n    def __init__(self):\n        self.value = 2\n\nclass Z(X, Y):\n    def __init__(self):\n        X.__init__(self)\n        Y.__init__(self)\n\nz = Z()\nprint(z.value)",
+    "o": [
+      "2",
+      "1",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to define a private attribute in a Python class?",
+    "c": null,
+    "o": [
+      "__attribute",
+      "_attribute",
+      "attribute_",
+      "private_attribute"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading for subtraction?",
+    "c": "class Counter:\n    def __init__(self, count):\n        self.count = count\n\n    def __sub__(self, other):\n        return Counter(self.count - other.count)\n\nc1 = Counter(15)\nc2 = Counter(7)\nresult = c1 - c2\nprint(result.count)",
+    "o": [
+      "8",
+      "15",
+      "7",
+      "None"
+    ]
+  },
+  {
+    "q": "What is the purpose of a static method in a Python class?",
+    "c": null,
+    "o": [
+      "It can be called without instantiating the class and doesn’t require self",
+      "It requires an instance of the class to be called",
+      "It is used to initialize object attributes",
+      "It prevents inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating abstract base classes?",
+    "c": "from abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\nclass Square(Shape):\n    def __init__(self, side):\n        self.side = side\n\n    def area(self):\n        return self.side * self.side\n\nsquare = Square(4)\nprint(square.area())",
+    "o": [
+      "16",
+      "4",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'super()' function in Python?",
+    "c": null,
+    "o": [
+      "It allows a subclass to call a method from its parent class",
+      "It prevents inheritance",
+      "It is used to define static methods",
+      "It restricts access to parent class attributes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading for equality?",
+    "c": "class Pair:\n    def __init__(self, a, b):\n        self.a = a\n        self.b = b\n\n    def __eq__(self, other):\n        return self.a == other.a and self.b == other.b\n\np1 = Pair(1, 2)\np2 = Pair(1, 2)\nprint(p1 == p2)",
+    "o": [
+      "True",
+      "False",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "q": "In Python OOP, what is abstraction?",
+    "c": null,
+    "o": [
+      "Hiding complex implementation details and showing only the necessary features",
+      "Exposing all internal details of a class",
+      "Preventing the use of classes",
+      "Limiting inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating multiple inheritance with method calls?",
+    "c": "class First:\n    def display(self):\n        return 'First'\n\nclass Second:\n    def display(self):\n        return 'Second'\n\nclass Third(First, Second):\n    def show(self):\n        return self.display() + ' Third'\n\nthird = Third()\nprint(third.show())",
+    "o": [
+      "First Third",
+      "Second Third",
+      "Third",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is automatically called when an object is created from a class in Python?",
+    "c": null,
+    "o": [
+      "__init__",
+      "__new__",
+      "__create__",
+      "__start__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating property decorators?",
+    "c": "class Employee:\n    def __init__(self, name):\n        self._name = name\n\n    @property\n    def name(self):\n        return self._name\n\nemp = Employee('Bob')\nprint(emp.name)",
+    "o": [
+      "Bob",
+      "None",
+      "_name",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does operator overloading enable in the context of Python classes?",
+    "c": null,
+    "o": [
+      "Customizing the behavior of operators like +, -, * for class objects",
+      "Restricting operators to built-in types only",
+      "Preventing the use of operators in classes",
+      "Automatically generating class methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating method resolution order in multiple inheritance?",
+    "c": "class A:\n    def say(self):\n        return 'A says hi'\n\nclass B(A):\n    def say(self):\n        return 'B says hi'\n\nclass C(A):\n    def say(self):\n        return 'C says hi'\n\nclass D(B, C):\n    pass\n\nd = D()\nprint(d.say())",
+    "o": [
+      "B says hi",
+      "C says hi",
+      "A says hi",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to define a static method in Python?",
+    "c": null,
+    "o": [
+      "@staticmethod\ndef my_method():",
+      "@classmethod\ndef my_method(self):",
+      "def my_method(self):",
+      "@static\ndef my_method():"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating operator overloading for string concatenation?",
+    "c": "class Text:\n    def __init__(self, content):\n        self.content = content\n\n    def __add__(self, other):\n        return Text(self.content + other.content)\n\nt1 = Text('Hello, ')\nt2 = Text('World!')\nresult = t1 + t2\nprint(result.content)",
+    "o": [
+      "Hello, World!",
+      "Hello, ",
+      "World!",
+      "None"
+    ]
+  },
+  {
+    "q": "In Python OOP, what is the purpose of the '@classmethod' decorator?",
+    "c": null,
+    "o": [
+      "It allows a method to be called on the class itself, receiving the class as the first argument",
+      "It restricts a method to instance-only access",
+      "It prevents method overriding",
+      "It makes a method private"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating inheritance with instance attributes?",
+    "c": "class Base:\n    def __init__(self):\n        self.x = 10\n\nclass Derived(Base):\n    def __init__(self):\n        super().__init__()\n        self.y = 20\n\nd = Derived()\nprint(d.x + d.y)",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of encapsulation in Python?",
+    "c": null,
+    "o": [
+      "Using private attributes to hide data and provide controlled access via methods",
+      "Making all attributes public by default",
+      "Preventing the use of methods in a class",
+      "Restricting inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating a class with a custom string representation?",
+    "c": "class Book:\n    def __init__(self, title):\n        self.title = title\n\n    def __str__(self):\n        return f'Book: {self.title}'\n\nbook = Book('Python Basics')\nprint(book)",
+    "o": [
+      "Book: Python Basics",
+      "Python Basics",
+      "None",
+      "<__main__.Book object>"
+    ]
+  },
+  {
+    "q": "What does the term 'duck typing' refer to in Python OOP?",
+    "c": null,
+    "o": [
+      "Focusing on an object’s behavior rather than its explicit type",
+      "Requiring strict type definitions for all objects",
+      "Preventing polymorphism",
+      "Limiting inheritance to a single parent class"
     ]
   }
 ]

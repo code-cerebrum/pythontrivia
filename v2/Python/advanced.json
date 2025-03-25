@@ -1398,5 +1398,4166 @@
             "25, 15",
             "10, 25"
         ]
-    }
+    },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Counter:\n    def __init__(self):\n        self.count = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        self.count += 1\n        if self.count > 3:\n            raise StopIteration\n        return self.count\n\ncounter = Counter()\nprint(list(counter))",
+    "o": [
+      "[1, 2, 3]",
+      "[0, 1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python generators is true?",
+    "c": null,
+    "o": [
+      "Generators use 'yield' to produce values lazily.",
+      "Generators execute all their code at once.",
+      "Generators cannot maintain state between calls.",
+      "Generators are less memory efficient than lists."
+    ]
+  },
+  {
+    "q": "What is the output of the following generator function?",
+    "c": "def count_up(n):\n    for i in range(n):\n        yield i\n\nc = count_up(3)\nprint(list(c))",
+    "o": [
+      "[0, 1, 2]",
+      "[1, 2, 3]",
+      "[0, 1, 2, 3]",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that captures and remembers variables from its enclosing scope.",
+      "A function that is defined inside another function but does not use external variables.",
+      "A function that returns another function but does not store any state.",
+      "A function that has no parameters."
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "def outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python decorators?",
+    "c": null,
+    "o": [
+      "Decorators modify the behavior of a function without changing its code.",
+      "Decorators must always return a class.",
+      "A decorator function cannot accept arguments.",
+      "Decorators must be built-in functions."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "def my_decorator(func):\n    def wrapper():\n        print(\"Before function call\")\n        func()\n        print(\"After function call\")\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print(\"Hello!\")\n\nsay_hello()",
+    "o": [
+      "Before function call\nHello!\nAfter function call",
+      "Hello!\nBefore function call\nAfter function call",
+      "Before function call\nAfter function call\nHello!",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of the @property decorator in Python?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed like an attribute.",
+      "It makes a method static.",
+      "It makes an attribute read-only.",
+      "It converts a function into a class method."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n\nc = Circle(5)\nprint(c.radius)",
+    "o": [
+      "5",
+      "None",
+      "Error",
+      "5.0"
+    ]
+  },
+  {
+    "q": "Which of the following regular expressions will match a valid email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^\\w+@\\w+\\.\\w+$",
+      "^.+@.+\\..+$",
+      "^\\d+@\\d+\\.com$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"There are 12 apples and 30 bananas.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['12', '30']",
+      "['apples', 'bananas']",
+      "['12', '30', 'apples', 'bananas']",
+      "['There', 'are', 'apples', 'and', 'bananas']"
+    ]
+  },
+  {
+    "q": "Which of the following methods makes an object an iterator in Python?",
+    "c": null,
+    "o": [
+      "__next__",
+      "__iter__",
+      "__call__",
+      "__getitem__"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "def number_generator():\n    yield 1\n    yield 2\n    yield 3\n\ngen = number_generator()\nprint(next(gen))\nprint(next(gen))",
+    "o": [
+      "1\n2",
+      "1\n3",
+      "2\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about closures in Python is correct?",
+    "c": null,
+    "o": [
+      "A closure is a function that retains access to variables from its enclosing scope.",
+      "A closure is a function that can only be defined inside another function.",
+      "A closure is a function that must return another function.",
+      "Closures do not store variables from their enclosing scope."
+    ]
+  },
+  {
+    "q": "What will be printed by the following closure example?",
+    "c": "def multiply_by(n):\n    def multiplier(x):\n        return x * n\n    return multiplier\n\ndouble = multiply_by(2)\nprint(double(4))",
+    "o": [
+      "8",
+      "6",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about function decorators in Python?",
+    "c": null,
+    "o": [
+      "A decorator is a function that takes another function as input and returns a modified function.",
+      "A decorator must always return None.",
+      "A decorator function cannot have arguments.",
+      "A decorator must be applied before defining a function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "def decorator(func):\n    def wrapper():\n        print(\"Executing before function call\")\n        func()\n        print(\"Executing after function call\")\n    return wrapper\n\n@decorator\ndef greet():\n    print(\"Hello, World!\")\n\ngreet()",
+    "o": [
+      "Executing before function call\nHello, World!\nExecuting after function call",
+      "Hello, World!\nExecuting before function call\nExecuting after function call",
+      "Executing after function call\nHello, World!\nExecuting before function call",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of the @property decorator?",
+    "c": null,
+    "o": [
+      "Making an attribute writable without using a setter method.",
+      "Defining a read-only property.",
+      "Encapsulating attribute access logic.",
+      "Automatically computing an attribute’s value."
+    ]
+  },
+  {
+    "q": "What will be printed by the following code snippet?",
+    "c": "import re\npattern = r\"[A-Z]+\"\ntext = \"Python is GREAT and fun!\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['GREAT']",
+      "['Python', 'GREAT', 'fun']",
+      "['GREAT', 'FUN']",
+      "['GREAT', 'AND', 'FUN']"
+    ]
+  },
+  {
+    "q": "Which of the following regular expressions matches a string containing only digits?",
+    "c": null,
+    "o": [
+      "^\\d+$",
+      "^\\D+$",
+      ".*\\d.*",
+      "\\d?"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "import re\npattern = r\"\\bcat\\b\"\ntext = \"The cat sat on the mat, but not the catalog.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['cat']",
+      "['cat', 'catalog']",
+      "['sat', 'mat']",
+      "[]"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an iterator class in Python?",
+    "c": null,
+    "o": [
+      "A class that implements both __iter__() and __next__() methods.",
+      "A class that has a __call__() method.",
+      "A class that only defines the __iter__() method.",
+      "A class that only defines the __next__() method."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current - 1\n\ncounter = Counter(5, 8)\nfor num in counter:\n    print(num, end=\" \")",
+    "o": [
+      "5 6 7",
+      "5 6 7 8",
+      "6 7 8",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about generators in Python is false?",
+    "c": null,
+    "o": [
+      "Generators consume less memory compared to lists.",
+      "Generators use the yield keyword instead of return.",
+      "A generator function returns an iterator.",
+      "A generator can only yield integer values."
+    ]
+  },
+  {
+    "q": "What will be printed by the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ncd = countdown(3)\nprint(next(cd))\nprint(next(cd))",
+    "o": [
+      "3\n2",
+      "3\n1",
+      "3\n0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about closures in Python?",
+    "c": null,
+    "o": [
+      "Closures allow functions to remember variables from their enclosing scope.",
+      "Closures can only be created using lambda functions.",
+      "A closure is a nested function that captures and remembers values.",
+      "Closures help in data encapsulation."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def make_multiplier(n):\n    return lambda x: x * n\n\ndouble = make_multiplier(2)\ntriple = make_multiplier(3)\nprint(double(5), triple(5))",
+    "o": [
+      "10 15",
+      "5 10",
+      "2 3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of function decorators in Python?",
+    "c": null,
+    "o": [
+      "Decorators must be defined inside the function they modify.",
+      "Decorators allow modification of function behavior without changing the function itself.",
+      "A decorator function takes another function as an argument.",
+      "Multiple decorators can be applied to a single function."
+    ]
+  },
+  {
+    "q": "What will be printed by the following decorated function?",
+    "c": "def decorator(func):\n    def wrapper():\n        print(\"Before the function call\")\n        func()\n        print(\"After the function call\")\n    return wrapper\n\ndef say_hello():\n    print(\"Hello!\")\n\nhello = decorator(say_hello)\nhello()",
+    "o": [
+      "Before the function call\nHello!\nAfter the function call",
+      "Hello!\nBefore the function call\nAfter the function call",
+      "Before the function call\nAfter the function call",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the behavior of the @property decorator in Python?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed as an attribute.",
+      "It makes a method private.",
+      "It prevents a method from being overridden.",
+      "It forces a method to return a string."
+    ]
+  },
+  {
+    "q": "What is the output of the following property-based class?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n\nc = Circle(10)\nprint(c.radius)",
+    "o": [
+      "10",
+      "None",
+      "Error",
+      "radius"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns matches a valid email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^[a-zA-Z]+@[a-zA-Z]+\\.[a-z]+$",
+      "^\\w+@\\w+\\.com$",
+      ".*@.*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex code?",
+    "c": "import re\npattern = r\"\\d{3}-\\d{2}-\\d{4}\"\ntext = \"My SSN is 123-45-6789.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['123-45-6789']",
+      "['123', '45', '6789']",
+      "['SSN']",
+      "[]"
+    ]
+  },
+  {
+    "q": "Which of the following correctly implements an iterable class in Python?",
+    "c": null,
+    "o": [
+      "A class that implements both __iter__() and __next__() methods.",
+      "A class that only defines a __next__() method.",
+      "A class that only defines a __iter__() method.",
+      "A class that has a __call__() method."
+    ]
+  },
+  {
+    "q": "What is the output of the following generator function?",
+    "c": "def even_numbers(n):\n    for i in range(n):\n        if i % 2 == 0:\n            yield i\n\ngen = even_numbers(5)\nprint(list(gen))",
+    "o": [
+      "[0, 2, 4]",
+      "[1, 3, 5]",
+      "[0, 1, 2, 3, 4]",
+      "[2, 4]"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between an iterator and a generator?",
+    "c": null,
+    "o": [
+      "Generators use the 'yield' keyword, while iterators use the '__next__()' method.",
+      "Iterators cannot be created using classes, while generators can.",
+      "Generators do not maintain state, while iterators do.",
+      "Iterators always return lists, while generators return tuples."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nadd_five = outer_function(5)\nprint(add_five(10))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use case of decorators in Python?",
+    "c": null,
+    "o": [
+      "Changing the behavior of a function without modifying its code.",
+      "Automatically logging function calls.",
+      "Modifying built-in functions at runtime.",
+      "Creating multiple instances of a function dynamically."
+    ]
+  },
+  {
+    "q": "What will be printed by the following decorated function?",
+    "c": "def repeat_twice(func):\n    def wrapper():\n        func()\n        func()\n    return wrapper\n\n@repeat_twice\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "o": [
+      "Hello\nHello",
+      "Hello",
+      "HelloHello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the @property decorator is true?",
+    "c": null,
+    "o": [
+      "It allows controlled access to private attributes.",
+      "It makes an attribute immutable.",
+      "It automatically generates getter and setter methods.",
+      "It prevents an attribute from being deleted."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code using the @property decorator?",
+    "c": "class Student:\n    def __init__(self, name):\n        self._name = name\n    @property\n    def name(self):\n        return self._name\n\ns = Student(\"Alice\")\nprint(s.name)",
+    "o": [
+      "Alice",
+      "None",
+      "Error",
+      "_name"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns matches a string that contains only digits?",
+    "c": null,
+    "o": [
+      "^\\d+$",
+      ".*\\d.*",
+      "\\d+",
+      "[0-9]+"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex code?",
+    "c": "import re\npattern = r\"\\b\\w{4}\\b\"\ntext = \"This is a test code.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['This', 'test', 'code']",
+      "['This', 'test']",
+      "['test', 'code']",
+      "['is', 'a']"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current - 1\n\nc = Counter(1, 4)\nprint(list(c))",
+    "o": [
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "[1, 2, 3, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of Python generators?",
+    "c": null,
+    "o": [
+      "They store the entire sequence in memory.",
+      "They use the 'yield' keyword to produce values.",
+      "They maintain their internal state between calls.",
+      "They can be iterated over using 'for' loops."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator expression?",
+    "c": "gen = (x**2 for x in range(4))\nprint(list(gen))",
+    "o": [
+      "[0, 1, 4, 9]",
+      "[1, 2, 3, 4]",
+      "(0, 1, 4, 9)",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that remembers variables from its enclosing scope even after the scope has closed.",
+      "A function that is defined inside another function but does not retain access to its parent scope.",
+      "A function that takes another function as an argument.",
+      "A built-in Python feature for data encapsulation."
+    ]
+  },
+  {
+    "q": "What will be printed when calling 'counter()' twice in the following closure?",
+    "c": "def make_counter():\n    count = 0\n    def counter():\n        nonlocal count\n        count += 1\n        return count\n    return counter\n\ncounter = make_counter()\nprint(counter())\nprint(counter())",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "2\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use case for Python decorators?",
+    "c": null,
+    "o": [
+      "Modifying a function's arguments directly.",
+      "Adding logging functionality to a function.",
+      "Timing the execution of a function.",
+      "Restricting access to a function based on conditions."
+    ]
+  },
+  {
+    "q": "What is the output of the following code using a property setter?",
+    "c": "class Person:\n    def __init__(self, age):\n        self._age = age\n    @property\n    def age(self):\n        return self._age\n    @age.setter\n    def age(self, value):\n        if value < 0:\n            raise ValueError(\"Age cannot be negative\")\n        self._age = value\n\np = Person(25)\np.age = -5",
+    "o": [
+      "ValueError: Age cannot be negative",
+      "None",
+      "-5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern matches an email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      ".*@.*",
+      "[a-z]+@[a-z]+",
+      "\\w+@\\w+"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"Price: 100 USD\"\nmatch = re.search(pattern, text)\nprint(match.group())",
+    "o": [
+      "100",
+      "Price",
+      "USD",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the use of the `re.sub()` function?",
+    "c": null,
+    "o": [
+      "It replaces occurrences of a pattern in a string with a given replacement.",
+      "It finds all occurrences of a pattern in a string.",
+      "It returns a match object for a pattern.",
+      "It extracts numeric values from a string."
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_n):\n        self.n = 0\n        self.max_n = max_n\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.n > self.max_n:\n            raise StopIteration\n        self.n += 2\n        return self.n - 2\n\neven_iter = EvenNumbers(6)\nprint(list(even_iter))",
+    "o": [
+      "[0, 2, 4, 6]",
+      "[2, 4, 6, 8]",
+      "[1, 3, 5, 7]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method in a generator is used to send values into the generator?",
+    "c": null,
+    "o": [
+      "send()",
+      "yield()",
+      "next()",
+      "throw()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def count_up(n):\n    count = 0\n    while count < n:\n        yield count\n        count += 1\n\ngen = count_up(3)\nprint(list(gen))",
+    "o": [
+      "[0, 1, 2]",
+      "[1, 2, 3]",
+      "[0, 1, 2, 3]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of using closures in Python?",
+    "c": null,
+    "o": [
+      "They allow data to persist across multiple calls to a function.",
+      "They execute code faster than normal functions.",
+      "They eliminate the need for global variables.",
+      "They make function calls immutable."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure?",
+    "c": "def multiplier(factor):\n    def multiply(number):\n        return number * factor\n    return multiply\n\ndouble = multiplier(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about decorators in Python?",
+    "c": null,
+    "o": [
+      "They modify the behavior of a function without modifying its source code.",
+      "They are used only with class methods.",
+      "They must always return None.",
+      "They cannot take arguments."
+    ]
+  },
+  {
+    "q": "What will be printed when executing the following decorator code?",
+    "c": "def my_decorator(func):\n    def wrapper():\n        print(\"Before function call\")\n        func()\n        print(\"After function call\")\n    return wrapper\n\n@my_decorator\ndef greet():\n    print(\"Hello!\")\n\ngreet()",
+    "o": [
+      "Before function call\nHello!\nAfter function call",
+      "Hello!\nBefore function call\nAfter function call",
+      "Before function call\nAfter function call\nHello!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about Python properties is correct?",
+    "c": null,
+    "o": [
+      "They allow controlled access to instance attributes.",
+      "They must be defined outside of a class.",
+      "They require explicit getter and setter methods to function.",
+      "They cannot be used with class methods."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(10)\nc.radius = 5\nprint(c.radius)",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "-5"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\bPython\\b\"\ntext = \"I love Python programming.\"\nmatch = re.search(pattern, text)\nprint(bool(match))",
+    "o": [
+      "True",
+      "False",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches a U.S. phone number format (e.g., 123-456-7890)?",
+    "c": null,
+    "o": [
+      "^\\d{3}-\\d{3}-\\d{4}$",
+      "^\\d{10}$",
+      "^\\w+-\\w+-\\w+$",
+      ".*\\d{3}-\\d{3}-\\d{4}.*"
+    ]
+  },
+  {
+    "q": "Which built-in function is used to create an iterator from an iterable?",
+    "c": null,
+    "o": [
+      "iter()",
+      "next()",
+      "yield()",
+      "generate()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "numbers = [1, 2, 3]\nnum_iter = iter(numbers)\nprint(next(num_iter))\nprint(next(num_iter))",
+    "o": [
+      "1\n2",
+      "2\n3",
+      "1\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a generator in Python?",
+    "c": null,
+    "o": [
+      "yield",
+      "return",
+      "generate",
+      "async"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def count_down(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ncd = count_down(3)\nprint(list(cd))",
+    "o": [
+      "[3, 2, 1]",
+      "[2, 1, 0]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that remembers the environment in which it was created.",
+      "A function that cannot be modified after creation.",
+      "A function that is used only within a class.",
+      "A function that automatically executes when defined."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure?",
+    "c": "def make_multiplier(factor):\n    def multiplier(number):\n        return number * factor\n    return multiplier\n\ntriple = make_multiplier(3)\nprint(triple(4))",
+    "o": [
+      "12",
+      "7",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which decorator is used to define a property in a class?",
+    "c": null,
+    "o": [
+      "@property",
+      "@getter",
+      "@attribute",
+      "@prop"
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Square:\n    def __init__(self, side):\n        self._side = side\n    @property\n    def area(self):\n        return self._side ** 2\n\ns = Square(4)\nprint(s.area)",
+    "o": [
+      "16",
+      "8",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches an email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^[a-z]+@[a-z]+\\.[a-z]+$",
+      ".*@.*",
+      "^\\d{3}-\\d{2}-\\d{4}$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"There are 42 apples and 10 bananas.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['42', '10']",
+      "['42', 'apples', '10', 'bananas']",
+      "['42 10']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to get the next item from an iterator?",
+    "c": null,
+    "o": [
+      "next()",
+      "iter()",
+      "yield()",
+      "fetch()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current\n\ncounter = Counter(5, 8)\nprint(list(counter))",
+    "o": [
+      "[6, 7, 8]",
+      "[5, 6, 7]",
+      "[5, 6, 7, 8]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the primary difference between a generator and a normal function?",
+    "c": null,
+    "o": [
+      "A generator uses 'yield' instead of 'return' and produces values lazily.",
+      "A generator cannot take arguments.",
+      "A generator runs only once.",
+      "A generator is faster than a normal function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator expression?",
+    "c": "gen_exp = (x**2 for x in range(3))\nprint(list(gen_exp))",
+    "o": [
+      "[0, 1, 4]",
+      "[1, 4, 9]",
+      "[0, 2, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about closures in Python?",
+    "c": null,
+    "o": [
+      "A closure allows a function to retain access to variables from its enclosing scope.",
+      "A closure must always return another function.",
+      "Closures are created using nested functions.",
+      "Closures help in data hiding and encapsulation."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def outer(x):\n    def inner(y):\n        return x + y\n    return inner\n\nclosure_func = outer(5)\nprint(closure_func(10))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of a built-in decorator in Python?",
+    "c": null,
+    "o": [
+      "@staticmethod",
+      "@custom",
+      "@override",
+      "@decorator"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return 'hello'\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "What does the 're.match()' function do in Python?",
+    "c": null,
+    "o": [
+      "Matches the pattern at the beginning of the string.",
+      "Finds all occurrences of the pattern in the string.",
+      "Replaces the pattern with another string.",
+      "Splits the string based on the pattern."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"\\bcat\\b\"\ntext = \"The cat scattered the catalog.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['cat']",
+      "['cat', 'catalog']",
+      "[]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which built-in function can be used to convert an iterator into a list?",
+    "c": null,
+    "o": [
+      "list()",
+      "iter()",
+      "next()",
+      "map()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nprint(list(countdown(3)))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about closures is true?",
+    "c": null,
+    "o": [
+      "Closures allow a nested function to remember variables from its enclosing function even after the outer function has finished executing.",
+      "Closures are used only in object-oriented programming.",
+      "Closures cannot modify variables from their enclosing function.",
+      "Closures require the use of the global keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def multiplier(factor):\n    def multiply_by(x):\n        return x * factor\n    return multiply_by\n\ndouble = multiplier(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which decorator is used to define a read-only property in a Python class?",
+    "c": null,
+    "o": [
+      "@property",
+      "@staticmethod",
+      "@classmethod",
+      "@getter"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code using the @property decorator?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n\nc = Circle(5)\nprint(c.radius)",
+    "o": [
+      "5",
+      "None",
+      "Error",
+      "radius"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"There are 25 apples and 30 oranges.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['25', '30']",
+      "['There', 'are', 'apples', 'and', 'oranges']",
+      "['25 30']",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Squares:\n    def __init__(self, n):\n        self.n = n\n        self.current = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current >= self.n:\n            raise StopIteration\n        self.current += 1\n        return self.current ** 2\n\nsquares = Squares(3)\nprint(list(squares))",
+    "o": [
+      "[1, 4, 9]",
+      "[0, 1, 4]",
+      "[1, 2, 3]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about generators is FALSE?",
+    "c": null,
+    "o": [
+      "Generators use 'yield' instead of 'return' to produce values lazily.",
+      "Generators execute entirely at once like normal functions.",
+      "Generators can be iterated using a for loop.",
+      "Generators maintain their state between calls."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator expression?",
+    "c": "gen = (x for x in range(3) if x % 2 == 0)\nprint(list(gen))",
+    "o": [
+      "[0, 2]",
+      "[1, 3]",
+      "[0, 1, 2]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about closures is correct?",
+    "c": null,
+    "o": [
+      "A closure retains access to variables from its enclosing function even after the function has finished executing.",
+      "A closure can only be created inside a class.",
+      "A closure must always use the 'global' keyword.",
+      "A closure cannot return a function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def repeat(func):\n    def wrapper():\n        return func() + func()\n    return wrapper\n\n@repeat\ndef greet():\n    return \"Hi \"\n\nprint(greet())",
+    "o": [
+      "Hi Hi ",
+      "Hi",
+      "HiHi",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of the @staticmethod decorator?",
+    "c": null,
+    "o": [
+      "It allows a method to be called on a class without needing an instance.",
+      "It allows access to instance attributes.",
+      "It ensures a method is always overridden in a subclass.",
+      "It allows modifying private variables."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Person:\n    def __init__(self, name):\n        self._name = name\n    @property\n    def name(self):\n        return self._name\n\np = Person(\"Alice\")\nprint(p.name)",
+    "o": [
+      "Alice",
+      "None",
+      "Error",
+      "name"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex substitution?",
+    "c": "import re\npattern = r\"\\s+\"\ntext = \"Hello   World!   Python  is  great.\"\nnew_text = re.sub(pattern, \" \", text)\nprint(new_text)",
+    "o": [
+      "\"Hello World! Python is great.\"",
+      "\"Hello   World!   Python  is  great.\"",
+      "\"HelloWorld!Pythonisgreat.\"",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Counter:\n    def __init__(self, low, high):\n        self.current = low\n        self.high = high\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current > self.high:\n            raise StopIteration\n        else:\n            self.current += 1\n            return self.current - 1\n\nc = Counter(3, 6)\nprint(list(c))",
+    "o": [
+      "[3, 4, 5, 6]",
+      "[3, 4, 5]",
+      "[4, 5, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about Python generators is correct?",
+    "c": null,
+    "o": [
+      "A generator function must contain at least one 'yield' statement.",
+      "A generator can be called only once.",
+      "Generators store all their results in memory.",
+      "Generators cannot be iterated using a for loop."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def multiplier(n):\n    def inner(x):\n        return x * n\n    return inner\n\ndouble = multiplier(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about closures in Python?",
+    "c": null,
+    "o": [
+      "Closures allow inner functions to retain access to variables from their enclosing function even after execution.",
+      "Closures require the use of global variables.",
+      "Closures cannot return functions.",
+      "Closures must use the 'nonlocal' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def uppercase(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the use of the @property decorator?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed like an attribute.",
+      "It makes a method static.",
+      "It prevents a method from being overridden.",
+      "It forces a function to return a string."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex pattern?",
+    "c": "import re\npattern = r\"\\d{3}-\\d{2}-\\d{4}\"\ntext = \"My SSN is 123-45-6789.\"\nmatch = re.search(pattern, text)\nprint(match.group())",
+    "o": [
+      "123-45-6789",
+      "123-456-789",
+      "My SSN is 123-45-6789.",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex findall example?",
+    "c": "import re\npattern = r\"\\b[a-zA-Z]{4}\\b\"\ntext = \"This is a test of regex functions.\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+    "o": [
+      "['This', 'test']",
+      "['is', 'test']",
+      "['test', 'of']",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse(\"python\")\nprint(list(rev))",
+    "o": [
+      "['n', 'o', 'h', 't', 'y', 'p']",
+      "['p', 'y', 't', 'h', 'o', 'n']",
+      "['o', 'h', 't', 'y', 'p', 'n']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python generators is FALSE?",
+    "c": null,
+    "o": [
+      "Generators store all values in memory before returning them.",
+      "Generators use the 'yield' keyword to produce values.",
+      "Generators can be iterated using a for loop.",
+      "A generator function returns a generator object."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def count_up(n):\n    count = 1\n    while count <= n:\n        yield count\n        count += 1\n\ngen = count_up(3)\nprint(list(gen))",
+    "o": [
+      "[1, 2, 3]",
+      "[1, 2]",
+      "[2, 3]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the main advantage of using a closure?",
+    "c": null,
+    "o": [
+      "It allows a function to retain access to variables from its enclosing scope.",
+      "It increases execution speed significantly.",
+      "It prevents function calls from being recursive.",
+      "It allows variables to be accessed only inside a class."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def repeat_twice(func):\n    def wrapper(*args, **kwargs):\n        func(*args, **kwargs)\n        return func(*args, **kwargs)\n    return wrapper\n\n@repeat_twice\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")",
+    "o": [
+      "Hello, Alice!\nHello, Alice!",
+      "Hello, Alice!",
+      "Hello, Alice! Hello, Alice!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about the @staticmethod decorator is correct?",
+    "c": null,
+    "o": [
+      "A static method does not receive the instance (self) or class (cls) as the first parameter.",
+      "A static method can modify class attributes.",
+      "A static method requires an explicit instance of the class to be called.",
+      "A static method must return a value."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(5)\nc.radius = -1",
+    "o": [
+      "ValueError: Radius cannot be negative",
+      "None",
+      "5",
+      "Error: AttributeError"
+    ]
+  },
+  {
+    "q": "Which regular expression pattern will match a phone number in the format (XXX) XXX-XXXX?",
+    "c": null,
+    "o": [
+      "^\\(\\d{3}\\) \\d{3}-\\d{4}$",
+      "^\\d{3}-\\d{3}-\\d{4}$",
+      "^\\d{10}$",
+      "^\\d{3} \\d{3}-\\d{4}$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match example?",
+    "c": "import re\npattern = r\"[A-Z][a-z]+\"\ntext = \"Python is Fun\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+    "o": [
+      "['Python', 'Fun']",
+      "['Python', 'is', 'Fun']",
+      "['Python']",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class CountDown:\n    def __init__(self, start):\n        self.num = start\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.num <= 0:\n            raise StopIteration\n        self.num -= 1\n        return self.num\n\ncd = CountDown(3)\nprint(list(cd))",
+    "o": [
+      "[2, 1, 0]",
+      "[3, 2, 1]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python generators?",
+    "c": null,
+    "o": [
+      "Generators execute code only when iterated.",
+      "Generators store all generated values in memory.",
+      "Generators improve memory efficiency for large data sets.",
+      "A function becomes a generator when it contains the 'yield' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def multiplier(factor):\n    def multiply(number):\n        return number * factor\n    return multiply\n\ntimes_three = multiplier(3)\nprint(times_three(5))",
+    "o": [
+      "15",
+      "5",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a key characteristic of closures in Python?",
+    "c": null,
+    "o": [
+      "They retain access to variables from the enclosing function even after it has finished executing.",
+      "They require explicit class definitions to work.",
+      "They can only be used with built-in Python functions.",
+      "They execute before the outer function completes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        result = func()\n        return result.upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about the @property decorator in Python?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed like an attribute.",
+      "It prevents all modifications to the attribute.",
+      "It automatically converts all method calls into static methods.",
+      "It requires the use of @staticmethod to function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Square:\n    def __init__(self, side):\n        self._side = side\n    @property\n    def area(self):\n        return self._side * self._side\n\ns = Square(4)\nprint(s.area)",
+    "o": [
+      "16",
+      "4",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which regular expression pattern correctly matches an email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^\\w+@\\w+\\.\\w+$",
+      "^\\d+@\\d+\\.\\d+$",
+      ".*@.*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex example?",
+    "c": "import re\npattern = r\"\\d{2}-\\d{2}-\\d{4}\"\ntext = \"Today's date is 12-05-2024.\"\nmatch = re.search(pattern, text)\nprint(match.group())",
+    "o": [
+      "12-05-2024",
+      "Today's date",
+      "12-05",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_n):\n        self.n = 0\n        self.max_n = max_n\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.n > self.max_n:\n            raise StopIteration\n        self.n += 2\n        return self.n - 2\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4, 6]",
+      "[2, 4, 6]",
+      "[0, 2, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about Python generators?",
+    "c": null,
+    "o": [
+      "A generator function must contain at least one 'yield' statement.",
+      "A generator function must return a list.",
+      "A generator function must be explicitly called multiple times to produce values.",
+      "A generator function cannot use loops."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator example?",
+    "c": "def count_down(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ncd = count_down(3)\nprint(list(cd))",
+    "o": [
+      "[3, 2, 1]",
+      "[2, 1, 0]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that retains access to variables from its enclosing scope even after the outer function has returned.",
+      "A function that can only be used within a class.",
+      "A function that does not return a value.",
+      "A function that automatically executes upon definition."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def power(exponent):\n    def raise_to_power(base):\n        return base ** exponent\n    return raise_to_power\n\nsquare = power(2)\nprint(square(4))",
+    "o": [
+      "16",
+      "8",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def repeat_twice(func):\n    def wrapper():\n        func()\n        func()\n    return wrapper\n\n@repeat_twice\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "o": [
+      "Hello\nHello",
+      "Hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of the @property decorator?",
+    "c": null,
+    "o": [
+      "Using it to define a read-only attribute.",
+      "Using it to define a method that behaves like an attribute.",
+      "Using it to replace a setter method.",
+      "Using it to convert a class into a generator."
+    ]
+  },
+  {
+    "q": "What will be the output of the following @property example?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def diameter(self):\n        return self._radius * 2\n\nc = Circle(7)\nprint(c.diameter)",
+    "o": [
+      "14",
+      "7",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns correctly matches a U.S. phone number format (XXX-XXX-XXXX)?",
+    "c": null,
+    "o": [
+      "^\\d{3}-\\d{3}-\\d{4}$",
+      "^\\d{10}$",
+      "^\\d{3}\\s\\d{3}\\s\\d{4}$",
+      ".*-.*-.*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex example?",
+    "c": "import re\npattern = r\"[A-Z]{3}[0-9]{3}\"\ntext = \"My code is ABC123 and DEF456.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['ABC123', 'DEF456']",
+      "['ABC123']",
+      "['DEF456']",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse('Python')\nprint(list(rev))",
+    "o": [
+      "['n', 'o', 'h', 't', 'y', 'P']",
+      "['P', 'y', 't', 'h', 'o', 'n']",
+      "['o', 'n', 'y', 'P', 't', 'h']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a key characteristic of a Python generator?",
+    "c": null,
+    "o": [
+      "It maintains its state between function calls.",
+      "It executes all at once and returns a complete list.",
+      "It cannot use loops inside its definition.",
+      "It must have an explicit return statement."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def even_numbers():\n    n = 0\n    while True:\n        yield n\n        n += 2\n\ngen = even_numbers()\nprint(next(gen))\nprint(next(gen))\nprint(next(gen))",
+    "o": [
+      "0\n2\n4",
+      "0\n1\n2",
+      "2\n4\n6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure?",
+    "c": null,
+    "o": [
+      "A function that remembers the environment in which it was created.",
+      "A function that is used only inside a class.",
+      "A function that returns another function but forgets the outer scope.",
+      "A function that must be defined using the @closure decorator."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def multiply_by(n):\n    def multiplier(x):\n        return x * n\n    return multiplier\n\ndouble = multiply_by(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "\"HELLO\"",
+      "\"hello\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python decorators?",
+    "c": null,
+    "o": [
+      "They modify the behavior of a function without changing its source code.",
+      "They must always return None.",
+      "They can be stacked to apply multiple modifications.",
+      "They take a function as input and return a new function."
+    ]
+  },
+  {
+    "q": "Which of the following statements about the @property decorator is true?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed like an attribute.",
+      "It is used to make private attributes public.",
+      "It converts a class method into a class variable.",
+      "It prevents a method from being overridden in subclasses."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Student:\n    def __init__(self, name):\n        self._name = name\n    @property\n    def name(self):\n        return self._name.upper()\n\ns = Student(\"Alice\")\nprint(s.name)",
+    "o": [
+      "\"ALICE\"",
+      "\"Alice\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which regex pattern would match an email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "^[0-9]+@[a-z]+\\.[a-z]{3}$",
+      "^.*@.*\\..*$",
+      "^[a-z]+[0-9]*@[a-z]+\\.com$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex example?",
+    "c": "import re\npattern = r\"\\b\\d{3}\\b\"\ntext = \"There are 100 apples, 200 oranges, and 300 bananas.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['100', '200', '300']",
+      "['100', '200']",
+      "['300']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python iterators is true?",
+    "c": null,
+    "o": [
+      "An iterator must implement both __iter__() and __next__() methods.",
+      "An iterator can only be used once.",
+      "An iterator always returns a list.",
+      "An iterator must be defined using a generator."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator expression?",
+    "c": "gen_exp = (x * x for x in range(4))\nprint(next(gen_exp))\nprint(next(gen_exp))",
+    "o": [
+      "0\n1",
+      "1\n4",
+      "0\n4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of using generators over lists?",
+    "c": null,
+    "o": [
+      "Generators are memory-efficient.",
+      "Generators store all elements in memory.",
+      "Generators allow random access to elements.",
+      "Generators execute faster than lists in all cases."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def counter():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment\n\nc1 = counter()\nprint(c1())\nprint(c1())",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "2\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about closures in Python?",
+    "c": null,
+    "o": [
+      "A closure can access variables from its enclosing scope even after the enclosing function has finished executing.",
+      "A closure must always return a generator.",
+      "A closure cannot modify the variables of the outer function.",
+      "A closure is the same as a lambda function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def debug(func):\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__} with {args}, {kwargs}\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@debug\ndef add(x, y):\n    return x + y\n\nprint(add(3, 5))",
+    "o": [
+      "\"Calling add with (3, 5), {}\"\n\"8\"",
+      "\"Calling add with (3, 5)\"\n\"8\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of the @property decorator?",
+    "c": null,
+    "o": [
+      "Allowing a method to be accessed as an attribute.",
+      "Defining a setter method using @property.setter.",
+      "Defining a class-level constant.",
+      "Encapsulating private attributes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property setter example?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    @property\n    def radius(self):\n        return self._radius\n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(5)\nc.radius = -3",
+    "o": [
+      "ValueError: Radius cannot be negative",
+      "None",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will the following regex pattern match?",
+    "c": "pattern = r\"\\b[a-zA-Z]+\\b\"\ntext = \"123 abc def 456 ghi!\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['abc', 'def', 'ghi']",
+      "['123', 'abc', 'def', 'ghi', '456']",
+      "['abc', 'def', 'ghi', '!']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regular expressions will match a valid Python variable name?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z_][a-zA-Z0-9_]*$",
+      "^[a-zA-Z]+[0-9]+$",
+      "^[A-Z][a-z]+[0-9]*$",
+      "^[a-z_]+$"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python iterators?",
+    "c": null,
+    "o": [
+      "An iterator maintains its state and does not reset automatically.",
+      "An iterator always returns a list.",
+      "An iterator must implement only __iter__() method.",
+      "An iterator must be finite."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def count_up():\n    i = 1\n    while i <= 3:\n        yield i\n        i += 1\n\ng = count_up()\nprint(next(g))\nprint(next(g))",
+    "o": [
+      "1\n2",
+      "1\n1",
+      "2\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about generators in Python?",
+    "c": null,
+    "o": [
+      "Generators can be paused and resumed.",
+      "Generators are more memory-efficient than lists for large data.",
+      "Generators always return a tuple.",
+      "Generators use the 'yield' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def multiplier(n):\n    def multiply(x):\n        return x * n\n    return multiply\n\ntimes3 = multiplier(3)\nprint(times3(4))",
+    "o": [
+      "12",
+      "7",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is correct about closures?",
+    "c": null,
+    "o": [
+      "A closure is a function that retains access to its enclosing scope even after the scope has finished execution.",
+      "A closure must be defined inside another function but cannot access outer variables.",
+      "A closure does not allow modification of outer function variables.",
+      "A closure must return a list."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        result = func()\n        return result.upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of Python decorators?",
+    "c": null,
+    "o": [
+      "They modify the behavior of a function without changing its source code.",
+      "They must always return a function.",
+      "They execute immediately when defined.",
+      "They cannot take arguments."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code using the @property decorator?",
+    "c": "class Person:\n    def __init__(self, name):\n        self._name = name\n    \n    @property\n    def name(self):\n        return self._name\n\np = Person(\"Alice\")\nprint(p.name)",
+    "o": [
+      "Alice",
+      "Error",
+      "None",
+      "Person object"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the @property decorator is true?",
+    "c": null,
+    "o": [
+      "It allows a method to be accessed like an attribute.",
+      "It is used to define class-level constants.",
+      "It prevents method overriding in subclasses.",
+      "It allows private attributes to be deleted."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex pattern?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"There are 15 apples and 20 oranges.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['15', '20']",
+      "['apples', 'oranges']",
+      "['There', 'are']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns correctly matches a valid email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^[a-zA-Z]+@[a-z]+\\.[a-z]+$",
+      "^[0-9]+@[a-z]+\\.com$",
+      "^@[a-zA-Z]+\\.com$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator code?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current - 1\n\nc = Counter(1, 4)\nprint(list(c))",
+    "o": [
+      "[1, 2, 3]",
+      "[0, 1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the difference between an iterator and an iterable?",
+    "c": null,
+    "o": [
+      "An iterator is an object that maintains state and implements __next__(), while an iterable is an object that can return an iterator.",
+      "An iterable must implement __next__(), but an iterator only implements __iter__().",
+      "An iterator can be used only once, but an iterable can be used multiple times.",
+      "An iterator must be infinite, but an iterable is always finite."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nc = countdown(3)\nprint(list(c))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python generators is true?",
+    "c": null,
+    "o": [
+      "A generator function uses 'yield' instead of 'return'.",
+      "A generator function cannot have parameters.",
+      "Generators store all values in memory before iteration.",
+      "Generators execute their code immediately when called."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def make_multiplier(factor):\n    def multiplier(x):\n        return x * factor\n    return multiplier\n\nmultiply_by_5 = make_multiplier(5)\nprint(multiply_by_5(2))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a requirement for creating a closure in Python?",
+    "c": null,
+    "o": [
+      "The inner function must be returned from the outer function.",
+      "The inner function must access a variable from the enclosing function.",
+      "The outer function must take at least one argument.",
+      "The inner function must be defined inside the outer function."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def repeat_twice(func):\n    def wrapper(*args, **kwargs):\n        func(*args, **kwargs)\n        return func(*args, **kwargs)\n    return wrapper\n\n@repeat_twice\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "o": [
+      "Hello\nHello",
+      "Hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python decorators is true?",
+    "c": null,
+    "o": [
+      "Decorators modify the behavior of a function without changing its source code.",
+      "Decorators can only be applied to built-in functions.",
+      "Decorators can only be used with classes.",
+      "Decorators cannot take arguments."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property usage?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def radius(self):\n        return self._radius\n    \n    @radius.setter\n    def radius(self, value):\n        self._radius = value\n\nc = Circle(10)\nc.radius = 20\nprint(c.radius)",
+    "o": [
+      "20",
+      "10",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of the @property decorator?",
+    "c": null,
+    "o": [
+      "Using it to define read-only attributes.",
+      "Using it to define computed properties.",
+      "Using it to execute a method instead of returning a value.",
+      "Using it to define a class-level attribute."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex search?",
+    "c": "import re\npattern = r\"a.b\"\ntext = \"acb a_b a-b axb\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['acb', 'axb']",
+      "['a_b', 'a-b']",
+      "['acb', 'a_b', 'a-b', 'axb']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns correctly matches a phone number in the format (123) 456-7890?",
+    "c": null,
+    "o": [
+      "^\\(\\d{3}\\) \\d{3}-\\d{4}$",
+      "^\\d{3}-\\d{3}-\\d{4}$",
+      "^\\(\\d{3}\\)-\\d{3}-\\d{4}$",
+      "^\\d{10}$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, limit):\n        self.limit = limit\n        self.current = 0\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.current >= self.limit:\n            raise StopIteration\n        self.current += 2\n        return self.current - 2\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4]",
+      "[2, 4, 6]",
+      "[0, 2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python iterators?",
+    "c": null,
+    "o": [
+      "Iterators implement both __iter__() and __next__().",
+      "Iterators must be exhausted after one full iteration.",
+      "Iterators always store all values in memory.",
+      "Iterators can be created from an iterable using iter()."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def square_numbers(n):\n    for i in range(n):\n        yield i ** 2\n\ng = square_numbers(4)\nprint(list(g))",
+    "o": [
+      "[0, 1, 4, 9]",
+      "[1, 4, 9, 16]",
+      "[0, 2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a benefit of using generators in Python?",
+    "c": null,
+    "o": [
+      "They store all elements in memory.",
+      "They improve performance for large data processing.",
+      "They use lazy evaluation to generate values on demand.",
+      "They reduce memory consumption compared to lists."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def make_divider(divisor):\n    def divider(x):\n        return x / divisor\n    return divider\n\ndivide_by_2 = make_divider(2)\nprint(divide_by_2(10))",
+    "o": [
+      "5.0",
+      "10",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a key characteristic of closures?",
+    "c": null,
+    "o": [
+      "They retain access to variables from their enclosing scope even after the outer function has finished executing.",
+      "They always return a tuple of values.",
+      "They require the use of the 'global' keyword.",
+      "They must have at least two nested functions."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello world\"\n\nprint(greet())",
+    "o": [
+      "\"HELLO WORLD\"",
+      "\"hello world\"",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about decorators in Python?",
+    "c": null,
+    "o": [
+      "Decorators modify a function's behavior without changing its definition.",
+      "Decorators can accept arguments.",
+      "A function can have multiple decorators applied to it.",
+      "Decorators must always return None."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property usage?",
+    "c": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    @property\n    def area(self):\n        return self.width * self.height\n\nrect = Rectangle(4, 5)\nprint(rect.area)",
+    "o": [
+      "20",
+      "(4,5)",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the @property decorator?",
+    "c": null,
+    "o": [
+      "To define a computed attribute that does not require explicit method calls.",
+      "To allow modification of private attributes without using a setter.",
+      "To enforce static typing.",
+      "To convert a function into a static method."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex pattern?",
+    "c": "import re\npattern = r\"\\d{2,4}\"\ntext = \"Year: 2023, Code: 56, Zip: 12345\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['2023', '56', '1234']",
+      "['2023', '1234']",
+      "['202', '56', '1234']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns correctly matches a valid email address?",
+    "c": null,
+    "o": [
+      "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+      "^[a-zA-Z0-9_]+@[a-zA-Z]+\\.[a-z]+$",
+      "^\\w+@\\w+\\.\\w{2,3}$",
+      "^\\d+@\\d+\\.com$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse('abc')\nprint(list(rev))",
+    "o": [
+      "['c', 'b', 'a']",
+      "['a', 'b', 'c']",
+      "['abc']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the behavior of Python iterators?",
+    "c": null,
+    "o": [
+      "They provide a way to iterate over data without storing it all in memory.",
+      "They always require the use of a list to function.",
+      "They do not support the StopIteration exception.",
+      "They must be explicitly converted into a list before use."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ng = countdown(3)\nprint(list(g))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python generators?",
+    "c": null,
+    "o": [
+      "They execute lazily, generating values on demand.",
+      "They use the yield keyword instead of return.",
+      "They can only be iterated over once.",
+      "They must always return a list."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def multiplier(factor):\n    def multiply(x):\n        return x * factor\n    return multiply\n\ntimes_three = multiplier(3)\nprint(times_three(5))",
+    "o": [
+      "15",
+      "8",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of closures?",
+    "c": null,
+    "o": [
+      "They retain access to variables from the enclosing function even after it has returned.",
+      "They require an explicit call to access outer variables.",
+      "They are only used for mathematical computations.",
+      "They do not support function nesting."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def double_decorator(func):\n    def wrapper(x):\n        return func(x) * 2\n    return wrapper\n\n@double_decorator\ndef square(n):\n    return n * n\n\nprint(square(3))",
+    "o": [
+      "18",
+      "9",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about decorators is true?",
+    "c": null,
+    "o": [
+      "They allow modification of functions without changing their code.",
+      "They can only be applied to built-in functions.",
+      "They must always return None.",
+      "They are executed only at runtime, not at function definition."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property usage?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def radius(self):\n        return self._radius\n    \n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(5)\nc.radius = 10\nprint(c.radius)",
+    "o": [
+      "10",
+      "5",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about the @property decorator?",
+    "c": null,
+    "o": [
+      "It allows defining getter and setter methods in a class.",
+      "It converts a method into a readable attribute.",
+      "It requires explicit calls like obj.method() to work.",
+      "It helps in implementing encapsulation in Python."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex pattern?",
+    "c": "import re\npattern = r\"\\b[A-Za-z]{4}\\b\"\ntext = \"This is a test with words like four, five, and tree.\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['test', 'four', 'five', 'tree']",
+      "['This', 'test', 'four']",
+      "['test', 'five']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns matches a string containing only digits?",
+    "c": null,
+    "o": [
+      "^\\d+$",
+      "^\\w+$",
+      "^[A-Za-z]+$",
+      ".*\\d.*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_n):\n        self.n = 0\n        self.max_n = max_n\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.n > self.max_n:\n            raise StopIteration\n        result = self.n\n        self.n += 2\n        return result\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4, 6]",
+      "[2, 4, 6]",
+      "[1, 3, 5]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method must be implemented in a class to make it an iterator?",
+    "c": null,
+    "o": [
+      "__iter__() and __next__()",
+      "__iter__() only",
+      "__next__() only",
+      "__getitem__()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\ng = fib(5)\nprint(list(g))",
+    "o": [
+      "[0, 1, 1, 2, 3]",
+      "[1, 1, 2, 3, 5]",
+      "[0, 1, 2, 3, 5]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about Python generators?",
+    "c": null,
+    "o": [
+      "They use less memory compared to lists when working with large datasets.",
+      "They execute completely before returning results.",
+      "They must store all values in memory before iteration.",
+      "They cannot be used inside loops."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def outer():\n    x = 5\n    def inner():\n        return x * 2\n    return inner\n\nfunc = outer()\nprint(func())",
+    "o": [
+      "10",
+      "5",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that retains access to variables from its enclosing scope even after execution.",
+      "A function that only exists inside another function.",
+      "A function that does not take any parameters.",
+      "A function that is always anonymous."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def repeat_twice(func):\n    def wrapper(*args, **kwargs):\n        func(*args, **kwargs)\n        return func(*args, **kwargs)\n    return wrapper\n\n@repeat_twice\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")",
+    "o": [
+      "Hello, Alice!\\nHello, Alice!",
+      "Hello, Alice!",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about decorators?",
+    "c": null,
+    "o": [
+      "They can modify the behavior of functions without changing their code.",
+      "They must always return None.",
+      "They take a function as input and return another function.",
+      "They are often used for logging, authentication, and performance measurement."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Temperature:\n    def __init__(self, celsius):\n        self._celsius = celsius\n    \n    @property\n    def fahrenheit(self):\n        return (self._celsius * 9/5) + 32\n\ntemp = Temperature(25)\nprint(temp.fahrenheit)",
+    "o": [
+      "77.0",
+      "25",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the @property decorator in Python?",
+    "c": null,
+    "o": [
+      "It allows defining a method that can be accessed like an attribute.",
+      "It can only be used for integer attributes.",
+      "It does not support setting values.",
+      "It requires explicit function calls like obj.method()."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d{3}-\\d{2}-\\d{4}\"\ntext = \"My number is 123-45-6789.\"\nmatch = re.search(pattern, text)\nprint(match.group())",
+    "o": [
+      "123-45-6789",
+      "123-456-789",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns correctly matches an email address?",
+    "c": null,
+    "o": [
+      "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+      "\\d{3}-\\d{2}-\\d{4}",
+      "[0-9]+",
+      ".*@.*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse(\"python\")\nprint(list(rev))",
+    "o": [
+      "['n', 'o', 'h', 't', 'y', 'p']",
+      "['p', 'y', 't', 'h', 'o', 'n']",
+      "['n', 'o', 'h', 't', 'y']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about iterators is FALSE?",
+    "c": null,
+    "o": [
+      "An iterator must implement both __iter__() and __next__().",
+      "Iterators can be used with the next() function.",
+      "Iterators always store all values in memory.",
+      "Iterators can be exhausted after iteration."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nc = countdown(3)\nprint(list(c))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of Python generators?",
+    "c": null,
+    "o": [
+      "They execute all their statements at once.",
+      "They yield values one by one.",
+      "They maintain their state between calls.",
+      "They are useful for handling large data efficiently."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def make_multiplier(n):\n    def multiplier(x):\n        return x * n\n    return multiplier\n\ndouble = make_multiplier(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the use of closures?",
+    "c": null,
+    "o": [
+      "They help maintain state in nested functions.",
+      "They always return None.",
+      "They cannot access variables from enclosing scopes.",
+      "They require the use of global variables."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use case for decorators?",
+    "c": null,
+    "o": [
+      "To change the original function signature permanently.",
+      "To add logging functionality to functions.",
+      "To enforce authentication checks.",
+      "To modify function outputs dynamically."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def diameter(self):\n        return self._radius * 2\n\nc = Circle(7)\nprint(c.diameter)",
+    "o": [
+      "14",
+      "7",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about @property is FALSE?",
+    "c": null,
+    "o": [
+      "It allows defining methods that behave like attributes.",
+      "It allows attributes to be read-only by default.",
+      "It requires defining a setter function.",
+      "It can be used to compute values dynamically."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"^[A-Za-z]+\\d{2}$\"\ntext = \"Python99\"\nmatch = re.match(pattern, text)\nprint(bool(match))",
+    "o": [
+      "False",
+      "True",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches a valid phone number in the format (123) 456-7890?",
+    "c": null,
+    "o": [
+      "\\(\\d{3}\\) \\d{3}-\\d{4}",
+      "\\d{3}-\\d{3}-\\d{4}",
+      "\\(\\d{3}\\)-\\d{3}-\\d{4}",
+      "\\d{10}"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, limit):\n        self.limit = limit\n        self.num = 0\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.num >= self.limit:\n            raise StopIteration\n        self.num += 2\n        return self.num - 2\n\nit = EvenNumbers(6)\nprint(list(it))",
+    "o": [
+      "[0, 2, 4]",
+      "[0, 2, 4, 6]",
+      "[2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about generators is TRUE?",
+    "c": null,
+    "o": [
+      "Generators produce values one at a time using 'yield'.",
+      "Generators must return all values at once.",
+      "Generators store all elements in memory like lists.",
+      "Generators are always infinite sequences."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def make_counter():\n    count = 0\n    def counter():\n        nonlocal count\n        count += 1\n        return count\n    return counter\n\nc = make_counter()\nprint(c(), c(), c())",
+    "o": [
+      "1 2 3",
+      "0 1 2",
+      "3 2 1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of using closures?",
+    "c": null,
+    "o": [
+      "They help retain state between function calls without using global variables.",
+      "They increase memory usage significantly.",
+      "They prevent the use of nested functions.",
+      "They cannot access variables from enclosing scopes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def double_output(func):\n    def wrapper(x):\n        return func(x) * 2\n    return wrapper\n\n@double_output\ndef square(n):\n    return n * n\n\nprint(square(3))",
+    "o": [
+      "18",
+      "9",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a characteristic of decorators?",
+    "c": null,
+    "o": [
+      "They modify the behavior of functions without changing their code.",
+      "They require modifying the original function's definition.",
+      "They are applied using the '@' symbol.",
+      "They can be stacked to apply multiple modifications."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    @property\n    def area(self):\n        return self.width * self.height\n\nr = Rectangle(5, 4)\nprint(r.area)",
+    "o": [
+      "20",
+      "9",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT an advantage of using @property?",
+    "c": null,
+    "o": [
+      "It forces attributes to be immutable by default.",
+      "It allows defining computed attributes.",
+      "It simplifies getter and setter methods.",
+      "It allows defining methods that act like attributes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\b\\d{3}-\\d{2}-\\d{4}\\b\"\ntext = \"My SSN is 123-45-6789.\"\nmatch = re.search(pattern, text)\nprint(match.group() if match else None)",
+    "o": [
+      "\"123-45-6789\"",
+      "None",
+      "Error",
+      "\"6789\""
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches an email address?",
+    "c": null,
+    "o": [
+      "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+      "[a-z]+@\\d+\\.com",
+      "[0-9a-zA-Z]+@[0-9]+\\.[a-zA-Z]",
+      "\\w+@[A-Z]+\\.(com|net)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse(\"hello\")\nprint(list(rev))",
+    "o": [
+      "['o', 'l', 'l', 'e', 'h']",
+      "['h', 'e', 'l', 'l', 'o']",
+      "['o', 'l', 'e', 'h']",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of an iterator?",
+    "c": null,
+    "o": [
+      "It must implement both __iter__() and __next__() methods.",
+      "It stores all elements in memory.",
+      "It always loops infinitely.",
+      "It does not raise StopIteration."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nc = countdown(3)\nprint(list(c))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about Python generators?",
+    "c": null,
+    "o": [
+      "Generators can be paused and resumed.",
+      "They use less memory compared to lists for large data.",
+      "They execute all elements at once.",
+      "They use the 'yield' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure function?",
+    "c": "def multiplier(n):\n    def multiply(x):\n        return x * n\n    return multiply\n\ntwice = multiplier(2)\nthrice = multiplier(3)\nprint(twice(5), thrice(5))",
+    "o": [
+      "10 15",
+      "5 5",
+      "15 10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure?",
+    "c": null,
+    "o": [
+      "A function that remembers variables from its enclosing scope.",
+      "A function that runs only once.",
+      "A function that does not return values.",
+      "A function without parameters."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def repeat(func):\n    def wrapper(*args, **kwargs):\n        func(*args, **kwargs)\n        func(*args, **kwargs)\n    return wrapper\n\n@repeat\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")",
+    "o": [
+      "Hello, Alice!\nHello, Alice!",
+      "Hello, Alice!",
+      "Hello, Alice!\nHello, Bob!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use case for decorators?",
+    "c": null,
+    "o": [
+      "Modifying or extending a function's behavior.",
+      "Creating loops in Python.",
+      "Defining a new class.",
+      "Replacing functions with variables."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property usage?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def radius(self):\n        return self._radius\n    \n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(5)\nc.radius = -1",
+    "o": [
+      "ValueError: Radius cannot be negative",
+      "None",
+      "0",
+      "Error: Cannot set property"
+    ]
+  },
+  {
+    "q": "Which of the following statements about @property is TRUE?",
+    "c": null,
+    "o": [
+      "It allows defining getter, setter, and deleter methods for an attribute.",
+      "It forces attributes to be mutable.",
+      "It cannot be used in classes.",
+      "It makes a method static."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d{4}-\\d{2}-\\d{2}\"\ntext = \"Today's date is 2024-03-23.\"\nmatch = re.search(pattern, text)\nprint(match.group() if match else None)",
+    "o": [
+      "\"2024-03-23\"",
+      "None",
+      "Error",
+      "\"23-03-2024\""
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches a phone number in the format (123) 456-7890?",
+    "c": null,
+    "o": [
+      "\\(\\d{3}\\) \\d{3}-\\d{4}",
+      "\\d{3}-\\d{3}-\\d{4}",
+      "\\(\\d{3}\\)-\\d{3}-\\d{4}",
+      "\\d{10}"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_num):\n        self.max_num = max_num\n        self.current = 0\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.current >= self.max_num:\n            raise StopIteration\n        self.current += 2\n        return self.current - 2\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4]",
+      "[2, 4, 6]",
+      "[1, 3, 5]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about iterators is FALSE?",
+    "c": null,
+    "o": [
+      "An iterator must implement the __next__() method.",
+      "An iterator must implement the __iter__() method.",
+      "An iterator can return values infinitely.",
+      "Iterators always store data in memory."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator expression?",
+    "c": "squares = (x ** 2 for x in range(4))\nprint(list(squares))",
+    "o": [
+      "[0, 1, 4, 9]",
+      "[1, 4, 9, 16]",
+      "[0, 2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a Python generator?",
+    "c": null,
+    "o": [
+      "A function that returns an iterator using 'yield'.",
+      "A function that runs indefinitely.",
+      "A function that executes fully before returning.",
+      "A function that stores all values in memory."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def power(n):\n    def exponent(x):\n        return x ** n\n    return exponent\n\nsquare = power(2)\ncube = power(3)\nprint(square(3), cube(3))",
+    "o": [
+      "9 27",
+      "3 9",
+      "6 18",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid characteristic of closures?",
+    "c": null,
+    "o": [
+      "They allow inner functions to access outer function variables.",
+      "They retain state even after the outer function has finished execution.",
+      "They require the 'global' keyword to access outer variables.",
+      "They are useful for function factories."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello world\"\n\nprint(greet())",
+    "o": [
+      "\"HELLO WORLD\"",
+      "\"hello world\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a primary use case of decorators in Python?",
+    "c": null,
+    "o": [
+      "Modifying or extending function behavior without modifying the function itself.",
+      "Compiling Python code into machine code.",
+      "Defining new classes dynamically.",
+      "Overloading functions with different argument types."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property usage?",
+    "c": "class Person:\n    def __init__(self, name):\n        self._name = name\n    \n    @property\n    def name(self):\n        return self._name\n\np = Person(\"Alice\")\nprint(p.name)",
+    "o": [
+      "\"Alice\"",
+      "None",
+      "Error",
+      "\"_name\""
+    ]
+  },
+  {
+    "q": "Which statement about the @property decorator is FALSE?",
+    "c": null,
+    "o": [
+      "It allows controlling access to attributes.",
+      "It enables defining getter, setter, and deleter methods.",
+      "It forces attributes to be immutable.",
+      "It helps encapsulate data."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"[A-Za-z]+\\d+\"\ntext = \"User123\"\nmatch = re.match(pattern, text)\nprint(match.group() if match else None)",
+    "o": [
+      "\"User123\"",
+      "None",
+      "Error",
+      "\"123User\""
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches an email address?",
+    "c": null,
+    "o": [
+      "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+",
+      "\\d+@\\d+\\.\\d+",
+      "\\w+@\\w+",
+      "@[a-z]+\\.[a-z]+"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator code?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current - 1\n\ncounter = Counter(3, 6)\nprint(list(counter))",
+    "o": [
+      "[3, 4, 5]",
+      "[3, 4, 5, 6]",
+      "[4, 5, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between an iterator and an iterable?",
+    "c": null,
+    "o": [
+      "An iterator implements __next__(), whereas an iterable does not.",
+      "An iterable can be iterated only once, but an iterator can be used multiple times.",
+      "Iterators store all elements in memory, while iterables do not.",
+      "Iterators do not implement __iter__()."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nc = countdown(3)\nprint(list(c))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes Python generators?",
+    "c": null,
+    "o": [
+      "They use 'yield' instead of 'return' to produce a sequence of values.",
+      "They execute fully before returning values.",
+      "They store all generated values in memory.",
+      "They do not support iteration."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure?",
+    "c": "def multiplier(factor):\n    def multiply(num):\n        return num * factor\n    return multiply\n\ntimes_two = multiplier(2)\nprint(times_two(5))",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT an advantage of closures?",
+    "c": null,
+    "o": [
+      "They provide data encapsulation.",
+      "They allow function factories.",
+      "They require global variables to work.",
+      "They help maintain state."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator function?",
+    "c": "def repeat(func):\n    def wrapper():\n        return func() + func()\n    return wrapper\n\n@repeat\ndef greet():\n    return \"Hello\"\n\nprint(greet())",
+    "o": [
+      "\"HelloHello\"",
+      "\"Hello\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use case for decorators?",
+    "c": null,
+    "o": [
+      "Creating instance variables in a class.",
+      "Logging function calls.",
+      "Enforcing authentication in web frameworks.",
+      "Measuring function execution time."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property implementation?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def radius(self):\n        return self._radius\n\nc = Circle(7)\nprint(c.radius)",
+    "o": [
+      "7",
+      "None",
+      "Error",
+      "\"_radius\""
+    ]
+  },
+  {
+    "q": "Which of the following statements about @property is TRUE?",
+    "c": null,
+    "o": [
+      "It allows defining read-only attributes.",
+      "It replaces all setter and getter methods.",
+      "It prevents object instantiation.",
+      "It removes attributes from the object."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d{3}-\\d{2}-\\d{4}\"\ntext = \"My SSN is 123-45-6789.\"\nmatch = re.search(pattern, text)\nprint(match.group() if match else None)",
+    "o": [
+      "\"123-45-6789\"",
+      "None",
+      "Error",
+      "\"SSN\""
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches a phone number in the format (XXX) XXX-XXXX?",
+    "c": null,
+    "o": [
+      "\\(\\d{3}\\) \\d{3}-\\d{4}",
+      "\\d{3}-\\d{3}-\\d{4}",
+      "\\(\\d{3}\\)-\\d{3}-\\d{4}",
+      "\\d{10}"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator implementation?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_n):\n        self.n = 0\n        self.max_n = max_n\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.n >= self.max_n:\n            raise StopIteration\n        self.n += 2\n        return self.n - 2\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4]",
+      "[0, 2, 4, 6]",
+      "[2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method must be implemented for an object to be considered an iterator?",
+    "c": null,
+    "o": [
+      "__next__()",
+      "__iter__()",
+      "__call__()",
+      "__getitem__()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator?",
+    "c": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nprint(list(fibonacci(5)))",
+    "o": [
+      "[0, 1, 1, 2, 3]",
+      "[1, 1, 2, 3, 5]",
+      "[0, 1, 2, 3, 5]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about generators is FALSE?",
+    "c": null,
+    "o": [
+      "They return a value only once and cannot be restarted.",
+      "They are memory-efficient compared to lists.",
+      "They store all values in memory before yielding.",
+      "They allow iteration over potentially infinite sequences."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure?",
+    "c": "def exponentiate(exponent):\n    def power(base):\n        return base ** exponent\n    return power\n\nsquare = exponentiate(2)\nprint(square(3))",
+    "o": [
+      "9",
+      "6",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure?",
+    "c": null,
+    "o": [
+      "A function that remembers variables from its enclosing scope even after the scope has finished executing.",
+      "A function that must be defined inside another function.",
+      "A function that cannot have default arguments.",
+      "A function that modifies its enclosing scope's variables directly."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "\"HELLO\"",
+      "\"hello\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about decorators is TRUE?",
+    "c": null,
+    "o": [
+      "They can modify the behavior of a function without modifying its code.",
+      "They must be applied using the @ symbol.",
+      "They can only be used on class methods.",
+      "They do not allow function composition."
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Temperature:\n    def __init__(self, celsius):\n        self._celsius = celsius\n    \n    @property\n    def fahrenheit(self):\n        return (self._celsius * 9/5) + 32\n\nt = Temperature(25)\nprint(t.fahrenheit)",
+    "o": [
+      "77.0",
+      "25",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a key advantage of using @property?",
+    "c": null,
+    "o": [
+      "It allows defining computed attributes without explicit getter methods.",
+      "It replaces all instance variables with computed values.",
+      "It prevents access to private attributes.",
+      "It allows modifying attributes directly without any method calls."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex operation?",
+    "c": "import re\npattern = r\"\\b[A-Z][a-z]+\\b\"\ntext = \"Hello world, Python is Awesome!\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+    "o": [
+      "[\"Hello\", \"Python\", \"Awesome\"]",
+      "[\"Hello world\", \"Python is\", \"Awesome\"]",
+      "[\"Hello\", \"world\", \"Python\", \"is\", \"Awesome\"]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern matches an email address?",
+    "c": null,
+    "o": [
+      "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+",
+      "[a-zA-Z]+@[a-zA-Z]+",
+      "[0-9]+@[a-z]+\\.com",
+      "[a-z]+@[a-z]+\\."
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Reverse:\n    def __init__(self, data):\n        self.data = data\n        self.index = len(data)\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.index == 0:\n            raise StopIteration\n        self.index -= 1\n        return self.data[self.index]\n\nrev = Reverse('abc')\nprint(list(rev))",
+    "o": [
+      "['c', 'b', 'a']",
+      "['a', 'b', 'c']",
+      "Error",
+      "['c', 'a', 'b']"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about iterators?",
+    "c": null,
+    "o": [
+      "Iterators must implement both __iter__() and __next__() methods.",
+      "An iterator can be traversed only once unless reset manually.",
+      "Iterators are more memory-efficient than lists for large datasets.",
+      "Iterators automatically restart once they reach the end."
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def count_down(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nprint(list(count_down(3)))",
+    "o": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[3, 2, 1, 0]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about Python generators?",
+    "c": null,
+    "o": [
+      "They use the 'yield' keyword instead of 'return'.",
+      "They store all values in memory before iteration.",
+      "They must be explicitly converted to lists before use.",
+      "They cannot be used in loops."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure?",
+    "c": "def make_multiplier(x):\n    def multiplier(y):\n        return x * y\n    return multiplier\n\ntimes_three = make_multiplier(3)\nprint(times_three(5))",
+    "o": [
+      "15",
+      "8",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that retains access to variables from its enclosing scope even after the outer function has finished executing.",
+      "A function that can only be created inside another function.",
+      "A function that modifies global variables directly.",
+      "A function that does not take any arguments."
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator?",
+    "c": "def repeat_twice(func):\n    def wrapper():\n        func()\n        func()\n    return wrapper\n\n@repeat_twice\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "o": [
+      "\"Hello\\nHello\"",
+      "\"Hello\"",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python decorators is FALSE?",
+    "c": null,
+    "o": [
+      "A decorator is a function that takes another function as input and returns a new function.",
+      "Decorators modify the behavior of the original function without altering its code.",
+      "A decorator must always return a function.",
+      "Decorators can only be applied to functions, not classes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following @property example?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n    \n    @property\n    def area(self):\n        return 3.14 * self._radius ** 2\n\nc = Circle(3)\nprint(c.area)",
+    "o": [
+      "28.26",
+      "6",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of using @property?",
+    "c": null,
+    "o": [
+      "It allows computed attributes without needing explicit getter methods.",
+      "It forces all attributes to be immutable.",
+      "It eliminates the need for instance variables.",
+      "It makes all methods private."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d{2}-\\d{2}-\\d{4}\"\ntext = \"Today's date is 12-10-2023 and tomorrow's is 13-10-2023.\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+    "o": [
+      "[\"12-10-2023\", \"13-10-2023\"]",
+      "[\"12-10-2023\"]",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which regex pattern correctly matches a U.S. phone number in the format (XXX) XXX-XXXX?",
+    "c": null,
+    "o": [
+      "\\(\\d{3}\\) \\d{3}-\\d{4}",
+      "\\d{3}-\\d{3}-\\d{4}",
+      "\\d{10}",
+      "\\(\\d{3}\\)-\\d{3}-\\d{4}"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class EvenNumbers:\n    def __init__(self, max_num):\n        self.max_num = max_num\n        self.num = 0\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.num >= self.max_num:\n            raise StopIteration\n        self.num += 2\n        return self.num - 2\n\nevens = EvenNumbers(6)\nprint(list(evens))",
+    "o": [
+      "[0, 2, 4]",
+      "[2, 4, 6]",
+      "[0, 2, 4, 6]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is required for an object to be considered an iterator?",
+    "c": null,
+    "o": [
+      "__next__()",
+      "__iter__()",
+      "__call__()",
+      "__getitem__()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nprint(list(fib(5)))",
+    "o": [
+      "[0, 1, 1, 2, 3]",
+      "[1, 1, 2, 3, 5]",
+      "[0, 1, 2, 3, 5]",
+      "[0, 1, 1, 2, 4]"
+    ]
+  },
+  {
+    "q": "Which of the following statements about generators is FALSE?",
+    "c": null,
+    "o": [
+      "Generators can be paused and resumed.",
+      "Generators are memory efficient for large data processing.",
+      "Generators return all values at once.",
+      "Generators use the 'yield' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def counter():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment\n\ninc = counter()\nprint(inc(), inc(), inc())",
+    "o": [
+      "1 2 3",
+      "0 1 2",
+      "3 3 3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a use case for closures?",
+    "c": null,
+    "o": [
+      "Creating stateful functions",
+      "Encapsulating variables",
+      "Enhancing code reusability",
+      "Directly modifying global variables"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def debug(func):\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__} with {args}, {kwargs}\")\n        return func(*args, **kwargs)\n    return wrapper\n\n@debug\ndef add(a, b):\n    return a + b\n\nprint(add(3, 4))",
+    "o": [
+      "\"Calling add with (3, 4), {}\\n7\"",
+      "\"Calling add with (3, 4)\\n7\"",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about decorators?",
+    "c": null,
+    "o": [
+      "Decorators wrap functions to modify their behavior.",
+      "Decorators can only be used on class methods.",
+      "A function can have only one decorator.",
+      "Decorators must return None."
+    ]
+  },
+  {
+    "q": "What will be the output of the following @property example?",
+    "c": "class Temperature:\n    def __init__(self, celsius):\n        self._celsius = celsius\n    \n    @property\n    def fahrenheit(self):\n        return (self._celsius * 9/5) + 32\n\ntemp = Temperature(25)\nprint(temp.fahrenheit)",
+    "o": [
+      "77.0",
+      "25",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which statement about @property in Python is FALSE?",
+    "c": null,
+    "o": [
+      "@property can be used to define read-only attributes.",
+      "@property methods can be accessed like attributes.",
+      "@property requires defining a setter method.",
+      "@property helps encapsulate class attributes."
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex example?",
+    "c": "import re\npattern = r\"\\b[a-zA-Z]+ing\\b\"\ntext = \"I am walking and talking while thinking.\"\nmatches = re.findall(pattern, text)\nprint(matches)",
+    "o": [
+      "[\"walking\", \"talking\", \"thinking\"]",
+      "[\"I\", \"walking\", \"talking\", \"thinking\"]",
+      "[]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which regex pattern matches an email address correctly?",
+    "c": null,
+    "o": [
+      "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+      "[a-zA-Z]+@[a-zA-Z]+\\.[a-zA-Z]{2,}",
+      "[0-9a-zA-Z]+@[a-zA-Z]+",
+      "[a-z]+@[a-z]+\\.[a-z]+"
+    ]
+  },
+  {
+    "q": "What will be the output of the following map function example?",
+    "c": "def square(n):\n    return n * n\n\nnums = [1, 2, 3, 4]\nresult = list(map(square, nums))\nprint(result)",
+    "o": [
+      "[1, 4, 9, 16]",
+      "[1, 2, 3, 4]",
+      "[2, 4, 6, 8]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to filter elements from an iterable based on a condition?",
+    "c": null,
+    "o": [
+      "filter()",
+      "map()",
+      "reduce()",
+      "lambda"
+    ]
+  },
+  {
+    "q": "What will be the output of the following reduce function example?",
+    "c": "from functools import reduce\nnums = [1, 2, 3, 4]\nresult = reduce(lambda x, y: x + y, nums)\nprint(result)",
+    "o": [
+      "10",
+      "[1, 2, 3, 4]",
+      "[10]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about lambda functions in Python is FALSE?",
+    "c": null,
+    "o": [
+      "Lambda functions can have multiple expressions.",
+      "Lambda functions are anonymous functions.",
+      "Lambda functions can be used as arguments to higher-order functions.",
+      "Lambda functions return a value implicitly."
+    ]
+  },
+  {
+    "q": "What will be the output of the following zip function example?",
+    "c": "names = [\"Alice\", \"Bob\", \"Charlie\"]\nages = [25, 30, 35]\nresult = list(zip(names, ages))\nprint(result)",
+    "o": [
+      "[('Alice', 25), ('Bob', 30), ('Charlie', 35)]",
+      "[['Alice', 25], ['Bob', 30], ['Charlie', 35]]",
+      "[('Alice', 'Bob', 'Charlie'), (25, 30, 35)]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to create an iterator that aggregates elements from multiple iterables?",
+    "c": null,
+    "o": [
+      "zip()",
+      "map()",
+      "filter()",
+      "reduce()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following dictionary comprehension?",
+    "c": "nums = [1, 2, 3, 4]\nsquares = {n: n**2 for n in nums}\nprint(squares)",
+    "o": [
+      "{1: 1, 2: 4, 3: 9, 4: 16}",
+      "[1, 4, 9, 16]",
+      "{1, 4, 9, 16}",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid way to create a set in Python?",
+    "c": null,
+    "o": [
+      "{1, 2, 3}",
+      "set([1, 2, 3])",
+      "{}",
+      "set((1, 2, 3))"
+    ]
+  },
+  {
+    "q": "What will be the output of the following set operation?",
+    "c": "A = {1, 2, 3}\nB = {3, 4, 5}\nprint(A & B)",
+    "o": [
+      "{3}",
+      "{1, 2, 3, 4, 5}",
+      "{1, 2}",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a mutable data type in Python?",
+    "c": null,
+    "o": [
+      "List",
+      "Tuple",
+      "String",
+      "Frozenset"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator function?",
+    "c": "def my_generator():\n    yield 1\n    yield 2\n    yield 3\n\ngen = my_generator()\nprint(next(gen))\nprint(next(gen))",
+    "o": [
+      "1\n2",
+      "[1, 2, 3]",
+      "1\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a Python generator?",
+    "c": null,
+    "o": [
+      "A function that returns an iterator using 'yield'",
+      "A function that stores all values in memory before returning",
+      "A function that must return a list",
+      "A function that uses 'return' instead of 'yield'"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "def outer_function(x):\n    def inner_function(y):\n        return x + y\n    return inner_function\n\nclosure = outer_function(10)\nprint(closure(5))",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a defining characteristic of a closure in Python?",
+    "c": null,
+    "o": [
+      "A function that remembers the variables from its enclosing scope",
+      "A function that does not accept any parameters",
+      "A function that is defined inside another function but does not use its variables",
+      "A function that can only return integers"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def decorator(func):\n    def wrapper():\n        print(\"Before function call\")\n        func()\n        print(\"After function call\")\n    return wrapper\n\n@decorator\ndef say_hello():\n    print(\"Hello\")\n\nsay_hello()",
+    "o": [
+      "Before function call\nHello\nAfter function call",
+      "Hello\nBefore function call\nAfter function call",
+      "Before function call\nAfter function call\nHello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about Python decorators is TRUE?",
+    "c": null,
+    "o": [
+      "Decorators modify the behavior of a function without changing its source code",
+      "Decorators must always return None",
+      "Decorators cannot accept parameters",
+      "Decorators must be defined inside a class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Person:\n    def __init__(self, name):\n        self._name = name\n\n    @property\n    def name(self):\n        return self._name\n\np = Person(\"Alice\")\nprint(p.name)",
+    "o": [
+      "Alice",
+      "_name",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of the @property decorator?",
+    "c": null,
+    "o": [
+      "To define a method as a read-only attribute",
+      "To create a static method",
+      "To define a class-level variable",
+      "To restrict a method from being overridden"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"There are 42 apples\"\nmatch = re.search(pattern, text)\nprint(match.group())",
+    "o": [
+      "42",
+      "There",
+      "apples",
+      "None"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class Counter:\n    def __init__(self, start, end):\n        self.current = start\n        self.end = end\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        self.current += 1\n        return self.current - 1\n\ncounter = Counter(1, 4)\nprint(next(counter))\nprint(next(counter))",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "2\n3",
+      "1\n3"
+    ]
+  },
+  {
+    "q": "Which of the following methods is required to make a class an iterator?",
+    "c": null,
+    "o": [
+      "__iter__ and __next__",
+      "__getitem__ and __setitem__",
+      "__call__ and __repr__",
+      "__len__ and __contains__"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator example?",
+    "c": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\ncd = countdown(3)\nprint(next(cd))\nprint(next(cd))",
+    "o": [
+      "3\n2",
+      "2\n1",
+      "3\n1",
+      "3\n0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a Python generator?",
+    "c": null,
+    "o": [
+      "A function that uses 'yield' to return values lazily",
+      "A function that returns all values at once",
+      "A function that stores all returned values in a list",
+      "A function that can only be used once"
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def multiplier(n):\n    def multiply(x):\n        return x * n\n    return multiply\n\ndouble = multiplier(2)\nprint(double(5))",
+    "o": [
+      "10",
+      "7",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a closure?",
+    "c": null,
+    "o": [
+      "A function that captures and remembers values from its enclosing scope",
+      "A function that can only be defined inside another function",
+      "A function that does not use any variables",
+      "A function that must return another function"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def repeat(func):\n    def wrapper():\n        func()\n        func()\n    return wrapper\n\n@repeat\ndef greet():\n    print(\"Hello\")\n\ngreet()",
+    "o": [
+      "Hello\nHello",
+      "Hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about decorators is FALSE?",
+    "c": null,
+    "o": [
+      "Decorators can modify the behavior of functions",
+      "Decorators must always return None",
+      "Decorators can be stacked",
+      "Decorators wrap another function"
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Rectangle:\n    def __init__(self, width, height):\n        self._width = width\n        self._height = height\n\n    @property\n    def area(self):\n        return self._width * self._height\n\nrect = Rectangle(4, 5)\nprint(rect.area)",
+    "o": [
+      "20",
+      "9",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the @property decorator is TRUE?",
+    "c": null,
+    "o": [
+      "It allows defining a method that behaves like an attribute",
+      "It can only be used with integer values",
+      "It must always have a setter method",
+      "It is used to define a class-level variable"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"[A-Z][a-z]+\"\ntext = \"Hello World\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['Hello', 'World']",
+      "['Hello']",
+      "['World']",
+      "[]"
+    ]
+  },
+  {
+    "q": "Which of the following regex patterns matches a phone number in the format (123) 456-7890?",
+    "c": null,
+    "o": [
+      "^\\(\\d{3}\\) \\d{3}-\\d{4}$",
+      "^\\d{3}-\\d{2}-\\d{4}$",
+      "^\\d{10}$",
+      "^\\d{3}.\\d{3}.\\d{4}$"
+    ]
+  },
+  {
+    "q": "What will be the output of the following iterator example?",
+    "c": "class EvenNumbers:\n    def __init__(self, limit):\n        self.num = 0\n        self.limit = limit\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.num >= self.limit:\n            raise StopIteration\n        self.num += 2\n        return self.num - 2\n\nevens = EvenNumbers(6)\nprint(next(evens))\nprint(next(evens))",
+    "o": [
+      "0\n2",
+      "0\n4",
+      "2\n4",
+      "2\n6"
+    ]
+  },
+  {
+    "q": "Which of the following statements about iterators is TRUE?",
+    "c": null,
+    "o": [
+      "Iterators must implement both __iter__ and __next__ methods",
+      "Iterators must always be infinite",
+      "Iterators cannot store state",
+      "Iterators must be defined inside a class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following generator example?",
+    "c": "def squares(n):\n    for i in range(n):\n        yield i * i\n\nsq = squares(4)\nprint(list(sq))",
+    "o": [
+      "[0, 1, 4, 9]",
+      "[1, 4, 9, 16]",
+      "[0, 2, 4, 6]",
+      "[1, 2, 3, 4]"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a Python generator?",
+    "c": null,
+    "o": [
+      "A function that returns values lazily using yield",
+      "A function that always returns a list",
+      "A function that executes only once",
+      "A function that cannot be iterated over"
+    ]
+  },
+  {
+    "q": "What will be the output of the following closure example?",
+    "c": "def power(exponent):\n    def calculate(base):\n        return base ** exponent\n    return calculate\n\nsquare = power(2)\ncube = power(3)\nprint(square(3), cube(2))",
+    "o": [
+      "9 8",
+      "6 8",
+      "9 6",
+      "3 2"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of closures in Python?",
+    "c": null,
+    "o": [
+      "They capture and remember values from their enclosing function",
+      "They must always return another function",
+      "They do not store any state",
+      "They can only be used once"
+    ]
+  },
+  {
+    "q": "What will be the output of the following decorator example?",
+    "c": "def uppercase_decorator(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\n@uppercase_decorator\ndef greet():\n    return \"hello\"\n\nprint(greet())",
+    "o": [
+      "HELLO",
+      "hello",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use case for decorators?",
+    "c": null,
+    "o": [
+      "To make a function run only once",
+      "To modify function behavior without changing its code",
+      "To log function execution",
+      "To enforce authentication"
+    ]
+  },
+  {
+    "q": "What will be the output of the following property example?",
+    "c": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n\n    @property\n    def radius(self):\n        return self._radius\n\n    @radius.setter\n    def radius(self, value):\n        if value < 0:\n            raise ValueError(\"Radius cannot be negative\")\n        self._radius = value\n\nc = Circle(5)\nc.radius = -2",
+    "o": [
+      "ValueError: Radius cannot be negative",
+      "5",
+      "None",
+      "Error: Cannot change property"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about the @property decorator?",
+    "c": null,
+    "o": [
+      "It allows controlled access to attributes",
+      "It prevents attributes from being modified",
+      "It can only be used with integer values",
+      "It does not support setter methods"
+    ]
+  },
+  {
+    "q": "What will be the output of the following regex match?",
+    "c": "import re\npattern = r\"\\d+\"\ntext = \"abc123xyz456\"\nmatch = re.findall(pattern, text)\nprint(match)",
+    "o": [
+      "['123', '456']",
+      "['abc', 'xyz']",
+      "['123xyz456']",
+      "['1', '2', '3', '4', '5', '6']"
+    ]
+  },
+  {
+    "q": "Which regex pattern matches an email address like 'user@example.com'?",
+    "c": null,
+    "o": [
+      "^[\\w\\.-]+@[\\w\\.-]+\\.\\w+$",
+      "^\\d{3}-\\d{2}-\\d{4}$",
+      "^\\w+\\.\\w+$",
+      "^[A-Z]+@[A-Z]+$"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet using an iterator?",
+    "c": "numbers = iter([1, 2, 3])\nprint(next(numbers))\nprint(next(numbers))",
+    "o": [
+      "1\n2",
+      "1\n1",
+      "2\n3",
+      "[1, 2, 3]",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a generator function in Python?",
+    "c": null,
+    "o": [
+      "def gen(): yield 1; yield 2",
+      "def gen(): return 1; return 2",
+      "def gen() { yield 1, yield 2 }",
+      "def gen(): yield return 1"
+    ]
+  },
+  {
+    "q": "What does this closure do when executed?",
+    "c": "def outer(x):\n    def inner(y):\n        return x + y\n    return inner\n\nadd_five = outer(5)\nprint(add_five(3))",
+    "o": [
+      "8",
+      "3",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct use of a decorator in Python?",
+    "c": "@my_decorator\ndef say_hi():\n    print('Hi!')",
+    "o": [
+      "Applies my_decorator to say_hi",
+      "Defines say_hi as a decorator",
+      "Causes a syntax error",
+      "Prints 'Hi!' without decoration"
+    ]
+  },
+  {
+    "q": "What is the output of this code using a property?",
+    "c": "class Person:\n    def __init__(self, name):\n        self._name = name\n    @property\n    def name(self):\n        return self._name\n\np = Person('Alice')\nprint(p.name)",
+    "o": [
+      "Alice",
+      "None",
+      "_name",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string containing only digits?",
+    "c": null,
+    "o": [
+      "^\\d+$",
+      "^[a-z]+$",
+      "^\\w+$",
+      "^[A-Z]+$"
+    ]
+  },
+  {
+    "q": "What does this generator expression produce?",
+    "c": "squares = (x * x for x in range(3))\nprint(list(squares))",
+    "o": [
+      "[0, 1, 4]",
+      "[1, 2, 3]",
+      "[0, 1, 2]",
+      "Error"
+    ]
+  },
+  {
+    "q": "How does a closure differ from a regular function in Python?",
+    "c": null,
+    "o": [
+      "It retains access to variables from its enclosing scope",
+      "It cannot return values",
+      "It must use global variables",
+      "It executes faster than regular functions"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a custom object?",
+    "c": "class MyRange:\n    def __init__(self, end):\n        self.current = 0\n        self.end = end\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current < self.end:\n            self.current += 1\n            return self.current\n        raise StopIteration\n\nr = MyRange(2)\nprint(next(r))\nprint(next(r))",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "2\n3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a valid way to define a generator that produces even numbers?",
+    "c": null,
+    "o": [
+      "def evens(n): for i in range(n): yield i * 2",
+      "def evens(n): return [i * 2 for i in range(n)]",
+      "def evens(n): yield i * 2 for i in range(n)",
+      "def evens(n): return i * 2 for i in range(n)"
+    ]
+  },
+  {
+    "q": "What is the result of this code using a closure with a mutable default argument?",
+    "c": "def create_multiplier(factor):\n    def multiplier(x, memo=[]):\n        memo.append(x * factor)\n        return memo\n    return multiplier\n\nm = create_multiplier(2)\nprint(m(3))\nprint(m(4))",
+    "o": [
+      "[6]\n[6, 8]",
+      "[6]\n[8]",
+      "6\n8",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does this decorator do to the function it decorates?",
+    "c": "def log_call(func):\n    def wrapper(*args):\n        print(f'Calling {func.__name__}')\n        return func(*args)\n    return wrapper\n\n@log_call\ndef add(a, b):\n    return a + b\n\nprint(add(2, 3))",
+    "o": [
+      "Calling add\n5",
+      "5",
+      "Calling add",
+      "Error"
+    ]
+  },
+  {
+    "q": "What happens when you set a value using this property with a setter?",
+    "c": "class Box:\n    def __init__(self):\n        self._size = 0\n    @property\n    def size(self):\n        return self._size\n    @size.setter\n    def size(self, value):\n        self._size = value\n\nb = Box()\nb.size = 10\nprint(b.size)",
+    "o": [
+      "10",
+      "0",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches an email address with a domain ending in '.com'?",
+    "c": null,
+    "o": [
+      "^[\\w.-]+@[\\w.-]+\\.com$",
+      "^[\\w.-]+@[\\w.-]+\\.edu$",
+      "^[\\w.-]+\\.com$",
+      "^@+[\\w.-]+\\.com$"
+    ]
+  },
+  {
+    "q": "What does this generator function yield when called with n=3?",
+    "c": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nprint(list(fibonacci(3)))",
+    "o": [
+      "[0, 1, 1]",
+      "[1, 1, 2]",
+      "[0, 1, 2]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the primary benefit of using a decorator in Python?",
+    "c": null,
+    "o": [
+      "It allows modification of function behavior without altering its code",
+      "It improves execution speed automatically",
+      "It restricts access to function variables",
+      "It prevents functions from returning values"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a string?",
+    "c": "text = iter('xyz')\nprint(next(text))\nprint(next(text))\nprint(next(text))",
+    "o": [
+      "x\ny\nz",
+      "xyz",
+      "x\nx\nx",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator definitions will produce an infinite sequence of powers of 2?",
+    "c": null,
+    "o": [
+      "def powers_of_two(): n = 1; while True: yield n; n *= 2",
+      "def powers_of_two(): n = 1; for i in range(2): yield n; n *= 2",
+      "def powers_of_two(): n = 2; yield n forever",
+      "def powers_of_two(): return [2**i for i in range(infinity)]"
+    ]
+  },
+  {
+    "q": "What does this closure return when called multiple times?",
+    "c": "def counter():\n    count = 0\n    def increment():\n        nonlocal count\n        count += 1\n        return count\n    return increment\n\nc = counter()\nprint(c())\nprint(c())",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "1\n1",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the effect of this decorator on the function's return value?",
+    "c": "def double_result(func):\n    def wrapper(*args):\n        return func(*args) * 2\n    return wrapper\n\n@double_result\ndef multiply(a, b):\n    return a * b\n\nprint(multiply(3, 4))",
+    "o": [
+      "24",
+      "12",
+      "48",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output when accessing and modifying this property?",
+    "c": "class Temperature:\n    def __init__(self):\n        self._temp = 0\n    @property\n    def temp(self):\n        return self._temp\n    @temp.setter\n    def temp(self, value):\n        if value < -273:\n            raise ValueError('Too cold!')\n        self._temp = value\n\nt = Temperature()\nt.temp = 25\nprint(t.temp)",
+    "o": [
+      "25",
+      "0",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a phone number in the format '123-456-7890'?",
+    "c": null,
+    "o": [
+      "^\\d{3}-\\d{3}-\\d{4}$",
+      "^\\d{10}$",
+      "^[0-9]+-[0-9]+-[0-9]+$",
+      "^\\d{3}.\\d{3}.\\d{4}$"
+    ]
+  },
+  {
+    "q": "What does this generator produce when converted to a list?",
+    "c": "def odd_numbers(n):\n    for i in range(n):\n        if i % 2:\n            yield i\n\nprint(list(odd_numbers(5)))",
+    "o": [
+      "[1, 3]",
+      "[0, 2, 4]",
+      "[1, 2, 3, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a key characteristic of an iterator in Python?",
+    "c": null,
+    "o": [
+      "It implements __iter__ and __next__ methods",
+      "It can only be used with lists",
+      "It automatically resets after exhaustion",
+      "It cannot be used in a for loop"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a tuple?",
+    "c": "data = iter((10, 20, 30, 40))\nnext(data)\nprint(next(data))\nprint(next(data))",
+    "o": [
+      "20\n30",
+      "10\n20",
+      "30\n40",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator functions will yield the first 5 Fibonacci numbers?",
+    "c": null,
+    "o": [
+      "def fib(n): a, b = 0, 1; for _ in range(n): yield a; a, b = b, a + b",
+      "def fib(n): a, b = 1, 1; for _ in range(n): yield a; a, b = b, a + b",
+      "def fib(n): a = 0; for _ in range(n): yield a; a += 1",
+      "def fib(n): yield [0, 1, 1, 2, 3][:n]"
+    ]
+  },
+  {
+    "q": "What does this closure do when called with different arguments?",
+    "c": "def make_power(base):\n    def power(exp):\n        return base ** exp\n    return power\n\nsquare = make_power(2)\nprint(square(3))\nprint(square(4))",
+    "o": [
+      "8\n16",
+      "6\n8",
+      "9\n16",
+      "Error"
+    ]
+  },
+  {
+    "q": "What happens when this decorator is applied to a function with no arguments?",
+    "c": "def add_greeting(func):\n    def wrapper():\n        return 'Hello, ' + func()\n    return wrapper\n\n@add_greeting\ndef name():\n    return 'Bob'\n\nprint(name())",
+    "o": [
+      "Hello, Bob",
+      "Bob",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output when using this property with a getter and deleter?",
+    "c": "class Item:\n    def __init__(self):\n        self._id = 123\n    @property\n    def id(self):\n        return self._id\n    @id.deleter\n    def id(self):\n        del self._id\n\ni = Item()\nprint(i.id)\ndel i.id\nprint(hasattr(i, '_id'))",
+    "o": [
+      "123\nFalse",
+      "123\nTrue",
+      "None\nFalse",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string with at least one uppercase letter?",
+    "c": null,
+    "o": [
+      "[A-Z]+",
+      "[a-z]+",
+      "\\d+",
+      "[A-Za-z]+"
+    ]
+  },
+  {
+    "q": "What does this generator yield when iterated over with a for loop?",
+    "c": "def reverse_range(n):\n    for i in range(n - 1, -1, -1):\n        yield i\n\nfor x in reverse_range(3):\n    print(x)",
+    "o": [
+      "2\n1\n0",
+      "0\n1\n2",
+      "3\n2\n1",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a primary advantage of using properties in Python classes?",
+    "c": null,
+    "o": [
+      "They allow controlled access to attributes",
+      "They automatically validate all data types",
+      "They make classes immutable",
+      "They reduce memory usage significantly"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a set?",
+    "c": "items = iter({4, 2, 8})\nprint(next(items))\nprint(next(items))",
+    "o": [
+      "4\n2",
+      "2\n4",
+      "8\n4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator functions will produce a sequence of cubes up to n?",
+    "c": null,
+    "o": [
+      "def cubes(n): for i in range(n): yield i ** 3",
+      "def cubes(n): for i in range(n): yield i * 3",
+      "def cubes(n): return [i ** 3 for i in range(n)]",
+      "def cubes(n): yield i ** 3 for i in range(n)"
+    ]
+  },
+  {
+    "q": "What does this closure return when invoked with increasing values?",
+    "c": "def accumulator(start):\n    total = start\n    def add(value):\n        nonlocal total\n        total += value\n        return total\n    return add\n\nacc = accumulator(10)\nprint(acc(5))\nprint(acc(3))",
+    "o": [
+      "15\n18",
+      "10\n13",
+      "5\n8",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the effect of this decorator on a function with multiple arguments?",
+    "c": "def reverse_args(func):\n    def wrapper(*args):\n        return func(*args[::-1])\n    return wrapper\n\n@reverse_args\ndef subtract(a, b):\n    return a - b\n\nprint(subtract(10, 3))",
+    "o": [
+      "-7",
+      "7",
+      "13",
+      "Error"
+    ]
+  },
+  {
+    "q": "What happens when this property with a custom setter is used?",
+    "c": "class Circle:\n    def __init__(self):\n        self._radius = 1\n    @property\n    def radius(self):\n        return self._radius\n    @radius.setter\n    def radius(self, value):\n        if value <= 0:\n            raise ValueError('Radius must be positive')\n        self._radius = value\n\nc = Circle()\nc.radius = 5\nprint(c.radius)",
+    "o": [
+      "5",
+      "1",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string starting with 'http' followed by any characters?",
+    "c": null,
+    "o": [
+      "^http.*",
+      "http$",
+      "^[http]+$",
+      ".*http.*"
+    ]
+  },
+  {
+    "q": "What does this generator produce when summed?",
+    "c": "def triangular_numbers(n):\n    for i in range(1, n + 1):\n        yield i * (i + 1) // 2\n\nprint(sum(triangular_numbers(3)))",
+    "o": [
+      "10",
+      "6",
+      "15",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a key feature of decorators that makes them powerful in Python?",
+    "c": null,
+    "o": [
+      "They can wrap functions to extend behavior reusably",
+      "They automatically optimize function performance",
+      "They restrict function scope to local variables",
+      "They prevent functions from accepting arguments"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a list comprehension?",
+    "c": "nums = iter([x * 2 for x in range(3)])\nprint(next(nums))\nprint(next(nums))",
+    "o": [
+      "0\n2",
+      "2\n4",
+      "0\n1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator functions yields prime numbers up to n?",
+    "c": null,
+    "o": [
+      "def primes(n): for i in range(2, n + 1): if all(i % j != 0 for j in range(2, int(i ** 0.5) + 1)): yield i",
+      "def primes(n): for i in range(n): if i % 2 != 0: yield i",
+      "def primes(n): yield [2, 3, 5, 7][:n]",
+      "def primes(n): for i in range(n): yield i if i > 1 else None"
+    ]
+  },
+  {
+    "q": "What does this closure return when called with negative values?",
+    "c": "def limit_value(max_val):\n    def check(val):\n        return min(val, max_val)\n    return check\n\ncap = limit_value(10)\nprint(cap(-5))\nprint(cap(15))",
+    "o": [
+      "-5\n10",
+      "10\n15",
+      "-5\n15",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the effect of this decorator on a function returning a string?",
+    "c": "def uppercase(func):\n    def wrapper(*args):\n        return func(*args).upper()\n    return wrapper\n\n@uppercase\ndef greet(name):\n    return f'hi, {name}'\n\nprint(greet('alice'))",
+    "o": [
+      "HI, ALICE",
+      "hi, alice",
+      "HI, alice",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output when this property enforces type checking?",
+    "c": "class Student:\n    def __init__(self):\n        self._age = 0\n    @property\n    def age(self):\n        return self._age\n    @age.setter\n    def age(self, value):\n        if not isinstance(value, int):\n            raise TypeError('Age must be an integer')\n        self._age = value\n\ns = Student()\ns.age = 20\nprint(s.age)",
+    "o": [
+      "20",
+      "0",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string with one or more digits followed by a letter?",
+    "c": null,
+    "o": [
+      "^\\d+[a-zA-Z]$",
+      "^[a-zA-Z]+\\d+$",
+      "^\\d*[a-zA-Z]$",
+      "^\\d+\\w+$"
+    ]
+  },
+  {
+    "q": "What does this generator produce when iterated over twice?",
+    "c": "def once_only(n):\n    for i in range(n):\n        yield i\n\ng = once_only(2)\nprint(list(g))\nprint(list(g))",
+    "o": [
+      "[0, 1]\n[]",
+      "[0, 1]\n[0, 1]",
+      "[]\n[]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What distinguishes a generator from an iterator in Python?",
+    "c": null,
+    "o": [
+      "Generators use yield to produce values lazily, while iterators use __next__",
+      "Generators can only be used once, iterators can be reused",
+      "Iterators use yield, generators use return",
+      "Generators are faster but cannot be iterated"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a custom step?",
+    "c": "class Stepper:\n    def __init__(self, start, end, step):\n        self.current = start\n        self.end = end\n        self.step = step\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.current >= self.end:\n            raise StopIteration\n        value = self.current\n        self.current += self.step\n        return value\n\ns = Stepper(0, 6, 2)\nfor x in s:\n    print(x)",
+    "o": [
+      "0\n2\n4",
+      "0\n1\n2",
+      "2\n4\n6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator functions yields pairs of consecutive numbers?",
+    "c": null,
+    "o": [
+      "def pairs(n): for i in range(0, n, 2): yield i, i + 1",
+      "def pairs(n): for i in range(n): yield i, i * 2",
+      "def pairs(n): yield [i, i + 1] for i in range(n)",
+      "def pairs(n): return [(i, i + 1) for i in range(n)]"
+    ]
+  },
+  {
+    "q": "What does this closure do when called with a list?",
+    "c": "def list_extender(initial):\n    def extend(items):\n        return initial + items\n    return extend\n\nadd_to_five = list_extender([5])\nprint(add_to_five([1, 2]))\nprint(add_to_five([3]))",
+    "o": [
+      "[5, 1, 2]\n[5, 3]",
+      "[1, 2, 5]\n[3, 5]",
+      "[5, 1, 2]\n[5, 1, 2, 3]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the result of this decorator that logs execution time?",
+    "c": "import time\ndef timer(func):\n    def wrapper(*args):\n        start = time.time()\n        result = func(*args)\n        print(f'{func.__name__} took {time.time() - start:.2f} seconds')\n        return result\n    return wrapper\n\n@timer\ndef slow_sum(a, b):\n    time.sleep(1)\n    return a + b\n\nprint(slow_sum(2, 3))",
+    "o": [
+      "5\nslow_sum took 1.00 seconds",
+      "5",
+      "slow_sum took 1.00 seconds\n5",
+      "Error"
+    ]
+  },
+  {
+    "q": "What happens when this property computes a value dynamically?",
+    "c": "class Counter:\n    def __init__(self):\n        self._counts = 0\n    @property\n    def count(self):\n        self._counts += 1\n        return self._counts\n\nc = Counter()\nprint(c.count)\nprint(c.count)",
+    "o": [
+      "1\n2",
+      "0\n1",
+      "1\n1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string with an optional 'www.' followed by a domain?",
+    "c": null,
+    "o": [
+      "^(www\\.)?[a-zA-Z0-9]+\\.[a-z]{2,}$",
+      "^www\\.[a-zA-Z0-9]+\\.[a-z]{2,}$",
+      "^[a-zA-Z0-9]+\\.[a-z]{2,}$",
+      "^(www\\.)+[a-zA-Z0-9]+$"
+    ]
+  },
+  {
+    "q": "What does this generator yield when filtered and listed?",
+    "c": "def positive_evens(n):\n    for i in range(n):\n        if i % 2 == 0:\n            yield i\n\nprint(list(positive_evens(5)))",
+    "o": [
+      "[0, 2, 4]",
+      "[2, 4]",
+      "[0, 1, 2, 3, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a common use case for closures in Python?",
+    "c": null,
+    "o": [
+      "To create functions with persistent state",
+      "To replace all global variables",
+      "To optimize memory usage in loops",
+      "To prevent function redefinition"
+    ]
+  },
+  {
+    "q": "What is the output of this code using an iterator with a reversed list?",
+    "c": "lst = [1, 2, 3]\nrev = iter(reversed(lst))\nprint(next(rev))\nprint(next(rev))",
+    "o": [
+      "3\n2",
+      "1\n2",
+      "2\n1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these generator functions yields the squares of odd numbers?",
+    "c": null,
+    "o": [
+      "def odd_squares(n): for i in range(1, n, 2): yield i * i",
+      "def odd_squares(n): for i in range(n): yield i * i",
+      "def odd_squares(n): for i in range(1, n): yield i * 2",
+      "def odd_squares(n): return [i * i for i in range(1, n, 2)]"
+    ]
+  },
+  {
+    "q": "What does this closure return when used to track maximum values?",
+    "c": "def max_tracker():\n    max_val = float('-inf')\n    def update(val):\n        nonlocal max_val\n        max_val = max(max_val, val)\n        return max_val\n    return update\n\ntrack = max_tracker()\nprint(track(3))\nprint(track(5))\nprint(track(2))",
+    "o": [
+      "3\n5\n5",
+      "3\n5\n2",
+      "5\n5\n5",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the effect of this decorator that counts function calls?",
+    "c": "def call_counter(func):\n    count = 0\n    def wrapper(*args):\n        nonlocal count\n        count += 1\n        print(f'Call {count} of {func.__name__}')\n        return func(*args)\n    return wrapper\n\n@call_counter\ndef say_hi():\n    return 'Hi'\n\nprint(say_hi())\nprint(say_hi())",
+    "o": [
+      "Call 1 of say_hi\nHi\nCall 2 of say_hi\nHi",
+      "Hi\nHi",
+      "Call 1 of say_hi\nCall 2 of say_hi\nHi",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output when this property caches a computed result?",
+    "c": "class Expensive:\n    def __init__(self):\n        self._value = None\n    @property\n    def value(self):\n        if self._value is None:\n            print('Computing...')\n            self._value = 42\n        return self._value\n\ne = Expensive()\nprint(e.value)\nprint(e.value)",
+    "o": [
+      "Computing...\n42\n42",
+      "42\n42",
+      "Computing...\n42\nComputing...\n42",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which RegEx pattern matches a string with a date in the format 'YYYY-MM-DD'?",
+    "c": null,
+    "o": [
+      "^\\d{4}-\\d{2}-\\d{2}$",
+      "^\\d{2}-\\d{2}-\\d{4}$",
+      "^[0-9]+-[0-9]+-[0-9]+$",
+      "^\\d{4}/\\d{2}/\\d{2}$"
+    ]
+  },
+  {
+    "q": "What does this generator yield when used with a condition?",
+    "c": "def filtered_range(n):\n    for i in range(n):\n        if i > 2:\n            yield i\n\nprint(list(filtered_range(5)))",
+    "o": [
+      "[3, 4]",
+      "[0, 1, 2, 3, 4]",
+      "[2, 3, 4]",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is an advantage of using RegEx in Python over string methods?",
+    "c": null,
+    "o": [
+      "It provides more powerful and flexible pattern matching",
+      "It is always faster than string methods",
+      "It eliminates the need for loops",
+      "It automatically handles all encoding issues"
+    ]
+  }
 ]

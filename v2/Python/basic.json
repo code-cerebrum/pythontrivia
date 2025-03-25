@@ -1418,5 +1418,3925 @@
             "False",
             "None of the options"
         ]
+    },
+    {
+        "q": "Which of the following is a mutable data type in Python?",
+        "c": null,
+        "o": [
+            "List",
+            "Tuple",
+            "String",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nprint(3 + 5.0)\n",
+        "o": [
+            "8.0",
+            "8",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid variable name in Python?",
+        "c": null,
+        "o": [
+            "my_variable",
+            "1variable",
+            "variable-name",
+            "class"
+        ]
+    },
+    {
+        "q": "What data type is the result of the expression: '5' + '3'?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Float",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\nx = 'hello'\nprint(x)\n",
+        "o": [
+            "hello",
+            "10",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which function is used to convert a string to an integer in Python?",
+        "c": null,
+        "o": [
+            "int()",
+            "str()",
+            "float()",
+            "bool()"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '123'\ny = int(x) + 7\nprint(y)\n",
+        "o": [
+            "130",
+            "1237",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these data types is immutable in Python?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "List",
+            "Dictionary",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\na = 5.7\nprint(int(a))\n",
+        "o": [
+            "5",
+            "5.7",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable assignments is correct in Python?",
+        "c": null,
+        "o": [
+            "x = 42",
+            "2x = 42",
+            "x-y = 42",
+            "x = = 42"
+        ]
+    },
+    {
+        "q": "What data type is returned by the expression: 10 / 2?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(45)\nprint(x + '5')\n",
+        "o": [
+            "455",
+            "50",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which data type can store key-value pairs in Python?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "List",
+            "Tuple",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('3.14')\nprint(x + 2)\n",
+        "o": [
+            "5.14",
+            "5",
+            "TypeError",
+            "3.14"
+        ]
+    },
+    {
+        "q": "Which of these is NOT a valid Python data type?",
+        "c": null,
+        "o": [
+            "Array",
+            "List",
+            "Set",
+            "Tuple"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 100\ny = 'x'\nprint(y)\n",
+        "o": [
+            "x",
+            "100",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which function converts an integer to a string in Python?",
+        "c": null,
+        "o": [
+            "str()",
+            "int()",
+            "float()",
+            "bool()"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\nprint(int(x))\n",
+        "o": [
+            "1",
+            "True",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid in Python?",
+        "c": null,
+        "o": [
+            "for",
+            "user_name",
+            "_hidden",
+            "data2"
+        ]
+    },
+    {
+        "q": "What data type is the value False in Python?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '10.5'\ny = float(x)\nprint(y * 2)\n",
+        "o": [
+            "21.0",
+            "20",
+            "105105",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an ordered sequence of items that cannot be changed?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "List",
+            "Dictionary",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 7\ny = str(x) + str(x)\nprint(y)\n",
+        "o": [
+            "77",
+            "14",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('abc')",
+            "int('123')",
+            "float('4.5')",
+            "str(99)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 0\nprint(bool(x))\n",
+        "o": [
+            "False",
+            "True",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to declare a variable with a float value?",
+        "c": null,
+        "o": [
+            "x = 3.14",
+            "x = float 3.14",
+            "x = '3.14'",
+            "x == 3.14"
+        ]
+    },
+    {
+        "q": "What data type is the result of: len('Python')?",
+        "c": null,
+        "o": [
+            "Integer",
+            "String",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '5'\ny = int(x) * 3\nprint(y)\n",
+        "o": [
+            "15",
+            "555",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 9.9\nprint(int(x) + float('1.1'))\n",
+        "o": [
+            "10.1",
+            "11",
+            "10.9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names follows Python naming conventions?",
+        "c": null,
+        "o": [
+            "snake_case",
+            "camelCase",
+            "kebab-case",
+            "PascalCase"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 5 > 3?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '20'\ny = int(x) // 3\nprint(y)\n",
+        "o": [
+            "6",
+            "6.666",
+            "20",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store unordered unique items?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float(5)\nprint(x)\n",
+        "o": [
+            "5.0",
+            "5",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable declaration?",
+        "c": null,
+        "o": [
+            "count = 0",
+            "count = = 0",
+            "count - 0",
+            "0 = count"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 'Hello' * 2?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "List",
+            "Tuple"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '3.5'\ny = float(x) - 1.5\nprint(y)\n",
+        "o": [
+            "2.0",
+            "2",
+            "3.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which function converts a float to an integer by truncating the decimal?",
+        "c": null,
+        "o": [
+            "int()",
+            "float()",
+            "str()",
+            "round()"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = None\nprint(type(x))\n",
+        "o": [
+            "<class 'NoneType'>",
+            "<class 'str'>",
+            "<class 'int'>",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid due to a reserved keyword?",
+        "c": null,
+        "o": [
+            "if",
+            "total_sum",
+            "data_set",
+            "value3"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 10 % 3?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '7'\ny = int(x) ** 2\nprint(y)\n",
+        "o": [
+            "49",
+            "14",
+            "77",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and ordered?",
+        "c": null,
+        "o": [
+            "List",
+            "Tuple",
+            "String",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('False')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these will NOT cause a type conversion error?",
+        "c": null,
+        "o": [
+            "float('12.34')",
+            "int('12.34')",
+            "int('abc')",
+            "bool('xyz')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 8.9\ny = int(x) * 2\nprint(y)\n",
+        "o": [
+            "16",
+            "17.8",
+            "18",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to initialize a variable with a boolean?",
+        "c": null,
+        "o": [
+            "x = True",
+            "x = 'True'",
+            "x = 1",
+            "x = true"
+        ]
+    },
+    {
+        "q": "What data type is the result of: type(42)?",
+        "c": null,
+        "o": [
+            "Type",
+            "Integer",
+            "String",
+            "Class"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '100'\ny = int(x) / 25\nprint(y)\n",
+        "o": [
+            "4.0",
+            "4",
+            "100",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which function would convert '3.14159' to a float?",
+        "c": null,
+        "o": [
+            "float()",
+            "int()",
+            "str()",
+            "bool()"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = -5.6\nprint(int(x))\n",
+        "o": [
+            "-5",
+            "-6",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is allowed in Python?",
+        "c": null,
+        "o": [
+            "__secret",
+            "123_secret",
+            "secret-key",
+            "while"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 3 == 3?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '15'\ny = int(x) % 4\nprint(y)\n",
+        "o": [
+            "3",
+            "15",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type allows duplicate values and maintains order?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Dictionary",
+            "Tuple"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(123)\nprint(len(x))\n",
+        "o": [
+            "3",
+            "123",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('-10')",
+            "int('ten')",
+            "float('abc')",
+            "str(True)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 0.0\nprint(bool(x))\n",
+        "o": [
+            "False",
+            "True",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment?",
+        "c": null,
+        "o": [
+            "score = 95.5",
+            "score = = 95.5",
+            "95.5 = score",
+            "score + 95.5"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 'a' in 'abc'?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "String",
+            "Integer",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '2.75'\ny = float(x) * 4\nprint(y)\n",
+        "o": [
+            "11.0",
+            "11",
+            "275275275275",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type does not allow duplicates?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 12\ny = str(x) * 3\nprint(y)\n",
+        "o": [
+            "121212",
+            "36",
+            "12",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will fail?",
+        "c": null,
+        "o": [
+            "int('12.5')",
+            "int('12')",
+            "float('12.5')",
+            "str(12.5)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(123)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "123",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to declare a string variable?",
+        "c": null,
+        "o": [
+            "text = 'Hello'",
+            "text = Hello",
+            "text = 'Hello",
+            "text == 'Hello'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: isinstance(5, int)?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Type"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '99.9'\ny = float(x) / 3\nprint(y)\n",
+        "o": [
+            "33.3",
+            "33",
+            "99.9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which function converts a boolean to an integer?",
+        "c": null,
+        "o": [
+            "int()",
+            "str()",
+            "float()",
+            "bool()"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = -3\nprint(float(x))\n",
+        "o": [
+            "-3.0",
+            "-3",
+            "3.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "else",
+            "my_var",
+            "var123",
+            "_private"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 7 // 2?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '8'\ny = int(x) + float('2.5')\nprint(y)\n",
+        "o": [
+            "10.5",
+            "10",
+            "85",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can be used as a key in a dictionary?",
+        "c": null,
+        "o": [
+            "String",
+            "List",
+            "Set",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 4.2\ny = str(x) + '2'\nprint(y)\n",
+        "o": [
+            "4.22",
+            "6.2",
+            "42",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable declarations assigns an integer?",
+        "c": null,
+        "o": [
+            "x = 10",
+            "x = '10'",
+            "x = 10.0",
+            "x = True"
+        ]
+    },
+    {
+        "q": "What data type is the result of: not True?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '50'\ny = int(x) - float('25.5')\nprint(y)\n",
+        "o": [
+            "24.5",
+            "25",
+            "5025.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is returned by the expression: float('inf')?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('')\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT raise an error?",
+        "c": null,
+        "o": [
+            "str(-5.5)",
+            "int('5.5')",
+            "float('abc')",
+            "int('xyz')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 7.8\ny = int(x) / 2\nprint(y)\n",
+        "o": [
+            "3.5",
+            "3",
+            "7.8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable name?",
+        "c": null,
+        "o": [
+            "abc_123",
+            "123_abc",
+            "abc-123",
+            "def"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 5 + True?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Boolean",
+            "Float",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '9.0'\ny = float(x) ** 2\nprint(y)\n",
+        "o": [
+            "81.0",
+            "81",
+            "18.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store multiple values indexed by position?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Dictionary",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(0) + str(False)\n print(x)\n",
+        "o": [
+            "0False",
+            "0",
+            "False",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will cause an error?",
+        "c": null,
+        "o": [
+            "float('nan')",
+            "float('123')",
+            "int('456')",
+            "int('12.34')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-1)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "-1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign a tuple to a variable?",
+        "c": null,
+        "o": [
+            "x = (1, 2, 3)",
+            "x = 1, 2, 3",
+            "x = [1, 2, 3]",
+            "x = {1, 2, 3}"
+        ]
+    },
+    {
+        "q": "What data type is the result of: id(42)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "String",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '25'\ny = int(x) * float('0.5')\nprint(y)\n",
+        "o": [
+            "12.5",
+            "12",
+            "25",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 6.7\ny = str(x) + '8'\nprint(y)\n",
+        "o": [
+            "6.78",
+            "14.7",
+            "68",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "user123",
+            "123user",
+            "user-123",
+            "return"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 4 < 5 and 3 > 2?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '16'\ny = int(x) / 4\nprint(y)\n",
+        "o": [
+            "4.0",
+            "4",
+            "16",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a single character?",
+        "c": null,
+        "o": [
+            "String",
+            "Char",
+            "Integer",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('7.9')\ny = int(x) + 3\nprint(y)\n",
+        "o": [
+            "10",
+            "10.9",
+            "11",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "float('-5.5')",
+            "int('-5.5')",
+            "float('xyz')",
+            "str(None)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(0.1)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "0.1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a dictionary?",
+        "c": null,
+        "o": [
+            "d = {'a': 1}",
+            "d = 'a': 1",
+            "d = {a: 1}",
+            "d = {'a', 1}"
+        ]
+    },
+    {
+        "q": "What data type is the result of: ord('A')?",
+        "c": null,
+        "o": [
+            "Integer",
+            "String",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '3'\ny = int(x) * float('2.5')\nprint(y)\n",
+        "o": [
+            "7.5",
+            "75",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is immutable and can store multiple values?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "List",
+            "Set",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(10.5)\nprint(x + str(2))\n",
+        "o": [
+            "10.52",
+            "12.5",
+            "102",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('')",
+            "int('0')",
+            "float('0.0')",
+            "str(0)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(None)\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign a set to a variable?",
+        "c": null,
+        "o": [
+            "s = {1, 2, 3}",
+            "s = [1, 2, 3]",
+            "s = (1, 2, 3)",
+            "s = '1, 2, 3'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: chr(65)?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '4.2'\ny = float(x) / 2\nprint(y)\n",
+        "o": [
+            "2.1",
+            "2",
+            "4.2",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an empty collection?",
+        "c": null,
+        "o": [
+            "List",
+            "String",
+            "Integer",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5\ny = float(x) + 1.5\nprint(y)\n",
+        "o": [
+            "6.5",
+            "6",
+            "51.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(3.7)",
+            "int('3.7')",
+            "float('abc')",
+            "bool('')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = str(x) + '2'\nprint(y)\n",
+        "o": [
+            "True2",
+            "3",
+            "12",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid due to syntax?",
+        "c": null,
+        "o": [
+            "while",
+            "myVar",
+            "var_1",
+            "_data"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 10 + 2.5?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '100'\ny = int(x) // 20\nprint(y)\n",
+        "o": [
+            "5",
+            "5.0",
+            "100",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 3.9\ny = int(x) * float('2')\nprint(y)\n",
+        "o": [
+            "6.0",
+            "7.8",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "data_point",
+            "data.point",
+            "data point",
+            "break"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 7 != 3?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '18'\ny = int(x) - 5\nprint(y)\n",
+        "o": [
+            "13",
+            "185",
+            "23",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a collection with unique keys?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "List",
+            "Tuple",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('9.8')\ny = int(x) // 2\nprint(y)\n",
+        "o": [
+            "4",
+            "4.9",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('42')",
+            "int('42.5')",
+            "float('xyz')",
+            "bool('False')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-0.0)\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "0.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a list?",
+        "c": null,
+        "o": [
+            "items = [1, 2, 3]",
+            "items = 1, 2, 3",
+            "items = {1, 2, 3}",
+            "items = '1, 2, 3'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 'x' * 0?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Boolean",
+            "None"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '5.5'\ny = float(x) + int('2')\nprint(y)\n",
+        "o": [
+            "7.5",
+            "7",
+            "55",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and unordered?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(4.0)\nprint(x + 'abc')\n",
+        "o": [
+            "4.0abc",
+            "4abc",
+            "4.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "float('')",
+            "float('0')",
+            "int('0')",
+            "str(123)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('0')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty list?",
+        "c": null,
+        "o": [
+            "lst = []",
+            "lst = {}",
+            "lst = ()",
+            "lst = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: hex(255)?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '6.0'\ny = float(x) - 2.5\nprint(y)\n",
+        "o": [
+            "3.5",
+            "3",
+            "6.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can represent the absence of a value?",
+        "c": null,
+        "o": [
+            "NoneType",
+            "String",
+            "Integer",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = float(x) / 2\nprint(y)\n",
+        "o": [
+            "5.0",
+            "5",
+            "10",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "str(None)",
+            "int('None')",
+            "float('None')",
+            "bool('None')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = str(x) + str(1)\nprint(y)\n",
+        "o": [
+            "False1",
+            "1",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "try",
+            "test_case",
+            "case1",
+            "_result"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 3.5 + 2?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '15'\ny = int(x) % 7\nprint(y)\n",
+        "o": [
+            "1",
+            "15",
+            "2",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 2.3\ny = int(x) + float('4.7')\nprint(y)\n",
+        "o": [
+            "6.7",
+            "7",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "total_count",
+            "total#count",
+            "total count",
+            "except"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 8 <= 10?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '24'\ny = int(x) / 6\nprint(y)\n",
+        "o": [
+            "4.0",
+            "4",
+            "24",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a sequence of bytes?",
+        "c": null,
+        "o": [
+            "Bytes",
+            "String",
+            "List",
+            "Integer"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('1.25')\ny = int(x) * 3\nprint(y)\n",
+        "o": [
+            "3",
+            "3.75",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "float('100')",
+            "int('100.5')",
+            "float('abc')",
+            "str(True)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(0)\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a tuple?",
+        "c": null,
+        "o": [
+            "t = (4, 5)",
+            "t = [4, 5]",
+            "t = {4, 5}",
+            "t = '4, 5'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: bin(10)?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '8'\ny = float(x) - 1.5\nprint(y)\n",
+        "o": [
+            "6.5",
+            "6",
+            "8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is immutable and ordered?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "Set",
+            "Dictionary",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(7.5)\nprint(x + str(3))\n",
+        "o": [
+            "7.53",
+            "10.5",
+            "73",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('3.14')",
+            "int('3')",
+            "float('3.14')",
+            "str(3.14)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('True')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty dictionary?",
+        "c": null,
+        "o": [
+            "d = {}",
+            "d = []",
+            "d = ()",
+            "d = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: oct(8)?",
+        "c": null,
+        "o": [
+            "String",
+            "Integer",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '12.5'\ny = float(x) * 2\nprint(y)\n",
+        "o": [
+            "25.0",
+            "25",
+            "12.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a single value that can be True or False?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "String",
+            "Integer",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 9\ny = float(x) - 2.5\nprint(y)\n",
+        "o": [
+            "6.5",
+            "6",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(-5.0)",
+            "int('5.0')",
+            "float('xyz')",
+            "bool('abc')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = int(x) + 2\nprint(y)\n",
+        "o": [
+            "3",
+            "True2",
+            "2",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "pass",
+            "result_1",
+            "data2",
+            "_hidden"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 4.0 - 1?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '20'\ny = int(x) % 3\nprint(y)\n",
+        "o": [
+            "2",
+            "20",
+            "3",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5.6\ny = float(x) - int('2')\nprint(y)\n",
+        "o": [
+            "3.6",
+            "3",
+            "5.6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "item_list",
+            "item@list",
+            "item list",
+            "continue"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 3 >= 3?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '30'\ny = int(x) // 4\nprint(y)\n",
+        "o": [
+            "7",
+            "7.5",
+            "30",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an immutable sequence of characters?",
+        "c": null,
+        "o": [
+            "String",
+            "List",
+            "Set",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('2.8')\ny = int(x) + 1\nprint(y)\n",
+        "o": [
+            "3",
+            "2.8",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('0')",
+            "int('0.0')",
+            "float('xyz')",
+            "str(False)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(1.0)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "1.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a set?",
+        "c": null,
+        "o": [
+            "s = {1, 2}",
+            "s = [1, 2]",
+            "s = (1, 2)",
+            "s = '1, 2'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: float('nan')?",
+        "c": null,
+        "o": [
+            "Float",
+            "String",
+            "Integer",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '7'\ny = float(x) * 2.5\nprint(y)\n",
+        "o": [
+            "17.5",
+            "14",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and allows key-value pairs?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "Tuple",
+            "String",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(9)\nprint(x + str(0.5))\n",
+        "o": [
+            "90.5",
+            "9.5",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('abc')",
+            "int('10')",
+            "float('10.5')",
+            "str(10)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('xyz')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "xyz",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty tuple?",
+        "c": null,
+        "o": [
+            "t = ()",
+            "t = []",
+            "t = {}",
+            "t = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: type('hello')?",
+        "c": null,
+        "o": [
+            "Type",
+            "String",
+            "Integer",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '15.5'\ny = float(x) - 5\nprint(y)\n",
+        "o": [
+            "10.5",
+            "10",
+            "15.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store multiple values without order or duplicates?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 4\ny = float(x) * 1.5\nprint(y)\n",
+        "o": [
+            "6.0",
+            "6",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "float('0.0')",
+            "int('0.0')",
+            "float('abc')",
+            "bool('0')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = int(x) + float('1.1')\nprint(y)\n",
+        "o": [
+            "1.1",
+            "1",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "raise",
+            "score_total",
+            "total2",
+            "_score"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 2 * 3.5?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '25'\ny = int(x) % 6\nprint(y)\n",
+        "o": [
+            "1",
+            "25",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 8.4\ny = int(x) - float('2.5')\nprint(y)\n",
+        "o": [
+            "5.5",
+            "6",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "product_id",
+            "product$id",
+            "product id",
+            "finally"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 5 == 5.0?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Float",
+            "Integer",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '45'\ny = int(x) / 9\nprint(y)\n",
+        "o": [
+            "5.0",
+            "5",
+            "45",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an immutable sequence of values?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "List",
+            "Set",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('3.6')\ny = int(x) * 2\nprint(y)\n",
+        "o": [
+            "6",
+            "7.2",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('-100')",
+            "int('-100.5')",
+            "float('xyz')",
+            "str(None)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-5)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "-5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a boolean?",
+        "c": null,
+        "o": [
+            "flag = False",
+            "flag = 'False'",
+            "flag = 0",
+            "flag = false"
+        ]
+    },
+    {
+        "q": "What data type is the result of: abs(-5)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '4'\ny = float(x) + 1.75\nprint(y)\n",
+        "o": [
+            "5.75",
+            "5",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and indexed?",
+        "c": null,
+        "o": [
+            "List",
+            "Tuple",
+            "String",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(6.2)\nprint(x + str(1))\n",
+        "o": [
+            "6.21",
+            "7.2",
+            "61",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('10a')",
+            "int('10')",
+            "float('10.0')",
+            "str(10.0)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('')\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty set?",
+        "c": null,
+        "o": [
+            "s = set()",
+            "s = {}",
+            "s = []",
+            "s = ()"
+        ]
+    },
+    {
+        "q": "What data type is the result of: round(3.7)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '9.9'\ny = float(x) / 3\nprint(y)\n",
+        "o": [
+            "3.3",
+            "3",
+            "9.9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a key-value pair with mutable values?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "Tuple",
+            "Set",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 7\ny = float(x) * 0.5\nprint(y)\n",
+        "o": [
+            "3.5",
+            "3",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "float('-1.5')",
+            "int('-1.5')",
+            "float('abc')",
+            "bool('xyz')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = str(x) + 'test'\nprint(y)\n",
+        "o": [
+            "Truetest",
+            "True",
+            "test",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "import",
+            "user_data",
+            "data_3",
+            "_temp"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 6 / 2?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '18'\ny = int(x) % 5\nprint(y)\n",
+        "o": [
+            "3",
+            "18",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 4.8\ny = int(x) + float('1.2')\nprint(y)\n",
+        "o": [
+            "5.2",
+            "6",
+            "4.8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "order_number",
+            "order%number",
+            "order number",
+            "with"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 2 < 3 or 4 > 5?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '36'\ny = int(x) / 4\nprint(y)\n",
+        "o": [
+            "9.0",
+            "9",
+            "36",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an ordered collection that allows duplicates?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Dictionary",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('5.4')\ny = int(x) - 1\nprint(y)\n",
+        "o": [
+            "4",
+            "5.4",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "float('25.5')",
+            "int('25.5')",
+            "float('xyz')",
+            "str(True)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(0.0)\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "0.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a string?",
+        "c": null,
+        "o": [
+            "name = 'Alice'",
+            "name = Alice",
+            "name = 'Alice",
+            "name == 'Alice'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: divmod(10, 3)[0]?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Tuple",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '6'\ny = float(x) / 2\nprint(y)\n",
+        "o": [
+            "3.0",
+            "3",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is immutable and allows duplicates?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "Set",
+            "Dictionary",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(2.5)\nprint(x + str(3))\n",
+        "o": [
+            "2.53",
+            "5.5",
+            "23",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('xyz')",
+            "int('5')",
+            "float('5.5')",
+            "str(5)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('False')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty string?",
+        "c": null,
+        "o": [
+            "s = ''",
+            "s = []",
+            "s = {}",
+            "s = ()"
+        ]
+    },
+    {
+        "q": "What data type is the result of: complex(1, 2)?",
+        "c": null,
+        "o": [
+            "Complex",
+            "Integer",
+            "Float",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '7.8'\ny = float(x) + 2\nprint(y)\n",
+        "o": [
+            "9.8",
+            "9",
+            "7.8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a mutable sequence of values?",
+        "c": null,
+        "o": [
+            "List",
+            "Tuple",
+            "String",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 8\ny = float(x) / 4\nprint(y)\n",
+        "o": [
+            "2.0",
+            "2",
+            "8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(5.0)",
+            "int('5.0')",
+            "float('abc')",
+            "bool('True')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = str(x) + 'end'\nprint(y)\n",
+        "o": [
+            "Falseend",
+            "False",
+            "end",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "class",
+            "order_total",
+            "total_1",
+            "_order"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 5 * 2.0?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '16'\ny = int(x) % 3\nprint(y)\n",
+        "o": [
+            "1",
+            "16",
+            "3",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 6.9\ny = int(x) * float('1.5')\nprint(y)\n",
+        "o": [
+            "9.0",
+            "10.35",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "price_tag",
+            "price&tag",
+            "price tag",
+            "def"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 4 != 4.0?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Float",
+            "Integer",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '28'\ny = int(x) // 7\nprint(y)\n",
+        "o": [
+            "4",
+            "4.0",
+            "28",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an ordered, mutable sequence?",
+        "c": null,
+        "o": [
+            "List",
+            "Tuple",
+            "Set",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('4.9')\ny = int(x) + 2\nprint(y)\n",
+        "o": [
+            "6",
+            "6.9",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('50')",
+            "int('50.5')",
+            "float('xyz')",
+            "str(False)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(0.01)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "0.01",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a float?",
+        "c": null,
+        "o": [
+            "value = 3.14",
+            "value = '3.14'",
+            "value = 3,14",
+            "value == 3.14"
+        ]
+    },
+    {
+        "q": "What data type is the result of: pow(2, 3)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '9'\ny = float(x) - 2.25\nprint(y)\n",
+        "o": [
+            "6.75",
+            "6",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is unordered and mutable?",
+        "c": null,
+        "o": [
+            "Set",
+            "Tuple",
+            "String",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(8.1)\nprint(x + str(2))\n",
+        "o": [
+            "8.12",
+            "10.1",
+            "82",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('7.5')",
+            "int('7')",
+            "float('7.5')",
+            "str(7.5)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('abc')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "abc",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty list?",
+        "c": null,
+        "o": [
+            "lst = []",
+            "lst = {}",
+            "lst = ()",
+            "lst = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: bool(5)?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "Float",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '10.2'\ny = float(x) * 3\nprint(y)\n",
+        "o": [
+            "30.6",
+            "30",
+            "10.2",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store key-value pairs with immutable keys?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "List",
+            "Tuple",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5\ny = float(x) + 0.75\nprint(y)\n",
+        "o": [
+            "5.75",
+            "5",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "float('10')",
+            "int('10.0')",
+            "float('xyz')",
+            "bool('')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = int(x) * 3\nprint(y)\n",
+        "o": [
+            "3",
+            "True3",
+            "1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "global",
+            "item_count",
+            "count_2",
+            "_item"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 3.0 * 2?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '14'\ny = int(x) % 4\nprint(y)\n",
+        "o": [
+            "2",
+            "14",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 7.3\ny = int(x) + float('0.8')\nprint(y)\n",
+        "o": [
+            "7.8",
+            "8",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "sale_price",
+            "sale*price",
+            "sale price",
+            "lambda"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 6 > 4 and 3 < 5?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '32'\ny = int(x) / 8\nprint(y)\n",
+        "o": [
+            "4.0",
+            "4",
+            "32",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an unordered collection of unique values?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('6.7')\ny = int(x) - 2\nprint(y)\n",
+        "o": [
+            "4",
+            "6.7",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "float('-10.5')",
+            "int('-10.5')",
+            "float('xyz')",
+            "str(True)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-0.1)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "-0.1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for an integer?",
+        "c": null,
+        "o": [
+            "num = 42",
+            "num = '42'",
+            "num = 42.0",
+            "num == 42"
+        ]
+    },
+    {
+        "q": "What data type is the result of: max(3, 5)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '5'\ny = float(x) * 1.5\nprint(y)\n",
+        "o": [
+            "7.5",
+            "7",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and supports key-value pairs?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "Tuple",
+            "Set",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(3.9)\nprint(x + str(2))\n",
+        "o": [
+            "3.92",
+            "5.9",
+            "32",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('')",
+            "int('0')",
+            "float('0.0')",
+            "str(0.0)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('0.0')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "0.0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty dictionary?",
+        "c": null,
+        "o": [
+            "d = {}",
+            "d = []",
+            "d = ()",
+            "d = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: min(1.5, 2.5)?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '8.5'\ny = float(x) - 1.5\nprint(y)\n",
+        "o": [
+            "7.0",
+            "7",
+            "8.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an ordered sequence that is immutable?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "List",
+            "Set",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 6\ny = float(x) / 3\nprint(y)\n",
+        "o": [
+            "2.0",
+            "2",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(0.0)",
+            "int('0.0')",
+            "float('xyz')",
+            "bool('abc')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = int(x) + float('2.5')\nprint(y)\n",
+        "o": [
+            "2.5",
+            "2",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "yield",
+            "total_sales",
+            "sales_1",
+            "_total"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 4.5 / 1.5?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '22'\ny = int(x) % 7\nprint(y)\n",
+        "o": [
+            "1",
+            "22",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 9.2\ny = int(x) - float('1.7')\nprint(y)\n",
+        "o": [
+            "7.3",
+            "8",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "user_score",
+            "user+score",
+            "user score",
+            "assert"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 7 == 7 and 3 != 4?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '40'\ny = int(x) / 5\nprint(y)\n",
+        "o": [
+            "8.0",
+            "8",
+            "40",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a mutable collection of key-value pairs?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "Tuple",
+            "Set",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('7.6')\ny = int(x) + 1\nprint(y)\n",
+        "o": [
+            "8",
+            "7.6",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('75')",
+            "int('75.5')",
+            "float('xyz')",
+            "str(None)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(10)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "10",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a tuple?",
+        "c": null,
+        "o": [
+            "t = (1, 2)",
+            "t = [1, 2]",
+            "t = {1, 2}",
+            "t = '1, 2'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: sum([1, 2, 3])?",
+        "c": null,
+        "o": [
+            "Integer",
+            "List",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '3'\ny = float(x) + 2.5\nprint(y)\n",
+        "o": [
+            "5.5",
+            "5",
+            "3",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is unordered and does not allow duplicates?",
+        "c": null,
+        "o": [
+            "Set",
+            "List",
+            "Tuple",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(4.7)\nprint(x + str(3))\n",
+        "o": [
+            "4.73",
+            "7.7",
+            "43",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('abc')",
+            "int('15')",
+            "float('15.5')",
+            "str(15)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('None')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "None",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty tuple?",
+        "c": null,
+        "o": [
+            "t = ()",
+            "t = []",
+            "t = {}",
+            "t = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: len('abc')?",
+        "c": null,
+        "o": [
+            "Integer",
+            "String",
+            "Float",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '11.5'\ny = float(x) / 2\nprint(y)\n",
+        "o": [
+            "5.75",
+            "5",
+            "11.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an ordered collection with duplicates?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Dictionary",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 10\ny = float(x) - 1.25\nprint(y)\n",
+        "o": [
+            "8.75",
+            "8",
+            "10",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "float('20.5')",
+            "int('20.5')",
+            "float('xyz')",
+            "bool('xyz')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = int(x) - float('0.5')\nprint(y)\n",
+        "o": [
+            "0.5",
+            "1",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "async",
+            "order_qty",
+            "qty_1",
+            "_order"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 2.5 + 1.5?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '19'\ny = int(x) % 6\nprint(y)\n",
+        "o": [
+            "1",
+            "19",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 5.7\ny = int(x) + float('2.3')\nprint(y)\n",
+        "o": [
+            "7.3",
+            "8",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "cart_total",
+            "cart/total",
+            "cart total",
+            "await"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 3 < 5 or 2 > 4?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '48'\ny = int(x) / 6\nprint(y)\n",
+        "o": [
+            "8.0",
+            "8",
+            "48",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a mutable sequence with indexed access?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Dictionary",
+            "Tuple"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('8.9')\ny = int(x) - 3\nprint(y)\n",
+        "o": [
+            "5",
+            "8.9",
+            "6",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('-25')",
+            "int('-25.5')",
+            "float('xyz')",
+            "str(False)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-10)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "-10",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a string?",
+        "c": null,
+        "o": [
+            "text = 'Python'",
+            "text = Python",
+            "text = 'Python",
+            "text == 'Python'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: abs(-3.5)?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '7'\ny = float(x) + 1.25\nprint(y)\n",
+        "o": [
+            "8.25",
+            "8",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is immutable and supports indexing?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "Set",
+            "Dictionary",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(5.6)\nprint(x + str(4))\n",
+        "o": [
+            "5.64",
+            "9.6",
+            "54",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('12.5')",
+            "int('12')",
+            "float('12.5')",
+            "str(12)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('True')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty set?",
+        "c": null,
+        "o": [
+            "s = set()",
+            "s = []",
+            "s = {}",
+            "s = ()"
+        ]
+    },
+    {
+        "q": "What data type is the result of: round(5.4)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '13.5'\ny = float(x) * 2\nprint(y)\n",
+        "o": [
+            "27.0",
+            "27",
+            "13.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an unordered collection with mutable elements?",
+        "c": null,
+        "o": [
+            "Set",
+            "Tuple",
+            "String",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 9\ny = float(x) - 0.75\nprint(y)\n",
+        "o": [
+            "8.25",
+            "8",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "float('-5.0')",
+            "int('-5.0')",
+            "float('xyz')",
+            "bool('')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = int(x) * float('1.5')\nprint(y)\n",
+        "o": [
+            "0.0",
+            "1.5",
+            "0",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "elif",
+            "total_items",
+            "items_2",
+            "_total"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 6.0 / 2.0?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '17'\ny = int(x) % 5\nprint(y)\n",
+        "o": [
+            "2",
+            "17",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 3.4\ny = int(x) + float('2.6')\nprint(y)\n",
+        "o": [
+            "5.6",
+            "6",
+            "5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "item_qty",
+            "item=qty",
+            "item qty",
+            "nonlocal"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 5 <= 5 or 2 >= 3?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '54'\ny = int(x) / 9\nprint(y)\n",
+        "o": [
+            "6.0",
+            "6",
+            "54",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an immutable collection with indexed access?",
+        "c": null,
+        "o": [
+            "Tuple",
+            "Set",
+            "Dictionary",
+            "List"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('9.3')\ny = int(x) - 2\nprint(y)\n",
+        "o": [
+            "7",
+            "9.3",
+            "8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "int('100')",
+            "int('100.5')",
+            "float('xyz')",
+            "str(True)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(0.5)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "0.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a boolean?",
+        "c": null,
+        "o": [
+            "is_valid = True",
+            "is_valid = 'True'",
+            "is_valid = 1",
+            "is_valid == True"
+        ]
+    },
+    {
+        "q": "What data type is the result of: isinstance('hello', str)?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "String",
+            "Integer",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '8'\ny = float(x) + 0.75\nprint(y)\n",
+        "o": [
+            "8.75",
+            "8",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is mutable and unordered with unique elements?",
+        "c": null,
+        "o": [
+            "Set",
+            "Tuple",
+            "List",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(7.4)\nprint(x + str(5))\n",
+        "o": [
+            "7.45",
+            "12.4",
+            "75",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('15.5')",
+            "int('15')",
+            "float('15.5')",
+            "str(15.5)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('')\nprint(x)\n",
+        "o": [
+            "False",
+            "True",
+            "TypeError",
+            "None"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty string?",
+        "c": null,
+        "o": [
+            "s = ''",
+            "s = []",
+            "s = {}",
+            "s = ()"
+        ]
+    },
+    {
+        "q": "What data type is the result of: type(3.14)?",
+        "c": null,
+        "o": [
+            "Type",
+            "Float",
+            "Integer",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '14.5'\ny = float(x) / 5\nprint(y)\n",
+        "o": [
+            "2.9",
+            "2",
+            "14.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a mutable collection with duplicates?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Tuple",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 11\ny = float(x) - 1.5\nprint(y)\n",
+        "o": [
+            "9.5",
+            "9",
+            "11",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(-10.0)",
+            "int('-10.5')",
+            "float('xyz')",
+            "bool('abc')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = True\ny = int(x) + float('1.25')\nprint(y)\n",
+        "o": [
+            "2.25",
+            "2",
+            "1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "return",
+            "user_input",
+            "input_3",
+            "_user"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 8.0 - 2.0?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '23'\ny = int(x) % 7\nprint(y)\n",
+        "o": [
+            "2",
+            "23",
+            "7",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 6.5\ny = int(x) - float('1.8')\nprint(y)\n",
+        "o": [
+            "4.2",
+            "5",
+            "4",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is valid in Python?",
+        "c": null,
+        "o": [
+            "stock_level",
+            "stock?level",
+            "stock level",
+            "del"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 4 >= 2 and 3 <= 5?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "String",
+            "Float"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '60'\ny = int(x) / 10\nprint(y)\n",
+        "o": [
+            "6.0",
+            "6",
+            "60",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store an unordered collection with key-value pairs?",
+        "c": null,
+        "o": [
+            "Dictionary",
+            "List",
+            "Tuple",
+            "Set"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = float('4.2')\ny = int(x) + 3\nprint(y)\n",
+        "o": [
+            "7",
+            "4.2",
+            "8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will succeed?",
+        "c": null,
+        "o": [
+            "float('15.75')",
+            "int('15.75')",
+            "float('xyz')",
+            "str(None)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool(-0.5)\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "-0.5",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid variable assignment for a list?",
+        "c": null,
+        "o": [
+            "items = [1, 2, 3]",
+            "items = (1, 2, 3)",
+            "items = {1, 2, 3}",
+            "items = '1, 2, 3'"
+        ]
+    },
+    {
+        "q": "What data type is the result of: pow(2, 2)?",
+        "c": null,
+        "o": [
+            "Integer",
+            "Float",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '9'\ny = float(x) - 0.5\nprint(y)\n",
+        "o": [
+            "8.5",
+            "8",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type is immutable and does not allow duplicates?",
+        "c": null,
+        "o": [
+            "Frozenset",
+            "List",
+            "Tuple",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = str(8.3)\nprint(x + str(1))\n",
+        "o": [
+            "8.31",
+            "9.3",
+            "81",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will raise an error?",
+        "c": null,
+        "o": [
+            "int('xyz')",
+            "int('20')",
+            "float('20.5')",
+            "str(20)"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = bool('abc')\nprint(x)\n",
+        "o": [
+            "True",
+            "False",
+            "abc",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these is a valid way to assign an empty list?",
+        "c": null,
+        "o": [
+            "lst = []",
+            "lst = {}",
+            "lst = ()",
+            "lst = ''"
+        ]
+    },
+    {
+        "q": "What data type is the result of: isinstance(5, float)?",
+        "c": null,
+        "o": [
+            "Boolean",
+            "Integer",
+            "Float",
+            "String"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '12.8'\ny = float(x) * 2\nprint(y)\n",
+        "o": [
+            "25.6",
+            "25",
+            "12.8",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which data type can store a mutable sequence that allows duplicates?",
+        "c": null,
+        "o": [
+            "List",
+            "Set",
+            "Tuple",
+            "Dictionary"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = 7\ny = float(x) + 1.75\nprint(y)\n",
+        "o": [
+            "8.75",
+            "8",
+            "9",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these conversions will NOT fail?",
+        "c": null,
+        "o": [
+            "int(10.0)",
+            "int('10.5')",
+            "float('xyz')",
+            "bool('')"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = False\ny = int(x) + float('0.25')\nprint(y)\n",
+        "o": [
+            "0.25",
+            "0",
+            "1",
+            "TypeError"
+        ]
+    },
+    {
+        "q": "Which of these variable names is invalid?",
+        "c": null,
+        "o": [
+            "from",
+            "user_balance",
+            "balance_1",
+            "_user"
+        ]
+    },
+    {
+        "q": "What data type is the result of: 7.5 - 2.5?",
+        "c": null,
+        "o": [
+            "Float",
+            "Integer",
+            "String",
+            "Boolean"
+        ]
+    },
+    {
+        "q": "What is the output of the following code",
+        "c": "\nx = '21'\ny = int(x) % 4\nprint(y)\n",
+        "o": [
+            "1",
+            "21",
+            "4",
+            "TypeError"
+        ]
     }
 ]

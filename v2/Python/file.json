@@ -1,6 +1,4066 @@
 [
   {
-    "q": "Which of the following is the correct way to open a file in Python?\n",
+    "q": "Which mode is used to open a file for reading in Python?",
+    "c": null,
+    "o": [
+      "\"r\"",
+      "\"w\"",
+      "\"a\"",
+      "\"x\""
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"sample.txt\", \"w\") as file:\n    file.write(\"Hello, World!\")\n\nwith open(\"sample.txt\", \"r\") as file:\n    print(file.read())",
+    "o": [
+      "Hello, World!",
+      "FileNotFoundError",
+      "None",
+      "An empty string"
+    ]
+  },
+  {
+    "q": "Which of the following is used to check if a file exists in Python?",
+    "c": null,
+    "o": [
+      "os.path.exists(\"filename.txt\")",
+      "file.exists(\"filename.txt\")",
+      "check_file(\"filename.txt\")",
+      "os.file_exists(\"filename.txt\")"
+    ]
+  },
+  {
+    "q": "What will the following code snippet do?",
+    "c": "import os\nos.remove(\"sample.txt\")",
+    "o": [
+      "Deletes the file 'sample.txt' if it exists",
+      "Throws an error if 'sample.txt' does not exist",
+      "Creates a new file named 'sample.txt'",
+      "Renames 'sample.txt' to 'deleted_sample.txt'"
+    ]
+  },
+  {
+    "q": "Which statement is true about file handling in Python?",
+    "c": null,
+    "o": [
+      "The 'with' statement is used to automatically close the file after its block execution",
+      "The 'with' statement must be used to open every file",
+      "Files in Python are always opened in binary mode",
+      "Python does not support reading files line by line"
+    ]
+  },
+  {
+    "q": "What is the correct way to create a new directory in Python?",
+    "c": null,
+    "o": [
+      "os.mkdir(\"new_folder\")",
+      "os.create_directory(\"new_folder\")",
+      "os.make(\"new_folder\")",
+      "create.folder(\"new_folder\")"
+    ]
+  },
+  {
+    "q": "What will happen if you try to open a non-existent file using 'r' mode?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "Creates a new empty file",
+      "Returns None",
+      "Throws a SyntaxError"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    f = open(\"file.txt\", \"r\")\n    print(f.read())\nexcept FileNotFoundError:\n    print(\"File not found!\")",
+    "o": [
+      "File not found!",
+      "None",
+      "Error: File does not exist",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "Which of the following is a built-in exception in Python?",
+    "c": null,
+    "o": [
+      "IOError",
+      "FileNotExistError",
+      "ReadError",
+      "OpenFileError"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.rmdir(\"test_folder\")",
+    "o": [
+      "Removes the empty directory 'test_folder'",
+      "Deletes the folder even if it contains files",
+      "Throws a TypeError",
+      "Renames the folder"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets defines a user-defined exception in Python?",
+    "c": null,
+    "o": [
+      "class MyError(Exception): pass",
+      "def MyError(): raise Exception",
+      "class Exception(MyError): pass",
+      "raise MyError(\"Error occurred\")"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class CustomError(Exception):\n    pass\n\ntry:\n    raise CustomError(\"This is a custom exception\")\nexcept CustomError as e:\n    print(e)",
+    "o": [
+      "This is a custom exception",
+      "CustomError",
+      "None",
+      "SyntaxError"
+    ]
+  },
+  {
+    "q": "Which of the following file modes is used to open a file for both reading and writing?",
+    "c": null,
+    "o": [
+      "\"r+\"",
+      "\"w+\"",
+      "\"a+\"",
+      "\"rb\""
+    ]
+  },
+  {
+    "q": "What happens when you open a file in 'w' mode in Python?",
+    "c": null,
+    "o": [
+      "The file is truncated if it exists, otherwise a new file is created",
+      "An error occurs if the file does not exist",
+      "The file is opened for reading only",
+      "The file is opened in binary mode"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"data.txt\", \"a\") as f:\n    f.write(\"New Line\\n\")\n\nwith open(\"data.txt\", \"r\") as f:\n    print(f.readlines())",
+    "o": [
+      "[...existing lines..., 'New Line\\n']",
+      "['New Line\\n']",
+      "FileNotFoundError",
+      "SyntaxError"
+    ]
+  },
+  {
+    "q": "Which method is used to read a specific number of characters from a file?",
+    "c": null,
+    "o": [
+      "file.read(n)",
+      "file.readlines(n)",
+      "file.readline(n)",
+      "file.fetch(n)"
+    ]
+  },
+  {
+    "q": "What is the purpose of the os.listdir() method?",
+    "c": null,
+    "o": [
+      "Returns a list of files and directories in a specified directory",
+      "Deletes all files in a directory",
+      "Creates a new directory",
+      "Checks if a file exists"
+    ]
+  },
+  {
+    "q": "What will happen if you try to delete a non-empty directory using os.rmdir()?",
+    "c": null,
+    "o": [
+      "An OSError will be raised",
+      "The directory and its contents will be deleted",
+      "The function will execute without errors",
+      "The function will return False"
+    ]
+  },
+  {
+    "q": "What will the following code snippet do?",
+    "c": "try:\n    with open(\"unknown.txt\", \"r\") as f:\n        data = f.read()\nexcept IOError:\n    print(\"An I/O error occurred\")",
+    "o": [
+      "Prints 'An I/O error occurred' if the file does not exist",
+      "Throws a SyntaxError",
+      "Creates a new file named 'unknown.txt'",
+      "Returns an empty string"
+    ]
+  },
+  {
+    "q": "Which exception is raised when an operation is attempted on a closed file?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "IOError",
+      "FileNotFoundError",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "Which of the following functions can be used to rename a file in Python?",
+    "c": null,
+    "o": [
+      "os.rename(\"old_name.txt\", \"new_name.txt\")",
+      "file.rename(\"old_name.txt\", \"new_name.txt\")",
+      "os.modify(\"old_name.txt\", \"new_name.txt\")",
+      "rename.file(\"old_name.txt\", \"new_name.txt\")"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "import os\nos.mkdir(\"new_dir\")\nprint(os.path.exists(\"new_dir\"))",
+    "o": [
+      "True",
+      "False",
+      "FileNotFoundError",
+      "None"
+    ]
+  },
+  {
+    "q": "How can you write multiple lines to a file in Python?",
+    "c": null,
+    "o": [
+      "file.writelines([\"line1\\n\", \"line2\\n\"])",
+      "file.writemultiple([\"line1\", \"line2\"])",
+      "file.write([\"line1\", \"line2\"])",
+      "file.write_lines([\"line1\", \"line2\"])"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "class NegativeValueError(Exception):\n    pass\n\ndef check_value(x):\n    if x < 0:\n        raise NegativeValueError(\"Negative values are not allowed\")\n\ntry:\n    check_value(-5)\nexcept NegativeValueError as e:\n    print(e)",
+    "o": [
+      "Negative values are not allowed",
+      "None",
+      "SyntaxError",
+      "RuntimeError"
+    ]
+  },
+  {
+    "q": "Which statement is true about the 'with' statement in file handling?",
+    "c": null,
+    "o": [
+      "It ensures the file is properly closed after its suite finishes execution.",
+      "It must be used with try-except blocks.",
+      "It is only used for reading files.",
+      "It does not support writing files."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"sample.txt\", \"w\") as f:\n    f.write(\"Hello\\nWorld\")\n\nwith open(\"sample.txt\", \"r\") as f:\n    print(f.read())",
+    "o": [
+      "\"Hello\\nWorld\"",
+      "\"Hello World\"",
+      "\"Hello\\nWorld\\n\"",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to move the file cursor to a specific position?",
+    "c": null,
+    "o": [
+      "file.seek(n)",
+      "file.move(n)",
+      "file.cursor(n)",
+      "file.goto(n)"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.remove(\"file.txt\")",
+    "o": [
+      "Deletes 'file.txt' from the directory",
+      "Moves 'file.txt' to trash",
+      "Renames 'file.txt' to 'file_deleted.txt'",
+      "Throws an error if 'file.txt' exists"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation fails due to the file not being found?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "IOError",
+      "OSError",
+      "NameError"
+    ]
+  },
+  {
+    "q": "What will the following code snippet print?",
+    "c": "import os\nprint(os.path.isdir(\"test_folder\"))",
+    "o": [
+      "True if 'test_folder' exists as a directory, otherwise False",
+      "Always True",
+      "Always False",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements is correct about user-defined exceptions?",
+    "c": null,
+    "o": [
+      "They must inherit from the Exception class.",
+      "They must be named with a 'UserError' prefix.",
+      "They do not support error messages.",
+      "They cannot be raised using the 'raise' statement."
+    ]
+  },
+  {
+    "q": "What happens when you try to open a file that doesn’t exist using 'r' mode?",
+    "c": null,
+    "o": [
+      "A FileNotFoundError is raised.",
+      "A new file is created.",
+      "An empty string is returned.",
+      "The program continues execution without error."
+    ]
+  },
+  {
+    "q": "What will the following code snippet output?",
+    "c": "try:\n    with open(\"test.txt\", \"r\") as f:\n        print(f.read())\nexcept FileNotFoundError:\n    print(\"File does not exist\")",
+    "o": [
+      "\"File does not exist\" if 'test.txt' is missing",
+      "Contents of 'test.txt' if it exists",
+      "SyntaxError",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to check if a file exists before opening it?",
+    "c": null,
+    "o": [
+      "os.path.exists(\"filename\")",
+      "file.isopen(\"filename\")",
+      "os.checkfile(\"filename\")",
+      "file.exists(\"filename\")"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'try-except-finally' block?",
+    "c": null,
+    "o": [
+      "Ensures that the 'finally' block executes regardless of exceptions.",
+      "Catches only syntax errors.",
+      "Stops execution after an exception occurs.",
+      "Allows execution to skip the 'except' block."
+    ]
+  },
+  {
+    "q": "What will happen if the following code is executed?",
+    "c": "import os\nos.rmdir(\"test_folder\")",
+    "o": [
+      "Deletes 'test_folder' if it is empty.",
+      "Deletes 'test_folder' and all its contents.",
+      "Throws an error if 'test_folder' exists.",
+      "Creates a new folder named 'test_folder'."
+    ]
+  },
+  {
+    "q": "Which mode is used to open a file for both reading and writing in Python?",
+    "c": null,
+    "o": [
+      "\"r+\"",
+      "\"w\"",
+      "\"a\"",
+      "\"x\""
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"sample.txt\", \"w\") as f:\n    f.write(\"Python\")\n\nwith open(\"sample.txt\", \"a\") as f:\n    f.write(\" Programming\")\n\nwith open(\"sample.txt\", \"r\") as f:\n    print(f.read())",
+    "o": [
+      "\"Python Programming\"",
+      "\"Python\"",
+      "\"Programming\"",
+      "None"
+    ]
+  },
+  {
+    "q": "Which method is used to read an entire file as a list of lines?",
+    "c": null,
+    "o": [
+      "file.readlines()",
+      "file.read()",
+      "file.readline()",
+      "file.getlines()"
+    ]
+  },
+  {
+    "q": "What will happen if 'open(\"file.txt\", \"x\")' is executed and 'file.txt' already exists?",
+    "c": null,
+    "o": [
+      "It raises a FileExistsError.",
+      "It opens the file in read mode.",
+      "It overwrites the existing file.",
+      "It appends new data to the file."
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid file mode in Python?",
+    "c": null,
+    "o": [
+      "\"rw\"",
+      "\"r\"",
+      "\"w+\"",
+      "\"a\""
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.mkdir(\"new_folder\")",
+    "o": [
+      "Creates a new directory named 'new_folder'.",
+      "Deletes the directory 'new_folder' if it exists.",
+      "Renames 'new_folder' to 'old_folder'.",
+      "Throws an error if 'new_folder' exists."
+    ]
+  },
+  {
+    "q": "Which Python module is used to handle file and directory operations?",
+    "c": null,
+    "o": [
+      "os",
+      "sys",
+      "shutil",
+      "pathlib"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    with open(\"data.txt\", \"r\") as f:\n        print(f.read())\nexcept IOError:\n    print(\"Error opening file\")",
+    "o": [
+      "\"Error opening file\" if 'data.txt' does not exist",
+      "Contents of 'data.txt' if it exists",
+      "Always raises an exception",
+      "None"
+    ]
+  },
+  {
+    "q": "Which statement is true about 'shutil' module?",
+    "c": null,
+    "o": [
+      "It provides high-level file and directory operations.",
+      "It is used for database operations.",
+      "It is a built-in alternative to 'os' for handling files.",
+      "It only works with text files."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.rename(\"old_file.txt\", \"new_file.txt\")",
+    "o": [
+      "Renames 'old_file.txt' to 'new_file.txt'.",
+      "Copies 'old_file.txt' to 'new_file.txt'.",
+      "Deletes 'old_file.txt'.",
+      "Throws an error if 'new_file.txt' exists."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when 'sample.txt' exists and contains 'Hello World'?",
+    "c": "with open('sample.txt', 'r') as file:\n    content = file.read()\n    print(content)",
+    "o": [
+      "Hello World",
+      "None",
+      "Error",
+      "sample.txt"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to open a file for both reading and writing in Python?",
+    "c": null,
+    "o": [
+      "'r+'",
+      "'w'",
+      "'r'",
+      "'a'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'data.txt' does not exist?",
+    "c": "try:\n    with open('data.txt', 'r') as file:\n        print(file.read())\nexcept FileNotFoundError:\n    print('File not found')",
+    "o": [
+      "File not found",
+      "None",
+      "Error",
+      "data.txt"
+    ]
+  },
+  {
+    "q": "Which module in Python is commonly used to work with directories and file paths?",
+    "c": null,
+    "o": [
+      "os",
+      "sys",
+      "math",
+      "time"
+    ]
+  },
+  {
+    "q": "What will happen when the following code runs if 'output.txt' cannot be created due to permission issues?",
+    "c": "try:\n    with open('output.txt', 'w') as file:\n        file.write('Test')\nexcept PermissionError:\n    print('Permission denied')",
+    "o": [
+      "Permission denied",
+      "Test",
+      "None",
+      "File created successfully"
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to read a file that does not exist?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "IOError",
+      "ValueError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet defining a user-defined exception?",
+    "c": "class CustomFileError(Exception):\n    pass\n\ntry:\n    raise CustomFileError('File issue')\nexcept CustomFileError as e:\n    print(e)",
+    "o": [
+      "File issue",
+      "CustomFileError",
+      "None",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to check if a directory exists using the 'os' module?",
+    "c": null,
+    "o": [
+      "os.path.isdir('my_folder')",
+      "os.isdir('my_folder')",
+      "os.path.exists_dir('my_folder')",
+      "os.directory('my_folder')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when 'test.txt' exists and is empty?",
+    "c": "with open('test.txt', 'r') as file:\n    content = file.read()\n    print(len(content))",
+    "o": [
+      "0",
+      "None",
+      "Error",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to create a new directory in Python using the 'os' module?",
+    "c": null,
+    "o": [
+      "os.mkdir('new_folder')",
+      "os.create_dir('new_folder')",
+      "os.newdir('new_folder')",
+      "os.makedir('new_folder')"
+    ]
+  },
+  {
+    "q": "What happens when the following code runs and 'log.txt' is successfully opened?",
+    "c": "with open('log.txt', 'a') as file:\n    file.write('New entry')\n    print(file.tell())",
+    "o": [
+      "Position of file pointer after writing",
+      "New entry",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to write to a file opened in read-only mode?",
+    "c": null,
+    "o": [
+      "io.UnsupportedOperation",
+      "FileNotFoundError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if the directory 'docs' exists?",
+    "c": "import os\nif os.path.exists('docs'):\n    print('Exists')\nelse:\n    print('Does not exist')",
+    "o": [
+      "Exists",
+      "Does not exist",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to define and raise a user-defined exception for file handling?",
+    "c": null,
+    "o": [
+      "class FileTooLargeError(Exception): pass; raise FileTooLargeError('File too big')",
+      "class FileTooLargeError: raise FileTooLargeError('File too big')",
+      "exception FileTooLargeError: raise 'File too big'",
+      "def FileTooLargeError(Exception): raise 'File too big'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code when 'backup.txt' cannot be accessed due to an I/O issue?",
+    "c": "try:\n    with open('backup.txt', 'r') as file:\n        print(file.read())\nexcept IOError:\n    print('I/O error occurred')",
+    "o": [
+      "I/O error occurred",
+      "None",
+      "backup.txt",
+      "File opened"
+    ]
+  },
+  {
+    "q": "Which method from the 'os' module can be used to remove an empty directory?",
+    "c": null,
+    "o": [
+      "os.rmdir('empty_folder')",
+      "os.remove_dir('empty_folder')",
+      "os.delete('empty_folder')",
+      "os.unlink('empty_folder')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'notes.txt' exists with the content 'Line1\\nLine2'?",
+    "c": "with open('notes.txt', 'r') as file:\n    lines = file.readlines()\n    print(len(lines))",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following file modes will truncate the file to zero length when opened?",
+    "c": null,
+    "o": [
+      "'w'",
+      "'r'",
+      "'a'",
+      "'r+'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'config.txt' exists but is locked by another process?",
+    "c": "try:\n    with open('config.txt', 'r') as file:\n        print(file.read())\nexcept PermissionError:\n    print('Access denied')",
+    "o": [
+      "Access denied",
+      "config.txt",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which function from the 'os' module returns the current working directory?",
+    "c": null,
+    "o": [
+      "os.getcwd()",
+      "os.pwd()",
+      "os.current_dir()",
+      "os.path.cwd()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when writing to 'output.txt' succeeds?",
+    "c": "with open('output.txt', 'w') as file:\n    file.write('Hello')\n    file.flush()\n    print(file.closed)",
+    "o": [
+      "False",
+      "True",
+      "Hello",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when attempting to remove a non-empty directory using os.rmdir()?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code defining a custom exception for file size?",
+    "c": "class FileSizeError(Exception):\n    def __init__(self, size):\n        self.size = size\ntry:\n    raise FileSizeError(1024)\nexcept FileSizeError as e:\n    print(f'Size: {e.size}')",
+    "o": [
+      "Size: 1024",
+      "FileSizeError",
+      "1024",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to list all files in a directory using the 'os' module?",
+    "c": null,
+    "o": [
+      "os.listdir('my_dir')",
+      "os.files('my_dir')",
+      "os.list_files('my_dir')",
+      "os.dir_contents('my_dir')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'data.txt' exists with content 'Python'?",
+    "c": "with open('data.txt', 'r') as file:\n    file.seek(2)\n    print(file.read())",
+    "o": [
+      "thon",
+      "Python",
+      "Py",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode is used to append data to the end of a file without truncating it?",
+    "c": null,
+    "o": [
+      "'a'",
+      "'w'",
+      "'r'",
+      "'r+'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'temp.txt' does not exist and creation fails due to a directory issue?",
+    "c": "try:\n    with open('temp.txt', 'w') as file:\n        file.write('Test')\nexcept OSError:\n    print('OS error')",
+    "o": [
+      "OS error",
+      "Test",
+      "None",
+      "File created"
+    ]
+  },
+  {
+    "q": "Which 'os' module function can be used to rename a file or directory?",
+    "c": null,
+    "o": [
+      "os.rename('old.txt', 'new.txt')",
+      "os.move('old.txt', 'new.txt')",
+      "os.rename_file('old.txt', 'new.txt')",
+      "os.change_name('old.txt', 'new.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when 'info.txt' is successfully read?",
+    "c": "with open('info.txt', 'r') as file:\n    print(file.readline().strip())",
+    "o": [
+      "First line of info.txt without newline",
+      "Entire file content",
+      "None",
+      "info.txt"
+    ]
+  },
+  {
+    "q": "Which exception might be raised when a file operation exceeds disk quota?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "PermissionError",
+      "io.UnsupportedOperation"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for invalid file names?",
+    "c": "class InvalidFileNameError(Exception):\n    pass\n\ntry:\n    filename = 'file//name'\n    if '//' in filename:\n        raise InvalidFileNameError('Invalid chars')\nexcept InvalidFileNameError as e:\n    print(e)",
+    "o": [
+      "Invalid chars",
+      "file//name",
+      "None",
+      "InvalidFileNameError"
+    ]
+  },
+  {
+    "q": "Which method from the 'os.path' module returns the base name of a file path?",
+    "c": null,
+    "o": [
+      "os.path.basename('folder/file.txt')",
+      "os.path.name('folder/file.txt')",
+      "os.path.file('folder/file.txt')",
+      "os.path.getname('folder/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'records.txt' exists with content 'abc\\ndef' and is read in binary mode?",
+    "c": "with open('records.txt', 'rb') as file:\n    content = file.read()\n    print(len(content))",
+    "o": [
+      "7",
+      "6",
+      "2",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following file modes opens a file for exclusive creation, failing if the file already exists?",
+    "c": null,
+    "o": [
+      "'x'",
+      "'w'",
+      "'a'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'archive.txt' is opened successfully but reading fails midway?",
+    "c": "try:\n    with open('archive.txt', 'r') as file:\n        while True:\n            line = file.readline()\n            if not line:\n                break\n            print(line)\nexcept IOError:\n    print('Reading interrupted')",
+    "o": [
+      "Reading interrupted",
+      "archive.txt",
+      "None",
+      "All lines printed"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the size of a file in bytes?",
+    "c": null,
+    "o": [
+      "os.path.getsize('file.txt')",
+      "os.size('file.txt')",
+      "os.file_size('file.txt')",
+      "os.getbytes('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet after appending to 'log.txt'?",
+    "c": "with open('log.txt', 'a') as file:\n    file.write('\\nEnd')\n    print(file.tell())",
+    "o": [
+      "Position after writing '\\nEnd'",
+      "End",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a directory operation is attempted on a file instead of a directory?",
+    "c": null,
+    "o": [
+      "NotADirectoryError",
+      "OSError",
+      "FileNotFoundError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file corruption?",
+    "c": "class FileCorruptedError(Exception):\n    def __init__(self, msg):\n        self.msg = msg\ntry:\n    raise FileCorruptedError('Data invalid')\nexcept FileCorruptedError as e:\n    print(e.msg)",
+    "o": [
+      "Data invalid",
+      "FileCorruptedError",
+      "None",
+      "msg"
+    ]
+  },
+  {
+    "q": "Which 'os' module function can be used to change the current working directory?",
+    "c": null,
+    "o": [
+      "os.chdir('new_dir')",
+      "os.change_dir('new_dir')",
+      "os.setdir('new_dir')",
+      "os.move_dir('new_dir')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'stats.txt' exists with content '12345' and we read only 3 bytes?",
+    "c": "with open('stats.txt', 'r') as file:\n    data = file.read(3)\n    print(data)",
+    "o": [
+      "123",
+      "12345",
+      "45",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode is used to open a file in binary write mode?",
+    "c": null,
+    "o": [
+      "'wb'",
+      "'w'",
+      "'rb'",
+      "'ab'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'secure.txt' exists but lacks read permissions?",
+    "c": "try:\n    with open('secure.txt', 'r') as file:\n        print(file.read())\nexcept PermissionError:\n    print('No permission')",
+    "o": [
+      "No permission",
+      "secure.txt",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function joins path components intelligently?",
+    "c": null,
+    "o": [
+      "os.path.join('dir', 'file.txt')",
+      "os.path.concat('dir', 'file.txt')",
+      "os.path.merge('dir', 'file.txt')",
+      "os.path.add('dir', 'file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when 'memo.txt' is opened and closed manually?",
+    "c": "file = open('memo.txt', 'w')\nfile.write('Note')\nfile.close()\nprint(file.closed)",
+    "o": [
+      "True",
+      "False",
+      "Note",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is attempted on a closed file?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "IOError",
+      "FileNotFoundError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for unsupported file types?",
+    "c": "class UnsupportedFileTypeError(Exception):\n    pass\n\ntry:\n    ext = '.xyz'\n    if ext not in ['.txt', '.csv']:\n        raise UnsupportedFileTypeError('Bad type')\nexcept UnsupportedFileTypeError as e:\n    print(e)",
+    "o": [
+      "Bad type",
+      ".xyz",
+      "None",
+      "UnsupportedFileTypeError"
+    ]
+  },
+  {
+    "q": "Which 'os' module function checks if a path exists, whether it’s a file or directory?",
+    "c": null,
+    "o": [
+      "os.path.exists('path')",
+      "os.exists('path')",
+      "os.path.check('path')",
+      "os.is_path('path')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'list.txt' exists with content 'a,b,c' and is split on commas?",
+    "c": "with open('list.txt', 'r') as file:\n    data = file.read().split(',')\n    print(len(data))",
+    "o": [
+      "3",
+      "1",
+      "5",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing in binary mode without truncating it?",
+    "c": null,
+    "o": [
+      "'r+b'",
+      "'wb'",
+      "'rb'",
+      "'ab'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'cache.txt' exists but an error occurs while writing?",
+    "c": "try:\n    with open('cache.txt', 'w') as file:\n        file.write('Data')\n        raise IOError('Write failed')\nexcept IOError:\n    print('IO issue')",
+    "o": [
+      "IO issue",
+      "Data",
+      "None",
+      "cache.txt"
+    ]
+  },
+  {
+    "q": "Which 'os' module function retrieves the last modification time of a file?",
+    "c": null,
+    "o": [
+      "os.path.getmtime('file.txt')",
+      "os.time('file.txt')",
+      "os.mod_time('file.txt')",
+      "os.path.lastmod('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'draft.txt' is written and then immediately read?",
+    "c": "with open('draft.txt', 'w+') as file:\n    file.write('Hello')\n    file.seek(0)\n    print(file.read())",
+    "o": [
+      "Hello",
+      "None",
+      "0",
+      "draft.txt"
+    ]
+  },
+  {
+    "q": "Which exception is raised when attempting to open a directory as if it were a file?",
+    "c": null,
+    "o": [
+      "IsADirectoryError",
+      "FileNotFoundError",
+      "OSError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file age?",
+    "c": "class FileTooOldError(Exception):\n    def __init__(self, age):\n        self.age = age\ntry:\n    raise FileTooOldError(5)\nexcept FileTooOldError as e:\n    print(f'Age: {e.age}')",
+    "o": [
+      "Age: 5",
+      "FileTooOldError",
+      "5",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the directory name from a file path?",
+    "c": null,
+    "o": [
+      "os.path.dirname('folder/file.txt')",
+      "os.path.dir('folder/file.txt')",
+      "os.path.getdir('folder/file.txt')",
+      "os.path.parent('folder/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'items.txt' exists with content 'one\\ntwo\\nthree' and we count lines?",
+    "c": "with open('items.txt', 'r') as file:\n    lines = sum(1 for line in file)\n    print(lines)",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for appending in binary mode?",
+    "c": null,
+    "o": [
+      "'ab'",
+      "'wb'",
+      "'rb'",
+      "'r+b'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'backup.log' exists but is corrupted during reading?",
+    "c": "try:\n    with open('backup.log', 'r') as file:\n        content = file.read()\n        if not content.isprintable():\n            raise ValueError('Corrupted')\nexcept ValueError:\n    print('File corrupted')",
+    "o": [
+      "File corrupted",
+      "backup.log",
+      "None",
+      "Content printed"
+    ]
+  },
+  {
+    "q": "Which 'os' module function removes a file?",
+    "c": null,
+    "o": [
+      "os.remove('file.txt')",
+      "os.delete('file.txt')",
+      "os.unlink_file('file.txt')",
+      "os.rm('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'notes.log' is opened in append mode and written to?",
+    "c": "with open('notes.log', 'a') as file:\n    file.write('Entry')\n    print(file.tell() - 5)",
+    "o": [
+      "Position before 'Entry' was written",
+      "Entry",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters a broken symbolic link?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file encoding?",
+    "c": "class EncodingError(Exception):\n    def __init__(self, encoding):\n        self.encoding = encoding\ntry:\n    raise EncodingError('utf-99')\nexcept EncodingError as e:\n    print(f'Unsupported: {e.encoding}')",
+    "o": [
+      "Unsupported: utf-99",
+      "EncodingError",
+      "utf-99",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function checks if a path is an absolute path?",
+    "c": null,
+    "o": [
+      "os.path.isabs('/folder/file.txt')",
+      "os.path.absolute('/folder/file.txt')",
+      "os.path.is_absolute('/folder/file.txt')",
+      "os.path.checkabs('/folder/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'scores.txt' exists with content '10,20,30' and we read it as a list?",
+    "c": "with open('scores.txt', 'r') as file:\n    data = file.read().split(',')\n    print(data[1])",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading in text mode by default?",
+    "c": null,
+    "o": [
+      "'r'",
+      "'rb'",
+      "'w'",
+      "'ab'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'temp.dat' exists but a write operation fails due to disk space?",
+    "c": "try:\n    with open('temp.dat', 'w') as file:\n        file.write('Large data' * 1000)\nexcept OSError:\n    print('Disk full')",
+    "o": [
+      "Disk full",
+      "Large data",
+      "None",
+      "temp.dat"
+    ]
+  },
+  {
+    "q": "Which 'os' module function retrieves the last access time of a file?",
+    "c": null,
+    "o": [
+      "os.path.getatime('file.txt')",
+      "os.access_time('file.txt')",
+      "os.path.lastaccess('file.txt')",
+      "os.gettime('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'history.txt' is opened in 'r+' mode and modified?",
+    "c": "with open('history.txt', 'r+') as file:\n    file.write('New')\n    file.seek(0)\n    print(file.read())",
+    "o": [
+      "New",
+      "Original content",
+      "None",
+      "history.txt"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is attempted on a file that is already open exclusively by another process?",
+    "c": null,
+    "o": [
+      "PermissionError",
+      "FileNotFoundError",
+      "OSError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file permission issues?",
+    "c": "class FilePermissionError(Exception):\n    def __init__(self, perm):\n        self.perm = perm\ntry:\n    raise FilePermissionError('read-only')\nexcept FilePermissionError as e:\n    print(f'Issue: {e.perm}')",
+    "o": [
+      "Issue: read-only",
+      "FilePermissionError",
+      "read-only",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function splits a path into a pair (head, tail)?",
+    "c": null,
+    "o": [
+      "os.path.split('folder/file.txt')",
+      "os.path.divide('folder/file.txt')",
+      "os.path.separate('folder/file.txt')",
+      "os.path.cut('folder/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'tasks.txt' exists with content 'task1\\ntask2' and we read the second line?",
+    "c": "with open('tasks.txt', 'r') as file:\n    file.readline()\n    print(file.readline().strip())",
+    "o": [
+      "task2",
+      "task1",
+      "",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for writing only, creating it if it doesn’t exist, in binary mode?",
+    "c": null,
+    "o": [
+      "'wb'",
+      "'w'",
+      "'rb'",
+      "'ab'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'report.txt' exists but an attempt to append fails due to a read-only filesystem?",
+    "c": "try:\n    with open('report.txt', 'a') as file:\n        file.write('Update')\nexcept PermissionError:\n    print('Read-only')",
+    "o": [
+      "Read-only",
+      "Update",
+      "None",
+      "report.txt"
+    ]
+  },
+  {
+    "q": "Which 'os' module function checks if a path is a file?",
+    "c": null,
+    "o": [
+      "os.path.isfile('file.txt')",
+      "os.is_file('file.txt')",
+      "os.path.checkfile('file.txt')",
+      "os.file_exists('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'log.dat' is created and written in binary mode?",
+    "c": "with open('log.dat', 'wb') as file:\n    file.write(b'Binary')\n    print(file.tell())",
+    "o": [
+      "6",
+      "Binary",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation exceeds the maximum file size allowed by the system?",
+    "c": null,
+    "o": [
+      "OSError",
+      "ValueError",
+      "FileNotFoundError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for missing file metadata?",
+    "c": "class MissingMetadataError(Exception):\n    def __init__(self, field):\n        self.field = field\ntry:\n    raise MissingMetadataError('timestamp')\nexcept MissingMetadataError as e:\n    print(f'Missing: {e.field}')",
+    "o": [
+      "Missing: timestamp",
+      "MissingMetadataError",
+      "timestamp",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the file extension from a path?",
+    "c": null,
+    "o": [
+      "os.path.splitext('file.txt')[1]",
+      "os.path.extension('file.txt')",
+      "os.path.getext('file.txt')",
+      "os.path.ext('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'values.txt' exists with content '1\\n2\\n3' and we sum the numbers?",
+    "c": "with open('values.txt', 'r') as file:\n    total = sum(int(line) for line in file)\n    print(total)",
+    "o": [
+      "6",
+      "1",
+      "3",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing, creating it if it doesn’t exist, in text mode?",
+    "c": null,
+    "o": [
+      "'w+'",
+      "'r+'",
+      "'a'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'data.bin' exists but reading fails due to a hardware error?",
+    "c": "try:\n    with open('data.bin', 'rb') as file:\n        file.read()\nexcept IOError:\n    print('Hardware failure')",
+    "o": [
+      "Hardware failure",
+      "data.bin",
+      "None",
+      "Binary data"
+    ]
+  },
+  {
+    "q": "Which 'os' module function creates a directory and any necessary parent directories?",
+    "c": null,
+    "o": [
+      "os.makedirs('parent/child')",
+      "os.mkdir('parent/child')",
+      "os.create_dirs('parent/child')",
+      "os.make_dir('parent/child')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'event.log' is opened and truncated?",
+    "c": "with open('event.log', 'w') as file:\n    file.truncate(0)\n    print(file.tell())",
+    "o": [
+      "0",
+      "event.log",
+      "None",
+      "Previous file size"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is attempted with an invalid file descriptor?",
+    "c": null,
+    "o": [
+      "OSError",
+      "ValueError",
+      "FileNotFoundError",
+      "IOError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file version mismatch?",
+    "c": "class VersionMismatchError(Exception):\n    def __init__(self, version):\n        self.version = version\ntry:\n    raise VersionMismatchError('1.2')\nexcept VersionMismatchError as e:\n    print(f'Version: {e.version}')",
+    "o": [
+      "Version: 1.2",
+      "VersionMismatchError",
+      "1.2",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function normalizes a path by collapsing redundant separators?",
+    "c": null,
+    "o": [
+      "os.path.normpath('folder//file.txt')",
+      "os.path.clean('folder//file.txt')",
+      "os.path.normalize('folder//file.txt')",
+      "os.path.fixpath('folder//file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'input.txt' exists with content 'abc\\ndef\\nghi' and we read the last line?",
+    "c": "with open('input.txt', 'r') as file:\n    last_line = None\n    for line in file:\n        last_line = line.strip()\n    print(last_line)",
+    "o": [
+      "ghi",
+      "abc",
+      "def",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for exclusive creation in binary mode, failing if it already exists?",
+    "c": null,
+    "o": [
+      "'xb'",
+      "'wb'",
+      "'ab'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'output.dat' is created but an error occurs after writing?",
+    "c": "try:\n    with open('output.dat', 'w') as file:\n        file.write('Test')\n        raise OSError('Post-write error')\nexcept OSError:\n    print('Operation failed')",
+    "o": [
+      "Operation failed",
+      "Test",
+      "None",
+      "output.dat"
+    ]
+  },
+  {
+    "q": "Which 'os' module function retrieves the creation time of a file on Windows?",
+    "c": null,
+    "o": [
+      "os.path.getctime('file.txt')",
+      "os.create_time('file.txt')",
+      "os.path.creation('file.txt')",
+      "os.getctime('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'track.txt' is opened and we check its position before writing?",
+    "c": "with open('track.txt', 'a') as file:\n    pos = file.tell()\n    file.write('More')\n    print(pos)",
+    "o": [
+      "Position at end before writing",
+      "More",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a directory operation is attempted on a non-existent path without parents?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "OSError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file lock issues?",
+    "c": "class FileLockedError(Exception):\n    def __init__(self, state):\n        self.state = state\ntry:\n    raise FileLockedError('locked')\nexcept FileLockedError as e:\n    print(f'State: {e.state}')",
+    "o": [
+      "State: locked",
+      "FileLockedError",
+      "locked",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the real path, resolving symbolic links?",
+    "c": null,
+    "o": [
+      "os.path.realpath('file.txt')",
+      "os.path.resolve('file.txt')",
+      "os.path.truepath('file.txt')",
+      "os.path.linkpath('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'colors.txt' exists with content 'red\\ngreen\\nblue' and we read lines into a list?",
+    "c": "with open('colors.txt', 'r') as file:\n    colors = [line.strip() for line in file]\n    print(colors[1])",
+    "o": [
+      "green",
+      "red",
+      "blue",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and appending in text mode?",
+    "c": null,
+    "o": [
+      "'a+'",
+      "'r+'",
+      "'w+'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'session.txt' exists but an attempt to truncate fails?",
+    "c": "try:\n    with open('session.txt', 'r+') as file:\n        file.truncate(0)\nexcept io.UnsupportedOperation:\n    print('Cannot truncate')",
+    "o": [
+      "Cannot truncate",
+      "session.txt",
+      "None",
+      "Truncated content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns a list of all files and directories in a directory recursively?",
+    "c": null,
+    "o": [
+      "os.walk('dir')",
+      "os.listdir('dir')",
+      "os.recurse('dir')",
+      "os.scan('dir')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'status.txt' is opened in binary mode and written?",
+    "c": "with open('status.txt', 'wb') as file:\n    file.write(b'START')\n    file.seek(2)\n    print(file.tell())",
+    "o": [
+      "2",
+      "START",
+      "5",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters a path that is too long for the system?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "ValueError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file format issues?",
+    "c": "class FileFormatError(Exception):\n    def __init__(self, fmt):\n        self.fmt = fmt\ntry:\n    raise FileFormatError('json')\nexcept FileFormatError as e:\n    print(f'Format: {e.fmt}')",
+    "o": [
+      "Format: json",
+      "FileFormatError",
+      "json",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function checks if a path is a symbolic link?",
+    "c": null,
+    "o": [
+      "os.path.islink('file.txt')",
+      "os.path.issym('file.txt')",
+      "os.path.linkcheck('file.txt')",
+      "os.path.symlink('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'numbers.txt' exists with content '1,2,3,4' and we read it as integers?",
+    "c": "with open('numbers.txt', 'r') as file:\n    nums = [int(n) for n in file.read().split(',')]\n    print(nums[2])",
+    "o": [
+      "3",
+      "1",
+      "4",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing in binary mode, creating it if it doesn’t exist?",
+    "c": null,
+    "o": [
+      "'w+b'",
+      "'r+b'",
+      "'ab'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'temp.txt' exists but a seek operation fails due to an invalid offset?",
+    "c": "try:\n    with open('temp.txt', 'r') as file:\n        file.seek(-1)\nexcept ValueError:\n    print('Invalid seek')",
+    "o": [
+      "Invalid seek",
+      "temp.txt",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function changes the permissions of a file?",
+    "c": null,
+    "o": [
+      "os.chmod('file.txt', 0o644)",
+      "os.setperm('file.txt', 0o644)",
+      "os.perm('file.txt', 0o644)",
+      "os.change_mode('file.txt', 0o644)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'memo.txt' is opened and we check its encoding?",
+    "c": "with open('memo.txt', 'r', encoding='utf-8') as file:\n    print(file.encoding)",
+    "o": [
+      "utf-8",
+      "memo.txt",
+      "None",
+      "ascii"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is attempted on a device that is not ready?",
+    "c": null,
+    "o": [
+      "OSError",
+      "IOError",
+      "FileNotFoundError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file access timeout?",
+    "c": "class FileTimeoutError(Exception):\n    def __init__(self, time):\n        self.time = time\ntry:\n    raise FileTimeoutError(10)\nexcept FileTimeoutError as e:\n    print(f'Timeout: {e.time} sec')",
+    "o": [
+      "Timeout: 10 sec",
+      "FileTimeoutError",
+      "10",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the canonical path, eliminating symbolic links and relative references?",
+    "c": null,
+    "o": [
+      "os.path.abspath('file.txt')",
+      "os.path.canonical('file.txt')",
+      "os.path.fullpath('file.txt')",
+      "os.path.real('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'grades.txt' exists with content 'A\\nB\\nC' and we join the lines?",
+    "c": "with open('grades.txt', 'r') as file:\n    result = '-'.join(line.strip() for line in file)\n    print(result)",
+    "o": [
+      "A-B-C",
+      "A\\nB\\nC",
+      "ABC",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for appending and reading in binary mode?",
+    "c": null,
+    "o": [
+      "'a+b'",
+      "'r+b'",
+      "'w+b'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'archive.log' exists but an attempt to read exceeds buffer limits?",
+    "c": "try:\n    with open('archive.log', 'r') as file:\n        file.read(999999999)\nexcept MemoryError:\n    print('Out of memory')",
+    "o": [
+      "Out of memory",
+      "archive.log",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the user ID of the file owner on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_uid",
+      "os.owner('file.txt')",
+      "os.getuid('file.txt')",
+      "os.path.uid('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'debug.txt' is opened and we write with a specific encoding?",
+    "c": "with open('debug.txt', 'w', encoding='utf-16') as file:\n    file.write('Debug')\n    print(file.encoding)",
+    "o": [
+      "utf-16",
+      "Debug",
+      "utf-8",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters a corrupted filesystem?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "IOError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file overwrite conflicts?",
+    "c": "class OverwriteError(Exception):\n    def __init__(self, action):\n        self.action = action\ntry:\n    raise OverwriteError('overwrite denied')\nexcept OverwriteError as e:\n    print(f'Action: {e.action}')",
+    "o": [
+      "Action: overwrite denied",
+      "OverwriteError",
+      "overwrite denied",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function splits a path into root and extension?",
+    "c": null,
+    "o": [
+      "os.path.splitext('file.txt')",
+      "os.path.splitext('file.txt')",
+      "os.path.rootext('file.txt')",
+      "os.path.separate('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'todo.txt' exists with content 'task1,task2,task3' and we count items?",
+    "c": "with open('todo.txt', 'r') as file:\n    tasks = file.read().split(',')\n    print(len(tasks))",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for writing only, failing if it already exists, in text mode?",
+    "c": null,
+    "o": [
+      "'x'",
+      "'w'",
+      "'a'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'log.txt' exists but writing fails due to a full disk?",
+    "c": "try:\n    with open('log.txt', 'a') as file:\n        file.write('Log entry' * 1000)\nexcept OSError:\n    print('No space left')",
+    "o": [
+      "No space left",
+      "Log entry",
+      "None",
+      "log.txt"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the group ID of the file owner on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_gid",
+      "os.group('file.txt')",
+      "os.getgid('file.txt')",
+      "os.path.gid('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'notes.txt' is opened and we check if it’s writable?",
+    "c": "with open('notes.txt', 'w') as file:\n    print(file.writable())",
+    "o": [
+      "True",
+      "False",
+      "notes.txt",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation attempts to use an unsupported encoding?",
+    "c": null,
+    "o": [
+      "UnicodeDecodeError",
+      "OSError",
+      "ValueError",
+      "IOError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file synchronization issues?",
+    "c": "class SyncError(Exception):\n    def __init__(self, issue):\n        self.issue = issue\ntry:\n    raise SyncError('sync failed')\nexcept SyncError as e:\n    print(f'Problem: {e.issue}')",
+    "o": [
+      "Problem: sync failed",
+      "SyncError",
+      "sync failed",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function checks if a path is a mount point?",
+    "c": null,
+    "o": [
+      "os.path.ismount('/mnt')",
+      "os.path.mount('/mnt')",
+      "os.path.checkmount('/mnt')",
+      "os.path.ismnt('/mnt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'items.csv' exists with content 'apple,banana,orange' and we read the first item?",
+    "c": "with open('items.csv', 'r') as file:\n    items = file.read().split(',')\n    print(items[0])",
+    "o": [
+      "apple",
+      "banana",
+      "orange",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading only in binary mode?",
+    "c": null,
+    "o": [
+      "'rb'",
+      "'r'",
+      "'wb'",
+      "'ab'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'backup.txt' exists but an attempt to read fails due to a locked file?",
+    "c": "try:\n    with open('backup.txt', 'r') as file:\n        file.read()\nexcept PermissionError:\n    print('File locked')",
+    "o": [
+      "File locked",
+      "backup.txt",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the number of hard links to a file on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_nlink",
+      "os.links('file.txt')",
+      "os.getlinks('file.txt')",
+      "os.path.nlink('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'output.txt' is opened and we check if it’s readable?",
+    "c": "with open('output.txt', 'w') as file:\n    print(file.readable())",
+    "o": [
+      "False",
+      "True",
+      "output.txt",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters a timeout during I/O?",
+    "c": null,
+    "o": [
+      "TimeoutError",
+      "OSError",
+      "IOError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file integrity issues?",
+    "c": "class IntegrityError(Exception):\n    def __init__(self, reason):\n        self.reason = reason\ntry:\n    raise IntegrityError('checksum failed')\nexcept IntegrityError as e:\n    print(f'Reason: {e.reason}')",
+    "o": [
+      "Reason: checksum failed",
+      "IntegrityError",
+      "checksum failed",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the relative path from one path to another?",
+    "c": null,
+    "o": [
+      "os.path.relpath('folder/sub/file.txt', 'folder')",
+      "os.path.relative('folder/sub/file.txt', 'folder')",
+      "os.path.rel('folder/sub/file.txt', 'folder')",
+      "os.path.pathdiff('folder/sub/file.txt', 'folder')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'data.txt' exists with content 'x\\ny\\nz' and we read it backwards line by line?",
+    "c": "with open('data.txt', 'r') as file:\n    lines = file.readlines()\n    print(lines[-1].strip())",
+    "o": [
+      "z",
+      "x",
+      "y",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing, truncating it first, in binary mode?",
+    "c": null,
+    "o": [
+      "'w+b'",
+      "'r+b'",
+      "'ab'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'records.dat' exists but an attempt to write fails due to a network error?",
+    "c": "try:\n    with open('records.dat', 'w') as file:\n        file.write('Record')\n        raise IOError('Network issue')\nexcept IOError:\n    print('Network error')",
+    "o": [
+      "Network error",
+      "Record",
+      "None",
+      "records.dat"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the device number of a file on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_dev",
+      "os.device('file.txt')",
+      "os.getdev('file.txt')",
+      "os.path.dev('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'log.txt' is opened and we check its name?",
+    "c": "with open('log.txt', 'w') as file:\n    print(file.name)",
+    "o": [
+      "log.txt",
+      "None",
+      "File object",
+      "True"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation attempts to access a file beyond its end?",
+    "c": null,
+    "o": [
+      "EOFError",
+      "OSError",
+      "ValueError",
+      "IOError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file compression issues?",
+    "c": "class CompressionError(Exception):\n    def __init__(self, method):\n        self.method = method\ntry:\n    raise CompressionError('gzip')\nexcept CompressionError as e:\n    print(f'Method: {e.method}')",
+    "o": [
+      "Method: gzip",
+      "CompressionError",
+      "gzip",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function checks if a path is a directory?",
+    "c": null,
+    "o": [
+      "os.path.isdir('folder')",
+      "os.path.isdirectory('folder')",
+      "os.path.checkdir('folder')",
+      "os.path.dir_exists('folder')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'points.txt' exists with content '10\\n20\\n30' and we calculate the average?",
+    "c": "with open('points.txt', 'r') as file:\n    nums = [int(line) for line in file]\n    print(sum(nums) // len(nums))",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for exclusive creation and writing in binary mode?",
+    "c": null,
+    "o": [
+      "'xb'",
+      "'wb'",
+      "'ab'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'cache.dat' exists but an attempt to append fails due to a hardware fault?",
+    "c": "try:\n    with open('cache.dat', 'a') as file:\n        file.write('Cache')\n        raise OSError('Hardware fault')\nexcept OSError:\n    print('Hardware error')",
+    "o": [
+      "Hardware error",
+      "Cache",
+      "None",
+      "cache.dat"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the inode number of a file on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_ino",
+      "os.inode('file.txt')",
+      "os.getinode('file.txt')",
+      "os.path.ino('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'trace.txt' is opened and we check if it’s seekable?",
+    "c": "with open('trace.txt', 'w') as file:\n    print(file.seekable())",
+    "o": [
+      "True",
+      "False",
+      "trace.txt",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters an invalid argument, like a negative buffer size?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "OSError",
+      "IOError",
+      "FileNotFoundError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file backup failures?",
+    "c": "class BackupError(Exception):\n    def __init__(self, cause):\n        self.cause = cause\ntry:\n    raise BackupError('disk full')\nexcept BackupError as e:\n    print(f'Cause: {e.cause}')",
+    "o": [
+      "Cause: disk full",
+      "BackupError",
+      "disk full",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns the time of last metadata change on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.path.getctime('file.txt')",
+      "os.path.metatime('file.txt')",
+      "os.path.lastchange('file.txt')",
+      "os.path.ctime('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'entries.txt' exists with content 'cat\\ndog\\nbird' and we print the middle entry?",
+    "c": "with open('entries.txt', 'r') as file:\n    entries = file.readlines()\n    print(entries[1].strip())",
+    "o": [
+      "dog",
+      "cat",
+      "bird",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and appending in binary mode, creating it if it doesn’t exist?",
+    "c": null,
+    "o": [
+      "'a+b'",
+      "'r+b'",
+      "'w+b'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'temp.log' exists but a read operation fails due to a corrupted sector?",
+    "c": "try:\n    with open('temp.log', 'r') as file:\n        file.read()\n        raise IOError('Corrupted sector')\nexcept IOError:\n    print('Read error')",
+    "o": [
+      "Read error",
+      "temp.log",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the size of a file in blocks on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_blocks",
+      "os.blocks('file.txt')",
+      "os.getblocks('file.txt')",
+      "os.path.blocks('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'audit.txt' is opened and we check its mode?",
+    "c": "with open('audit.txt', 'w') as file:\n    print(file.mode)",
+    "o": [
+      "'w'",
+      "audit.txt",
+      "None",
+      "'r'"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is interrupted by a signal?",
+    "c": null,
+    "o": [
+      "InterruptedError",
+      "OSError",
+      "IOError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file expiration?",
+    "c": "class FileExpiredError(Exception):\n    def __init__(self, date):\n        self.date = date\ntry:\n    raise FileExpiredError('2023-01-01')\nexcept FileExpiredError as e:\n    print(f'Expired: {e.date}')",
+    "o": [
+      "Expired: 2023-01-01",
+      "FileExpiredError",
+      "2023-01-01",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function joins paths and ensures the result is absolute?",
+    "c": null,
+    "o": [
+      "os.path.abspath(os.path.join('dir', 'file.txt'))",
+      "os.path.fulljoin('dir', 'file.txt')",
+      "os.path.absjoin('dir', 'file.txt')",
+      "os.path.joinabs('dir', 'file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'scores.csv' exists with content '90,85,95' and we find the maximum?",
+    "c": "with open('scores.csv', 'r') as file:\n    scores = [int(s) for s in file.read().split(',')]\n    print(max(scores))",
+    "o": [
+      "95",
+      "90",
+      "85",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing without truncating, in text mode?",
+    "c": null,
+    "o": [
+      "'r+'",
+      "'w+'",
+      "'a+'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'journal.txt' exists but an attempt to write exceeds system limits?",
+    "c": "try:\n    with open('journal.txt', 'w') as file:\n        file.write('Entry' * 1000000)\nexcept OSError:\n    print('System limit reached')",
+    "o": [
+      "System limit reached",
+      "Entry",
+      "None",
+      "journal.txt"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the file’s access mode on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_mode",
+      "os.mode('file.txt')",
+      "os.getmode('file.txt')",
+      "os.path.access('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'trace.log' is opened and we check if it’s a terminal?",
+    "c": "with open('trace.log', 'w') as file:\n    print(file.isatty())",
+    "o": [
+      "False",
+      "True",
+      "trace.log",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation fails due to insufficient system resources?",
+    "c": null,
+    "o": [
+      "OSError",
+      "MemoryError",
+      "IOError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file duplication errors?",
+    "c": "class DuplicateFileError(Exception):\n    def __init__(self, name):\n        self.name = name\ntry:\n    raise DuplicateFileError('file.txt')\nexcept DuplicateFileError as e:\n    print(f'Duplicate: {e.name}')",
+    "o": [
+      "Duplicate: file.txt",
+      "DuplicateFileError",
+      "file.txt",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function expands user home directory notation (e.g., '~') in a path?",
+    "c": null,
+    "o": [
+      "os.path.expanduser('~/file.txt')",
+      "os.path.home('~/file.txt')",
+      "os.path.userpath('~/file.txt')",
+      "os.path.expand('~/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'list.txt' exists with content 'item1\\nitem2\\nitem3' and we reverse the lines?",
+    "c": "with open('list.txt', 'r') as file:\n    lines = file.readlines()\n    print(lines[::-1][1].strip())",
+    "o": [
+      "item2",
+      "item1",
+      "item3",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for writing and reading in binary mode, truncating it first?",
+    "c": null,
+    "o": [
+      "'w+b'",
+      "'r+b'",
+      "'a+b'",
+      "'rb'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'archive.txt' exists but an attempt to append fails due to a power failure simulation?",
+    "c": "try:\n    with open('archive.txt', 'a') as file:\n        file.write('Log')\n        raise IOError('Power failure')\nexcept IOError:\n    print('Write interrupted')",
+    "o": [
+      "Write interrupted",
+      "Log",
+      "None",
+      "archive.txt"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the time of last status change on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_ctime",
+      "os.status_time('file.txt')",
+      "os.getctime('file.txt')",
+      "os.path.statime('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'record.bin' is opened in binary mode and we write a byte sequence?",
+    "c": "with open('record.bin', 'wb') as file:\n    file.write(b'\\x00\\xFF')\n    print(file.tell())",
+    "o": [
+      "2",
+      "0",
+      "255",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation fails due to a missing parent directory without creation intent?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "OSError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file processing delays?",
+    "c": "class ProcessingDelayError(Exception):\n    def __init__(self, delay):\n        self.delay = delay\ntry:\n    raise ProcessingDelayError(500)\nexcept ProcessingDelayError as e:\n    print(f'Delay: {e.delay}ms')",
+    "o": [
+      "Delay: 500ms",
+      "ProcessingDelayError",
+      "500",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function expands environment variables in a path?",
+    "c": null,
+    "o": [
+      "os.path.expandvars('$HOME/file.txt')",
+      "os.path.envexpand('$HOME/file.txt')",
+      "os.path.varexpand('$HOME/file.txt')",
+      "os.path.substvars('$HOME/file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'tags.txt' exists with content 'tag1\\ntag2\\ntag3' and we print the first two tags?",
+    "c": "with open('tags.txt', 'r') as file:\n    tags = file.readlines()[:2]\n    print(' '.join(tag.strip() for tag in tags))",
+    "o": [
+      "tag1 tag2",
+      "tag1",
+      "tag3",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for appending only in text mode, creating it if it doesn’t exist?",
+    "c": null,
+    "o": [
+      "'a'",
+      "'w'",
+      "'r'",
+      "'a+'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'backup.log' exists but reading fails due to a sudden disconnection?",
+    "c": "try:\n    with open('backup.log', 'r') as file:\n        file.read()\n        raise IOError('Disconnected')\nexcept IOError:\n    print('Connection lost')",
+    "o": [
+      "Connection lost",
+      "backup.log",
+      "None",
+      "File content"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the file type and mode as a combined integer?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_mode",
+      "os.filetype('file.txt')",
+      "os.gettype('file.txt')",
+      "os.path.mode('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'info.txt' is opened and we flush after writing?",
+    "c": "with open('info.txt', 'w') as file:\n    file.write('Info')\n    file.flush()\n    print(file.tell())",
+    "o": [
+      "4",
+      "Info",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation attempts to use a closed file object?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "OSError",
+      "IOError",
+      "FileNotFoundError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file validation failure?",
+    "c": "class ValidationError(Exception):\n    def __init__(self, error):\n        self.error = error\ntry:\n    raise ValidationError('invalid data')\nexcept ValidationError as e:\n    print(f'Error: {e.error}')",
+    "o": [
+      "Error: invalid data",
+      "ValidationError",
+      "invalid data",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function checks if two paths refer to the same file?",
+    "c": null,
+    "o": [
+      "os.path.samefile('file1.txt', 'file2.txt')",
+      "os.path.issame('file1.txt', 'file2.txt')",
+      "os.path.equals('file1.txt', 'file2.txt')",
+      "os.path.matchfile('file1.txt', 'file2.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'prices.txt' exists with content '5.99\\n10.50\\n8.25' and we sum the prices?",
+    "c": "with open('prices.txt', 'r') as file:\n    total = sum(float(line) for line in file)\n    print(f'{total:.2f}')",
+    "o": [
+      "24.74",
+      "5.99",
+      "10.50",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for reading and writing in text mode, creating it if it doesn’t exist?",
+    "c": null,
+    "o": [
+      "'w+'",
+      "'r+'",
+      "'a+'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'events.log' exists but an attempt to write fails due to a filesystem crash?",
+    "c": "try:\n    with open('events.log', 'a') as file:\n        file.write('Event')\n        raise OSError('Filesystem crash')\nexcept OSError:\n    print('FS error')",
+    "o": [
+      "FS error",
+      "Event",
+      "None",
+      "events.log"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the file’s block size for I/O operations on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_blksize",
+      "os.blocksize('file.txt')",
+      "os.getblksize('file.txt')",
+      "os.path.blksize('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'debug.log' is opened and we check its file descriptor?",
+    "c": "with open('debug.log', 'w') as file:\n    print(file.fileno() >= 0)",
+    "o": [
+      "True",
+      "False",
+      "debug.log",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation encounters a race condition?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "IOError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file truncation issues?",
+    "c": "class TruncationError(Exception):\n    def __init__(self, size):\n        self.size = size\ntry:\n    raise TruncationError(1024)\nexcept TruncationError as e:\n    print(f'Size: {e.size} bytes')",
+    "o": [
+      "Size: 1024 bytes",
+      "TruncationError",
+      "1024",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function returns a path with case normalized on case-insensitive filesystems?",
+    "c": null,
+    "o": [
+      "os.path.normcase('File.TXT')",
+      "os.path.casefix('File.TXT')",
+      "os.path.normalcase('File.TXT')",
+      "os.path.lowercase('File.TXT')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'results.txt' exists with content 'pass\\nfail\\npass' and we count passes?",
+    "c": "with open('results.txt', 'r') as file:\n    passes = sum(1 for line in file if line.strip() == 'pass')\n    print(passes)",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode opens a file for writing and reading in text mode, creating it if it doesn’t exist?",
+    "c": null,
+    "o": [
+      "'w+'",
+      "'r+'",
+      "'a+'",
+      "'r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'temp.bin' exists but writing fails due to a filesystem error?",
+    "c": "try:\n    with open('temp.bin', 'wb') as file:\n        file.write(b'Data')\n        raise OSError('Filesystem error')\nexcept OSError:\n    print('FS error')",
+    "o": [
+      "FS error",
+      "Data",
+      "None",
+      "temp.bin"
+    ]
+  },
+  {
+    "q": "Which 'os' module function returns the block size of a file on Unix-like systems?",
+    "c": null,
+    "o": [
+      "os.stat('file.txt').st_blksize",
+      "os.blksize('file.txt')",
+      "os.getblocksize('file.txt')",
+      "os.path.blksize('file.txt')"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet if 'stats.log' is opened and we write multiple lines?",
+    "c": "with open('stats.log', 'w') as file:\n    file.writelines(['Line1\\n', 'Line2\\n'])\n    print(file.tell())",
+    "o": [
+      "12",
+      "Line1",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation fails due to a circular symbolic link?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "ValueError",
+      "PermissionError"
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a user-defined exception for file migration issues?",
+    "c": "class MigrationError(Exception):\n    def __init__(self, issue):\n        self.issue = issue\ntry:\n    raise MigrationError('migration failed')\nexcept MigrationError as e:\n    print(f'Issue: {e.issue}')",
+    "o": [
+      "Issue: migration failed",
+      "MigrationError",
+      "migration failed",
+      "None"
+    ]
+  },
+  {
+    "q": "Which 'os.path' module function splits a path into drive and path components on Windows?",
+    "c": null,
+    "o": [
+      "os.path.splitdrive('C:/folder/file.txt')",
+      "os.path.drivesplit('C:/folder/file.txt')",
+      "os.path.splitdrv('C:/folder/file.txt')",
+      "os.path.drivepath('C:/folder/file.txt')"
+    ]
+  },
+  {
+    "q": "Which function is used to delete a file in Python?",
+    "c": null,
+    "o": [
+      "os.remove(\"filename\")",
+      "os.delete(\"filename\")",
+      "shutil.remove(\"filename\")",
+      "file.delete(\"filename\")"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    with open(\"non_existent.txt\", \"r\") as f:\n        content = f.read()\nexcept FileNotFoundError:\n    print(\"File not found error!\")",
+    "o": [
+      "\"File not found error!\"",
+      "Contents of 'non_existent.txt'",
+      "Throws a SyntaxError",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following statements about 'with open()' in Python is true?",
+    "c": null,
+    "o": [
+      "It ensures the file is properly closed after its suite finishes execution.",
+      "It keeps the file open until manually closed.",
+      "It does not support file writing operations.",
+      "It is only used for reading files."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.rmdir(\"test_directory\")",
+    "o": [
+      "Removes 'test_directory' if it is empty.",
+      "Removes 'test_directory' even if it contains files.",
+      "Throws an error if 'test_directory' is empty.",
+      "Renames 'test_directory' to 'deleted_directory'."
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation fails due to insufficient permissions?",
+    "c": null,
+    "o": [
+      "PermissionError",
+      "FileNotFoundError",
+      "OSError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "class CustomError(Exception):\n    pass\n\ntry:\n    raise CustomError(\"This is a custom exception\")\nexcept CustomError as e:\n    print(e)",
+    "o": [
+      "\"This is a custom exception\"",
+      "None",
+      "SyntaxError",
+      "CustomError is not a valid exception"
+    ]
+  },
+  {
+    "q": "Which module provides functions for working with paths in an object-oriented way?",
+    "c": null,
+    "o": [
+      "pathlib",
+      "os",
+      "shutil",
+      "sys"
+    ]
+  },
+  {
+    "q": "What happens when you try to open a file with mode 'w' that already exists?",
+    "c": null,
+    "o": [
+      "It overwrites the file.",
+      "It raises a FileExistsError.",
+      "It appends new content to the file.",
+      "It opens the file in read mode."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'seek()' method in file handling?",
+    "c": null,
+    "o": [
+      "It moves the file pointer to a specific position.",
+      "It reads the entire file content.",
+      "It writes data to a file.",
+      "It closes the file."
+    ]
+  },
+  {
+    "q": "Which function is used to copy a file from one location to another?",
+    "c": null,
+    "o": [
+      "shutil.copy(\"source.txt\", \"destination.txt\")",
+      "os.copy(\"source.txt\", \"destination.txt\")",
+      "file.copy(\"source.txt\", \"destination.txt\")",
+      "open(\"source.txt\").copy(\"destination.txt\")"
+    ]
+  },
+  {
+    "q": "Which mode should be used to open a file in binary mode for reading?",
+    "c": null,
+    "o": [
+      "\"rb\"",
+      "\"r\"",
+      "\"wb\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"example.txt\", \"w\") as f:\n    f.write(\"Hello\\nWorld\")\n\nwith open(\"example.txt\", \"r\") as f:\n    print(f.readlines())",
+    "o": [
+      "[\"Hello\\n\", \"World\"]",
+      "\"Hello World\"",
+      "[\"Hello\", \"World\"]",
+      "None"
+    ]
+  },
+  {
+    "q": "Which statement about exception handling in Python is correct?",
+    "c": null,
+    "o": [
+      "A try block must always be followed by at least one except block.",
+      "A try block must always have a finally block.",
+      "The except block must always catch all exceptions.",
+      "The try block cannot contain file operations."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.listdir(\".\")",
+    "o": [
+      "Returns a list of files and directories in the current directory.",
+      "Deletes all files in the current directory.",
+      "Creates a new directory named '.'",
+      "Returns only directories in the current directory."
+    ]
+  },
+  {
+    "q": "Which function is used to change the current working directory?",
+    "c": null,
+    "o": [
+      "os.chdir(\"path\")",
+      "os.mkdir(\"path\")",
+      "os.getcwd()",
+      "os.path(\"path\")"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    with open(\"test.txt\", \"r\") as f:\n        print(f.read())\nfinally:\n    print(\"Execution complete\")",
+    "o": [
+      "\"Execution complete\" always prints, whether an error occurs or not.",
+      "Only prints file contents if 'test.txt' exists.",
+      "Raises a SyntaxError.",
+      "Throws an error if 'test.txt' is missing and stops execution."
+    ]
+  },
+  {
+    "q": "Which of the following is true about user-defined exceptions in Python?",
+    "c": null,
+    "o": [
+      "They must inherit from the Exception class.",
+      "They must inherit from the BaseError class.",
+      "They cannot be used with try-except blocks.",
+      "They must override the __init__ method."
+    ]
+  },
+  {
+    "q": "What does the 'tell()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Returns the current position of the file pointer.",
+      "Moves the file pointer to the beginning.",
+      "Closes the file.",
+      "Deletes the file."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.remove(\"file.txt\")",
+    "o": [
+      "Deletes 'file.txt' from the directory.",
+      "Moves 'file.txt' to trash.",
+      "Creates an empty 'file.txt'.",
+      "Throws an error if 'file.txt' exists."
+    ]
+  },
+  {
+    "q": "Which function is used to check whether a file exists?",
+    "c": null,
+    "o": [
+      "os.path.exists(\"filename\")",
+      "os.is_file(\"filename\")",
+      "file.exists(\"filename\")",
+      "os.file(\"filename\")"
+    ]
+  },
+  {
+    "q": "Which file mode is used to open a file for writing only, creating a new file if it does not exist?",
+    "c": null,
+    "o": [
+      "\"w\"",
+      "\"r\"",
+      "\"a\"",
+      "\"x\""
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    f = open(\"sample.txt\", \"r\")\n    print(f.read())\n    f.close()\nexcept Exception as e:\n    print(\"Error:\", e)",
+    "o": [
+      "Prints the content of 'sample.txt' if it exists, otherwise prints an error message.",
+      "Always prints the content of 'sample.txt'.",
+      "Throws an error regardless of file existence.",
+      "Creates 'sample.txt' if it does not exist."
+    ]
+  },
+  {
+    "q": "Which function is used to rename a file in Python?",
+    "c": null,
+    "o": [
+      "os.rename(\"old.txt\", \"new.txt\")",
+      "file.rename(\"old.txt\", \"new.txt\")",
+      "rename.file(\"old.txt\", \"new.txt\")",
+      "os.change_name(\"old.txt\", \"new.txt\")"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import shutil\nshutil.rmtree(\"test_directory\")",
+    "o": [
+      "Deletes 'test_directory' and all its contents.",
+      "Removes 'test_directory' only if it is empty.",
+      "Moves 'test_directory' to a temporary folder.",
+      "Throws an error if 'test_directory' is empty."
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to read a file that does not exist?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "IOError",
+      "ValueError",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "with open(\"test.txt\", \"w\") as f:\n    f.write(\"Hello\")\n    f.seek(0)\n    f.write(\"World\")\n\nwith open(\"test.txt\", \"r\") as f:\n    print(f.read())",
+    "o": [
+      "\"Worldo\"",
+      "\"HelloWorld\"",
+      "\"Hello\"",
+      "\"WorldHello\""
+    ]
+  },
+  {
+    "q": "Which function is used to check whether a given path is a directory?",
+    "c": null,
+    "o": [
+      "os.path.isdir(\"path\")",
+      "os.is_dir(\"path\")",
+      "os.isdir(\"path\")",
+      "file.isdir(\"path\")"
+    ]
+  },
+  {
+    "q": "Which Python module provides high-level file operations such as copying and removing files?",
+    "c": null,
+    "o": [
+      "shutil",
+      "os",
+      "pathlib",
+      "sys"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "try:\n    f = open(\"data.txt\", \"r\")\n    print(f.read())\n    f.close()\nexcept FileNotFoundError:\n    print(\"File does not exist!\")",
+    "o": [
+      "Prints 'File does not exist!' if 'data.txt' is missing.",
+      "Always prints the content of 'data.txt'.",
+      "Creates 'data.txt' if it does not exist.",
+      "Throws an error instead of printing a message."
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a custom exception class in Python?",
+    "c": null,
+    "o": [
+      "class",
+      "def",
+      "raise",
+      "exception"
+    ]
+  },
+  {
+    "q": "Which method is used to write multiple lines to a file at once?",
+    "c": null,
+    "o": [
+      "writelines()",
+      "write()",
+      "append()",
+      "insertlines()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "import os\nos.mkdir(\"new_folder\")\nprint(os.path.exists(\"new_folder\"))",
+    "o": [
+      "True",
+      "False",
+      "Throws an error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which file mode is used to open a file for both reading and writing, without truncating it?",
+    "c": null,
+    "o": [
+      "\"r+\"",
+      "\"w+\"",
+      "\"a+\"",
+      "\"x+\""
+    ]
+  },
+  {
+    "q": "What happens when you open an existing file in 'w' mode?",
+    "c": null,
+    "o": [
+      "The file is truncated (emptied) before writing.",
+      "The file is opened without any modifications.",
+      "Data is appended to the file.",
+      "Python throws an error if the file exists."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "import os\nos.rmdir(\"empty_folder\")",
+    "o": [
+      "Deletes 'empty_folder' only if it is empty.",
+      "Deletes 'empty_folder' and all its contents.",
+      "Throws an error if 'empty_folder' is empty.",
+      "Moves 'empty_folder' to trash."
+    ]
+  },
+  {
+    "q": "Which function is used to get the size of a file in bytes?",
+    "c": null,
+    "o": [
+      "os.path.getsize(\"filename\")",
+      "os.size(\"filename\")",
+      "file.get_size(\"filename\")",
+      "os.filesize(\"filename\")"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a user-defined exception?",
+    "c": "class MyException(Exception):\n    pass",
+    "o": [
+      "Correct syntax for defining a user-defined exception.",
+      "Incorrect, should inherit from BaseException.",
+      "Incorrect, should override the __init__ method.",
+      "Incorrect, should not use 'pass'."
+    ]
+  },
+  {
+    "q": "Which statement is true about the 'finally' block in exception handling?",
+    "c": null,
+    "o": [
+      "It always executes, regardless of whether an exception occurs.",
+      "It executes only if an exception is raised.",
+      "It must be used with every try-except block.",
+      "It executes only if no exception occurs."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "with open(\"log.txt\", \"a\") as f:\n    f.write(\"New log entry\\n\")",
+    "o": [
+      "Appends 'New log entry' to 'log.txt'.",
+      "Overwrites 'log.txt' with 'New log entry'.",
+      "Throws an error if 'log.txt' does not exist.",
+      "Reads the content of 'log.txt'."
+    ]
+  },
+  {
+    "q": "Which method is used to move the file pointer to a specific position?",
+    "c": null,
+    "o": [
+      "seek()",
+      "tell()",
+      "move()",
+      "jump()"
+    ]
+  },
+  {
+    "q": "Which method is used to read an entire file as a single string?",
+    "c": null,
+    "o": [
+      "read()",
+      "readline()",
+      "readlines()",
+      "fetch()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    with open(\"data.txt\", \"r\") as f:\n        print(f.read())\nexcept FileNotFoundError:\n    print(\"File not found\")",
+    "o": [
+      "Prints the content of 'data.txt' if it exists, otherwise prints 'File not found'.",
+      "Always prints the content of 'data.txt'.",
+      "Creates 'data.txt' if it does not exist.",
+      "Throws an error instead of printing a message."
+    ]
+  },
+  {
+    "q": "Which of the following modes opens a file for appending and creates the file if it does not exist?",
+    "c": null,
+    "o": [
+      "\"a\"",
+      "\"r\"",
+      "\"w\"",
+      "\"x\""
+    ]
+  },
+  {
+    "q": "Which module in Python is used to work with file paths?",
+    "c": null,
+    "o": [
+      "os.path",
+      "sys",
+      "shutil",
+      "fileio"
+    ]
+  },
+  {
+    "q": "What does the 'tell()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Returns the current file position.",
+      "Moves the file pointer to a specific position.",
+      "Reads a line from the file.",
+      "Deletes a file."
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.remove(\"temp.txt\")",
+    "o": [
+      "Deletes 'temp.txt' permanently.",
+      "Moves 'temp.txt' to a temporary folder.",
+      "Throws an error if 'temp.txt' is empty.",
+      "Clears the contents of 'temp.txt' but keeps the file."
+    ]
+  },
+  {
+    "q": "Which method is used to read a single line from a file?",
+    "c": null,
+    "o": [
+      "readline()",
+      "read()",
+      "readlines()",
+      "fetchline()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'isfile()' function in the os.path module?",
+    "c": null,
+    "o": [
+      "Checks if the given path is a file.",
+      "Checks if the given path is a directory.",
+      "Creates a new file.",
+      "Deletes a file."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to catch multiple exceptions?",
+    "c": null,
+    "o": [
+      "except (IOError, ValueError):",
+      "except IOError, ValueError:",
+      "except IOError and ValueError:",
+      "except IOError or ValueError:"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "try:\n    raise ValueError(\"An error occurred\")\nexcept ValueError as e:\n    print(e)",
+    "o": [
+      "\"An error occurred\"",
+      "\"ValueError\"",
+      "\"Exception caught\"",
+      "\"No output\""
+    ]
+  },
+  {
+    "q": "Which method is used to check if a directory exists before creating it?",
+    "c": null,
+    "o": [
+      "os.path.exists()",
+      "os.mkdir()",
+      "os.makedirs()",
+      "os.isdir()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "import os\nos.makedirs(\"new_folder/sub_folder\", exist_ok=True)\nprint(os.path.exists(\"new_folder/sub_folder\"))",
+    "o": [
+      "True",
+      "False",
+      "Throws an error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which Python module is used for high-level file operations such as copying and moving files?",
+    "c": null,
+    "o": [
+      "shutil",
+      "os",
+      "fileutils",
+      "sys"
+    ]
+  },
+  {
+    "q": "What happens if you attempt to open a non-existent file in 'r' mode?",
+    "c": null,
+    "o": [
+      "Raises a FileNotFoundError.",
+      "Creates a new file and opens it.",
+      "Opens the file in read mode with empty content.",
+      "Raises a PermissionError."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "import os\nprint(os.listdir(\".\"))",
+    "o": [
+      "Lists all files and directories in the current directory.",
+      "Prints an empty list.",
+      "Prints the absolute path of the current directory.",
+      "Throws an error if the directory is empty."
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to delete a non-empty directory using os.rmdir()?",
+    "c": null,
+    "o": [
+      "OSError",
+      "FileNotFoundError",
+      "PermissionError",
+      "ValueError"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "try:\n    file = open(\"example.txt\", \"x\")\n    file.write(\"Hello, world!\")\n    file.close()\nexcept FileExistsError:\n    print(\"File already exists.\")",
+    "o": [
+      "Creates 'example.txt' if it does not exist, otherwise prints 'File already exists.'",
+      "Always creates 'example.txt' regardless of whether it exists.",
+      "Throws an error if 'example.txt' exists without handling it.",
+      "Creates 'example.txt' and appends new content."
+    ]
+  },
+  {
+    "q": "Which method is used to rename a file?",
+    "c": null,
+    "o": [
+      "os.rename()",
+      "os.move()",
+      "os.change()",
+      "os.modify()"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "with open(\"test.txt\", \"r\") as f:\n    content = f.readlines()\nprint(content)",
+    "o": [
+      "Reads all lines from 'test.txt' and returns them as a list.",
+      "Reads only the first line of 'test.txt'.",
+      "Throws an error if 'test.txt' is empty.",
+      "Deletes 'test.txt' after reading."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to create a custom exception in Python?",
+    "c": null,
+    "o": [
+      "class CustomError(Exception): pass",
+      "class CustomError(BaseException): pass",
+      "def CustomError(Exception): pass",
+      "exception CustomError: pass"
+    ]
+  },
+  {
+    "q": "Which mode should be used to open a file for both reading and writing?",
+    "c": null,
+    "o": [
+      "\"r+\"",
+      "\"w\"",
+      "\"a\"",
+      "\"rb\""
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "import os\nos.chdir(\"/home/user/documents\")\nprint(os.getcwd())",
+    "o": [
+      "Changes the current working directory to '/home/user/documents' and prints it.",
+      "Prints the current working directory without changing it.",
+      "Creates the directory '/home/user/documents' and navigates to it.",
+      "Throws an error if the directory does not exist."
+    ]
+  },
+  {
+    "q": "Which method is used to flush the file buffer in Python?",
+    "c": null,
+    "o": [
+      "flush()",
+      "clear()",
+      "empty()",
+      "discard()"
+    ]
+  },
+  {
+    "q": "What will happen if the following code is executed and 'data.txt' does not exist?",
+    "c": "with open(\"data.txt\", \"w\") as f:\n    f.write(\"Hello, Python!\")",
+    "o": [
+      "'data.txt' will be created and 'Hello, Python!' will be written to it.",
+      "An error will be raised since the file does not exist.",
+      "'data.txt' will be opened in read mode.",
+      "The file will be deleted if it exists."
+    ]
+  },
+  {
+    "q": "Which function is used to check whether a given path is a directory?",
+    "c": null,
+    "o": [
+      "os.path.isdir()",
+      "os.path.isfile()",
+      "os.path.exists()",
+      "os.path.getsize()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    f = open(\"sample.txt\", \"r\")\nexcept IOError:\n    print(\"Error: File not found or cannot be opened\")",
+    "o": [
+      "Prints 'Error: File not found or cannot be opened' if 'sample.txt' does not exist.",
+      "Opens 'sample.txt' in write mode.",
+      "Creates a new file 'sample.txt'.",
+      "Throws a syntax error."
+    ]
+  },
+  {
+    "q": "Which exception is raised when attempting to read from a closed file?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "IOError",
+      "FileNotFoundError",
+      "OSError"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "class MyError(Exception):\n    pass\n\ntry:\n    raise MyError(\"Custom exception occurred\")\nexcept MyError as e:\n    print(e)",
+    "o": [
+      "\"Custom exception occurred\"",
+      "\"MyError\"",
+      "\"Exception\"",
+      "\"No output\""
+    ]
+  },
+  {
+    "q": "Which method is used to delete an entire directory along with its contents?",
+    "c": null,
+    "o": [
+      "shutil.rmtree()",
+      "os.rmdir()",
+      "os.remove()",
+      "os.delete()"
+    ]
+  },
+  {
+    "q": "What does the 'seek()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Moves the file pointer to a specified position.",
+      "Returns the current file pointer position.",
+      "Closes the file stream.",
+      "Deletes the file."
+    ]
+  },
+  {
+    "q": "Which statement correctly opens a file in binary mode for reading?",
+    "c": null,
+    "o": [
+      "open('file.bin', 'rb')",
+      "open('file.bin', 'r')",
+      "open('file.bin', 'wb')",
+      "open('file.bin', 'rt')"
+    ]
+  },
+  {
+    "q": "What will happen if you try to open a file using mode 'x' and the file already exists?",
+    "c": null,
+    "o": [
+      "An error will be raised.",
+      "The file will be opened in write mode.",
+      "The file's content will be overwritten.",
+      "The file will be deleted and recreated."
+    ]
+  },
+  {
+    "q": "Which of the following statements about the 'w' mode in file handling is correct?",
+    "c": null,
+    "o": [
+      "It creates a new file or overwrites an existing file.",
+      "It opens a file for reading.",
+      "It appends data to an existing file.",
+      "It opens a file for both reading and writing."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "import os\nprint(os.path.basename('/home/user/document.txt'))",
+    "o": [
+      "'document.txt'",
+      "'/home/user/document.txt'",
+      "'/home/user/'",
+      "'user'"
+    ]
+  },
+  {
+    "q": "Which function is used to get the size of a file in Python?",
+    "c": null,
+    "o": [
+      "os.path.getsize()",
+      "os.path.isfile()",
+      "os.stat()",
+      "os.path.isdir()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    with open(\"test.txt\", \"r\") as f:\n        data = f.read()\nexcept FileNotFoundError:\n    print(\"File not found\")",
+    "o": [
+      "'File not found' if 'test.txt' does not exist.",
+      "Reads the content of 'test.txt'.",
+      "Creates a new file named 'test.txt'.",
+      "Throws a syntax error."
+    ]
+  },
+  {
+    "q": "Which module provides high-level operations for working with file paths in Python?",
+    "c": null,
+    "o": [
+      "pathlib",
+      "os",
+      "sys",
+      "shutil"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.remove(\"file.txt\")",
+    "o": [
+      "Deletes 'file.txt' if it exists.",
+      "Throws an error if 'file.txt' does not exist.",
+      "Creates a new file named 'file.txt'.",
+      "Opens 'file.txt' in write mode."
+    ]
+  },
+  {
+    "q": "Which method is used to close a file in Python?",
+    "c": null,
+    "o": [
+      "close()",
+      "shutdown()",
+      "stop()",
+      "exit()"
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to access a file that does not exist?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "IOError",
+      "OSError",
+      "NameError"
+    ]
+  },
+  {
+    "q": "What does the 'tell()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Returns the current file pointer position.",
+      "Moves the file pointer to the beginning.",
+      "Deletes the file.",
+      "Closes the file stream."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    with open('sample.txt', 'r') as f:\n        print(f.readline())\nexcept FileNotFoundError:\n    print('File does not exist')",
+    "o": [
+      "'File does not exist' if 'sample.txt' is missing.",
+      "Prints the first line of 'sample.txt'.",
+      "Reads the entire file content.",
+      "Throws a syntax error."
+    ]
+  },
+  {
+    "q": "Which function is used to rename a file in Python?",
+    "c": null,
+    "o": [
+      "os.rename()",
+      "os.change()",
+      "os.modify()",
+      "os.move()"
+    ]
+  },
+  {
+    "q": "What will happen if the following code is executed?",
+    "c": "f = open(\"test.txt\", \"a\")\nf.write(\"Hello!\")\nf.close()",
+    "o": [
+      "Appends 'Hello!' to 'test.txt'.",
+      "Overwrites 'test.txt' with 'Hello!'.",
+      "Throws an error if 'test.txt' does not exist.",
+      "Deletes the contents of 'test.txt'."
+    ]
+  },
+  {
+    "q": "Which mode should be used to open a file for reading in binary mode?",
+    "c": null,
+    "o": [
+      "\"rb\"",
+      "\"r\"",
+      "\"wb\"",
+      "\"ab\""
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.mkdir('new_folder')",
+    "o": [
+      "Creates a new directory named 'new_folder'.",
+      "Deletes the directory 'new_folder'.",
+      "Checks if 'new_folder' exists.",
+      "Throws an error if 'new_folder' is present."
+    ]
+  },
+  {
+    "q": "Which exception is raised when attempting to write to a read-only file?",
+    "c": null,
+    "o": [
+      "IOError",
+      "FileNotFoundError",
+      "TypeError",
+      "SyntaxError"
+    ]
+  },
+  {
+    "q": "Which method is used to check if a file exists in Python?",
+    "c": null,
+    "o": [
+      "os.path.exists()",
+      "os.path.isfile()",
+      "os.path.isdir()",
+      "os.path.check()"
+    ]
+  },
+  {
+    "q": "What will happen if 'r' mode is used to open a file that does not exist?",
+    "c": null,
+    "o": [
+      "Raises a FileNotFoundError.",
+      "Creates a new empty file.",
+      "Opens the file in append mode.",
+      "Reads an empty string."
+    ]
+  },
+  {
+    "q": "Which function is used to copy a file in Python?",
+    "c": null,
+    "o": [
+      "shutil.copy()",
+      "os.copy()",
+      "file.copy()",
+      "sys.copy()"
+    ]
+  },
+  {
+    "q": "Which statement correctly opens a file for both reading and writing?",
+    "c": null,
+    "o": [
+      "open('file.txt', 'r+')",
+      "open('file.txt', 'w+')",
+      "open('file.txt', 'rb')",
+      "open('file.txt', 'a')"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "import os\nos.rmdir('test_folder')",
+    "o": [
+      "Removes the directory 'test_folder' if it is empty.",
+      "Deletes the directory along with its contents.",
+      "Throws an error if 'test_folder' exists.",
+      "Creates a directory named 'test_folder'."
+    ]
+  },
+  {
+    "q": "Which of the following modes will NOT create a new file if it does not exist?",
+    "c": null,
+    "o": [
+      "'r'",
+      "'w'",
+      "'a'",
+      "'x'"
+    ]
+  },
+  {
+    "q": "Which method is used to move the file pointer to a specific position?",
+    "c": null,
+    "o": [
+      "seek()",
+      "tell()",
+      "move()",
+      "jump()"
+    ]
+  },
+  {
+    "q": "What happens when the 'x' mode is used to open a file that already exists?",
+    "c": null,
+    "o": [
+      "A FileExistsError is raised.",
+      "The file is overwritten.",
+      "The file is opened in read mode.",
+      "A new file with a different name is created."
+    ]
+  },
+  {
+    "q": "Which statement correctly deletes a file in Python?",
+    "c": null,
+    "o": [
+      "os.remove('file.txt')",
+      "os.delete('file.txt')",
+      "file.delete('file.txt')",
+      "shutil.delete('file.txt')"
+    ]
+  },
+  {
+    "q": "What does the 'flush()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Forces the writing of the buffer to the file.",
+      "Closes the file.",
+      "Moves the file pointer to the beginning.",
+      "Deletes the file content."
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to handle exceptions in Python?",
+    "c": null,
+    "o": [
+      "Using a try-except block.",
+      "Using an if-else statement.",
+      "Using a switch-case statement.",
+      "Using a while loop."
+    ]
+  },
+  {
+    "q": "Which method should be used to read an entire file as a list of lines?",
+    "c": null,
+    "o": [
+      "readlines()",
+      "read()",
+      "readline()",
+      "split()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a user-defined exception in Python?",
+    "c": "class MyException(Exception):\n    pass",
+    "o": [
+      "Defines a custom exception named 'MyException'.",
+      "Raises a built-in exception.",
+      "Throws a syntax error.",
+      "Creates a function instead of an exception."
+    ]
+  },
+  {
+    "q": "Which function is used to get the current working directory in Python?",
+    "c": null,
+    "o": [
+      "os.getcwd()",
+      "os.pwd()",
+      "os.currentdir()",
+      "os.directory()"
+    ]
+  },
+  {
+    "q": "What happens if you try to delete a non-empty directory using os.rmdir()?",
+    "c": null,
+    "o": [
+      "Raises an OSError.",
+      "Deletes the directory along with its contents.",
+      "Moves the directory to the recycle bin.",
+      "Creates a backup of the directory before deleting."
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to write multiple lines to a file?",
+    "c": "with open('file.txt', 'w') as f:\n    f.writelines(['Line1\\n', 'Line2\\n', 'Line3\\n'])",
+    "o": [
+      "Writes all lines to 'file.txt' as separate lines.",
+      "Writes only the last line to 'file.txt'.",
+      "Throws an error because 'writelines()' requires a loop.",
+      "Appends lines to the file instead of overwriting."
+    ]
+  },
+  {
+    "q": "Which method can be used to check if a given path is a file?",
+    "c": null,
+    "o": [
+      "os.path.isfile()",
+      "os.path.exists()",
+      "os.path.isdir()",
+      "os.path.ispath()"
+    ]
+  },
+  {
+    "q": "Which keyword is used to manually raise an exception in Python?",
+    "c": null,
+    "o": [
+      "raise",
+      "throw",
+      "except",
+      "assert"
+    ]
+  },
+  {
+    "q": "What is the correct way to close a file in Python?",
+    "c": "f = open('file.txt', 'r')\n# Perform file operations\nf.close()",
+    "o": [
+      "Closes the file properly after use.",
+      "Throws an error because the file is not written to.",
+      "Deletes the file after reading.",
+      "Keeps the file open until the program exits."
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to append content to an existing file without overwriting?",
+    "c": null,
+    "o": [
+      "'a'",
+      "'w'",
+      "'r+'",
+      "'wb'"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.listdir('.')",
+    "o": [
+      "Returns a list of all files and directories in the current directory.",
+      "Deletes all files in the current directory.",
+      "Creates a new directory named '.'.",
+      "Moves to the parent directory."
+    ]
+  },
+  {
+    "q": "Which exception is raised when trying to access a file that does not exist?",
+    "c": null,
+    "o": [
+      "FileNotFoundError",
+      "IOError",
+      "ValueError",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "How can you read a file line by line efficiently in Python?",
+    "c": "with open('file.txt', 'r') as f:\n    for line in f:\n        print(line.strip())",
+    "o": [
+      "Reads and prints each line without loading the entire file into memory.",
+      "Loads the entire file into memory first and then prints each line.",
+      "Reads only the first line of the file.",
+      "Throws an error if the file contains multiple lines."
+    ]
+  },
+  {
+    "q": "Which function is used to create a new directory in Python?",
+    "c": null,
+    "o": [
+      "os.mkdir('new_folder')",
+      "os.create('new_folder')",
+      "os.newdir('new_folder')",
+      "os.make('new_folder')"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.rename('old.txt', 'new.txt')",
+    "o": [
+      "Renames 'old.txt' to 'new.txt'.",
+      "Creates a new file named 'new.txt'.",
+      "Throws an error if 'new.txt' already exists.",
+      "Deletes 'old.txt' after renaming."
+    ]
+  },
+  {
+    "q": "Which method is used to read a single line from a file?",
+    "c": null,
+    "o": [
+      "readline()",
+      "readlines()",
+      "read()",
+      "fetchline()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'finally' block in exception handling?",
+    "c": null,
+    "o": [
+      "Executes code regardless of whether an exception occurs or not.",
+      "Handles exceptions raised in the try block.",
+      "Defines a user-defined exception.",
+      "Stops the execution of the try block."
+    ]
+  },
+  {
+    "q": "Which exception is raised when a file operation is attempted on a closed file?",
+    "c": null,
+    "o": [
+      "ValueError",
+      "FileNotFoundError",
+      "IOError",
+      "TypeError"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    f = open('non_existent.txt', 'r')\nexcept FileNotFoundError:\n    print('File not found')",
+    "o": [
+      "File not found",
+      "Raises a TypeError",
+      "Creates a new file named 'non_existent.txt'",
+      "Throws an uncaught exception"
+    ]
+  },
+  {
+    "q": "How can you check if a file exists before opening it?",
+    "c": null,
+    "o": [
+      "os.path.exists('file.txt')",
+      "open('file.txt', 'r')",
+      "file.exists('file.txt')",
+      "os.check('file.txt')"
+    ]
+  },
+  {
+    "q": "Which mode is used to open a file in binary read mode?",
+    "c": null,
+    "o": [
+      "'rb'",
+      "'r'",
+      "'rb+'",
+      "'wb'"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "import os\nos.remove('test.txt')",
+    "o": [
+      "Deletes the file 'test.txt' if it exists.",
+      "Moves 'test.txt' to the trash.",
+      "Throws an error if 'test.txt' exists.",
+      "Renames 'test.txt' to 'deleted.txt'."
+    ]
+  },
+  {
+    "q": "Which method should be used to write a dictionary to a file in JSON format?",
+    "c": null,
+    "o": [
+      "json.dump()",
+      "json.write()",
+      "json.store()",
+      "json.save()"
+    ]
+  },
+  {
+    "q": "Which Python module is commonly used to work with file and directory paths?",
+    "c": null,
+    "o": [
+      "os",
+      "sys",
+      "file",
+      "pathlib"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "import os\nprint(os.getcwd())",
+    "o": [
+      "Prints the current working directory",
+      "Throws an error",
+      "Prints the system's home directory",
+      "Changes the working directory"
+    ]
+  },
+  {
+    "q": "Which method is used to append data to an existing file without overwriting it?",
+    "c": null,
+    "o": [
+      "'a'",
+      "'w'",
+      "'r'",
+      "'x'"
+    ]
+  },
+  {
+    "q": "What happens if you try to open a file with mode 'x' and the file already exists?",
+    "c": null,
+    "o": [
+      "It raises a FileExistsError",
+      "It overwrites the file",
+      "It appends data to the file",
+      "It opens the file in read mode"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    f = open('example.txt', 'r')\n    print(f.read())\nexcept FileNotFoundError:\n    print('File does not exist')",
+    "o": [
+      "Prints 'File does not exist' if the file is missing",
+      "Prints the contents of the file if it exists",
+      "Creates a new file named 'example.txt'",
+      "Throws an IOError"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about file handling in Python?",
+    "c": null,
+    "o": [
+      "A file opened with 'w' mode is erased if it already exists",
+      "A file must always be closed manually",
+      "The 'r' mode creates a new file if it does not exist",
+      "Reading a file always starts from the last position"
+    ]
+  },
+  {
+    "q": "Which method is used to move a file in Python?",
+    "c": null,
+    "o": [
+      "shutil.move()",
+      "os.rename()",
+      "os.move()",
+      "file.move()"
+    ]
+  },
+  {
+    "q": "What will happen if an exception is raised inside a try block but there is no except block?",
+    "c": null,
+    "o": [
+      "The program will terminate with an error",
+      "The exception will be ignored",
+      "The program will continue execution normally",
+      "A warning message will be displayed"
+    ]
+  },
+  {
+    "q": "Which class is used to define a user-defined exception in Python?",
+    "c": null,
+    "o": [
+      "A class inheriting from Exception",
+      "A class inheriting from RuntimeError",
+      "A class inheriting from IOError",
+      "A class inheriting from BaseError"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'with' statement when working with files?",
+    "c": null,
+    "o": [
+      "Automatically closes the file after the block",
+      "Opens a file permanently",
+      "Reads an entire file into memory",
+      "Allows multiple files to be opened simultaneously"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to open a file for both reading and writing?",
+    "c": null,
+    "o": [
+      "'r+'",
+      "'w'",
+      "'a'",
+      "'x'"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "with open('data.txt', 'w') as f:\n    f.write('Hello, World!')",
+    "o": [
+      "Overwrite 'data.txt' with 'Hello, World!'",
+      "Append 'Hello, World!' to 'data.txt'",
+      "Throw a FileNotFoundError",
+      "Open 'data.txt' in read mode"
+    ]
+  },
+  {
+    "q": "Which Python module provides high-level file operations like copying and moving files?",
+    "c": null,
+    "o": [
+      "shutil",
+      "os",
+      "fileutils",
+      "pathlib"
+    ]
+  },
+  {
+    "q": "What happens if you attempt to read a file that is opened in write mode ('w')?",
+    "c": null,
+    "o": [
+      "It raises an IOError",
+      "It reads the file normally",
+      "It appends data to the file",
+      "It creates a new file if it does not exist"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "import os\nos.remove('example.txt')\nprint('File deleted')",
+    "o": [
+      "Deletes 'example.txt' if it exists and prints 'File deleted'",
+      "Throws a FileNotFoundError if 'example.txt' is missing",
+      "Moves 'example.txt' to a backup folder",
+      "Prints an error message"
+    ]
+  },
+  {
+    "q": "Which method is used to check if a file exists before performing operations on it?",
+    "c": null,
+    "o": [
+      "os.path.exists()",
+      "file.exists()",
+      "os.isfile()",
+      "shutil.exists()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    with open('file.txt', 'r') as f:\n        data = f.read()\nexcept FileNotFoundError:\n    print('File not found')",
+    "o": [
+      "Prints 'File not found' if 'file.txt' does not exist",
+      "Reads the contents of 'file.txt' if it exists",
+      "Throws an IOError",
+      "Creates a new file named 'file.txt'"
+    ]
+  },
+  {
+    "q": "Which statement is TRUE about user-defined exceptions in Python?",
+    "c": null,
+    "o": [
+      "User-defined exceptions must inherit from the Exception class",
+      "User-defined exceptions must override the __init__ method",
+      "User-defined exceptions must inherit from BaseException",
+      "Python does not support user-defined exceptions"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'finally' block in exception handling?",
+    "c": null,
+    "o": [
+      "It executes code regardless of whether an exception occurs or not",
+      "It catches exceptions",
+      "It stops the execution of the try block",
+      "It is required in all try-except statements"
+    ]
+  },
+  {
+    "q": "Which statement is used to manually raise an exception in Python?",
+    "c": null,
+    "o": [
+      "raise",
+      "throw",
+      "except",
+      "assert"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to open a file in append mode?",
+    "c": null,
+    "o": [
+      "open('file.txt', 'a')",
+      "open('file.txt', 'w')",
+      "open('file.txt', 'r')",
+      "open('file.txt', 'x')"
+    ]
+  },
+  {
+    "q": "What happens when you try to open a non-existent file in 'r' mode?",
+    "c": null,
+    "o": [
+      "It raises a FileNotFoundError",
+      "It creates a new file",
+      "It opens an empty file",
+      "It throws a SyntaxError"
+    ]
+  },
+  {
+    "q": "What does the 'tell()' method do in file handling?",
+    "c": null,
+    "o": [
+      "Returns the current position of the file cursor",
+      "Moves the file cursor to the beginning",
+      "Writes data to the file",
+      "Closes the file"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "f = open('example.txt', 'w')\nf.write('Hello!')\nf.seek(0)\nf.write('Hi')\nf.close()",
+    "o": [
+      "'Hi' replaces 'Hello!', resulting in 'Hi' in the file",
+      "'HiHello!' is written to the file",
+      "'Hello!' remains unchanged",
+      "Throws an error"
+    ]
+  },
+  {
+    "q": "Which of the following modules is used to work with directories in Python?",
+    "c": null,
+    "o": [
+      "os",
+      "sys",
+      "file",
+      "shutil"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "import os\nos.mkdir('new_directory')\nprint('Directory created')",
+    "o": [
+      "Creates a new directory named 'new_directory' and prints 'Directory created'",
+      "Throws an error if the directory already exists",
+      "Deletes the directory if it exists",
+      "Renames an existing directory"
+    ]
+  },
+  {
+    "q": "Which method is used to list all files and directories in a given path?",
+    "c": null,
+    "o": [
+      "os.listdir()",
+      "os.walk()",
+      "os.scandir()",
+      "os.glob()"
+    ]
+  },
+  {
+    "q": "What happens if you try to remove a non-empty directory using os.rmdir()?",
+    "c": null,
+    "o": [
+      "It raises an OSError",
+      "It deletes all contents and removes the directory",
+      "It removes the directory along with all subdirectories",
+      "It does nothing"
+    ]
+  },
+  {
+    "q": "What is the purpose of 'with' statement in file handling?",
+    "c": null,
+    "o": [
+      "It ensures the file is properly closed after its suite finishes",
+      "It is used to declare a global file variable",
+      "It locks the file for exclusive access",
+      "It checks if a file exists before opening it"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of a user-defined exception in Python?",
+    "c": "class MyError(Exception):\n    pass\n\ntry:\n    raise MyError('An error occurred')\nexcept MyError as e:\n    print(e)",
+    "o": [
+      "'An error occurred' is printed",
+      "A SyntaxError is raised",
+      "Nothing happens",
+      "It prints 'Exception'"
+    ]
+  },
+  {
+    "q": "Which mode should be used to read a binary file in Python?",
+    "c": null,
+    "o": [
+      "rb",
+      "r",
+      "wb",
+      "w"
+    ]
+  },
+  {
+    "q": "What will happen if you try to open an existing file in 'x' mode?",
+    "c": null,
+    "o": [
+      "It raises a FileExistsError",
+      "It overwrites the file",
+      "It appends to the file",
+      "It opens the file for reading"
+    ]
+  },
+  {
+    "q": "Which function is used to check if a file exists in Python?",
+    "c": null,
+    "o": [
+      "os.path.exists()",
+      "os.isfile()",
+      "os.filecheck()",
+      "os.path.isfile()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "import os\nprint(os.getcwd())",
+    "o": [
+      "Prints the current working directory",
+      "Prints the home directory",
+      "Prints the root directory",
+      "Throws an error"
+    ]
+  },
+  {
+    "q": "Which method is used to rename a file in Python?",
+    "c": null,
+    "o": [
+      "os.rename()",
+      "os.move()",
+      "os.change()",
+      "os.update()"
+    ]
+  },
+  {
+    "q": "What happens when you attempt to delete a file that does not exist using os.remove()?",
+    "c": null,
+    "o": [
+      "It raises a FileNotFoundError",
+      "It does nothing",
+      "It creates a new file",
+      "It prints a warning"
+    ]
+  },
+  {
+    "q": "What is the purpose of 'flush()' in file handling?",
+    "c": null,
+    "o": [
+      "It forces the writing of data to the file immediately",
+      "It clears the file contents",
+      "It closes the file",
+      "It resets the file pointer to the beginning"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "try:\n    file = open('test.txt', 'r')\nexcept FileNotFoundError:\n    print('File not found')",
+    "o": [
+      "'File not found' is printed if the file does not exist",
+      "An IOError is raised",
+      "The file is created",
+      "Nothing happens"
+    ]
+  },
+  {
+    "q": "Which of the following is true about exception handling?",
+    "c": null,
+    "o": [
+      "The 'finally' block always executes regardless of whether an exception occurs",
+      "'except' must always be followed by 'finally'",
+      "'try' block can exist without 'except' or 'finally'",
+      "User-defined exceptions cannot be created"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class CustomError(Exception):\n    pass\n\ntry:\n    raise CustomError('Something went wrong')\nexcept CustomError as e:\n    print(e)",
+    "o": [
+      "'Something went wrong' is printed",
+      "Nothing happens",
+      "An AttributeError is raised",
+      "It prints 'Exception'"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to open a file in Python?",
     "c": "",
     "o": [
       "open(\"file.txt\", \"r\")",
@@ -10,7 +4070,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to close an open file in Python?\n",
+    "q": "What is the method used to close an open file in Python?",
     "c": "",
     "o": [
       "close()",
@@ -20,7 +4080,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes in file operations is used to read and write simultaneously in Python?\n",
+    "q": "Which of the following modes in file operations is used to read and write simultaneously in Python?",
     "c": "",
     "o": [
       "\"r+\"",
@@ -30,7 +4090,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following methods in file operations is used to read the entire file in Python?\n",
+    "q": "Which of the following methods in file operations is used to read the entire file in Python?",
     "c": "",
     "o": [
       "read()",
@@ -40,7 +4100,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following methods in file operations is used to read a single line in Python?\n",
+    "q": "Which of the following methods in file operations is used to read a single line in Python?",
     "c": "",
     "o": [
       "readline()",
@@ -50,7 +4110,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following methods in file operations is used to write a string to a file in Python?\n",
+    "q": "Which of the following methods in file operations is used to write a string to a file in Python?",
     "c": "",
     "o": [
       "write()",
@@ -60,7 +4120,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following methods in file operations is used to write multiple strings to a file in Python?\n",
+    "q": "Which of the following methods in file operations is used to write multiple strings to a file in Python?",
     "c": "",
     "o": [
       "writelines()",
@@ -70,7 +4130,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to check if a file exists in Python?\n",
+    "q": "What is the method used to check if a file exists in Python?",
     "c": "",
     "o": [
       "isfile()",
@@ -80,7 +4140,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes in file operations is used to append content to an existing file in Python?\n",
+    "q": "Which of the following modes in file operations is used to append content to an existing file in Python?",
     "c": "",
     "o": [
       "\"a+\"",
@@ -90,7 +4150,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to write to a file in Python?\n",
+    "q": "Which of the following is the correct way to write to a file in Python?",
     "c": "",
     "o": [
       "file.write(\"Hello\")",
@@ -100,7 +4160,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to read a file in Python?\n",
+    "q": "Which of the following is the correct way to read a file in Python?",
     "c": "",
     "o": [
       "file.read()",
@@ -110,7 +4170,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to read a CSV file in Python?\n",
+    "q": "Which of the following is the correct way to read a CSV file in Python?",
     "c": "",
     "o": [
       "open(\"file.csv\", \"r\")",
@@ -120,7 +4180,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to write to a CSV file in Python?\n",
+    "q": "Which of the following is the correct way to write to a CSV file in Python?",
     "c": "",
     "o": [
       "writerows()",
@@ -130,7 +4190,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to read a JSON file in Python?\n",
+    "q": "Which of the following is the correct way to read a JSON file in Python?",
     "c": "",
     "o": [
       "open(\"file.json\", \"r\")",
@@ -140,7 +4200,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to read a binary file in Python?\n",
+    "q": "Which of the following is the correct way to read a binary file in Python?",
     "c": "",
     "o": [
       "open(\"file.bin\", \"r\")",
@@ -150,7 +4210,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to write to a binary file in Python?\n",
+    "q": "Which of the following is the correct way to write to a binary file in Python?",
     "c": "",
     "o": [
       "writebytes()",
@@ -160,7 +4220,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to rename a file in Python?\n",
+    "q": "What is the method used to rename a file in Python?",
     "c": "",
     "o": [
       "rename()",
@@ -170,7 +4230,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to delete a file in Python?\n",
+    "q": "What is the method used to delete a file in Python?",
     "c": "",
     "o": [
       "remove()",
@@ -180,7 +4240,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to create a directory in Python?\n",
+    "q": "What is the method used to create a directory in Python?",
     "c": "",
     "o": [
       "mkdir()",
@@ -190,7 +4250,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to delete a directory in Python?\n",
+    "q": "What is the method used to delete a directory in Python?",
     "c": "",
     "o": [
       "rmdir()",
@@ -200,7 +4260,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the current working directory in Python?\n",
+    "q": "What is the method used to get the current working directory in Python?",
     "c": "",
     "o": [
       "cwd()",
@@ -210,7 +4270,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to change the current working directory in Python?\n",
+    "q": "What is the method used to change the current working directory in Python?",
     "c": "",
     "o": [
       "chdir()",
@@ -220,7 +4280,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the list of files and directories in a directory in Python?\n",
+    "q": "What is the method used to get the list of files and directories in a directory in Python?",
     "c": "",
     "o": [
       "listdir()",
@@ -230,7 +4290,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to check if a directory exists in Python?\n",
+    "q": "What is the method used to check if a directory exists in Python?",
     "c": "",
     "o": [
       "isdir()",
@@ -240,7 +4300,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the size of a file in Python?\n",
+    "q": "What is the method used to get the size of a file in Python?",
     "c": "",
     "o": [
       "stat().st_size",
@@ -250,7 +4310,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the modification time of a file in Python?\n",
+    "q": "What is the method used to get the modification time of a file in Python?",
     "c": "",
     "o": [
       "stat().st_mtime",
@@ -260,7 +4320,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the creation time of a file in Python?\n",
+    "q": "What is the method used to get the creation time of a file in Python?",
     "c": "",
     "o": [
       "stat().st_ctime",
@@ -270,7 +4330,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to get the permissions of a file in Python?\n",
+    "q": "What is the method used to get the permissions of a file in Python?",
     "c": "",
     "o": [
       "stat().st_mode",
@@ -280,7 +4340,7 @@
     ]
   },
   {
-    "q": "\nWhat is the method used to check if a file is readable in Python?\n",
+    "q": "What is the method used to check if a file is readable in Python?",
     "c": "",
     "o": [
       "readable()",
@@ -290,7 +4350,7 @@
     ]
   },
   {
-    "q": "\nException Handling:\n\nWhat is an exception in Python?\n",
+    "q": "Exception Handling:\n\nWhat is an exception in Python?",
     "c": "",
     "o": [
       "A runtime error",
@@ -300,7 +4360,7 @@
     ]
   },
   {
-    "q": "\nWhat is the purpose of exception handling in Python?\n",
+    "q": "What is the purpose of exception handling in Python?",
     "c": "",
     "o": [
       "To handle errors that occur during program execution",
@@ -310,7 +4370,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following keywords is used to raise an exception in Python?\n",
+    "q": "Which of the following keywords is used to raise an exception in Python?",
     "c": "",
     "o": [
       "raise",
@@ -320,7 +4380,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct syntax for handling an exception in Python?\n",
+    "q": "Which of the following is the correct syntax for handling an exception in Python?",
     "c": "",
     "o": [
       "try: except:",
@@ -330,7 +4390,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct syntax for handling multiple exceptions in Python?\n",
+    "q": "Which of the following is the correct syntax for handling multiple exceptions in Python?",
     "c": "",
     "o": [
       "try: except (Exception1, Exception2):",
@@ -340,7 +4400,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to raise a custom exception in Python?\n",
+    "q": "Which of the following is the correct way to raise a custom exception in Python?",
     "c": "",
     "o": [
       "raise CustomException(\"Custom exception\")",
@@ -350,7 +4410,7 @@
     ]
   },
   {
-    "q": "\nWhat is the purpose of the else clause in a try-except block in Python?\n",
+    "q": "What is the purpose of the else clause in a try-except block in Python?",
     "c": "",
     "o": [
       "To execute code when the try block completes without an exception",
@@ -360,7 +4420,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to define a custom exception in Python?\n",
+    "q": "Which of the following is the correct way to define a custom exception in Python?",
     "c": "",
     "o": [
       "class CustomException(Exception):",
@@ -370,7 +4430,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct way to handle an exception in Python without specifying the exception type?\n",
+    "q": "Which of the following is the correct way to handle an exception in Python without specifying the exception type?",
     "c": "",
     "o": [
       "try: except:",
@@ -380,7 +4440,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes is used to open a file for reading in Python?\n",
+    "q": "Which of the following modes is used to open a file for reading in Python?",
     "c": "",
     "o": [
       "r",
@@ -390,7 +4450,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes is used to open a file for writing in Python?\n",
+    "q": "Which of the following modes is used to open a file for writing in Python?",
     "c": "",
     "o": [
       "w",
@@ -400,7 +4460,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes is used to open a file for appending in Python?\n",
+    "q": "Which of the following modes is used to open a file for appending in Python?",
     "c": "",
     "o": [
       "a",
@@ -410,7 +4470,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following modes is used to open a file for writing and reading in Python?\n",
+    "q": "Which of the following modes is used to open a file for writing and reading in Python?",
     "c": "",
     "o": [
       "r+",
@@ -420,7 +4480,7 @@
     ]
   },
   {
-    "q": "\nWhat is the purpose of the close() method in Python file operations?\n",
+    "q": "What is the purpose of the close() method in Python file operations?",
     "c": "",
     "o": [
       "To close the file",
@@ -430,7 +4490,7 @@
     ]
   },
   {
-    "q": "\nPython Directories:\n\nWhich of the following modules is used to work with directories in Python?\n",
+    "q": "Python Directories:\n\nWhich of the following modules is used to work with directories in Python?",
     "c": "",
     "o": [
       "os",
@@ -440,7 +4500,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following functions is used to create a directory in Python?\n",
+    "q": "Which of the following functions is used to create a directory in Python?",
     "c": "",
     "o": [
       "os.mkdir()",
@@ -450,7 +4510,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following functions is used to remove a directory in Python?\n",
+    "q": "Which of the following functions is used to remove a directory in Python?",
     "c": "",
     "o": [
       "os.rmdir()",
@@ -460,7 +4520,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following functions is used to check if a directory exists in Python?\n",
+    "q": "Which of the following functions is used to check if a directory exists in Python?",
     "c": "",
     "o": [
       "os.path.exists()",
@@ -470,7 +4530,7 @@
     ]
   },
   {
-    "q": "\nException Handling:\n\nWhat is an exception in Python?\n",
+    "q": "Exception Handling:\n\nWhat is an exception in Python?",
     "c": "",
     "o": [
       "An error that occurs during program execution",
@@ -480,7 +4540,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct syntax for raising an exception in Python?\n",
+    "q": "Which of the following is the correct syntax for raising an exception in Python?",
     "c": "",
     "o": [
       "raise Exception(\"Error message\")",
@@ -490,7 +4550,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is the correct syntax for handling an exception in Python?\n",
+    "q": "Which of the following is the correct syntax for handling an exception in Python?",
     "c": "",
     "o": [
       "try: except:",
@@ -500,7 +4560,7 @@
     ]
   },
   {
-    "q": "\nWhich keyword is used to define a new exception class in Python?\n",
+    "q": "Which keyword is used to define a new exception class in Python?",
     "c": "",
     "o": [
       "class",
@@ -510,7 +4570,7 @@
     ]
   },
   {
-    "q": "\nWhich method is called when a new instance of an exception class is created?\n",
+    "q": "Which method is called when a new instance of an exception class is created?",
     "c": "",
     "o": [
       "init()",
@@ -520,7 +4580,7 @@
     ]
   },
   {
-    "q": "\nWhich of the following is an example of a user-defined exception class in Python?\n",
+    "q": "Which of the following is an example of a user-defined exception class in Python?",
     "c": "",
     "o": [
       "MyException",
@@ -530,7 +4590,7 @@
     ]
   },
   {
-    "q": "\nWhat is the syntax for raising a user-defined exception in Python?\n",
+    "q": "What is the syntax for raising a user-defined exception in Python?",
     "c": "",
     "o": [
       "raise MyException(\"Error message\")",
