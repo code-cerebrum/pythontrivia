@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Custom Iterator for Fibonacci Series",
+    "ques": "Write a Python class that implements an iterator to generate Fibonacci numbers up to a given limit.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class FibonacciIterator:\n    def __init__(self, limit):\n        self.limit = limit\n        self.a, self.b = 0, 1\n    \n    def __iter__(self):\n        return self\n    \n    def __next__(self):\n        if self.a > self.limit:\n            raise StopIteration\n        value = self.a\n        self.a, self.b = self.b, self.a + self.b\n        return value\n\nfib = FibonacciIterator(50)\nfor num in fib:\n    print(num)"
+    },
+    "explanation": "***Step 1:*** A class ```FibonacciIterator``` is created with an ```__init__()``` method storing the limit and initial Fibonacci numbers.\n***Step 2:*** The ```__iter__()``` method returns the instance itself, making it an iterator.\n***Step 3:*** The ```__next__()``` method calculates the next Fibonacci number, raises ```StopIteration``` when the limit is reached.\n***Step 4:*** Iterating over the ```FibonacciIterator``` prints Fibonacci numbers up to 50."
+  },
+  {
+    "title": "Generator for Infinite Even Numbers",
+    "ques": "Write a Python generator function that generates an infinite sequence of even numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def even_numbers():\n    num = 0\n    while True:\n        yield num\n        num += 2\n\ngen = even_numbers()\nfor _ in range(5):\n    print(next(gen))"
+    },
+    "explanation": "***Step 1:*** A generator function ```even_numbers()``` initializes ```num``` to 0.\n***Step 2:*** The function contains an infinite ```while True``` loop.\n***Step 3:*** The ```yield``` keyword returns the current even number, then increments by 2.\n***Step 4:*** Calling ```next()``` retrieves the next even number, generating numbers on demand."
+  },
+  {
+    "title": "Closure for Creating Multipliers",
+    "ques": "Write a Python function that returns a closure to multiply a number by a given factor.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def multiplier(factor):\n    def multiply(number):\n        return number * factor\n    return multiply\n\ndouble = multiplier(2)\ntriple = multiplier(3)\nprint(double(5))\nprint(triple(5))"
+    },
+    "explanation": "***Step 1:*** The function ```multiplier()``` takes a ```factor``` and defines an inner function ```multiply()```.\n***Step 2:*** ```multiply()``` takes a ```number``` and returns the product of ```number``` and ```factor```.\n***Step 3:*** Returning ```multiply``` creates a closure, capturing the ```factor``` value.\n***Step 4:*** Creating ```double``` and ```triple``` closures allows different multiplications."
+  },
+  {
+    "title": "Function Decorator to Time Execution",
+    "ques": "Write a Python decorator that measures the execution time of a function.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import time\n\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        end = time.time()\n        print(f'Execution time: {end - start:.5f} seconds')\n        return result\n    return wrapper\n\n@timer\ndef slow_function():\n    time.sleep(2)\n    print('Finished!')\n\nslow_function()"
+    },
+    "explanation": "***Step 1:*** The ```timer()``` function defines an inner function ```wrapper()``` that wraps the original function.\n***Step 2:*** ```wrapper()``` records the start time, calls the function, then records the end time.\n***Step 3:*** The execution time is printed before returning the function result.\n***Step 4:*** Applying ```@timer``` to ```slow_function()``` prints execution time after it runs."
+  },
+  {
+    "title": "Using Property Decorators for Validation",
+    "ques": "Write a Python class using `@property` and `@property.setter` to enforce positive values for age.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Person:\n    def __init__(self, age):\n        self._age = age\n\n    @property\n    def age(self):\n        return self._age\n\n    @age.setter\n    def age(self, value):\n        if value < 0:\n            raise ValueError('Age must be positive!')\n        self._age = value\n\np = Person(25)\nprint(p.age)\np.age = 30\nprint(p.age)"
+    },
+    "explanation": "***Step 1:*** A class ```Person``` is created with a private ```_age``` attribute.\n***Step 2:*** The ```@property``` decorator makes ```age``` readable as a property.\n***Step 3:*** The ```@age.setter``` method ensures only positive values can be set.\n***Step 4:*** Creating a ```Person``` instance and modifying ```age``` ensures validation."
+  },
+  {
+    "title": "RegEx to Validate Email Addresses",
+    "ques": "Write a Python program using regular expressions to validate email addresses.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import re\n\ndef validate_email(email):\n    pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$'\n    return bool(re.match(pattern, email))\n\nprint(validate_email('test@example.com'))\nprint(validate_email('invalid-email'))"
+    },
+    "explanation": "***Step 1:*** The function ```validate_email()``` defines a regex pattern for valid emails.\n***Step 2:*** The pattern matches emails with alphanumeric characters, dots, dashes, and an ```@``` symbol.\n***Step 3:*** ```re.match()``` checks if the email follows the pattern.\n***Step 4:*** Valid emails return ```True```, while invalid ones return ```False```."
+  },
+  {
+    "title": "Custom Iterator for Prime Numbers",
+    "ques": "Write a Python class that implements an iterator to generate prime numbers up to a given limit.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class PrimeIterator:\n    def __init__(self, limit):\n        self.limit = limit\n        self.num = 1\n\n    def __iter__(self):\n        return self\n\n    def __next__(self):\n        self.num += 1\n        while self.num <= self.limit:\n            if all(self.num % i != 0 for i in range(2, int(self.num**0.5) + 1)):\n                return self.num\n            self.num += 1\n        raise StopIteration\n\nprimes = PrimeIterator(50)\nfor prime in primes:\n    print(prime)"
+    },
+    "explanation": "***Step 1:*** The class ```PrimeIterator``` initializes with a ```limit``` and starts from ```1```.\n***Step 2:*** The ```__iter__()``` method returns the instance itself.\n***Step 3:*** The ```__next__()``` method increments ```num``` and checks if it's prime.\n***Step 4:*** If a prime is found, it is returned; otherwise, iteration stops."
+  },
+  {
+    "title": "Generator for Fibonacci Sequence",
+    "ques": "Write a Python generator function that yields the Fibonacci sequence indefinitely.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\nfib = fibonacci()\nfor _ in range(10):\n    print(next(fib))"
+    },
+    "explanation": "***Step 1:*** The function ```fibonacci()``` initializes two numbers ```a``` and ```b```.\n***Step 2:*** It enters an infinite ```while``` loop and ```yields``` ```a```.\n***Step 3:*** The next Fibonacci number is calculated and returned.\n***Step 4:*** Calling ```next()``` retrieves successive Fibonacci numbers."
+  },
+  {
+    "title": "Closure for Power Function",
+    "ques": "Write a Python function that returns a closure to calculate the power of a given number.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def power(exponent):\n    def calculate(base):\n        return base ** exponent\n    return calculate\n\nsquare = power(2)\ncube = power(3)\nprint(square(4))\nprint(cube(4))"
+    },
+    "explanation": "***Step 1:*** The function ```power()``` takes an ```exponent``` and defines an inner function ```calculate()```.\n***Step 2:*** ```calculate()``` takes a ```base``` and raises it to ```exponent```.\n***Step 3:*** Returning ```calculate``` creates a closure that retains ```exponent```.\n***Step 4:*** ```square``` and ```cube``` closures allow flexible power calculations."
+  },
+  {
+    "title": "Memoization with Decorator",
+    "ques": "Write a Python decorator that caches function results to improve performance.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def memoize(func):\n    cache = {}\n    def wrapper(*args):\n        if args in cache:\n            return cache[args]\n        result = func(*args)\n        cache[args] = result\n        return result\n    return wrapper\n\n@memoize\ndef factorial(n):\n    return 1 if n == 0 else n * factorial(n-1)\n\nprint(factorial(5))\nprint(factorial(5))"
+    },
+    "explanation": "***Step 1:*** The ```memoize()``` decorator maintains a ```cache``` dictionary.\n***Step 2:*** If the function is called with previously computed arguments, it returns the cached result.\n***Step 3:*** Otherwise, it computes and stores the result in the cache.\n***Step 4:*** Applying ```@memoize``` to ```factorial()``` speeds up repeated calculations."
+  },
+  {
+    "title": "Using Property Decorators for Read-Only Attributes",
+    "ques": "Write a Python class using `@property` to create a read-only attribute.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Circle:\n    def __init__(self, radius):\n        self._radius = radius\n\n    @property\n    def area(self):\n        return 3.14 * self._radius ** 2\n\ncircle = Circle(5)\nprint(circle.area)\ncircle.area = 50  # This will raise an AttributeError"
+    },
+    "explanation": "***Step 1:*** The ```Circle``` class initializes ```_radius```.\n***Step 2:*** The ```@property``` decorator makes ```area``` a read-only property.\n***Step 3:*** Accessing ```circle.area``` computes the area dynamically.\n***Step 4:*** Attempting to assign a value to ```circle.area``` raises an ```AttributeError```."
+  },
+  {
+    "title": "RegEx to Extract URLs",
+    "ques": "Write a Python program using regular expressions to extract all URLs from a given text.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import re\n\ndef extract_urls(text):\n    pattern = r'https?://(?:www\\.)?\\S+\\.(?:com|org|net|edu)'\n    return re.findall(pattern, text)\n\ntext = 'Visit https://example.com and http://test.org for more info.'\nprint(extract_urls(text))"
+    },
+    "explanation": "***Step 1:*** The function ```extract_urls()``` defines a regex pattern for URLs.\n***Step 2:*** The pattern captures ```http``` or ```https``` links with domains like ```.com```, ```.org```.\n***Step 3:*** ```re.findall()``` extracts all matches from the input text.\n***Step 4:*** The function returns a list of URLs found in the text."
+  }
+]

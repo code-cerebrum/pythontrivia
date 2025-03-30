@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Function Arguments",
+    "ques": "Write a Python function that takes two arguments and returns their sum.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(5, 3)\nprint(result)"
+    },
+    "explanation": "***Step 1:*** The function ```add_numbers(a, b)``` is defined to take two arguments.\n***Step 2:*** It returns the sum of ```a``` and ```b``` using ```return a + b```.\n***Step 3:*** The function is called with arguments ```5``` and ```3```, and the result is stored in ```result```.\n***Step 4:*** The ```print()``` function outputs the sum."
+  },
+  {
+    "title": "Recursive Function",
+    "ques": "Write a Python program that calculates the factorial of a number using recursion.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))"
+    },
+    "explanation": "***Step 1:*** The function ```factorial(n)``` is defined to compute the factorial of ```n``` recursively.\n***Step 2:*** The base case checks if ```n``` is ```0``` or ```1``` and returns ```1```.\n***Step 3:*** Otherwise, it calls itself with ```n - 1``` and multiplies it by ```n```.\n***Step 4:*** The function is called with ```5```, and ```print()``` displays the result."
+  },
+  {
+    "title": "Lambda Function (Anonymous Function)",
+    "ques": "Write a Python program using a lambda function to find the square of a number.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "square = lambda x: x * x\nprint(square(4))"
+    },
+    "explanation": "***Step 1:*** A lambda function is defined using ```lambda x: x * x```.\n***Step 2:*** This function takes an argument ```x``` and returns its square.\n***Step 3:*** The lambda function is called with ```4```, and ```print()``` outputs the result."
+  },
+  {
+    "title": "Global and Local Variables",
+    "ques": "Write a Python program to demonstrate the use of global and local variables.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "x = 10  # Global variable\n\ndef my_function():\n    x = 5  # Local variable\n    print('Local x:', x)\n\nmy_function()\nprint('Global x:', x)"
+    },
+    "explanation": "***Step 1:*** The variable ```x``` is defined globally with the value ```10```.\n***Step 2:*** Inside ```my_function()```, a local variable ```x``` is defined with the value ```5```.\n***Step 3:*** The function prints the local value of ```x```.\n***Step 4:*** Outside the function, the global ```x``` remains ```10``` and is printed."
+  },
+  {
+    "title": "Function with Default Argument",
+    "ques": "Write a Python function that takes a name as an argument and greets the user. If no name is provided, it should default to 'Guest'.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def greet(name='Guest'):\n    print(f'Hello, {name}!')\n\ngreet()\ngreet('Alice')"
+    },
+    "explanation": "***Step 1:*** The function ```greet(name='Guest')``` is defined with a default argument ```Guest```.\n***Step 2:*** It prints a greeting using an f-string.\n***Step 3:*** The function is called without an argument, so it prints 'Hello, Guest!'.\n***Step 4:*** The function is called with ```'Alice'```, so it prints 'Hello, Alice!'."
+  },
+  {
+    "title": "Function Returning Multiple Values",
+    "ques": "Write a Python function that returns the sum and product of two numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def calculate(a, b):\n    return a + b, a * b\n\nsum_result, product_result = calculate(3, 4)\nprint('Sum:', sum_result)\nprint('Product:', product_result)"
+    },
+    "explanation": "***Step 1:*** The function ```calculate(a, b)``` is defined to return both sum and product.\n***Step 2:*** The ```return``` statement returns two values as a tuple.\n***Step 3:*** The function is called with ```3``` and ```4```, and the results are stored in ```sum_result``` and ```product_result```.\n***Step 4:*** The ```print()``` function displays both values."
+  },
+  {
+    "title": "Recursive Fibonacci Function",
+    "ques": "Write a Python function using recursion to generate the nth Fibonacci number.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def fibonacci(n):\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    return fibonacci(n-1) + fibonacci(n-2)\n\nprint(fibonacci(6))"
+    },
+    "explanation": "***Step 1:*** The function ```fibonacci(n)``` is defined to compute the nth Fibonacci number recursively.\n***Step 2:*** The base cases return ```0``` if ```n <= 0``` and ```1``` if ```n == 1```.\n***Step 3:*** The function calls itself for ```n-1``` and ```n-2``` and adds the results.\n***Step 4:*** The function is called with ```6```, and ```print()``` outputs the result."
+  },
+  {
+    "title": "Lambda Function with Map",
+    "ques": "Write a Python program using a lambda function to square a list of numbers using ```map()```.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "numbers = [1, 2, 3, 4]\nsquared_numbers = list(map(lambda x: x * x, numbers))\nprint(squared_numbers)"
+    },
+    "explanation": "***Step 1:*** A list ```numbers``` is defined with values ```[1, 2, 3, 4]```.\n***Step 2:*** The ```map()``` function applies a lambda function to each element.\n***Step 3:*** The lambda function ```lambda x: x * x``` computes the square of ```x```.\n***Step 4:*** The result is converted to a list and printed."
+  },
+  {
+    "title": "Using Global Keyword",
+    "ques": "Write a Python program that modifies a global variable inside a function using the ```global``` keyword.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "x = 10\n\ndef modify_global():\n    global x\n    x = 20\n\nmodify_global()\nprint(x)"
+    },
+    "explanation": "***Step 1:*** A global variable ```x``` is initialized with ```10```.\n***Step 2:*** Inside ```modify_global()```, the ```global``` keyword is used to modify ```x```.\n***Step 3:*** The function is called, updating ```x``` to ```20```.\n***Step 4:*** The ```print()``` function displays the modified ```x```."
+  },
+  {
+    "title": "Function with Arbitrary Arguments",
+    "ques": "Write a Python function that takes a variable number of arguments and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def print_args(*args):\n    for arg in args:\n        print(arg)\n\nprint_args(1, 'Hello', 3.14)"
+    },
+    "explanation": "***Step 1:*** The function ```print_args(*args)``` is defined to take any number of arguments.\n***Step 2:*** The ```*args``` collects all arguments into a tuple.\n***Step 3:*** A ```for``` loop iterates through and prints each argument.\n***Step 4:*** The function is called with different data types and prints them."
+  },
+  {
+    "title": "Function with Keyword Arguments",
+    "ques": "Write a Python function that accepts keyword arguments and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def print_kwargs(**kwargs):\n    for key, value in kwargs.items():\n        print(f'{key}: {value}')\n\nprint_kwargs(name='Alice', age=25, city='New York')"
+    },
+    "explanation": "***Step 1:*** The function ```print_kwargs(**kwargs)``` is defined to accept keyword arguments.\n***Step 2:*** The ```**kwargs``` collects arguments as a dictionary.\n***Step 3:*** A ```for``` loop iterates through ```kwargs.items()``` to print key-value pairs.\n***Step 4:*** The function is called with named arguments, and they are printed."
+  },
+  {
+    "title": "Filter Function with Lambda",
+    "ques": "Write a Python program that filters even numbers from a list using ```filter()``` and a lambda function.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "numbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)"
+    },
+    "explanation": "***Step 1:*** A list ```numbers``` is created with values ```[1, 2, 3, 4, 5, 6]```.\n***Step 2:*** The ```filter()``` function is used to keep only even numbers.\n***Step 3:*** The lambda function ```lambda x: x % 2 == 0``` checks for even numbers.\n***Step 4:*** The result is converted to a list and printed."
+  },
+  {
+    "title": "Nested Functions",
+    "ques": "Write a Python program demonstrating a nested function.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "def outer():\n    def inner():\n        print('Hello from inner function!')\n    inner()\n\nouter()"
+    },
+    "explanation": "***Step 1:*** The function ```outer()``` is defined, which contains another function ```inner()```.\n***Step 2:*** The ```inner()``` function prints a message.\n***Step 3:*** Inside ```outer()```, ```inner()``` is called.\n***Step 4:*** Calling ```outer()``` executes both functions."
+  }
+]

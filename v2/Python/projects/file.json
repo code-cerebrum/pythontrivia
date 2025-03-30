@@ -1,0 +1,192 @@
+[
+  {
+    "title": "Write to a File",
+    "ques": "Write a Python program that creates a file and writes some text into it.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('example.txt', 'w') as file:\n    file.write('Hello, this is a test file!')"
+    },
+    "explanation": "***Step 1:*** The ```open()``` function is used with the filename ```'example.txt'``` in write mode ```'w'```.\n***Step 2:*** The ```with``` statement ensures the file is properly closed after writing.\n***Step 3:*** The ```write()``` method writes the text ```'Hello, this is a test file!'``` into the file."
+  },
+  {
+    "title": "Read from a File",
+    "ques": "Write a Python program that reads the contents of a file and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)"
+    },
+    "explanation": "***Step 1:*** The ```open()``` function is used to open the file ```'example.txt'``` in read mode ```'r'```.\n***Step 2:*** The ```read()``` method reads the entire contents of the file.\n***Step 3:*** The content is stored in the variable ```content``` and printed using ```print()```."
+  },
+  {
+    "title": "Append to a File",
+    "ques": "Write a Python program that appends text to an existing file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('example.txt', 'a') as file:\n    file.write('\\nThis line is appended.')"
+    },
+    "explanation": "***Step 1:*** The ```open()``` function is used to open the file ```'example.txt'``` in append mode ```'a'```.\n***Step 2:*** The ```write()``` method appends ```'This line is appended.'``` at the end of the file.\n***Step 3:*** The ```'\\n'``` ensures the new text appears on a new line."
+  },
+  {
+    "title": "Check If File Exists",
+    "ques": "Write a Python program that checks if a file exists before reading it.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\nif os.path.exists('example.txt'):\n    with open('example.txt', 'r') as file:\n        print(file.read())\nelse:\n    print('File does not exist.')"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported to work with the file system.\n***Step 2:*** The ```os.path.exists()``` method checks if the file ```'example.txt'``` exists.\n***Step 3:*** If the file exists, it is opened and read.\n***Step 4:*** If the file does not exist, a message ```'File does not exist.'``` is printed."
+  },
+  {
+    "title": "Create a Directory",
+    "ques": "Write a Python program that creates a new directory.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\nos.mkdir('NewFolder')"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported to handle directory operations.\n***Step 2:*** The ```os.mkdir()``` function creates a new directory named ```'NewFolder'```."
+  },
+  {
+    "title": "List Files in a Directory",
+    "ques": "Write a Python program that lists all files in a directory.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\nfiles = os.listdir('.')\nprint(files)"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported.\n***Step 2:*** The ```os.listdir('.')``` function lists all files and folders in the current directory ```'.'```.\n***Step 3:*** The result is printed using ```print()```."
+  },
+  {
+    "title": "Handle File Not Found Exception",
+    "ques": "Write a Python program that handles the exception when trying to read a non-existent file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "try:\n    with open('missing.txt', 'r') as file:\n        print(file.read())\nexcept FileNotFoundError:\n    print('File not found!')"
+    },
+    "explanation": "***Step 1:*** A ```try``` block attempts to open ```'missing.txt'``` in read mode.\n***Step 2:*** If the file does not exist, a ```FileNotFoundError``` is raised.\n***Step 3:*** The ```except``` block catches the exception and prints ```'File not found!'```."
+  },
+  {
+    "title": "User-Defined Exception",
+    "ques": "Write a Python program that raises and handles a user-defined exception for invalid input.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class InvalidAgeException(Exception):\n    pass\n\ntry:\n    age = int(input('Enter age: '))\n    if age < 0:\n        raise InvalidAgeException('Age cannot be negative!')\n    print(f'You entered: {age}')\nexcept InvalidAgeException as e:\n    print(e)"
+    },
+    "explanation": "***Step 1:*** A custom exception class ```InvalidAgeException``` is defined, inheriting from ```Exception```.\n***Step 2:*** The user is prompted to enter their age.\n***Step 3:*** If the age is negative, the exception ```InvalidAgeException``` is raised with a message.\n***Step 4:*** The ```except``` block catches the exception and prints the error message."
+  },
+  {
+    "title": "Copy File Content",
+    "ques": "Write a Python program that copies content from one file to another.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('source.txt', 'r') as src:\n    content = src.read()\n\nwith open('destination.txt', 'w') as dest:\n    dest.write(content)"
+    },
+    "explanation": "***Step 1:*** The ```open()``` function opens ```'source.txt'``` in read mode.\n***Step 2:*** The content is read using ```read()``` and stored in ```content```.\n***Step 3:*** Another file ```'destination.txt'``` is opened in write mode.\n***Step 4:*** The content is written into ```'destination.txt'```."
+  },
+  {
+    "title": "Count Lines in a File",
+    "ques": "Write a Python program that counts the number of lines in a file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('example.txt', 'r') as file:\n    lines = file.readlines()\n    print(f'Number of lines: {len(lines)}')"
+    },
+    "explanation": "***Step 1:*** The file ```'example.txt'``` is opened in read mode.\n***Step 2:*** The ```readlines()``` method reads all lines into a list.\n***Step 3:*** The ```len()``` function calculates the number of lines.\n***Step 4:*** The result is printed using ```print()```."
+  },
+  {
+    "title": "Delete a File",
+    "ques": "Write a Python program that deletes a file if it exists.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\nfile_name = 'sample.txt'\nif os.path.exists(file_name):\n    os.remove(file_name)\n    print(f'{file_name} deleted.')\nelse:\n    print('File does not exist.')"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported to handle file operations.\n***Step 2:*** The ```os.path.exists()``` function checks if ```'sample.txt'``` exists.\n***Step 3:*** If the file exists, the ```os.remove()``` function deletes it.\n***Step 4:*** If the file does not exist, a message is printed."
+  },
+  {
+    "title": "Rename a File",
+    "ques": "Write a Python program that renames an existing file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\nif os.path.exists('old_name.txt'):\n    os.rename('old_name.txt', 'new_name.txt')\n    print('File renamed successfully!')\nelse:\n    print('File does not exist.')"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported.\n***Step 2:*** The ```os.path.exists()``` function checks if ```'old_name.txt'``` exists.\n***Step 3:*** If it exists, the ```os.rename()``` function renames the file to ```'new_name.txt'```.\n***Step 4:*** If the file does not exist, a message is displayed."
+  },
+  {
+    "title": "Count Words in a File",
+    "ques": "Write a Python program that counts the number of words in a text file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('example.txt', 'r') as file:\n    content = file.read()\n    words = content.split()\n    print(f'Number of words: {len(words)}')"
+    },
+    "explanation": "***Step 1:*** The file ```'example.txt'``` is opened in read mode.\n***Step 2:*** The ```read()``` method reads the content.\n***Step 3:*** The ```split()``` function splits the content into words.\n***Step 4:*** The ```len()``` function counts the number of words and prints it."
+  },
+  {
+    "title": "Write a Log File",
+    "ques": "Write a Python program that logs messages to a file with timestamps.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "from datetime import datetime\n\ndef log_message(message):\n    with open('log.txt', 'a') as log:\n        log.write(f'{datetime.now()}: {message}\\n')\n\nlog_message('Program started')"
+    },
+    "explanation": "***Step 1:*** The ```datetime``` module is imported.\n***Step 2:*** A function ```log_message()``` is defined to write logs to ```'log.txt'```.\n***Step 3:*** The ```datetime.now()``` function gets the current timestamp.\n***Step 4:*** The log message is written in append mode with the timestamp."
+  },
+  {
+    "title": "Handle Division by Zero Exception",
+    "ques": "Write a Python program that handles division by zero exception.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "try:\n    num = int(input('Enter a number: '))\n    result = 10 / num\n    print(f'Result: {result}')\nexcept ZeroDivisionError:\n    print('Error: Cannot divide by zero!')"
+    },
+    "explanation": "***Step 1:*** The user inputs a number.\n***Step 2:*** The number is used in a division operation.\n***Step 3:*** If the number is zero, a ```ZeroDivisionError``` is raised.\n***Step 4:*** The ```except``` block catches the exception and prints an error message."
+  },
+  {
+    "title": "Custom Exception for Invalid Email",
+    "ques": "Write a Python program that raises a user-defined exception for invalid email format.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import re\n\nclass InvalidEmailException(Exception):\n    pass\n\ndef validate_email(email):\n    pattern = r'^[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]{2,}$'\n    if not re.match(pattern, email):\n        raise InvalidEmailException('Invalid email format!')\n    print('Valid email.')\n\ntry:\n    email = input('Enter email: ')\n    validate_email(email)\nexcept InvalidEmailException as e:\n    print(e)"
+    },
+    "explanation": "***Step 1:*** The ```re``` module is imported for regular expressions.\n***Step 2:*** A custom exception ```InvalidEmailException``` is created.\n***Step 3:*** The function ```validate_email()``` checks if the email follows a valid pattern.\n***Step 4:*** If the email is invalid, an exception is raised.\n***Step 5:*** The ```try-except``` block handles the exception and prints an error message."
+  },
+  {
+    "title": "Recursive File Search",
+    "ques": "Write a Python program that recursively searches for a file in a directory.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import os\n\ndef find_file(directory, filename):\n    for root, dirs, files in os.walk(directory):\n        if filename in files:\n            print(f'File found: {os.path.join(root, filename)}')\n            return\n    print('File not found.')\n\nfind_file('.', 'example.txt')"
+    },
+    "explanation": "***Step 1:*** The ```os``` module is imported.\n***Step 2:*** The ```find_file()``` function uses ```os.walk()``` to traverse directories.\n***Step 3:*** If the filename is found, its full path is printed.\n***Step 4:*** If the file is not found, a message is printed."
+  },
+  {
+    "title": "Backup a File",
+    "ques": "Write a Python program that creates a backup copy of a file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import shutil\n\ndef backup_file(filename):\n    backup_name = filename + '.bak'\n    shutil.copy(filename, backup_name)\n    print(f'Backup created: {backup_name}')\n\nbackup_file('data.txt')"
+    },
+    "explanation": "***Step 1:*** The ```shutil``` module is imported for file operations.\n***Step 2:*** The ```backup_file()``` function takes a filename as input.\n***Step 3:*** The ```shutil.copy()``` function creates a backup with the ```.bak``` extension.\n***Step 4:*** A message is printed confirming the backup."
+  },
+  {
+    "title": "Merge Two Files",
+    "ques": "Write a Python program that merges the contents of two files into a third file.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "with open('file1.txt', 'r') as f1, open('file2.txt', 'r') as f2, open('merged.txt', 'w') as merged:\n    merged.write(f1.read() + '\\n' + f2.read())"
+    },
+    "explanation": "***Step 1:*** The files ```file1.txt``` and ```file2.txt``` are opened in read mode.\n***Step 2:*** The file ```merged.txt``` is opened in write mode.\n***Step 3:*** The contents of both files are read and combined.\n***Step 4:*** The merged content is written to ```merged.txt```."
+  }
+]

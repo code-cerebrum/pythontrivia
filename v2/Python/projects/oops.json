@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Create a Simple Class",
+    "ques": "Write a Python program that defines a class `Car` with attributes `brand`, `model`, and `year`. Create an object and print its details.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Car:\n    def __init__(self, brand, model, year):\n        self.brand = brand\n        self.model = model\n        self.year = year\n    \n    def display(self):\n        print(f'Car: {self.brand} {self.model}, Year: {self.year}')\n\nmy_car = Car('Toyota', 'Corolla', 2022)\nmy_car.display()"
+    },
+    "explanation": "***Step 1:*** A class ```Car``` is defined with an ```__init__``` method to initialize attributes ```brand```, ```model```, and ```year```.\n***Step 2:*** A method ```display()``` prints the car details.\n***Step 3:*** An object ```my_car``` is created and initialized with ```Toyota Corolla, 2022```.\n***Step 4:*** The ```display()``` method is called to print car details."
+  },
+  {
+    "title": "Single Inheritance",
+    "ques": "Write a Python program demonstrating single inheritance where a `Person` class has a subclass `Student` that inherits its attributes.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def display(self):\n        print(f'Name: {self.name}, Age: {self.age}')\n\nclass Student(Person):\n    def __init__(self, name, age, student_id):\n        super().__init__(name, age)\n        self.student_id = student_id\n    \n    def show_details(self):\n        self.display()\n        print(f'Student ID: {self.student_id}')\n\ns = Student('Alice', 21, 'S123')\ns.show_details()"
+    },
+    "explanation": "***Step 1:*** A class ```Person``` is created with attributes ```name``` and ```age```.\n***Step 2:*** A subclass ```Student``` inherits from ```Person``` using ```super()```.\n***Step 3:*** The ```Student``` class adds an extra attribute ```student_id```.\n***Step 4:*** The ```show_details()``` method calls ```display()``` from ```Person``` and prints the student ID.\n***Step 5:*** An object ```s``` is created with values ```Alice, 21, S123``` and calls ```show_details()```."
+  },
+  {
+    "title": "Multiple Inheritance",
+    "ques": "Write a Python program that demonstrates multiple inheritance with a `Father` and `Mother` class inherited by a `Child` class.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Father:\n    def skills(self):\n        print('Father: Knows carpentry.')\n\nclass Mother:\n    def skills(self):\n        print('Mother: Knows painting.')\n\nclass Child(Father, Mother):\n    def skills(self):\n        super().skills()\n        print('Child: Knows programming.')\n\nc = Child()\nc.skills()"
+    },
+    "explanation": "***Step 1:*** The ```Father``` class has a ```skills()``` method that prints a skill.\n***Step 2:*** The ```Mother``` class also has a ```skills()``` method.\n***Step 3:*** The ```Child``` class inherits from both ```Father``` and ```Mother``` (multiple inheritance).\n***Step 4:*** The ```Child``` class overrides ```skills()``` but calls ```super().skills()``` to use the first inherited method (from ```Father```).\n***Step 5:*** An object ```c``` is created and calls ```skills()``` to print skills."
+  },
+  {
+    "title": "Operator Overloading",
+    "ques": "Write a Python program that overloads the `+` operator for a `Vector` class to add two vectors.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Vector:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    \n    def __add__(self, other):\n        return Vector(self.x + other.x, self.y + other.y)\n    \n    def display(self):\n        print(f'({self.x}, {self.y})')\n\nv1 = Vector(2, 3)\nv2 = Vector(4, 5)\nv3 = v1 + v2\nv3.display()"
+    },
+    "explanation": "***Step 1:*** A class ```Vector``` is created with attributes ```x``` and ```y```.\n***Step 2:*** The ```__add__``` method is defined to overload ```+``` and return a new ```Vector```.\n***Step 3:*** Two vector objects ```v1``` and ```v2``` are created.\n***Step 4:*** Adding ```v1 + v2``` calls ```__add__```, creating a new vector.\n***Step 5:*** The ```display()``` method prints the resulting vector."
+  },
+  {
+    "title": "Method Overriding",
+    "ques": "Write a Python program demonstrating method overriding where a `Parent` class method is overridden in a `Child` class.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Parent:\n    def show(self):\n        print('This is the parent class method.')\n\nclass Child(Parent):\n    def show(self):\n        print('This is the child class method (overridden).')\n\nc = Child()\nc.show()"
+    },
+    "explanation": "***Step 1:*** A ```Parent``` class defines a ```show()``` method.\n***Step 2:*** A ```Child``` class inherits from ```Parent``` and overrides ```show()```.\n***Step 3:*** An object ```c``` of ```Child``` is created.\n***Step 4:*** Calling ```c.show()``` runs the overridden method instead of the parent method."
+  },
+  {
+    "title": "Encapsulation with Private Attributes",
+    "ques": "Write a Python program demonstrating encapsulation by using private attributes in a class.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance\n    \n    def deposit(self, amount):\n        self.__balance += amount\n    \n    def withdraw(self, amount):\n        if amount <= self.__balance:\n            self.__balance -= amount\n        else:\n            print('Insufficient funds!')\n    \n    def get_balance(self):\n        return self.__balance\n\nacc = BankAccount(1000)\nacc.deposit(500)\nacc.withdraw(200)\nprint(acc.get_balance())"
+    },
+    "explanation": "***Step 1:*** A class ```BankAccount``` is created with a private attribute ```__balance```.\n***Step 2:*** The ```deposit()``` method adds money to ```__balance```.\n***Step 3:*** The ```withdraw()``` method deducts money if there are sufficient funds.\n***Step 4:*** The ```get_balance()``` method returns ```__balance```.\n***Step 5:*** An object ```acc``` is created with an initial balance of ```1000```.\n***Step 6:*** Depositing ```500``` and withdrawing ```200``` updates the balance, which is printed using ```get_balance()```."
+  },
+  {
+    "title": "Polymorphism with Method Overriding",
+    "ques": "Write a Python program demonstrating polymorphism where different classes implement the same method `speak()` but with different behaviors.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Animal:\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return 'Woof!'\n\nclass Cat(Animal):\n    def speak(self):\n        return 'Meow!'\n\nanimals = [Dog(), Cat()]\nfor animal in animals:\n    print(animal.speak())"
+    },
+    "explanation": "***Step 1:*** The ```Animal``` class defines a placeholder ```speak()``` method.\n***Step 2:*** ```Dog``` and ```Cat``` classes override ```speak()``` to return different sounds.\n***Step 3:*** A list ```animals``` holds objects of both classes.\n***Step 4:*** A loop calls ```speak()``` on each object, demonstrating polymorphism."
+  },
+  {
+    "title": "Abstract Classes with ABC Module",
+    "ques": "Write a Python program using an abstract class `Shape` that forces subclasses to implement `area()` and `perimeter()` methods.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "from abc import ABC, abstractmethod\n\nclass Shape(ABC):\n    @abstractmethod\n    def area(self):\n        pass\n\n    @abstractmethod\n    def perimeter(self):\n        pass\n\nclass Rectangle(Shape):\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    def area(self):\n        return self.width * self.height\n    \n    def perimeter(self):\n        return 2 * (self.width + self.height)\n\nr = Rectangle(4, 5)\nprint(r.area())\nprint(r.perimeter())"
+    },
+    "explanation": "***Step 1:*** The ```abc``` module is used to define an abstract class ```Shape```.\n***Step 2:*** ```Shape``` has two abstract methods: ```area()``` and ```perimeter()```.\n***Step 3:*** ```Rectangle``` inherits from ```Shape``` and provides concrete implementations.\n***Step 4:*** Creating an object of ```Rectangle``` and calling methods demonstrates abstraction."
+  },
+  {
+    "title": "Metaclass to Control Class Creation",
+    "ques": "Write a Python program that uses a metaclass to ensure every class has a `describe()` method.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Meta(type):\n    def __new__(cls, name, bases, class_dict):\n        if 'describe' not in class_dict:\n            raise TypeError(f'Class {name} must implement a describe() method')\n        return super().__new__(cls, name, bases, class_dict)\n\nclass Product(metaclass=Meta):\n    def describe(self):\n        print('This is a product.')\n\np = Product()\np.describe()"
+    },
+    "explanation": "***Step 1:*** A metaclass ```Meta``` is created to control class creation.\n***Step 2:*** ```__new__()``` checks if the class has a ```describe()``` method; otherwise, it raises an error.\n***Step 3:*** ```Product``` inherits from ```Meta``` and defines ```describe()```.\n***Step 4:*** Creating an object ```p``` and calling ```describe()``` ensures metaclass enforcement."
+  },
+  {
+    "title": "Using Property Decorators",
+    "ques": "Write a Python program that uses the `@property` decorator to enforce encapsulation and control attribute access in a `Circle` class.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "import math\n\nclass Circle:\n    def __init__(self, radius):\n        self._radius = radius\n\n    @property\n    def radius(self):\n        return self._radius\n    \n    @radius.setter\n    def radius(self, value):\n        if value <= 0:\n            raise ValueError('Radius must be positive!')\n        self._radius = value\n\n    @property\n    def area(self):\n        return math.pi * self._radius ** 2\n\nc = Circle(5)\nprint(c.area)\nc.radius = 3\nprint(c.area)"
+    },
+    "explanation": "***Step 1:*** A class ```Circle``` is created with a private attribute ```_radius```.\n***Step 2:*** ```@property``` makes ```radius``` readable.\n***Step 3:*** ```@radius.setter``` prevents setting negative values.\n***Step 4:*** ```@property``` on ```area``` calculates the area dynamically.\n***Step 5:*** Changing ```radius``` updates ```area``` automatically."
+  },
+  {
+    "title": "Class Composition",
+    "ques": "Write a Python program demonstrating class composition where an `Engine` class is used inside a `Car` class.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class Engine:\n    def start(self):\n        return 'Engine started.'\n\nclass Car:\n    def __init__(self):\n        self.engine = Engine()\n    \n    def start(self):\n        return self.engine.start()\n\nmy_car = Car()\nprint(my_car.start())"
+    },
+    "explanation": "***Step 1:*** An ```Engine``` class defines a ```start()``` method.\n***Step 2:*** A ```Car``` class contains an instance of ```Engine```.\n***Step 3:*** Calling ```start()``` on ```Car``` calls ```Engine.start()```.\n***Step 4:*** This demonstrates composition (one class containing another)."
+  },
+  {
+    "title": "Mixin Classes for Code Reusability",
+    "ques": "Write a Python program using a mixin class to add logging functionality to multiple classes.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "class LoggerMixin:\n    def log(self, message):\n        print(f'[LOG]: {message}')\n\nclass User(LoggerMixin):\n    def __init__(self, username):\n        self.username = username\n        self.log(f'User {self.username} created.')\n\nclass Product(LoggerMixin):\n    def __init__(self, name):\n        self.name = name\n        self.log(f'Product {self.name} added.')\n\nu = User('Alice')\np = Product('Laptop')"
+    },
+    "explanation": "***Step 1:*** ```LoggerMixin``` defines a reusable ```log()``` method.\n***Step 2:*** ```User``` and ```Product``` inherit from ```LoggerMixin``` to add logging.\n***Step 3:*** Creating a ```User``` or ```Product``` automatically logs messages.\n***Step 4:*** This demonstrates mixin classes for modular functionality."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Variable Declaration",
+    "ques": "Write a Python program that declares and prints different types of variables.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "x = 10  # Integer\ny = 3.14  # Float\nz = 'Hello'  # String\nprint(x, y, z)"
+    },
+    "explanation": "***Step 1:*** The variable ```x``` is assigned an integer value of ```10```.\n***Step 2:*** The variable ```y``` is assigned a floating-point value of ```3.14```.\n***Step 3:*** The variable ```z``` is assigned a string value ```'Hello'```.\n***Step 4:*** The ```print()``` function outputs all three variables."
+  },
+  {
+    "title": "Check Data Type",
+    "ques": "Write a Python program that prints the data types of different variables.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "x = 10\ny = 3.14\nz = 'Hello'\nprint(type(x))\nprint(type(y))\nprint(type(z))"
+    },
+    "explanation": "***Step 1:*** Three variables are declared: ```x``` (integer), ```y``` (float), and ```z``` (string).\n***Step 2:*** The ```type()``` function is used to get the data type of each variable.\n***Step 3:*** The ```print()``` function outputs the data type of each variable."
+  },
+  {
+    "title": "Type Conversion",
+    "ques": "Write a Python program that converts an integer to a float and a float to an integer.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "x = 10\ny = float(x)\nz = int(y)\nprint(y, z)"
+    },
+    "explanation": "***Step 1:*** The variable ```x``` is assigned an integer value ```10```.\n***Step 2:*** The function ```float(x)``` converts ```x``` to a float and stores it in ```y```.\n***Step 3:*** The function ```int(y)``` converts ```y``` (which is float) back to an integer and stores it in ```z```.\n***Step 4:*** The ```print()``` function outputs both converted values."
+  }
+]
