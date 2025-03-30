@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Check Even or Odd",
+    "ques": "Write a Python program that checks if a number is even or odd using an if..else statement.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "num = int(input('Enter a number: '))\nif num % 2 == 0:\n    print('Even')\nelse:\n    print('Odd')"
+    },
+    "explanation": "***Step 1:*** The program asks the user to input a number using ```input()``` and converts it to an integer using ```int()```.\n***Step 2:*** The ```if``` condition checks if ```num``` is divisible by ```2``` using ```num % 2 == 0```. If true, it prints ```Even```.\n***Step 3:*** If the condition is false, the ```else``` block prints ```Odd```."
+  },
+  {
+    "title": "Grade Classification",
+    "ques": "Write a Python program that classifies a student's grade using if..elif..else conditions.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "score = int(input('Enter your score: '))\nif score >= 90:\n    print('Grade: A')\nelif score >= 80:\n    print('Grade: B')\nelif score >= 70:\n    print('Grade: C')\nelif score >= 60:\n    print('Grade: D')\nelse:\n    print('Grade: F')"
+    },
+    "explanation": "***Step 1:*** The user inputs a score, which is converted to an integer.\n***Step 2:*** The ```if``` condition checks if the score is 90 or above and assigns ```Grade: A```.\n***Step 3:*** The ```elif``` conditions check for other score ranges, assigning ```B```, ```C```, or ```D```.\n***Step 4:*** If none of the conditions match, the ```else``` block assigns ```Grade: F```."
+  },
+  {
+    "title": "Print Numbers Using For Loop",
+    "ques": "Write a Python program that prints numbers from 1 to 10 using a for loop.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "for i in range(1, 11):\n    print(i)"
+    },
+    "explanation": "***Step 1:*** The ```for``` loop iterates over numbers from ```1``` to ```10``` using ```range(1, 11)```.\n***Step 2:*** Inside the loop, each number is printed using ```print(i)```."
+  },
+  {
+    "title": "Countdown Using While Loop",
+    "ques": "Write a Python program that counts down from 5 to 1 using a while loop.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "num = 5\nwhile num > 0:\n    print(num)\n    num -= 1"
+    },
+    "explanation": "***Step 1:*** A variable ```num``` is initialized to ```5```.\n***Step 2:*** The ```while``` loop runs as long as ```num``` is greater than ```0```.\n***Step 3:*** Inside the loop, the value of ```num``` is printed, and then decremented by ```1``` using ```num -= 1```."
+  },
+  {
+    "title": "Break Statement Example",
+    "ques": "Write a Python program that stops printing numbers when it reaches 5 using a break statement.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "for i in range(1, 11):\n    if i == 5:\n        break\n    print(i)"
+    },
+    "explanation": "***Step 1:*** The ```for``` loop iterates from ```1``` to ```10```.\n***Step 2:*** If ```i == 5```, the ```break``` statement terminates the loop.\n***Step 3:*** Numbers from ```1``` to ```4``` are printed before the loop stops."
+  },
+  {
+    "title": "Continue Statement Example",
+    "ques": "Write a Python program that skips printing the number 5 using a continue statement.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "for i in range(1, 11):\n    if i == 5:\n        continue\n    print(i)"
+    },
+    "explanation": "***Step 1:*** The ```for``` loop iterates from ```1``` to ```10```.\n***Step 2:*** If ```i == 5```, the ```continue``` statement skips the rest of the loop body and moves to the next iteration.\n***Step 3:*** All numbers except ```5``` are printed."
+  },
+  {
+    "title": "Pass Statement Example",
+    "ques": "Write a Python program that uses a pass statement inside an if condition.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "num = 10\nif num > 5:\n    pass\nprint('Code continues...')"
+    },
+    "explanation": "***Step 1:*** The program checks if ```num``` is greater than ```5```.\n***Step 2:*** The ```pass``` statement acts as a placeholder, meaning the condition is met but nothing happens.\n***Step 3:*** The program continues execution and prints ```'Code continues...'```."
+  },
+  {
+    "title": "Range Function Example",
+    "ques": "Write a Python program that prints all even numbers between 1 and 20 using the range function.",
+    "answer": {
+      "type": "code",
+      "lang": "python",
+      "content": "for i in range(2, 21, 2):\n    print(i)"
+    },
+    "explanation": "***Step 1:*** The ```range()``` function starts at ```2``` and increments by ```2``` up to ```20```.\n***Step 2:*** Each even number is printed inside the loop."
+  }
+]
