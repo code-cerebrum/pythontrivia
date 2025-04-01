@@ -1,32 +1,182 @@
 [
   {
-    "title": "Variable Declaration",
-    "ques": "Write a Python program that declares and prints different types of variables.",
+    "title": "Accounting Equation",
+    "ques": "What is the fundamental accounting equation, and why is it important in financial accounting?",
     "answer": {
-      "type": "code",
-      "lang": "python",
-      "content": "x = 10  # Integer\ny = 3.14  # Float\nz = 'Hello'  # String\nprint(x, y, z)"
+      "type": "text",
+      "lang": null,
+      "content": "The fundamental accounting equation is Assets = Liabilities + Equity. It represents the relationship between a company's resources, obligations, and ownership interest. This equation ensures that a company's balance sheet is always balanced."
     },
-    "explanation": "***Step 1:*** The variable ```x``` is assigned an integer value of ```10```.\n***Step 2:*** The variable ```y``` is assigned a floating-point value of ```3.14```.\n***Step 3:*** The variable ```z``` is assigned a string value ```'Hello'```.\n***Step 4:*** The ```print()``` function outputs all three variables."
+    "explanation": "The ***accounting equation*** is the foundation of double-entry accounting. It ensures that every financial transaction affects at least two accounts and keeps the financial records balanced. For example, if a business takes a loan of ```10,000```, its ***assets*** (cash) increase by ```10,000```, and its ***liabilities*** (loan payable) also increase by ```10,000```, keeping the equation balanced."
   },
   {
-    "title": "Check Data Type",
-    "ques": "Write a Python program that prints the data types of different variables.",
+    "title": "Double-Entry System",
+    "ques": "How does the double-entry accounting system work, and why is it essential?",
     "answer": {
-      "type": "code",
-      "lang": "python",
-      "content": "x = 10\ny = 3.14\nz = 'Hello'\nprint(type(x))\nprint(type(y))\nprint(type(z))"
+      "type": "text",
+      "lang": null,
+      "content": "The double-entry system records each transaction in at least two accounts: one as a debit and the other as a credit. This ensures the accounting equation remains balanced and provides an accurate financial position."
     },
-    "explanation": "***Step 1:*** Three variables are declared: ```x``` (integer), ```y``` (float), and ```z``` (string).\n***Step 2:*** The ```type()``` function is used to get the data type of each variable.\n***Step 3:*** The ```print()``` function outputs the data type of each variable."
+    "explanation": "In the ***double-entry system***, every transaction has equal and opposite effects on at least two accounts. For example, if a company purchases inventory for ```5,000``` on credit, it records a ```5,000``` ***debit*** to inventory and a ```5,000``` ***credit*** to accounts payable. This method prevents errors and fraud by providing a clear audit trail."
   },
   {
-    "title": "Type Conversion",
-    "ques": "Write a Python program that converts an integer to a float and a float to an integer.",
+    "title": "Accrual vs. Cash Accounting",
+    "ques": "What is the difference between accrual accounting and cash accounting?",
     "answer": {
-      "type": "code",
-      "lang": "python",
-      "content": "x = 10\ny = float(x)\nz = int(y)\nprint(y, z)"
+      "type": "text",
+      "lang": null,
+      "content": "Accrual accounting records revenues and expenses when they are earned or incurred, regardless of cash flow. Cash accounting records transactions only when cash is received or paid."
     },
-    "explanation": "***Step 1:*** The variable ```x``` is assigned an integer value ```10```.\n***Step 2:*** The function ```float(x)``` converts ```x``` to a float and stores it in ```y```.\n***Step 3:*** The function ```int(y)``` converts ```y``` (which is float) back to an integer and stores it in ```z```.\n***Step 4:*** The ```print()``` function outputs both converted values."
+    "explanation": "***Accrual accounting*** is required under GAAP and provides a more accurate picture of financial health. For example, if a company delivers services in December but receives payment in January, the revenue is recorded in December under the accrual method. ***Cash accounting***, on the other hand, only records revenue when cash is received, making it simpler but less accurate in tracking financial obligations."
+  },
+  {
+    "title": "GAAP vs. IFRS",
+    "ques": "How do GAAP and IFRS differ in financial reporting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "GAAP (Generally Accepted Accounting Principles) is used primarily in the U.S., while IFRS (International Financial Reporting Standards) is used globally. IFRS is principles-based, whereas GAAP is more rules-based."
+    },
+    "explanation": "***GAAP*** is detailed and focuses on rules to ensure consistency in financial reporting. ***IFRS*** allows for more interpretation and flexibility, making it adaptable for different business environments. For example, GAAP requires inventory to be valued using ```FIFO``` or ```LIFO```, while IFRS prohibits the use of ***LIFO***."
+  },
+  {
+    "title": "Revenue Recognition Principle",
+    "ques": "According to the revenue recognition principle, when should revenue be recorded?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Revenue should be recorded when it is earned and realizable, regardless of when cash is received."
+    },
+    "explanation": "Under ***accrual accounting***, revenue is recognized when goods or services are delivered, not when payment is received. For example, if a company provides consulting services in June but gets paid in July, the revenue should be recorded in June."
+  },
+  {
+    "title": "Matching Principle",
+    "ques": "Why is the matching principle important in accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The matching principle states that expenses should be recorded in the same period as the revenues they help generate, ensuring accurate financial reporting."
+    },
+    "explanation": "The ***matching principle*** ensures that financial statements reflect the true profitability of a period. For example, if a company sells products in December but pays commission to sales employees in January, the commission should be recorded in December to match the revenue earned."
+  },
+  {
+    "title": "Conservatism Principle",
+    "ques": "What is the conservatism principle in accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The conservatism principle states that accountants should choose the solution that results in lower profits and asset valuation when faced with uncertainty."
+    },
+    "explanation": "***Conservatism*** ensures that companies do not overstate income or assets. For example, if a company expects a lawsuit loss, it should record the potential loss immediately. However, if it expects a gain, it should only record it when realized."
+  },
+  {
+    "title": "Materiality Principle",
+    "ques": "How does the materiality principle affect financial reporting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The materiality principle allows accountants to ignore minor transactions that do not significantly impact financial statements."
+    },
+    "explanation": "***Materiality*** ensures that only significant financial information is reported. For example, a company may expense a ```5-dollar``` stapler purchase immediately instead of capitalizing it as an asset, as it does not impact overall financial reporting."
+  },
+  {
+    "title": "Expanded Accounting Equation",
+    "ques": "How does the accounting equation expand when including revenues, expenses, and dividends?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The expanded accounting equation is: Assets = Liabilities + Equity + Revenue - Expenses - Dividends. It incorporates the effect of earnings and distributions on equity."
+    },
+    "explanation": "The ***expanded accounting equation*** provides a more detailed view by showing how revenue increases equity and expenses decrease it. For example, if a company earns ```20,000``` in revenue and incurs ```5,000``` in expenses, the net income of ```15,000``` increases the equity."
+  },
+  {
+    "title": "Effect of Transactions on Accounting Equation",
+    "ques": "A company buys office furniture for $5,000 in cash. How does this affect the accounting equation?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The transaction decreases the company's cash by $5,000 (asset) and increases its furniture (another asset) by $5,000. The total assets remain unchanged."
+    },
+    "explanation": "In this case, the ***accounting equation*** remains balanced because one asset (cash) decreases while another asset (furniture) increases by the same amount. Since liabilities and equity are not affected, the equation holds true: ```Assets = Liabilities + Equity```."
+  },
+  {
+    "title": "Debits and Credits in Double-Entry System",
+    "ques": "What is the rule for debits and credits in the double-entry system?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Debits increase assets and expenses but decrease liabilities and equity. Credits increase liabilities, equity, and revenue but decrease assets and expenses."
+    },
+    "explanation": "***Debits and credits*** follow a systematic rule to maintain accounting balance. For example, when a company borrows ```10,000```, it records a ```10,000``` debit to cash (increasing an asset) and a ```10,000``` credit to loans payable (increasing a liability)."
+  },
+  {
+    "title": "Impact of Double-Entry on Financial Statements",
+    "ques": "How does the double-entry system ensure financial accuracy?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The double-entry system records every transaction in two accounts, ensuring the accounting equation stays balanced and reducing errors."
+    },
+    "explanation": "By requiring every transaction to have both a ***debit and a credit***, the system prevents errors and fraud. For instance, if a company sells inventory for ```2,000```, it records a ```2,000``` debit in cash and a ```2,000``` credit in revenue, keeping records accurate."
+  },
+  {
+    "title": "Accrual vs. Cash Basis Example",
+    "ques": "A company provides services in December but receives payment in January. When is revenue recorded under accrual and cash accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Under accrual accounting, revenue is recorded in December when the service is provided. Under cash accounting, revenue is recorded in January when cash is received."
+    },
+    "explanation": "The ***accrual method*** follows the revenue recognition principle, ensuring financial statements reflect business activities accurately. The ***cash method***, on the other hand, is simpler but does not reflect pending earnings."
+  },
+  {
+    "title": "Matching Principle in Accrual Accounting",
+    "ques": "Why is the matching principle important in accrual accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The matching principle ensures that expenses are recorded in the same period as the revenues they generate, improving financial accuracy."
+    },
+    "explanation": "For example, if a company incurs advertising expenses in December to drive sales, it should record the expense in December even if the payment is made in January. This aligns with the ***accrual method*** and avoids misleading profit figures."
+  },
+  {
+    "title": "GAAP and IFRS in Revenue Recognition",
+    "ques": "How do GAAP and IFRS differ in revenue recognition?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "GAAP follows a detailed rule-based approach, while IFRS uses a principles-based method for recognizing revenue, providing more flexibility."
+    },
+    "explanation": "Under ***GAAP***, revenue is recognized when it is realized and earned, following a step-by-step process. ***IFRS***, on the other hand, focuses on the concept of transferring control rather than meeting specific conditions."
+  },
+  {
+    "title": "GAAP vs. IFRS Inventory Valuation",
+    "ques": "What is a key difference in inventory valuation under GAAP and IFRS?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "GAAP allows both FIFO and LIFO inventory valuation, while IFRS prohibits LIFO."
+    },
+    "explanation": "***FIFO (First-In, First-Out)*** assumes the oldest inventory is sold first, while ***LIFO (Last-In, First-Out)*** assumes the newest inventory is sold first. Under GAAP, companies can use LIFO for tax advantages, but IFRS disallows it to maintain consistency in reporting."
+  },
+  {
+    "title": "Accrual Accounting and Financial Statements",
+    "ques": "Why do most companies prefer accrual accounting over cash accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Accrual accounting provides a more accurate financial picture by recording transactions when they occur rather than when cash is exchanged."
+    },
+    "explanation": "***Accrual accounting*** aligns with GAAP and IFRS, making it suitable for financial reporting and investor analysis. For example, recording expenses when incurred rather than when paid prevents misleading profitability reports."
+  },
+  {
+    "title": "GAAP vs. IFRS on Fixed Assets",
+    "ques": "How do GAAP and IFRS differ in the treatment of fixed assets?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "GAAP requires fixed assets to be recorded at historical cost, while IFRS allows periodic revaluation to fair value."
+    },
+    "explanation": "Under ***GAAP***, a building purchased for ```500,000``` remains on the balance sheet at that price, even if its market value increases. ***IFRS***, however, allows revaluation to reflect market changes, ensuring financial statements are more current."
   }
 ]

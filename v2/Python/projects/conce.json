@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Assets, Liabilities, and Equity",
+    "ques": "Define assets, liabilities, and equity with examples.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Assets are resources owned by a company that provide future economic benefits. Liabilities are obligations the company owes to external parties. Equity represents the residual interest in the assets after deducting liabilities."
+    },
+    "explanation": "***Assets*** are anything the business owns that has value, such as cash, inventory, and equipment. Example: ```Cash, Accounts Receivable, Buildings```. \n\n***Liabilities*** are what the company owes, such as loans or accounts payable. Example: ```Bank Loan, Accounts Payable```. \n\n***Equity*** is the owner's claim after liabilities are deducted from assets. Example: ```Owner’s Capital, Retained Earnings```."
+  },
+  {
+    "title": "Revenue & Expenses",
+    "ques": "Differentiate between revenue and expenses with examples.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Revenue is the income generated from normal business operations, while expenses are the costs incurred to generate revenue."
+    },
+    "explanation": "***Revenue*** is the total income earned by a company from selling goods or services. Example: ```Sales Revenue, Service Income```. \n\n***Expenses*** are the costs the company incurs to operate. Example: ```Rent Expense, Salary Expense, Utility Bills```."
+  },
+  {
+    "title": "Depreciation & Amortization",
+    "ques": "What is the difference between depreciation and amortization?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Depreciation is the systematic allocation of the cost of a tangible asset over its useful life, whereas amortization applies to intangible assets."
+    },
+    "explanation": "***Depreciation*** applies to physical assets like machinery and buildings. Example: ```A company buys equipment for $10,000 with a 5-year life. Using straight-line depreciation, the annual depreciation expense is $2,000.```. \n\n***Amortization*** applies to intangible assets like patents and goodwill. Example: ```A company buys a patent for $5,000 with a 10-year life. The amortization expense is $500 per year.```"
+  },
+  {
+    "title": "Trial Balance & Adjustments",
+    "ques": "What is a trial balance, and why are adjustments needed?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "A trial balance is a list of all ledger account balances to check the accuracy of bookkeeping. Adjustments ensure that revenues and expenses are recorded in the correct period."
+    },
+    "explanation": "***Trial Balance*** lists all debit and credit balances to ensure the books are balanced. Example: ```Cash: $10,000 (Dr), Accounts Payable: $3,000 (Cr), Revenue: $5,000 (Cr)```.\n\n***Adjustments*** are made for accruals and deferrals to align with the accounting period. Example: ```Recording accrued expenses like unpaid salaries at the end of the month.```"
+  },
+  {
+    "title": "Assets, Liabilities, and Equity",
+    "ques": "What is the basic accounting equation, and why is it important?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The basic accounting equation is: Assets = Liabilities + Equity. It ensures that a company's financial position remains balanced."
+    },
+    "explanation": "The ***Accounting Equation*** represents the relationship between assets, liabilities, and equity:\n\n```Assets = Liabilities + Equity```\n\nExample: If a company has ```$50,000``` in assets and ```$20,000``` in liabilities, then its equity is:\n\n```Equity = Assets - Liabilities = 50,000 - 20,000 = $30,000```\n\nThis equation ensures that every financial transaction keeps the books balanced."
+  },
+  {
+    "title": "Revenue & Expenses",
+    "ques": "What is the difference between operating and non-operating revenue?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Operating revenue is generated from a company’s primary business activities, while non-operating revenue comes from secondary activities."
+    },
+    "explanation": "***Operating Revenue*** comes from the core business operations.\nExample: ```A retail store selling clothes generates sales revenue.```\n\n***Non-Operating Revenue*** includes income from investments, interest, or asset sales.\nExample: ```A company earning interest on bank deposits or selling old equipment.```"
+  },
+  {
+    "title": "Depreciation & Amortization",
+    "ques": "Explain straight-line and declining balance depreciation methods with examples.",
+    "answer": {
+      "type": "text",
+      "lang": "python",
+      "content": "def straight_line(cost, salvage, life):\n    return (cost - salvage) / life\n\ndef declining_balance(cost, rate, years):\n    values = []\n    for year in range(years):\n        depreciation = cost * rate\n        cost -= depreciation\n        values.append(depreciation)\n    return values"
+    },
+    "explanation": "***Straight-Line Depreciation*** spreads the cost evenly over time.\nFormula: ```(Cost - Salvage Value) / Useful Life```\nExample: ```A $10,000 machine with a $2,000 salvage value over 4 years → ($10,000 - $2,000) / 4 = $2,000/year.```\n\n***Declining Balance Method*** applies a fixed depreciation rate.\nExample: ```Using a 20% rate on $10,000: Year 1 = $2,000, Year 2 = $1,600, and so on.```"
+  },
+  {
+    "title": "Trial Balance & Adjustments",
+    "ques": "What happens if a trial balance does not balance? How can it be fixed?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "If a trial balance does not balance, there may be errors like omitted transactions, incorrect postings, or transposed digits. These can be fixed by rechecking the ledger and journal entries."
+    },
+    "explanation": "***Common Trial Balance Errors:***\n1. ***Omitted Transactions*** – A transaction was not recorded.\n2. ***Wrong Debit or Credit*** – A debit entry might have been recorded as a credit.\n3. ***Transposition Errors*** – Numbers were accidentally swapped (e.g., writing ```$520``` instead of ```$250```).\n\n***Fixing Errors:***\n1. Recalculate the balances.\n2. Compare with journal entries.\n3. Check for missing transactions."
+  },
+  {
+    "title": "Assets, Liabilities, and Equity",
+    "ques": "What is the difference between current and non-current assets?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Current assets are expected to be converted into cash within a year, while non-current assets provide long-term benefits."
+    },
+    "explanation": "***Current Assets*** are short-term and liquid.\nExample: ```Cash, Accounts Receivable, Inventory```.\n\n***Non-Current Assets*** provide value over multiple years.\nExample: ```Buildings, Equipment, Land```."
+  },
+  {
+    "title": "Revenue & Expenses",
+    "ques": "What is the matching principle in accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The matching principle states that expenses should be recorded in the same period as the revenues they help generate."
+    },
+    "explanation": "***Matching Principle*** ensures that revenue and related expenses are recorded in the same period.\nExample: ```If a company earns $10,000 in December but pays employee salaries of $2,000 for that work in January, the $2,000 salary should be recorded as a December expense.```"
+  },
+  {
+    "title": "Depreciation & Amortization",
+    "ques": "Why do companies use different depreciation methods?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Companies choose depreciation methods based on financial reporting requirements, tax benefits, and asset usage patterns."
+    },
+    "explanation": "***Reasons for Choosing a Depreciation Method:***\n1. ***Financial Reporting:*** Straight-line depreciation provides consistent expense allocation.\n2. ***Tax Benefits:*** Accelerated methods like declining balance provide higher initial deductions.\n3. ***Asset Usage:*** Some assets lose value faster in the early years, justifying an accelerated method."
+  },
+  {
+    "title": "Trial Balance & Adjustments",
+    "ques": "What are adjusting entries, and why are they necessary?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Adjusting entries ensure that revenues and expenses are recognized in the correct accounting period according to the accrual basis of accounting."
+    },
+    "explanation": "***Types of Adjusting Entries:***\n1. ***Accrued Revenues:*** Revenue earned but not yet received.\n   Example: ```Recording interest income earned but not yet collected.```\n2. ***Accrued Expenses:*** Expenses incurred but not yet paid.\n   Example: ```Unpaid salaries at month-end.```\n3. ***Deferred Revenues:*** Cash received before revenue is earned.\n   Example: ```Advance payment for a 1-year subscription.```\n4. ***Deferred Expenses:*** Payments made in advance for future expenses.\n   Example: ```Prepaid insurance covering multiple months.```"
+  },
+  {
+    "title": "Assets, Liabilities, and Equity",
+    "ques": "What is the difference between tangible and intangible assets? Provide examples.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Tangible assets are physical and can be touched, while intangible assets lack physical substance but hold value."
+    },
+    "explanation": "***Tangible Assets*** are physical items.\nExample: ```Buildings, Equipment, Vehicles```\n\n***Intangible Assets*** are non-physical but valuable.\nExample: ```Patents, Trademarks, Goodwill```"
+  },
+  {
+    "title": "Revenue & Expenses",
+    "ques": "What is the difference between gross profit and net profit?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Gross profit is revenue minus the cost of goods sold (COGS), while net profit is the final profit after deducting all expenses."
+    },
+    "explanation": "***Gross Profit Formula:***\n```Gross Profit = Revenue - Cost of Goods Sold (COGS)```\nExample: ```If a company earns $50,000 in revenue and COGS is $20,000, Gross Profit = $30,000```\n\n***Net Profit Formula:***\n```Net Profit = Gross Profit - Operating Expenses - Taxes```\nExample: ```If operating expenses are $10,000 and taxes are $5,000, Net Profit = $30,000 - $10,000 - $5,000 = $15,000```"
+  },
+  {
+    "title": "Depreciation & Amortization",
+    "ques": "Explain the concept of salvage value in depreciation calculations.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Salvage value is the estimated residual value of an asset at the end of its useful life."
+    },
+    "explanation": "***Salvage Value*** represents the amount a company expects to recover from selling or scrapping an asset after full depreciation.\n\nFormula:\n```Depreciable Value = Cost of Asset - Salvage Value```\nExample: ```A machine costs $10,000 and has a salvage value of $2,000 after 5 years. Depreciable Value = $10,000 - $2,000 = $8,000```"
+  },
+  {
+    "title": "Trial Balance & Adjustments",
+    "ques": "Why do we prepare a post-closing trial balance?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "A post-closing trial balance ensures that only permanent accounts carry forward to the next accounting period."
+    },
+    "explanation": "***Post-Closing Trial Balance*** confirms that all temporary accounts (revenues, expenses, dividends) have been closed and do not carry into the next period.\n\nExample:\nBefore Closing: ```Revenue = $50,000, Expenses = $30,000, Net Profit = $20,000```\nAfter Closing: ```Only asset, liability, and equity accounts remain in the trial balance.```"
+  },
+  {
+    "title": "Assets, Liabilities, and Equity",
+    "ques": "What is the difference between accounts payable and accounts receivable?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Accounts payable are amounts a business owes to suppliers, while accounts receivable are amounts owed to the business by customers."
+    },
+    "explanation": "***Accounts Payable (AP)*** represents obligations to pay for goods or services.\nExample: ```A business purchases inventory on credit and owes $5,000 to a supplier.```\n\n***Accounts Receivable (AR)*** represents money owed by customers.\nExample: ```A customer purchases products on credit and owes the business $3,000.```"
+  },
+  {
+    "title": "Revenue & Expenses",
+    "ques": "What is an accrued expense, and how is it recorded in accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "An accrued expense is an expense that has been incurred but not yet paid. It is recorded as a liability."
+    },
+    "explanation": "***Accrued Expense*** occurs when an expense is recognized before cash payment.\nExample: ```A company incurs $2,000 in salaries for December but will pay in January.```\n\nJournal Entry:\n```Debit: Salary Expense $2,000```\n```Credit: Salaries Payable $2,000```"
+  },
+  {
+    "title": "Depreciation & Amortization",
+    "ques": "What is double-declining balance (DDB) depreciation, and how does it work?",
+    "answer": {
+      "type": "text",
+      "lang": "python",
+      "content": "def double_declining_balance(cost, salvage, life):\n    rate = (2 / life) * 100\n    for year in range(1, life + 1):\n        depreciation = cost * (rate / 100)\n        cost -= depreciation\n        print(f'Year {year}: Depreciation = {depreciation}, Remaining Value = {cost}')"
+    },
+    "explanation": "***Double-Declining Balance (DDB)*** accelerates depreciation in the early years.\nFormula:\n```Depreciation = (2 / Useful Life) × Book Value```\nExample: ```A $10,000 asset with a 5-year life and no salvage value. Year 1 depreciation = (2/5) × 10,000 = $4,000.```"
+  },
+  {
+    "title": "Trial Balance & Adjustments",
+    "ques": "What is the purpose of a bank reconciliation statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "A bank reconciliation statement ensures that the company's records match the bank statement by identifying discrepancies."
+    },
+    "explanation": "***Bank Reconciliation*** helps identify errors, missing transactions, or fraudulent activity.\nExample:\n1. Bank balance shows ```$10,500```, but company records show ```$10,000```.\n2. A ```$500``` deposit was recorded by the company but not yet by the bank.\n3. Adjusted balance is now equal after reconciliation."
+  }
+]

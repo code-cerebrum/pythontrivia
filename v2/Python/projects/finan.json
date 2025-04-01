@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Balance Sheet Components",
+    "ques": "What are the three main sections of a balance sheet, and what do they represent?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "A balance sheet consists of three main sections: Assets (what a company owns), Liabilities (what a company owes), and Equity (the owners' residual interest in the company)."
+    },
+    "explanation": "The ***balance sheet*** follows the accounting equation: ```Assets = Liabilities + Equity```. For example, if a company has ```500,000``` in assets and ```300,000``` in liabilities, its equity would be ```200,000```."
+  },
+  {
+    "title": "Balance Sheet Equation Validation",
+    "ques": "A company reports assets of $1,200,000 and liabilities of $750,000. What is the equity amount?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The equity is $450,000, calculated as: Equity = Assets - Liabilities = $1,200,000 - $750,000."
+    },
+    "explanation": "The ***balance sheet equation*** ensures that total assets always equal the sum of liabilities and equity. Here, the equity of ```450,000``` represents the owner's share in the business after settling obligations."
+  },
+  {
+    "title": "Income Statement Purpose",
+    "ques": "What is the main purpose of an income statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "An income statement shows a company's financial performance over a period, reporting revenue, expenses, and net profit or loss."
+    },
+    "explanation": "The ***income statement*** follows the formula: ```Net Income = Revenue - Expenses```. If a company earns ```100,000``` in revenue and incurs ```60,000``` in expenses, its net income is ```40,000```, reflecting profitability."
+  },
+  {
+    "title": "Income Statement Example",
+    "ques": "A company reports revenues of $500,000 and expenses of $300,000. What is its net income?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The net income is $200,000, calculated as Net Income = Revenue - Expenses = $500,000 - $300,000."
+    },
+    "explanation": "***Net income*** represents the company's profitability. A positive value means profit, while a negative value indicates a loss."
+  },
+  {
+    "title": "Cash Flow Statement Sections",
+    "ques": "What are the three main sections of a cash flow statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The cash flow statement has three sections: Operating Activities (cash from core business operations), Investing Activities (cash from buying/selling assets), and Financing Activities (cash from loans or owner investments)."
+    },
+    "explanation": "The ***cash flow statement*** helps analyze liquidity. For example, if a company has ```50,000``` net cash from operations, ```-30,000``` from investments, and ```20,000``` from financing, the total cash inflow is ```40,000```."
+  },
+  {
+    "title": "Cash Flow vs. Profit",
+    "ques": "Can a company be profitable but still have cash flow problems? Why?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Yes, a company can be profitable on the income statement but face cash shortages if revenues are tied up in accounts receivable or high capital expenditures."
+    },
+    "explanation": "***Profitability*** (income statement) and ***cash flow*** (cash flow statement) are different. A company might report ```100,000``` in net income but struggle with cash if customers haven't paid their invoices."
+  },
+  {
+    "title": "Statement of Changes in Equity Purpose",
+    "ques": "What does the statement of changes in equity show?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The statement of changes in equity reports changes in shareholders’ equity due to net income, dividends, and other capital changes."
+    },
+    "explanation": "This statement tracks how ***equity*** changes over a period. For example, if a company earns ```30,000```, issues new shares worth ```20,000```, and pays dividends of ```5,000```, the equity increases by ```45,000```."
+  },
+  {
+    "title": "Retained Earnings Calculation",
+    "ques": "A company starts the year with retained earnings of $100,000, earns $50,000 in net income, and pays dividends of $10,000. What are the retained earnings at year-end?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The retained earnings at year-end are $140,000, calculated as: Beginning Retained Earnings + Net Income - Dividends = $100,000 + $50,000 - $10,000."
+    },
+    "explanation": "***Retained earnings*** represent profits kept in the business after distributing dividends. If earnings are reinvested rather than paid out, they boost future financial stability."
+  },
+  {
+    "title": "Linking Financial Statements",
+    "ques": "How do the four main financial statements connect to each other?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The income statement reports net income, which affects retained earnings in the statement of changes in equity. The balance sheet reflects this equity, while the cash flow statement shows how cash is generated and used."
+    },
+    "explanation": "All ***financial statements*** are interconnected: ```Net Income (Income Statement) → Retained Earnings (Equity Statement) → Equity (Balance Sheet)```. The ***cash flow statement*** then explains actual cash movement."
+  },
+  {
+    "title": "Balance Sheet Classification",
+    "ques": "Differentiate between current and non-current assets on a balance sheet.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Current assets are expected to be converted into cash within a year (e.g., cash, accounts receivable, inventory), while non-current assets provide long-term value (e.g., buildings, machinery, patents)."
+    },
+    "explanation": "***Current assets*** support daily operations, whereas ***non-current assets*** support long-term growth. For example, a company may have ```50,000``` in cash (current) and ```500,000``` in real estate (non-current)."
+  },
+  {
+    "title": "Liabilities in Balance Sheet",
+    "ques": "A company's balance sheet shows total liabilities of $400,000, split into $150,000 in current liabilities and $250,000 in long-term liabilities. What does this tell you about the company’s financial obligations?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The company has $150,000 in short-term obligations due within a year and $250,000 in long-term obligations that extend beyond a year."
+    },
+    "explanation": "***Current liabilities*** (e.g., accounts payable, short-term loans) need quick repayment, while ***long-term liabilities*** (e.g., bonds payable, mortgages) extend beyond a year. A high current liability amount may indicate liquidity risks."
+  },
+  {
+    "title": "Revenue Recognition in Income Statement",
+    "ques": "How does revenue recognition affect the income statement under accrual accounting?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Under accrual accounting, revenue is recognized when earned, not when cash is received. This ensures financial reports reflect real economic activities."
+    },
+    "explanation": "If a company sells ```10,000``` worth of goods on credit, it reports ```10,000``` in revenue immediately, even though cash may be received later. ***Accrual accounting*** prevents misleading cash-based profits."
+  },
+  {
+    "title": "Gross vs. Net Income",
+    "ques": "A company reports $500,000 in revenue and $200,000 in cost of goods sold (COGS). What is the gross income? If total expenses are $150,000, what is the net income?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Gross income = $300,000 (Revenue - COGS). Net income = $150,000 (Gross Income - Expenses)."
+    },
+    "explanation": "***Gross income*** is calculated as ```Revenue - COGS```, showing profitability before expenses. ***Net income*** accounts for all costs, including operating expenses, taxes, and interest."
+  },
+  {
+    "title": "Operating vs. Non-Operating Income",
+    "ques": "What is the difference between operating income and non-operating income?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Operating income comes from core business activities, while non-operating income includes gains from investments, asset sales, or legal settlements."
+    },
+    "explanation": "***Operating income*** reflects true business performance (```Revenue - Operating Expenses```). ***Non-operating income*** includes one-time earnings like ```investment gains```, which don't indicate consistent profitability."
+  },
+  {
+    "title": "Cash Flow Categories",
+    "ques": "What type of cash transactions fall under each category in a cash flow statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "- Operating: Cash from customers, supplier payments. - Investing: Asset purchases, selling investments. - Financing: Loans, stock issuance, dividend payments."
+    },
+    "explanation": "***Operating cash flow*** (daily business cash activities), ***investing cash flow*** (asset buying/selling), and ***financing cash flow*** (loans, dividends) together reflect a company's financial health."
+  },
+  {
+    "title": "Cash Flow Statement Analysis",
+    "ques": "A company has $80,000 in positive operating cash flow, -$50,000 in investing cash flow, and $30,000 in financing cash flow. What is the net cash flow?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Net cash flow = $60,000 (Operating + Investing + Financing = 80,000 - 50,000 + 30,000)."
+    },
+    "explanation": "***Positive operating cash flow*** suggests profitability. ***Negative investing cash flow*** shows investments in assets. ***Positive financing cash flow*** indicates debt or new equity funding."
+  },
+  {
+    "title": "Retained Earnings Formula",
+    "ques": "How are retained earnings calculated?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Retained Earnings = Beginning Retained Earnings + Net Income - Dividends."
+    },
+    "explanation": "If a company has ```200,000``` in beginning retained earnings, earns ```50,000``` in net income, and pays ```10,000``` in dividends, its retained earnings will be ***240,000***."
+  },
+  {
+    "title": "Statement of Changes in Equity Interpretation",
+    "ques": "Why is the statement of changes in equity important?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "It helps investors track how net income, dividends, and new equity issuance affect ownership structure over time."
+    },
+    "explanation": "***Equity changes*** occur due to retained earnings, stock issues, and profit reinvestment. A growing equity section signals ***financial stability***."
+  },
+  {
+    "title": "Link Between Statements",
+    "ques": "How does the cash flow statement connect with the income statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The cash flow statement starts with net income from the income statement, then adjusts for non-cash expenses and changes in working capital."
+    },
+    "explanation": "For example, depreciation reduces ***net income*** (income statement) but doesn't affect cash, so it's added back in ***operating cash flow***."
+  },
+  {
+    "title": "Balance Sheet Format",
+    "ques": "What are the two main formats used for presenting a balance sheet?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The two formats are the Account Format (assets on the left, liabilities and equity on the right) and the Report Format (assets, liabilities, and equity presented in a single column)."
+    },
+    "explanation": "***Account format*** is similar to a T-account, while ***report format*** presents a vertical structure. Most modern financial reports use the ***report format*** for simplicity."
+  },
+  {
+    "title": "Liquidity Order in Balance Sheet",
+    "ques": "Why are assets listed in order of liquidity on a balance sheet?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Assets are arranged from most liquid (cash) to least liquid (fixed assets) to help users assess a company’s ability to meet short-term obligations."
+    },
+    "explanation": "***Liquidity order*** ensures that stakeholders can quickly determine how easily a company can convert assets into cash to pay its debts. For example, ```cash``` appears before ```inventory``` or ```property```."
+  },
+  {
+    "title": "Balance Sheet Equation",
+    "ques": "A company reports $800,000 in assets and $500,000 in liabilities. What is the equity?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Equity = Assets - Liabilities = $800,000 - $500,000 = $300,000."
+    },
+    "explanation": "According to the ***accounting equation*** ```Assets = Liabilities + Equity```, the company's owners have ***$300,000 in equity*** after liabilities are deducted."
+  },
+  {
+    "title": "Accrual vs. Cash Accounting in Income Statement",
+    "ques": "How does revenue recognition differ between accrual and cash accounting on an income statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "In accrual accounting, revenue is recorded when earned, while in cash accounting, it is recorded when cash is received."
+    },
+    "explanation": "For example, a company selling ```services worth $5,000 on credit``` will report revenue in accrual accounting but not in cash accounting until payment is received. ***Accrual accounting*** provides a more accurate financial picture."
+  },
+  {
+    "title": "Depreciation in Income Statement",
+    "ques": "How does depreciation impact the income statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Depreciation is recorded as an expense, reducing net income, but it does not involve an actual cash outflow."
+    },
+    "explanation": "For example, if a machine worth ```50,000``` depreciates over 5 years, the company records a ***depreciation expense of 10,000 per year***, reducing net profit while keeping cash unaffected."
+  },
+  {
+    "title": "Net Profit Calculation",
+    "ques": "A company has $700,000 in revenue and $300,000 in expenses. What is the net profit?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Net Profit = Revenue - Expenses = $700,000 - $300,000 = $400,000."
+    },
+    "explanation": "***Net profit (bottom line)*** shows the company’s earnings after all expenses. If net profit is positive, the company is profitable; if negative, it operates at a ***loss***."
+  },
+  {
+    "title": "Cash Flow from Operating Activities",
+    "ques": "Which transactions are included in the cash flow from operating activities?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Operating cash flow includes cash receipts from sales, payments to suppliers, employee wages, and taxes paid."
+    },
+    "explanation": "***Operating cash flow*** reflects cash from core business activities. If positive, the company generates enough cash; if negative, it may need ***external funding*** to operate."
+  },
+  {
+    "title": "Investing Activities in Cash Flow Statement",
+    "ques": "A company purchases equipment for $200,000 and sells land for $100,000. How are these transactions recorded in the cash flow statement?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "The $200,000 purchase is recorded as a cash outflow in investing activities, and the $100,000 land sale is recorded as a cash inflow."
+    },
+    "explanation": "***Investing activities*** include asset purchases (-$200,000) and asset sales (+$100,000). A net negative investing cash flow may indicate growth investments."
+  },
+  {
+    "title": "Financing Activities in Cash Flow",
+    "ques": "What are examples of cash flow from financing activities?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Examples include borrowing or repaying loans, issuing stock, and paying dividends."
+    },
+    "explanation": "***Financing activities*** track cash from investors and lenders. For example, taking a ```loan of $500,000``` increases cash, while ```paying dividends of $50,000``` reduces cash."
+  },
+  {
+    "title": "Retained Earnings Adjustment",
+    "ques": "A company has $200,000 in beginning retained earnings, earns $80,000 in net income, and declares $30,000 in dividends. What is the new retained earnings balance?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "New Retained Earnings = Beginning Retained Earnings + Net Income - Dividends = $200,000 + $80,000 - $30,000 = $250,000."
+    },
+    "explanation": "***Retained earnings*** show accumulated profits after dividends. High retained earnings indicate ***reinvestment in business growth.***"
+  },
+  {
+    "title": "Equity Impact of Issuing Shares",
+    "ques": "How does issuing new shares affect the statement of changes in equity?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Issuing new shares increases common stock and overall equity in the company."
+    },
+    "explanation": "For example, issuing ```1,000 shares at $10 each``` increases ***equity by $10,000.*** This affects shareholders' ownership structure."
+  },
+  {
+    "title": "Retained Earnings vs. Dividends",
+    "ques": "Why do companies sometimes retain earnings instead of paying dividends?",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Companies retain earnings to reinvest in expansion, research, or paying off debt rather than distributing profits as dividends."
+    },
+    "explanation": "***Retained earnings*** allow reinvestment for growth, while ***dividends*** reward shareholders. Companies with growth potential may retain more earnings instead of issuing dividends."
+  }
+]

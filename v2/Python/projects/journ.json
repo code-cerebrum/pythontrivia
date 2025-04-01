@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Recording Transactions",
+    "ques": "ABC Ltd. purchased office supplies for $500 in cash. Record the transaction in the journal entry format.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles      | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-01  | Office Supplies    | 500       | \n            | Cash               |           | 500"
+    },
+    "explanation": "To record this transaction: \n- ***Office Supplies*** is an asset account, and it is increasing, so we ***debit*** it.\n- ***Cash*** is also an asset, but it is decreasing, so we ***credit*** it.\n- The journal entry follows the accounting equation ***Assets = Liabilities + Equity***."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: ABC Ltd. purchased equipment worth $2,000 on credit from XYZ Inc.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Equipment Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-02 | Purchased Equipment | 2,000    | \n\nAccounts Payable Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-02 | XYZ Inc. (Equipment) |         | 2,000"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Equipment account*** (an asset) increases, so it is ***debited***.\n- The ***Accounts Payable account*** (a liability) increases, so it is ***credited***.\n- This reflects that the company has purchased equipment but has not yet paid for it."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to analyze the impact of a $1,200 rent payment in cash.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Cash Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 1,200  |\n\nRent Expense Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 1,200  |        |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Cash*** account decreases, so we record ***1,200 in the Credit side***.\n- The ***Rent Expense*** account increases, so we record ***1,200 in the Debit side***.\n- This maintains the balance in the double-entry bookkeeping system."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "XYZ Ltd. earned $5,000 in revenue but has not yet received payment. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles      | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-30  | Accounts Receivable | 5,000     | \n            | Revenue             |           | 5,000"
+    },
+    "explanation": "This adjusting entry ensures revenue is recorded when earned:\n- ***Accounts Receivable*** (an asset) is ***debited*** because the company expects to receive cash later.\n- ***Revenue*** is ***credited*** to reflect earned income.\n- Adjusting entries help match revenue with expenses in the same accounting period."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "XYZ Ltd. received $3,000 in cash from a customer for services rendered. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles     | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-05  | Cash              | 3,000     | \n            | Service Revenue   |           | 3,000"
+    },
+    "explanation": "To record this transaction:\n- ***Cash*** is an asset account and is increasing, so we ***debit*** it.\n- ***Service Revenue*** is a revenue account and is increasing, so we ***credit*** it.\n- This ensures that revenue is recognized when earned, in line with the ***accrual basis of accounting***."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: XYZ Ltd. paid $700 in salaries to employees.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Salaries Expense Account:\nDate       | Description      | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-10 | Salaries Paid    | 700       |\n\nCash Account:\nDate       | Description      | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-10 | Salaries Payment |           | 700"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Salaries Expense*** account is ***debited*** because it represents an expense incurred.\n- The ***Cash*** account is ***credited*** because cash is being paid out.\n- This reflects a decrease in cash and an increase in expenses, maintaining the ***accounting equation***."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to record the purchase of inventory worth $1,500 on credit.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Inventory Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 1,500  |        |\n\nAccounts Payable Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 1,500  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Inventory*** account increases, so it is ***debited*** with 1,500.\n- The ***Accounts Payable*** account increases as well, so it is ***credited*** with 1,500.\n- This transaction follows the double-entry system, where every debit has a corresponding credit."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "ABC Ltd. recorded $2,000 in depreciation expense for office equipment at the end of the year. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles       | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-12-31  | Depreciation Expense | 2,000     | \n            | Accumulated Depreciation |        | 2,000"
+    },
+    "explanation": "This adjusting entry records depreciation:\n- ***Depreciation Expense*** is ***debited*** to reflect the expense incurred.\n- ***Accumulated Depreciation*** is ***credited*** as it is a contra-asset account, reducing the asset's book value.\n- Adjusting entries ensure that expenses are recorded in the period they occur, following the ***matching principle***."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "ABC Ltd. issued common stock worth $10,000 in exchange for cash. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles      | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-15  | Cash               | 10,000     | \n            | Common Stock        |           | 10,000"
+    },
+    "explanation": "To record this transaction:\n- ***Cash*** is an asset and is increasing, so it is ***debited***.\n- ***Common Stock*** represents owners' equity and is increasing, so it is ***credited***.\n- This reflects the issuance of shares in exchange for capital investment."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: ABC Ltd. borrowed $5,000 from the bank.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Cash Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-20 | Loan Received     | 5,000    |\n\nLoan Payable Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-20 | Bank Loan         |         | 5,000"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Cash*** account increases, so it is ***debited*** with 5,000.\n- The ***Loan Payable*** account increases, representing a liability, so it is ***credited*** with 5,000.\n- This ensures accurate tracking of financial obligations."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to analyze the impact of receiving a $1,000 advance payment from a customer.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Cash Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 1,000  |        |\n\nUnearned Revenue Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 1,000  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- ***Cash*** increases, so it is ***debited*** with 1,000.\n- ***Unearned Revenue*** (a liability) increases, so it is ***credited*** with 1,000.\n- Since the revenue is not yet earned, it is recorded as a liability until services are provided."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "ABC Ltd. provided services worth $3,500 to a client on account but has not yet recorded the revenue. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles       | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-30  | Accounts Receivable  | 3,500     | \n            | Service Revenue      |           | 3,500"
+    },
+    "explanation": "This adjusting entry ensures that revenue is recognized:\n- ***Accounts Receivable*** (an asset) is ***debited*** because the company expects to receive payment later.\n- ***Service Revenue*** is ***credited*** to reflect the earned income.\n- Adjusting entries ensure compliance with the ***revenue recognition principle***."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "XYZ Ltd. paid $1,000 for office rent. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles       | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-18  | Rent Expense         | 1,000     | \n            | Cash                 |           | 1,000"
+    },
+    "explanation": "To record this transaction:\n- ***Rent Expense*** is an expense account and is increasing, so we ***debit*** it.\n- ***Cash*** is an asset account and is decreasing, so we ***credit*** it.\n- This reflects the payment made for office rent, reducing the cash balance."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: XYZ Ltd. paid $500 for utilities.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Utilities Expense Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-22 | Utilities Paid    | 500       |\n\nCash Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-22 | Utilities Payment |         | 500"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Utilities Expense*** account increases, so it is ***debited*** with 500.\n- The ***Cash*** account decreases, so it is ***credited*** with 500.\n- This reflects the payment made for utilities, reducing both cash and increasing expenses."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to record the sale of goods worth $2,000 on credit.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Accounts Receivable Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 2,000  |        |\n\nSales Revenue Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 2,000  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Accounts Receivable*** account increases, so it is ***debited*** with 2,000.\n- The ***Sales Revenue*** account increases, so it is ***credited*** with 2,000.\n- This transaction reflects the sale of goods on credit and ensures revenue is recognized even though payment is not yet received."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "ABC Ltd. accrued $1,200 in salaries expense but has not yet paid the employees. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles         | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-30  | Salaries Expense       | 1,200     | \n            | Salaries Payable       |           | 1,200"
+    },
+    "explanation": "This adjusting entry ensures that salaries are recognized as an expense in the period incurred:\n- ***Salaries Expense*** is ***debited*** to recognize the expense.\n- ***Salaries Payable*** is ***credited*** as a liability, reflecting the obligation to pay employees.\n- Adjusting entries are necessary to match expenses with revenues in the correct period."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "ABC Ltd. made a cash payment of $2,500 to a supplier for inventory purchased earlier on credit. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles       | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-25  | Accounts Payable     | 2,500     | \n            | Cash                 |           | 2,500"
+    },
+    "explanation": "To record this transaction:\n- ***Accounts Payable*** (a liability) is ***debited*** because the company has reduced its obligation to the supplier.\n- ***Cash*** is an asset account, and it is decreasing, so it is ***credited***.\n- This reflects the payment of the supplier's invoice."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: XYZ Ltd. purchased equipment worth $4,000 on credit.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Equipment Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-30 | Equipment Purchase | 4,000    |\n\nAccounts Payable Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-04-30 | XYZ Inc. (Equipment) |         | 4,000"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Equipment account*** is ***debited*** as the company now owns more equipment.\n- The ***Accounts Payable account*** is ***credited*** because the company owes XYZ Inc. for the purchase.\n- This maintains the balance in the company's financial statements."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to record the payment of $3,000 in interest on a loan.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Interest Expense Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 3,000  |        |\n\nCash Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 3,000  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Interest Expense*** account increases, so it is ***debited*** with 3,000.\n- The ***Cash*** account decreases, so it is ***credited*** with 3,000.\n- This reflects the payment made for interest on a loan, reducing both cash and increasing interest expenses."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "XYZ Ltd. earned $1,500 in interest income that has not yet been recorded. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles         | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-04-30  | Interest Receivable    | 1,500     | \n            | Interest Income        |           | 1,500"
+    },
+    "explanation": "This adjusting entry ensures that interest income is recorded when earned:\n- ***Interest Receivable*** (an asset) is ***debited*** because the company expects to receive payment in the future.\n- ***Interest Income*** is ***credited*** to reflect the earned income.\n- This entry ensures that revenues are recognized in the correct accounting period."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "ABC Ltd. purchased supplies worth $1,200 on credit. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles      | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-05-01  | Supplies Expense     | 1,200     | \n            | Accounts Payable     |           | 1,200"
+    },
+    "explanation": "To record this transaction:\n- ***Supplies Expense*** (an expense account) increases, so it is ***debited***.\n- ***Accounts Payable*** (a liability account) increases, so it is ***credited***.\n- This reflects the purchase of supplies on credit, creating an obligation to pay the supplier."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: ABC Ltd. collected $3,000 in advance for services to be provided in the future.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Cash Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-05-02 | Advance Payment    | 3,000    |\n\nUnearned Revenue Account:\nDate       | Description       | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-05-02 | Received Advance   |         | 3,000"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Cash account*** is ***debited*** because the company is receiving money.\n- The ***Unearned Revenue account*** is ***credited*** because the revenue has not yet been earned, making it a liability.\n- This entry reflects the advance payment for services not yet provided."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to record a cash sale of $4,500.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Cash Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 4,500  |        |\n\nSales Revenue Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 4,500  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Cash account*** is ***debited*** because the company has received cash.\n- The ***Sales Revenue account*** is ***credited*** to reflect the income from the sale.\n- This reflects a simple cash transaction where revenue is immediately recognized."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "XYZ Ltd. has an unrecorded interest expense of $800 for the month. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles        | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-05-05  | Interest Expense      | 800       | \n            | Interest Payable      |           | 800"
+    },
+    "explanation": "This adjusting entry ensures that the ***Interest Expense*** is recognized in the correct period:\n- ***Interest Expense*** is ***debited*** to record the cost of borrowing money.\n- ***Interest Payable*** is ***credited*** because the company owes the interest and will pay it later.\n- Adjusting entries are important to match expenses with the correct period."
+  },
+  {
+    "title": "Recording Transactions",
+    "ques": "ABC Ltd. sold inventory worth $5,000 for cash. Record the journal entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles      | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-05-10  | Cash                | 5,000     | \n            | Sales Revenue       |           | 5,000"
+    },
+    "explanation": "To record this transaction:\n- ***Cash*** is ***debited*** because the company receives cash.\n- ***Sales Revenue*** is ***credited*** to recognize the revenue from selling inventory.\n- This transaction reflects a sale made for cash."
+  },
+  {
+    "title": "General Ledger & Subsidiary Ledgers",
+    "ques": "Post the following journal entry to the General Ledger: ABC Ltd. paid $1,500 for office rent.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Rent Expense Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-05-15 | Rent Payment        | 1,500    |\n\nCash Account:\nDate       | Description        | Debit ($) | Credit ($)\n---------------------------------------------------\n2025-05-15 | Rent Payment        |         | 1,500"
+    },
+    "explanation": "To post this transaction in the ***General Ledger***:\n- The ***Rent Expense*** account is ***debited*** because it is an expense.\n- The ***Cash*** account is ***credited*** because the company paid rent, reducing its cash balance.\n- This reflects the expense paid for office rent."
+  },
+  {
+    "title": "T-Accounts",
+    "ques": "Use T-Accounts to record the purchase of inventory worth $6,000 on credit.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Inventory Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n| 6,000  |        |\n\nAccounts Payable Account:\n------------------\n| Debit  | Credit  |\n|--------|--------|\n|        | 6,000  |"
+    },
+    "explanation": "In ***T-Accounts***:\n- The ***Inventory*** account increases, so it is ***debited***.\n- The ***Accounts Payable*** account increases because the company owes money for the inventory, so it is ***credited***.\n- This transaction reflects the purchase of inventory on credit."
+  },
+  {
+    "title": "Adjusting & Closing Entries",
+    "ques": "XYZ Ltd. earned $2,000 in interest income but has not yet recorded it. Record the adjusting entry.",
+    "answer": {
+      "type": "text",
+      "lang": null,
+      "content": "Date        | Account Titles         | Debit ($) | Credit ($)\n--------------------------------------------------\n2025-05-20  | Interest Receivable    | 2,000     | \n            | Interest Income         |           | 2,000"
+    },
+    "explanation": "This adjusting entry ensures that the ***Interest Income*** is recognized in the correct period:\n- ***Interest Receivable*** is ***debited*** because the company expects to receive the money in the future.\n- ***Interest Income*** is ***credited*** to record the revenue earned.\n- Adjusting entries are necessary to match revenues with the period in which they are earned."
+  }
+]
